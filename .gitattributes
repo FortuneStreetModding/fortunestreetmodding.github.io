@@ -1,0 +1,2 @@
+*.brstm filter=lfs diff=lfs merge=lfs -text
+*.cmpres filter=lfs diff=lfs merge=lfs -text
