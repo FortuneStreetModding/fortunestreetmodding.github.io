@@ -4,10 +4,7 @@ A map which switches between the different suits.
 
 ## Screenshots
 
-![angel0.frb](angel0.png)
-![angel1.frb](angel1.png)
-![angel2.frb](angel2.png)
-![angel3.frb](angel3.png)
+![angel.gif](angel.gif)
 
 ## Features
 
