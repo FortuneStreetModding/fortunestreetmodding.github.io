@@ -12,8 +12,8 @@ A map which uses the Good Egg Galaxy ship as its base shape. The switches swap a
 | ----------------- | ---------- |
 | Initial Cash      | 2000       |
 | Target Amount     | 20000      | 
-| Base Salary       | 300        | 
-| Salary Increment  | 150        | 
+| Base Salary       | 400        | 
+| Salary Increment  | 200        | 
 | Maximum Dice Roll | 8          | 
 | Looping Mode      | No Looping | 
 
@@ -23,6 +23,11 @@ A map which uses the Good Egg Galaxy ship as its base shape. The switches swap a
 - Needs the ASM hack for the 0x2E switch square
 
 ## Changelog
+
+### v2
+- Merge 3 four-shop-districts into 2 six-shop-districts
+- Rebalance shop values
+- Increase base and increment salary
 
 ### v1
 - Initial Release
