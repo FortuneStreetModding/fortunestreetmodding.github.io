@@ -3,34 +3,21 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Fortune Street Address Converter</title>
-	<style>
-		body {
-  			font-family: Arial, sans-serif;
-		}
-		table.normal {
-			width: 100%;
-			max-width: 40em;
-			margin: auto;
-			table-layout: fixed;
-		}
-		table tr { border-bottom:1px solid #e9e9e9; }
-		table tr td, th { border:1px solid #D5D5D5; padding:1px; }
-		table textarea:hover { background: #fcfcfc; }
-	</style>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 <script src="addressConverter.js"></script>
 <script type="text/javascript">
 function init() {
 	const setAddress = function(input, address) {
 		if(address) {
-			input.style.backgroundColor = "";
+			input.classList.remove("w3-red");
 			input.value = address.toString(16);
 		} else {
-			input.style.backgroundColor = "red";
+			input.classList.add("w3-red");
 		}
 		return address;
 	}
 	const inputHandler = function(e) {
-		e.target.style.backgroundColor = "";
+		e.target.classList.remove("w3-red");
 		address = parseInt(e.target.value, 16);
 		switch(e.target) {
 			case fsvirt_input:
@@ -69,12 +56,37 @@ function init() {
 	bsfile_input.addEventListener('input', inputHandler);
 }
 </script>
+<style>
+@media screen and (min-width: 801px) {
+  body {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 4vw;
+  }
+}
+</style>
 </head>
 <body onload="init()">
-	<table class="normal">
-		<tr><td>Fortune Street Virtual</td><td><input type="text" id="fsvirt_input"/></td><td>Boom Street Virtual</td><td><input type="text" id="bsvirt_input"/></td></tr>
-		<tr><td>Fortune Street File</td><td><input type="text" id="fsfile_input"/></td><td>Boom Street File</td><td><input type="text" id="bsfile_input"/></td></tr>
-	</table>
+	<div class="w3-card-4 w3-center w3-display-middle w3-margin-bottom-16">
+		<div class="w3-container w3-blue w3-padding-16">
+			Fortune Street Address Calculator
+		</div>
+		<div class="w3-container w3-padding-16"/>
+		<table class="w3-table">
+			<tr>
+				<td><label class="w3-text-blue">Fortune Street Virtual</label><input type="text" id="fsvirt_input" placeholder="80004000" class="w3-input w3-border w3-round-large" style="width:12em"/></td>
+				<td><label class="w3-text-blue">Boom Street Virtual</label><input type="text" id="bsvirt_input" placeholder="80004000" class="w3-input w3-border w3-round-large" style="width:12em"/></td>
+			</tr>
+			<tr>
+				<td><label class="w3-text-blue">Fortune Street File</label><input type="text" id="fsfile_input" placeholder="100" class="w3-input w3-border w3-round-large" style="width:12em"/></td>
+				<td><label class="w3-text-blue">Boom Street File</label><input type="text" id="bsfile_input" placeholder="100" class="w3-input w3-border w3-round-large" style="width:12em"/></td>
+			</tr>
+		</table>
+		<div class="w3-container w3-padding-16"/>
+	</div>
 </body>
 </html>
 
