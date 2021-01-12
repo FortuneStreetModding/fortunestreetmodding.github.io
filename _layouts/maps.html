@@ -4,17 +4,28 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/gitzip/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/gitzip/js/FileSaver.min.js"></script>
+    <script type="text/javascript" src="/gitzip/js/jszip.min.js"></script>
+    <script type="text/javascript" src="/gitzip/js/API.js"></script>
+    {%- assign reverse_path_array = page.path | split: "/" | reverse                                                                    -%}
+    {%- assign path_array_last_item = reverse_path_array.first                                                                          -%}
+    {%- assign reverse_path_array_without_first_item = reverse_path_array | join: "/" | remove_first: path_array_last_item | split: "/" -%}
+    {%- assign path_array_without_last_item = reverse_path_array_without_first_item | reverse                                           -%}
+    {%- assign path_to_directory = path_array_without_last_item | join: "/"                                                             -%}
+    {%- assign download_url = "https://github.com/FortuneStreetModding/CommunityMaps/tree/jekyll/" | append: path_to_directory          -%}
+    <script>
+    'use strict';
+    function download() {
+        GitZip.zipRepo({{ download_url }});
+    }
+    </script>
   </head>
-  <body>
+  <body>  
     <h1>{{ page.title }}</h1>
     <section>{{ page.description }}</section>
 	<img src="{{ page.slug }}.png"/>
-    {% assign reverse_path_array = page.path | split: "/" | reverse %}
-    {% assign path_array_last_item = reverse_path_array.first %}
-    {% assign reverse_path_array_without_first_item = reverse_path_array | join: "/" | remove_first: path_array_last_item | split: "/" %}
-    {% assign path_array_without_last_item = reverse_path_array_without_first_item | reverse %}
-    {% assign path_to_directory = path_array_without_last_item | join: "/" %}
-    <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/FortuneStreetModding/CommunityMaps/tree/jekyll/{{ path_to_directory }}&rootDirectory=false" target="_blank">Download</a>
+    <button onclick="download()">Click me</button> 
 	<h2>Features</h2>
 	<h2>Map Properties</h2>
 	
