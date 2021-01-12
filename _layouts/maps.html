@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <h1>{{ page.title }}</h1>
+    <section>{{ page.description }}</section>
+	<img src="screenshot.png"/>
+	<h2>Features</h2>
+	<h2>Map Properties</h2>
+	
+    <table>
+      <thead>
+        <tr>
+          <th>Map Properties</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Initial Cash</td>
+          <td>{{ page.initialCash }}</td>
+        </tr>
+        <tr>
+          <td>Target Amount</td>
+          <td>{{ page.targetAmount }}</td>
+        </tr>
+        <tr>
+          <td>Base Salary</td>
+          <td>{{ page.baseSalary }}</td>
+        </tr>
+        <tr>
+          <td>Salary Increment</td>
+          <td>{{ page.salaryIncrement }}</td>
+        </tr>
+        <tr>
+          <td>Maximum Dice Roll</td>
+          <td>{{ page.maxDiceRoll }}</td>
+        </tr>
+        <tr>
+          <td>Looping Mode</td>
+          <td>{{ page.LoopingMode }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="changelog">Changelog</h2>
+
+    {% for change in page.changeLog %}
+    <h3>Version {{ change.version }}</h3>
+      {% if change.added != '' %}
+      <h4>Added</h4>
+      <ul>
+        {% for added in change.added %}
+        <li>{{ added }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if change.changed != '' %}
+      <h4>Changed</h4>
+      <ul>
+        {% for changed in change.changed %}
+        <li>{{ changed }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if change.removed != '' %}
+      <h4>Removed</h4>
+      <ul>
+        {% for removed in change.removed %}
+        <li>{{ removed }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    {% endfor %}
+
+    <h2 id="authors">Authors</h2>
+    <ul>
+    {% for author in page.authors %}
+    <li>{{ author.name }}</li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>

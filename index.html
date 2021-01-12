@@ -1,0 +1,14 @@
+---
+title: Community Maps
+---
+<div id="home">
+  <h1>Maps</h1>
+  <ul class="posts">
+    {% for map in site.maps %}
+      <a href="{{ map.url }}">{{ map.title}}</a> 
+	  <section>
+        {{ map.description }}
+      </section>
+    {% endfor %}
+  </ul>
+</div>
