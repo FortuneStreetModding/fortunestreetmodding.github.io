@@ -3,28 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    {% assign js_files = site.static_files | where: "js", true %}
-    {% for js_file in js_files %}
-      <script type="text/javascript" src="{{ js_file.path | relative_path }}"></script>
-    {% endfor %}
+    <script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/FileSaver.min.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
+    <script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/jszip.min.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
+    <script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/API.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
     {%- assign reverse_path_array = page.path | split: "/" | reverse                                                                    -%}
-    {%- assign path_array_last_item = reverse_path_array.first                                                                          -%}
+    {%- assign path_array_last_item = reverse_path_array.first | append: "/"                                                            -%}
     {%- assign reverse_path_array_without_first_item = reverse_path_array | join: "/" | remove_first: path_array_last_item | split: "/" -%}
     {%- assign path_array_without_last_item = reverse_path_array_without_first_item | reverse                                           -%}
     {%- assign path_to_directory = path_array_without_last_item | join: "/"                                                             -%}
     {%- assign download_url = "https://github.com/FortuneStreetModding/CommunityMaps/tree/jekyll/" | append: path_to_directory          -%}
-    <script>
-    'use strict';
-    function download() {
-        GitZip.zipRepo({{ download_url }});
-    }
-    </script>
   </head>
   <body>  
     <h1>{{ page.title }}</h1>
     <section>{{ page.description }}</section>
 	<img src="{{ page.slug }}.png"/>
-    <button onclick="download()">Click me</button> 
+    <button onclick="GitZip.zipRepo('{{ download_url }}');">Click me</button> 
 	<h2>Features</h2>
 	<h2>Map Properties</h2>
 	
