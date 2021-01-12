@@ -8,7 +8,7 @@
   <body>
     <h1>{{ page.title }}</h1>
     <section>{{ page.description }}</section>
-	<img src="{{ slug }}.png"/>
+	<img src="{{ page.slug }}.png"/>
     {% assign reverse_path_array = page.path | split: "/" | reverse %}
     {% assign path_array_last_item = reverse_path_array.first %}
     {% assign reverse_path_array_without_first_item = reverse_path_array | join: "/" | remove_first: path_array_last_item | split: "/" %}
