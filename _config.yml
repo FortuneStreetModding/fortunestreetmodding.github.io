@@ -1,7 +1,7 @@
 collections:
     maps:
         output: true
-        permalink: /maps/:name
+        permalink: /:name
 
 defaults:
     - 
