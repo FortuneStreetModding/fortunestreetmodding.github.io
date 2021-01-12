@@ -10,3 +10,5 @@ defaults:
         type: "maps"
       values:
         layout: "maps"
+
+baseurl: "CommunityMaps"
