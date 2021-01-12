@@ -10,5 +10,10 @@ defaults:
         type: "maps"
       values:
         layout: "maps"
+    - 
+      scope:
+        path: "gitzip/js"
+      values:
+        js: true
 
 baseurl: "/CommunityMaps"

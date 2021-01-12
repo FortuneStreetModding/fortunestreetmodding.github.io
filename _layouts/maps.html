@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script type="text/javascript" src="/gitzip/js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="/gitzip/js/FileSaver.min.js"></script>
-    <script type="text/javascript" src="/gitzip/js/jszip.min.js"></script>
-    <script type="text/javascript" src="/gitzip/js/API.js"></script>
+    {% assign js_files = site.static_files | where: "js", true %}
+    {% for js_file in js_files %}
+      <script type="text/javascript" src="{{ js_file.path | relative_path }}"></script>
+    {% endfor %}
     {%- assign reverse_path_array = page.path | split: "/" | reverse                                                                    -%}
     {%- assign path_array_last_item = reverse_path_array.first                                                                          -%}
     {%- assign reverse_path_array_without_first_item = reverse_path_array | join: "/" | remove_first: path_array_last_item | split: "/" -%}
@@ -103,6 +102,7 @@
 	
 <pre>
     page: {{ page | inspect }}
+    site: {{ page | inspect }}
 </pre>
 
   </body>
