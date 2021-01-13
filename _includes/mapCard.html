@@ -1,7 +1,20 @@
+{%- include getDirectory.html file_path=include.map.path -%}
+{%- assign download_url = "https://github.com/FortuneStreetModding/CommunityMaps/tree/jekyll/" | append: gd_directory_path -%}
+{%- include getPngFileFromDirectory.html directory_name=gd_directory_name -%}
 <div class="w3-third w3-container w3-margin-bottom">
-  <a href="{{ map.url | relative_url }}"><img src="{{ map.url | relative_url }}.png" style="width:100%" class="w3-hover-opacity"></a>
+  <div class="w3-display-container">
+    <a href="{{ include.map.url | relative_url }}"><img class="w3-image" src="{{ gpffd_png_file.name }}" style="width:100%;height:400px;object-fit: contain;" class="w3-hover-opacity"></a>
+    <div class="w3-display-bottomright w3-container">
+      <ul>
+      {% for author in include.map.authors %}
+      <li>{%- if author.url -%}<a href="{{ author.url }}">{{ author.name }}</a>{%- else -%}{{ author.name }}{%- endif -%}</li>
+      {% endfor %}
+    </div>
+  </div>
   <div class="w3-container w3-white">
-    <p><b>{{ map.title }}</b></p>
-    <p>{{ map.description }}</p>
+    <p><b>{{ include.map.title }}</b></p>
+    <p>{{ include.map.description }}</p>
+    <button class="w3-button w3-padding-large w3-dark-grey w3-margin-bottom" style="width:100%" onclick="GitZip.zipRepo('{{ download_url }}');">Download</button> 
   </div>
 </div>
+

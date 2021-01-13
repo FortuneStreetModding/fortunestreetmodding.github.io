@@ -18,15 +18,8 @@ layout: default
   </header>
   <!--- Maps -->
   <div class="w3-row-padding">
-    {% for map in site.maps %}
+    {%- for map in site.maps -%}
       {% include mapCard.html map=map %}
-    {% endfor %}
+    {%- endfor -%}
   </div>
 </div>
-
-	
-<pre>
-    page: {{ page | inspect }}
-    site: {{ site | inspect }}
-</pre>
-

@@ -1,0 +1,6 @@
+{%- assign gd_reverse_path_array = include.file_path | split: "/" | reverse -%}
+{%- assign gd_path_array_last_item = gd_reverse_path_array.first | append: "/" -%}
+{%- assign gd_reverse_path_array_without_first_item = gd_reverse_path_array | join: "/" | remove_first: gd_path_array_last_item | split: "/" -%}
+{%- assign gd_path_array_without_last_item = gd_reverse_path_array_without_first_item | reverse -%}
+{%- assign gd_directory_name = gd_path_array_without_last_item.last "/" -%}
+{%- assign gd_directory_path = gd_path_array_without_last_item | join: "/" -%}
