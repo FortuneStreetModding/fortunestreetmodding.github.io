@@ -1,26 +1,21 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/FileSaver.min.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
-    <script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/jszip.min.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
-    <script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/API.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
-    {%- assign reverse_path_array = page.path | split: "/" | reverse                                                                    -%}
-    {%- assign path_array_last_item = reverse_path_array.first | append: "/"                                                            -%}
-    {%- assign reverse_path_array_without_first_item = reverse_path_array | join: "/" | remove_first: path_array_last_item | split: "/" -%}
-    {%- assign path_array_without_last_item = reverse_path_array_without_first_item | reverse                                           -%}
-    {%- assign path_to_directory = path_array_without_last_item | join: "/"                                                             -%}
-    {%- assign download_url = "https://github.com/FortuneStreetModding/CommunityMaps/tree/jekyll/" | append: path_to_directory          -%}
-  </head>
-  <body>  
+---
+layout: default
+---
+{%- assign reverse_path_array = page.path | split: "/" | reverse                                                                    -%}
+{%- assign path_array_last_item = reverse_path_array.first | append: "/"                                                            -%}
+{%- assign reverse_path_array_without_first_item = reverse_path_array | join: "/" | remove_first: path_array_last_item | split: "/" -%}
+{%- assign path_array_without_last_item = reverse_path_array_without_first_item | reverse                                           -%}
+{%- assign path_to_directory = path_array_without_last_item | join: "/"                                                             -%}
+{%- assign download_url = "https://github.com/FortuneStreetModding/CommunityMaps/tree/jekyll/" | append: path_to_directory          -%}
+<div class="w3-container w3-margin">
+  <div class="w3-container w3-white">
     <h1>{{ page.title }}</h1>
     <section>{{ page.description }}</section>
-	<img src="{{ page.slug }}.png"/>
-    <button onclick="GitZip.zipRepo('{{ download_url }}');">Click me</button> 
-	<h2>Features</h2>
-	<h2>Map Properties</h2>
-	
+      <img src="{{ page.slug }}.png"/>
+    <button class="w3-button w3-padding-large w3-dark-grey" style="width:98.5%" onclick="GitZip.zipRepo('{{ download_url }}');">Download</button> 
+    <h2>Features</h2>
+    <h2>Map Properties</h2>
+
     <table>
       <thead>
         <tr>
@@ -92,11 +87,11 @@
     <li>{{ author.name }}</li>
     {% endfor %}
     </ul>
+  </div>
+</div>
 	
 <pre>
     page: {{ page | inspect }}
     site: {{ site | inspect }}
 </pre>
 
-  </body>
-</html>
