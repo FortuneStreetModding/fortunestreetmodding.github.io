@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>{{ page.title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/FileSaver.min.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
+<script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/jszip.min.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
+<script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/API.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+  <div class="w3-main">
+    {{ content }}
+  </div>
+</body>
+</html>

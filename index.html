@@ -1,14 +1,25 @@
 ---
 title: Community Maps
+layout: default
 ---
-<div id="home">
-  <h1>Maps</h1>
-  <ul class="posts">
+<div class="w3-row-padding">
+  <!-- Header -->
+  <header id="maps">
+    <div class="w3-container">
+      <h1><b>Community Maps</b></h1>
+      <div class="w3-section w3-bottombar w3-padding-16">
+        <span class="w3-margin-right">Filter:</span> 
+        <button class="w3-button w3-black">ALL</button>
+        <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Ported Maps</button>
+        <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Short Maps</button>
+        <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Standard Maps</button>
+      </div>
+    </div>
+  </header>
+  <!--- Maps -->
+  <div class="w3-row-padding">
     {% for map in site.maps %}
-      <a href="{{ map.url | relative_url }}">{{ map.title }}</a> 
-	  <section>
-        {{ map.description }}
-      </section>
+      {% include mapCard.html map=map %}
     {% endfor %}
-  </ul>
+  </div>
 </div>
