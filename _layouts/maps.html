@@ -1,17 +1,14 @@
 ---
 layout: default
 ---
-{%- assign reverse_path_array = page.path | split: "/" | reverse                                                                    -%}
-{%- assign path_array_last_item = reverse_path_array.first | append: "/"                                                            -%}
-{%- assign reverse_path_array_without_first_item = reverse_path_array | join: "/" | remove_first: path_array_last_item | split: "/" -%}
-{%- assign path_array_without_last_item = reverse_path_array_without_first_item | reverse                                           -%}
-{%- assign path_to_directory = path_array_without_last_item | join: "/"                                                             -%}
-{%- assign download_url = "https://github.com/FortuneStreetModding/CommunityMaps/tree/jekyll/" | append: path_to_directory          -%}
+{%- include getDirectory.html file_path=page.path -%}
+{%- assign download_url = "https://github.com/FortuneStreetModding/CommunityMaps/tree/jekyll/" | append: gd_directory_path -%}
+{%- include getPngFileFromDirectory.html directory_name=gd_directory_name -%}
 <div class="w3-container w3-margin">
   <div class="w3-container w3-white">
     <h1>{{ page.title }}</h1>
     <section>{{ page.description }}</section>
-      <img src="{{ page.slug }}.png"/>
+    <img src="{{ gpffd_png_file.name }}"/>
     <button class="w3-button w3-padding-large w3-dark-grey" style="width:98.5%" onclick="GitZip.zipRepo('{{ download_url }}');">Download</button> 
     <h2>Features</h2>
     <h2>Map Properties</h2>
@@ -84,9 +81,8 @@ layout: default
     <h2 id="authors">Authors</h2>
     <ul>
     {% for author in page.authors %}
-    <li>{{ author.name }}</li>
+    <li>{%- if author.url -%}<a href="{{ author.url }}">{{ author.name }}</a>{%- else -%}{{ author.name }}{%- endif -%}</li>
     {% endfor %}
     </ul>
   </div>
 </div>
-	

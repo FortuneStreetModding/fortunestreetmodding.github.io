@@ -23,5 +23,4 @@ changeLog:
       - Initial Release
 authors:
   - name: Deflaktor
-    url: https://github.com/Deflaktor
 ---
