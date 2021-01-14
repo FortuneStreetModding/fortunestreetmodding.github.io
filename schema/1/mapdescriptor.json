@@ -116,7 +116,8 @@
         "salaryIncrement",
         "maxDiceRoll",
         "frbFile1",
-        "background"
+        "background",
+        "tourMode"
     ],
     "additionalProperties": false,
     "properties": {
@@ -266,6 +267,11 @@
                     "type": "integer"
                 }
             },
+            "required": [
+                "opponent1",
+                "opponent2",
+                "opponent3"
+            ],
             "additionalProperties": false
         },
         "bgm": {
