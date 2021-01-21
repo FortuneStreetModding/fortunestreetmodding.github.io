@@ -1,12 +1,18 @@
 ---
-title: Serpentine Castle Avenue
-description: A small and balanced map for quick games.
+name: 
+  en: Serpentine Castle Avenue
+desc: 
+  en: A small and balanced map for quick games.
 initialCash: 1200
 targetAmount: 10000
 baseSalary: 300
 salaryIncrement: 225
 maxDiceRoll: 6
-loopingMode: None
+looping:
+  mode: None
+  radius: 0
+  horizontalPadding: 0
+  verticalSquareCount: 0
 changeLog:
   - 
     version: 2
