@@ -1,0 +1,164 @@
+---
+name:
+  de: Hölle
+  en: Hell
+desc:
+  en: "Ok so these are 2 different maps, but they have the exact same look and layout, with only difference, in hell on the warp island on the top right you can only go counter-clockwise, while in less-hell you can choose which direction you go in"
+ruleSet: Standard
+theme: Mario
+initialCash: 2500
+targetAmount: 25000
+baseSalary: 300
+salaryIncrement: 200
+maxDiceRoll: 7
+frbFile1: hell
+frbFile2: ""
+frbFile3: ""
+frbFile4: ""
+switchRotationOriginPoints:
+  []
+looping:
+  mode: None
+  radius: 0
+  horizontalPadding: 0
+  verticalSquareCount: 0
+tourMode:
+  bankruptcyLimit: 1
+  initialCash: 2500
+  opponent1: Stella
+  opponent2: Peach
+  opponent3: Bowser
+  clearRank: 1
+bgmId: 2
+background: bg007
+mapIcon: p_bg_007
+ventureCards:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+---
