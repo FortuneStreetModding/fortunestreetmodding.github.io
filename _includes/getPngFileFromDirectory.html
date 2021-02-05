@@ -1,7 +1,7 @@
 {%- assign gpffd_directory_name = include.directory_name -%}
 {%- assign gpffd_maps_collection = site.collections | where: "label", "maps" | first -%}
 {%- for gpffd_item in gpffd_maps_collection.files -%}
-  {%- if gpffd_item.extname == ".png" or gpffd_item.extname == ".gif" -%}
+  {%- if gpffd_item.extname == ".png" or gpffd_item.extname == ".webp" -%}
     {%- include getDirectory.html file_path=gpffd_item.path -%}
     {%- if gd_directory_name == gpffd_directory_name -%}
       {%- assign gpffd_png_file = gpffd_item -%}
