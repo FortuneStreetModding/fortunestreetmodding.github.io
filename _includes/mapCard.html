@@ -1,20 +1,26 @@
 {%- include getDirectory.html file_path=include.map.path -%}
 {%- assign download_url = "https://github.com/FortuneStreetModding/CommunityMaps/tree/jekyll/" | append: gd_directory_path -%}
 {%- include getPngFileFromDirectory.html directory_name=gd_directory_name -%}
-<div class="w3-third w3-container w3-margin-bottom">
-  <div class="w3-display-container">
-    <a href="{{ include.map.url | relative_url }}"><img class="w3-image" src="{{ gpffd_png_file.name }}" style="width:100%;height:400px;object-fit: contain;" class="w3-hover-opacity"></a>
-    <div class="w3-display-bottomright w3-container">
-      <ul>
-      {% for author in include.map.authors %}
-      <li>{%- if author.url -%}<a href="{{ author.url }}">{{ author.name }}</a>{%- else -%}{{ author.name }}{%- endif -%}</li>
-      {% endfor %}
+<div class="col-md-4 mb-5">
+  <div class="card h-100">
+    <div class="relative-container">
+      <a href="{{ include.map.url | relative_url }}"><img class="card-img-top" src="{{ gpffd_png_file.name }}" style="width:100%;height:400px;object-fit: contain;" class="w3-hover-opacity"></a>
+      <div class="top-right-absolute">
+        {% if include.map.changeLog -%}
+        {%- assign firstChange = include.map.changeLog | first -%}
+        <div class="badge bg-primary">v{{ firstChange.version }}</div>
+        {%- endif -%}
+        {% for author in include.map.authors %}
+        <div class="badge bg-secondary">{%- if author.url -%}<a class="text-reset" href="{{ author.url }}">{{ author.name }}</a>{%- else -%}{{ author.name }}{%- endif -%}</div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">{{ include.map.name.en }}</h4>
+      <p class="card-text">{{ include.map.desc.en }}</p>
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-primary" onclick="GitZip.zipRepo('{{ download_url }}');">Download</button>
     </div>
   </div>
-  <div class="w3-container w3-white">
-    <p><b>{{ include.map.name.en }}</b></p>
-    <p>{{ include.map.desc.en }}</p>
-    <button class="w3-button w3-padding-large w3-dark-grey w3-margin-bottom" style="width:100%" onclick="GitZip.zipRepo('{{ download_url }}');">Download</button> 
-  </div>
 </div>
-

@@ -2,24 +2,37 @@
 title: Community Maps
 layout: default
 ---
-<div class="w3-row-padding">
-  <!-- Header -->
-  <header id="maps">
-    <div class="w3-container">
-      <h1><b>Community Maps</b></h1>
-      <div class="w3-section w3-bottombar w3-padding-16">
-        <span class="w3-margin-right">Filter:</span> 
-        <button class="w3-button w3-black">ALL</button>
-        <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Ported Maps</button>
-        <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Short Maps</button>
-        <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Standard Maps</button>
+<main role="main">
+  <!--- Main -->
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Community Maps</h1>
+      <p class="lead text-muted">All user submitted maps are gathered on this page.</p>
+      <p>
+        <a href="#" class="btn btn-primary my-2">Upload Map</a>
+        <a href="#" class="btn btn-secondary my-2">Help</a>
+      </p>
+    </div>
+  </section>
+  <!-- Filter -->
+  <div class="container">
+    <h1><b></b></h1>
+    <span>Filter:</span> 
+    <div class="btn-group" role="group">
+      <button class="btn btn-secondary">ALL</button>
+      <button class="btn btn-secondary">Ported Maps</button>
+      <button class="btn btn-secondary">Short Maps</button>
+      <button class="btn btn-secondary">Standard Maps</button>
+    </div>
+  </div>
+  <!--- Maps -->
+  <div class="album">
+    <div class="container">
+      <div class="row">
+        {%- for map in site.maps -%}
+          {% include mapCard.html map=map %}
+        {%- endfor -%}
       </div>
     </div>
-  </header>
-  <!--- Maps -->
-  <div class="w3-row-padding">
-    {%- for map in site.maps -%}
-      {% include mapCard.html map=map %}
-    {%- endfor -%}
   </div>
-</div>
+</main>
