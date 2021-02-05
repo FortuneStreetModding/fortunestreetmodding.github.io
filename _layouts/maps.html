@@ -4,12 +4,12 @@ layout: default
 {%- include getDirectory.html file_path=page.path -%}
 {%- assign download_url = "https://github.com/FortuneStreetModding/CommunityMaps/tree/jekyll/" | append: gd_directory_path -%}
 {%- include getPngFileFromDirectory.html directory_name=gd_directory_name -%}
-<div class="w3-container w3-margin">
-  <div class="w3-container w3-white">
+<div class="container">
+  <div class="row">
     <h1>{{ page.name.en }}</h1>
     <section>{{ page.desc.en }}</section>
     <img src="{{ gpffd_png_file.name }}"/>
-    <button class="w3-button w3-padding-large w3-dark-grey" style="width:98.5%" onclick="GitZip.zipRepo('{{ download_url }}');">Download</button> 
+    <button class="btn btn-primary" style="width:98.5%" onclick="GitZip.zipRepo('{{ download_url }}');">Download</button> 
     <h2>Features</h2>
     <h2>Map Properties</h2>
 

@@ -4,16 +4,48 @@
 <title>{{ page.title }}</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@0.1/dist/css/bootstrap-dark.min.css" rel="stylesheet" crossorigin="anonymous">
 <script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/FileSaver.min.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
 <script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/jszip.min.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
 <script type="text/javascript" src="{% capture page_link %}{% link /assets/gitzip/js/API.js %}{% endcapture %}{{ page_link | relative_url }}"></script>
 <style>
   body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  .relative-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .bottom-left-absolute {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  .top-left-absolute {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  .top-right-absolute {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  .bottom-right-absolute {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  .centered-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 </style>
 </head>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
-  <div class="w3-main">
+<body>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+  <div>
     {{ content }}
   </div>
 </body>
