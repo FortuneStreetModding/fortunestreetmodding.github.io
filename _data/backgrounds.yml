@@ -34,9 +34,6 @@
 - file: bg103
   name: Colossus
   download: false
-- file: bg103_e
-  name: Colossus Easy
-  download: false
 - file: bg104
   name: Mt Magmageddon
   download: false
