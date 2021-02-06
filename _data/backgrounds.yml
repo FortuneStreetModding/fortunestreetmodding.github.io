@@ -1,0 +1,60 @@
+- file: bg001
+  name: Yoshi's Island
+  download: false
+- file: bg002
+  name: Mario Circuit
+  download: false
+- file: bg003
+  name: Peach's Castle
+  download: false
+- file: bg004
+  name: Mario Stadium
+  download: false
+- file: bg005
+  name: Delfino Plaza
+  download: false
+- file: bg006
+  name: Super Mario Bros.
+  download: false
+- file: bg007
+  name: Bowser's Castle
+  download: false
+- file: bg008
+  name: Starship Mario
+  download: false
+- file: bg009
+  name: Good Egg Galaxy
+  download: false
+- file: bg101
+  name: Castle Trodain
+  download: false
+- file: bg102
+  name: Ghost Ship
+  download: false
+- file: bg103
+  name: Colossus
+  download: false
+- file: bg103_e
+  name: Colossus Easy
+  download: false
+- file: bg104
+  name: Mt Magmageddon
+  download: false
+- file: bg105
+  name: Slimenia
+  download: false
+- file: bg106
+  name: Robbin' Hood Ruins
+  download: false
+- file: bg107
+  name: Alefgard
+  download: false
+- file: bg108
+  name: Alltrades Abbey
+  download: false
+- file: bg109
+  name: The Observatory
+  download: false
+- file: bg901
+  name: Tutorial
+  download: false

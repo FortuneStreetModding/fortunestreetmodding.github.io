@@ -1,0 +1,36 @@
+---
+title: Backgrounds
+layout: default
+---
+<main role="main">
+  <!--- Main -->
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Backgrounds</h1>
+      <p class="lead text-muted">A gallery of Fortune Street backgrounds.</p>
+    </div>
+  </section>
+  <!--- Maps -->
+  <div class="album">
+    <div class="container">
+      <div class="row">
+        {%- for background in site.data.backgrounds -%}
+        <div class="col-md-4 mb-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="backgrounds/{{ background.file }}.webp" style="object-fit: fill;"></a>
+            <div class="card-body">
+              <h4 class="card-title">{{ background.file }}</h4>
+              <p class="card-text">{{ background.name }}</p>
+            </div>
+            {%- if background.download -%}
+            <div class="card-footer">
+              <button class="btn btn-primary" onclick="GitZip.zipRepo('{{ download_url }}');">Download</button>
+            </div>
+            {%- endif -%}
+          </div>
+        </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</main>
