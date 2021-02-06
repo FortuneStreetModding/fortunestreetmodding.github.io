@@ -2,6 +2,8 @@ collections:
     maps:
         output: true
         permalink: /:name
+    backgrounds:
+        output: false
 
 defaults:
     - 
