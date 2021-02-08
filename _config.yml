@@ -1,0 +1,21 @@
+collections:
+    maps:
+        output: true
+        permalink: /:name
+    backgrounds:
+        output: false
+
+defaults:
+    - 
+      scope:
+        path: ""
+        type: "maps"
+      values:
+        layout: "maps"
+    - 
+      scope:
+        path: "gitzip/js"
+      values:
+        js: true
+
+baseurl: "/CommunityMaps"
