@@ -1,57 +1,94 @@
 - file: bg001
+  icon: p_bg_001
+  bgm:  BGM_MAP_YOSHI
   name: Yoshi's Island
   download: false
 - file: bg002
+  icon: p_bg_002
+  bgm:  BGM_MAP_CIRCUIT
   name: Mario Circuit
   download: false
 - file: bg003
+  icon: p_bg_003
+  bgm:  BGM_MAP_PEACH
   name: Peach's Castle
   download: false
 - file: bg004
+  icon: p_bg_004
+  bgm:  BGM_MAP_STADIUM
   name: Mario Stadium
   download: false
 - file: bg005
+  icon: p_bg_005
+  bgm:  BGM_MAP_DOLPIC
   name: Delfino Plaza
   download: false
 - file: bg006
+  icon: p_bg_006
+  bgm:  BGM_MAP_SMB
   name: Super Mario Bros.
   download: false
 - file: bg007
+  icon: p_bg_007
+  bgm:  BGM_MAP_KOOPA
   name: Bowser's Castle
   download: false
 - file: bg008
+  icon: p_bg_008
+  bgm:  BGM_MAP_STARSHIP
   name: Starship Mario
   download: false
 - file: bg009
+  icon: p_bg_009
+  bgm:  BGM_MAP_EGG
   name: Good Egg Galaxy
   download: false
 - file: bg101
+  icon: p_bg_101
+  bgm:  BGM_MAP_TRODAIN
   name: Castle Trodain
   download: false
 - file: bg102
+  icon: p_bg_102
+  bgm:  BGM_MAP_GHOSTSHIP
   name: Ghost Ship
   download: false
 - file: bg103
+  icon: p_bg_103
+  bgm:  BGM_MAP_MAJINZOU
   name: Colossus
   download: false
 - file: bg104
+  icon: p_bg_104
+  bgm:  BGM_MAP_SINOKAZAN
   name: Mt Magmageddon
   download: false
 - file: bg105
+  icon: p_bg_105
+  bgm:  BGM_MAP_SLABACCA
   name: Slimenia
   download: false
 - file: bg106
+  icon: p_bg_106
+  bgm:  BGM_MAP_KANDATA
   name: Robbin' Hood Ruins
   download: false
 - file: bg107
+  icon: p_bg_107
+  bgm:  BGM_MAP_ALEFGARD
   name: Alefgard
   download: false
 - file: bg108
+  icon: p_bg_108
+  bgm:  BGM_MAP_DHAMA
   name: Alltrades Abbey
   download: false
 - file: bg109
+  icon: p_bg_109
+  bgm:  BGM_MAP_ANGEL
   name: The Observatory
   download: false
 - file: bg901
   name: Tutorial
+  bgm:  BGM_MENU
   download: false
