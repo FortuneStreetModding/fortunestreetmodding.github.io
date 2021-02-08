@@ -1,0 +1,3 @@
+[submodule "assets/gitzip"]
+	path = assets/gitzip
+	url = https://github.com/KinoLien/gitzip.git
