@@ -1,7 +1,6 @@
 collections:
     maps:
         output: true
-        permalink: /:name
     backgrounds:
         output: false
 
@@ -12,10 +11,9 @@ defaults:
         type: "maps"
       values:
         layout: "maps"
+        permalink: "maps/:slug/index.html"
     - 
       scope:
         path: "gitzip/js"
       values:
         js: true
-
-baseurl: "/CommunityMaps"

@@ -1,15 +1,12 @@
 ---
 layout: default
 ---
-{%- include getDirectory.liquid file_path=page.path -%}
-{%- assign download_url = "https://github.com/FortuneStreetModding/CommunityMaps/tree/master/" | append: gd_directory_path -%}
-{%- include getPngFileFromDirectory.liquid directory_name=gd_directory_name -%}
 <div class="container">
   <div class="row">
     <h1>{{ page.name.en }}</h1>
     <section>{{ page.desc.en }}</section>
-    <img src="{{ gpffd_png_file.name }}"/>
-    <button class="btn btn-primary" style="width:98.5%" onclick="GitZip.zipRepo('{{ download_url }}');">Download</button> 
+    <img src="{%- include renderMapImage.liquid map=page -%}"/>
+    <button class="btn btn-primary" style="width:98.5%" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=page -%}');">Download</button> 
     <h2>Features</h2>
     <h2>Map Properties</h2>
 
