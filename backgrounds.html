@@ -22,9 +22,15 @@ layout: default
               <h4 class="card-title">{{ background.file }}</h4>
               <p class="card-text">{{ background.name }}</p>
             </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">{{ background.bgm }}</li>
+              {%- if background.icon -%}
+              <li class="list-group-item">{{ background.icon }}</li>
+              {%- endif -%}
+            </ul>
             {%- if background.download -%}
             <div class="card-footer">
-              <button class="btn btn-primary" onclick="GitZip.zipRepo('{{ download_url }}');">Download</button>
+              <button class="btn btn-primary" onclick="GitZip.zipRepo('{{ background.download }}');">Download</button>
             </div>
             {%- endif -%}
           </div>
