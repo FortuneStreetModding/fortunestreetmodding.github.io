@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-{%- include getDirectory.html file_path=page.path -%}
+{%- include getDirectory.liquid file_path=page.path -%}
 {%- assign download_url = "https://github.com/FortuneStreetModding/CommunityMaps/tree/master/" | append: gd_directory_path -%}
-{%- include getPngFileFromDirectory.html directory_name=gd_directory_name -%}
+{%- include getPngFileFromDirectory.liquid directory_name=gd_directory_name -%}
 <div class="container">
   <div class="row">
     <h1>{{ page.name.en }}</h1>
