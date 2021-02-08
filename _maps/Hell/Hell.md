@@ -3,9 +3,10 @@ name:
   de: Hölle
   en: Hell
 desc:
-  en: "Ok so these are 2 different maps, but they have the exact same look and layout, with only difference, in hell on the warp island on the top right you can only go counter-clockwise, while in less-hell you can choose which direction you go in"
+  en: "Welcome to hell, on the warp island on the top right you can only go counter-clockwise"
+  de: "Willkommen in der Hölle, auf der oberen rechten Insel kann man nur gegen den Uhrzeigersinn gehen"
 ruleSet: Standard
-theme: Mario
+theme: DragonQuest
 initialCash: 2500
 targetAmount: 25000
 baseSalary: 300
@@ -161,4 +162,4 @@ ventureCards:
   - 0
   - 0
   - 0
----
+...
