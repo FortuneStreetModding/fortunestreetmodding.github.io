@@ -1,0 +1,13 @@
+{% comment %}
+
+This snippet renders the relative map url for a given document in a map item.
+
+Args:
+  map: the collection map item
+
+Renders:
+  relative map url
+
+{% endcomment %}
+{%- capture temporary_variable -%}/maps/{{ include.map.slug }}{%- endcapture -%}
+{{ temporary_variable | relative_url }}

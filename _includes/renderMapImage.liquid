@@ -1,0 +1,15 @@
+{% comment %}
+
+This snippet renders the map image associated with the given map item.
+
+Args:
+  map: the collection map item
+
+Renders:
+  relative url of the first image that was found for the given map
+
+{% endcomment %}
+{%- include getParent.liquid file_path=include.map.path -%}
+{%- include getImageInDirectory.liquid directory_name=gd_directory_name -%}
+{%- capture temporary_variable -%}/maps/{{ gd_directory_name }}/{{ gpffd_image.name }}{%- endcapture -%}
+{{ temporary_variable | relative_url }}

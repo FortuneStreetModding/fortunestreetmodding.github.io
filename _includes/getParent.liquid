@@ -1,3 +1,15 @@
+{% comment %}
+
+This snippet returns the parent directory path and parent directory name for a given file path
+
+Args:
+  file_path: the path to calculate the parent directory
+
+Returns:
+  gd_directory_name: parent directory name
+  gd_directory_path: parent directory full path
+
+{% endcomment %}
 {%- assign gd_reverse_path_array = include.file_path | split: "/" | reverse -%}
 {%- assign gd_path_array_last_item = gd_reverse_path_array.first | append: "/" -%}
 {%- assign gd_reverse_path_array_without_first_item = gd_reverse_path_array | join: "/" | remove_first: gd_path_array_last_item | split: "/" -%}

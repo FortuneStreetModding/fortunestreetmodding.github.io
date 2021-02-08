@@ -1,0 +1,36 @@
+{% comment %}
+
+This snippet renders a map card with proper styling for the given map item
+
+Args:
+  map: the collection map item
+
+Renders:
+  map card with proper css styling
+
+{% endcomment %}
+<div class="col-md-4 mb-5">
+  <div class="card h-100">
+    <div class="relative-container">
+      <a href="{%- include renderMapLink.liquid map=include.map -%}"><img class="card-img-top map-card-image-board" src="{%- include renderMapImage.liquid map=include.map -%}"></a>
+      <img class="card-img-top map-card-image-background" src="{%- include renderMapBackground.liquid map=include.map -%}">
+      <div class="bottom-right-absolute">
+        {% for author in include.map.authors -%}
+        <div class="badge bg-primary">{%- if author.url -%}<a class="text-reset" href="{{ author.url }}">{{ author.name }}</a>{%- else -%}{{ author.name }}{%- endif -%}</div>
+        {%- endfor %}
+      </div>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title">{{ include.map.name.en }}</h4>
+      <p class="card-text">{{ include.map.desc.en }}</p>
+    </div>
+    <div class="card-footer">
+      <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=include.map -%}');">Download</button>
+      {% if include.map.changeLog -%}
+      {%- assign firstChange = include.map.changeLog | first -%}
+      <div class="badge bg-secondary">v{{ firstChange.version }}</div>
+      {%- endif %}
+    </div>
+  </div>
+</div>
+

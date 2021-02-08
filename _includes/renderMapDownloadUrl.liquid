@@ -1,0 +1,13 @@
+{% comment %}
+
+This snippet renders the download url for a given map item.
+
+Args:
+  map: the collection map item
+
+Renders:
+  full map download url
+
+{% endcomment %}
+{%- include getParent.liquid file_path=include.map.path -%}
+{{ "https://github.com/FortuneStreetModding/CommunityMaps/tree/master/" | append: gd_directory_path }}

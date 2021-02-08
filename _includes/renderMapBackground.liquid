@@ -1,0 +1,13 @@
+{% comment %}
+
+This snippet renders the map background associated with the given map item.
+
+Args:
+  map: the collection map item
+
+Renders:
+  relative url of the map background image corresponding to the map background set for the given map item
+
+{% endcomment %}
+{%- capture temporary_variable -%}/backgrounds/{{ include.map.background }}.webp{%- endcapture -%}
+{{ temporary_variable | relative_url }}
