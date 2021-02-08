@@ -9,5 +9,4 @@ Renders:
   relative url of the map background image corresponding to the map background set for the given map item
 
 {% endcomment %}
-{%- capture temporary_variable -%}/backgrounds/{{ include.map.background }}.webp{%- endcapture -%}
-{{ temporary_variable | relative_url }}
+{%- include renderBackground.liquid background=include.map.background -%}
