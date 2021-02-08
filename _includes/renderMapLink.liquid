@@ -9,5 +9,5 @@ Renders:
   relative map url
 
 {% endcomment %}
-{%- capture temporary_variable -%}/maps/{{ include.map.slug }}{%- endcapture -%}
-{{ temporary_variable | relative_url }}
+{%- include getParent.liquid file_path=include.map.url -%}
+{{ gd_directory_path | relative_url }}
