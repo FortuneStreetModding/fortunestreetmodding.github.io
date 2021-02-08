@@ -1,0 +1,13 @@
+{% comment %}
+
+This snippet renders for the given background base file name the corresponding relative image url
+
+Args:
+  background: the background to render as a relative image url
+
+Renders:
+  relative url of the map background image corresponding to given background base file name
+
+{% endcomment %}
+{%- capture temporary_variable -%}/backgrounds/{{ include.background }}.webp{%- endcapture -%}
+{{ temporary_variable | relative_url }}

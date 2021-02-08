@@ -17,7 +17,7 @@ layout: default
         {%- for background in site.data.backgrounds -%}
         <div class="col-md-4 mb-5">
           <div class="card h-100">
-            <img class="card-img-top" src="backgrounds/{{ background.file }}.webp" style="object-fit: fill;"></a>
+            <img class="card-img-top" src="{%- include renderBackground.liquid background=background.file -%}" style="object-fit: fill;"></a>
             <div class="card-body">
               <h4 class="card-title">{{ background.file }}</h4>
               <p class="card-text">{{ background.name }}</p>
