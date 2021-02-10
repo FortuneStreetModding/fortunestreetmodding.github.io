@@ -1,3 +1,23 @@
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,jekyll
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,jekyll
+
+### Jekyll ###
 _site/
-.*
-Gemfile.lock
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,jekyll

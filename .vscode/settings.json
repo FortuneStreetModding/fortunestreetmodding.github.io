@@ -1,0 +1,9 @@
+{
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/FortuneStreetModding/fortunestreetmodding.github.io/master/schema/2/mapdescriptor.json": ["/*.md"],
+    },
+    "files.associations": {
+        "*.md": "yaml"
+    },
+    "cmake.configureOnOpen": false
+}
