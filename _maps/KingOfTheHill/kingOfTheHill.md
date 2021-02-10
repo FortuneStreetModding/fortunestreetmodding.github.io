@@ -21,7 +21,7 @@ tourMode:
   opponent2: Yangus
   opponent3: Carver
   clearRank: 1
-changeLog:
+changelog:
   - version: 2
     changed: 
       - Changed to new md format

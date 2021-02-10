@@ -149,7 +149,7 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-changeLog:
+changelog:
   - version: 2021.02.05
     removed: 
       - Removed BOON SQUARE ISLAND again, since it is now possible to set which venture cards are active.

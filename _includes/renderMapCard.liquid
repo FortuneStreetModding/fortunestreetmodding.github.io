@@ -26,8 +26,8 @@ Renders:
     </div>
     <div class="card-footer">
       <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=include.map -%}');">Download</button>
-      {% if include.map.changeLog -%}
-      {%- assign firstChange = include.map.changeLog | first -%}
+      {% if include.map.changelog -%}
+      {%- assign firstChange = include.map.changelog | first -%}
       <div class="badge bg-secondary">v{{ firstChange.version }}</div>
       {%- endif %}
     </div>

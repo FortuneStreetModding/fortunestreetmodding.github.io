@@ -149,7 +149,7 @@ ventureCards:
   - 1  # Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-changeLog:
+changelog:
   - 
     version: 3
     changed: 
