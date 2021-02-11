@@ -4,7 +4,7 @@ name:
   de: König des Hügels
 desc: 
   en: A fierce rivality between opposing factions is taking place on this map. The rivals constantly replace each others' districts with their own by pushing the switch over and over again.
-  de: Eine erbitterte Rivalität zwischen gegnerischen Fraktionen erschüttert diese Karte. Die Rivalen tauschen sich gegenseitig die Bezirke aus indem sie den Schalter immer und immer wieder drücken.
+  de: Auf dieser Karte findet eine erbitterte Rivalität zwischen gegnerischen Fraktionen statt. Die Rivalen verdrängen sich gegenseitig die Bezirke aus indem sie den Schalter immer wieder drücken.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1000

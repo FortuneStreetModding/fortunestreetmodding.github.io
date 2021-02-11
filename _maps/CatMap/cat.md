@@ -4,7 +4,7 @@ name:
   de: Katzenkarte
 desc:
   en: You can only reach the bottom whiskers with a balloon, but if you can make it, the cyan district becomes powerful. This map plays best with no vacant plots added.
-  de: Die unteren Schnurrhaare können nur mit dem Ballon erreicht werden, aber falls du das schaffst, wird der türkise Bezirk sehr teuer. Am besten spielt sich diese Karte ohne zusätzliche freie Grundstücke.
+  de: Die unteren Schnurrhaare können nur mit dem Ballon erreicht werden, aber falls man schafft kann der türkise Bezirk sehr teuer werden. Diese Karte ist darauf ausgelegt ohne zusätzliche freie Grundstücke gespielt zu werden.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2240
@@ -151,6 +151,8 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
   - version: 2021.02.05
+    added:
+      - Venture card table
     removed: 
       - Removed BOON SQUARE ISLAND again, since it is now possible to set which venture cards are active.
   - version: 2020.10.08
