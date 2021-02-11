@@ -63,6 +63,38 @@
     filter: blur(1px) grayscale(50%) contrast(50%) opacity(50%);
     z-index: 1;
   }
+  .btn-tiny {
+    padding: 0.75rem 0.375rem;
+    line-height: 0;
+    float: right;
+    border: 0;
+  }
+  .de:checked ~ .lang :not(.de) {
+    visibility: hidden
+  }
+  .en:checked ~ .lang :not(.en) {
+    visibility: hidden
+  }
+  .es:checked ~ .lang :not(.es) {
+    visibility: hidden
+  }
+  .fr:checked ~ .lang :not(.fr) {
+    visibility: hidden
+  }
+  .it:checked ~ .lang :not(.it) {
+    visibility: hidden
+  }
+  .jp:checked ~ .lang :not(.jp) {
+    visibility: hidden
+  }
+  .lang {
+    display: grid;
+    float: left;
+  }
+  .lang > * {
+    grid-row: 1;
+    grid-column: 1;
+  }
 </style>
 </head>
 <body>
