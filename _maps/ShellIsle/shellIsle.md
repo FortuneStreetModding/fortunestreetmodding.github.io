@@ -1,10 +1,10 @@
 ---
 name: 
-  en: Seashell Island
+  en: Shell Isle
   de: Muschelinsel
 desc: 
-  en: A small and balanced map for quick games. Remake from Itadaki Street 2.
-  de: Eine kleine und ausgeglichene Karte für kurze Runden. Neu aufgelegt aus Itadaki Street 2.
+  en: A small and balanced map for quick games. Remake from Itadaki Street 2 but with added portal.
+  de: Eine kleine und ausgeglichene Karte für kurze Runden. Neu aufgelegt aus Itadaki Street 2 aber zusätzlich mit einem Portal.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1200
@@ -12,7 +12,7 @@ targetAmount: 10000
 baseSalary: 300
 salaryIncrement: 225
 maxDiceRoll: 6
-frbFile1: seashellIsland
+frbFile1: shellIsle
 tourMode:
   bankruptcyLimit: 1
   opponent1: Slime
@@ -150,13 +150,13 @@ ventureCards:
   - 0  # Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
-  - 
-    version: 3
+  - version: 3
+    added:
+      - Venture card table
     changed: 
       - Renamed to Seashell Island
       - Changed to new md file format
-  - 
-    version: 2
+  - version: 2
     added: 
       - Added additional configuration settings to be used by CSMM
       - Added more stuff
@@ -164,8 +164,7 @@ changelog:
       - Renamed to Serpentine Castle Avenue
     removed: 
       - Removed the boon square as the venture card for it is now disabled
-  - 
-    version: 1
+  - version: 1
     added: 
       - Initial Release
 authors:

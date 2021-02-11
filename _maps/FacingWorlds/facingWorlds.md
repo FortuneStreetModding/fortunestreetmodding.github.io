@@ -2,8 +2,8 @@
 name:
   en: Facing Worlds
 desc:
-  en: In this map you need to go to each side to gather all 4 suits. Taking the warp is a good shortcut, if you are lucky enough to land on it. The switches are an alternative though they are also risky since you can end up helping your opponents instead.
-  de: Auf dieser Karte muss man zu jeder Seite gehen um all 4 Farben zu sammeln. Wenn du Glück hast, kannst du mithilfe vom Warp schnell auf die andere Seite kommen. Die Schalter sind eine Alternative aber auch riskant da sie stattdessen auch deinen Gegnern helfen kann.
+  en: In this map you need to go to each side to gather all 4 suits. Taking the warp is a good shortcut, if you are lucky enough to land on it. The Event Squares are an alternative though they are also risky since you can end up helping your opponents instead.
+  de: Auf dieser Karte muss man zu jeder Seite gehen um alle 4 Farben zu sammeln. Wenn du Glück hast, kannst du mithilfe von einem Warp schnell auf die andere Seite kommen. Die Ereignisfelder sind eine riskante Alternative, da sie anstatt dir zu helfen, auch deinen Gegnern helfen kann.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -150,6 +150,8 @@ ventureCards:
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
   - version: 2
+    added:
+      - Venture card table
     changed: 
       - Changed to new md format
   - version: 1
