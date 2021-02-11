@@ -4,7 +4,7 @@ name:
   de: Frachtschiff
 desc:
   en: A map in the shape of a freighter encompassing the pill planet. The event squares swap all the players around which can mess up your planned route. The districts near the bank have several vacant lots, use them to your advantage. 
-  de: Eine Karte in Form eines Frachtschiffes der den Pillen-Planet umfasst. Das Ereignisfeld vertauscht alle Spieler was die geplannte Route vermasseln kann. Die Bezirke nahe der Bank haben mehrere freie Grundstücke, nutze sie zu deinem Vorteil.
+  de: Eine Karte in Form eines Frachtschiffes das den Pillen-Planet umfasst. Das Ereignisfeld vertauscht alle Spieler was die geplannte Route vermasseln kann. Die Bezirke nahe der Bank haben mehrere freie Grundstücke, nutze sie zu deinem Vorteil.
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
