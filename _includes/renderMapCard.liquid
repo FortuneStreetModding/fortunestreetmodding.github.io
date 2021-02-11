@@ -16,20 +16,90 @@ Renders:
       <img class="card-img-top map-card-image-background" src="{%- include renderMapBackground.liquid map=include.map -%}">
       <div class="bottom-right-absolute">
         {% for author in include.map.authors -%}
-        <div class="badge bg-primary">{%- if author.url -%}<a class="text-reset" href="{{ author.url }}">{{ author.name }}</a>{%- else -%}{{ author.name }}{%- endif -%}</div>
+          <div class="badge bg-primary">{%- if author.url -%}<a class="text-reset" href="{{ author.url }}">{{ author.name }}</a>{%- else -%}{{ author.name }}{%- endif -%}</div>
         {%- endfor %}
       </div>
     </div>
     <div class="card-body">
-      <h4 class="card-title">{{ include.map.name.en }}</h4>
-      <p class="card-text">{{ include.map.desc.en }}</p>
+      {% if include.map.name > 1 or include.map.desc.size > 1 %}
+        <input class="btn-check en" type="radio" name="lang-{{ include.map.slug }}" id="lang-en-{{ include.map.slug }}" autocomplete="off" checked>
+        <label class="btn btn-outline-primary btn-tiny" for="lang-en-{{ include.map.slug }}">🇬🇧</label>
+        {% if include.map.name.de or include.map.desc.de %}
+        <input class="btn-check de" type="radio" name="lang-{{ include.map.slug }}" id="lang-de-{{ include.map.slug }}" autocomplete="off">
+        <label class="btn btn-outline-primary btn-tiny" for="lang-de-{{ include.map.slug }}">🇩🇪</label>
+        {%- endif %}
+        {% if include.map.name.fr or include.map.desc.fr %}
+        <input class="btn-check fr" type="radio" name="lang-{{ include.map.slug }}" id="lang-fr-{{ include.map.slug }}" autocomplete="off">
+        <label class="btn btn-outline-primary btn-tiny" for="lang-fr-{{ include.map.slug }}">🇫🇷</label>
+        {%- endif %}
+        {% if include.map.name.it or include.map.desc.it %}
+        <input class="btn-check it" type="radio" name="lang-{{ include.map.slug }}" id="lang-it-{{ include.map.slug }}" autocomplete="off">
+        <label class="btn btn-outline-primary btn-tiny" for="lang-it-{{ include.map.slug }}">🇮🇹</label>
+        {%- endif %}
+        {% if include.map.name.es or include.map.desc.es %}
+        <input class="btn-check es" type="radio" name="lang-{{ include.map.slug }}" id="lang-es-{{ include.map.slug }}" autocomplete="off">
+        <label class="btn btn-outline-primary btn-tiny" for="lang-es-{{ include.map.slug }}">🇪🇸</label>
+        {%- endif %}
+        {% if include.map.name.jp or include.map.desc.jp %}
+        <input class="btn-check jp" type="radio" name="lang-{{ include.map.slug }}" id="lang-jp-{{ include.map.slug }}" autocomplete="off">
+        <label class="btn btn-outline-primary btn-tiny" for="lang-jp-{{ include.map.slug }}">🇯🇵</label>
+        {%- endif %}
+      {%- endif %}
+      <div class="row lang">
+        <h4 class="card-title en
+        {%- if include.map.name.de == Nil %} de{% endif -%}
+        {%- if include.map.name.fr == Nil %} fr{% endif -%}
+        {%- if include.map.name.it == Nil %} it{% endif -%}
+        {%- if include.map.name.es == Nil %} es{% endif -%}
+        {%- if include.map.name.jp == Nil %} jp{% endif -%}">{{ include.map.name.en }}</h4>
+        {% if include.map.name.de -%}
+          <h4 class="card-title de">{{ include.map.name.de }}</h4>
+        {%- endif %}
+        {% if include.map.name.fr -%}
+          <h4 class="card-title fr">{{ include.map.name.fr }}</h4>
+        {%- endif %}
+        {% if include.map.name.it -%}
+          <h4 class="card-title it">{{ include.map.name.it }}</h4>
+        {%- endif %}
+        {% if include.map.name.es -%}
+          <h4 class="card-title es">{{ include.map.name.es }}</h4>
+        {%- endif %}
+        {% if include.map.name.jp -%}
+          <h4 class="card-title jp">{{ include.map.name.jp }}</h4>
+        {%- endif %}
+      </div>
+      <div class="row lang">
+        <p class="card-text en
+        {%- if include.map.desc.de == Nil %} de{% endif -%}
+        {%- if include.map.desc.fr == Nil %} fr{% endif -%}
+        {%- if include.map.desc.it == Nil %} it{% endif -%}
+        {%- if include.map.desc.es == Nil %} es{% endif -%}
+        {%- if include.map.desc.jp == Nil %} jp{% endif -%}">{{ include.map.desc.en }}</p>
+        {% if include.map.desc.de -%}
+          <p class="card-text de">{{ include.map.desc.de }}</p>
+        {%- endif %}
+        {% if include.map.desc.fr -%}
+          <p class="card-text fr">{{ include.map.desc.fr }}</p>
+        {%- endif %}
+        {% if include.map.desc.it -%}
+          <p class="card-text it">{{ include.map.desc.it }}</p>
+        {%- endif %}
+        {% if include.map.desc.es -%}
+          <p class="card-text es">{{ include.map.desc.es }}</p>
+        {%- endif %}
+        {% if include.map.desc.jp -%}
+          <p class="card-text jp">{{ include.map.desc.jp }}</p>
+        {%- endif %}
+      </div>
     </div>
     <div class="card-footer">
-      <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=include.map -%}');">Download</button>
-      {% if include.map.changelog -%}
-      {%- assign firstChange = include.map.changelog | first -%}
-      <div class="badge bg-secondary">v{{ firstChange.version }}</div>
-      {%- endif %}
+      <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=include.map -%}');">
+        Download
+        {% if include.map.changelog -%}
+          {%- assign firstChange = include.map.changelog | first -%}
+          <span class="badge bg-secondary">v{{ firstChange.version }}</span>
+        {%- endif %}
+      </button>
     </div>
   </div>
 </div>
