@@ -9,10 +9,10 @@ Renders:
   map card with proper css styling
 
 {% endcomment %}
-<div class="col-md-4 mb-5 map-card {{ include.map.slug }}">
+<div class="col mb-4 map-card {{ include.map.slug }}">
   <div class="card h-100">
     <div class="relative-container">
-      <a href="{%- include renderMapLink.liquid map=include.map -%}"><img class="card-img-top map-card-image-board" src="{%- include renderMapImage.liquid map=include.map -%}"></a>
+      <a href="#{{map.slug}}"><img class="card-img-top map-card-image-board" src="{%- include renderMapImage.liquid map=include.map -%}"></a>
       <img class="card-img-top map-card-image-background" src="{%- include renderMapBackground.liquid map=include.map -%}">
       <div class="bottom-right-absolute">
         {% for author in include.map.authors -%}
@@ -68,7 +68,7 @@ Renders:
           <h4 class="card-title jp">{{ include.map.name.jp }}</h4>
         {%- endif %}
       </div>
-      <div class="row lang">
+      <div class="row lang" style="width: 100%">
         <p class="card-text en
         {%- if include.map.desc.de == Nil %} de{% endif -%}
         {%- if include.map.desc.fr == Nil %} fr{% endif -%}
