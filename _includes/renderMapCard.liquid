@@ -12,8 +12,8 @@ Renders:
 <div class="col mb-4 mapCard {% include renderMapSlug.liquid map=include.map -%}">
   <div class="card h-100">
     <div class="relative-container">
-      <a href="#{%- include renderMapSlug.liquid map=include.map -%}"><img class="card-img-top mapCard-image-board" src="{%- include renderMapImage.liquid map=include.map -%}"></a>
-      <img class="card-img-top mapCard-image-background" src="{%- include renderMapBackground.liquid map=include.map -%}">
+      <a href="#{%- include renderMapSlug.liquid map=include.map -%}"><img class="card-img-top mapCard-image-board" src="{%- include renderMapImage.liquid map=include.map -%}" loading="lazy"></a>
+      <img class="card-img-top mapCard-image-background" src="{%- include renderMapBackground.liquid map=include.map -%}" loading="lazy">
       <div class="bottom-right-absolute">
         {% for author in include.map.authors -%}
           <div class="badge bg-primary">{%- if author.url -%}<a class="text-reset" href="{{ author.url }}">{{ author.name }}</a>{%- else -%}{{ author.name }}{%- endif -%}</div>
