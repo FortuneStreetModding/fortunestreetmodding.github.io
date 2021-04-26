@@ -9,7 +9,7 @@ Renders:
   map card with proper css styling
 
 {% endcomment %}
-<div class="col-md-4 mb-5">
+<div class="col-md-4 mb-5 map-card {{ include.map.slug }}">
   <div class="card h-100">
     <div class="relative-container">
       <a href="{%- include renderMapLink.liquid map=include.map -%}"><img class="card-img-top map-card-image-board" src="{%- include renderMapImage.liquid map=include.map -%}"></a>
