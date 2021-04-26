@@ -1,4 +1,4 @@
-{% comment %}
+{%- comment -%}
 
 This snippet renders the relative map url for a given document in a map item.
 
@@ -8,6 +8,6 @@ Args:
 Renders:
   relative map url
 
-{% endcomment %}
+{%- endcomment -%}
 {%- include getParent.liquid file_path=include.map.url -%}
 {{ gd_directory_path | relative_url }}

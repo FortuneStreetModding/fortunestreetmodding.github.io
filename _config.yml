@@ -1,19 +1,9 @@
 collections:
-    maps:
-        output: true
-    backgrounds:
-        output: false
+    - maps
+    - backgrounds
 
 defaults:
-    - 
-      scope:
-        path: ""
-        type: "maps"
-      values:
-        layout: "maps"
-        permalink: "maps/:slug/index.html"
-    - 
-      scope:
+    - scope:
         path: "gitzip/js"
       values:
         js: true

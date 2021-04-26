@@ -1,0 +1,14 @@
+{%- comment -%}
+
+This snippet renders the properties of a given object for debugging purposes 
+
+Args:
+  obj: the object which properties shall be rendered
+
+Renders:
+  rendered properties of the given object in json format
+
+{%- endcomment -%}
+<pre>
+{{ include.obj | inspect }}
+</pre>
