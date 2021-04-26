@@ -92,56 +92,96 @@ Renders:
         {%- endif %}
       </div>
     </div>
-    <div class="mapInfo" id="{% include renderMapSlug.liquid map=include.map -%}">
-      <ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Rules</div>
-            {{ include.map.ruleSet }}
+    <div class="card-body mapInfo" id="{% include renderMapSlug.liquid map=include.map -%}">
+      <div class="row mb-4">
+        <div class="col">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Rules</div>
+                {{- include.map.ruleSet -}}
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Theme</div>
+                {{- include.map.theme -}}
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Initial Cash</div>
+                {{- include.map.initialCash -}}
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Target Amount</div>
+                {{- include.map.targetAmount -}}
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Base Salary</div>
+                {{- include.map.baseSalary -}}
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Salary Increment</div>
+                {{- include.map.salaryIncrement -}}
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Max Dice Roll</div>
+                {{- include.map.maxDiceRoll -}}
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col mapCard">
+          <div class="card">
+            <div class="fw-bold card-header">Venture Cards</div>
+            <div class="card-body">
+              <div class="row mx-0">
+                {%- for ventureCard in site.data.ventureCards -%}
+                  {%- if include.map.ventureCards -%}
+                    {%- if include.map.ventureCards[forloop.index0] == 1 -%}
+                      <div class="col ventureCard card bg-primary" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                    {%- else -%}
+                      <div class="col ventureCard card" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                    {%- endif -%}
+                  {%- else -%}
+                    {%- assign ruleSet = include.map.ruleSet | downcase -%}
+                    {%- if ruleSet == "standard" -%}
+                      {%- if ventureCard.defaultStandard == true -%}
+                        <div class="col ventureCard card bg-primary" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                      {%- else -%}
+                        <div class="col ventureCard card" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                      {%- endif -%}
+                    {%- else -%}
+                      {%- if ventureCard.defaultEasy == true -%}
+                        <div class="col ventureCard card bg-primary" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                      {%- else -%}
+                        <div class="col ventureCard card" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                    {{forloop.index}}
+                  </div>
+                {%- endfor -%}
+              </div>
+            </div>
           </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Theme</div>
-            {{ include.map.theme }}
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Initial Cash</div>
-            {{ include.map.initialCash }}
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Target Amount</div>
-            {{ include.map.targetAmount }}
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Base Salary</div>
-            {{ include.map.baseSalary }}
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Salary Increment</div>
-            {{ include.map.salaryIncrement }}
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold">Max Dice Roll</div>
-            {{ include.map.maxDiceRoll }}
-          </div>
-        </li>
-      </ul>
-      <details>
+        </div>
+      </div>
+      {% if include.map.changelog %}
+      <details class="mb-4">
         <summary class="accordion-header accordion-button">Show Changelog</summary>
         <div class="accordion-body nav-tabs">
           {% for change in include.map.changelog %}
-            <div class="fw-bold nav-link border md-5" style="display:inline-block">Version <span class="badge bg-secondary">{{ change.version }}</span></div>
+            <div class="fw-bold nav-link border mt-2" style="display:inline-block">Version <span class="badge bg-secondary">{{ change.version }}</span></div>
             {% if change.added %}
             <div class="list-group-item d-flex justify-content-between align-items-start">
               <div class="ms-2 me-auto">
@@ -182,6 +222,7 @@ Renders:
         </ul>
         </div>
       </details>
+      {% endif %}
     </div>
     <div class="card-footer">
       <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=include.map -%}');">
