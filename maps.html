@@ -2,6 +2,21 @@
 title: Community Maps
 layout: default
 ---
+<style>
+  :target ~.map-card {
+    display:none;
+  }
+  {% for map in site.maps %}
+  {%- if site.maps.last == map -%}
+  #{{map.slug}}:target ~.{{map.slug}}
+  {%- else -%}
+  #{{map.slug}}:target ~.{{map.slug}},
+  {%- endif -%}
+  {% endfor %}
+  {
+    display:block;
+  }
+</style>
 <main role="main">
   <!--- Main -->
   <section class="jumbotron text-center">
@@ -14,18 +29,6 @@ layout: default
       </p>
     </div>
   </section>
-  <!-- Filter -->
-  <!-- 
-  <div class="container">
-    <h1><b></b></h1>
-    <span>Filter:</span> 
-    <div class="btn-group" role="group">
-      <button class="btn btn-secondary">ALL</button>
-      <button class="btn btn-secondary">Ported Maps</button>
-      <button class="btn btn-secondary">Short Maps</button>
-      <button class="btn btn-secondary">Standard Maps</button>
-    </div>
-  </div> -->
   <!--- Maps -->
   <div class="album">
     <div class="container">
