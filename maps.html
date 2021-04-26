@@ -7,14 +7,13 @@ layout: default
     display:none;
   }
   {% for map in site.maps -%}
-  {% if forloop.last == true -%}
-  #{% include renderMapSlug.liquid map=map %}:target ~.{% include renderMapSlug.liquid map=map %}
-  {% else -%}
-  #{% include renderMapSlug.liquid map=map %}:target ~.{% include renderMapSlug.liquid map=map %},
-  {% endif -%}
+  a#{% include renderMapSlug.liquid map=map %}:target ~.{% include renderMapSlug.liquid map=map %},a#{% include renderMapSlug.liquid map=map %}:target ~.{% include renderMapSlug.liquid map=map %} .mapInfo {%- if forloop.last == false %},{%- endif %}
   {% endfor -%}
   {
     display:block;
+  }
+  .mapInfo {
+    display:none;
   }
 </style>
 <main role="main">
