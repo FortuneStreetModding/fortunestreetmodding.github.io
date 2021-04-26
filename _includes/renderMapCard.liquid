@@ -92,6 +92,97 @@ Renders:
         {%- endif %}
       </div>
     </div>
+    <div class="mapInfo" id="{% include renderMapSlug.liquid map=include.map -%}">
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Rules</div>
+            {{ include.map.ruleSet }}
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Theme</div>
+            {{ include.map.theme }}
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Initial Cash</div>
+            {{ include.map.initialCash }}
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Target Amount</div>
+            {{ include.map.targetAmount }}
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Base Salary</div>
+            {{ include.map.baseSalary }}
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Salary Increment</div>
+            {{ include.map.salaryIncrement }}
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Max Dice Roll</div>
+            {{ include.map.maxDiceRoll }}
+          </div>
+        </li>
+      </ul>
+      <details>
+        <summary class="accordion-header accordion-button">Show Changelog</summary>
+        <div class="accordion-body nav-tabs">
+          {% for change in include.map.changelog %}
+            <div class="fw-bold nav-link border md-5" style="display:inline-block">Version <span class="badge bg-secondary">{{ change.version }}</span></div>
+            {% if change.added %}
+            <div class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Added</div>
+                <ul class="list-group"></ul>
+                  {% for added in change.added %}
+                  <li>{{ added }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+            {% endif %}
+            {% if change.changed %}
+            <div class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Changed</div>
+                <ul class="list-group"></ul>
+                  {% for changed in change.changed %}
+                  <li>{{ changed }}</li>
+                {% endfor %}
+              </ul>
+              </div>
+            </div>
+            {% endif %}
+            {% if change.removed %}
+            <div class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Removed</div>
+                <ul class="list-group"></ul>
+                  {% for removed in change.removed %}
+                  <li>{{ removed }}</li>
+                {% endfor %}
+              </ul>
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        </div>
+      </details>
+    </div>
     <div class="card-footer">
       <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=include.map -%}');">
         Download
