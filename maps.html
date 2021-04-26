@@ -3,25 +3,19 @@ title: Community Maps
 layout: default
 ---
 <style>
-  :target ~.map-card {
+  :target ~.mapCard {
     display:none;
   }
   {% for map in site.maps -%}
-    {%- if forloop.last == true -%}
-      #{{map.slug}}:target ~.{{map.slug}}
-    {%- else -%}
-      #{{map.slug}}:target ~.{{map.slug}},
-    {%- endif -%}
-  {%- endfor %}
+  {% if forloop.last == true -%}
+  #{% include renderMapSlug.liquid map=map %}:target ~.{% include renderMapSlug.liquid map=map %}
+  {% else -%}
+  #{% include renderMapSlug.liquid map=map %}:target ~.{% include renderMapSlug.liquid map=map %},
+  {% endif -%}
+  {% endfor -%}
   {
     display:block;
   }
-
-  .map-card { min-width: 224px; }
-  @media (min-width: 340px) { .map-card { min-width: 320px; } }
-  @media (min-width: 500px) { .map-card { min-width: 480px; } }
-  @media (min-width: 992px) { .map-card { min-width: 224px; } }
-
 </style>
 <main role="main">
   <!--- Main -->
@@ -40,7 +34,7 @@ layout: default
     <div class="container">
       <div class="row">
         {%- for map in site.maps -%}
-          <a id="{{map.slug}}" style="display: none"></a>
+          <a id="{% include renderMapSlug.liquid map=map %}" style="display: none"></a>
         {%- endfor -%}
         {%- for map in site.maps -%}
           {% include renderMapCard.liquid map=map %}
@@ -50,10 +44,10 @@ layout: default
           {% endif %}
           {% if forloop.last == true %}
             {% if mod == 1 %}
-              <div class="col map-card"></div>
-              <div class="col map-card"></div>
+              <div class="col mapCard"></div>
+              <div class="col mapCard"></div>
             {% elsif mod == 2 %}
-              <div class="col map-card"></div>
+              <div class="col mapCard"></div>
             {% endif %}
           {% endif %}
         {%- endfor -%}

@@ -1,4 +1,4 @@
-{% comment %}
+{%- comment -%}
 
 This snippet renders a map card with proper styling for the given map item
 
@@ -8,12 +8,12 @@ Args:
 Renders:
   map card with proper css styling
 
-{% endcomment %}
-<div class="col mb-4 map-card {{ include.map.slug }}">
+{%- endcomment -%}
+<div class="col mb-4 mapCard {% include renderMapSlug.liquid map=include.map -%}">
   <div class="card h-100">
     <div class="relative-container">
-      <a href="#{{map.slug}}"><img class="card-img-top map-card-image-board" src="{%- include renderMapImage.liquid map=include.map -%}"></a>
-      <img class="card-img-top map-card-image-background" src="{%- include renderMapBackground.liquid map=include.map -%}">
+      <a href="#{%- include renderMapSlug.liquid map=include.map -%}"><img class="card-img-top mapCard-image-board" src="{%- include renderMapImage.liquid map=include.map -%}"></a>
+      <img class="card-img-top mapCard-image-background" src="{%- include renderMapBackground.liquid map=include.map -%}">
       <div class="bottom-right-absolute">
         {% for author in include.map.authors -%}
           <div class="badge bg-primary">{%- if author.url -%}<a class="text-reset" href="{{ author.url }}">{{ author.name }}</a>{%- else -%}{{ author.name }}{%- endif -%}</div>
@@ -22,27 +22,27 @@ Renders:
     </div>
     <div class="card-body">
       {% if include.map.name > 1 or include.map.desc.size > 1 %}
-        <input class="btn-check en" type="radio" name="lang-{{ include.map.slug }}" id="lang-en-{{ include.map.slug }}" autocomplete="off" checked>
-        <label class="btn btn-outline-primary btn-tiny" for="lang-en-{{ include.map.slug }}">🇬🇧</label>
+        <input class="btn-check en" type="radio" name="lang-{%- include renderMapSlug.liquid map=include.map -%}" id="lang-en-{%- include renderMapSlug.liquid map=include.map -%}" autocomplete="off" checked>
+        <label class="btn btn-outline-primary btn-tiny" for="lang-en-{%- include renderMapSlug.liquid map=include.map -%}">🇬🇧</label>
         {% if include.map.name.de or include.map.desc.de %}
-        <input class="btn-check de" type="radio" name="lang-{{ include.map.slug }}" id="lang-de-{{ include.map.slug }}" autocomplete="off">
-        <label class="btn btn-outline-primary btn-tiny" for="lang-de-{{ include.map.slug }}">🇩🇪</label>
+        <input class="btn-check de" type="radio" name="lang-{%- include renderMapSlug.liquid map=include.map -%}" id="lang-de-{%- include renderMapSlug.liquid map=include.map -%}" autocomplete="off">
+        <label class="btn btn-outline-primary btn-tiny" for="lang-de-{%- include renderMapSlug.liquid map=include.map -%}">🇩🇪</label>
         {%- endif %}
         {% if include.map.name.fr or include.map.desc.fr %}
-        <input class="btn-check fr" type="radio" name="lang-{{ include.map.slug }}" id="lang-fr-{{ include.map.slug }}" autocomplete="off">
-        <label class="btn btn-outline-primary btn-tiny" for="lang-fr-{{ include.map.slug }}">🇫🇷</label>
+        <input class="btn-check fr" type="radio" name="lang-{%- include renderMapSlug.liquid map=include.map -%}" id="lang-fr-{%- include renderMapSlug.liquid map=include.map -%}" autocomplete="off">
+        <label class="btn btn-outline-primary btn-tiny" for="lang-fr-{%- include renderMapSlug.liquid map=include.map -%}">🇫🇷</label>
         {%- endif %}
         {% if include.map.name.it or include.map.desc.it %}
-        <input class="btn-check it" type="radio" name="lang-{{ include.map.slug }}" id="lang-it-{{ include.map.slug }}" autocomplete="off">
-        <label class="btn btn-outline-primary btn-tiny" for="lang-it-{{ include.map.slug }}">🇮🇹</label>
+        <input class="btn-check it" type="radio" name="lang-{%- include renderMapSlug.liquid map=include.map -%}" id="lang-it-{%- include renderMapSlug.liquid map=include.map -%}" autocomplete="off">
+        <label class="btn btn-outline-primary btn-tiny" for="lang-it-{%- include renderMapSlug.liquid map=include.map -%}">🇮🇹</label>
         {%- endif %}
         {% if include.map.name.es or include.map.desc.es %}
-        <input class="btn-check es" type="radio" name="lang-{{ include.map.slug }}" id="lang-es-{{ include.map.slug }}" autocomplete="off">
-        <label class="btn btn-outline-primary btn-tiny" for="lang-es-{{ include.map.slug }}">🇪🇸</label>
+        <input class="btn-check es" type="radio" name="lang-{%- include renderMapSlug.liquid map=include.map -%}" id="lang-es-{%- include renderMapSlug.liquid map=include.map -%}" autocomplete="off">
+        <label class="btn btn-outline-primary btn-tiny" for="lang-es-{%- include renderMapSlug.liquid map=include.map -%}">🇪🇸</label>
         {%- endif %}
         {% if include.map.name.jp or include.map.desc.jp %}
-        <input class="btn-check jp" type="radio" name="lang-{{ include.map.slug }}" id="lang-jp-{{ include.map.slug }}" autocomplete="off">
-        <label class="btn btn-outline-primary btn-tiny" for="lang-jp-{{ include.map.slug }}">🇯🇵</label>
+        <input class="btn-check jp" type="radio" name="lang-{%- include renderMapSlug.liquid map=include.map -%}" id="lang-jp-{%- include renderMapSlug.liquid map=include.map -%}" autocomplete="off">
+        <label class="btn btn-outline-primary btn-tiny" for="lang-jp-{%- include renderMapSlug.liquid map=include.map -%}">🇯🇵</label>
         {%- endif %}
       {%- endif %}
       <div class="row lang">
@@ -103,4 +103,3 @@ Renders:
     </div>
   </div>
 </div>
-
