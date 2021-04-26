@@ -6,16 +6,22 @@ layout: default
   :target ~.map-card {
     display:none;
   }
-  {% for map in site.maps %}
-  {%- if site.maps.last == map -%}
-  #{{map.slug}}:target ~.{{map.slug}}
-  {%- else -%}
-  #{{map.slug}}:target ~.{{map.slug}},
-  {%- endif -%}
-  {% endfor %}
+  {% for map in site.maps -%}
+    {%- if forloop.last == true -%}
+      #{{map.slug}}:target ~.{{map.slug}}
+    {%- else -%}
+      #{{map.slug}}:target ~.{{map.slug}},
+    {%- endif -%}
+  {%- endfor %}
   {
     display:block;
   }
+
+  .map-card { min-width: 224px; }
+  @media (min-width: 340px) { .map-card { min-width: 320px; } }
+  @media (min-width: 500px) { .map-card { min-width: 480px; } }
+  @media (min-width: 992px) { .map-card { min-width: 224px; } }
+
 </style>
 <main role="main">
   <!--- Main -->
@@ -34,7 +40,22 @@ layout: default
     <div class="container">
       <div class="row">
         {%- for map in site.maps -%}
+          <a id="{{map.slug}}" style="display: none"></a>
+        {%- endfor -%}
+        {%- for map in site.maps -%}
           {% include renderMapCard.liquid map=map %}
+          {% assign mod = forloop.index | modulo: 3 %}
+          {% if mod == 0 %}
+            <div class="w-100"></div>
+          {% endif %}
+          {% if forloop.last == true %}
+            {% if mod == 1 %}
+              <div class="col map-card"></div>
+              <div class="col map-card"></div>
+            {% elsif mod == 2 %}
+              <div class="col map-card"></div>
+            {% endif %}
+          {% endif %}
         {%- endfor -%}
       </div>
     </div>
