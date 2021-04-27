@@ -1,0 +1,39 @@
+---
+name: 
+  en: Toad's House
+  de: Toads Haus
+desc: 
+  en: Whenever someone steps on an Event Square, Lakitu will visit Toad's house. A small map where you can ramp up promotions quickly.
+  de: Jedes Mal wenn jemand auf ein Ereignisfeld tritt, besucht Lakitu Toads Haus. Eine kleine Karte in der man schnell aufsteigen kann.
+ruleSet: Standard
+theme: Mario
+initialCash: 1200
+targetAmount: 18000
+baseSalary: 350
+salaryIncrement: 50
+maxDiceRoll: 6
+frbFile1: toad
+background: bg006
+tourMode:
+  bankruptcyLimit: 1
+  opponent1: Toad
+  opponent2: Mario
+  opponent3: Peach
+  clearRank: 1
+changelog:
+  - version: 3
+    changed: 
+      - Ported over to new .yaml file format
+  - version: 2
+    changed: 
+      - Adjusted map so that Lakitu will appear less often
+      - Initial cash reduced from 1500 -> 1200
+      - Base salary increased 300 -> 350
+      - The shops near the bank are now vacant plots to make them more useful
+  - version: 1
+    added: 
+      - Initial Release
+authors:
+  - name: Deflaktor
+    url: https://github.com/Deflaktor
+...
