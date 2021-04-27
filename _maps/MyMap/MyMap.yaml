@@ -1,0 +1,21 @@
+---
+name:
+  en: My Map
+desc:
+  en: "This is my sample map"
+ruleSet: Standard
+theme: DragonQuest
+initialCash: 2000
+targetAmount: 20000
+baseSalary: 200
+salaryIncrement: 200
+maxDiceRoll: 6
+frbFile1: MyMap
+background: bg009
+tourMode:
+  bankruptcyLimit: 1
+  opponent1: Jessica
+  opponent2: Luigi
+  opponent3: Toad
+  clearRank: 1
+...
