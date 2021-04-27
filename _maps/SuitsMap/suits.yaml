@@ -1,0 +1,42 @@
+---
+name: 
+  en: Suits Map
+  de: Farbenkarte
+desc: 
+  en: A map which switches between the different suits.
+  de: Eine Karte welche zwischen den verschiedenen Farben wechselt.
+ruleSet: Standard
+theme: DragonQuest
+initialCash: 2000
+targetAmount: 15000
+baseSalary: 250
+salaryIncrement: 150
+maxDiceRoll: 6
+frbFile1: suits0
+frbFile2: suits1
+frbFile3: suits2
+frbFile4: suits3
+background: bg103
+tourMode:
+  bankruptcyLimit: 1
+  opponent1: Stella
+  opponent2: Yangus
+  opponent3: Carver
+  clearRank: 1
+changelog:
+  - version: 4
+    changed: 
+      - Ported over to new .yaml file format
+  - version: 3
+    changed: 
+      - Re-balance some of the shop values
+  - version: 2
+    changed: 
+      - Fix a softlock when going into the right warp
+  - version: 1
+    added: 
+      - Initial Release
+authors:
+  - name: Deflaktor
+    url: https://github.com/Deflaktor
+...
