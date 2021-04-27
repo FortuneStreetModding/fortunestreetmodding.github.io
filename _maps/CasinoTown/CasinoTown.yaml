@@ -1,18 +1,8 @@
 ---
 name:
   en: Casino Town
-  de: Eierplanet-Galaxie
-  fr: Planètes œufs
-  it: Galassia Uovo
-  jp: エッグプラネット
-  es: Galaxia Ovoestrella
 desc:
   en: "Casino Town: A place to win Lots of Money."
-  de: "Eierplanet-Galaxie: Ein kapselförmiger Planet in der Eierplanet-Galaxie. Pass gut auf, sonst wirst du dich hier hoffnungslos verlaufen!"
-  fr: "Planète œufs\xa0: une planète en forme de capsule dans la galaxie. Attention de ne pas t'y perdre."
-  it: "Galassia Uovo: l'azione si svolge su un pianeta della Galassia uovo. Fai attenzione a non perderti..."
-  jp: エッグプラネットギャラクシー：　エッグプラネットギャラクシーのカプセル形惑星。　道に迷わないように注意が必要な場所。
-  es: "Galaxia Ovoestrella: un planeta en la Galaxia Ovoestrella. Aquí hay que tener cuidado para no perderse..."
 ruleSet: Standard
 theme: Mario
 initialCash: 1500
@@ -20,9 +10,9 @@ targetAmount: 20000
 baseSalary: 450
 salaryIncrement: 100
 maxDiceRoll: 6
-frbFile1: Casino Town
+frbFile1: CasinoTown
 background: bg009
-mapIcon: Casino Town
+mapIcon: CasinoTown
 bgmId: BGM_MAP_TRODAIN_old
 looping:
   mode: Vertical
