@@ -9,6 +9,9 @@ Renders:
   map card with proper css styling
 
 {%- endcomment -%}
+{%- assign mapUrl1 = nil %}
+{%- assign mapUrl2 = nil %}
+{%- assign mapUrl3 = nil %}
 {%- include getMapImage.liquid map=include.map number=0 %}
 {%- assign mapUrl0 = gp_mapUrl %}
 {%- include getMapImage.liquid map=include.map number=1 %}
@@ -20,14 +23,8 @@ Renders:
     {%- include getMapImage.liquid map=include.map number=3 %}
     {%- if gp_mapUrl %}
       {%- assign mapUrl3 = gp_mapUrl %}
-    {%- else %}
-      {%- assign mapUrl3 = nil %}
     {%- endif %}
-  {%- else %}
-    {%- assign mapUrl2 = nil %}
   {%- endif %}
-{%- else %}
-  {%- assign mapUrl1 = nil %}
 {%- endif %}
 <div class="col mb-4 mapCard {% include renderMapSlug.liquid map=include.map -%}">
   <div class="card h-100">
