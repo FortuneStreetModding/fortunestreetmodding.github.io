@@ -11,7 +11,9 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: downhill
-background: bg109
+background: bg901
+mapIcon: p_bg901
+bgmId: BGM_MENU
 tourMode:
   bankruptcyLimit: 1
   opponent1: Alena
