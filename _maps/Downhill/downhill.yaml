@@ -1,0 +1,30 @@
+---
+name: 
+  en: Downhill
+desc: 
+  en: "If you really hate large districts, here's a challenge: Almost every district has 5 shops in it. The cannon's a beast on this map, too."
+ruleSet: Standard
+theme: Mario
+initialCash: 2000
+targetAmount: 20000
+baseSalary: 300
+salaryIncrement: 200
+maxDiceRoll: 7
+frbFile1: downhill
+background: bg109
+tourMode:
+  bankruptcyLimit: 1
+  opponent1: Alena
+  opponent2: Angelo
+  opponent3: Bianca
+  clearRank: 1
+changelog:
+  - version: 2
+    changed: 
+      - Ported over to new .yaml file format
+  - version: 1
+    added: 
+      - Initial Release
+authors:
+  - name: Ozzy Mandice
+...
