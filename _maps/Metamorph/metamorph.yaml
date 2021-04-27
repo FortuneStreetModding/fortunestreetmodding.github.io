@@ -8,7 +8,7 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1000
-targetAmount: 20000
+targetAmount: 10000
 baseSalary: 200
 salaryIncrement: 100
 maxDiceRoll: 6
@@ -156,6 +156,7 @@ changelog:
   - version: 2
     changed: 
       - Changed to new .yaml format
+      - Reduced target amount
   - version: 1
     added: 
       - Initial Release
