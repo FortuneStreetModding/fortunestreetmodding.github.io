@@ -9,23 +9,29 @@ Renders:
   map card with proper css styling
 
 {%- endcomment -%}
+{%- include getMapImage.liquid map=include.map number=0 %}
+{%- assign mapUrl0 = gp_mapUrl %}
+{%- include getMapImage.liquid map=include.map number=1 %}
+{%- if gp_mapUrl %}
+  {%- assign mapUrl1 = gp_mapUrl %}
+  {%- include getMapImage.liquid map=include.map number=2 %}
+  {%- if gp_mapUrl %}
+    {%- assign mapUrl2 = gp_mapUrl %}
+    {%- include getMapImage.liquid map=include.map number=3 %}
+    {%- if gp_mapUrl %}
+      {%- assign mapUrl3 = gp_mapUrl %}
+    {%- else %}
+      {%- assign mapUrl3 = nil %}
+    {%- endif %}
+  {%- else %}
+    {%- assign mapUrl2 = nil %}
+  {%- endif %}
+{%- else %}
+  {%- assign mapUrl1 = nil %}
+{%- endif %}
 <div class="col mb-4 mapCard {% include renderMapSlug.liquid map=include.map -%}">
   <div class="card h-100">
     <div class="relative-container">
-      {%- include getMapImage.liquid map=include.map number=0 %}
-      {%- assign mapUrl0 = gp_mapUrl %}
-      {%- include getMapImage.liquid map=include.map number=1 %}
-      {%- if gp_mapUrl %}
-        {%- assign mapUrl1 = gp_mapUrl %}
-        {%- include getMapImage.liquid map=include.map number=2 %}
-        {%- if gp_mapUrl %}
-          {%- assign mapUrl2 = gp_mapUrl %}
-          {%- include getMapImage.liquid map=include.map number=3 %}
-          {%- if gp_mapUrl %}
-            {%- assign mapUrl3 = gp_mapUrl %}
-          {%- endif %}
-        {%- endif %}
-      {%- endif %}
       {%- if mapUrl1 %}
       <input class="btn-check state-0" type="radio" name="state-{%- include renderMapSlug.liquid map=include.map -%}" id="state-0-{%- include renderMapSlug.liquid map=include.map -%}" autocomplete="off" checked>
       <label class="btn btn-outline-primary btn-state-tiny state-0" for="state-0-{%- include renderMapSlug.liquid map=include.map -%}">1</label>
