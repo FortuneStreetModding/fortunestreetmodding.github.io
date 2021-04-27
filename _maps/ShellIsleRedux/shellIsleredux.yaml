@@ -1,7 +1,7 @@
 ---
 name: 
-  en: Shell Isle
-  de: Muschelinsel
+  en: Shell Isle Redux
+  de: Muschelinsel Redux
 desc: 
   en: A small and balanced map for quick games. Remake from Itadaki Street 2 but with added portal.
   de: Eine kleine und ausgeglichene Karte für kurze Runden. Neu aufgelegt aus Itadaki Street 2 aber zusätzlich mit einem Portal.
@@ -12,7 +12,7 @@ targetAmount: 10000
 baseSalary: 300
 salaryIncrement: 225
 maxDiceRoll: 6
-frbFile1: shellIsle
+frbFile1: shellIsleredux
 tourMode:
   bankruptcyLimit: 1
   opponent1: Slime
