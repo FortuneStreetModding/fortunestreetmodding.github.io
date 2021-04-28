@@ -154,6 +154,7 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
   - version: 3
+    changed:
       - fixed pathing issues on meta0 Sqr20-36
       - increased starting money to 1500
   - version: 2
