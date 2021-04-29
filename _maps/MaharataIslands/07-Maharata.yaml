@@ -1,18 +1,10 @@
 ---
 name:
   en: Maharata Islands
-  de: Maharata Islands
-  fr: Maharata Islands
-  it: Maharata Islands
   jp: マハラタ諸島
-  es: Maharata Islands
 desc:
   en: "Maharata Islands: From Itadaki Street 1. Ported by Sophilautia."
-  de: "Maharata Islands: From Itadaki Street 1. Ported by Sophilautia."
-  fr: "Maharata Islands: From Itadaki Street 1. Ported by Sophilautia."
-  it: "Maharata Islands: From Itadaki Street 1. Ported by Sophilautia."
   jp: マハラタ諸島
-  es: "Maharata Islands: From Itadaki Street 1. Ported by Sophilautia."
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
