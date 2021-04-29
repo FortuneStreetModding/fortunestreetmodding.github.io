@@ -12,7 +12,7 @@ salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: gk-primitive
 background: bg107
-mapIcon: icon
+mapIcon: gk-primitive
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1500
