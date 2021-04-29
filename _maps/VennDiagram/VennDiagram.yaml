@@ -1,18 +1,8 @@
 ---
 name:
   en: Venn Diagram
-  de: Raumschiff Mario
-  fr: Vaisseau Mario
-  it: Astronave Mario
-  jp: 星船マリオ
-  es: Astronave Mario
 desc:
   en: "Venn Diagram: A map with a layout that looks like a vendiagram."
-  de: "Raumschiff Mario: Dieses Raumschiff sieht aus wie Mario, der darin gerne durch die Galaxie düst."
-  fr: "Vaisseau Mario\xa0: un vaisseau spatial aux traits de Mario. Ce dernier aime parcourir la galaxie à son bord."
-  it: "Astronave Mario: Mario usa questa nave spaziale con le sue sembianze per spostarsi da un punto all'altro della galassia."
-  jp: 星船マリオ：　マリオの形をした星の船。　マリオを乗せて銀河中を飛びまわる。
-  es: "Astronave Mario: una nave espacial con la forma de Mario, en la que el susodicho recorre la galaxia."
 ruleSet: Standard
 theme: Mario
 initialCash: 1600
@@ -33,6 +23,13 @@ tourMode:
   opponent2: Mario
   opponent3: Yoshi
   clearRank: 3
+authors:
+  - name: Giftshaven
+    url: https://github.com/Giftshaven
+changelog:
+  - version: 1
+    added:
+    - Initial Release
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
