@@ -35,7 +35,8 @@ layout: default
         {%- for map in site.maps -%}
           <a id="{% include renderMapSlug.liquid map=map %}" style="display: none"></a>
         {%- endfor -%}
-        {%- for map in site.maps -%}
+        {%- assign sorted_maps = site.maps | sort_natural: "name" -%}
+        {%- for map in sorted_maps -%}
           {% include renderMapCard.liquid map=map %}
           {% assign mod = forloop.index | modulo: 3 %}
           {% if mod == 0 %}
