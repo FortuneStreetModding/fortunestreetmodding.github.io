@@ -15,6 +15,12 @@ layout: default
   .mapInfo {
     display:none;
   }
+  .mapCard-image-board {
+    height:600px;
+  }
+  .mapCard-image-background {
+    height:600px;
+  }
 </style>
 <main role="main">
   <!--- Main -->
@@ -32,8 +38,10 @@ layout: default
   <div class="album">
     <div class="container">
       <div class="row">
-        {%- assign sorted_maps = site.maps | sort_natural: "name" -%}
-        {%- for map in sorted_maps -%}
+        {%- for map in site.maps -%}
+          <a id="{% include renderMapSlug.liquid map=map %}" style="display: none"></a>
+        {%- endfor -%}
+        {%- for map in site.maps -%}
           {% include renderMapCard.liquid map=map %}
           {% assign mod = forloop.index | modulo: 3 %}
           {% if mod == 0 %}
