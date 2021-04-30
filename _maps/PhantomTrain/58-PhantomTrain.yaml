@@ -1,8 +1,8 @@
 ---
 name:
-  en: Phantom Train
+  en: ISP Phantom Train
 desc:
-  en: "Phantom Train: From Itadaki Street Portable. Ported by Sophilautia."
+  en: Originally from Itadaki Street Portable. Based on the Phantom Train from the Final Fantasy series. Switches alternate which end the central cart is connected to, leading to many opportunities to ruin a player's day. Ported by Sophilautia.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
