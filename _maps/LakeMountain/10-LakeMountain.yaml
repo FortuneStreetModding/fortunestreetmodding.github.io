@@ -1,8 +1,8 @@
 ---
 name:
-  en: Lake Mountain
+  en: IS2 Lake Mountain
 desc:
-  en: "Lake Mountain: From Itadaki Street 2. Ported by Sophilautia."
+  en: Originally from Itadaki Street 2. A simple board for with some extra paths. Map file was included in unused files, but has had shop prices adjusted and made playable by adding suits. Ported by Sophilautia.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
