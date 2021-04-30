@@ -1,18 +1,8 @@
 ---
 name:
   en: IS2 Dream World
-  de: Alefgard
-  fr: Alefgard
-  it: Alefgard
-  jp: アレフガルド
-  es: Alefgrado
 desc:
   en: Dream World remade from Itadaki Street 2.
-  de: "Alefgard: Die Heimstatt des legendären Helden Erdrick. Im Herzen des Areals thront auf einer Insel drohend die Festung des Drachenfürsten."
-  fr: "Alefgard\xa0: la terre natale d'Elric, le héros légendaire. Son île centrale abrite l'imposante citadelle du Lordragon."
-  it: "Alefgard: la terra natale di Erdrick, l'eroe leggendario. Al centro di Alefgard si trova l'isola sulla quale si erge la cittadella di Dragonlord."
-  jp: アレフガルド：　勇者ロトの伝説が伝わる大陸。　中央の島にはりゅうおうの城がそびえたっている。
-  es: "Alefgrado: tierra natal de Erdrick, el héroe legendario. En su interior, una isla alberga la impresionante ciudadela de Draconarius."
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -20,9 +10,9 @@ targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 100
 maxDiceRoll: 7
-frbFile1: Dream World
+frbFile1: DreamWorld
 background: bg107
-mapIcon: Dream World
+mapIcon: DreamWorld
 bgmId: BGM_MAP_DHAMA_old
 tourMode:
   bankruptcyLimit: 1
