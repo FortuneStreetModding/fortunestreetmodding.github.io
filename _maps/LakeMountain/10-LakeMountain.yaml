@@ -2,13 +2,13 @@
 name:
   en: IS2 Lake Mountain
 desc:
-  en: Originally from Itadaki Street 2. A simple board for with some extra paths. Map file was included in unused files, but has had shop prices adjusted and made playable by adding suits. Ported by Sophilautia.
+  en: Originally from Itadaki Street 2. A simple board with some extra paths. Map file was included in unused files, but has had shop prices adjusted and made playable by adding suits. Ported by Sophilautia.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
 targetAmount: 15000
 baseSalary: 300
-salaryIncrement: 100
+# salaryIncrement: 100
 maxDiceRoll: 6
 frbFile1: 2-02-lakemt
 background: bg107
