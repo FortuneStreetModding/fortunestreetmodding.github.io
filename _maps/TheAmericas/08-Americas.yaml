@@ -1,8 +1,8 @@
 ---
 name:
-  en: The Americas
+  en: IS1 The Americas
 desc:
-  en: "The Americas: From Itadaki Street 1. Ported by Sophilautia."
+  en: Originally from Itadaki Street 1. A large board based on America, with a valuable Hawaii island that's hard to reach. 1:1 port was impossible, made closest approximation within limits of the game. Ported by Sophilautia.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
