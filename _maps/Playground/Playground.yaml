@@ -1,18 +1,8 @@
 ---
 name:
   en: Playground
-  de: Yoshis Eiland
-  fr: Ile de Yoshi
-  it: Isola Yoshi
-  jp: ヨッシーアイランド
-  es: Isla de Yoshi
 desc:
-  en: "Playground: There's lots of activities at the playground! Nothing dangerous or hazardous here, so enjoy! Oh, and don't lose your wallet obviously."
-  de: "Yoshis Eiland: Diese Insel wird von einer kunterbunten Vielfalt an freundlichen Yoshis bevölkert. Mario hat dort als junger Hüpfer viele Abenteuer mit seinen Yoshi-Freunden erlebt!"
-  fr: "Île de Yoshi\xa0: cette île est habitée par plein de joyeuses créatures Yoshi de toutes les couleurs. Dans sa jeunesse, Mario a vécu des aventures incroyables dans ce lieu avec ses amis Yoshi."
-  it: "Isola Yoshi: quest'isola è abitata da membri della razza Yoshi, un'enorme varietà di creature amichevoli. Quand'era appena nato, qui Mario ha vissuto mille avventure con i suoi amici Yoshi."
-  jp: ヨッシーアイランド：　いろいろな色のヨッシーたちがすんでいる島。　マリオが赤ん坊のころにヨッシーたちとともに大冒険をした。
-  es: "Isla de Yoshi: una isla habitada por Yoshis de todos los colores. Mario y sus amigos vivieron muchas aventuras en este lugar."
+  en: "There's lots of activities at the playground! Nothing dangerous or hazardous here, so enjoy! Oh, and don't lose your wallet obviously."
 ruleSet: Standard
 theme: Mario
 initialCash: 1500
@@ -28,6 +18,9 @@ tourMode:
   opponent2: Birdo
   opponent3: Toad
   clearRank: 2
+authors:
+  - name: Giftshaven
+    url: https://github.com/Giftshaven
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.

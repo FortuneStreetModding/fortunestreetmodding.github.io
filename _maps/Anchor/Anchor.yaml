@@ -1,18 +1,8 @@
 ---
 name:
   en: Anchor
-  de: Geisterschiff
-  fr: Vaisseau fantôme
-  it: Nave fantasma
-  jp: 幽霊船
-  es: Barco Fantasma
 desc:
   en: "Anchor: The symbol that represents stability. Be the most stable and you will emerge victorious."
-  de: "Geisterschiff: Dieses schaurige Schiff versank in einem wütenden Sturm, was die geisterhafte Besatzung nicht davon abhält, auf ihm über die Weltmeere zu irren."
-  fr: "Le vaisseau fantôme\xa0: un navire étrange et inquiétant qui, après avoir sombré lors d'une terrible tempête, erre sur des océans sans fin avec à son bord son équipage de marins fantômes."
-  it: "La nave fantasma: naufragato in seguito a una tempesta, questo spaventoso vascello continua a vagare sui mari con la sua ciurma di marinai fantasma."
-  jp: 幽霊船：　嵐で沈んだあと　幽霊となった船員の魂といっしょに　人しれず大海原をさまよっている　ぶきみな船。
-  es: "Barco Fantasma: una extraña embarcación que, tras hundirse durante una feroz tormenta, surca los mares sin descanso con su tripulación fantasmal."
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1700
@@ -28,6 +18,9 @@ tourMode:
   opponent2: Carver
   opponent3: Alena
   clearRank: 2
+authors:
+  - name: Giftshaven
+    url: https://github.com/Giftshaven
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 0  #   2 Venture on! Roll the die again and move forward.
