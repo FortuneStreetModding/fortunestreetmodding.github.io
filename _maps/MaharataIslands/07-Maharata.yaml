@@ -1,10 +1,8 @@
 ---
 name:
-  en: Maharata Islands
-  jp: マハラタ諸島
+  en: IS1 Maharata Islands
 desc:
-  en: "Maharata Islands: From Itadaki Street 1. Ported by Sophilautia."
-  jp: マハラタ諸島
+  en: Originally from Itadaki Street 1. Pay attention to the 5-shop district! Ported by Sophilautia.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
