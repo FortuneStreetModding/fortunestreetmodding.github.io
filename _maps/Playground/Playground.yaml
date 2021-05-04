@@ -10,7 +10,7 @@ targetAmount: 15000
 baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 6
-frbFile1: yosshi
+frbFile1: Playground
 background: bg001
 tourMode:
   bankruptcyLimit: 1
