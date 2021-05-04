@@ -10,7 +10,7 @@ targetAmount: 20000
 baseSalary: 250
 salaryIncrement: 150
 maxDiceRoll: 7
-frbFile1: yuureisen
+frbFile1: anchor
 background: bg102
 tourMode:
   bankruptcyLimit: 1
