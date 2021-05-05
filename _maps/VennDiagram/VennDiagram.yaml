@@ -8,7 +8,7 @@ theme: Mario
 initialCash: 1600
 targetAmount: 16000
 baseSalary: 300
-salaryIncrement: 160
+salaryIncrement: 200
 maxDiceRoll: 6
 frbFile1: venndiagram
 background: bg008
