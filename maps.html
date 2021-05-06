@@ -27,10 +27,16 @@ permalink: /maps
     if(currentMap) {
       document.getElementById("map-"+currentMap).classList.remove("target");
     }
-    map = event.state.map
-    if(map) {
-      currentMap = map;
-      document.getElementById("map-"+map).classList.add("target");
+    if(event.state) {
+      map = event.state.map
+      if(map) {
+        currentMap = map;
+        document.getElementById("map-"+map).classList.add("target");
+      } else {
+        currentMap = ''
+      }
+    } else {
+      currentMap = ''
     }
   };
 </script>
