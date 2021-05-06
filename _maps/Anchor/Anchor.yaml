@@ -7,8 +7,8 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 1700
 targetAmount: 20000
-baseSalary: 250
-salaryIncrement: 150
+baseSalary: 300
+salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: anchor
 background: bg102
