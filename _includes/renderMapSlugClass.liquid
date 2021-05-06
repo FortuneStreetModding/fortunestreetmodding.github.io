@@ -9,4 +9,4 @@ Renders:
   last part of the map id
 
 {%- endcomment -%}
-{{- include.map.id | split: "/" | last -}}
+map-{{- include.map.id | split: "/" | last -}}
