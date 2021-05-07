@@ -75,7 +75,9 @@ permalink: /maps
         <a id="{% include renderMapSlugClass.liquid map=map %}" style="display: none"></a>
         {%- endfor -%}
         <script>
-          document.getElementById("map-"+currentMap).classList.add("target");
+          if(currentMap) {
+            document.getElementById("map-"+currentMap).classList.add("target");
+          }
         </script>
         {%- for map in sorted_maps -%}
           {%- assign mapUrl1 = nil %}
