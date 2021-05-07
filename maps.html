@@ -100,16 +100,16 @@ permalink: /maps
             <div class="relative-container">
               {%- if mapUrl1 %}
               <input class="btn-check state-0" type="radio" name="state-{%- include renderMapSlugClass.liquid map=map -%}" id="state-0-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off" checked>
-              <label class="btn btn-outline-primary btn-state-tiny state-0" for="state-0-{%- include renderMapSlugClass.liquid map=map -%}">1</label>
+              <label class="btn btn-primary btn-state-tiny state-0" for="state-0-{%- include renderMapSlugClass.liquid map=map -%}">1</label>
               <input class="btn-check state-1" type="radio" name="state-{%- include renderMapSlugClass.liquid map=map -%}" id="state-1-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off">
-              <label class="btn btn-outline-primary btn-state-tiny state-1" for="state-1-{%- include renderMapSlugClass.liquid map=map -%}">2</label>
+              <label class="btn btn-primary btn-state-tiny state-1" for="state-1-{%- include renderMapSlugClass.liquid map=map -%}">2</label>
               {%- if mapUrl2 %}
               <input class="btn-check state-2" type="radio" name="state-{%- include renderMapSlugClass.liquid map=map -%}" id="state-2-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off">
-              <label class="btn btn-outline-primary btn-state-tiny state-2" for="state-2-{%- include renderMapSlugClass.liquid map=map -%}">3</label>
+              <label class="btn btn-primary btn-state-tiny state-2" for="state-2-{%- include renderMapSlugClass.liquid map=map -%}">3</label>
               {%- endif %}
               {%- if mapUrl3 %}
               <input class="btn-check state-3" type="radio" name="state-{%- include renderMapSlugClass.liquid map=map -%}" id="state-3-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off">
-              <label class="btn btn-outline-primary btn-state-tiny state-3" for="state-3-{%- include renderMapSlugClass.liquid map=map -%}">4</label>
+              <label class="btn btn-primary btn-state-tiny state-3" for="state-3-{%- include renderMapSlugClass.liquid map=map -%}">4</label>
               {%- endif %}
               {%- endif %}
               <a class="map-state" href="?view={%- include renderMapSlug.liquid map=map -%}" onclick="showMap('{%- include renderMapSlug.liquid map=map -%}');return false;">
