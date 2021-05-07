@@ -1,10 +1,8 @@
 ---
 name:
   en: Bakerman
-  de: Bakerman
 desc:
   en: is baking bread.
-  de: is baking bread.
 ruleSet: Standard
 theme: Mario
 initialCash: 1500
