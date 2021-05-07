@@ -16,27 +16,29 @@ permalink: /maps
       if(currentMap) {
         document.getElementById("map-"+currentMap).classList.remove("target");
       }
-      window.history.replaceState({"map": currentMap}, '', window.location);
-      window.history.pushState({"map": map}, '', url);
-      currentMap = map;
       if(map) {
         document.getElementById("map-"+map).classList.add("target");
       }
+      window.history.replaceState({"map": currentMap}, '', window.location);
+      window.history.pushState({"map": map}, '', url);
+      currentMap = map;
     }
   }
   window.onpopstate = function(event) {
-    if(currentMap) {
-      document.getElementById("map-"+currentMap).classList.remove("target");
-    }
     if(event.state) {
-      currentMap = event.state.map;
-      if(currentMap) {
-        document.getElementById("map-"+map).classList.add("target");
-      }
+      map = event.state.map;
+      scrollTop = event.state.map;
     } else {
       currentMap = '';
     }
-  };
+    if(currentMap) {
+      document.getElementById("map-"+currentMap).classList.remove("target");
+    }
+    if(map) {
+      document.getElementById("map-"+map).classList.add("target");
+    }
+    currentMap = map
+  }
 </script>
 <style>
   .target ~.mapCard {
