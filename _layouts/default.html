@@ -61,7 +61,7 @@
     height:400px;
     object-fit:cover;
     position:relative;
-    filter: blur(1px) grayscale(50%) contrast(50%) opacity(50%);
+    filter: blur(1px) grayscale(50%) contrast(50%) opacity(65%);
     z-index: 1;
   }
   .btn-lang-tiny {
@@ -77,6 +77,10 @@
     border-width: 2px;
     left: 16px;
     z-index: 3;
+    filter: grayscale(1);
+  }
+  :checked+.btn-state-tiny {
+    filter: grayscale(0);
   }
   .btn-state-tiny.state-0 { top: 1.0rem; }
   .btn-state-tiny.state-1 { top: 2.7rem; }
