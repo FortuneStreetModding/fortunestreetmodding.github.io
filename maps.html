@@ -15,9 +15,10 @@ permalink: /maps
         url.searchParams.remove('view');
       if(currentMap) {
         document.getElementById("map-"+currentMap).classList.remove("target");
-      } 
-      currentMap = map;
+      }
+      window.history.replaceState({"map": currentMap}, '', window.location);
       window.history.pushState({"map": map}, '', url);
+      currentMap = map;
       if(map) {
         document.getElementById("map-"+map).classList.add("target");
       }
@@ -28,15 +29,12 @@ permalink: /maps
       document.getElementById("map-"+currentMap).classList.remove("target");
     }
     if(event.state) {
-      map = event.state.map
-      if(map) {
-        currentMap = map;
+      currentMap = event.state.map;
+      if(currentMap) {
         document.getElementById("map-"+map).classList.add("target");
-      } else {
-        currentMap = ''
       }
     } else {
-      currentMap = ''
+      currentMap = '';
     }
   };
 </script>
