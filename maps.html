@@ -15,13 +15,13 @@ permalink: /maps
       else
         url.searchParams.remove('view');
       window.history.replaceState({"map": currentMap}, '', window.location);
+      window.history.pushState({"map": map}, '', url);
       if(currentMap) {
         document.getElementById("map-"+currentMap).classList.remove("target");
       }
       if(map) {
         document.getElementById("map-"+map).classList.add("target");
       }
-      window.history.pushState({"map": map}, '', url);
       currentMap = map;
     }
   }
