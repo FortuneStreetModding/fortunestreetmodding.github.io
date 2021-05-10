@@ -6,6 +6,7 @@ permalink: /maps
 <script>
   var currentMap = new URLSearchParams(window.location.search).get('view');
   currentMap = currentMap ? currentMap : '';
+
   function showMap(map) {
     if(currentMap != map) {
       const url = new URL(window.location);
@@ -13,17 +14,18 @@ permalink: /maps
         url.searchParams.set('view', map);
       else
         url.searchParams.remove('view');
+      window.history.replaceState({"map": currentMap}, '', window.location);
       if(currentMap) {
         document.getElementById("map-"+currentMap).classList.remove("target");
       }
       if(map) {
         document.getElementById("map-"+map).classList.add("target");
       }
-      window.history.replaceState({"map": currentMap}, '', window.location);
       window.history.pushState({"map": map}, '', url);
       currentMap = map;
     }
   }
+
   window.onpopstate = function(event) {
     if(event.state) {
       map = event.state.map;
@@ -39,6 +41,7 @@ permalink: /maps
     }
     currentMap = map
   }
+
 </script>
 <style>
   .target ~.mapCard {
