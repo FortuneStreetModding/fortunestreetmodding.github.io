@@ -7,6 +7,10 @@ permalink: /maps
   var currentMap = new URLSearchParams(window.location.search).get('view');
   currentMap = currentMap ? currentMap : '';
 
+  if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+  }
+
   function showMap(map) {
     if(currentMap != map) {
       const url = new URL(window.location);
