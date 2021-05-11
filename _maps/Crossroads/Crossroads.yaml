@@ -1,18 +1,8 @@
 ---
 name:
   en: Crossroads
-  de: Yoshis Eiland
-  fr: Ile de Yoshi
-  it: Isola Yoshi
-  jp: ヨッシーアイランド
-  es: Isla de Yoshi
 desc:
   en: "Crossroads: You can only go straight when entering the middle of this board, unless you can land directly where the roads cross."
-  de: "Yoshis Eiland: Diese Insel wird von einer kunterbunten Vielfalt an freundlichen Yoshis bevölkert. Mario hat dort als junger Hüpfer viele Abenteuer mit seinen Yoshi-Freunden erlebt!"
-  fr: "Île de Yoshi\xa0: cette île est habitée par plein de joyeuses créatures Yoshi de toutes les couleurs. Dans sa jeunesse, Mario a vécu des aventures incroyables dans ce lieu avec ses amis Yoshi."
-  it: "Isola Yoshi: quest'isola è abitata da membri della razza Yoshi, un'enorme varietà di creature amichevoli. Quand'era appena nato, qui Mario ha vissuto mille avventure con i suoi amici Yoshi."
-  jp: ヨッシーアイランド：　いろいろな色のヨッシーたちがすんでいる島。　マリオが赤ん坊のころにヨッシーたちとともに大冒険をした。
-  es: "Isla de Yoshi: una isla habitada por Yoshis de todos los colores. Mario y sus amigos vivieron muchas aventuras en este lugar."
 ruleSet: Standard
 theme: Mario
 initialCash: 1800
