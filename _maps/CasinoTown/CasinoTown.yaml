@@ -13,7 +13,9 @@ maxDiceRoll: 6
 frbFile1: CasinoTown
 background: bg009
 mapIcon: CasinoTown
-bgmId: BGM_MAP_TRODAIN_old
+bgmId: BGM_MAP_CIRCUIT
+music: 
+  map: CasinoTown_map.80
 looping:
   mode: Vertical
   radius: 26
