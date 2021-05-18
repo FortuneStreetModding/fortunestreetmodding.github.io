@@ -1,13 +1,57 @@
 ---
 title: Community Maps
 layout: default
+permalink: /maps
 ---
+<script>
+  var currentMap = new URLSearchParams(window.location.search).get('view');
+  currentMap = currentMap ? currentMap : '';
+
+  if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+  }
+
+  function showMap(map) {
+    if(currentMap != map) {
+      const url = new URL(window.location);
+      if(map)
+        url.searchParams.set('view', map);
+      else
+        url.searchParams.remove('view');
+      window.history.replaceState({"map": currentMap}, '', window.location);
+      window.history.pushState({"map": map}, '', url);
+      if(currentMap) {
+        document.getElementById("map-"+currentMap).classList.remove("target");
+      }
+      if(map) {
+        document.getElementById("map-"+map).classList.add("target");
+      }
+      currentMap = map;
+    }
+  }
+
+  window.onpopstate = function(event) {
+    if(event.state) {
+      map = event.state.map;
+    } else {
+      currentMap = '';
+    }
+    if(currentMap) {
+      document.getElementById("map-"+currentMap).classList.remove("target");
+    }
+    if(map) {
+      document.getElementById("map-"+map).classList.add("target");
+    }
+    currentMap = map
+  }
+
+</script>
 <style>
-  :target ~.mapCard {
+  .target ~.mapCard {
     display:none;
   }
   {% for map in site.maps -%}
-  a#{% include renderMapSlug.liquid map=map %}:target ~.{% include renderMapSlug.liquid map=map %},a#{% include renderMapSlug.liquid map=map %}:target ~.{% include renderMapSlug.liquid map=map %} .mapInfo {%- if forloop.last == false %},{%- endif %}
+  a#{% include renderMapSlugClass.liquid map=map %}.target ~.{% include renderMapSlugClass.liquid map=map %},a#{% include renderMapSlugClass.liquid map=map %}.target ~.{% include renderMapSlugClass.liquid map=map %} .mapInfo {%- if forloop.last == false %},{%- endif %}
   {% endfor -%}
   {
     display:block;
@@ -23,7 +67,7 @@ layout: default
       <h1 class="jumbotron-heading">Community Maps</h1>
       <p class="lead text-muted">All user submitted maps are gathered on this page.</p>
       <p>
-        <a href="#" class="btn btn-primary my-2">All Maps</a>
+        <a href="/maps" onclick="showMap('');return false;" class="btn btn-primary my-2">All Maps</a>
         <a href="{% link mapHelp.md %}" class="btn btn-secondary my-2">How to upload a Map</a>
       </p>
     </div>
@@ -32,11 +76,285 @@ layout: default
   <div class="album">
     <div class="container">
       <div class="row">
+        {%- assign sorted_maps = site.maps | sort_natural: "name" -%}
         {%- for map in site.maps -%}
-          <a id="{% include renderMapSlug.liquid map=map %}" style="display: none"></a>
+        <a id="{% include renderMapSlugClass.liquid map=map %}" style="display: none"></a>
         {%- endfor -%}
-        {%- for map in site.maps -%}
-          {% include renderMapCard.liquid map=map %}
+        <script>
+          if(currentMap) {
+            document.getElementById("map-"+currentMap).classList.add("target");
+          }
+        </script>
+        {%- for map in sorted_maps -%}
+          {%- assign mapUrl1 = nil %}
+          {%- assign mapUrl2 = nil %}
+          {%- assign mapUrl3 = nil %}
+          {%- include getMapImage.liquid map=map number=0 %}
+          {%- assign mapUrl0 = gp_mapUrl %}
+          {%- include getMapImage.liquid map=map number=1 %}
+          {%- if gp_mapUrl %}
+            {%- assign mapUrl1 = gp_mapUrl %}
+            {%- include getMapImage.liquid map=map number=2 %}
+            {%- if gp_mapUrl %}
+              {%- assign mapUrl2 = gp_mapUrl %}
+              {%- include getMapImage.liquid map=map number=3 %}
+              {%- if gp_mapUrl %}
+                {%- assign mapUrl3 = gp_mapUrl %}
+              {%- endif %}
+            {%- endif %}
+          {%- endif %}
+        <div class="col mb-4 mapCard {% include renderMapSlugClass.liquid map=map -%}">
+          <div class="card h-100">
+            <div class="relative-container">
+              {%- if mapUrl1 %}
+              <input class="btn-check state-0" type="radio" name="state-{%- include renderMapSlugClass.liquid map=map -%}" id="state-0-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off" checked>
+              <label class="btn btn-primary btn-state-tiny state-0" for="state-0-{%- include renderMapSlugClass.liquid map=map -%}">1</label>
+              <input class="btn-check state-1" type="radio" name="state-{%- include renderMapSlugClass.liquid map=map -%}" id="state-1-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off">
+              <label class="btn btn-primary btn-state-tiny state-1" for="state-1-{%- include renderMapSlugClass.liquid map=map -%}">2</label>
+              {%- if mapUrl2 %}
+              <input class="btn-check state-2" type="radio" name="state-{%- include renderMapSlugClass.liquid map=map -%}" id="state-2-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off">
+              <label class="btn btn-primary btn-state-tiny state-2" for="state-2-{%- include renderMapSlugClass.liquid map=map -%}">3</label>
+              {%- endif %}
+              {%- if mapUrl3 %}
+              <input class="btn-check state-3" type="radio" name="state-{%- include renderMapSlugClass.liquid map=map -%}" id="state-3-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off">
+              <label class="btn btn-primary btn-state-tiny state-3" for="state-3-{%- include renderMapSlugClass.liquid map=map -%}">4</label>
+              {%- endif %}
+              {%- endif %}
+              <a class="map-state" href="?view={%- include renderMapSlug.liquid map=map -%}" onclick="showMap('{%- include renderMapSlug.liquid map=map -%}');return false;">
+                <img class="card-img-top mapCard-image-board state-0" src="{{ mapUrl0 }}" loading="lazy">
+                {%- if mapUrl1 %}
+                <img class="card-img-top mapCard-image-board state-1" src="{{ mapUrl1 }}" loading="lazy">
+                {%- endif %}
+                {%- if mapUrl2 %}
+                <img class="card-img-top mapCard-image-board state-2" src="{{ mapUrl2 }}" loading="lazy">
+                {%- endif %}
+                {%- if mapUrl3 %}
+                <img class="card-img-top mapCard-image-board state-3" src="{{ mapUrl3 }}" loading="lazy">
+                {%- endif %}
+              </a>
+              <img class="card-img-top mapCard-image-background" src="{%- include renderMapBackground.liquid map=map -%}" loading="lazy">
+              <div class="bottom-right-absolute">
+                {%- for author in map.authors %}
+                  <div class="badge bg-primary">{%- if author.url -%}<a class="text-reset" href="{{ author.url }}">{{ author.name }}</a>{%- else -%}{{ author.name }}{%- endif -%}</div>
+                {%- endfor %}
+              </div>
+            </div>
+            <div class="card-body">
+              {% if map.name > 1 or map.desc.size > 1 %}
+                <input class="btn-check en" type="radio" name="lang-{%- include renderMapSlugClass.liquid map=map -%}" id="lang-en-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off" checked>
+                <label class="btn btn-outline-primary btn-lang-tiny" for="lang-en-{%- include renderMapSlugClass.liquid map=map -%}">🇬🇧</label>
+                {% if map.name.de or map.desc.de %}
+                <input class="btn-check de" type="radio" name="lang-{%- include renderMapSlugClass.liquid map=map -%}" id="lang-de-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off">
+                <label class="btn btn-outline-primary btn-lang-tiny" for="lang-de-{%- include renderMapSlugClass.liquid map=map -%}">🇩🇪</label>
+                {%- endif %}
+                {% if map.name.fr or map.desc.fr %}
+                <input class="btn-check fr" type="radio" name="lang-{%- include renderMapSlugClass.liquid map=map -%}" id="lang-fr-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off">
+                <label class="btn btn-outline-primary btn-lang-tiny" for="lang-fr-{%- include renderMapSlugClass.liquid map=map -%}">🇫🇷</label>
+                {%- endif %}
+                {% if map.name.it or map.desc.it %}
+                <input class="btn-check it" type="radio" name="lang-{%- include renderMapSlugClass.liquid map=map -%}" id="lang-it-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off">
+                <label class="btn btn-outline-primary btn-lang-tiny" for="lang-it-{%- include renderMapSlugClass.liquid map=map -%}">🇮🇹</label>
+                {%- endif %}
+                {% if map.name.es or map.desc.es %}
+                <input class="btn-check es" type="radio" name="lang-{%- include renderMapSlugClass.liquid map=map -%}" id="lang-es-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off">
+                <label class="btn btn-outline-primary btn-lang-tiny" for="lang-es-{%- include renderMapSlugClass.liquid map=map -%}">🇪🇸</label>
+                {%- endif %}
+                {% if map.name.jp or map.desc.jp %}
+                <input class="btn-check jp" type="radio" name="lang-{%- include renderMapSlugClass.liquid map=map -%}" id="lang-jp-{%- include renderMapSlugClass.liquid map=map -%}" autocomplete="off">
+                <label class="btn btn-outline-primary btn-lang-tiny" for="lang-jp-{%- include renderMapSlugClass.liquid map=map -%}">🇯🇵</label>
+                {%- endif %}
+              {%- endif %}
+              <div class="row lang">
+                <h4 class="card-title en
+                {%- if map.name.de == Nil %} de{% endif -%}
+                {%- if map.name.fr == Nil %} fr{% endif -%}
+                {%- if map.name.it == Nil %} it{% endif -%}
+                {%- if map.name.es == Nil %} es{% endif -%}
+                {%- if map.name.jp == Nil %} jp{% endif -%}">{{ map.name.en }}</h4>
+                {% if map.name.de -%}
+                  <h4 class="card-title de">{{ map.name.de }}</h4>
+                {%- endif %}
+                {% if map.name.fr -%}
+                  <h4 class="card-title fr">{{ map.name.fr }}</h4>
+                {%- endif %}
+                {% if map.name.it -%}
+                  <h4 class="card-title it">{{ map.name.it }}</h4>
+                {%- endif %}
+                {% if map.name.es -%}
+                  <h4 class="card-title es">{{ map.name.es }}</h4>
+                {%- endif %}
+                {% if map.name.jp -%}
+                  <h4 class="card-title jp">{{ map.name.jp }}</h4>
+                {%- endif %}
+              </div>
+              <div class="row lang" style="width: 100%">
+                <p class="card-text en
+                {%- if map.desc.de == Nil %} de{% endif -%}
+                {%- if map.desc.fr == Nil %} fr{% endif -%}
+                {%- if map.desc.it == Nil %} it{% endif -%}
+                {%- if map.desc.es == Nil %} es{% endif -%}
+                {%- if map.desc.jp == Nil %} jp{% endif -%}">{{ map.desc.en }}</p>
+                {% if map.desc.de -%}
+                  <p class="card-text de">{{ map.desc.de }}</p>
+                {%- endif %}
+                {% if map.desc.fr -%}
+                  <p class="card-text fr">{{ map.desc.fr }}</p>
+                {%- endif %}
+                {% if map.desc.it -%}
+                  <p class="card-text it">{{ map.desc.it }}</p>
+                {%- endif %}
+                {% if map.desc.es -%}
+                  <p class="card-text es">{{ map.desc.es }}</p>
+                {%- endif %}
+                {% if map.desc.jp -%}
+                  <p class="card-text jp">{{ map.desc.jp }}</p>
+                {%- endif %}
+              </div>
+            </div>
+            <div class="card-body mapInfo {% include renderMapSlugClass.liquid map=map -%}">
+              <div class="row mb-4">
+                <div class="col">
+                  <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Rules</div>
+                        {{- map.ruleSet -}}
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Theme</div>
+                        {{- map.theme -}}
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Initial Cash</div>
+                        {{- map.initialCash -}}
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Target Amount</div>
+                        {{- map.targetAmount -}}
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Base Salary</div>
+                        {{- map.baseSalary -}}
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Salary Increment</div>
+                        {{- map.salaryIncrement -}}
+                      </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Max Dice Roll</div>
+                        {{- map.maxDiceRoll -}}
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col mapCard">
+                  <div class="card">
+                    <div class="fw-bold card-header">Venture Cards</div>
+                    <div class="card-body">
+                      <div class="row mx-0">
+                        {%- for ventureCard in site.data.ventureCards -%}
+                          {%- if map.ventureCards -%}
+                            {%- if map.ventureCards[forloop.index0] == 1 -%}
+                              <div class="col ventureCard card bg-primary" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                            {%- else -%}
+                              <div class="col ventureCard card" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                            {%- endif -%}
+                          {%- else -%}
+                            {%- assign ruleSet = map.ruleSet | downcase -%}
+                            {%- if ruleSet == "standard" -%}
+                              {%- if ventureCard.defaultStandard == true -%}
+                                <div class="col ventureCard card bg-primary" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                              {%- else -%}
+                                <div class="col ventureCard card" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                              {%- endif -%}
+                            {%- else -%}
+                              {%- if ventureCard.defaultEasy == true -%}
+                                <div class="col ventureCard card bg-primary" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                              {%- else -%}
+                                <div class="col ventureCard card" aria-label="{{ventureCard.description}}" data-balloon-pos="up" data-balloon-blunt>
+                              {%- endif -%}
+                            {%- endif -%}
+                          {%- endif -%}
+                            {{forloop.index}}
+                          </div>
+                        {%- endfor -%}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% if map.changelog %}
+              <details class="mb-4">
+                <summary class="accordion-header accordion-button">Show Changelog</summary>
+                <div class="accordion-body nav-tabs">
+                  {% for change in map.changelog %}
+                    <div class="fw-bold nav-link border mt-2" style="display:inline-block">Version <span class="badge bg-secondary">{{ change.version }}</span></div>
+                    {% if change.added %}
+                    <div class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Added</div>
+                        <ul class="list-group"></ul>
+                          {% for added in change.added %}
+                          <li>{{ added }}</li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </div>
+                    {% endif %}
+                    {% if change.changed %}
+                    <div class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Changed</div>
+                        <ul class="list-group"></ul>
+                          {% for changed in change.changed %}
+                          <li>{{ changed }}</li>
+                        {% endfor %}
+                      </ul>
+                      </div>
+                    </div>
+                    {% endif %}
+                    {% if change.removed %}
+                    <div class="list-group-item d-flex justify-content-between align-items-start">
+                      <div class="ms-2 me-auto">
+                        <div class="fw-bold">Removed</div>
+                        <ul class="list-group"></ul>
+                          {% for removed in change.removed %}
+                          <li>{{ removed }}</li>
+                        {% endfor %}
+                      </ul>
+                      </div>
+                    </div>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+                </div>
+              </details>
+              {% endif %}
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=map -%}');">
+                Download
+                {% if map.changelog -%}
+                  {%- assign firstChange = map.changelog | first -%}
+                  <span class="badge bg-secondary">v{{ firstChange.version }}</span>
+                {%- endif %}
+              </button>
+            </div>
+          </div>
+        </div>
+
           {% assign mod = forloop.index | modulo: 3 %}
           {% if mod == 0 %}
             <div class="w-100"></div>

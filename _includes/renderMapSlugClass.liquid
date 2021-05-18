@@ -1,0 +1,12 @@
+{%- comment -%}
+
+This snippet renders the last part of the id of the given map.
+
+Args:
+  map: the collection map item
+
+Renders:
+  last part of the map id
+
+{%- endcomment -%}
+map-{{- include.map.id | split: "/" | last -}}
