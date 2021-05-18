@@ -10,10 +10,26 @@ targetAmount: 20000
 baseSalary: 450
 salaryIncrement: 100
 maxDiceRoll: 6
-frbFile1: CasinoTown
+frbFile1: Casino Town
 background: bg009
-mapIcon: CasinoTown
-bgmId: BGM_MAP_TRODAIN_old
+mapIcon: Casino Town
+music: 
+  map: CasinoTown_map.80
+  stock: BGM_STOCK_IS2.60
+  ventureCards: BGM_CHANCECARD_IS2.58
+  auction: BGM_AUCTION_IS2.58
+  targetMet: 
+  win: BGM_WINNER_IS2.60
+  guestAppear:
+  guestLeave:
+  badVentureCard: ME_CURSE_IS2.58
+  takeAbreak: ME_HOLIDAY_IS2.58
+  promotionMii: ME_LEVELUP_IS2.58
+  promotionMario: ME_LEVELUP_IS2.58
+  promotionDragonQuest: ME_LEVELUP_IS2.58
+  forcedBuyout: ME_5BUY_IS2.58
+  domination: 
+  bankruptcy: ME_BANKRUPTCY_IS2.60
 looping:
   mode: Vertical
   radius: 26
@@ -27,6 +43,9 @@ tourMode:
   opponent3: Toad
   clearRank: 1
 changelog:
+  - version: 3
+    added:
+      - Add music section for brstm
   - version: 2
     added: 
       - Final Version
