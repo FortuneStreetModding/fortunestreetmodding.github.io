@@ -21,3 +21,7 @@ _site/
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,jekyll
+
+### Audacity ###
+*.au
+*.aup

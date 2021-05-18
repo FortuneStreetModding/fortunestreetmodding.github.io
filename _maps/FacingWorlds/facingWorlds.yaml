@@ -19,6 +19,24 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 background: bg009
+mapIcon: facingWorlds
+music:
+  map: facingWorlds_map_forgoneRejuvenation.65
+  stock: facingWorlds_stock_killWillyforegone.80
+  ventureCards: facingWorlds_ventureCards_victoryConcept1.80
+  auction: facingWorlds_auction_tutorial.80
+  targetMet: facingWorlds_targetMet_forgoneMothership.70
+  win: facingWorlds_win_ending.80
+  guestAppear:
+  guestLeave:
+  badVentureCard:
+  takeAbreak: facingWorlds_takeABreak.80
+  promotionMii: facingWorlds_promotion_flagCaptured.70
+  promotionMario: facingWorlds_promotion_flagCaptured.70
+  promotionDragonQuest: facingWorlds_promotion_flagCaptured.70
+  forcedBuyout: facingWorlds_forcedBuyout_victoryConcept2.80
+  domination: facingWorlds_domination_introCity.90
+  bankruptcy:
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -149,6 +167,23 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 4
+    added:
+      - venture card music
+      - auction music
+      - win music
+      - take a break ME
+      - forced buyout ME
+    changed:
+      - stock music
+  - version: 3
+    added:
+      - map music
+      - target met music
+      - stock music
+      - promotion music effect
+      - domination music effect
+      - map icon
   - version: 2
     added:
       - Venture card table
