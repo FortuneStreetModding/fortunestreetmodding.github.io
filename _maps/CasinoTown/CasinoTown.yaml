@@ -14,7 +14,7 @@ frbFile1: CasinoTown
 background: bg009
 mapIcon: CasinoTown
 music: 
-  map: CasinoTown_map.80
+  map: BGM_MAP_CASINOTOWN_IS2.80
   stock: BGM_STOCK_IS2.60
   ventureCards: BGM_CHANCECARD_IS2.58
   auction: BGM_AUCTION_IS2.58
