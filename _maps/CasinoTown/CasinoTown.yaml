@@ -14,7 +14,22 @@ frbFile1: CasinoTown
 background: bg009
 mapIcon: CasinoTown
 music: 
-  map: CasinoTown_map.80
+  map: BGM_MAP_CASINOTOWN_IS2.80
+  stock: BGM_STOCK_IS2.60
+  ventureCards: BGM_CHANCECARD_IS2.58
+  auction: BGM_AUCTION_IS2.58
+  targetMet: 
+  win: BGM_WINNER_IS2.60
+  guestAppear:
+  guestLeave:
+  badVentureCard: ME_CURSE_IS2.58
+  takeAbreak: ME_HOLIDAY_IS2.58
+  promotionMii: ME_LEVELUP_IS2.58
+  promotionMario: ME_LEVELUP_IS2.58
+  promotionDragonQuest: ME_LEVELUP_IS2.58
+  forcedBuyout: ME_5BUY_IS2.58
+  domination: 
+  bankruptcy: ME_BANKRUPTCY_IS2.60
 looping:
   mode: Vertical
   radius: 26
