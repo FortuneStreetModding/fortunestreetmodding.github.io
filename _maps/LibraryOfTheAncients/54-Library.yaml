@@ -40,7 +40,19 @@ tourMode:
 changelog:
   - version: 2
     changed: 
-      - Ported over to new .yaml file format & new music added.
+      - Ported over to new .yaml file format.
+    added:
+      - Stock music
+      - Venture Card music
+      - Auction music
+      - Target Met music
+      - Win music
+      - Guest Appear ME
+      - Bad Venture Card ME
+      - Promotion ME
+      - Forced Buyout ME
+      - Domination ME
+      - Bankruptcy ME      
   - version: 1
     added: 
       - Initial Release
