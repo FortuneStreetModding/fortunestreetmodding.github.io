@@ -1,0 +1,271 @@
+Root:
+  __Type: Root
+  Resource:
+    __Type: Resource
+  SetupFlag:
+    __Type: SetupFlag
+    UseShadow: 1
+    UseMirror: 0
+    UseBloom: 0
+    UseDof: 0
+    UseDof2: 1
+    UseBoolean: 0
+  FogSetting:
+    __Type: FogSetting
+    FogType: 5
+    ZStart: 5000.000000
+    ZEnd: 35000.000000
+    Color:
+      __Type: Color
+      R: 220
+      G: 228
+      B: 253
+  BloomSetting:
+    __Type: BloomSetting
+    ProcType: 1
+    Border: 250
+    AddShift: 2
+    SoftShiftX: 6.45
+    SoftShiftY: 6.40
+    Color:
+      __Type: RGBA
+      R: 106
+      G: 158
+      B: 208
+      A: 35
+    SoftKN: 4
+  Dof2Setting:
+    __Type: Dof2Setting
+    Fnum: 2.45
+    FocalLength: 70
+    S: 0.033000
+    Blend: 1
+    FrontBlurMax: 0.000000
+    Front: 6
+    BackBlurMax: 0.75
+    Back: 6
+  LightSetting:
+    __Type: LightSetting
+    Light:
+      __Type: Light2
+      LightNum: 0
+      Enable: 
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 120
+        G: 120
+        B: 120
+      Dir:
+        __Type: Vector
+        X: 0.220704
+        Y: -0.375002
+        Z: -0.900368
+    Light:
+      __Type: Light2
+      LightNum: 1
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 160
+        G: 160
+        B: 160
+      Dir:
+        __Type: Vector
+        X: 0.092757
+        Y: -0.796386
+        Z: -0.597633
+    Light:
+      __Type: Light2
+      LightNum: 2
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 220
+        G: 220
+        B: 220
+      Dir:
+        __Type: Vector
+        X: 0.308799
+        Y: 0.840270
+        Z: 0.445634
+    Light:
+      __Type: Light2
+      LightNum: 3
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 200
+        G: 200
+        B: 200
+      Dir:
+        __Type: Vector
+        X: 0.109448
+        Y: 0.904460
+        Z: 0.412279
+    Light:
+      __Type: Light2
+      LightNum: 4
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 240
+        G: 248
+        B: 250
+      Dir:
+        __Type: Vector
+        X: 0.028825
+        Y: -0.998473
+        Z: -0.047120
+    Light:
+      __Type: Light2
+      LightNum: 5
+      Enable: 1
+      IsSpecular: 1
+      Color:
+        __Type: Color
+        R: 203
+        G: 210
+        B: 230
+      Dir:
+        __Type: Vector
+        X: 0.020281
+        Y: -00760530
+        Z: -0.6489986
+    Light:
+      __Type: Light2
+      LightNum: 6
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 210
+        G: 210
+        B: 210
+      Dir:
+        __Type: Vector
+        X: 0.425096
+        Y: 0.703399
+        Z: 0.569669
+    Light:
+      __Type: Light2
+      LightNum: 7
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 210
+        G: 190
+        B: 200
+      Dir:
+        __Type: Vector
+        X: -0.375336
+        Y: 0.797521
+        Z: -0.472316
+    AmbLight:
+      __Type: AmbLight2
+      LightNum: 0
+      Color:
+        __Type: Color
+        R: 128
+        G: 128
+        B: 128
+  TLItemRoot:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    TLMover:
+      __Type: TLMover
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Trans:
+        __Type: Vector
+        X: 0
+        Y: -175
+        Z: -175
+      Rot:
+        __Type: Vector
+        X: -20
+        Y: 0.0
+        Z: 0.0
+      Scale:
+        __Type: Vector
+        X: 1.0
+        Y: 1.0
+        Z: 1.0
+    facingWorlds.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: facingWorlds.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      BufferOption: 0
+    skyBox.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: skyBox.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      skyBox.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: skyBox.rcha
+  V_MOVE1:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 150
+    LoopType: ONE
+    cam_switch01.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: cam_switch01.rsca
+  V_MOVE2:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 150
+    LoopType: ONE
+    cam_switch01.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: cam_switch01.rsca
+  V_INTRO1:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    cam_intro01.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: cam_intro01.rsca

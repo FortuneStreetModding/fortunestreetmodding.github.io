@@ -18,13 +18,13 @@ tourMode:
   opponent2: Slime
   opponent3: BowserJr
   clearRank: 1
-background: bg009
+background: facingWorlds
 mapIcon: facingWorlds
 music:
   map: facingWorlds_map_forgoneRejuvenation.65
   stock: facingWorlds_stock_killWillyforegone.80
-  ventureCards: facingWorlds_ventureCards_victoryConcept1.80
-  auction: facingWorlds_auction_tutorial.80
+  ventureCards: facingWorlds_ventureCards_crxForeDest.80
+  auction: facingWorlds_auction_saintDiorInstrum.80
   targetMet: facingWorlds_targetMet_forgoneMothership.70
   win: facingWorlds_win_ending.80
   guestAppear:
@@ -167,6 +167,13 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 5
+    added:
+      - custom background
+    changed:
+      - auction music
+      - venture cards music
+      - ending music shortened
   - version: 4
     added:
       - venture card music
