@@ -38,6 +38,22 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 2
+    changed: 
+      - Ported over to new .yaml file format.
+    added:
+      - Stock music
+      - Venture Card music
+      - Auction music
+      - Win music
+      - Bad Venture Card ME
+      - Take a Break ME
+      - Promotion ME
+      - Forced Buyout ME
+      - Bankruptcy ME      
+  - version: 1
+    added: 
+      - Initial Release
+  - version: 2
     added: 
       - Ported over to new .yaml file format & new music added.
   - version: 1
