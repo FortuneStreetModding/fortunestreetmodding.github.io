@@ -11,16 +11,35 @@ baseSalary: 250
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: 2-03-cloverland
-background: bg106
-mapIcon: cloverland
-bgmId: BGM_MAP_KANDATA
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yangus
   opponent2: Angelo
   opponent3: Jessica
   clearRank: 2  
+background: bg106
+mapIcon: cloverland
+music:
+  map: BGM_MAP_CLOVERLAND.58
+  stock: BGM_STOCK_IS2.60
+  ventureCards: BGM_CHANCECARD_IS2.58
+  auction: BGM_AUCTION_IS2.70
+  targetMet:
+  win: BGM_WINNER_IS2.60
+  guestAppear:
+  guestLeave:
+  badVentureCard: ME_CURSE_IS2.58
+  takeAbreak: ME_HOLIDAY_IS2.58
+  promotionMii: ME_LEVELUP_IS2.65
+  promotionMario: ME_LEVELUP_IS2.65
+  promotionDragonQuest: ME_LEVELUP_IS2.65
+  forcedBuyout: ME_5BUY_IS2.58
+  domination:
+  bankruptcy: ME_BANKRUPTCY_IS2.60
 changelog:
+  - version: 2
+    added: 
+      - Ported over to new .yaml file format & new music added.
   - version: 1
     added: 
       - Initial Release

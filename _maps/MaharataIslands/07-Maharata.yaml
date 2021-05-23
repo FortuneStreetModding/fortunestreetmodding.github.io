@@ -13,7 +13,23 @@ maxDiceRoll: 6
 frbFile1: maharata
 background: bg105
 mapIcon: maharata
-bgmId: BGM_MAP_YOSHI
+music:
+  map: BGM_MAP_MAHARATA.50
+  stock: BGM_STOCK_IS1.55
+  ventureCards: BGM_CHANCECARD_IS1.60
+  auction: BGM_AUCTION_IS1.50
+  targetMet:
+  win: BGM_WINNER_IS1.50
+  guestAppear:
+  guestLeave:
+  badVentureCard: ME_CURSE_IS1.50
+  takeAbreak: ME_HOLIDAY_IS1.60
+  promotionMii: ME_LEVELUP_IS1.50
+  promotionMario: ME_LEVELUP_IS1.50
+  promotionDragonQuest: ME_LEVELUP_IS1.50
+  forcedBuyout:
+  domination:
+  bankruptcy:
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -22,6 +38,9 @@ tourMode:
   opponent3: Carver
   clearRank: 2
 changelog:
+  - version: 2
+    changed: 
+      - Ported over to new .yaml file format & new music added.
   - version: 1
     added: 
       - Initial Release
