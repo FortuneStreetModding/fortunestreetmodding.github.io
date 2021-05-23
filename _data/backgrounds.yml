@@ -92,3 +92,6 @@
   name: Tutorial
   bgm:  BGM_MENU
   download: false
+- file: facingWorlds
+  name: Facing Worlds
+  download: true
