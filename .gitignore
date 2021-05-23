@@ -25,3 +25,6 @@ _site/
 ### Audacity ###
 *.au
 *.aup
+
+### GIMP ###
+*.xcf
