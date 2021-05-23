@@ -13,7 +13,23 @@ maxDiceRoll: 7
 frbFile1: rabanastre
 background: bg005
 mapIcon: rabanastre
-bgmId: BGM_MAP_KOOPA
+music:
+  map: BGM_MAP_RABANASTRE.50
+  stock: BGM_STOCK_SPECIAL.60
+  ventureCards: BGM_CHANCECARD_SPECIAL.50
+  auction: BGM_AUCTION_SPECIAL.50
+  targetMet: BGM_GOALPROP_RABANASTRE.60
+  win: BGM_WINNER_SPECIAL.50
+  guestAppear: ME_OJAMA_COME_SPECIAL.60
+  guestLeave:
+  badVentureCard: ME_CURSE_SPECIAL.70
+  takeAbreak:
+  promotionMii: ME_LEVELUP_F_SPECIAL.50
+  promotionMario: ME_LEVELUP_F_SPECIAL.50
+  promotionDragonQuest: ME_LEVELUP_F_SPECIAL.50
+  forcedBuyout: ME_5_BUY_SPECIAL.60
+  domination: ME_MONOPOLY_SPECIAL.50
+  bankruptcy: ME_BANKRUPTCY_SPECIAL_F.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -22,6 +38,21 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed: 
+      - Ported over to new .yaml file format.
+    added:
+      - Stock music
+      - Venture Card music
+      - Auction music
+      - Target Met music
+      - Win music
+      - Guest Appear music
+      - Bad Venture Card ME
+      - Promotion ME
+      - Forced Buyout ME
+      - Domination ME
+      - Bankruptcy ME
   - version: 1
     added: 
       - Initial Release
