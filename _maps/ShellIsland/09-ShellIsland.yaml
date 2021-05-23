@@ -13,7 +13,22 @@ maxDiceRoll: 5
 frbFile1: 2-01-kaigara
 background: bg105
 mapIcon: shell
-bgmId: BGM_MAP_YOSHI
+music:
+  map: BGM_MAP_SHELLISLE.86
+  stock: BGM_STOCK_IS2.60
+  ventureCards: BGM_CHANCECARD_IS2.58
+  auction: BGM_AUCTION_IS2.70
+  targetMet:
+  win: BGM_WINNER_IS2.60
+  guestAppear:
+  guestLeave:
+  badVentureCard: ME_CURSE_IS2.58
+  takeAbreak: ME_HOLIDAY_IS2.58
+  promotionMii: ME_LEVELUP_IS2.65
+  promotionMario: ME_LEVELUP_IS2.65
+  promotionDragonQuest: ME_LEVELUP_IS2.65
+  forcedBuyout: ME_5BUY_IS2.58
+  domination:
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -22,6 +37,9 @@ tourMode:
   opponent3: Carver
   clearRank: 2
 changelog:
+  - version: 2
+    added: 
+      - Ported over to new .yaml file format & new music added.
   - version: 1
     added: 
       - Initial Release

@@ -13,7 +13,23 @@ maxDiceRoll: 7
 frbFile1: underseatemple
 background: bg005
 mapIcon: underseatemple
-bgmId: BGM_MAP_DHAMA
+music:
+  map: BGM_MAP_SEABED.50
+  stock: BGM_STOCK_SPECIAL.60
+  ventureCards: BGM_CHANCECARD_SPECIAL.50
+  auction: BGM_AUCTION_SPECIAL.50
+  targetMet: BGM_GOALPROP_SEABED.50
+  win: BGM_WINNER_SPECIAL.50
+  guestAppear: ME_OJAMA_COME_SPECIAL.60
+  guestLeave:
+  badVentureCard: ME_CURSE_SPECIAL.70
+  takeAbreak:
+  promotionMii: ME_LEVELUP_SPECIAL_D.70
+  promotionMario: ME_LEVELUP_SPECIAL_D.70
+  promotionDragonQuest: ME_LEVELUP_SPECIAL_D.70
+  forcedBuyout: ME_5_BUY_SPECIAL.60
+  domination: ME_MONOPOLY_SPECIAL.50
+  bankruptcy: ME_BANKRUPTCY_SPECIAL_D.73
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -22,6 +38,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed: 
+      - Ported over to new .yaml file format & new music added.
   - version: 1
     added: 
       - Initial Release
