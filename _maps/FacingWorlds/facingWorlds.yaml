@@ -9,7 +9,7 @@ theme: DragonQuest
 initialCash: 2000
 targetAmount: 25000
 baseSalary: 350
-salaryIncrement: 200
+salaryIncrement: 125
 maxDiceRoll: 8
 frbFile1: facingWorlds
 tourMode:
@@ -167,6 +167,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 6
+    changed:
+      - salary increment reduced from 200 to 125
   - version: 5
     added:
       - custom background
