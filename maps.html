@@ -70,9 +70,6 @@ permalink: /maps
         <a href="/maps" onclick="showMap('');return false;" class="btn btn-primary my-2">All Maps</a>
         <a href="{% link mapHelp.md %}" class="btn btn-secondary my-2">How to upload a Map</a>
       </p>
-      <div class="alert alert-warning" role="alert">
-        When downloading maps which have custom music or custom background, the .brstm or .cmpres files in the zip will be stubs. You will need to view the map in the git repository and download the proper .brstm and .cmpres files there.
-      </div>
     </div>
   </section>
   
@@ -350,7 +347,7 @@ permalink: /maps
             </div>
             <div class="card-footer text-muted">
               <a class="" style="float:right" href="{%- include renderMapDownloadUrl.liquid map=map -%}">View in Repository</a>
-              <div>Downloads
+              <div>Download
                 {% if map.changelog -%}
                 {%- assign firstChange = map.changelog | first -%}
                 <span class="badge bg-secondary">v{{ firstChange.version }}</span>
