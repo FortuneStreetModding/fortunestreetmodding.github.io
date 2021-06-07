@@ -14,6 +14,7 @@ frbFile1: underseatemple
 background: bg005
 mapIcon: underseatemple
 music:
+  download: https://drive.google.com/uc?export=download&id=1GE3uHRq25GseSa_Ooz9oONjbbk1DeHB0
   map: BGM_MAP_SEABED.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_SPECIAL.50

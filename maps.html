@@ -107,6 +107,7 @@ permalink: /maps
               {%- endif %}
             {%- endif %}
           {%- endif %}
+          {%- assign background = site.data.backgrounds | where: "background", map.background | first %}
         <div class="col mb-4 mapCard {% include renderMapSlugClass.liquid map=map -%}">
           <div class="card h-100">
             <div class="relative-container">
@@ -347,29 +348,39 @@ permalink: /maps
               </details>
               {% endif %}
             </div>
-            <div class="card-footer">
-              <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=map -%}');">
-                Download
-                {% if map.changelog -%}
-                  {%- assign firstChange = map.changelog | first -%}
-                  <span class="badge bg-secondary">v{{ firstChange.version }}</span>
-                {%- endif %}
-              </button>
+            <div class="card-footer text-muted">
               <a class="" style="float:right" href="{%- include renderMapDownloadUrl.liquid map=map -%}">View in Repository</a>
+              <div>Downloads
+                {% if map.changelog -%}
+                {%- assign firstChange = map.changelog | first -%}
+                <span class="badge bg-secondary">v{{ firstChange.version }}</span>
+                {%- endif %}
+              </div>
+              {% if background.download or map.music.download -%}
+              <div class="btn-group" role="group">
+              {%- endif %}
+              <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=map -%}');">Map</button>
+              {%- if background.download -%}
+              <a class="btn btn-primary" href="{{ background.download }}">Background</a>
+              {%- endif %}
+              {%- if map.music.download -%}
+              <a class="btn btn-primary" href="{{ map.music.download }}">Music</a>
+              {%- endif %}
+              {% if background.download or map.music.download -%}
+              </div>
+              {%- endif %}
             </div>
-            <div class="card-footer">
-              <span>Tags: </span>
+            <div class="card-footer text-muted">
+              <span>Tags</span>
               {% if map.music -%}
               <span class="badge rounded-pill bg-secondary px-1">Custom Music</span>
               {%- endif %}
-              {%- assign background = site.data.backgrounds | where: "file", map.background | first %}
-              {%- unless background.vanilla -%}
+              {%- if background.download -%}
               <span class="badge rounded-pill bg-secondary px-1">Custom Background</span>
-              {%- endunless  %}
+              {%- endif  %}
             </div>
           </div>
         </div>
-
           {% assign mod = forloop.index | modulo: 3 %}
           {% if mod == 0 %}
             <div class="w-100"></div>

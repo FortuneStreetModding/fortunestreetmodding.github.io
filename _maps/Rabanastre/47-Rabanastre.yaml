@@ -14,6 +14,7 @@ frbFile1: rabanastre
 background: bg005
 mapIcon: rabanastre
 music:
+  download: https://drive.google.com/uc?export=download&id=1onBRhyf7VuFNRyt-P8_WpJJA9PzAtcg_
   map: BGM_MAP_RABANASTRE.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_SPECIAL.50

@@ -3,11 +3,15 @@
 This snippet renders for the given background base file name the corresponding relative image url
 
 Args:
-  background: the background to render as a relative image url
+  backgroundEntry: the background to render as a relative image url
 
 Renders:
   relative url of the map background image corresponding to given background base file name
 
 {%- endcomment -%}
-{%- capture temporary_variable -%}/backgrounds/{{ include.background }}.webp{%- endcapture -%}
+{%- if include.backgroundEntry.download %}
+{%- capture temporary_variable -%}/backgrounds/{{ include.backgroundEntry.background }}/{{ include.backgroundEntry.background }}.webp{%- endcapture -%}
+{%- else %}
+{%- capture temporary_variable -%}/backgrounds/vanilla/{{ include.backgroundEntry.background }}.webp{%- endcapture -%}
+{%- endif %}
 {{ temporary_variable | relative_url }}

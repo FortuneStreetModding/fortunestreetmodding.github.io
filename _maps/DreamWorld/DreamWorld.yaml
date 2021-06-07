@@ -13,7 +13,24 @@ maxDiceRoll: 7
 frbFile1: DreamWorld
 background: bg107
 mapIcon: DreamWorld
-bgmId: BGM_MAP_DHAMA_old
+music:
+  download: https://drive.google.com/uc?export=download&id=1gJMLiV28XmpNcNTlJLaYyEAMJ30ilubM
+  map: BGM_MAP_DREAMWORLD.65
+  stock: BGM_STOCK_IS2.60
+  ventureCards: BGM_CHANCECARD_IS2.58
+  auction: BGM_AUCTION_IS2.70
+  targetMet:
+  win: BGM_WINNER_IS2.60
+  guestAppear:
+  guestLeave:
+  badVentureCard: ME_CURSE_IS2.58
+  takeAbreak: ME_HOLIDAY_IS2.58
+  promotionMii: ME_LEVELUP_IS2.65
+  promotionMario: ME_LEVELUP_IS2.65
+  promotionDragonQuest: ME_LEVELUP_IS2.65
+  forcedBuyout: ME_5BUY_IS2.58
+  domination:
+  bankruptcy: ME_BANKRUPTCY_IS2.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2500
@@ -22,6 +39,11 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 2
+    added:
+      - Other music from IS2
+    changed:
+      - Updated to new music yaml file format
   - version: 1
     added: 
       - Initial Release

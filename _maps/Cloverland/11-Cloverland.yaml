@@ -20,6 +20,7 @@ tourMode:
 background: bg106
 mapIcon: cloverland
 music:
+  download: https://drive.google.com/uc?export=download&id=1CUm7c1wC1XWD_Aup984zp1LC1XOIisQf
   map: BGM_MAP_CLOVERLAND.58
   stock: BGM_STOCK_IS2.60
   ventureCards: BGM_CHANCECARD_IS2.58

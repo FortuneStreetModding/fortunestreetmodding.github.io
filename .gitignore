@@ -28,3 +28,11 @@ _site/
 
 ### GIMP ###
 *.xcf
+
+### cmpres and brstm ###
+*.brstm
+*.cmpres
+
+### Binary Files ###
+*.zip
+*.7z

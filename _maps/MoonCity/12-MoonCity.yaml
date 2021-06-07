@@ -14,6 +14,7 @@ frbFile1: moon
 background: bg008
 mapIcon: moon
 music:
+  download: https://drive.google.com/uc?export=download&id=1omk0YH2ClmP8ehF7q2ify-XN3n8IQ1Y7
   map: BGM_MAP_MOONCITY.60
   stock: BGM_STOCK_IS2.60
   ventureCards: BGM_CHANCECARD_IS2.58
@@ -29,6 +30,7 @@ music:
   promotionDragonQuest: ME_LEVELUP_IS2.65
   forcedBuyout: ME_5BUY_IS2.58
   domination:
+  bankruptcy: ME_BANKRUPTCY_IS2.60
 looping:
   mode: Vertical
   radius: 28
@@ -42,6 +44,9 @@ tourMode:
   opponent3: Yoshi
   clearRank: 3 
 changelog:
+  - version: 3
+    changed:
+      - Fixed bankruptcy music
   - version: 2
     changed: 
       - Ported over to new .yaml file format.

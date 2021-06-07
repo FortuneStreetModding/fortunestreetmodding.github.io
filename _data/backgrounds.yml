@@ -1,117 +1,96 @@
-- file: bg001
-  icon: p_bg_001
+- background: bg001
+  mapIcon: p_bg_001
   bgm:  BGM_MAP_YOSHI
   name: Yoshi's Island
-  vanilla: true
-  download: false
-- file: bg002
-  icon: p_bg_002
+- background: bg002
+  mapIcon: p_bg_002
   bgm:  BGM_MAP_CIRCUIT
   name: Mario Circuit
-  vanilla: true
-  download: false
-- file: bg003
-  icon: p_bg_003
+- background: bg003
+  mapIcon: p_bg_003
   bgm:  BGM_MAP_PEACH
   name: Peach's Castle
-  vanilla: true
-  download: false
-- file: bg004
-  icon: p_bg_004
+- background: bg004
+  mapIcon: p_bg_004
   bgm:  BGM_MAP_STADIUM
   name: Mario Stadium
-  vanilla: true
-  download: false
-- file: bg005
-  icon: p_bg_005
+- background: bg005
+  mapIcon: p_bg_005
   bgm:  BGM_MAP_DOLPIC
   name: Delfino Plaza
-  vanilla: true
-  download: false
-- file: bg006
-  icon: p_bg_006
+- background: bg006
+  mapIcon: p_bg_006
   bgm:  BGM_MAP_SMB
   name: Super Mario Bros.
-  vanilla: true
-  download: false
-- file: bg007
-  icon: p_bg_007
+- background: bg007
+  mapIcon: p_bg_007
   bgm:  BGM_MAP_KOOPA
   name: Bowser's Castle
-  vanilla: true
-  download: false
-- file: bg008
-  icon: p_bg_008
+- background: bg008
+  mapIcon: p_bg_008
   bgm:  BGM_MAP_STARSHIP
   name: Starship Mario
-  vanilla: true
-  download: false
-- file: bg009
-  icon: p_bg_009
+- background: bg009
+  mapIcon: p_bg_009
   bgm:  BGM_MAP_EGG
   name: Good Egg Galaxy
-  vanilla: true
-  download: false
-- file: bg101
-  icon: p_bg_101
+- background: bg101
+  mapIcon: p_bg_101
   bgm:  BGM_MAP_TRODAIN
   name: Castle Trodain
-  vanilla: true
-  download: false
-- file: bg102
-  icon: p_bg_102
+- background: bg102
+  mapIcon: p_bg_102
   bgm:  BGM_MAP_GHOSTSHIP
   name: Ghost Ship
-  vanilla: true
-  download: false
-- file: bg103
-  icon: p_bg_103
+- background: bg103
+  mapIcon: p_bg_103
   bgm:  BGM_MAP_MAJINZOU
   name: Colossus
-  vanilla: true
-  download: false
-- file: bg104
-  icon: p_bg_104
+- background: bg104
+  mapIcon: p_bg_104
   bgm:  BGM_MAP_SINOKAZAN
   name: Mt Magmageddon
-  vanilla: true
-  download: false
-- file: bg105
-  icon: p_bg_105
+- background: bg105
+  mapIcon: p_bg_105
   bgm:  BGM_MAP_SLABACCA
   name: Slimenia
-  vanilla: true
-  download: false
-- file: bg106
-  icon: p_bg_106
+- background: bg106
+  mapIcon: p_bg_106
   bgm:  BGM_MAP_KANDATA
   name: Robbin' Hood Ruins
-  vanilla: true
-  download: false
-- file: bg107
-  icon: p_bg_107
+- background: bg107
+  mapIcon: p_bg_107
   bgm:  BGM_MAP_ALEFGARD
   name: Alefgard
-  vanilla: true
-  download: false
-- file: bg108
-  icon: p_bg_108
+- background: bg108
+  mapIcon: p_bg_108
   bgm:  BGM_MAP_DHAMA
   name: Alltrades Abbey
-  vanilla: true
-  download: false
-- file: bg109
-  icon: p_bg_109
+- background: bg109
+  mapIcon: p_bg_109
   bgm:  BGM_MAP_ANGEL
   name: The Observatory
-  vanilla: true
-  download: false
-- file: bg901
+- background: bg901
   name: Tutorial
   bgm:  BGM_MENU
-  vanilla: true
-  download: false
-- file: facingWorlds
+- background: facingWorlds
   name: Facing Worlds
-  vanilla: false
-  download: true
+  download: https://drive.google.com/uc?export=download&id=1We6EIi8CQdo8AWlKQlx8Tj_pOeEvoCcA
+  mapIcon: facingWorlds
+  music:
+    map: facingWorlds_map_forgoneRejuvenation.65
+    stock: facingWorlds_stock_killWillyforegone.80
+    ventureCards: facingWorlds_ventureCards_crxForeDest.80
+    auction: facingWorlds_auction_saintDiorInstrum.80
+    targetMet: facingWorlds_targetMet_forgoneMothership.70
+    win: facingWorlds_win_ending.80
+    guestAppear:
+    guestLeave:
+    badVentureCard:
+    takeAbreak: facingWorlds_takeABreak.80
+    promotionMii: facingWorlds_promotion_flagCaptured.70
+    promotionMario: facingWorlds_promotion_flagCaptured.70
+    promotionDragonQuest: facingWorlds_promotion_flagCaptured.70
+    forcedBuyout: facingWorlds_forcedBuyout_victoryConcept2.80
+    domination: facingWorlds_domination_introCity.90
+    bankruptcy:

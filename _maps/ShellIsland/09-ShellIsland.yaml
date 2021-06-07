@@ -14,6 +14,7 @@ frbFile1: 2-01-kaigara
 background: bg105
 mapIcon: shell
 music:
+  download: https://drive.google.com/uc?export=download&id=1bh3ETFxRxlFlie_cKodpCzhXGvBJRGNA
   map: BGM_MAP_SHELLISLE.86
   stock: BGM_STOCK_IS2.60
   ventureCards: BGM_CHANCECARD_IS2.58
@@ -29,6 +30,7 @@ music:
   promotionDragonQuest: ME_LEVELUP_IS2.65
   forcedBuyout: ME_5BUY_IS2.58
   domination:
+  bankruptcy: ME_BANKRUPTCY_IS2.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -37,6 +39,9 @@ tourMode:
   opponent3: Carver
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Fixed bankruptcy music
   - version: 2
     changed: 
       - Ported over to new .yaml file format.

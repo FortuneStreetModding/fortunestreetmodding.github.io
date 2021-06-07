@@ -14,23 +14,23 @@ layout: default
   <div class="album">
     <div class="container">
       <div class="row">
-        {%- for background in site.data.backgrounds -%}
+        {%- for backgroundEntry in site.data.backgrounds -%}
         <div class="col-md-4 mb-5">
           <div class="card h-100">
-            <img class="card-img-top" src="{%- include renderBackground.liquid background=background.file -%}" style="object-fit: fill;"></a>
+            <img class="card-img-top" src="{%- include renderBackground.liquid backgroundEntry=backgroundEntry -%}" style="object-fit: fill;"></a>
             <div class="card-body">
-              <h4 class="card-title">{{ background.file }}</h4>
-              <p class="card-text">{{ background.name }}</p>
+              <h4 class="card-title">{{ backgroundEntry.background }}</h4>
+              <p class="card-text">{{ backgroundEntry.name }}</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">{{ background.bgm }}</li>
-              {%- if background.icon -%}
-              <li class="list-group-item">{{ background.icon }}</li>
+              <li class="list-group-item">{{ backgroundEntry.bgm }}</li>
+              {%- if backgroundEntry.mapIcon -%}
+              <li class="list-group-item">{{ backgroundEntry.mapIcon }}</li>
               {%- endif -%}
             </ul>
-            {%- if background.download -%}
+            {%- if backgroundEntry.download -%}
             <div class="card-footer">
-              <button class="btn btn-primary" onclick="GitZip.zipRepo('{{ background.download }}');">Download</button>
+              <a href="{{ backgroundEntry.download }}" class="btn btn-primary">Download</a>
             </div>
             {%- endif -%}
           </div>

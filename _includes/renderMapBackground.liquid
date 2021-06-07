@@ -9,4 +9,5 @@ Renders:
   relative url of the map background image corresponding to the map background set for the given map item
 
 {%- endcomment -%}
-{%- include renderBackground.liquid background=include.map.background -%}
+{%- assign rmb_backgroundEntry = site.data.backgrounds | where: "background", include.map.background | first %}
+{%- include renderBackground.liquid backgroundEntry=rmb_backgroundEntry -%}
