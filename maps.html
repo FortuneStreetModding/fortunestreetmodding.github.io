@@ -213,6 +213,11 @@ permalink: /maps
                 {%- endif %}
               </div>
             </div>
+            {% if map.notes -%}
+            <div class="card-body mapInfo {% include renderMapSlugClass.liquid map=map -%}">
+              {{ map.notes | markdownify }}
+            </div>
+            {%- endif %}
             <div class="card-body mapInfo {% include renderMapSlugClass.liquid map=map -%}">
               <div class="row mb-4">
                 <div class="col">
