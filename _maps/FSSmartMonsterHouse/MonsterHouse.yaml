@@ -14,14 +14,6 @@ salaryIncrement: 300
 maxDiceRoll: 8
 frbFile1: monster
 background: bg102
-mapIcon: p_bg_102
-switchRotationOriginPoints:
-  []
-looping:
-  mode: None
-  radius: 0
-  horizontalPadding: 0
-  verticalSquareCount: 0
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000

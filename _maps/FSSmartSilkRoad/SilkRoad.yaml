@@ -14,14 +14,6 @@ salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: silkroad
 background: bg107
-mapIcon: p_bg_107
-switchRotationOriginPoints:
-  []
-looping:
-  mode: None
-  radius: 0
-  horizontalPadding: 0
-  verticalSquareCount: 0
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000

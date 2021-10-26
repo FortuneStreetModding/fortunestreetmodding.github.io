@@ -12,7 +12,6 @@ salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: downhill
 background: bg901
-mapIcon: p_bg901
 bgmId: BGM_MENU
 tourMode:
   bankruptcyLimit: 1
