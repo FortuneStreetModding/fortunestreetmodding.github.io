@@ -12,7 +12,7 @@ salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: underseatemple
 background: bg005
-mapIcon: underseatemple
+mapIcon: seabedshrine
 music:
   download: https://drive.google.com/uc?export=download&id=1GE3uHRq25GseSa_Ooz9oONjbbk1DeHB0
   map: BGM_MAP_SEABED.50
