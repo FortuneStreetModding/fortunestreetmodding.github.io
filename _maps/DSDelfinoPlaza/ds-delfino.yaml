@@ -148,10 +148,11 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 authors:
-  - name: mask1n and Azurillkirby
+  - name: mask1n
+  - name: Azurillkirby
 notes: |
   - This map was originally constructed by mask1n, who did most of the work.
   - Azurillkirby finished up the map: Fixing waypoints and rent values, making the yaml file, setting the venture card list, and doing final testing.
   - The venture card set is the same as in the original DS version, with two exceptions: Cards 76 and 94 were replaced with cards 111 and 15, respectively.
-        -These two cards changed effects between versions, and were swapped with other cards to attempt to fairly compensate for them.
+    - These two cards changed effects between versions, and were swapped with other cards to attempt to fairly compensate for them.
 ...
