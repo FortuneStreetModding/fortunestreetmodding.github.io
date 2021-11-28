@@ -147,7 +147,7 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-author:
+authors:
   - name: Azurillkirby
 notes: |
   - This map was originally from Itadaki Street 30th Anniversary. On the original board, there were 4 switch spaces on the top row that let you fire at the Dragonlord for different amounts of money. If you did so, you could possibly stun him or he might send you to one of the islands. Since this is not recreatable, the switches have been replaced with an arcade, a boom square, and two portals, each of which go to the island directly below them.
