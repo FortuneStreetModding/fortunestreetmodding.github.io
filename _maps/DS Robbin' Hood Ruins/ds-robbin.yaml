@@ -156,7 +156,8 @@ changelog:
     added: 
       - Initial Release
 authors:
-  - name: mask1n and Azurillkirby
+  - name: mask1n
+  - name: Azurillkirby
 notes: |
   - This map was originally constructed by mask1n, who did most of the work.
   - Azurillkirby finished up the map: Fixing waypoints and rent values, making the yaml file, setting the venture card list, and doing final testing.
