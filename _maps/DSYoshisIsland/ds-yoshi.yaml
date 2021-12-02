@@ -154,5 +154,5 @@ notes: |
   - This map was originally constructed by mask1n, who did most of the work.
   - Azurillkirby finished up the map: Fixing waypoints and rent values, making the yaml file, setting the venture card list, and doing final testing.
   - The venture card set is the same as in the original DS version, with four exceptions: Cards 29, 39, 47, and 82 were replaced with cards 44, 46, 83, and 49, respectively.
-        -These four cards changed effects between versions, and were swapped with other cards to attempt to fairly compensate for them.
+    - These four cards changed effects between versions, and were swapped with other cards to attempt to fairly compensate for them.
 ...
