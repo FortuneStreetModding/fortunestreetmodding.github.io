@@ -20,50 +20,51 @@ var random_base_prices = [
 [238,244], [240,247], [242,250], [244,253], [246,256], [249,260], [252,263], [255,266], [258,269], [260,274], //11xx
 [263,277], [266,281], [270,285], [273,290], [276,295], [280,300] //------------------------------------------ //12xx
 ];
+
 var prices_table_vanilla = [
-    0,     0,     0,     0,     0,     0,     0,     0,     0,
-    0,     0,     0,     0,     0,     0,     0,     0,     0,
-    0,     0,     0,     0,     0,     0,     0,     0,     0,
-0x100, 0x200, 0x3C0,     0,     0,     0,     0,     0,     0,
-0x100, 0x140, 0x280, 0x500,     0,     0,     0,     0,     0,
-0x100, 0x140, 0x200, 0x340, 0x600,     0,     0,     0,     0,
-0x100, 0x140, 0x200, 0x2C0, 0x440, 0x6C0,     0,     0,     0,
-0x100, 0x140, 0x1C0, 0x2C0, 0x3C0, 0x540, 0x780,     0,     0,
-0x100, 0x140, 0x1C0, 0x280, 0x380, 0x480, 0x600, 0x800,     0
+      0,     0,     0,     0,     0,     0,     0,     0,     0,
+  0xA6D,0x5F61,0x7265,0x6128,0x3D25,0x7029,0x2069,0x7320,0x6E6F,
+ 0x7420,0x7661,0x6C69,0x6420,0x706F,0x696E,0x7465,0x722E,     0,
+  0x100, 0x200, 0x3C0,     0,     0,     0,     0,     0,     0,
+  0x100, 0x140, 0x280, 0x500,     0,     0,     0,     0,     0,
+  0x100, 0x140, 0x200, 0x340, 0x600,     0,     0,     0,     0,
+  0x100, 0x140, 0x200, 0x2C0, 0x440, 0x6C0,     0,     0,     0,
+  0x100, 0x140, 0x1C0, 0x2C0, 0x3C0, 0x540, 0x780,     0,     0,
+  0x100, 0x140, 0x1C0, 0x280, 0x380, 0x480, 0x600, 0x800,     0
 ];
 var prices_table_csmm = [
-    0,     0,     0,     0,     0,     0,     0,     0,     0,
-0x100,     0,     0,     0,     0,     0,     0,     0,     0,
-0x100, 0x200,     0,     0,     0,     0,     0,     0,     0,
-0x100, 0x180, 0x3C0,     0,     0,     0,     0,     0,     0,
-0x100, 0x140, 0x280, 0x500,     0,     0,     0,     0,     0,
-0x100, 0x140, 0x200, 0x340, 0x600,     0,     0,     0,     0,
-0x100, 0x140, 0x200, 0x2C0, 0x440, 0x6C0,     0,     0,     0,
-0x100, 0x140, 0x1C0, 0x2C0, 0x3C0, 0x540, 0x780,     0,     0,
-0x100, 0x140, 0x1C0, 0x280, 0x380, 0x480, 0x600, 0x800,     0
+      0,     0,     0,     0,     0,     0,     0,     0,     0,
+  0x100,     0,     0,     0,     0,     0,     0,     0,     0,
+  0x100, 0x200,     0,     0,     0,     0,     0,     0,     0,
+  0x100, 0x180, 0x3C0,     0,     0,     0,     0,     0,     0,
+  0x100, 0x140, 0x280, 0x500,     0,     0,     0,     0,     0,
+  0x100, 0x140, 0x200, 0x340, 0x600,     0,     0,     0,     0,
+  0x100, 0x140, 0x200, 0x2C0, 0x440, 0x6C0,     0,     0,     0,
+  0x100, 0x140, 0x1C0, 0x2C0, 0x3C0, 0x540, 0x780,     0,     0,
+  0x100, 0x140, 0x1C0, 0x280, 0x380, 0x480, 0x600, 0x800,     0
 ];
 var prices_table = prices_table_csmm
 var maxcap_table_vanilla = [
-     0,     0,     0,     0,     0,     0,     0,     0,     0,
-     0,     0,     0,     0,     0,     0,     0,     0,     0,
-     0,     0,     0,     0,     0,     0,     0,     0,     0,
- 0x200, 0x300, 0x600,     0,     0,     0,     0,     0,     0,
- 0x180, 0x200, 0x400, 0xA00,     0,     0,     0,     0,     0,
- 0x180, 0x200, 0x400, 0xA00, 0xC00,     0,     0,     0,     0,
- 0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,     0,     0,     0,
- 0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,0x1000,     0,     0,
- 0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,0x1000,0x1300,     0
+      0,     0,     0,     0,     0,     0,     0,     0,     0,
+  0x100,     0,     0,     0,     0,     0,     0,     0,     0,
+  0x100, 0x140,     0,     0,     0,     0,     0,     0,     0,
+  0x200, 0x300, 0x600,     0,     0,     0,     0,     0,     0,
+  0x180, 0x200, 0x400, 0xA00,     0,     0,     0,     0,     0,
+  0x180, 0x200, 0x400, 0xA00, 0xC00,     0,     0,     0,     0,
+  0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,     0,     0,     0,
+  0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,0x1000,     0,     0,
+  0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,0x1000,0x1300,     0
 ];
 var maxcap_table_csmm = [
-    0,     0,     0,     0,     0,     0,     0,     0,     0,  
-0x200,     0,     0,     0,     0,     0,     0,     0,     0,
-0x180, 0x300,     0,     0,     0,     0,     0,     0,     0,
-0x180, 0x200, 0x600,     0,     0,     0,     0,     0,     0,
-0x180, 0x200, 0x400, 0xA00,     0,     0,     0,     0,     0,
-0x180, 0x200, 0x400, 0xA00, 0xC00,     0,     0,     0,     0,
-0x180, 0x200, 0x400, 0xA00, 0xC00 ,0xE00,     0,     0,     0,
-0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,0x1000,     0,     0,
-0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,0x1000,0x1300,     0
+      0,     0,     0,     0,     0,     0,     0,     0,     0,  
+  0x200,     0,     0,     0,     0,     0,     0,     0,     0,
+  0x180, 0x300,     0,     0,     0,     0,     0,     0,     0,
+  0x180, 0x200, 0x600,     0,     0,     0,     0,     0,     0,
+  0x180, 0x200, 0x400, 0xA00,     0,     0,     0,     0,     0,
+  0x180, 0x200, 0x400, 0xA00, 0xC00,     0,     0,     0,     0,
+  0x180, 0x200, 0x400, 0xA00, 0xC00 ,0xE00,     0,     0,     0,
+  0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,0x1000,     0,     0,
+  0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,0x1000,0x1300,     0
 ];
 var maxcap_table = maxcap_table_csmm
 var price_rank_table = [
@@ -371,8 +372,13 @@ function randomize() {
 	vmax = Math.floor(vmax / 10);
 
 	if (vmin >= vmax) { tx_error.innerHTML="Shop value minimum is greater than (or equal to) maximum."; return; }
-	if (smin < 3) smin = 3;
-	if (smax > 8) smax = 8;
+  if (prices_table == prices_table_vanilla) {
+    if (smin < 3) smin = 3;
+	  if (smax > 8) smax = 8;
+  } else {
+    if (smin < 1) smin = 1;
+	  if (smax > 8) smax = 8;
+  }
 	if (smin > smax) { tx_error.innerHTML="Shop count minimum is greater than maximum."; return; }
 	if (target <= 2 || target > 50) { tx_error.innerHTML="Target stock price is constrained from 3 to 50 for sanity purposes."; return; }
 
@@ -466,7 +472,7 @@ table tr { vertical-align: top; }
 		<div class="container">
 
 <div class="d-flex flex-row-reverse bd-highlight">
-  <div class="alert alert-dark">
+  <div class="alert alert-dark" aria-label="This only affects districts with 3 or less shops" data-balloon-pos="up" data-balloon-blunt>
     <label for="tables-group" class="form-label">Use Multiplier Table from</label>
     <div class="btn-group" role="group" id="tables-group" aria-label="Basic example">
       <input type="radio" class="btn-check" name="gametype" id="gametype_csmm" value="csmm" autocomplete="off" onclick="set_csmm();" checked>
@@ -681,14 +687,19 @@ table tr { vertical-align: top; }
     <h3 class="jumbotron-heading">Random district creation</h1>
 
 <table>
-<tbody><tr><td style="text-align:right;">
-<div style="margin-bottom:2px;"><b>Shop values:</b></div>
-<div style="margin-bottom:2px;"><b>Number of shops:</b></div>
-<div style="margin-bottom:2px;"><b>Target stock value:</b></div>
-</td><td style="text-align:left;">
-<div class="input-group"><span class="input-group-text alert-secondary">min</span><input style="text-align:right; width:100px" class="form-control" type="text" id="r-vmin" value="90" maxlength="4"><span class="input-group-text alert-secondary">/</span><input class="form-control" style="width:100px" type="text" id="r-vmax" value="550" maxlength="4"><span class="input-group-text alert-secondary">max</span></div>
-<div class="input-group"><span class="input-group-text alert-secondary">min</span><input style="text-align:right; width:100px" class="form-control" type="text" id="r-smin" value="4" maxlength="1"><span class="input-group-text alert-secondary">/</span><input class="form-control" style="width:100px" type="text" id="r-smax" value="6" maxlength="1"><span class="input-group-text alert-secondary">max</span></div>
-<div class="input-group"><input class="form-control" style="text-align:right; width:100px" type="text" id="r-target" value="10" maxlength="2"><span class="input-group-text alert-secondary">g</span></div>
+<tbody><tr><td style="text-align:left;">
+<div>
+  <label for="shop-values" class="form-label">Shop values:</label>
+  <div class="input-group" id="shop-values"><span class="input-group-text alert-secondary">min</span><input style="text-align:right; width:100px" class="form-control" type="text" id="r-vmin" value="90" maxlength="4"><span class="input-group-text alert-secondary">/</span><input class="form-control" style="width:100px" type="text" id="r-vmax" value="550" maxlength="4"><span class="input-group-text alert-secondary">max</span></div>
+</div>
+<div>
+  <label for="number-of-shops" class="form-label">Number of shops:</label>
+  <div class="input-group" id="number-of-shops"><span class="input-group-text alert-secondary">min</span><input style="text-align:right; width:100px" class="form-control" type="text" id="r-smin" value="4" maxlength="1"><span class="input-group-text alert-secondary">/</span><input class="form-control" style="width:100px" type="text" id="r-smax" value="6" maxlength="1"><span class="input-group-text alert-secondary">max</span></div>
+</div>
+<div>
+  <label for="target-stock-value" class="form-label">Target stock value:</label>
+  <div class="input-group" id="target-stock-value"><input class="form-control" style="text-align:right; width:100px" type="text" id="r-target" value="10" maxlength="2"><span class="input-group-text alert-secondary">g</span></div>
+</div>
 </td>
 <td>
   <div class="btn-group-vertical" role="group" aria-label="Basic radio toggle button group">
