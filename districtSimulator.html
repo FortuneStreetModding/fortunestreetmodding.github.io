@@ -437,15 +437,27 @@ table tr { vertical-align: top; }
 
 </style>
 
+
   <!--- Navigation -->
   <section class="jumbotron text-center">
     <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="{% link index.html %}">Home</a>
+              </li>
+          </div>
+        </div>
+      </nav>
+
       <h1 class="jumbotron-heading">District Simulator</h1>
       <p class="lead text-muted">Simulates the prices, values, investments and stock values for districts with various amount of shops.</p>
       <p class="lead text-muted"><a href="http://inuyasha.rustedlogic.net/projects/fs-district-sim/">Original</a> by Kaito Sinclaire</p>
-      <p>
-        <a href="{% link index.html %}" class="btn btn-primary my-2">Main</a>
-      </p>
     </div>
   </section>
 
@@ -453,13 +465,18 @@ table tr { vertical-align: top; }
 	<section class="jumbotron text-center">
 		<div class="container">
 
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <input type="radio" class="btn-check" name="gametype" id="gametype_csmm" value="csmm" autocomplete="off" onclick="set_csmm();" checked>
-        <label class="btn btn-outline-primary" for="gametype_csmm">CSMM</label>
-      
-        <input type="radio" class="btn-check" name="gametype" id="gametype_vanilla" value="vanilla" autocomplete="off" onclick="set_vanilla();">
-        <label class="btn btn-outline-primary" for="gametype_vanilla">Vanilla</label>
-      </div>
+<div class="d-flex flex-row-reverse bd-highlight">
+  <div class="alert alert-dark">
+    <label for="tables-group" class="form-label">Use Multiplier Table from</label>
+    <div class="btn-group" role="group" id="tables-group" aria-label="Basic example">
+      <input type="radio" class="btn-check" name="gametype" id="gametype_csmm" value="csmm" autocomplete="off" onclick="set_csmm();" checked>
+      <label class="btn btn-outline-primary" for="gametype_csmm">CSMM</label>
+    
+      <input type="radio" class="btn-check" name="gametype" id="gametype_vanilla" value="vanilla" autocomplete="off" onclick="set_vanilla();">
+      <label class="btn btn-outline-primary" for="gametype_vanilla">Vanilla</label>
+    </div>
+</div>
+</div>
 
 <table><tbody><tr>
 <td class="input-box"><input type="text" class="form-control" id="shop1_value" oninput="recalc()" placeholder="Value" value="390"></td>
@@ -654,12 +671,12 @@ table tr { vertical-align: top; }
 <td class="invest-box"><div id="shop8_bought" class="hidden"><div class="input-group"><input type="text" class="form-control" id="shop8_invest" maxlength="3"><input class="btn btn-secondary" type="button" value="Invest" onclick="invest(7)"></div></div></td>
 </tr>
 </tbody></table>
-<span class="stock-price">Stock prices for the district are currently <span id="stocks">10</span>g.</span>
+<div class="stock-price alert alert-secondary">Stock prices for the district are currently <span id="stocks">10</span>g.</span></div>
 
 <br>
+
 <br>
 
-</div>
 </section>
 <section class="jumbotron text-center">
   <div class="container">
