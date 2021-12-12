@@ -1,29 +1,38 @@
 ---
 name:
-  en: Dragonlord's Castle (30th)
+  en: Hotel
 desc:
-  en: "Dragonlord's Castle, ported from Itadaki Street 30th Anniversary. Dragonlord Switches are unable to recreated in Wii, so they have been replaced."
+  en: You can only go clockwise. This map is based on the same-named board game. 
+  de: Man kann nur im Uhrzeigersinn gehen. Die Karte basiert auf dem gleichnamigen Brettspiel. 
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
-targetAmount: 20000
-baseSalary: 300
+targetAmount: 18000
+baseSalary: 200
 salaryIncrement: 150
 maxDiceRoll: 6
-frbFile1: 30th-dragonlords-castle
-background: bg102
+frbFile1: hotel
 tourMode:
   bankruptcyLimit: 1
-  opponent1: Platypunk
-  opponent2: Carver
-  opponent3: Alena
-  clearRank: 2
+  opponent1: Mario
+  opponent2: Slime
+  opponent3: BowserJr
+  clearRank: 1
+background: bg005
+mutators:
+  RollAgain: 
+    WhenRollIs: 6
+    OnlyOnce: true
+    RollAgainOptional: true
+  ShopPriceMultiplier: 0.2857
+  RollShopPriceMultiplier: 
+    MaxRoll: 6
 ventureCards:
-  - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
+  - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
   - 1  #   3 Venture through space! Zoom over to any non-venture, non-suit square you like!
-  - 0  #   4 Moneymaking venture! Roll the die and get 40 times the number shown in gold coins from the player in 1st place!
-  - 1  #   5 Venture through space! Zoom over to any shop or vacant plot!
+  - 1  #   4 Moneymaking venture! Roll the die and get 40 times the number shown in gold coins from the player in 1st place!
+  - 0  #   5 Venture through space! Zoom over to any shop or vacant plot!
   - 1  #   6 Venture through space! Zoom over to any venture or suit square!
   - 1  #   7 Special bonus! Your shops all grow by 7%!
   - 1  #   8 Venture on! Everyone's shop prices increase by 30%! Now roll the die and move again.
@@ -39,7 +48,7 @@ ventureCards:
   - 0  #  18 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value.
   - 1  #  19 Price hike venture! Your shop prices go up by 30% until your next turn.
   - 1  #  20 Revaluation venture! You can expand any one of your shops by 20%.
-  - 1  #  21 Random venture! You receive 20 stocks in a district picked at random!
+  - 0  #  21 Random venture! You receive 20 stocks in a district picked at random!
   - 1  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
   - 1  #  23 Revaluation venture! You can expand any one of your shops by 50%.
   - 0  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
@@ -63,7 +72,7 @@ ventureCards:
   - 0  #  42 Misadventure! Stock prices fall by 20% in a district picked at random!
   - 1  #  43 Misadventure! You pay an assets tax of two gold coins per unit of stock that you own!
   - 1  #  44 Misadventure! Roll the die and pay 44 times the number in gold coins to the player in last place!
-  - 0  #  45 Dicey adventure! Roll 1/3/5 to warp to a take-a-break square. Roll 2/4/6 to warp to the arcade.
+  - 1  #  45 Dicey adventure! Roll 1/3/5 to warp to a take-a-break square. Roll 2/4/6 to warp to the arcade.
   - 1  #  46 Misadventure! You drop your wallet and lose 10% of your ready cash!
   - 0  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
   - 0  #  48 Misadventure! All shops in a district picked at random fall in value by 10%!
@@ -72,11 +81,11 @@ ventureCards:
   - 0  #  51 Venture on! Move forward 1 square more.
   - 0  #  52 Venture on! Move forward another 2 squares.
   - 1  #  53 Venture through space! Zoom over to the bank!
-  - 1  #  54 Venture through space! Pay 100G to zoom straight to the bank!
+  - 0  #  54 Venture through space! Pay 100G to zoom straight to the bank!
   - 1  #  55 Venture on! Roll the die again and move forward (with an invitation to browse thrown in!).
   - 1  #  56 Venture on! Roll the die again and move forward (with a half-price special offer thrown in!).
   - 1  #  57 Venture through space! Zoom to any square you like.
-  - 1  #  58 Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!
+  - 0  #  58 Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!
   - 1  #  59 Stock venture! You can buy stocks in a district of your choice at 10% below the market value.
   - 1  #  60 Random venture! Stock prices increase by 10% in a district picked at random!
   - 1  #  61 Special bonus! You receive a 10% dividend on your stocks!
@@ -95,7 +104,7 @@ ventureCards:
   - 1  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
   - 0  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
   - 1  #  76 Special arcade adventure! You're invited to play Round the Blocks!
-  - 1  #  77 Freebie! Take five of each district's stocks.
+  - 0  #  77 Freebie! Take five of each district's stocks.
   - 0  #  78 Property venture! You can buy any unowned shop or vacant plot for 200G more than its value.
   - 1  #  79 Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not.
   - 1  #  80 Freebie! Take a Spade!
@@ -106,14 +115,14 @@ ventureCards:
   - 1  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 1  #  86 Moneymaking venture! Take 100G from all other players!
   - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
-  - 0  #  88 Misadventure! All other players swap places!
+  - 1  #  88 Misadventure! All other players swap places!
   - 1  #  89 Freebie! All players take a Suit Yourself card!
   - 0  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
   - 0  #  91 Cameo adventure! A healslime appears!
   - 1  #  92 Cameo adventure! Lakitu appears!
   - 0  #  93 Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 1  #  94 Freebie! Take a Diamond!
-  - 0  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
+  - 1  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
   - 1  #  96 Misadventure! All players scramble to another player's location!
   - 1  #  97 Stock rise venture! Increase stock value by 20% in a district of your choice.
   - 0  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
@@ -135,8 +144,8 @@ ventureCards:
   - 0  # 114 Moneymaking venture! Take your level times 40G from all other players!
   - 0  # 115 Misadventure! All other players can only move forward 7 on their next turn.
   - 0  # 116 Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
-  - 1  # 117 Adventurous turning point! Everyone gets to choose which way to move on their next go.
-  - 0  # 118 Lucky venture! You get a really big commission until your next turn!
+  - 0  # 117 Adventurous turning point! Everyone gets to choose which way to move on their next go.
+  - 1  # 118 Lucky venture! You get a really big commission until your next turn!
   - 0  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
   - 0  # 120 Misadventure! You drop your wallet and lose 20% of your ready cash!
   - 0  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
@@ -146,11 +155,12 @@ ventureCards:
   - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
-  - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+  - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+changelog:
+  - version: 1
+    added: 
+      - Initial Release
 authors:
-  - name: Azurillkirby
-notes: |
-  - This map was originally from Itadaki Street 30th Anniversary. On the original board, there were 4 switch spaces on the top row that let you fire at the Dragonlord for different amounts of money. If you did so, you could possibly stun him or he might send you to one of the islands. Since this is not recreatable, the switches have been replaced with an arcade, a boom square, and two portals, each of which go to the island directly below them.
-  - The venture card set has been taken from Mario Circuit.
+  - name: Deflaktor
+    url: https://github.com/Deflaktor
 ...
-
