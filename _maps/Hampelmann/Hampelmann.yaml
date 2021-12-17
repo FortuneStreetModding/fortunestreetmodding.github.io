@@ -3,8 +3,8 @@ name:
   en: Jumping Jack
   de: Hampelmann
 desc:
-  en: Watch out for the Islands.
-  de: Passt auf die gefährlichen Inseln auf.
+  en: Watch out for the Islands. By widardd.
+  de: Passt auf die gefährlichen Inseln auf. Von widardd.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1750

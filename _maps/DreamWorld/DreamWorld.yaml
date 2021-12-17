@@ -1,8 +1,8 @@
 ---
 name:
-  en: IS2 Dream World
+  en: Dream World (IS2)
 desc:
-  en: Dream World remade from Itadaki Street 2.
+  en: Dream World remade from Itadaki Street 2. Ported by SuperTails.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -14,8 +14,8 @@ frbFile1: DreamWorld
 background: bg107
 mapIcon: DreamWorld
 music:
-  download: https://drive.google.com/uc?export=download&id=1gJMLiV28XmpNcNTlJLaYyEAMJ30ilubM
-  map: BGM_MAP_DREAMWORLD.65
+  download: https://drive.google.com/u/0/uc?id=1oM-3XrzuN18nQFOVf7SQQWdJvoaHiQ0E&export=download
+  map: BGM_MAP_DREAMWORLD_IS2R.60
   stock: BGM_STOCK_IS2.60
   ventureCards: BGM_CHANCECARD_IS2.58
   auction: BGM_AUCTION_IS2.70

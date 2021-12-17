@@ -2,7 +2,7 @@
 name:
   en: Delfino Plaza (DS)
 desc:
-  en: "Delfino Plaza, but the DS version!"
+  en: Delfino Plaza, but the DS version! Ported by mask1n & Azurillkirby.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000

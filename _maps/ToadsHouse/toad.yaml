@@ -3,8 +3,8 @@ name:
   en: Toad's House
   de: Toads Haus
 desc: 
-  en: Whenever someone steps on an Event Square, Lakitu will visit Toad's house. A small map where you can ramp up promotions quickly.
-  de: Jedes Mal wenn jemand auf ein Ereignisfeld tritt, besucht Lakitu Toads Haus. Eine kleine Karte in der man schnell aufsteigen kann.
+  en: Whenever someone steps on an Event Square, Lakitu will visit Toad's house. A small map where you can ramp up promotions quickly. By Deflaktor.
+  de: Jedes Mal wenn jemand auf ein Ereignisfeld tritt, besucht Lakitu Toads Haus. Eine kleine Karte in der man schnell aufsteigen kann. Von Deflaktor.
 ruleSet: Standard
 theme: Mario
 initialCash: 1200

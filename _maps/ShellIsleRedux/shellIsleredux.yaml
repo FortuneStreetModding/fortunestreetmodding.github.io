@@ -3,8 +3,8 @@ name:
   en: Shell Isle Redux
   de: Muschelinsel Redux
 desc: 
-  en: A small and balanced map for quick games. Remake from Itadaki Street 2 but with added portal.
-  de: Eine kleine und ausgeglichene Karte für kurze Runden. Neu aufgelegt aus Itadaki Street 2 aber zusätzlich mit einem Portal.
+  en: A small and balanced map for quick games. Remake from Itadaki Street 2 but with added portal. By Deflaktor.
+  de: Eine kleine und ausgeglichene Karte für kurze Runden. Neu aufgelegt aus Itadaki Street 2 aber zusätzlich mit einem Portal. Von Deflaktor.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1200

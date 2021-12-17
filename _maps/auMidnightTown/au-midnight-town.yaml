@@ -2,7 +2,7 @@
 name:
   en: Midnight Town (au)
 desc:
-  en: "Midnight Town, ported from Itadaki Street for au."
+  en: Midnight Town, ported from Itadaki Street for au by Azurillkirby.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -12,6 +12,7 @@ salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: au-midnight-town
 background: bg006
+mapIcon: midnight
 tourMode:
   bankruptcyLimit: 1
   opponent1: Bianca

@@ -2,7 +2,7 @@
 name:
   en: Yoshi's Island (DS)
 desc:
-  en: "Yoshi's Island, but the DS version!"
+  en: Yoshi's Island, but the DS version! Ported by mask1n & Azurillkirby.
 ruleSet: Standard
 theme: Mario
 initialCash: 1200

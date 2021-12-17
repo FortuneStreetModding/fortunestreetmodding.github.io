@@ -2,7 +2,7 @@
 name:
   en: School (Mobile)
 desc:
-  en: "School, ported from Itadaki Street Mobile."
+  en: School, ported from Itadaki Street Mobile by Azurillkirby.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -12,6 +12,7 @@ salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: mobile-school
 background: bg004
+mapIcon: school
 tourMode:
   bankruptcyLimit: 1
   opponent1: Wario

@@ -1,6 +1,6 @@
 ---
 name:
-  en: IS2 Cloverland
+  en: Cloverland (IS2)
 desc:
   en: Originally from Itadaki Street 2. A large simple board with three loops. Map file was included in unused files, but has had shop prices adjusted and made playable. Ported by Sophilautia.
 ruleSet: Standard
@@ -20,13 +20,13 @@ tourMode:
 background: bg106
 mapIcon: cloverland
 music:
-  download: https://drive.google.com/uc?export=download&id=1CUm7c1wC1XWD_Aup984zp1LC1XOIisQf
-  map: BGM_MAP_CLOVERLAND.58
-  stock: BGM_STOCK_IS2.60
-  ventureCards: BGM_CHANCECARD_IS2.58
-  auction: BGM_AUCTION_IS2.70
+  download: https://drive.google.com/u/0/uc?id=1zdxjy9CPbdYYn_Ny5hBdgS97b4_ipvMz&export=download
+  map: BGM_MAP_CLOVERLAND_IS2R.60
+  stock: BGM_STOCK_IS2R.60
+  ventureCards: BGM_CHANCECARD_IS2R.60
+  auction: BGM_AUCTION_IS2R.60
   targetMet:
-  win: BGM_WINNER_IS2.60
+  win: BGM_WINNER_IS2R.60
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_IS2.58

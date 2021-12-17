@@ -3,8 +3,8 @@ name:
   en: Diamonds
   de: Karo
 desc:
-  en: Simple and small.
-  de: kurz und knackig
+  en: Simple and small. By widardd.
+  de: kurz und knackig. Von widardd.
 ruleSet: Standard
 theme: Mario
 initialCash: 1500

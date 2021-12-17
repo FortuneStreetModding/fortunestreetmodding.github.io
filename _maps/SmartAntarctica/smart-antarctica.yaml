@@ -2,16 +2,17 @@
 name:
   en: Antarctica (Smart)
 desc:
-  en: "Antarctica, ported from Fortune Street Smart."
+  en: Antarctica, ported from Fortune Street Smart by Azurillkirby.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
-targetAmount: 15000
+targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: smart-antarctica
 background: bg105
+mapIcon: antarctica
 tourMode:
   bankruptcyLimit: 1
   opponent1: Slime

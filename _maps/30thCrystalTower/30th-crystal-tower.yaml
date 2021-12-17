@@ -2,7 +2,7 @@
 name:
   en: Crystal Tower (30th)
 desc:
-  en: "Crystal Tower, ported from Itadaki Street 30th Anniversary."
+  en: Crystal Tower, ported from Itadaki Street 30th Anniversary by Azurillkirby.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1200
@@ -12,6 +12,7 @@ salaryIncrement: 100
 maxDiceRoll: 6
 frbFile1: 30th-crystal-tower
 background: bg101
+mapIcon: is30
 tourMode:
   bankruptcyLimit: 1
   opponent1: Slime

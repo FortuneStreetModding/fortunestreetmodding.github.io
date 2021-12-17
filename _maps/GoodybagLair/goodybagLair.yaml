@@ -3,8 +3,8 @@ name:
   en: Goodybag Lair
   de: Klunkerbeutelstätte
 desc:
-  en: The Event Squares summon a Goodybag, so buying shops around that area is of strategic importance.
-  de: Die Ereignisfelder rufen ein Klunkerbeutel herbei, deshalb ist es sinnvoll in der Nähe Läden zu kaufen.
+  en: The Event Squares summon a Goodybag, so buying shops around that area is of strategic importance. By Deflaktor.
+  de: Die Ereignisfelder rufen ein Klunkerbeutel herbei, deshalb ist es sinnvoll in der Nähe Läden zu kaufen. Von Deflaktor.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500

@@ -1,10 +1,10 @@
 ---
 name:
-  en: Festival
+  en: Festival (Mobile)
   jp: お祭り
 desc:
-  en: "Festival: Local streets are alive with colour and sound in this cultural celebration."
-  jp: お祭り：　色と音に満ちた通りで、地元の文化の活気あるお祝い。
+  en: Originally from Itadaki Street Mobile. Local streets are alive with colour and sound in this cultural celebration. Ported by ZaSpai.
+  jp: お祭り：　色と音に満ちた通りで、地元の文化の活気あるお祝い。 作者：ZaSpai
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -14,6 +14,7 @@ salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: matsuri
 background: bg105
+mapIcon: festival
 looping:
   mode: None
   radius: 0

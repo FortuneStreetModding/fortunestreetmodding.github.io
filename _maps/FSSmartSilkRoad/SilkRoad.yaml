@@ -1,10 +1,10 @@
 ---
 name:
-  en: Silk Road
+  en: Silk Road (Mobile)
   jp: シルクロード
 desc:
-  en: "Silk Road: A famous trade route connecting the Far East with the Western world."
-  jp: シルクロード：　東洋と西洋を結ぶ有名な交易路。
+  en: Originally from Itadaki Street Mobile. A famous trade route connecting the Far East with the Western world. Ported by ZaSpai.
+  jp: シルクロード：　東洋と西洋を結ぶ有名な交易路。 作者：ZaSpai
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -14,6 +14,7 @@ salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: silkroad
 background: bg107
+mapIcon: silkroad
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
