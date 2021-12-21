@@ -2,7 +2,7 @@
 name:
   en: Hotel
 desc:
-  en: You can only go clockwise. This map is based on the same-named board game. 
+  en: You can only go clockwise. This map is based on the same-named board game.
   de: Man kann nur im Uhrzeigersinn gehen. Die Karte basiert auf dem gleichnamigen Brettspiel. 
 ruleSet: Standard
 theme: DragonQuest
@@ -12,21 +12,35 @@ baseSalary: 200
 salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: hotel
+background: bg005
 tourMode:
   bankruptcyLimit: 1
   opponent1: Mario
   opponent2: Slime
   opponent3: BowserJr
   clearRank: 1
-background: bg005
 mutators:
-  RollAgain: 
-    WhenRollIs: 6
-    OnlyOnce: true
-    RollAgainOptional: true
-  ShopPriceMultiplier: 0.2857
-  RollShopPriceMultiplier: 
-    MaxRoll: 6
+  rollAgain:
+    whenRollIs: 6
+    onlyOnce: true
+    rollAgainOptional: true
+  rollShopPriceMultiplier:
+    maxRoll: 6
+  shopPriceMultiplier:
+    numerator: 2
+    denominator: 7
+districtNames:
+  en:
+    - President
+    - Waikiki
+    - Taj Mahal
+    - Safari
+    - Boomerang
+    - Fujiyama
+    - Royal
+    - L'Etoile
+notes:
+  - https://sketchfab.com/3d-models/cybercity-2099-v2-3b61335c2a004a9ea31c8dab59471222
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
