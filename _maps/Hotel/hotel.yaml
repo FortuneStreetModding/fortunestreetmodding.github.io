@@ -20,10 +20,6 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 mutators:
-  rollAgain:
-    whenRollIs: 6
-    onlyOnce: true
-    rollAgainOptional: true
   rollShopPriceMultiplier:
     maxRoll: 6
   shopPriceMultiplier:
