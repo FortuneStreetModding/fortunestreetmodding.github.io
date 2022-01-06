@@ -13,6 +13,24 @@ maxDiceRoll: 6
 frbFile1: 30th-dragonlords-castle
 background: bg007
 mapIcon: dragonlord
+music: 
+  download: https://drive.google.com/u/0/uc?export=download&confirm=BeFt&id=1IC_B7vPLTwKgBfU2vP89Rsiys_g2PhJ6
+  map: BGM_MAP_DRAGONLORD.65
+  stock: BGM_STOCK_30TH.60
+  ventureCards: BGM_CHANCECARD_30TH.70
+  auction: BGM_AUCTION_30TH.95
+  targetMet: BGM_GOALPROP_DRAGONLORD.65
+  win: BGM_WINNER_30TH.60
+  guestAppear:
+  guestLeave: ME_OJAMA_BYE_30TH.60
+  badVentureCard:
+  takeAbreak:
+  promotionMii: ME_LEVELUP_D_30TH.60
+  promotionMario: ME_LEVELUP_D_30TH.60
+  promotionDragonQuest: ME_LEVELUP_D_30TH.60
+  forcedBuyout: ME_5_BUY_30TH.60
+  domination: ME_MONOPOLY_30TH.55
+  bankruptcy:
 tourMode:
   bankruptcyLimit: 1
   opponent1: Platypunk

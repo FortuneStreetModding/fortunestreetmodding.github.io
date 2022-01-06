@@ -1,8 +1,8 @@
 ---
 name:
-  en: Bunnyland (30th)
+  en: Bunnyland (Smart)
 desc:
-  en: Ported from Itadaki Street 30th Anniversary.
+  en: Ported from Itadaki Street for Smartphone.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -14,6 +14,24 @@ frbFile1: is30-rabbitland
 bgmId: BGM_MAP_PEACH
 background: bg003
 mapIcon: is30
+music: 
+  download: https://drive.google.com/u/0/uc?id=1GRyVKLaPtWC1qThvhek4hI2s8C1tMFcI&export=download
+  map: 06_BGM_WIFI
+  stock: BGM_STOCK_30TH.60
+  ventureCards: BGM_CHANCECARD_30TH.70
+  auction: BGM_AUCTION_30TH.95
+  targetMet: BGM_GOALPROP_IX.65
+  win: BGM_WINNER_30TH.60
+  guestAppear:
+  guestLeave: ME_OJAMA_BYE_30TH.60
+  badVentureCard:
+  takeAbreak:
+  promotionMii: ME_LEVELUP_F_30TH.60
+  promotionMario: ME_LEVELUP_F_30TH.60
+  promotionDragonQuest: ME_LEVELUP_F_30TH.60
+  forcedBuyout: ME_5_BUY_30TH.60
+  domination: ME_MONOPOLY_30TH.55
+  bankruptcy:
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1500
