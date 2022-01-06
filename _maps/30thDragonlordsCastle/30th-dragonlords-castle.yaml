@@ -31,6 +31,8 @@ music:
   forcedBuyout: ME_5_BUY_30TH.60
   domination: ME_MONOPOLY_30TH.55
   bankruptcy:
+ changelog:
+  - version: 1
 tourMode:
   bankruptcyLimit: 1
   opponent1: Platypunk

@@ -44,12 +44,15 @@ tourMode:
   opponent3: Yoshi
   clearRank: 3 
 changelog:
+  - version: 4
+    changed:
+      - Updated icon & yaml for CSWT
   - version: 3
     changed:
       - Fixed bankruptcy music
   - version: 2
     changed: 
-      - Ported over to new .yaml file format.
+      - Ported over to new .yaml file format
     added:
       - Stock music
       - Venture Card music

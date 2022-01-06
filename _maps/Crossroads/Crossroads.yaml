@@ -22,6 +22,10 @@ tourMode:
   opponent2: Birdo
   opponent3: Toad
   clearRank: 2
+changelog:
+  - version: 2
+    changed:
+      - Updated yaml for CSWT
 authors:
   - name: Giftshaven
     url: https://github.com/Giftshaven

@@ -18,6 +18,10 @@ tourMode:
   opponent2: Waluigi
   opponent3: Luigi
   clearRank: 2
+changelog:
+  - version: 2
+    changed:
+      - Updated yaml for CSWT
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.

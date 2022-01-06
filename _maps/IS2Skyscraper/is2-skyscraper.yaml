@@ -13,6 +13,24 @@ maxDiceRoll: 7
 frbFile1: is2-skyscraper
 background: bg004
 mapIcon: skyscraper
+music:
+  download: https://drive.google.com/u/0/uc?export=download&confirm=RHBs&id=1mdpnqqsMKmCbyi9QcAJcl7H_sbsDgYUy
+  map: BGM_MAP_SKYSCRAPER_IS2R.60
+  stock: BGM_STOCK_IS2R.60
+  ventureCards: BGM_CHANCECARD_IS2R.60
+  auction: BGM_AUCTION_IS2R.60
+  targetMet:
+  win: BGM_WINNER_IS2R.60
+  guestAppear:
+  guestLeave:
+  badVentureCard: ME_CURSE_IS2.58
+  takeAbreak: ME_HOLIDAY_IS2.58
+  promotionMii: ME_LEVELUP_IS2.65
+  promotionMario: ME_LEVELUP_IS2.65
+  promotionDragonQuest: ME_LEVELUP_IS2.65
+  forcedBuyout: ME_5BUY_IS2.58
+  domination:
+  bankruptcy: ME_BANKRUPTCY_IS2.60
 tourMode:
   bankruptcyLimit: 1
   opponent1: Wario
@@ -148,6 +166,8 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+changelog:
+  - version: 1
 authors:
   - name: Azurillkirby
 notes: |

@@ -14,22 +14,22 @@ frbFile1: CasinoTown
 background: bg009
 mapIcon: CasinoTown
 music: 
-  download: https://drive.google.com/uc?export=download&id=1Rd-iIpELZf2oGs0Vy_UC9LZp6lkL5e6l
-  map: BGM_MAP_CASINOTOWN_IS2.80
-  stock: BGM_STOCK_IS2.60
-  ventureCards: BGM_CHANCECARD_IS2.58
-  auction: BGM_AUCTION_IS2.58
-  targetMet: 
-  win: BGM_WINNER_IS2.60
+  download: https://drive.google.com/u/0/uc?export=download&confirm=R7GK&id=1-krDAHD7DES8ML-v_Cgugh1k1KW7iFl5
+  map: BGM_MAP_CASINOTOWN_IS2R.60
+  stock: BGM_STOCK_IS2R.60
+  ventureCards: BGM_CHANCECARD_IS2R.60
+  auction: BGM_AUCTION_IS2R.60
+  targetMet:
+  win: BGM_WINNER_IS2R.60
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_IS2.58
   takeAbreak: ME_HOLIDAY_IS2.58
-  promotionMii: ME_LEVELUP_IS2.58
-  promotionMario: ME_LEVELUP_IS2.58
-  promotionDragonQuest: ME_LEVELUP_IS2.58
+  promotionMii: ME_LEVELUP_IS2.65
+  promotionMario: ME_LEVELUP_IS2.65
+  promotionDragonQuest: ME_LEVELUP_IS2.65
   forcedBuyout: ME_5BUY_IS2.58
-  domination: 
+  domination:
   bankruptcy: ME_BANKRUPTCY_IS2.60
 looping:
   mode: Vertical
@@ -44,6 +44,11 @@ tourMode:
   opponent3: Toad
   clearRank: 1
 changelog:
+  - version: 4
+    added:
+      - Remastered BGM
+    changed:
+      - Updated Yaml for CSWT, updated icon
   - version: 3
     added:
       - Add music section for brstm

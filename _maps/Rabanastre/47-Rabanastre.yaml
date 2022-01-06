@@ -39,6 +39,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Updated yaml for CSWT.    
   - version: 2
     changed: 
       - Ported over to new .yaml file format.

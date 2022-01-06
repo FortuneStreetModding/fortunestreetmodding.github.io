@@ -18,6 +18,10 @@ tourMode:
   opponent2: Birdo
   opponent3: Toad
   clearRank: 2
+changelog:
+  - version: 2
+    changed:
+      - Updated yaml for CSWT
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 0  #   2 Venture on! Roll the die again and move forward.

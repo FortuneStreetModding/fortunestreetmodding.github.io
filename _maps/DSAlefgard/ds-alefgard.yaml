@@ -13,6 +13,10 @@ maxDiceRoll: 7
 frbFile1: ds-alefgard
 background: bg107
 mapIcon: p_bg_107
+changelog:
+  - version: 2
+    changed:
+      - Updated yaml for CSWT
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000

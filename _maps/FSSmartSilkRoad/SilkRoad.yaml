@@ -152,6 +152,11 @@ ventureCards:
   - 0  # Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    added:
+      - Icon
+    changed:
+      - Updated yaml for CSWT
   - version: 1
     added:
       - Initial Release. Venture card set derived from Alefgard.

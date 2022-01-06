@@ -20,7 +20,7 @@ tourMode:
 background: bg106
 mapIcon: cloverland
 music:
-  download: https://drive.google.com/u/0/uc?id=1zdxjy9CPbdYYn_Ny5hBdgS97b4_ipvMz&export=download
+  download: https://drive.google.com/u/0/uc?export=download&confirm=N0kc&id=1zdxjy9CPbdYYn_Ny5hBdgS97b4_ipvMz
   map: BGM_MAP_CLOVERLAND_IS2R.60
   stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60
@@ -38,9 +38,12 @@ music:
   domination:
   bankruptcy: ME_BANKRUPTCY_IS2.60
 changelog:
+  - version: 3
+    changed:
+      - Updated yaml for CSWT & new icon
   - version: 2
     changed: 
-      - Ported over to new .yaml file format.
+      - Ported over to new .yaml file format
     added:
       - Stock music
       - Venture Card music

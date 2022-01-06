@@ -150,6 +150,12 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 authors:
   - name: Azurillkirby
+changelog:
+  - version: 2
+    added:
+      - Icon
+    changed:
+      - Updated yaml for CSWT
 notes: |
   - This map was originally from Fortune Street Smart.
   - The venture card set has been taken from Yoshi's Island.

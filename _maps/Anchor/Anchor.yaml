@@ -18,6 +18,10 @@ tourMode:
   opponent2: Carver
   opponent3: Alena
   clearRank: 2
+changelog:
+  - version: 2
+    changed:
+      - Updated yaml for CSWT
 authors:
   - name: Giftshaven
     url: https://github.com/Giftshaven

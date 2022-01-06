@@ -39,6 +39,10 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 3
+    changed: Replaced map music with IS2 Remastered music & updated icon
+    added: 
+      - IS2 Remastered BGM
   - version: 2
     added:
       - Other music from IS2

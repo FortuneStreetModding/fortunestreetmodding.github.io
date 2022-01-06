@@ -33,6 +33,12 @@ tourMode:
   opponent2: Bianca
   opponent3: Princessa
   clearRank: 2
+changelog:
+  - version: 2
+    added:
+      - Icon
+    changed:
+      - Updated yaml for CSWT
 authors:
   - name: EvilDragon
     url: https://wwww.dragonbox.de/
