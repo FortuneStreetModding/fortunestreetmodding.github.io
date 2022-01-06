@@ -3,8 +3,8 @@ name:
   en: Vent
   de: Vent
 desc:
-  en: This one blows. By widardd.
-  de: Dreht durch. Von widardd.
+  en: This one blows.
+  de: Dreht durch.
 ruleSet: Standard
 theme: Mario
 initialCash: 1000

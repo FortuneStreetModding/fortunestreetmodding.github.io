@@ -2,7 +2,7 @@
 name:
   en: Aquarium (Smart)
 desc:
-  en: Aquarium, ported from Fortune Street Smart by Azurillkirby.
+  en: Aquarium, ported from Fortune Street Smart.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000

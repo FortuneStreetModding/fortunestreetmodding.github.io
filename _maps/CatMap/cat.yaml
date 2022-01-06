@@ -3,8 +3,8 @@ name:
   en: Cat Map
   de: Katzenkarte
 desc:
-  en: You can only reach the bottom whiskers with a balloon, but if you can make it, the cyan district becomes powerful. This map plays best with no vacant plots added. By Logg.
-  de: Die unteren Schnurrhaare können nur mit dem Ballon erreicht werden, aber falls man schafft kann der türkise Bezirk sehr teuer werden. Diese Karte ist darauf ausgelegt ohne zusätzliche freie Grundstücke gespielt zu werden. Von Logg.
+  en: You can only reach the bottom whiskers with a balloon, but if you can make it, the cyan district becomes powerful. This map plays best with no vacant plots added.
+  de: Die unteren Schnurrhaare können nur mit dem Ballon erreicht werden, aber falls man schafft kann der türkise Bezirk sehr teuer werden. Diese Karte ist darauf ausgelegt ohne zusätzliche freie Grundstücke gespielt zu werden.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2240

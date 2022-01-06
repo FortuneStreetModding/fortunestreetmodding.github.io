@@ -3,8 +3,8 @@ name:
   en: Snail
   de: Schneggl
 desc:
-  en: Good things take time. By widardd.
-  de: Gut Ding will Weile haben. Von widardd.
+  en: Good things take time.
+  de: Gut Ding will Weile haben.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500

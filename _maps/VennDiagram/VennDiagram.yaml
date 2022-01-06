@@ -2,7 +2,7 @@
 name:
   en: Venn Diagram
 desc:
-  en: A map with a layout that looks like a vendiagram. By Giftshaven.
+  en: A map with a layout that looks like a vendiagram.
 ruleSet: Standard
 theme: Mario
 initialCash: 1600

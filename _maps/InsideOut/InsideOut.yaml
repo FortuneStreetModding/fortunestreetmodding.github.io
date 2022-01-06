@@ -3,8 +3,8 @@ name:
   en: Inside Out
   fr: Inside Out
 desc:
-  en: Map by Lulink. A map with two forms where districts close to the bank get further and vice-versa. All doors and pipes lead to the bank.
-  fr: Carte par Lulink. Une carte à deux formes où les quartiers proches de la banque s'en éloignent et vice-versa. Tous les tuyaux et portes renvoient à la banque.
+  en: A map with two forms where districts close to the bank get further and vice-versa. All doors and pipes lead to the bank.
+  fr: Une carte à deux formes où les quartiers proches de la banque s'en éloignent et vice-versa. Tous les tuyaux et portes renvoient à la banque.
 ruleSet: Standard
 theme: Mario
 initialCash: 1500

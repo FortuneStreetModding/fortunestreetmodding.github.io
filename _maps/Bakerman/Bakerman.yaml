@@ -2,7 +2,7 @@
 name:
   en: Bakerman
 desc:
-  en: is baking bread. By widardd.
+  en: is baking bread.
 ruleSet: Standard
 theme: Mario
 initialCash: 1500

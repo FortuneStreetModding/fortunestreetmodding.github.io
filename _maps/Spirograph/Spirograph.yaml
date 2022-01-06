@@ -3,8 +3,8 @@ name:
   en: Spirograph
   de: Spirograph
 desc:
-  en: The Marvelous Wondergraph. By widardd.
-  de: The Marvelous Wondergraph. By widardd.
+  en: The Marvelous Wondergraph.
+  de: The Marvelous Wondergraph.
 ruleSet: Standard
 theme: Mario
 initialCash: 1000

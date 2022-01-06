@@ -3,8 +3,8 @@ name:
   en: Abwarten und Tee trinken
   de: Abwarten und Tee trinken
 desc:
-  en: Prepare to be patient. By widardd.
-  de: Geduld ist eine Tugend. Von widardd.
+  en: Prepare to be patient.
+  de: Geduld ist eine Tugend.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1750

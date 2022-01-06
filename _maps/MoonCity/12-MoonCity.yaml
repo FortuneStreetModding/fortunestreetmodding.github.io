@@ -2,7 +2,7 @@
 name:
   en: Moon City (IS2)
 desc:
-  en: Originally from Itadaki Street 2. A simple board with two straight lines that loop around. Ported from scratch by Sophilautia.
+  en: Originally from Itadaki Street 2. A simple board with two straight lines that loop around.
 ruleSet: Standard
 theme: Mario
 initialCash: 1500

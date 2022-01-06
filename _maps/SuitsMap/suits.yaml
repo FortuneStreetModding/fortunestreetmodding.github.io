@@ -3,8 +3,8 @@ name:
   en: Suits Map
   de: Farbenkarte
 desc: 
-  en: A map which switches between the different suits. By Deflaktor.
-  de: Eine Karte welche zwischen den verschiedenen Farben wechselt. Von Deflaktor.
+  en: A map which switches between the different suits.
+  de: Eine Karte welche zwischen den verschiedenen Farben wechselt.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000

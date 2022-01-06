@@ -3,8 +3,8 @@ name:
   en: Pollen
   de: Pollen
 desc:
-  en: Nose Terror. By widardd.
-  de: Nase zu und durch. Von widardd.
+  en: Nose Terror.
+  de: Nase zu und durch.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500

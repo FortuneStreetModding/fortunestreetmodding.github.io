@@ -2,7 +2,7 @@
 name:
   en: Colossus (DS)
 desc:
-  en: Colossus, but the DS version! Ported by mask1n & Azurillkirby.
+  en: Colossus, but the DS version!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000

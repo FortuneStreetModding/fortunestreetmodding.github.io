@@ -2,7 +2,7 @@
 name:
   en: Crossroads
 desc:
-  en: You can only go straight when entering the middle of this board, unless you can land directly where the roads cross. By Giftshaven.
+  en: You can only go straight when entering the middle of this board, unless you can land directly where the roads cross.
 ruleSet: Standard
 theme: Mario
 initialCash: 1800

@@ -3,8 +3,8 @@ name:
   en: Monster House (Smart)
   jp: モンスターハウス
 desc:
-  en: Monster House, ported from Fortune Street Smart. A horrific domain, filled with supernatural creatures from various cultures. Ported by ZaSpai.
-  jp: モンスターハウス：　さまざまな文化からの超自然的な生き物で満たされた恐ろしい領域。 作者：ZaSpai
+  en: Monster House, ported from Fortune Street Smart. A horrific domain, filled with supernatural creatures from various cultures.
+  jp: モンスターハウス：　さまざまな文化からの超自然的な生き物で満たされた恐ろしい領域。
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000

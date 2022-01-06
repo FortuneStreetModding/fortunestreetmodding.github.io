@@ -2,7 +2,7 @@
 name:
   en: Cloverland (IS2)
 desc:
-  en: Originally from Itadaki Street 2. A large simple board with three loops. Map file was included in unused files, but has had shop prices adjusted and made playable. Ported by Sophilautia.
+  en: Originally from Itadaki Street 2. A large simple board with three loops. Map file was included in unused files, but has had shop prices adjusted and made playable.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000

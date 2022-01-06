@@ -2,7 +2,7 @@
 name:
   en: Shell Isle (IS2)
 desc:
-  en: Originally from Itadaki Street 2. A simple board for beginners. Map file was included in unused files, but has had shop prices adjusted and made playable. Ported by Sophilautia.
+  en: Originally from Itadaki Street 2. A simple board for beginners. Map file was included in unused files, but has had shop prices adjusted and made playable.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1200

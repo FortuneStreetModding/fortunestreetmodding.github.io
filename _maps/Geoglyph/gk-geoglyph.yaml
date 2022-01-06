@@ -2,7 +2,7 @@
 name:
   en: Zapata's Geoglyph (GK)
 desc:
-  en: Ported from Gorgeous King. Traverse back-and-forth between both glyphs to obtain all four suits! Ported by mask1n.
+  en: Ported from Gorgeous King. Traverse back-and-forth between both glyphs to obtain all four suits!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500

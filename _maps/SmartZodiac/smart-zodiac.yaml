@@ -2,7 +2,7 @@
 name:
   en: Zodiac (Smart)
 desc:
-  en: Zodiac, ported from Fortune Street Smart. Visual design has been changed to match with Magmageddon's Magmalices, but is functionally identical to the original. Ported by Azurillkirby.
+  en: Zodiac, ported from Fortune Street Smart. Visual design has been changed to match with Magmageddon's Magmalices, but is functionally identical to the original.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
