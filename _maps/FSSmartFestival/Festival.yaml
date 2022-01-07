@@ -16,8 +16,8 @@ frbFile1: matsuri
 background: bg105
 mapIcon: festival
 music: 
-  download: https://drive.google.com/u/0/uc?id=1Mmt7_PxH0mL16thMB23thobrehjv0_65&export=download
-  map: BGM_MAP_FESTIVAL.60
+  download: https://drive.google.com/u/0/uc?id=106tvh7ibk5Mcfpq94ZUJQ9HqjP5n5QPv&export=download
+  map: BGM_MAP_FESTIVAL.70
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.60
   auction: BGM_AUCTION_SMART.60

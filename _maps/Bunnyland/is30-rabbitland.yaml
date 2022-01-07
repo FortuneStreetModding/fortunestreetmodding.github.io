@@ -39,7 +39,7 @@ tourMode:
   opponent2: Stella
   opponent3: Alena
   clearRank: 2
- changelog:
+changelog:
   - version: 1
 ventureCards:
   - 1  # Adventurous turning point! You can choose which way to move on your next go, (player's name).

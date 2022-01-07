@@ -12,11 +12,11 @@ salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: smart-zodiac
 frbFile2: smart-zodiac
-background: bg104
+background: bg008
 mapIcon: zodiac
 music: 
-  download: https://drive.google.com/u/0/uc?id=1QyBTJDr4dglJ0-SbQEjIVSdxH5BKA6oZ&export=download
-  map: BGM_MAP_ZODIAC.60
+  download: https://drive.google.com/u/0/uc?id=1pgwZVFhHyMnXyLlA_WIxtkDycMwk6qiU&export=download
+  map: BGM_MAP_ZODIAC.90
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.60
   auction: BGM_AUCTION_SMART.60

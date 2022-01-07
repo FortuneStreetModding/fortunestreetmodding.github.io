@@ -16,8 +16,8 @@ frbFile1: silkroad
 background: bg107
 mapIcon: silkroad
 music: 
-  download: https://drive.google.com/u/0/uc?id=1c6qIQC7xp8isXiThYWEjAKLRojdjE_uE&export=download
-  map: BGM_MAP_SILK.60
+  download: https://drive.google.com/u/0/uc?id=1O6dunMF6mBUSDdrMuqtv6yCl0FDkDWLa&export=download
+  map: BGM_MAP_SILK.75
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.60
   auction: BGM_AUCTION_SMART.60

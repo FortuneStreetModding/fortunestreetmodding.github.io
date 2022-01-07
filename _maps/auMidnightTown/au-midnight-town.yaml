@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: au-midnight-town
-background: bg006
+background: bg009
 mapIcon: midnight
 music: 
   download: https://drive.google.com/u/0/uc?id=1BYoMwZf6U0aCtGS1Du7ZvUAQFBsEKmRj&export=download

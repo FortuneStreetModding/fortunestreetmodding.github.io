@@ -14,23 +14,23 @@ frbFile1: gk-queen-bunny
 background: bg002
 mapIcon: queen
 music:
-  download: https://drive.google.com/u/0/uc?id=1hVXToBF69bBiJpOkRPq7ZjlhqtDVNAGE&export=download
-  map: BGM_MAP_QUEENBUNNY.60
-  stock: BGM_STOCK_GK.55
-  ventureCards: BGM_CHANCE_GK.55
-  auction: BGM_TRADE_GK.60
+  download: https://drive.google.com/u/0/uc?id=1RYcqhBlTV72Ez-dItpDZo3RBR7TgD5K-&export=download
+  map: BGM_MAP_QUEENBUNNY.80
+  stock: BGM_STOCK_GK.70
+  ventureCards: BGM_CHANCE_GK.80
+  auction: BGM_TRADE_GK.70
   targetMet:
-  win: BGM_WINNER_GK.60
+  win: BGM_WINNER_GK.70
   guestAppear:
   guestLeave:
   badVentureCard:
   takeAbreak: ME_HOLIDAY_GK.60
-  promotionMii: ME_LEVELUP_GK.55
-  promotionMario: ME_LEVELUP_GK.55
-  promotionDragonQuest: ME_LEVELUP_GK.55
-  forcedBuyout: ME_5_BUY_GK.55
+  promotionMii: ME_LEVELUP_GK.70
+  promotionMario: ME_LEVELUP_GK.70
+  promotionDragonQuest: ME_LEVELUP_GK.70
+  forcedBuyout: ME_5_BUY_GK.70
   domination:
-  bankruptcy: ME_BANKRUPT_GK.60
+  bankruptcy: ME_BANKRUPT_GK.70
 tourMode:
   bankruptcyLimit: 1
   opponent1: Mario

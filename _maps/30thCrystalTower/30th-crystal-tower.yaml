@@ -37,7 +37,7 @@ tourMode:
   opponent2: Platypunk
   opponent3: Princessa
   clearRank: 3
- changelog:
+changelog:
   - version: 2
     changed:
       - Updated yaml for CSWT
