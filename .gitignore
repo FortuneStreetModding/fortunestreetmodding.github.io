@@ -32,6 +32,7 @@ _site/
 ### cmpres and brstm ###
 *.brstm
 *.cmpres
+*.arc
 
 ### Binary Files ###
 *.zip
