@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 import sys
+from typing import List
 MIN_PYTHON = (3, 9)
 if sys.version_info < MIN_PYTHON:
     sys.exit("Python %s.%s or later is required.\n" % MIN_PYTHON)
 
 from subprocess import check_output
 from pathlib import Path
+from dataclasses import dataclass
 
 import os
 import shutil
@@ -14,6 +16,18 @@ import imagehash
 import hashlib
 import yaml
 from multiprocessing import Process
+
+@dataclass
+class ImageMinimapIcon:
+    tpl   : str
+    mask  : str
+    resize: str
+    offset: str
+    dir   : str
+    tile  : str
+    png   : str
+    orig  : str
+    tmp   : str
 
 def deleteFolderContents(folder : str):
     for filename in os.listdir(folder):
@@ -46,20 +60,14 @@ def process(lang : str):
         langDir = ''
 
     filePaths = list(Path().glob(f'chance_card/{langDir}*.cmpres'))
-    gameBoardCmpresPath = list(Path().glob(f'game_board/game_board{suffix}.cmpres'))[0]
+    gameBoardCmpresPath = list(Path().glob(f'game/{langDir}game_board{suffix}.cmpres'))[0]
+    gameBoardArcPath = list(Path().glob(f'game/{langDir}game_board{suffix}.arc'))[0]
     gameBoardOutputDir = f'output/game/{langDir}'
-    gameBoardOutput = gameBoardOutputDir + f'game_board{suffix}.cmpres'
-    imageOutputDir = f'output/images/{langDir}'
-    imageOutput = imageOutputDir + "ui_mark_eventsquare_{number}.png"
+    gameBoardOutput = gameBoardOutputDir + f'game{suffix}.cmpres'
     chanceCardOutputDir = f'output/chance_card/{langDir}'
     chanceCardBsdiffDir = f'output/bsdiff/chance_card/{langDir}'
     gameBoardBsdiffDir = f'output/bsdiff/game/{langDir}'
-    gameBoardBsdiff = gameBoardBsdiffDir + f'game_board{suffix}.cmpres.bsdiff'
-
-    if os.path.exists(imageOutputDir):
-        deleteFolderContents(imageOutputDir)
-    else:
-        os.makedirs(imageOutputDir)
+    gameBoardBsdiff = gameBoardBsdiffDir + f'game{suffix}.cmpres.bsdiff'
 
     if os.path.exists(chanceCardOutputDir):
         deleteFolderContents(chanceCardOutputDir)
@@ -81,6 +89,35 @@ def process(lang : str):
     else:
         os.makedirs(gameBoardBsdiffDir)
 
+    imageVenturecardDir = f'output/images_venturecard/{langDir}'
+    imageVenturecard = imageVenturecardDir + "ui_mark_eventsquare_{number}.png"
+    imageSquareDir = f'output/images_square/{langDir}'
+    imageSquare = imageSquareDir + "ui_mark_eventsquare_{number}.png"
+    imageBoardOutputDir = f'output/images_board/{langDir}'
+    imageBoard = imageBoardOutputDir + "ui_mark_eventsquare_{number}.png"
+    imageIconOutputDir = f'output/images_icon/{langDir}'
+    imageIcon = imageIconOutputDir + "ui_mark_eventsquare_{number}.png"
+
+    if os.path.exists(imageVenturecardDir):
+        deleteFolderContents(imageVenturecardDir)
+    else:
+        os.makedirs(imageVenturecardDir)
+
+    if os.path.exists(imageSquareDir):
+        deleteFolderContents(imageSquareDir)
+    else:
+        os.makedirs(imageSquareDir)
+
+    if os.path.exists(imageBoardOutputDir):
+        deleteFolderContents(imageBoardOutputDir)
+    else:
+        os.makedirs(imageBoardOutputDir)
+
+    if os.path.exists(imageIconOutputDir):
+        deleteFolderContents(imageIconOutputDir)
+    else:
+        os.makedirs(imageIconOutputDir)
+
     gameBoardCmpres = gameBoardCmpresPath.as_posix()
     gameBoardCmpresDecomp = f'{gameBoardCmpresPath.parent.as_posix()}/{gameBoardCmpresPath.stem}_DECOMP.bin'
     print(check_output(f'ntcompress -x {gameBoardCmpres}', encoding="utf-8"))
@@ -88,6 +125,69 @@ def process(lang : str):
     gameBoardExtractDir = f'{gameBoardCmpresDecomp}.d'
     gameBoardTexturesDir = f'{gameBoardExtractDir}/Textures(NW4R)'
 
+    gameBoardArc = gameBoardArcPath.as_posix()
+    gameBoardArcExtractDir = f'{gameBoardArc}.d'
+    print(check_output(f'wszst EXTRACT {gameBoardArc} --overwrite --dest {gameBoardArcExtractDir}', encoding="utf-8"))
+    gameBoardArcImgDir = f'{gameBoardArcExtractDir}/arc/timg'
+
+    minimapIcons : List[ImageMinimapIcon] = []
+    minimapIcons.append(ImageMinimapIcon(
+        tpl=f'{gameBoardArcImgDir}/ui_minimap_icon_ja.tpl',
+        mask='exclamationMarkMask.png',
+        resize='12x12!',
+        offset='+0+132',
+        dir =f'output/images_minimap_icon/{langDir}',
+        tile=f'output/images_minimap_icon/{langDir}ui_minimap_icon_ja.{{number}}.png',
+        png =f'output/images_minimap_icon/{langDir}ui_minimap_icon_ja.png',
+        orig=f'output/images_minimap_icon/{langDir}ui_minimap_icon_ja_orig.png',
+        tmp =f'output/images_minimap_icon/{langDir}ui_minimap_icon_ja_tmp.png'
+    ))
+    minimapIcons.append(ImageMinimapIcon(
+        tpl=f'{gameBoardArcImgDir}/ui_minimap_icon_w_ja.tpl',
+        mask='exclamationMarkMask_w.png',
+        resize='9x12!',
+        offset='+0+132',
+        dir =f'output/images_minimap_icon_w/{langDir}',
+        tile=f'output/images_minimap_icon_w/{langDir}ui_minimap_icon_w_ja.{{number}}.png',
+        png =f'output/game_minimap/{langDir}ui_minimap_icon_w_ja.png',
+        orig=f'output/images_minimap_icon_w/{langDir}ui_minimap_icon_w_ja_orig.png',
+        tmp =f'output/images_minimap_icon_w/{langDir}ui_minimap_icon_w_ja_tmp.png'
+    ))
+    minimapIcons.append(ImageMinimapIcon(
+        tpl=f'{gameBoardArcImgDir}/ui_minimap_icon2_ja.tpl',
+        mask='exclamationMarkMask2.png',
+        resize='10x10!',
+        offset='+0+110',
+        dir =f'output/images_minimap_icon2/{langDir}',
+        tile=f'output/images_minimap_icon2/{langDir}ui_minimap_icon2_ja.{{number}}.png',
+        png =f'output/game_minimap/{langDir}ui_minimap_icon2_ja.png',
+        orig=f'output/images_minimap_icon2/{langDir}ui_minimap_icon2_ja_orig.png',
+        tmp =f'output/images_minimap_icon2/{langDir}ui_minimap_icon2_ja_tmp.png'
+    ))
+    minimapIcons.append(ImageMinimapIcon(
+        tpl=f'{gameBoardArcImgDir}/ui_minimap_icon2_w_ja.tpl',
+        mask='exclamationMarkMask2_w.png',
+        resize='8x10!',
+        offset='+0+110',
+        dir =f'output/images_minimap_icon2_w/{langDir}',
+        tile=f'output/images_minimap_icon2_w/{langDir}ui_minimap_icon2_w_ja.{{number}}.png',
+        png =f'output/game_minimap/{langDir}ui_minimap_icon2_w_ja.png',
+        orig=f'output/images_minimap_icon2_w/{langDir}ui_minimap_icon2_w_ja_orig.png',
+        tmp =f'output/images_minimap_icon2_w/{langDir}ui_minimap_icon2_w_ja_tmp.png'
+    ))
+
+    minimapIconsWhite = [34,45,47,72,83,93,123,125]
+
+    for minimapIcon in minimapIcons:
+        if os.path.exists(minimapIcon.dir):
+            deleteFolderContents(minimapIcon.dir)
+        else:
+            os.makedirs(minimapIcon.dir)
+        print(check_output(f'wimgt DECODE {minimapIcon.tpl} --overwrite --dest {minimapIcon.orig}', encoding="utf-8"))
+
+    shutil.rmtree(gameBoardArcExtractDir)
+
+    #filePaths = []
     for filePath in filePaths:
         file = filePath.as_posix()
         fileDecomp = f'{filePath.parent.as_posix()}/{filePath.stem}_DECOMP.bin'
@@ -116,19 +216,31 @@ def process(lang : str):
             fileBsdiff = chanceCardBsdiffDir + f'{filePath.stem}.cmpres.bsdiff'
             print(check_output(f'bsdiff {file} {fileOutput} {fileBsdiff}', encoding="utf-8"))
 
-        #print(check_output(f'magick MOGRIFY -crop 170x170+5+35 -resize 29x32 -alpha off {chanceCardPngFile}', encoding="utf-8")) # for ui_mark
-        print(check_output(f'magick MOGRIFY +level 0%,50% -crop 170x170+5+35 -resize 128x128 -alpha off {chanceCardPngFile}', encoding="utf-8")) # for game_board.cmpres
-        #print(check_output(f'magick MOGRIFY -crop 170x170+5+35 -resize 64x64 -alpha off {chanceCardPngFile}', encoding="utf-8"))
-        #print(check_output(f'magick MOGRIFY -crop 170x170+5+35 -resize 128x128 -alpha off {chanceCardPngFile}', encoding="utf-8"))
-
-        #print(check_output(f'magick MOGRIFY -crop 170x170+5+35 -resize 10x10 -alpha off +dither -colors 8 -depth 3 {chanceCardPngFile}', encoding="utf-8"))
-
-        #print(check_output(f'magick MOGRIFY {chanceCardPngFile} -alpha off', encoding="utf-8"))
-
-        print(check_output(f'wimgt ENCODE {chanceCardPngFile} --transform .RGB565 --overwrite --dest {gameBoardTexturesDir}/eventsquare_{number}', encoding="utf-8"))
-        #print(check_output(f'wimgt ENCODE {chanceCardPngFile} --transform .CMPR --overwrite --dest {gameBoardTexturesDir}/eventsquare_{number}', encoding="utf-8"))
-
-        os.rename(chanceCardPngFile, imageOutput.format(number=number))
+        # full venture card image
+        shutil.copy(chanceCardPngFile, imageVenturecard.format(number=number))
+        # full bright square image
+        shutil.copy(chanceCardPngFile, imageSquare.format(number=number))
+        print(check_output(f'magick MOGRIFY -crop 170x170+5+35 -resize 128x128 -alpha off {imageSquare.format(number=number)}', encoding="utf-8"))
+        # half darkened square image for game_board.cmpres
+        shutil.copy(chanceCardPngFile, imageBoard.format(number=number))
+        print(check_output(f'magick MOGRIFY +level 0%,50% -crop 170x170+5+35 -resize 128x128 -alpha off {imageBoard.format(number=number)}', encoding="utf-8"))
+        print(check_output(f'wimgt ENCODE {imageBoard.format(number=number)} --transform .RGB565 --overwrite --dest {gameBoardTexturesDir}/eventsquare_{number}', encoding="utf-8"))
+        #print(check_output(f'wimgt ENCODE {imageBoard.format(number=number)} --transform .CMPR --overwrite --dest {gameBoardTexturesDir}/eventsquare_{number}', encoding="utf-8"))
+        # rescaled icon image for ui_mark
+        shutil.copy(chanceCardPngFile, imageIcon.format(number=number))
+        print(check_output(f'magick MOGRIFY -crop 170x170+5+35 -resize 29x32! -alpha off {imageIcon.format(number=number)}', encoding="utf-8"))
+        # icon images:
+        for minimapIcon in minimapIcons:
+            imageMinimapIconFile = minimapIcon.tile.format(number=number)
+            shutil.copy(chanceCardPngFile, imageMinimapIconFile)
+            if int(number) in minimapIconsWhite:
+                print(check_output(f'magick CONVERT -size {minimapIcon.resize} canvas:white {imageMinimapIconFile}', encoding="utf-8"))
+            else:
+                print(check_output(f'magick MOGRIFY -crop 12x12+85+20 -resize {minimapIcon.resize} -alpha off +dither -colors 8 -depth 3 -blur 0x8 -modulate 110,130 {imageMinimapIconFile}', encoding="utf-8"))
+                #print(check_output(f'magick MOGRIFY -crop 170x170+5+35 -resize {minimapIcon.resize} -alpha off +dither -colors 8 -depth 3 -blur 0x8 -modulate 110,170 {imageMinimapIconFile}', encoding="utf-8"))
+            print(check_output(f'magick {imageMinimapIconFile} {minimapIcon.mask} -compose Multiply -composite {imageMinimapIconFile}', encoding="utf-8"))
+       
+        os.remove(chanceCardPngFile)
         shutil.rmtree(fileExtractDir)
         os.remove(fileDecomp)
 
@@ -138,12 +250,15 @@ def process(lang : str):
     shutil.rmtree(gameBoardExtractDir)
     os.remove(gameBoardCmpresDecomp)
 
-    filePaths = list(Path().glob(imageOutputDir + "*.png"))
-
-    hashToFiles = {}
-
+    for minimapIcon in minimapIcons:
+        if os.path.exists(minimapIcon.tmp):
+            os.remove(minimapIcon.tmp)
+        print(check_output(f'magick MONTAGE {minimapIcon.tile.format(number="*")} -tile 5x -geometry +0+0 -background transparent {minimapIcon.tmp}', encoding="utf-8"))
+        print(check_output(f'magick CONVERT -page +0+0 {minimapIcon.orig} -page {minimapIcon.offset} {minimapIcon.tmp} -background transparent -layers merge +repage {minimapIcon.png}', encoding="utf-8"))
     
-
+    # find similar venture cards
+    filePaths = list(Path().glob(imageVenturecardDir + "*.png"))
+    hashToFiles = {}
     for filePath in filePaths:
         hash = imagehash.average_hash(Image.open(filePath), hash_size=20)
         if str(hash) in hashToFiles:
@@ -161,12 +276,6 @@ def process(lang : str):
 def main(argv : list):
     if not os.path.exists('output'):
         os.mkdir('output')
-    if not os.path.exists('output/images'):
-        os.mkdir('output/images')
-    if not os.path.exists('output/game'):
-        os.mkdir('output/game')
-    if not os.path.exists('output/chance_card'):
-        os.mkdir('output/chance_card')
 
     with open('output/sha1.yaml', 'w', encoding = "utf-8") as yaml_file:
         fileToSha1 = {}
@@ -179,7 +288,7 @@ def main(argv : list):
             else:
                 langDir = ''
             filePaths = list(Path().glob(f'chance_card/{langDir}*.cmpres'))
-            gameBoardCmpresPath = list(Path().glob(f'game_board/game_board{suffix}.cmpres'))[0]
+            gameBoardCmpresPath = list(Path().glob(f'game/{langDir}game_board{suffix}.cmpres'))[0]
             fileToSha1[gameBoardCmpresPath.as_posix()] = get_digest(gameBoardCmpresPath.as_posix())
             for filePath in filePaths:
                 file = filePath.as_posix()
