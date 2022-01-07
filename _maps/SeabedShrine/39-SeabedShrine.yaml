@@ -1,8 +1,8 @@
 ---
 name:
-  en: ISSP Seabed Shrine
+  en: Seabed Shrine (Special)
 desc:
-  en: Originally from Itadaki Street Special. Based on the location from Dragon Quest VI. A compact board with lots of branches. The bottom-right path is particularly dangerous. Ported by Sophilautia.
+  en: Originally from Itadaki Street Special. Based on the location from Dragon Quest VI. A compact board with lots of branches. The bottom-right path is particularly dangerous.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
@@ -39,6 +39,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Updated icon & yaml for CSWT
   - version: 2
     changed: 
       - Ported over to new .yaml file format.

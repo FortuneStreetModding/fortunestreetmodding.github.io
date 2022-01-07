@@ -1,8 +1,8 @@
 ---
 name:
-  en: ISSP Rabanastre
+  en: Rabanastre (Special)
 desc:
-  en: Originally from Itadaki Street Special. Based on the location from Final Fantasy XII. A fun board with lots of options. Ported by Sophilautia.
+  en: Originally from Itadaki Street Special. Based on the location from Final Fantasy XII. A fun board with lots of options.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1800
@@ -39,6 +39,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Updated yaml for CSWT.    
   - version: 2
     changed: 
       - Ported over to new .yaml file format.

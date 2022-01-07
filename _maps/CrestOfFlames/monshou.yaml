@@ -3,7 +3,7 @@ name:
   en: Crest of Flames
   jp: 炎の紋章
 desc:
-  en: "Crest of Flames: The Crest of the Goddess who governs the world of Fódlan. Capitalise on the strategically placed vacant plots, and beware dangerous crossroads and labyrinthine paths."
+  en: Crest of Flames. The Crest of the Goddess who governs the world of Fódlan. Capitalise on the strategically placed vacant plots, and beware dangerous crossroads and labyrinthine paths.
   jp: 炎の紋章：　フォドラを司る女神の紋章。 空き地の戦略力を利用する。 危険な岐路や迷路のような経路に注意して。
 ruleSet: Standard
 theme: DragonQuest
@@ -159,6 +159,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    changed:
+      - Updated yaml for CSWT
   - version: 1
     added:
       - Initial Release. Venture card set derived from Alltrades Abbey. Please beware that future versions of this board will change to have mutplie states.

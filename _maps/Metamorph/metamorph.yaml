@@ -3,8 +3,8 @@ name:
   en: Metamorphosis
   de: Metamorphose
 desc: 
-  en: Don't fear change
-  de: Das einzig beständige ist der Wandel
+  en: Don't fear change.
+  de: Das einzig beständige ist der Wandel.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1000

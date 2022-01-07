@@ -1,8 +1,8 @@
 ---
 name:
-  en: ISP Library of the Ancients
+  en: Library of the Ancients (Portable)
 desc:
-  en: Originally from Itadaki Street Portable. Based on the location from Final Fantasy V. A compact board with lots of paths. Ported by Sophilautia.
+  en: Originally from Itadaki Street Portable. Based on the location from Final Fantasy V. A compact board with lots of paths.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1600
@@ -39,6 +39,9 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 changelog:
+  - version: 3
+    changed:
+      - Updated icon & yaml for CSWT
   - version: 2
     changed: 
       - Ported over to new .yaml file format.

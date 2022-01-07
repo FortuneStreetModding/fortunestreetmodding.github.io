@@ -4,7 +4,7 @@ name:
   de: Vent
 desc:
   en: This one blows.
-  de: Dreht durch
+  de: Dreht durch.
 ruleSet: Standard
 theme: Mario
 initialCash: 1000

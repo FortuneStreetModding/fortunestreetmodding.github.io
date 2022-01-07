@@ -3,8 +3,8 @@ name:
   en: Hell
   de: Hölle
 desc:
-  en: Welcome to hell, on the warp island on the top right you can only go counter-clockwise
-  de: Willkommen in der Hölle, auf der oberen rechten Insel kann man nur gegen den Uhrzeigersinn gehen
+  en: Welcome to hell, on the warp island on the top right you can only go counter-clockwise.
+  de: Willkommen in der Hölle, auf der oberen rechten Insel kann man nur gegen den Uhrzeigersinn gehen.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500

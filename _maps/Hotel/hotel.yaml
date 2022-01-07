@@ -3,7 +3,7 @@ name:
   en: Hotel
 desc:
   en: You can only go clockwise. This map is based on the same-named board game.
-  de: Man kann nur im Uhrzeigersinn gehen. Die Karte basiert auf dem gleichnamigen Brettspiel. 
+  de: Man kann nur im Uhrzeigersinn gehen. Die Karte basiert auf dem gleichnamigen Brettspiel.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000

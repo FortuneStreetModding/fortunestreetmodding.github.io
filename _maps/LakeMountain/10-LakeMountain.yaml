@@ -1,8 +1,8 @@
 ---
 name:
-  en: IS2 Lake Mountain
+  en: Lake Mountain (IS2)
 desc:
-  en: Originally from Itadaki Street 2. A simple board with some extra paths. Map file was included in unused files, but has had shop prices adjusted and made playable by adding suits. Ported by Sophilautia.
+  en: Originally from Itadaki Street 2. A simple board with some extra paths. Map file was included in unused files, but has had shop prices adjusted and made playable by adding suits.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
@@ -14,13 +14,13 @@ frbFile1: 2-02-lakemt
 background: bg107
 mapIcon: lakemt
 music:
-  download: https://drive.google.com/uc?export=download&id=1ueUHlEpv5aJkUugIFpiYPdoenorekf9l
-  map: BGM_MAP_LAKEMT.84
-  stock: BGM_STOCK_IS2.60
-  ventureCards: BGM_CHANCECARD_IS2.58
-  auction: BGM_AUCTION_IS2.70
+  download: https://drive.google.com/u/0/uc?export=download&confirm=cO8f&id=1vC3PUwsdmG278b-RNtt_k8-mvhdHb5zX
+  map: BGM_MAP_LAKEMT.IS2R.60
+  stock: BGM_STOCK_IS2R.60
+  ventureCards: BGM_CHANCECARD_IS2R.60
+  auction: BGM_AUCTION_IS2R.60
   targetMet:
-  win: BGM_WINNER_IS2.60
+  win: BGM_WINNER_IS2R.60
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_IS2.58
@@ -39,6 +39,11 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Updated yaml & icon for CSWT
+    added:
+      - IS2 Remastered BGM
   - version: 3
     changed:
       - Fixed bankruptcy music

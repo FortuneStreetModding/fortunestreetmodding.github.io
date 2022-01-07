@@ -2,7 +2,7 @@
 name:
   en: Colossus (DS)
 desc:
-  en: "Colossus, but the DS version!"
+  en: Colossus, but the DS version!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -24,6 +24,10 @@ tourMode:
   opponent2: Kiryl
   opponent3: Peach
   clearRank: 1
+changelog:
+  - version: 2
+    changed:
+      - Updated yaml for CSWT
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 0  #   2 Venture on! Roll the die again and move forward.

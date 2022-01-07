@@ -1,8 +1,8 @@
 ---
 name:
-  en: IS1 Maharata Islands
+  en: Maharata Islands (IS1)
 desc:
-  en: Originally from Itadaki Street 1. Pay attention to the 5-shop district! Ported by Sophilautia.
+  en: Originally from Itadaki Street 1. Pay attention to the 5-shop district!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
@@ -39,6 +39,9 @@ tourMode:
   opponent3: Carver
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Updated icon & yaml for CSWT
   - version: 2
     changed: 
       - Ported over to new .yaml file format.

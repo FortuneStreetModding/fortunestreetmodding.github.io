@@ -2,7 +2,7 @@
 name:
   en: Crossroads
 desc:
-  en: "Crossroads: You can only go straight when entering the middle of this board, unless you can land directly where the roads cross."
+  en: You can only go straight when entering the middle of this board, unless you can land directly where the roads cross.
 ruleSet: Standard
 theme: Mario
 initialCash: 1800
@@ -22,6 +22,10 @@ tourMode:
   opponent2: Birdo
   opponent3: Toad
   clearRank: 2
+changelog:
+  - version: 2
+    changed:
+      - Updated yaml for CSWT
 authors:
   - name: Giftshaven
     url: https://github.com/Giftshaven

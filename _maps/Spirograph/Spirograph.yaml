@@ -4,7 +4,7 @@ name:
   de: Spirograph
 desc:
   en: The Marvelous Wondergraph.
-  de: The Marvelous Wondergraph
+  de: The Marvelous Wondergraph.
 ruleSet: Standard
 theme: Mario
 initialCash: 1000

@@ -1,13 +1,13 @@
 ---
 name:
-  en: KH BBS - Skull Board
+  en: Skull Board (KH BBS)
 desc:
-  en: "Based on the Skull Board from Kingdom Hearts: Birth by Sleep. Journey to the magical Neverland with moving islands."
-  de: "Basierend auf dem Skull Board von Kingdom Hearts: Birth by Sleep. Reise ins magische Nimmerland mit sich verändernden Inseln."
-  fr: "Base sur le Skull Board de Kingdom Hearts: Birth by Sleep. Voyagez dans le Pays Imaginaire magique avec des iles mobiles."
-  it: "Basato sulla Skull Board di Kingdom Hearts: Birth by Sleep. Viaggio nella magica Isola che non c'è con le isole in movimento."
+  en: Based on Skull Board from Kingdom Hearts Birth by Sleep's Command Board mode. Journey to the magical Neverland with moving islands.
+  de: Basierend auf dem Skull Board von Kingdom Hearts Birth by Sleep. Reise ins magische Nimmerland mit sich verändernden Inseln.
+  fr: Base sur le Skull Board de Kingdom Hearts Birth by Sleep. Voyagez dans le Pays Imaginaire magique avec des iles mobiles.
+  it: Basato sulla Skull Board di Kingdom Hearts Birth by Sleep. Viaggio nella magica Isola che non c'è con le isole in movimento.
   jp: キングダム ハーツ」の「スカルボード」をベースにしています。バース・バイ・スリープ』のスカルボードをモチーフにしています。動く島がある不思議なネバーランドへの旅。
-  es: "Basado en el tablero de la calavera de Kingdom Hearts: Birth by Sleep. Viaja al mágico País de Nunca Jamás con islas en movimiento."
+  es: Basado en el tablero de la calavera de Kingdom Hearts Birth by Sleep. Viaja al mágico País de Nunca Jamás con islas en movimiento.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -18,6 +18,7 @@ maxDiceRoll: 9
 frbFile1: skullboard0
 frbFile2: skullboard1
 background: bg104
+mapIcon: skull
 music:
   download: https://drive.google.com/uc?export=download&id=1QTt0Asy7oh5tnPKBAjmPJnWKabjo7LHw
   map: BGM_MAP_SKULLBOARD
@@ -32,6 +33,12 @@ tourMode:
   opponent2: Bianca
   opponent3: Princessa
   clearRank: 2
+changelog:
+  - version: 2
+    added:
+      - Icon
+    changed:
+      - Updated yaml for CSWT
 authors:
   - name: EvilDragon
     url: https://wwww.dragonbox.de/

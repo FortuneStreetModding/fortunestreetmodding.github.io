@@ -1,8 +1,8 @@
 ---
 name:
-  en: IS2 Shell Isle
+  en: Shell Isle (IS2)
 desc:
-  en: Originally from Itadaki Street 2. A simple board for beginners. Map file was included in unused files, but has had shop prices adjusted and made playable. Ported by Sophilautia.
+  en: Originally from Itadaki Street 2. A simple board for beginners. Map file was included in unused files, but has had shop prices adjusted and made playable.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1200
@@ -14,13 +14,13 @@ frbFile1: 2-01-kaigara
 background: bg105
 mapIcon: shell
 music:
-  download: https://drive.google.com/uc?export=download&id=1bh3ETFxRxlFlie_cKodpCzhXGvBJRGNA
-  map: BGM_MAP_SHELLISLE.86
-  stock: BGM_STOCK_IS2.60
-  ventureCards: BGM_CHANCECARD_IS2.58
-  auction: BGM_AUCTION_IS2.70
+  download: https://drive.google.com/u/0/uc?export=download&confirm=4Rai&id=1FChNFZhNab_c0stbTeWEVyVqjwpM6SMc
+  map: BGM_MAP_SHELLISLE_IS2R.60
+  stock: BGM_STOCK_IS2R.60
+  ventureCards: BGM_CHANCECARD_IS2R.60
+  auction: BGM_AUCTION_IS2R.60
   targetMet:
-  win: BGM_WINNER_IS2.60
+  win: BGM_WINNER_IS2R.60
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_IS2.58
@@ -39,6 +39,11 @@ tourMode:
   opponent3: Carver
   clearRank: 2
 changelog:
+  - version: 4
+    added:
+      - IS2 Remastered BGM
+    changed:
+      - Updated icon & yaml for CSWT
   - version: 3
     changed:
       - Fixed bankruptcy music

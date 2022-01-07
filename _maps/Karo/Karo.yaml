@@ -4,7 +4,7 @@ name:
   de: Karo
 desc:
   en: Simple and small.
-  de: kurz und knackig
+  de: kurz und knackig.
 ruleSet: Standard
 theme: Mario
 initialCash: 1500

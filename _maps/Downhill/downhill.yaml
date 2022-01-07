@@ -2,7 +2,7 @@
 name: 
   en: Downhill
 desc: 
-  en: "If you really hate large districts, here's a challenge: Almost every district has 5 shops in it. The cannon's a beast on this map, too."
+  en: If you really hate large districts, here's a challenge. Almost every district has 5 shops in it. The cannon's a beast on this map, too.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -20,6 +20,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 1
 changelog:
+  - version: 3
+    changed:
+      - Updated yaml for CSWT
   - version: 2
     changed: 
       - Ported over to new .yaml file format

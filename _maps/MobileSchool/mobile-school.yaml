@@ -2,7 +2,7 @@
 name:
   en: School (Mobile)
 desc:
-  en: "School, ported from Itadaki Street Mobile."
+  en: School, ported from Itadaki Street Mobile.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -12,6 +12,25 @@ salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: mobile-school
 background: bg004
+mapIcon: school
+music: 
+  download: https://drive.google.com/u/0/uc?id=1cYTB4Hh-sXIwDOi-3MWCmkpeveZoEBlo&export=download
+  map: BGM_MAP_SCHOOL.60
+  stock: BGM_STOCK_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.60
+  auction: BGM_AUCTION_SMART.60
+  targetMet: BGM_GOALPROP_SMART.60
+  win: BGM_WINNER_SMART.60
+  guestAppear:
+  guestLeave:
+  badVentureCard:
+  takeAbreak: ME_HOLIDAY_SMART.60
+  promotionMii: ME_LEVELUP_SMART.60
+  promotionMario: ME_LEVELUP_SMART.60
+  promotionDragonQuest: ME_LEVELUP_SMART.60
+  forcedBuyout: ME_5_BUY_SMART.60
+  domination: ME_MONOPOLY_SMART.60
+  bankruptcy: ME_BANKRUPT_SMART.60
 tourMode:
   bankruptcyLimit: 1
   opponent1: Wario
@@ -147,6 +166,12 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+changelog:
+  - version: 2
+    added:
+      - Icon & BGM
+    changed:
+      - Updated yaml for CSWT
 authors:
   - name: Azurillkirby
 notes: |

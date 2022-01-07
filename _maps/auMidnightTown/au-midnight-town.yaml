@@ -2,7 +2,7 @@
 name:
   en: Midnight Town (au)
 desc:
-  en: "Midnight Town, ported from Itadaki Street for au."
+  en: Midnight Town, ported from Itadaki Street for au.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -11,13 +11,38 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: au-midnight-town
-background: bg006
+background: bg002
+mapIcon: midnight
+music: 
+  download: https://drive.google.com/u/0/uc?id=1BYoMwZf6U0aCtGS1Du7ZvUAQFBsEKmRj&export=download
+  map: BGM_MAP_MIDNIGHT.50
+  stock: BGM_STOCK_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.60
+  auction: BGM_AUCTION_SMART.60
+  targetMet: BGM_GOALPROP_SMART.60
+  win: BGM_WINNER_SMART.60
+  guestAppear:
+  guestLeave:
+  badVentureCard:
+  takeAbreak: ME_HOLIDAY_SMART.60
+  promotionMii: ME_LEVELUP_SMART.60
+  promotionMario: ME_LEVELUP_SMART.60
+  promotionDragonQuest: ME_LEVELUP_SMART.60
+  forcedBuyout: ME_5_BUY_SMART.60
+  domination: ME_MONOPOLY_SMART.60
+  bankruptcy: ME_BANKRUPT_SMART.60
 tourMode:
   bankruptcyLimit: 1
   opponent1: Bianca
   opponent2: Mario
   opponent3: Waluigi
   clearRank: 2
+changelog:
+  - version: 2
+    added:
+      - Icon & BGM
+    changed:
+      - Updated yaml for CSWT
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.

@@ -4,7 +4,7 @@ name:
   de: Abwarten und Tee trinken
 desc:
   en: Prepare to be patient.
-  de: Geduld ist eine Tugend
+  de: Geduld ist eine Tugend.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1750

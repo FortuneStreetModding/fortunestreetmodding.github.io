@@ -1,6 +1,6 @@
 ---
 name:
-  en: Zapata's Geoglyph
+  en: Zapata's Geoglyph (GK)
 desc:
   en: Ported from Gorgeous King. Traverse back-and-forth between both glyphs to obtain all four suits!
 ruleSet: Standard
@@ -13,6 +13,24 @@ maxDiceRoll: 8
 frbFile1: gk-geoglyph
 background: bg106
 mapIcon: geoglyph
+music:
+  download: https://drive.google.com/u/0/uc?id=1DRsx-8R5i__UCsJEJHeJWYftarQXsTwZ&export=download
+  map: BGM_MAP_GEOGLYPH.80
+  stock: BGM_STOCK_GK.70
+  ventureCards: BGM_CHANCE_GK.80
+  auction: BGM_TRADE_GK.70
+  targetMet:
+  win: BGM_WINNER_GK.70
+  guestAppear:
+  guestLeave:
+  badVentureCard:
+  takeAbreak: ME_HOLIDAY_GK.60
+  promotionMii: ME_LEVELUP_GK.70
+  promotionMario: ME_LEVELUP_GK.70
+  promotionDragonQuest: ME_LEVELUP_GK.70
+  forcedBuyout: ME_5_BUY_GK.70
+  domination:
+  bankruptcy: ME_BANKRUPT_GK.70
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1500
@@ -150,9 +168,14 @@ ventureCards:
   - 0  # Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
-    - version: 1
-      added:
-        - Initial Release
+  - version: 2
+    changed:
+      - Icon & updated yaml for CSWT
+    added:
+      - BGM
+  - version: 1
+    added:
+      - Initial Release
 authors:
     - name: mask1n
       url: https://twitter.com/mask1n

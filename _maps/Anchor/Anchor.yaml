@@ -2,7 +2,7 @@
 name:
   en: Anchor
 desc:
-  en: "Anchor: The symbol that represents stability. Be the most stable and you will emerge victorious."
+  en: The symbol that represents stability. Be the most stable and you will emerge victorious.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1700
@@ -18,6 +18,10 @@ tourMode:
   opponent2: Carver
   opponent3: Alena
   clearRank: 2
+changelog:
+  - version: 2
+    changed:
+      - Updated yaml for CSWT
 authors:
   - name: Giftshaven
     url: https://github.com/Giftshaven

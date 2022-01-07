@@ -2,7 +2,7 @@
 name:
   en: Robbin' Hood Ruins (DS)
 desc:
-  en: "Robbin' Hood Ruins, but the DS version!"
+  en: Robbin' Hood Ruins, but the DS version!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1600
@@ -149,6 +149,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    changed:
+      - Updated yaml for CSWT
   - version: 2
     changed: 
       - The top green portal was slightly off where it was supposed to be. Fixed.

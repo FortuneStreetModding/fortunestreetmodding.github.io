@@ -1,9 +1,9 @@
 ---
 name:
-  en: Silk Road
+  en: Silk Road (Mobile)
   jp: シルクロード
 desc:
-  en: "Silk Road: A famous trade route connecting the Far East with the Western world."
+  en: Originally from Itadaki Street Mobile. A famous trade route connecting the Far East with the Western world.
   jp: シルクロード：　東洋と西洋を結ぶ有名な交易路。
 ruleSet: Standard
 theme: DragonQuest
@@ -14,6 +14,25 @@ salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: silkroad
 background: bg107
+mapIcon: silkroad
+music: 
+  download: https://drive.google.com/u/0/uc?id=1O6dunMF6mBUSDdrMuqtv6yCl0FDkDWLa&export=download
+  map: BGM_MAP_SILK.75
+  stock: BGM_STOCK_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.60
+  auction: BGM_AUCTION_SMART.60
+  targetMet: BGM_GOALPROP_SMART.60
+  win: BGM_WINNER_SMART.60
+  guestAppear:
+  guestLeave:
+  badVentureCard:
+  takeAbreak: ME_HOLIDAY_SMART.60
+  promotionMii: ME_LEVELUP_SMART.60
+  promotionMario: ME_LEVELUP_SMART.60
+  promotionDragonQuest: ME_LEVELUP_SMART.60
+  forcedBuyout: ME_5_BUY_SMART.60
+  domination: ME_MONOPOLY_SMART.60
+  bankruptcy: ME_BANKRUPT_SMART.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -151,6 +170,11 @@ ventureCards:
   - 0  # Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    added:
+      - Icon & BGM
+    changed:
+      - Updated yaml for CSWT
   - version: 1
     added:
       - Initial Release. Venture card set derived from Alefgard.
