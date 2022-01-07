@@ -13,25 +13,25 @@ maxDiceRoll: 7
 frbFile1: is30-rabbitland
 bgmId: BGM_MAP_PEACH
 background: bg003
-mapIcon: is30
+mapIcon: bunny
 music: 
-  download: https://drive.google.com/u/0/uc?id=1GRyVKLaPtWC1qThvhek4hI2s8C1tMFcI&export=download
-  map: 06_BGM_WIFI
-  stock: BGM_STOCK_30TH.60
-  ventureCards: BGM_CHANCECARD_30TH.70
-  auction: BGM_AUCTION_30TH.95
-  targetMet: BGM_GOALPROP_IX.65
-  win: BGM_WINNER_30TH.60
+  download: https://drive.google.com/u/0/uc?id=1fWtpYptnacpSQGnd0tfwGvAQuGX9FCXc&export=download
+  map: BGM_MAP_BUNNYLAND.60
+  stock: BGM_STOCK_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.60
+  auction: BGM_AUCTION_SMART.60
+  targetMet: BGM_GOALPROP_SMART.60
+  win: BGM_WINNER_SMART.60
   guestAppear:
-  guestLeave: ME_OJAMA_BYE_30TH.60
+  guestLeave:
   badVentureCard:
-  takeAbreak:
-  promotionMii: ME_LEVELUP_F_30TH.60
-  promotionMario: ME_LEVELUP_F_30TH.60
-  promotionDragonQuest: ME_LEVELUP_F_30TH.60
-  forcedBuyout: ME_5_BUY_30TH.60
-  domination: ME_MONOPOLY_30TH.55
-  bankruptcy:
+  takeAbreak: ME_HOLIDAY_SMART.60
+  promotionMii: ME_LEVELUP_SMART.60
+  promotionMario: ME_LEVELUP_SMART.60
+  promotionDragonQuest: ME_LEVELUP_SMART.60
+  forcedBuyout: ME_5_BUY_SMART.60
+  domination: ME_MONOPOLY_SMART.60
+  bankruptcy: ME_BANKRUPT_SMART.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1500
@@ -172,3 +172,5 @@ ventureCards:
   - 0  # Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 authors:
   - name: mask1n
+changelog:
+  - version: 1

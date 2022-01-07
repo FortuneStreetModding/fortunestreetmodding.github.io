@@ -15,6 +15,24 @@ maxDiceRoll: 8
 frbFile1: matsuri
 background: bg105
 mapIcon: festival
+music: 
+  download: https://drive.google.com/u/0/uc?id=1Mmt7_PxH0mL16thMB23thobrehjv0_65&export=download
+  map: BGM_MAP_FESTIVAL.60
+  stock: BGM_STOCK_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.60
+  auction: BGM_AUCTION_SMART.60
+  targetMet: BGM_GOALPROP_SMART.60
+  win: BGM_WINNER_SMART.60
+  guestAppear:
+  guestLeave:
+  badVentureCard:
+  takeAbreak: ME_HOLIDAY_SMART.60
+  promotionMii: ME_LEVELUP_SMART.60
+  promotionMario: ME_LEVELUP_SMART.60
+  promotionDragonQuest: ME_LEVELUP_SMART.60
+  forcedBuyout: ME_5_BUY_SMART.60
+  domination: ME_MONOPOLY_SMART.60
+  bankruptcy: ME_BANKRUPT_SMART.60
 looping:
   mode: None
   radius: 0
@@ -159,7 +177,7 @@ ventureCards:
 changelog:
   - version: 2
     added:
-      - Icon
+      - Icon & BGM
     changed:
       - Updated yaml for CSWT
   - version: 1

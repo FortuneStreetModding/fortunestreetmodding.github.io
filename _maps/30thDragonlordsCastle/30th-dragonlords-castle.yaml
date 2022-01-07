@@ -31,7 +31,7 @@ music:
   forcedBuyout: ME_5_BUY_30TH.60
   domination: ME_MONOPOLY_30TH.55
   bankruptcy:
- changelog:
+changelog:
   - version: 1
 tourMode:
   bankruptcyLimit: 1

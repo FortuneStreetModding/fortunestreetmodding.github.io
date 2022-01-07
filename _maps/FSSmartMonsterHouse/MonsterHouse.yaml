@@ -15,9 +15,6 @@ maxDiceRoll: 8
 frbFile1: monster
 background: bg102
 mapIcon: monster
-music:
-  download: https://mega.nz/folder/Wfo2gDZB#91dyaYIpWv4ozm1PUVED7w/file/rTYy0Jya
-  map: BGM_MAP_MONSTER.50
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -25,6 +22,24 @@ tourMode:
   opponent2: Dragonlord
   opponent3: Bowser
   clearRank: 1
+music: 
+  download: https://drive.google.com/u/0/uc?id=1Bbp42A1Mv5R19T7PpBm_4JdxoTQK4zvV&export=download
+  map: BGM_MAP_MONSTER.60
+  stock: BGM_STOCK_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.60
+  auction: BGM_AUCTION_SMART.60
+  targetMet: BGM_GOALPROP_SMART.60
+  win: BGM_WINNER_SMART.60
+  guestAppear:
+  guestLeave:
+  badVentureCard:
+  takeAbreak: ME_HOLIDAY_SMART.60
+  promotionMii: ME_LEVELUP_SMART.60
+  promotionMario: ME_LEVELUP_SMART.60
+  promotionDragonQuest: ME_LEVELUP_SMART.60
+  forcedBuyout: ME_5_BUY_SMART.60
+  domination: ME_MONOPOLY_SMART.60
+  bankruptcy: ME_BANKRUPT_SMART.60
 ventureCards:
   - 0  # Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  # Venture on! Roll the die again and move forward.
@@ -157,7 +172,7 @@ ventureCards:
 changelog:
   - version: 2
     added:
-      - Icon
+      - Icon & FS Smart BGM
     changed:
       - Updated yaml for CSWT
   - version: 1
@@ -166,4 +181,6 @@ changelog:
 authors:
   - name: ZaSpai
     url: https://github.com/ZaSpai
+notes: |
+  - Includes an alternative map BGM: Mad Monster Mansion from Banjo Kazooie (Smash ver)
 ...

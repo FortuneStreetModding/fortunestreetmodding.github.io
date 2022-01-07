@@ -152,10 +152,10 @@ ventureCards:
 changelog:
   - version: 2
     changed:
-      - Updated icon & yaml for CSWT
-    - version: 1
-      added:
-        - Initial Release
+    - Updated icon & yaml for CSWT
+  - version: 1
+    added:
+    - Initial Release
 authors:
     - name: mask1n
       url: https://twitter.com/mask1n

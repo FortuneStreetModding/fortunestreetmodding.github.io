@@ -153,9 +153,9 @@ changelog:
   - version: 2
     changed:
       - Icon & updated yaml for CSWT
-    - version: 1
-      added:
-        - Initial Release
+  - version: 1
+    added:
+      - Initial Release
 authors:
     - name: mask1n
       url: https://twitter.com/mask1n
