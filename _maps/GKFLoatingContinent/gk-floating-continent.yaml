@@ -16,6 +16,24 @@ frbFile3: gk-floating-continent
 frbFile4: gk-floating-continent
 background: bg109
 mapIcon: Floating
+music:
+  download: https://drive.google.com/u/0/uc?id=1D4TrOkJAb4bBK2WLjJ8DSZOF_TAgnXAD&export=download
+  map: BGM_MAP_FLOATING.55
+  stock: BGM_STOCK_GK.55
+  ventureCards: BGM_CHANCE_GK.55
+  auction: BGM_TRADE_GK.60
+  targetMet:
+  win: BGM_WINNER_GK.60
+  guestAppear:
+  guestLeave:
+  badVentureCard:
+  takeAbreak: ME_HOLIDAY_GK.60
+  promotionMii: ME_LEVELUP_GK.55
+  promotionMario: ME_LEVELUP_GK.55
+  promotionDragonQuest: ME_LEVELUP_GK.55
+  forcedBuyout: ME_5_BUY_GK.55
+  domination:
+  bankruptcy: ME_BANKRUPT_GK.60
 switchRotationOriginPoints:
   - x: 0
     y: 0

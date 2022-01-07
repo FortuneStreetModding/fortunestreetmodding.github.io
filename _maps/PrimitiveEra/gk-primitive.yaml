@@ -13,6 +13,24 @@ maxDiceRoll: 6
 frbFile1: gk-primitive
 background: bg107
 mapIcon: gk-primitive
+music:
+  download: https://drive.google.com/u/0/uc?id=15iN-EtVCJZNVKFW48v_xDcf_ZbOI8kp5&export=download
+  map: BGM_MAP_PRIMITIVE.60
+  stock: BGM_STOCK_GK.55
+  ventureCards: BGM_CHANCE_GK.55
+  auction: BGM_TRADE_GK.60
+  targetMet:
+  win: BGM_WINNER_GK.60
+  guestAppear:
+  guestLeave:
+  badVentureCard:
+  takeAbreak: ME_HOLIDAY_GK.60
+  promotionMii: ME_LEVELUP_GK.55
+  promotionMario: ME_LEVELUP_GK.55
+  promotionDragonQuest: ME_LEVELUP_GK.55
+  forcedBuyout: ME_5_BUY_GK.55
+  domination:
+  bankruptcy: ME_BANKRUPT_GK.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1500
@@ -152,10 +170,12 @@ ventureCards:
 changelog:
   - version: 2
     changed:
-    - Updated icon & yaml for CSWT
+      - Updated icon & yaml for CSWT
+    added:
+      - BGM
   - version: 1
     added:
-    - Initial Release
+      - Initial Release
 authors:
     - name: mask1n
       url: https://twitter.com/mask1n
