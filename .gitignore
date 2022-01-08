@@ -33,7 +33,11 @@ _site/
 *.brstm
 *.cmpres
 *.arc
+ui_menu_*.png
 
 ### Binary Files ###
 *.zip
 *.7z
+
+### Map Specific ###
+_maps/FacingWorlds/facingWorlds.scene

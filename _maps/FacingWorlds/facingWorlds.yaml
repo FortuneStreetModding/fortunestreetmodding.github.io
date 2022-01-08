@@ -167,6 +167,11 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 7
+    changed:
+      - screenshot updated
+      - updated url to one of the songs
+      - cleaned up frb in hope to fix crashes on wii hardware
   - version: 6
     changed:
       - salary increment reduced from 200 to 125
@@ -212,7 +217,7 @@ notes: |
   - Stock
     - [killwilly - Foregone Destruction](https://soundcloud.com/killwilly/foregone-destruction)
   - Venture Cards
-    - [CRX - Foregone Destruction v2](https://soundcloud.com/creaperx/ut99-foregone-destroctuion-conk-redux)
+    - [CRX - Foregone Destruction v2](https://soundcloud.com/conkofficial/ut99-foregone-destroctuion-conk-redux)
   - Auction
     - [Saint Dior - Foregone Destruction Instrumental](https://soundcloud.com/wintersown/foregone-destruction-wintersown-snippet)
   - Target Met
