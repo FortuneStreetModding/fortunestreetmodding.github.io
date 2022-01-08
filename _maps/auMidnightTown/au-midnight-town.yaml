@@ -14,8 +14,8 @@ frbFile1: au-midnight-town
 background: bg002
 mapIcon: midnight
 music: 
-  download: https://drive.google.com/u/0/uc?id=1BYoMwZf6U0aCtGS1Du7ZvUAQFBsEKmRj&export=download
-  map: BGM_MAP_MIDNIGHT.50
+  download: https://drive.google.com/u/0/uc?id=1sFt7usEwGEnNmLXsDynn7BkcL_MbUgtw&export=download
+  map: REVELATION.40
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.60
   auction: BGM_AUCTION_SMART.60
