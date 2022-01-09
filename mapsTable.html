@@ -1,0 +1,106 @@
+---
+title: Community Maps
+layout: default
+permalink: /mapsTable
+---
+<script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+<style>
+  .mapCard-image-board.icon {
+    width:2.5rem;
+    height:2.5rem;
+    padding:4px;
+  }
+  .mapCard-image-background.icon {
+    width:2.5rem;
+    height:2.5rem;
+  }
+</style>
+<main role="main">
+  <!--- Main -->
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Community Maps</h1>
+      <p class="lead text-muted">All user submitted maps are gathered on this page.</p>
+      <p>
+        <a href="/maps" class="btn btn-secondary my-2">Cards</a>
+        <a href="/mapsTable" class="btn btn-primary my-2">Table</a>
+        <a href="{% link mapHelp.md %}" class="btn btn-secondary my-2">How to upload a Map</a>
+      </p>
+    </div>
+  </section>
+  
+  <!--- Maps -->
+  <div class="album">
+    <div class="container-fluid">
+      <table class="table"
+             data-toggle="table"
+             data-search="true"
+             data-show-columns="true">
+        <thead>
+          <tr>
+            <th scope="col" data-field="name">Map</th>
+            <th scope="col" data-field="name">Name</th>
+            <th scope="col" data-field="ruleSet">Rules</th>
+            <th scope="col" data-field="theme">Theme</th>
+            <th scope="col" data-field="initialCash">Initial Cash</th>
+            <th scope="col" data-field="targetAmount">Target Amount</th>
+            <th scope="col" data-field="baseSalary">Base Salary</th>
+            <th scope="col" data-field="salaryIncrement">Salary Increment</th>
+            <th scope="col" data-field="maxDiceRoll">Max Dice Roll</th>
+            <th scope="col" data-field="tags">Tags</th>
+            <th scope="col">Download</th>
+            <th scope="col">Repo</th>
+          </tr>
+        </thead>
+        <tbody>
+          {%- for map in site.maps -%}
+            {%- include getMapImage.liquid map=map number=0 %}
+            {%- assign mapUrl0 = gp_mapUrl %}
+            {%- assign background = site.data.backgrounds | where: "background", map.background | first %}
+            <tr>
+              <td>
+                <div class="relative-container">
+                  <a class="map-state" href="/maps?view={%- include renderMapSlug.liquid map=map -%}">
+                    <img class="card-img-top mapCard-image-board icon" src="{{ mapUrl0 }}" loading="lazy">
+                  </a>
+                  <img class="card-img-top mapCard-image-background icon" src="{%- include renderMapBackground.liquid map=map -%}" loading="lazy">
+                </div>
+              </td>
+              <td><a href="/maps?view={%- include renderMapSlug.liquid map=map -%}">{{ map.name.en }}</a></td>
+              <td>{{- map.ruleSet -}}</td>
+              <td>{{- map.theme -}}</td>
+              <td>{{- map.initialCash -}}</td>
+              <td>{{- map.targetAmount -}}</td>
+              <td>{{- map.baseSalary -}}</td>
+              <td>{{- map.salaryIncrement -}}</td>
+              <td>{{- map.maxDiceRoll -}}</td>
+              <td>{% if map.music -%}
+                <span class="badge rounded-pill bg-secondary px-1">Custom Music</span>
+                {%- endif %}
+                {%- if background.download -%}
+                <span class="badge rounded-pill bg-secondary px-1">Custom Background</span>
+                {%- endif  %}
+              </td>
+              <td>
+                {% if background.download or map.music.download -%}
+                <div class="btn-group" role="group">
+                {%- endif %}
+                <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=map -%}');">Map</button>
+                {%- if background.download -%}
+                <a class="btn btn-primary" href="{{ background.download }}">Background</a>
+                {%- endif %}
+                {%- if map.music.download -%}
+                <a class="btn btn-primary" href="{{ map.music.download }}">Music</a>
+                {%- endif %}
+                {% if background.download or map.music.download -%}
+                </div>
+                {%- endif %}
+              </td>
+              <td><a href="{%- include renderMapDownloadUrl.liquid map=map -%}">View in Repository</a></td>
+            </tr>
+          {%- endfor -%}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
