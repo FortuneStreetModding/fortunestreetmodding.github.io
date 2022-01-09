@@ -53,7 +53,8 @@ permalink: /mapsTable
           </tr>
         </thead>
         <tbody>
-          {%- for map in site.maps -%}
+          {%- assign sorted_maps = site.maps | sort_natural: "name" -%}
+          {%- for map in sorted_maps -%}
             {%- include getMapImage.liquid map=map number=0 %}
             {%- assign mapUrl0 = gp_mapUrl %}
             {%- assign background = site.data.backgrounds | where: "background", map.background | first %}
