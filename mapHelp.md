@@ -8,11 +8,12 @@ layout: mapHelp
 The maps on this page are hosted on Github. To upload maps you need a Github Account.
 
 To upload a new map you must create a pull request using the branch `master` as base. The pull request must contain the new folder for your map under the path `_maps/MyMap`. Your map folder must not contain any spaces. The folder must contain:
-- 1 .yaml file (the map descriptor of your map)
+- 1 .yaml file (the map descriptor of your map, must not contain any special symbols)
 - 1-4 .frb files (the board layout files of your map)
 - 1-4 .webp files (the screenshots for each of your board layouts)
+- May contain a .png file for the map icon
 
-You can take a look at one of the map templates [GoodEggGalaxy](https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/tree/master/templateMaps/GoodEggGalaxy) or [KingOfTheHill](https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/tree/master/_maps/KingOfTheHill) or the other maps in this repository.
+You can take a look at one of the other maps like [Facing Worlds](https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/tree/master/_maps/FacingWorlds), [KingOfTheHill](https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/tree/master/_maps/KingOfTheHill) or the other maps in this repository.
 
 **Please test your map at least one full game before creating a pull request!**
 
@@ -22,7 +23,7 @@ You can take a look at one of the map templates [GoodEggGalaxy](https://github.c
 
 ![Export Yaml](images/export_yaml.png)
 
-**(2)** Prepare your map folder. Take a look into one of the map templates [GoodEggGalaxy](https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/tree/master/templateMaps/GoodEggGalaxy) or [KingOfTheHill](https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/tree/master/_maps/KingOfTheHill) how your map folder must look like.
+**(2)** Prepare your map folder. Take a look into one of the other maps like [Facing Worlds](https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/tree/master/_maps/FacingWorlds), [KingOfTheHill](https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/tree/master/_maps/KingOfTheHill) how your map folder must look like.
 
 ![Directory Structure](images/myMap_directoryStructure.png)
 
