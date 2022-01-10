@@ -3,7 +3,12 @@ title: Community Maps
 layout: default
 permalink: /mapsTable
 ---
-<script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+<link href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css" rel="stylesheet" >
+<script>
+  function nameFormatter(value, row) {
+    return '<a href="/maps?view=' + row.id + '">' + value + '</a>'
+  }
+</script>
 <style>
   .mapCard-image-board.icon {
     width:2.5rem;
@@ -38,16 +43,19 @@ permalink: /mapsTable
              data-show-columns="true">
         <thead>
           <tr>
-            <th scope="col" data-field="name">Map</th>
-            <th scope="col" data-field="name">Name</th>
-            <th scope="col" data-field="ruleSet">Rules</th>
-            <th scope="col" data-field="theme">Theme</th>
-            <th scope="col" data-field="initialCash">Initial Cash</th>
-            <th scope="col" data-field="targetAmount">Target Amount</th>
-            <th scope="col" data-field="baseSalary">Base Salary</th>
-            <th scope="col" data-field="salaryIncrement">Salary Increment</th>
-            <th scope="col" data-field="maxDiceRoll">Max Dice Roll</th>
-            <th scope="col" data-field="tags">Tags</th>
+            <th scope="col">Screenshot</th>
+            <th scope="col" data-field="id"              data-visible="false">Id</th>
+            <th scope="col" data-field="name"            data-sortable="true" data-switchable="false" data-formatter="nameFormatter">Name</th>
+            <th scope="col" data-field="ruleSet"         data-sortable="true" data-switchable="true" data-visible="true" >Rules</th>
+            <th scope="col" data-field="theme"           data-sortable="true" data-switchable="true" data-visible="true" >Theme</th>
+            <th scope="col" data-field="initialCash"     data-sortable="true" data-switchable="true" data-visible="true" >Initial Cash</th>
+            <th scope="col" data-field="targetAmount"    data-sortable="true" data-switchable="true" data-visible="true" >Target Amount</th>
+            <th scope="col" data-field="baseSalary"      data-sortable="true" data-switchable="true" data-visible="false">Base Salary</th>
+            <th scope="col" data-field="salaryIncrement" data-sortable="true" data-switchable="true" data-visible="false">Salary Increment</th>
+            <th scope="col" data-field="maxDiceRoll"     data-sortable="true" data-switchable="true" data-visible="true" >Max Dice Roll</th>
+            <th scope="col" data-field="tags"            data-sortable="true" data-switchable="true" data-visible="true" >Tags</th>
+            <th scope="col" data-field="version"         data-sortable="true" data-switchable="true" data-visible="false">Version</th>
+            <th scope="col" data-field="authors"         data-sortable="true" data-switchable="true" data-visible="true" >Authors</th>
             <th scope="col">Download</th>
             <th scope="col">Repo</th>
           </tr>
@@ -67,7 +75,8 @@ permalink: /mapsTable
                   <img class="card-img-top mapCard-image-background icon" src="{%- include renderMapBackground.liquid map=map -%}" loading="lazy">
                 </div>
               </td>
-              <td><a href="/maps?view={%- include renderMapSlug.liquid map=map -%}">{{ map.name.en }}</a></td>
+              <td>{%- include renderMapSlug.liquid map=map -%}</td>
+              <td>{{ map.name.en }}</td>
               <td>{{- map.ruleSet -}}</td>
               <td>{{- map.theme -}}</td>
               <td>{{- map.initialCash -}}</td>
@@ -82,6 +91,13 @@ permalink: /mapsTable
                 <span class="badge rounded-pill bg-secondary px-1">Custom Background</span>
                 {%- endif  %}
               </td>
+              <td>
+                {%- if map.changelog -%}
+                  {%- assign firstChange = map.changelog | first -%}
+                  {{ firstChange.version }}
+                {%- endif -%}
+              </td>
+              <td>{{ map.authors | map: "name" | join: ", "}}</td>
               <td>
                 {% if background.download or map.music.download -%}
                 <div class="btn-group" role="group">
@@ -104,4 +120,7 @@ permalink: /mapsTable
       </table>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
 </main>
