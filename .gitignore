@@ -34,10 +34,8 @@ _site/
 *.cmpres
 *.arc
 ui_menu_*.png
+*.scene
 
 ### Binary Files ###
 *.zip
 *.7z
-
-### Map Specific ###
-_maps/FacingWorlds/facingWorlds.scene
