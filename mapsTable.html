@@ -48,11 +48,13 @@ permalink: /mapsTable
             <th scope="col" data-field="name"            data-sortable="true" data-switchable="false" data-formatter="nameFormatter">Name</th>
             <th scope="col" data-field="ruleSet"         data-sortable="true" data-switchable="true" data-visible="true" >Rules</th>
             <th scope="col" data-field="theme"           data-sortable="true" data-switchable="true" data-visible="true" >Theme</th>
+            <th scope="col" data-field="background"      data-sortable="true" data-switchable="true" data-visible="false">Background</th>
             <th scope="col" data-field="initialCash"     data-sortable="true" data-switchable="true" data-visible="true" >Initial Cash</th>
             <th scope="col" data-field="targetAmount"    data-sortable="true" data-switchable="true" data-visible="true" >Target Amount</th>
             <th scope="col" data-field="baseSalary"      data-sortable="true" data-switchable="true" data-visible="false">Base Salary</th>
             <th scope="col" data-field="salaryIncrement" data-sortable="true" data-switchable="true" data-visible="false">Salary Increment</th>
             <th scope="col" data-field="maxDiceRoll"     data-sortable="true" data-switchable="true" data-visible="true" >Max Dice Roll</th>
+            <th scope="col" data-field="states"          data-sortable="true" data-switchable="true" data-visible="false">Map States</th>
             <th scope="col" data-field="tags"            data-sortable="true" data-switchable="true" data-visible="true" >Tags</th>
             <th scope="col" data-field="version"         data-sortable="true" data-switchable="true" data-visible="false">Version</th>
             <th scope="col" data-field="authors"         data-sortable="true" data-switchable="true" data-visible="true" >Authors</th>
@@ -65,6 +67,23 @@ permalink: /mapsTable
           {%- for map in sorted_maps -%}
             {%- include getMapImage.liquid map=map number=0 %}
             {%- assign mapUrl0 = gp_mapUrl %}
+            {%- if map.frbFile4 -%}
+              {%- capture frbFiles -%}
+                {{ map.frbFile1 }},{{map.frbFile2}},{{map.frbFile3}},{{map.frbFile4}}
+              {%- endcapture -%}
+            {%- elsif map.frbFile3 -%}
+              {%- capture frbFiles -%}
+                {{ map.frbFile1 }},{{map.frbFile2}},{{map.frbFile3}}
+              {%- endcapture -%}
+            {%- elsif map.frbFile2 -%}
+              {%- capture frbFiles -%}
+                {{ map.frbFile1 }},{{map.frbFile2}}
+              {%- endcapture -%}
+            {%- else -%}
+              {%- capture frbFiles -%}
+                {{ map.frbFile1 }}
+              {%- endcapture -%}
+            {%- endif -%}
             {%- assign background = site.data.backgrounds | where: "background", map.background | first %}
             <tr>
               <td>
@@ -79,17 +98,20 @@ permalink: /mapsTable
               <td>{{ map.name.en }}</td>
               <td>{{- map.ruleSet -}}</td>
               <td>{{- map.theme -}}</td>
+              <td>{{- map.background -}}</td>
               <td>{{- map.initialCash -}}</td>
               <td>{{- map.targetAmount -}}</td>
               <td>{{- map.baseSalary -}}</td>
               <td>{{- map.salaryIncrement -}}</td>
               <td>{{- map.maxDiceRoll -}}</td>
-              <td>{% if map.music -%}
+              <td>{{- frbFiles | split: "," | uniq | size -}}</td>
+              <td>
+                {%- if map.music -%}
                 <span class="badge rounded-pill bg-secondary px-1">Custom Music</span>
-                {%- endif %}
+                {%- endif -%}
                 {%- if background.download -%}
                 <span class="badge rounded-pill bg-secondary px-1">Custom Background</span>
-                {%- endif  %}
+                {%- endif -%}
               </td>
               <td>
                 {%- if map.changelog -%}
