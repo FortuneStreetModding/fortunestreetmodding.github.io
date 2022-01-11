@@ -21,7 +21,6 @@ tourMode:
 background: battlecanyon
 mapIcon: battlecanyon
 music:
-  download: https://drive.google.com/u/0/uc?id=1eUv7IEt9dzQr98gVMQfSb_CnSDzB8sHG&export=download
   map: BGM_MAP_BATTLECANYON.65
   stock: MP1_OptionHouse.50
   ventureCards: MP1_MiniGame.60
