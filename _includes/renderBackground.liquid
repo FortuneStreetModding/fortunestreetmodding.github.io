@@ -9,9 +9,5 @@ Renders:
   relative url of the map background image corresponding to given background base file name
 
 {%- endcomment -%}
-{%- if include.backgroundEntry.download %}
-{%- capture temporary_variable -%}/backgrounds/{{ include.backgroundEntry.background }}/{{ include.backgroundEntry.background }}.webp{%- endcapture -%}
-{%- else %}
-{%- capture temporary_variable -%}/backgrounds/vanilla/{{ include.backgroundEntry.background }}.webp{%- endcapture -%}
-{%- endif %}
+{%- capture temporary_variable -%}/backgrounds/{{ include.backgroundEntry.background }}.webp{%- endcapture -%}
 {{ temporary_variable | relative_url }}
