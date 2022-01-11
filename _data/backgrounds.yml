@@ -160,3 +160,10 @@
     forcedBuyout: MP1_WinMinigame3.60
     domination: MP1_Monopoly.60
     bankruptcy: MP1_WinMinigame5.60
+- background: quietstreet
+  name: Quiet Street
+  download: https://drive.google.com/u/0/uc?id=1yRtD5d5KuuGIhl7MwT1SHy9OzhRSaNtN&export=download
+  mapIcon: qs_btd6_0
+  music:
+    map: jazztheme.100
+    targetMet: primalone.100
