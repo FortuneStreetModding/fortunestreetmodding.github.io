@@ -2,7 +2,7 @@
 name:
   en: Wario's Battle Canyon
 desc:
-  en: Wario's Battle Canyon from Mario Party 1. Use the warps and cannons to jump between the islands, hit the switch to change the order of the warps!
+  en: Wario's Battle Canyon from Mario Party 1. Use the doors and cannons to jump between the islands, but be careful! The switch will reverse the order of the doors!
 ruleSet: Standard
 theme: Mario
 initialCash: 3000
