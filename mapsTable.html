@@ -6,7 +6,7 @@ permalink: /mapsTable
 <link href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css" rel="stylesheet" >
 <script>
   function nameFormatter(value, row) {
-    return '<a href="/maps?view=' + row.id + '">' + value + '</a>'
+    return '<a href="/maps?view=' + row.yamlName + '">' + value + '</a>'
   }
 </script>
 <style>
@@ -44,20 +44,23 @@ permalink: /mapsTable
         <thead>
           <tr>
             <th scope="col">Screenshot</th>
-            <th scope="col" data-field="id"              data-visible="false">Id</th>
-            <th scope="col" data-field="name"            data-sortable="true" data-switchable="false" data-formatter="nameFormatter">Name</th>
-            <th scope="col" data-field="ruleSet"         data-sortable="true" data-switchable="true" data-visible="true" >Rules</th>
-            <th scope="col" data-field="theme"           data-sortable="true" data-switchable="true" data-visible="true" >Theme</th>
-            <th scope="col" data-field="background"      data-sortable="true" data-switchable="true" data-visible="false">Background</th>
-            <th scope="col" data-field="initialCash"     data-sortable="true" data-switchable="true" data-visible="true" >Initial Cash</th>
-            <th scope="col" data-field="targetAmount"    data-sortable="true" data-switchable="true" data-visible="true" >Target Amount</th>
-            <th scope="col" data-field="baseSalary"      data-sortable="true" data-switchable="true" data-visible="false">Base Salary</th>
-            <th scope="col" data-field="salaryIncrement" data-sortable="true" data-switchable="true" data-visible="false">Salary Increment</th>
-            <th scope="col" data-field="maxDiceRoll"     data-sortable="true" data-switchable="true" data-visible="true" >Max Dice Roll</th>
-            <th scope="col" data-field="states"          data-sortable="true" data-switchable="true" data-visible="false">Map States</th>
-            <th scope="col" data-field="tags"            data-sortable="true" data-switchable="true" data-visible="true" >Tags</th>
-            <th scope="col" data-field="version"         data-sortable="true" data-switchable="true" data-visible="false">Version</th>
-            <th scope="col" data-field="authors"         data-sortable="true" data-switchable="true" data-visible="true" >Authors</th>
+            <th scope="col" data-field="yamlName"         data-sortable="true" data-switchable="true" data-visible="false">Yaml File Name</th>
+            <th scope="col" data-field="folderName"       data-sortable="true" data-switchable="true" data-visible="false">Folder Name</th>
+            <th scope="col" data-field="name"             data-sortable="true" data-switchable="true" data-formatter="nameFormatter">Name</th>
+            <th scope="col" data-field="ruleSet"          data-sortable="true" data-switchable="true" data-visible="true" >Rules</th>
+            <th scope="col" data-field="theme"            data-sortable="true" data-switchable="true" data-visible="true" >Theme</th>
+            <th scope="col" data-field="background"       data-sortable="true" data-switchable="true" data-visible="false">Background</th>
+            <th scope="col" data-field="initialCash"      data-sortable="true" data-switchable="true" data-visible="true" >Initial Cash</th>
+            <th scope="col" data-field="targetAmount"     data-sortable="true" data-switchable="true" data-visible="true" >Target Amount</th>
+            <th scope="col" data-field="baseSalary"       data-sortable="true" data-switchable="true" data-visible="false">Base Salary</th>
+            <th scope="col" data-field="salaryIncrement"  data-sortable="true" data-switchable="true" data-visible="false">Salary Increment</th>
+            <th scope="col" data-field="maxDiceRoll"      data-sortable="true" data-switchable="true" data-visible="true" >Max Dice Roll</th>
+            <th scope="col" data-field="states"           data-sortable="true" data-switchable="true" data-visible="false">Map States</th>
+            <th scope="col" data-field="tags"             data-sortable="true" data-switchable="true" data-visible="true" >Tags</th>
+            <th scope="col" data-field="customBackground" data-sortable="true" data-switchable="true" data-visible="false">Custom Background</th>
+            <th scope="col" data-field="customMusic"      data-sortable="true" data-switchable="true" data-visible="false">Custom Music</th>
+            <th scope="col" data-field="version"          data-sortable="true" data-switchable="true" data-visible="false">Version</th>
+            <th scope="col" data-field="authors"          data-sortable="true" data-switchable="true" data-visible="true" >Authors</th>
             <th scope="col">Download</th>
             <th scope="col">Repo</th>
           </tr>
@@ -95,7 +98,8 @@ permalink: /mapsTable
                 </div>
               </td>
               <td>{%- include renderMapSlug.liquid map=map -%}</td>
-              <td>{{ map.name.en }}</td>
+              <td>{{- gd_directory_name -}}</td>
+              <td>{{- map.name.en -}}</td>
               <td>{{- map.ruleSet -}}</td>
               <td>{{- map.theme -}}</td>
               <td>{{- map.background -}}</td>
@@ -105,12 +109,19 @@ permalink: /mapsTable
               <td>{{- map.salaryIncrement -}}</td>
               <td>{{- map.maxDiceRoll -}}</td>
               <td>{{- frbFiles | split: "," | uniq | size -}}</td>
+              <td>{{- map.tags | join: ", " -}}</td>
+              <td>
+                {%- if background.download -%}
+                  Yes
+                {%- else -%}
+                  No
+                {%- endif -%}
+              </td>
               <td>
                 {%- if map.music -%}
-                <span class="badge rounded-pill bg-secondary px-1">Custom Music</span>
-                {%- endif -%}
-                {%- if background.download -%}
-                <span class="badge rounded-pill bg-secondary px-1">Custom Background</span>
+                  Yes
+                {%- else -%}
+                  No
                 {%- endif -%}
               </td>
               <td>
