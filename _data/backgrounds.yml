@@ -139,3 +139,24 @@
     stock: traverseTown_map_stock.80
     ventureCards: traverseTown_map_chance.80
     auction: traverseTown_map_auction.80
+- background: battlecanyon
+  name: Wario's Battle Canyon
+  download: https://drive.google.com/u/0/uc?id=1O4k3l4nDYzb6ZGn6I_pyXzQhFGgnWnwc&export=download
+  mapIcon: battlecanyon
+  music:
+    map: BGM_MAP_BATTLECANYON.65
+    stock: MP1_OptionHouse.50
+    ventureCards: MP1_MiniGame.60
+    auction: MP1_ChanceTime.55
+    targetMet: Hurry Up.60
+    win: MP1_Ending.60
+    guestAppear: MP1_OJAMA_COME.60
+    guestLeave: MP1_OJAMA_BYE.60
+    badVentureCard: MP1_Miss.60
+    takeAbreak: MP1_Miss.60
+    promotionMii: MP1_WinMinigame4.60
+    promotionMario: MP1_WinMinigame4.60
+    promotionDragonQuest: MP1_WinMinigame4.60
+    forcedBuyout: MP1_WinMinigame3.60
+    domination: MP1_Monopoly.60
+    bankruptcy: MP1_WinMinigame5.60
