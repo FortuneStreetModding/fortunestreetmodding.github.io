@@ -166,4 +166,6 @@ notes: |
   - Azurillkirby finished up the map: Fixing waypoints and rent values, making the yaml file, setting the venture card list, and doing final testing.
   - The venture card set is the same as in the original DS version, with four exceptions: Cards 29, 45, 76, and 80 were replaced with cards 88, 34, 111, and 47, respectively.
     - These four cards changed effects between versions, and were swapped with other cards to attempt to fairly compensate for them.
+tags:
+  - DS
 ...

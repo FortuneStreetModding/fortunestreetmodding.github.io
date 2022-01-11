@@ -374,13 +374,16 @@ permalink: /maps
               {%- endif %}
             </div>
             <div class="card-footer text-muted">
-              <span>Tags</span>
+              {%- for tag in map.tags -%}
+              <span class="badge rounded-pill bg-secondary px-1">{{ tag }}</span>
+              {%- endfor %}
               {% if map.music -%}
               <span class="badge rounded-pill bg-secondary px-1">Custom Music</span>
               {%- endif %}
               {%- if background.download -%}
               <span class="badge rounded-pill bg-secondary px-1">Custom Background</span>
               {%- endif  %}
+              &nbsp;
             </div>
           </div>
         </div>
