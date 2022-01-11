@@ -39,7 +39,7 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
-   - version: 1
+  - version: 1
     added: 
       - Initial Release
 authors:
