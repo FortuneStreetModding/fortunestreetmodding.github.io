@@ -170,4 +170,6 @@ changelog:
 authors:
   - name: Deflaktor
     url: https://github.com/Deflaktor
+tags:
+  - Redux
 ...

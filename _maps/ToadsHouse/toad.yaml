@@ -3,8 +3,8 @@ name:
   en: Toad's House
   de: Toads Haus
 desc: 
-  en: Whenever someone steps on an Event Square, Lakitu will visit Toad's house. A small map where you can ramp up promotions quickly.
-  de: Jedes Mal wenn jemand auf ein Ereignisfeld tritt, besucht Lakitu Toads Haus. Eine kleine Karte in der man schnell aufsteigen kann.
+  en: Lakitu often visits Toad's house. A small board where you can ramp up promotions quickly.
+  de: Lakitu besucht häufig Toads Haus. Eine kleine Karte in der man schnell aufsteigen kann.
 ruleSet: Standard
 theme: Mario
 initialCash: 1200
@@ -21,6 +21,9 @@ tourMode:
   opponent3: Peach
   clearRank: 1
 changelog:
+  - version: 4
+    changed:
+      - Updated description
   - version: 3
     changed: 
       - Ported over to new .yaml file format
