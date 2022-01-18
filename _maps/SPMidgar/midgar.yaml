@@ -2,7 +2,7 @@
 name:
   en: Midgar (Special)
 desc:
-  en: Ported from Itadaki Street Special. Based on the location from Final Fantasy XVII. Use the switches to rotate the inner board 90 degrees clockwise.
+  en: Ported from Itadaki Street Special. Based on the location from Final Fantasy VII. Use the switches to rotate the inner board 90 degrees clockwise.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
