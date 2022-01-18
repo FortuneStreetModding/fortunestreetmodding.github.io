@@ -16,7 +16,7 @@ Returns:
 {%- assign gpffd_maps_collection_files_sorted = gpffd_maps_collection_files | sort_natural: "name" -%}
 {%- assign number = include.number -%}
 {%- assign gpffd_image = nil -%}
-{%- for gpffd_item in gpffd_maps_collection.files -%}
+{%- for gpffd_item in gpffd_maps_collection_files_sorted -%}
   {%- if gpffd_item.extname == ".webp" -%}
     {%- include getParent.liquid file_path=gpffd_item.path -%}
     {%- if gd_directory_name == gpffd_directory_name -%}
