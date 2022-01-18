@@ -12,7 +12,7 @@ salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: smart-zodiac
 frbFile2: smart-zodiac
-background: bg009alt
+background: bg104
 mapIcon: zodiac
 music: 
   download: https://drive.google.com/u/0/uc?id=1pgwZVFhHyMnXyLlA_WIxtkDycMwk6qiU&export=download
@@ -170,9 +170,6 @@ ventureCards:
 authors:
   - name: Azurillkirby
 changelog:
-  - version: 2
-    changed:
-      - Changed background to bg009alt
   - version: 1
 notes: |
   - This map was originally from Fortune Street Smart.
