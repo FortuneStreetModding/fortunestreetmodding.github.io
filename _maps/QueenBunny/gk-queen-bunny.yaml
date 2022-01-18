@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: gk-queen-bunny
-background: bg002
+background: bg008alt
 mapIcon: queen
 music:
   download: https://drive.google.com/u/0/uc?id=1RYcqhBlTV72Ez-dItpDZo3RBR7TgD5K-&export=download
@@ -167,6 +167,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    changed:
+      - Changed background to bg008alt
   - version: 1
 authors:
   - name: Azurillkirby
