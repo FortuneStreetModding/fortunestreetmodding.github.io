@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: au-midnight-town
-background: bg002
+background: bg009alt
 mapIcon: midnight
 music: 
   download: https://drive.google.com/u/0/uc?id=1Tla3_0dNJu6r9Cr-jgTUgsl0SZ1FfcT2&export=download
@@ -38,6 +38,9 @@ tourMode:
   opponent3: Waluigi
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Changed background to bg009alt
   - version: 2
     added:
       - Icon & BGM
