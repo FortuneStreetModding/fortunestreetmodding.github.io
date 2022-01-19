@@ -173,7 +173,8 @@ changelog:
   - version: 2
     added: 
       - Background
-    changed: Some board spaces changed for better balance.
+    changed: 
+      - Some board spaces changed for better balance.
   - version: 1
     added: 
       - Initial Release
