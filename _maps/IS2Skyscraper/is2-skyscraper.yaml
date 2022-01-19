@@ -4,14 +4,14 @@ name:
 desc:
   en: Skyscraper, ported from Itadaki Street 2.
 ruleSet: Standard
-theme: DragonQuest
+theme: Mario
 initialCash: 2000
 targetAmount: 20000
 baseSalary: 250
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: is2-skyscraper
-background: bg004
+background: bg009alt
 mapIcon: skyscraper
 music:
   download: https://drive.google.com/u/0/uc?export=download&confirm=RHBs&id=1mdpnqqsMKmCbyi9QcAJcl7H_sbsDgYUy
@@ -167,6 +167,10 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    changed:
+      - Changed background to bg009alt
+      - Changed theme to Mario to add doors to map
   - version: 1
 authors:
   - name: Azurillkirby

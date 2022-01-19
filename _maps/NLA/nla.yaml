@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: nla
-background: galaxyColosseum
+background: bg009alt
 mapIcon: nla
 music:
   download: https://drive.google.com/u/0/uc?export=download&confirm=5Ndx&id=1eT1hNR36929SphZ4L0OWZefsqPdGuOiq
@@ -39,6 +39,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to bg009alt
   - version: 1
     added: 
       - Initial Release

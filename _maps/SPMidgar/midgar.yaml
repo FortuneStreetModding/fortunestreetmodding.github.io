@@ -2,7 +2,7 @@
 name:
   en: Midgar (Special)
 desc:
-  en: Ported from Itadaki Street Special. Based on the location from Final Fantasy XVII. Use the switches to rotate the inner board 90 degrees clockwise.
+  en: Ported from Itadaki Street Special. Based on the location from Final Fantasy VII. Use the switches to rotate the inner board 90 degrees clockwise.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
@@ -14,7 +14,7 @@ frbFile1: midgar0
 frbFile2: midgar1
 frbFile3: midgar2
 frbFile4: midgar3
-background: galaxyColosseum
+background: bg008alt
 mapIcon: midgar
 music:
   download: https://drive.google.com/u/0/uc?export=download&confirm=ZJrq&id=1zvGgeBRh5qrELI3HatNNGESfkuINpZEs
@@ -42,6 +42,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to bg008alt
   - version: 1
     added: 
       - Initial Release

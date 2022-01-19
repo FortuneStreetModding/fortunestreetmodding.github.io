@@ -167,3 +167,15 @@
   music:
     map: jazztheme.100
     targetMet: primalone.100
+- background: bg009alt
+  name: bg009alt
+  download: https://drive.google.com/u/0/uc?id=1tFsB0Rsr78nCP1jxe2ckIrP8xNvtsylD&export=download
+  mapIcon: bg009alt
+- background: jungleadventure
+  name: DK's Jungle Adventure
+  download: https://drive.google.com/u/0/uc?id=1PY4rlzB5Q3gIIH03fmhmxgU0kFwQ09Z_&export=download
+  mapIcon: dksjungle
+- background: bg008alt
+  name: bg008alt
+  download: https://drive.google.com/u/0/uc?id=1jEsWld-iTOlQli7BIo75gN8zyconEAYd&export=download
+  mapIcon: bg008alt
