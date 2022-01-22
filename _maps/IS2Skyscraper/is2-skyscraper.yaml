@@ -4,7 +4,7 @@ name:
 desc:
   en: Skyscraper, ported from Itadaki Street 2.
 ruleSet: Standard
-theme: Mario
+theme: DragonQuest
 initialCash: 2000
 targetAmount: 20000
 baseSalary: 250
