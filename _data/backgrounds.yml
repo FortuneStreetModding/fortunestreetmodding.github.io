@@ -196,3 +196,9 @@
   name: bg008alt
   download: https://drive.google.com/u/0/uc?id=1jEsWld-iTOlQli7BIo75gN8zyconEAYd&export=download
   mapIcon: bg008alt
+- background: bg001_clean
+  name: bg001_clean
+  download: https://drive.google.com/u/0/uc?id=1zO-7FFvkVPPLaD_i0OFNHareYzr-u9my&export=download
+  mapIcon: bg001
+  music:
+    map: 20_BGM_MAP_YOSHI

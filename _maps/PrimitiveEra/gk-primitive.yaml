@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: gk-primitive
-background: bg107
+background: bg001_clean
 mapIcon: gk-primitive
 music:
   download: https://drive.google.com/u/0/uc?id=1czy0dGU7CGdKjKNhYFv3_Q5c2daszRtP&export=download
