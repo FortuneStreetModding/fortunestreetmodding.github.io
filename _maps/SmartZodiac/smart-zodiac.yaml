@@ -115,9 +115,9 @@ ventureCards:
   - 0  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
   - 1  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
   - 0  #  76 Special arcade adventure! You're invited to play Round the Blocks!
-  - 1  #  77 Freebie! Take five of each district's stocks.
+  - 0  #  77 Freebie! Take five of each district's stocks.
   - 0  #  78 Property venture! You can buy any unowned shop or vacant plot for 200G more than its value.
-  - 0  #  79 Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not.
+  - 1  #  79 Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not.
   - 1  #  80 Freebie! Take a Spade!
   - 0  #  81 Misadventure! All other players can only move forward 1 on their next turn.
   - 1  #  82 Freebie! Take a Club!
@@ -167,15 +167,20 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+changelog:
+  - version: 2
+    changed:
+      - Replaced card 77 with 79.
+  - version: 1
+    added: 
+      - Initial Release
+tags:
+  - Smart
 authors:
   - name: Azurillkirby
-changelog:
-  - version: 1
 notes: |
   - This map was originally from Fortune Street Smart.
   - The venture card set has been taken from Mt. Magmageddon.
   - This map has 12 built-in vacant lots, so playing on the "None" setting for vacant lots is recommended.
   - In the original game, Zodiac made use of spaceships that function identically to Magmalices from Mt. Magmageddon. However, changing Magmalices' locations in Wii is fickle, and can cause game crashes. Because of this, the visual design of this board has been changed, such that I could functionally recreate this board while not changing the locations of the Magmalices from where they are normally located in Mt. Magmageddon. As such, the visual design is not the same as the original Zodiac, but it plays identically.
-tags:
-  - Smart
 ...
