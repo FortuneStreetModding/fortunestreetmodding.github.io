@@ -12,6 +12,7 @@ salaryIncrement: 300
 maxDiceRoll: 8
 frbFile1: leaguebar
 background: bg008alt
+mapIcon: bg008alt
 looping:
   mode: Vertical
   radius: 26

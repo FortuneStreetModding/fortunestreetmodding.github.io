@@ -10,8 +10,9 @@ targetAmount: 25000
 baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
-frbFile1: yuureisen
+frbFile1: creeper
 background: bg102
+mapIcon: creeper
 tourMode:
   bankruptcyLimit: 1
   opponent1: Mario

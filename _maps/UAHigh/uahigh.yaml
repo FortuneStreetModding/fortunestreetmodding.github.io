@@ -12,6 +12,7 @@ salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: uahigh
 background: bg004
+mapIcon: uahigh
 music:
   download: https://drive.google.com/u/0/uc?id=154Dc-UAS5imeOvQ4c54vkFBm59Vx11jO&export=download
   map: mha.50
