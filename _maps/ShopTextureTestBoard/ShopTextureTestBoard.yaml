@@ -1,0 +1,28 @@
+---
+name:
+  en: Shop Texture Test Board
+desc:
+  en: This board is designed to facilitate extraction of the various shop texture files for each character color.
+ruleSet: Standard
+theme: Mario
+initialCash: 2000
+targetAmount: 18000
+baseSalary: 200
+salaryIncrement: 150
+maxDiceRoll: 6
+frbFile1: EventSpiral1
+background: bg001
+tourMode:
+  bankruptcyLimit: 1
+  opponent1: Mario
+  opponent2: Slime
+  opponent3: BowserJr
+  clearRank: 1
+authors:
+  - name: MysticMismagius
+    url: https://twitter.com/mysticmismagius
+notes: |
+  This board contains 4 shops of each model (1-7 stars) and 4 vacant plots. The player can infinitely loop around each section of the board to make it easier to grab each shop in their section.
+tags:
+  - test
+...
