@@ -39,3 +39,17 @@ ui_menu_*.png
 ### Binary Files ###
 *.zip
 *.7z
+
+# Map Icons which are defined in backgrounds.yml
+facingWorlds.png
+forestFairies.png
+forsakenFortress.png
+galaxyColosseum.png
+n64Skyscraper.png
+traverseTown.png
+battlecanyon.png
+quietstreet.png
+bg009alt.png
+dksjungle.png
+bg008alt.png
+bg001_clean.png
