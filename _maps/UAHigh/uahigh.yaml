@@ -14,9 +14,9 @@ frbFile1: uahigh
 background: bg004
 mapIcon: uahigh
 music:
-  download: https://drive.google.com/u/0/uc?id=154Dc-UAS5imeOvQ4c54vkFBm59Vx11jO&export=download
-  map: mha.50
-  targetMet: yousayrun.50
+  download: https://drive.google.com/u/2/uc?id=1BpkiIb-pqiETTpqgqdtQKT0Mkio5pyyx&export=download
+  map: mha.40
+  targetMet: yousayrun.40
 tourMode:
   bankruptcyLimit: 1
   opponent1: Mario
