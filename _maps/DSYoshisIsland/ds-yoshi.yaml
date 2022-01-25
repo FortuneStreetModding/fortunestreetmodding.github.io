@@ -12,6 +12,7 @@ salaryIncrement: 100
 maxDiceRoll: 6
 frbFile1: ds-yoshi
 background: bg001_clean
+mapIcon: bg001_clean
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi

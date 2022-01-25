@@ -10,9 +10,9 @@ targetAmount: 10000
 baseSalary: 300
 salaryIncrement: 100
 maxDiceRoll: 6
-frbFile1: auShellIsleLite
+frbFile1: auShellIsle
 background: bg105
-mapIcon: auShellIsleLite
+mapIcon: auShellIsle
 music: 
   download: https://drive.google.com/u/2/uc?id=1-dgMLBlcqZtYFpKn0SIkTZDQYtaeYwp7&export=download
   map: BGM_MAP_SHELLISLE_IS2R.60
