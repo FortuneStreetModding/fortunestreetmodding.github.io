@@ -10,9 +10,9 @@ targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
-frbFile1: auNananasBuriedTreasure
+frbFile1: auNanana
 background: bg102
-mapIcon: auNananasBuriedTreasure
+mapIcon: auNanana
 tourMode:
   bankruptcyLimit: 1
   opponent1: Patty
