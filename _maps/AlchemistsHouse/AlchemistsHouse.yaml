@@ -2,7 +2,7 @@
 name:
   en: Alchemist's House
 desc:
-  en: "The pink district is a bridge, and rotates 90 degrees clockwise when the switch is pressed."
+  en: The pink district is a bridge, and rotates 90 degrees clockwise when the switch is pressed.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1800

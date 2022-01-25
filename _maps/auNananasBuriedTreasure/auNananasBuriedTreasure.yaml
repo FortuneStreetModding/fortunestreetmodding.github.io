@@ -2,7 +2,7 @@
 name:
   en: Nanana's Buried Treasure (au)
 desc:
-  en: "Nanana's Buried Treasure, ported from Itadaki Street for au."
+  en: Nanana's Buried Treasure, ported from Itadaki Street for au.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -12,6 +12,7 @@ salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: auNananasBuriedTreasure
 background: bg102
+mapIcon: auNananasBuriedTreasure
 tourMode:
   bankruptcyLimit: 1
   opponent1: Patty
@@ -147,6 +148,10 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+changelog:
+  - version: 2
+    added:
+      - Icon
 authors:
   - name: Azurillkirby
 notes: |
