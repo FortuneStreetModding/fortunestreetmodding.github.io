@@ -38,6 +38,10 @@ tourMode:
   opponent3: Waluigi
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Waypoint error fixed on property 21.
+      - Fixed property 27's rent. It was originally set as 130 - 59, as was written in the promotional image, but that doesn't make sense with normal rent calculations, so it likely was a mistake. (And it wouldn't be the only mistake on that promotional image.)
   - version: 3
     changed:
       - Changed background to bg009alt
