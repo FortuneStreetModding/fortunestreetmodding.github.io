@@ -11,11 +11,11 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: au-midnight-town
-background: bg002
+background: bg009alt
 mapIcon: midnight
 music: 
-  download: https://drive.google.com/u/0/uc?id=1BYoMwZf6U0aCtGS1Du7ZvUAQFBsEKmRj&export=download
-  map: BGM_MAP_MIDNIGHT.50
+  download: https://drive.google.com/u/0/uc?id=1Tla3_0dNJu6r9Cr-jgTUgsl0SZ1FfcT2&export=download
+  map: HAZE.50
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.60
   auction: BGM_AUCTION_SMART.60
@@ -38,10 +38,13 @@ tourMode:
   opponent3: Waluigi
   clearRank: 2
 changelog:
-  - version: 3
+  - version: 4
     changed:
       - Waypoint error fixed on property 21.
       - Fixed property 27's rent. It was originally set as 130 - 59, as was written in the promotional image, but that doesn't make sense with normal rent calculations, so it likely was a mistake. (And it wouldn't be the only mistake on that promotional image.)
+  - version: 3
+    changed:
+      - Changed background to bg009alt
   - version: 2
     added:
       - Icon & BGM
@@ -184,4 +187,6 @@ notes: |
   - Not a lot of information is known about Itadaki Street for au or this board, as all that was available was a picture of the map with all of the spaces and the property values/prices. As such, a lot of information about this board has been guessed or pulled from other boards.
   - All of the intersections on this board are force-travel-through. You may not choose your direction at any space on the board unless you land on bank. Having played almost all of the officially released maps, this is the board-type that I would suspect that the devs intended.
   - The venture card set has been taken from Super Mario Bros with a few changes.
+tags:
+ - au
 ...
