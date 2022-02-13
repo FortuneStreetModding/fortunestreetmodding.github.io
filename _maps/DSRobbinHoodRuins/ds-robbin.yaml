@@ -19,6 +19,24 @@ tourMode:
   opponent2: Angelo
   opponent3: Jessica
   clearRank: 2
+music:
+  download: https://drive.google.com/u/2/uc?id=1xiPa2C_EIjQ89ZjUMT_XA0Y3nD8ZGq44&export=download
+  map: BGM_MAP_KANDATA_ISDS.60
+  stock: BGM_STOCK_ISDS.60
+  ventureCards: BGM_CHANCE_ISDS.65
+  auction: BGM_AUCTION_ISDS.75
+  targetMet: BGM_GOALPROP_DQ_ISDS.60
+  win: BGM_WINNER_DQ_ISDS.60
+  guestAppear: ME_OJAMA_COME_ISDS.60
+  guestLeave: ME_OJAMA_BYE_ISDS.60
+  badVentureCard: ME_CURSE_ISDS.60
+  takeAbreak: ME_HOLIDAY_ISDS.60
+  promotionMii: ME_DQ_LEVELUP_ISDS.55
+  promotionMario: ME_MR_LEVELUP_ISDS.55
+  promotionDragonQuest: ME_DQ_LEVELUP_ISDS.55
+  forcedBuyout: ME_5BUY_ISDS.60
+  domination: ME_MONOPOLY_ISDS.60
+  bankruptcy: ME_BANKRUPT_ISDS.60
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -149,6 +167,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 4
+    added:
+      - DS BGM
   - version: 3
     changed:
       - Updated yaml for CSWT
