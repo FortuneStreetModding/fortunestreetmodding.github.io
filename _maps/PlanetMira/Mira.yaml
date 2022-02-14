@@ -39,6 +39,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed: 
+      - Board balance, pathfinding fix
   - version: 1
     added: 
       - Initial Release
