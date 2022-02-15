@@ -21,6 +21,7 @@ tourMode:
 background: facingWorlds
 mapIcon: facingWorlds
 music:
+  download: https://drive.google.com/uc?export=download&id=1We6EIi8CQdo8AWlKQlx8Tj_pOeEvoCcA
   map: facingWorlds_map_forgoneRejuvenation.65
   stock: facingWorlds_stock_killWillyforegone.80
   ventureCards: facingWorlds_ventureCards_crxForeDest.80
