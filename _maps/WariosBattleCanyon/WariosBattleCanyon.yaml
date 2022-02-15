@@ -112,7 +112,7 @@ ventureCards:
   - 1  #  72 Dicey adventure! Roll 1/3/5 to take 20 times the number of your shops in gold coins. Roll 2/4/6 to pay the same.
   - 1  #  73 Property venture! You can buy any unowned shop or vacant plot.
   - 1  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
-  - 0  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
+  - 1  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
   - 1  #  76 Special arcade adventure! You're invited to play Round the Blocks!
   - 0  #  77 Freebie! Take five of each district's stocks.
   - 0  #  78 Property venture! You can buy any unowned shop or vacant plot for 200G more than its value.
@@ -120,7 +120,7 @@ ventureCards:
   - 1  #  80 Freebie! Take a Spade!
   - 1  #  81 Misadventure! All other players can only move forward 1 on their next turn.
   - 1  #  82 Freebie! Take a Club!
-  - 1  #  83 Dicey adventure! Roll 1/3/5 and warp to a random location. Roll 2/4/6 and everyone else warps.
+  - 0  #  83 Dicey adventure! Roll 1/3/5 and warp to a random location. Roll 2/4/6 and everyone else warps.
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 1  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 1  #  86 Moneymaking venture! Take 100G from all other players!
