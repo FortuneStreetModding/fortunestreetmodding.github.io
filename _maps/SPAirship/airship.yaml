@@ -1,25 +1,25 @@
 ---
 name:
-  en: Rabanastre (Special)
+  en: Airships (Special)
 desc:
-  en: Originally from Itadaki Street Special. Based on the location from Final Fantasy XII. A fun board with lots of options.
+  en: Ported from Itadaki Street Special. Based on the Final Fantasy series. Take aim with the cannons and blast around the board.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 1800
-targetAmount: 20000
+initialCash: 2500
+targetAmount: 22000
 baseSalary: 300
-salaryIncrement: 200
-maxDiceRoll: 7
-frbFile1: rabanastre
-background: bg005
-mapIcon: rabanastre
+salaryIncrement: 150
+maxDiceRoll: 6
+frbFile1: airship
+background: bg107
+mapIcon: airship
 music:
-  download: https://drive.google.com/u/2/uc?id=1xscItcB2zN4JuIfC11wKiu3tx6gDIdAK&export=download&confirm=1
-  map: BGM_MAP_RABANASTRE.50
+  download: https://drive.google.com/u/2/uc?id=1JuQblPVV24D98eyjwabsLvt2VKAhvFV_&export=download&confirm=1
+  map: BGM_MAP_AIRSHIP.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_SPECIAL.50
   auction: BGM_AUCTION_SPECIAL.50
-  targetMet: BGM_GOALPROP_RABANASTRE.60
+  targetMet: BGM_GOALPROP_AIRSHIP.50
   win: BGM_WINNER_SPECIAL.50
   guestAppear: ME_OJAMA_COME_SPECIAL.60
   guestLeave:
@@ -39,24 +39,6 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
-  - version: 3
-    changed:
-      - Updated yaml for CSWT.    
-  - version: 2
-    changed: 
-      - Ported over to new .yaml file format.
-    added:
-      - Stock music
-      - Venture Card music
-      - Auction music
-      - Target Met music
-      - Win music
-      - Guest Appear music
-      - Bad Venture Card ME
-      - Promotion ME
-      - Forced Buyout ME
-      - Domination ME
-      - Bankruptcy ME
   - version: 1
     added: 
       - Initial Release

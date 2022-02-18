@@ -1,36 +1,37 @@
 ---
 name:
-  en: Rabanastre (Special)
+  en: Yggdrasil (Special)
 desc:
-  en: Originally from Itadaki Street Special. Based on the location from Final Fantasy XII. A fun board with lots of options.
+  en: Ported from Itadaki Street Special. Based on the location from the Dragon Quest series. Use the switches to morph the bridge.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 1800
+initialCash: 1500
 targetAmount: 20000
-baseSalary: 300
-salaryIncrement: 200
+baseSalary: 250
+salaryIncrement: 150
 maxDiceRoll: 7
-frbFile1: rabanastre
-background: bg005
-mapIcon: rabanastre
+frbFile1: SPWorldTree0
+frbFile2: SPWorldTree1
+background: bg104
+mapIcon: spworldtree
 music:
-  download: https://drive.google.com/u/2/uc?id=1xscItcB2zN4JuIfC11wKiu3tx6gDIdAK&export=download&confirm=1
-  map: BGM_MAP_RABANASTRE.50
+  download: https://drive.google.com/u/2/uc?id=1YaULCVrJkzX4Tu5CltLYvuDobS8xzief&export=download&confirm=1
+  map: BGM_MAP_WORLDTREE_SPECIAL.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_SPECIAL.50
   auction: BGM_AUCTION_SPECIAL.50
-  targetMet: BGM_GOALPROP_RABANASTRE.60
+  targetMet: BGM_GOALPROP_WORLDTREE_SPECIAL.50
   win: BGM_WINNER_SPECIAL.50
   guestAppear: ME_OJAMA_COME_SPECIAL.60
   guestLeave:
   badVentureCard: ME_CURSE_SPECIAL.70
   takeAbreak:
-  promotionMii: ME_LEVELUP_F_SPECIAL.50
-  promotionMario: ME_LEVELUP_F_SPECIAL.50
-  promotionDragonQuest: ME_LEVELUP_F_SPECIAL.50
+  promotionMii: ME_LEVELUP_D_SPECIAL.60
+  promotionMario: ME_LEVELUP_D_SPECIAL.60
+  promotionDragonQuest: ME_LEVELUP_D_SPECIAL.60
   forcedBuyout: ME_5_BUY_SPECIAL.60
   domination: ME_MONOPOLY_SPECIAL.50
-  bankruptcy: ME_BANKRUPTCY_SPECIAL_F.60
+  bankruptcy: ME_BANKRUPTCY_SPECIAL_D.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -39,24 +40,6 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
-  - version: 3
-    changed:
-      - Updated yaml for CSWT.    
-  - version: 2
-    changed: 
-      - Ported over to new .yaml file format.
-    added:
-      - Stock music
-      - Venture Card music
-      - Auction music
-      - Target Met music
-      - Win music
-      - Guest Appear music
-      - Bad Venture Card ME
-      - Promotion ME
-      - Forced Buyout ME
-      - Domination ME
-      - Bankruptcy ME
   - version: 1
     added: 
       - Initial Release
