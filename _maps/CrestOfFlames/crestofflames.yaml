@@ -3,8 +3,8 @@ name:
   en: Crest of Flames
   jp: 炎の紋章
 desc:
-  en: "Crest of Flames: The Crest of the Goddess who governs the world of Fódlan. After landing on a switch space, be wary of the changing paths at intersections."
-  jp: 炎の紋章：　フォドラを司る女神の紋章。 スイッチマース発動後は、 交差点でのルートが変更されます。 ご注意ください。
+  en: "Crest of Flames: The Crest of the Goddess who governs the world of Fódlan. Beware of the changing paths at junctions after landing on a switch space."
+  jp: 炎の紋章：　フォドラを司る女神の紋章。 スイッチマス発動後は、 分岐点でのルートが変更されます。 ご注意ください。
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000
