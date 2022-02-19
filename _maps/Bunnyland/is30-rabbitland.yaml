@@ -15,10 +15,10 @@ bgmId: BGM_MAP_PEACH
 background: bg003
 mapIcon: bunny
 music: 
-  download: https://drive.google.com/u/0/uc?id=1fWtpYptnacpSQGnd0tfwGvAQuGX9FCXc&export=download
+  download: https://drive.google.com/u/2/uc?id=1BgQSP5pzZiCoykGfKKVfxQ-cl14Of0Q-&export=download
   map: BGM_MAP_BUNNYLAND.60
   stock: BGM_STOCK_SMART.60
-  ventureCards: BGM_CHANCECARD_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.70
   auction: BGM_AUCTION_SMART.60
   targetMet: BGM_GOALPROP_SMART.60
   win: BGM_WINNER_SMART.60

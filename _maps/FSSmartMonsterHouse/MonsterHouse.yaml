@@ -23,10 +23,10 @@ tourMode:
   opponent3: Bowser
   clearRank: 1
 music: 
-  download: https://drive.google.com/u/0/uc?id=1Bbp42A1Mv5R19T7PpBm_4JdxoTQK4zvV&export=download
+  download: https://drive.google.com/u/2/uc?id=1i2WUw344_JMOEXxBsAliK8lpVTq8UulF&export=download
   map: BGM_MAP_MONSTER.60
   stock: BGM_STOCK_SMART.60
-  ventureCards: BGM_CHANCECARD_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.70
   auction: BGM_AUCTION_SMART.60
   targetMet: BGM_GOALPROP_SMART.60
   win: BGM_WINNER_SMART.60

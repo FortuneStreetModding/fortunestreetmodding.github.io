@@ -15,10 +15,10 @@ frbFile2: smart-zodiac
 background: bg104
 mapIcon: zodiac
 music: 
-  download: https://drive.google.com/u/0/uc?id=1pgwZVFhHyMnXyLlA_WIxtkDycMwk6qiU&export=download
+  download: https://drive.google.com/u/2/uc?id=12iu-GCW1oMjAJ0deemtZIWOyB8mCPJtX&export=download
   map: BGM_MAP_ZODIAC.90
   stock: BGM_STOCK_SMART.60
-  ventureCards: BGM_CHANCECARD_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.70
   auction: BGM_AUCTION_SMART.60
   targetMet: BGM_GOALPROP_SMART.60
   win: BGM_WINNER_SMART.60

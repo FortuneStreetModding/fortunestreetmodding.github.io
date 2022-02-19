@@ -14,10 +14,10 @@ frbFile1: smart-aquarium
 background: bg008alt
 mapIcon: aquarium
 music: 
-  download: https://drive.google.com/u/0/uc?id=1kM6RYrdPfD6l7hz7H85t3x-L9iswNz6m&export=download
+  download: https://drive.google.com/u/2/uc?id=1IhLsrZdoUFkVqzRSOd56OCQDcRxDpD0p&export=download
   map: BGM_MAP_AQUARIUM.60
   stock: BGM_STOCK_SMART.60
-  ventureCards: BGM_CHANCECARD_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.70
   auction: BGM_AUCTION_SMART.60
   targetMet: BGM_GOALPROP_SMART.60
   win: BGM_WINNER_SMART.60

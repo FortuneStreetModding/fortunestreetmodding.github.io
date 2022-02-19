@@ -14,10 +14,10 @@ frbFile1: smart-antarctica
 background: bg105
 mapIcon: antarctica
 music: 
-  download: https://drive.google.com/u/0/uc?id=121gawIWWQymoNtx0h1fCAe5XC47muICd&export=download
+  download: https://drive.google.com/file/d/1uDlfTpxrgcxZxkWHZ3He57TSrM8Q_2Ep/view?usp=sharing
   map: BGM_MAP_ANTARCTICA.80
   stock: BGM_STOCK_SMART.60
-  ventureCards: BGM_CHANCECARD_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.70
   auction: BGM_AUCTION_SMART.60
   targetMet: BGM_GOALPROP_SMART.60
   win: BGM_WINNER_SMART.60
