@@ -1,8 +1,10 @@
 ---
 name:
   en: Crest of Flames
+  jp: 炎の紋章
 desc:
   en: The Crest of the Goddess who governs the world of Fódlan. Beware of the changing paths at junctions after landing on a switch space.
+  jp: フォドラを司る女神の紋章。 スイッチマス発動後は、 分岐点でのルートが変更されます。 ご注意ください。
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000
@@ -52,6 +54,18 @@ districtNames:
   - Cichol
   - Chevalier
   - Sirius
+  jp:
+  - 炎
+  - オーバン
+  - セイロス
+  - マクイル
+  - インデッハ
+  - ノア
+  - ティモテ
+  - キッホル
+  - シュヴァリエ
+  - セスリーン
+  - シリウス
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
