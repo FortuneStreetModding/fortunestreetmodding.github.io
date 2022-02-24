@@ -9,8 +9,8 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000
 targetAmount: 30000
-baseSalary: 450
-salaryIncrement: 450
+baseSalary: 500
+salaryIncrement: 400
 maxDiceRoll: 7
 frbFile1: crestofflames0
 frbFile2: crestofflames1
@@ -19,28 +19,28 @@ mapIcon: crestofflames
 tourMode:
   bankruptcyLimit: 3
   initialCash: 3000
-  opponent1: Bianca
-  opponent2: Kiryl
+  opponent1: Kiryl
+  opponent2: Bianca
   opponent3: Angelo
   clearRank: 1
 music:
-  download: https://drive.google.com/uc?export=download&confirm=t&id=1n9PL-W9g1hrUHXW3vaTGHiUD9sVh8KHI&confirm=1
+  download: https://drive.google.com/uc?export=download&confirm=1&id=1n9PL-W9g1hrUHXW3vaTGHiUD9sVh8KHI&confirm=1
   map: maintheme.85
   stock: wordsbelieve.85
   ventureCards: dwellinggods.85
-  auction: waterfront.85
+  auction: waterfront.75
   targetMet: threehouses.85
-  win: morningsky.85
-  guestAppear: eaglelion.75
+  win: morningsky.75
+  guestAppear: eaglelion.85
   guestLeave: monastery.75
-  badVentureCard: javelinlight.85
-  takeAbreak: edgeofdawn.75
+  badVentureCard: javelinlight.95
+  takeAbreak: edgeofdawn.95
   promotionMii: classchange.75
   promotionMario: classchange.75
   promotionDragonQuest: classchange.75
-  forcedBuyout: loathing.75
-  domination: victory.75
-  bankruptcy: fateddeath.75
+  forcedBuyout: fateddeath.95
+  domination: victory.85
+  bankruptcy: gameover.95
 districtNames:
   en:
   - Flames
@@ -196,6 +196,11 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2.1
+    changed:
+      - Volume adjustment, changed audio, and revision of .yaml description for global compatibility.
+      - Minor adjustments to promotion values.
+      - Minor board adjustments.
   - version: 2.0
     added:
       - Additional music injection data and board icon added. District names defined.
