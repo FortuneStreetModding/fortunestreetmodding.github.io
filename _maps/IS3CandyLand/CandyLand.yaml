@@ -156,7 +156,7 @@ ventureCards:
   - 0  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
   - 0  # 106 Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)
   - 0  # 107 Revaluation venture! You can expand any one of your shops by 30%.
-  - 0  # 108 Cashback venture! You can sell a shop back to the bank for four times its shop value.
+  - 1  # 108 Cashback venture! You can sell a shop back to the bank for four times its shop value.
   - 0  # 109 Revaluation venture! You can expand any one of your shops by 75%.
   - 0  # 110 Special bonus! You receive 77 times the number of shops you own in gold coins from the bank!
   - 0  # 111 Cashback venture! You can sell a shop back to the bank for 500G more than its shop value.

@@ -164,7 +164,7 @@ ventureCards:
   - 0  # 116 Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
   - 0  # 117 Adventurous turning point! Everyone gets to choose which way to move on their next go.
   - 0  # 118 Lucky venture! You get a really big commission until your next turn!
-  - 0  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
+  - 1  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
   - 0  # 120 Misadventure! You drop your wallet and lose 20% of your ready cash!
   - 0  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
   - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!

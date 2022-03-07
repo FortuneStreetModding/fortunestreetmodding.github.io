@@ -159,7 +159,7 @@ ventureCards:
   - 0  # 111 Cashback venture! You can sell a shop back to the bank for 500G more than its shop value.
   - 0  # 112 Special bonus! You receive 100 times the number of shops you own in gold coins!
   - 0  # 113 Moneymaking venture! Roll the die and get the number shown x your level x 20G from the bank!
-  - 0  # 114 Moneymaking venture! Take your level times 40G from all other players!
+  - 1  # 114 Moneymaking venture! Take your level times 40G from all other players!
   - 0  # 115 Misadventure! All other players can only move forward 7 on their next turn.
   - 0  # 116 Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
   - 0  # 117 Adventurous turning point! Everyone gets to choose which way to move on their next go.
