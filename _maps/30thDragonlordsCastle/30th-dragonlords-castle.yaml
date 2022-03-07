@@ -32,6 +32,8 @@ music:
   domination: ME_MONOPOLY_30TH.55
   bankruptcy:
 changelog:
+  - version: 2
+    removed: Venture card 85 to bring total to 64
   - version: 1
 tourMode:
   bankruptcyLimit: 1
@@ -124,7 +126,7 @@ ventureCards:
   - 1  #  82 Freebie! Take a Club!
   - 1  #  83 Dicey adventure! Roll 1/3/5 and warp to a random location. Roll 2/4/6 and everyone else warps.
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
-  - 1  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
+  - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 1  #  86 Moneymaking venture! Take 100G from all other players!
   - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 0  #  88 Misadventure! All other players swap places!
