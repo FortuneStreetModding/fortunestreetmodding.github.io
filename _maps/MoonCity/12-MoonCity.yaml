@@ -44,6 +44,9 @@ tourMode:
   opponent3: Yoshi
   clearRank: 3 
 changelog:
+  - version: 5
+    changed:
+      - Replaced Venture Card 87
   - version: 4
     changed:
       - Updated icon & yaml for CSWT

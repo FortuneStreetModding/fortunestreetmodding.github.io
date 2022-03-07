@@ -39,6 +39,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Replaced Venture Card 87
   - version: 1
     added: 
       - Initial Release

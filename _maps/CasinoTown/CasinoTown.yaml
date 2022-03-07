@@ -44,6 +44,9 @@ tourMode:
   opponent3: Toad
   clearRank: 1
 changelog:
+  - version: 6
+    changed:
+      - Replaced Venture Card 87
   - version: 5
     changed:
       - Changed spaces to be more accurate to original
@@ -149,7 +152,7 @@ ventureCards:
   - 0  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 1  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 0  #  88 Misadventure! All other players swap places!
   - 1  #  89 Freebie! All players take a Suit Yourself card!
   - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
@@ -168,7 +171,7 @@ ventureCards:
   - 0  # 103 Misadventure! The values of all your shops drop by 25%!
   - 0  # 104 Misadventure! You give everyone 80G each!
   - 0  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
-  - 0  # 106 Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)
+  - 1  # 106 Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)
   - 0  # 107 Revaluation venture! You can expand any one of your shops by 30%.
   - 0  # 108 Cashback venture! You can sell a shop back to the bank for four times its shop value.
   - 0  # 109 Revaluation venture! You can expand any one of your shops by 75%.

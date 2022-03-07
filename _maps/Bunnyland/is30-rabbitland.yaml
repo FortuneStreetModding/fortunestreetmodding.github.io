@@ -171,6 +171,9 @@ ventureCards:
 authors:
   - name: mask1n
 changelog:
+  - version: 2
+    changed:
+      - Replaced Venture Card 87
   - version: 1
 tags:
  - Smart

@@ -95,7 +95,7 @@ ventureCards:
   - 1  #  55 Venture on! Roll the die again and move forward (with an invitation to browse thrown in!).
   - 1  #  56 Venture on! Roll the die again and move forward (with a half-price special offer thrown in!).
   - 1  #  57 Venture through space! Zoom to any square you like.
-  - 0  #  58 Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!
+  - 1  #  58 Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!
   - 1  #  59 Stock venture! You can buy stocks in a district of your choice at 10% below the market value.
   - 1  #  60 Random venture! Stock prices increase by 10% in a district picked at random!
   - 1  #  61 Special bonus! You receive a 10% dividend on your stocks!
@@ -124,7 +124,7 @@ ventureCards:
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 0  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 1  #  88 Misadventure! All other players swap places!
   - 0  #  89 Freebie! All players take a Suit Yourself card!
   - 0  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
@@ -169,6 +169,9 @@ ventureCards:
 authors:
   - name: Azurillkirby
 changelog:
+  - version: 3
+    changed:
+      - Replaced Venture Card 87
   - version: 2
     added:
       - Icon & BGM

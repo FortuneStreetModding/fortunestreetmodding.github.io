@@ -40,6 +40,9 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 changelog:
+  - version: 2
+    changed:
+      - Replaced Venture Card 15
   - version: 1
     added: 
       - Initial Release
