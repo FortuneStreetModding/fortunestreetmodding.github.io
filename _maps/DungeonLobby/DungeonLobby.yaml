@@ -20,6 +20,7 @@ tourMode:
   opponent3: Waluigi
   clearRank: 2
 music: 
+  download: https://drive.google.com/uc?export=download&id=10o9pgWO-M3Vs7mN7raYId8cu2Eo_yA8h
   map: Mabinogi_-_Dungeon_Lobby
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
