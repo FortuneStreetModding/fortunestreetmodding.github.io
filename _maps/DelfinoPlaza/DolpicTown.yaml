@@ -7,12 +7,12 @@ name:
   jp: ドルピックタウン
   es: Ciudad Delfino
 desc:
-  en: "The largest metropolis on the southern resort of Isle Delfino. Once it was graffitied all over by the incorrigible Bowser Jr."
-  de: "Die größte Metropole im Südseeparadies Isla Delfino. Die Graffiti des unverbesserlichen Bowser Jr. überzogen einst die ganze Stadt!"
-  fr: "La plus grande métropole au sud de l'Île Delfino. L'incorrigible Bowser Jr. l'a un jour entièrement recouverte de graffitis."
-  it: "La più grande metropoli dell'Isola Delfino. Tempo fa l'incorreggibile Bowser Jr. si divertì a riempirla di orribili graffiti."
+  en: The largest metropolis on the southern resort of Isle Delfino. Once it was graffitied all over by the incorrigible Bowser Jr.
+  de: Die größte Metropole im Südseeparadies Isla Delfino. Die Graffiti des unverbesserlichen Bowser Jr. überzogen einst die ganze Stadt!
+  fr: La plus grande métropole au sud de l'Île Delfino. L'incorrigible Bowser Jr. l'a un jour entièrement recouverte de graffitis.
+  it: La più grande metropoli dell'Isola Delfino. Tempo fa l'incorreggibile Bowser Jr. si divertì a riempirla di orribili graffiti.
   jp: 南国のリゾートアイランド　ドルピック島最大の街。　以前クッパJr.によってラクガキだらけにされたことがある。
-  es: "La mayor metrópoli de la paradisiaca Isla Delfino. El gamberro de Bowser Jr la cubrió de grafitis una vez."
+  es: La mayor metrópoli de la paradisiaca Isla Delfino. El gamberro de Bowser Jr la cubrió de grafitis una vez.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000

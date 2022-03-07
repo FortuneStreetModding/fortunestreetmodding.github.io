@@ -7,12 +7,12 @@ name:
   jp: スーパーマリオBros.
   es: Super Mario Bros.
 desc:
-  en: "The original and well-loved setting of the Super Mario Brothers. Home to some lurking familiar foes like Koopa Troopas and Goombas."
-  de: "Die allseits beliebte Originalwelt von Super Mario Brothers. Nimm dich vor Koopa Troopas und Goombas in Acht, die dort lauern!"
-  fr: "Le cadre original de Super Mario Brothers, adoré de tous. Des ennemis bien connus s'y terrent, comme les Koopa Troopas et les Goombas."
-  it: "Potremmo definire questo luogo come la vera casa dei Super Mario Brothers. Qui vivono vecchi nemici di Mario, come i Koopa e i Goomba."
+  en: The original and well-loved setting of the Super Mario Brothers. Home to some lurking familiar foes like Koopa Troopas and Goombas.
+  de: Die allseits beliebte Originalwelt von Super Mario Brothers. Nimm dich vor Koopa Troopas und Goombas in Acht, die dort lauern!
+  fr: Le cadre original de Super Mario Brothers, adoré de tous. Des ennemis bien connus s'y terrent, comme les Koopa Troopas et les Goombas.
+  it: Potremmo definire questo luogo come la vera casa dei Super Mario Brothers. Qui vivono vecchi nemici di Mario, come i Koopa e i Goomba.
   jp: 初代スーパーマリオブラザーズの　なつかしいステージ。　ノコノコやクリボーなどおなじみの敵キャラがうろついている。
-  es: "El archiconocido escenario original de Super Mario Brothers, y también el hogar de enemigos habituales como los Koopa Troopa y los Goomba."
+  es: El archiconocido escenario original de Super Mario Brothers, y también el hogar de enemigos habituales como los Koopa Troopa y los Goomba.
 ruleSet: Standard
 theme: Mario
 initialCash: 1800

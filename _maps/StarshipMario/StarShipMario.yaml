@@ -7,12 +7,12 @@ name:
   jp: 星船マリオ
   es: Astronave Mario
 desc:
-  en: "A spaceship in the shape of Mario. He likes to zoom around the galaxy in it."
-  de: "Dieses Raumschiff sieht aus wie Mario, der darin gerne durch die Galaxie düst."
-  fr: "Un vaisseau spatial aux traits de Mario. Ce dernier aime parcourir la galaxie à son bord."
-  it: "Mario usa questa nave spaziale con le sue sembianze per spostarsi da un punto all'altro della galassia."
+  en: A spaceship in the shape of Mario. He likes to zoom around the galaxy in it.
+  de: Dieses Raumschiff sieht aus wie Mario, der darin gerne durch die Galaxie düst.
+  fr: Un vaisseau spatial aux traits de Mario. Ce dernier aime parcourir la galaxie à son bord.
+  it: Mario usa questa nave spaziale con le sue sembianze per spostarsi da un punto all'altro della galassia.
   jp: マリオの形をした星の船。　マリオを乗せて銀河中を飛びまわる。
-  es: "Una nave espacial con la forma de Mario, en la que el susodicho recorre la galaxia."
+  es: Una nave espacial con la forma de Mario, en la que el susodicho recorre la galaxia.
 ruleSet: Standard
 theme: Mario
 initialCash: 1700

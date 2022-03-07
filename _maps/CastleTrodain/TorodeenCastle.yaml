@@ -7,12 +7,12 @@ name:
   jp: トロデーン城
   es: Castillo de Trodain
 desc:
-  en: "The tranquil domain of King Trode. ...Though the once pitiful sight of it cocooned in cursed vines is impressed on all our memories."
-  de: "Genieße die majestätische Ruhe am Hof von König Trode\xa0... und versuche, nicht an den einst so erbärmlichen Zustand des Schlosses, überwuchert von Schlingpflanzen, zu denken."
-  fr: "Le domaine paisible du roi Trode... La triste vision qu'il présentait alors qu'il était enveloppé de ronces maudites est restée gravée dans nos mémoires."
-  it: "Il dominio di re Trode. Anni fa fu avvolto da un groviglio di rovi maledetti, ma un gruppo di eroi coraggiosi lo liberò da quell'orrendo sortilegio."
+  en: The tranquil domain of King Trode. ...Though the once pitiful sight of it cocooned in cursed vines is impressed on all our memories.
+  de: Genieße die majestätische Ruhe am Hof von König Trode\xa0... und versuche, nicht an den einst so erbärmlichen Zustand des Schlosses, überwuchert von Schlingpflanzen, zu denken.
+  fr: Le domaine paisible du roi Trode... La triste vision qu'il présentait alors qu'il était enveloppé de ronces maudites est restée gravée dans nos mémoires.
+  it: Il dominio di re Trode. Anni fa fu avvolto da un groviglio di rovi maledetti, ma un gruppo di eroi coraggiosi lo liberò da quell'orrendo sortilegio.
   jp: トロデ王がすむ平和なお城。　かつては呪いのためイバラにおおわれていた。
-  es: "La apacible morada del Rey Trode. Es difícil olvidar el lamentable estado en el que se encontraba cuando las enredaderas malditas lo cubrían por completo."
+  es: La apacible morada del Rey Trode. Es difícil olvidar el lamentable estado en el que se encontraba cuando las enredaderas malditas lo cubrían por completo.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1200

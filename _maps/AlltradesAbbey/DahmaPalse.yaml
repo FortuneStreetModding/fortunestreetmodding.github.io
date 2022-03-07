@@ -7,12 +7,12 @@ name:
   jp: ダーマ神殿
   es: Abadía Vocationis
 desc:
-  en: "The bastion of vocationalism, visited by all who seek a new path in life."
-  de: "Wer einen neuen Lebensweg einschlagen möchte, findet in dieser Bastion der Berufungen Rat und Hilfe."
-  fr: "Le bastion du vocationalisme, lieu de prédilection de ceux qui veulent changer de vie."
-  it: "Questo luogo sacro è una tappa obbligata per chiunque voglia cambiar vita."
+  en: The bastion of vocationalism, visited by all who seek a new path in life.
+  de: Wer einen neuen Lebensweg einschlagen möchte, findet in dieser Bastion der Berufungen Rat und Hilfe.
+  fr: Le bastion du vocationalisme, lieu de prédilection de ceux qui veulent changer de vie.
+  it: Questo luogo sacro è una tappa obbligata per chiunque voglia cambiar vita.
   jp: さまざまな人たちが転職するためにおとずれる神殿。
-  es: "Toda una institución del vocacionalismo y visita obligada para aquellos que quieren emprender un nuevo camino en sus vidas."
+  es: Toda una institución del vocacionalismo y visita obligada para aquellos que quieren emprender un nuevo camino en sus vidas.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500

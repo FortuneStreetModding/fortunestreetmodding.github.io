@@ -7,12 +7,12 @@ name:
   jp: ピーチ城
   es: Castillo de Peach
 desc:
-  en: "The home of Princess Peach. Bowser's troops make frequent assaults on the place, but the Toad guards keep them at bay."
-  de: "Das Zuhause von Prinzessin Peach wird häufig durch Bowsers Armee angegriffen, aber die Toad-Wachen halten sie auf Abstand."
-  fr: "La demeure de la princesse Peach. Les troupes de Bowser tentent fréquemment de l'assaillir, mais les gardes Toad les tiennent à l'écart."
-  it: "La dimora della principessa Peach. Le truppe di Bowser lo assaltano spesso, ma le guardie Toad riescono a tenerle a bada."
+  en: The home of Princess Peach. Bowser's troops make frequent assaults on the place, but the Toad guards keep them at bay.
+  de: Das Zuhause von Prinzessin Peach wird häufig durch Bowsers Armee angegriffen, aber die Toad-Wachen halten sie auf Abstand.
+  fr: La demeure de la princesse Peach. Les troupes de Bowser tentent fréquemment de l'assaillir, mais les gardes Toad les tiennent à l'écart.
+  it: La dimora della principessa Peach. Le truppe di Bowser lo assaltano spesso, ma le guardie Toad riescono a tenerle a bada.
   jp: ピーチ姫がすむお城。　キノピオたちが守りについているが　クッパ軍団によく攻め込まれる。
-  es: "El hogar de la princesa Peach. Las tropas de Bowser lo atacan con frecuencia, pero los guardias Toad saben cómo mantenerlos a raya."
+  es: El hogar de la princesa Peach. Las tropas de Bowser lo atacan con frecuencia, pero los guardias Toad saben cómo mantenerlos a raya.
 ruleSet: Standard
 theme: Mario
 initialCash: 1500

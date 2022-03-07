@@ -7,12 +7,12 @@ name:
   jp: クッパ城
   es: Castillo de Bowser
 desc:
-  en: "The home of Bowser. It's a minefield of tricks and traps where a single foot wrong could send you plummeting into a sea of molten lava."
-  de: "In Bowsers Zuhause erwarten dich die fiesesten Fallen. Ein falscher Schritt und du machst einen Bauchklatscher in brodelnd heiße Lava!"
-  fr: "Le repaire de Bowser. Ce champ de mines est parsemé de mauvais tours et de pièges, où un seul faux-pas peut te faire plonger dans une mer de lave en fusion."
-  it: "La dimora di Bowser, traboccante di trappole e trabocchetti di ogni genere. Basta fare un solo passo falso per precipitare in un mare di lava."
+  en: The home of Bowser. It's a minefield of tricks and traps where a single foot wrong could send you plummeting into a sea of molten lava.
+  de: In Bowsers Zuhause erwarten dich die fiesesten Fallen. Ein falscher Schritt und du machst einen Bauchklatscher in brodelnd heiße Lava!
+  fr: Le repaire de Bowser. Ce champ de mines est parsemé de mauvais tours et de pièges, où un seul faux-pas peut te faire plonger dans une mer de lave en fusion.
+  it: La dimora di Bowser, traboccante di trappole e trabocchetti di ogni genere. Basta fare un solo passo falso per precipitare in un mare di lava.
   jp: クッパがすむお城。　キケンなワナがたくさんしかけられており　一歩でも足をふみはずすとマグマの海に落ちることになる。
-  es: "El hogar de Bowser, además de una ratonera plagada de trampas donde un paso en falso te llevará de cabeza a un río de lava."
+  es: El hogar de Bowser, además de una ratonera plagada de trampas donde un paso en falso te llevará de cabeza a un río de lava.
 ruleSet: Standard
 theme: Mario
 initialCash: 1500

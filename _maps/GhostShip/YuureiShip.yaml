@@ -7,12 +7,12 @@ name:
   jp: 幽霊船
   es: Barco Fantasma
 desc:
-  en: "An eerie vessel that, after sinking in a wild tempest, meanders over boundless oceans with its crew of phantom seafarers."
-  de: "Dieses schaurige Schiff versank in einem wütenden Sturm, was die geisterhafte Besatzung nicht davon abhält, auf ihm über die Weltmeere zu irren."
-  fr: "Un navire étrange et inquiétant qui, après avoir sombré lors d'une terrible tempête, erre sur des océans sans fin avec à son bord son équipage de marins fantômes."
-  it: "Naufragato in seguito a una tempesta, questo spaventoso vascello continua a vagare sui mari con la sua ciurma di marinai fantasma."
+  en: An eerie vessel that, after sinking in a wild tempest, meanders over boundless oceans with its crew of phantom seafarers.
+  de: Dieses schaurige Schiff versank in einem wütenden Sturm, was die geisterhafte Besatzung nicht davon abhält, auf ihm über die Weltmeere zu irren.
+  fr: Un navire étrange et inquiétant qui, après avoir sombré lors d'une terrible tempête, erre sur des océans sans fin avec à son bord son équipage de marins fantômes.
+  it: Naufragato in seguito a una tempesta, questo spaventoso vascello continua a vagare sui mari con la sua ciurma di marinai fantasma.
   jp: 嵐で沈んだあと　幽霊となった船員の魂といっしょに　人しれず大海原をさまよっている　ぶきみな船。
-  es: "Una extraña embarcación que, tras hundirse durante una feroz tormenta, surca los mares sin descanso con su tripulación fantasmal."
+  es: Una extraña embarcación que, tras hundirse durante una feroz tormenta, surca los mares sin descanso con su tripulación fantasmal.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1300

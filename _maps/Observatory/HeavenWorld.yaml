@@ -7,12 +7,12 @@ name:
   jp: 天使界
   es: El Observatorio
 desc:
-  en: "Lofty home of the Celestrians, orbited by its unusual passenger service, the Starflight Express."
-  de: "Die luftige Heimat der Himmlischen kann sich mit dem Sternenexpress des wohl ungewöhnlichsten ÖPNV rühmen!"
-  fr: "Demeure élevée des Célestelliens, autour de laquelle gravite l'Orion Express, un train de voyageur hors du commun."
-  it: "La casa dei Celestiali, collegata al resto del mondo da un insolito mezzo di trasporto, l'Espresso Celeste."
+  en: Lofty home of the Celestrians, orbited by its unusual passenger service, the Starflight Express.
+  de: Die luftige Heimat der Himmlischen kann sich mit dem Sternenexpress des wohl ungewöhnlichsten ÖPNV rühmen!
+  fr: Demeure élevée des Célestelliens, autour de laquelle gravite l'Orion Express, un train de voyageur hors du commun.
+  it: La casa dei Celestiali, collegata al resto del mondo da un insolito mezzo di trasporto, l'Espresso Celeste.
   jp: 星空に浮かび天使たちがすむ世界。　ふしぎな形をした天の箱舟がその周囲をまわっている。
-  es: "El etéreo hogar de los celestiales y del Expreso Celestial, su peculiar sistema de transporte."
+  es: El etéreo hogar de los celestiales y del Expreso Celestial, su peculiar sistema de transporte.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000

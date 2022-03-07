@@ -7,12 +7,12 @@ name:
   jp: スラバッカ島
   es: Limenia
 desc:
-  en: "A teardrop-shaped island that could only bring tears of joy, as its slimy inhabitants live in a fun-filled, gooey paradise!"
-  de: "Ein vortröpfliches Eiland! Die Einschleimischen suhlen sich in ihrem Schlick, im Schleimparadies kleben zu schlürfen!"
-  fr: "Une île en forme de goutte qui te fera verser des larmes de joie à la vue de ses habitants gluants et de leur monde joyeux et gluandisiaque\xa0!"
-  it: "Quest'isola a forma di lacrima è un vero paradiso abitato da creaturine deliziose e... blobbolose!"
+  en: A teardrop-shaped island that could only bring tears of joy, as its slimy inhabitants live in a fun-filled, gooey paradise!
+  de: Ein vortröpfliches Eiland! Die Einschleimischen suhlen sich in ihrem Schlick, im Schleimparadies kleben zu schlürfen!
+  fr: Une île en forme de goutte qui te fera verser des larmes de joie à la vue de ses habitants gluants et de leur monde joyeux et gluandisiaque\xa0!
+  it: Quest'isola a forma di lacrima è un vero paradiso abitato da creaturine deliziose e... blobbolose!
   jp: スライムの形をした島。　スライムたちが仲よく暮らしている楽園。
-  es: "Una isla con forma de lágrima, ¡pero sus limosos habitantes no podrían ser más felices en este paraíso de la mucosidad!"
+  es: Una isla con forma de lágrima, ¡pero sus limosos habitantes no podrían ser más felices en este paraíso de la mucosidad!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000

@@ -7,12 +7,12 @@ name:
   jp: マリオスタジアム
   es: Estadio Mario
 desc:
-  en: "Fierce competition is a daily event at this seaside sports ground."
-  de: "In dieser Sportstätte mit Blick aufs Meer brodelt regelmäßig die Stimmung bei den spannendsten Wettkämpfen."
-  fr: "La compétition fait rage chaque jour sur ce terrain de sport en bord de mer."
-  it: "La sana competizione sportiva è di casa in questa struttura in riva al mare!"
+  en: Fierce competition is a daily event at this seaside sports ground.
+  de: In dieser Sportstätte mit Blick aufs Meer brodelt regelmäßig die Stimmung bei den spannendsten Wettkämpfen.
+  fr: La compétition fait rage chaque jour sur ce terrain de sport en bord de mer.
+  it: La sana competizione sportiva è di casa in questa struttura in riva al mare!
   jp: 海のそばにあるスタジアム。　グラウンドでは日々　熱戦がくりひろげられている。
-  es: "Las competiciones no cesan en este palacio de los deportes junto al mar."
+  es: Las competiciones no cesan en este palacio de los deportes junto al mar.
 ruleSet: Standard
 theme: Mario
 initialCash: 1500

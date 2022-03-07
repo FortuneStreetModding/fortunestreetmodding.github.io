@@ -7,12 +7,12 @@ name:
   jp: カンダタ遺跡
   es: Guarida de Luis Candelas
 desc:
-  en: "The place where the great thief, Robbin' Hood, stashed his bountiful loot. The mysterious doors dotted around within are the bane of the treasure-hunting explorer."
-  de: "Dieser Ort barg einst die Beute des Meisterdiebs, der als Grüner Rächer bekannt ist. Die rätselhaften Türen im Inneren haben schon manchen Schatzjäger ins Verderben gestürzt."
-  fr: "Le lieu où le grand voleur, le Chaperon vert, a caché son généreux butin. Les mystérieuses portes disséminées sur la carte sont le cauchemar des chasseurs de trésors."
-  it: "Le rovine di Ruban Hood: il luogo dove una famigerata banda di ladri nascondeva la refurtiva. All'interno delle rovine ci sono delle porte misteriose che servono per tenere lontani i cacciatori di tesori."
+  en: The place where the great thief, Robbin' Hood, stashed his bountiful loot. The mysterious doors dotted around within are the bane of the treasure-hunting explorer.
+  de: Dieser Ort barg einst die Beute des Meisterdiebs, der als Grüner Rächer bekannt ist. Die rätselhaften Türen im Inneren haben schon manchen Schatzjäger ins Verderben gestürzt.
+  fr: Le lieu où le grand voleur, le Chaperon vert, a caché son généreux butin. Les mystérieuses portes disséminées sur la carte sont le cauchemar des chasseurs de trésors.
+  it: Le rovine di Ruban Hood: il luogo dove una famigerata banda di ladri nascondeva la refurtiva. All'interno delle rovine ci sono delle porte misteriose che servono per tenere lontani i cacciatori di tesori.
   jp: 大とうぞくカンダタが宝をかくした遺跡。　ところどころにある不思議なドアが　冒険者をまどわす。
-  es: "Este es el lugar donde Luis Candelas, el legendario bandolero, escondía su botín. Sus misteriosas y numerosas puertas pueden volver loco al más paciente de los exploradores."
+  es: Este es el lugar donde Luis Candelas, el legendario bandolero, escondía su botín. Sus misteriosas y numerosas puertas pueden volver loco al más paciente de los exploradores.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000

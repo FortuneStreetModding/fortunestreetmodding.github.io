@@ -7,12 +7,12 @@ name:
   jp: 死の火山
   es: Monte Magmagedón
 desc:
-  en: "A volcano perforated with caves that hide the crucial Circle of Fire. Press the switches to trigger eruptions and change the shape of the map."
-  de: "In den glühendheißen Höhlen dieses Vulkans verbirgt sich der sagenumwobene Ring des Feuers. Tritt auf die Schalter, um eine Eruption auszulösen und das Spielbrett zu verändern."
-  fr: "Un volcan traversé de grottes qui cachent le très important Anneau du Feu. Appuie sur les interrupteurs pour déclencher des éruptions et modifier la forme de la carte."
-  it: "In questo vulcano dalle mille caverne è nascosto l'Anello di Fuoco. Premi gli interruttori per provocare eruzioni e cambiare la forma del tabellone."
+  en: A volcano perforated with caves that hide the crucial Circle of Fire. Press the switches to trigger eruptions and change the shape of the map.
+  de: In den glühendheißen Höhlen dieses Vulkans verbirgt sich der sagenumwobene Ring des Feuers. Tritt auf die Schalter, um eine Eruption auszulösen und das Spielbrett zu verändern.
+  fr: Un volcan traversé de grottes qui cachent le très important Anneau du Feu. Appuie sur les interrupteurs pour déclencher des éruptions et modifier la forme de la carte.
+  it: In questo vulcano dalle mille caverne è nascosto l'Anello di Fuoco. Premi gli interruttori per provocare eruzioni e cambiare la forma del tabellone.
   jp: 炎のリングがかくされている　火山の中のどうくつ。　スイッチをふむと火山が噴火して　マップが変形する。
-  es: "Un volcán que alberga numerosas cuevas y el legendario Anillo de Fuego. Los conmutadores desencadenan erupciones y cambian la forma del tablero."
+  es: Un volcán que alberga numerosas cuevas y el legendario Anillo de Fuego. Los conmutadores desencadenan erupciones y cambian la forma del tablero.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000

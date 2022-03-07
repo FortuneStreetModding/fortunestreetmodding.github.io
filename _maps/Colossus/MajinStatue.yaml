@@ -7,12 +7,12 @@ name:
   jp: 魔神像
   es: El Coloso
 desc:
-  en: "A statue as tall as the heavens, whose cavernous innards are riddled with monsters. Press the switches to flip portions of the map."
-  de: "Diese monumentale Statue ragt weit in den Himmel auf und hat ein monströses Innenleben. Tritt auf die Schalter, um Teile des Spielbretts zu verschieben."
-  fr: "Une statue d'une hauteur impressionnante, dont les entrailles caverneuses grouillent de monstres. Appuie sur les interrupteurs pour déplacer des parties de la carte."
-  it: "Nelle viscere di questa statua alta fino al cielo vivono moltissime creature mostruose. Premi gli interruttori per cambiare parti del tabellone."
+  en: A statue as tall as the heavens, whose cavernous innards are riddled with monsters. Press the switches to flip portions of the map.
+  de: Diese monumentale Statue ragt weit in den Himmel auf und hat ein monströses Innenleben. Tritt auf die Schalter, um Teile des Spielbretts zu verschieben.
+  fr: Une statue d'une hauteur impressionnante, dont les entrailles caverneuses grouillent de monstres. Appuie sur les interrupteurs pour déplacer des parties de la carte.
+  it: Nelle viscere di questa statua alta fino al cielo vivono moltissime creature mostruose. Premi gli interruttori per cambiare parti del tabellone.
   jp: 天高くそびえたつ像。　中はまもののすみかになっている。　スイッチをふむと　マップの一部が回転する。
-  es: "Una estatua tan alta que roza las nubes y en cuyo interior habitan incontables monstruos. Los conmutadores hacen cambiar de posición algunas partes del tablero."
+  es: Una estatua tan alta que roza las nubes y en cuyo interior habitan incontables monstruos. Los conmutadores hacen cambiar de posición algunas partes del tablero.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000

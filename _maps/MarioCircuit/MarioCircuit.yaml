@@ -7,12 +7,12 @@ name:
   jp: マリオサーキット
   es: Circuito Mario
 desc:
-  en: "A race track built within the Mushroom Kingdom. There's a never-ending drone of white-hot engines whizzing around the track."
-  de: "Eine aufregende Rennpiste im Pilz-Königreich. Das Brummen der Motoren erfüllt stets die Luft, wenn die Fahrer aufs Gas steigen!"
-  fr: "Une série de circuits de course construits dans le Royaume Champignon. Un bourdonnement incessant de moteurs brûlants se fait entendre sur les pistes."
-  it: "Una pista costruita nel Regno dei Funghi. Qui velocissimi bolidi gareggiano senza sosta riempiendo l'aria del rombo dei loro motori!"
+  en: A race track built within the Mushroom Kingdom. There's a never-ending drone of white-hot engines whizzing around the track.
+  de: Eine aufregende Rennpiste im Pilz-Königreich. Das Brummen der Motoren erfüllt stets die Luft, wenn die Fahrer aufs Gas steigen!
+  fr: Une série de circuits de course construits dans le Royaume Champignon. Un bourdonnement incessant de moteurs brûlants se fait entendre sur les pistes.
+  it: Una pista costruita nel Regno dei Funghi. Qui velocissimi bolidi gareggiano senza sosta riempiendo l'aria del rombo dei loro motori!
   jp: キノコ王国に作られたサーキットコース。　毎日のように　はくねつのカート勝負が　くりひろげられている。
-  es: "Un circuito de carreras construido en el Reino Champiñón. El ruido de los motores nunca deja de oírse en la pista."
+  es: Un circuito de carreras construido en el Reino Champiñón. El ruido de los motores nunca deja de oírse en la pista.
 ruleSet: Standard
 theme: Mario
 initialCash: 1800

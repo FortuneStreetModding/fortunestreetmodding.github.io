@@ -7,12 +7,12 @@ name:
   jp: アレフガルド
   es: Alefgrado
 desc:
-  en: "Homeland of the legendary hero, Erdrick. At its core, an island hosting the towering citadel of the Dragonlord."
-  de: "Die Heimstatt des legendären Helden Erdrick. Im Herzen des Areals thront auf einer Insel drohend die Festung des Drachenfürsten."
-  fr: "La terre natale d'Elric, le héros légendaire. Son île centrale abrite l'imposante citadelle du Lordragon."
-  it: "La terra natale di Erdrick, l'eroe leggendario. Al centro di Alefgard si trova l'isola sulla quale si erge la cittadella di Dragonlord."
+  en: Homeland of the legendary hero, Erdrick. At its core, an island hosting the towering citadel of the Dragonlord.
+  de: Die Heimstatt des legendären Helden Erdrick. Im Herzen des Areals thront auf einer Insel drohend die Festung des Drachenfürsten.
+  fr: La terre natale d'Elric, le héros légendaire. Son île centrale abrite l'imposante citadelle du Lordragon.
+  it: La terra natale di Erdrick, l'eroe leggendario. Al centro di Alefgard si trova l'isola sulla quale si erge la cittadella di Dragonlord.
   jp: 勇者ロトの伝説が伝わる大陸。　中央の島にはりゅうおうの城がそびえたっている。
-  es: "Tierra natal de Erdrick, el héroe legendario. En su interior, una isla alberga la impresionante ciudadela de Draconarius."
+  es: Tierra natal de Erdrick, el héroe legendario. En su interior, una isla alberga la impresionante ciudadela de Draconarius.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500

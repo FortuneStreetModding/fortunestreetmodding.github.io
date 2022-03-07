@@ -7,12 +7,12 @@ name:
   jp: ヨッシーアイランド
   es: Isla de Yoshi
 desc:
-  en: "An island inhabited by members of the Yoshi race, a kaleidoscopic assortment of friendly creatures. As a young snip, Mario had wild adventures here with his Yoshi friends."
-  de: "Diese Insel wird von einer kunterbunten Vielfalt an freundlichen Yoshis bevölkert. Mario hat dort als junger Hüpfer viele Abenteuer mit seinen Yoshi-Freunden erlebt!"
-  fr: "Cette île est habitée par plein de joyeuses créatures Yoshi de toutes les couleurs. Dans sa jeunesse, Mario a vécu des aventures incroyables dans ce lieu avec ses amis Yoshi."
-  it: "Quest'isola è abitata da membri della razza Yoshi, un'enorme varietà di creature amichevoli. Quand'era appena nato, qui Mario ha vissuto mille avventure con i suoi amici Yoshi."
+  en: An island inhabited by members of the Yoshi race, a kaleidoscopic assortment of friendly creatures. As a young snip, Mario had wild adventures here with his Yoshi friends.
+  de: Diese Insel wird von einer kunterbunten Vielfalt an freundlichen Yoshis bevölkert. Mario hat dort als junger Hüpfer viele Abenteuer mit seinen Yoshi-Freunden erlebt!
+  fr: Cette île est habitée par plein de joyeuses créatures Yoshi de toutes les couleurs. Dans sa jeunesse, Mario a vécu des aventures incroyables dans ce lieu avec ses amis Yoshi.
+  it: Quest'isola è abitata da membri della razza Yoshi, un'enorme varietà di creature amichevoli. Quand'era appena nato, qui Mario ha vissuto mille avventure con i suoi amici Yoshi.
   jp: いろいろな色のヨッシーたちがすんでいる島。　マリオが赤ん坊のころにヨッシーたちとともに大冒険をした。
-  es: "Una isla habitada por Yoshis de todos los colores. Mario y sus amigos vivieron muchas aventuras en este lugar."
+  es: Una isla habitada por Yoshis de todos los colores. Mario y sus amigos vivieron muchas aventuras en este lugar.
 ruleSet: Standard
 theme: Mario
 initialCash: 1500

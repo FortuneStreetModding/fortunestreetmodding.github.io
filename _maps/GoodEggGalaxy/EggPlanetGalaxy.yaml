@@ -7,12 +7,12 @@ name:
   jp: エッグプラネット
   es: Galaxia Ovoestrella
 desc:
-  en: "A capsule-shaped planet in the Good Egg Galaxy. You have to be very careful not to get lost there."
-  de: "Ein kapselförmiger Planet in der Eierplanet-Galaxie. Pass gut auf, sonst wirst du dich hier hoffnungslos verlaufen!"
-  fr: "Une planète en forme de capsule dans la galaxie. Attention de ne pas t'y perdre."
-  it: "L'azione si svolge su un pianeta della Galassia uovo. Fai attenzione a non perderti..."
+  en: A capsule-shaped planet in the Good Egg Galaxy. You have to be very careful not to get lost there.
+  de: Ein kapselförmiger Planet in der Eierplanet-Galaxie. Pass gut auf, sonst wirst du dich hier hoffnungslos verlaufen!
+  fr: Une planète en forme de capsule dans la galaxie. Attention de ne pas t'y perdre.
+  it: L'azione si svolge su un pianeta della Galassia uovo. Fai attenzione a non perderti...
   jp: エッグプラネットギャラクシーのカプセル形惑星。　道に迷わないように注意が必要な場所。
-  es: "Un planeta en la Galaxia Ovoestrella. Aquí hay que tener cuidado para no perderse..."
+  es: Un planeta en la Galaxia Ovoestrella. Aquí hay que tener cuidado para no perderse...
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
