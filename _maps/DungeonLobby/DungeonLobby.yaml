@@ -11,13 +11,16 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: DungeonLobby
-background: bg007
+background: forsakenFortress
+mapIcon: forsFortress
 tourMode:
   bankruptcyLimit: 1
   opponent1: Bianca
   opponent2: Mario
   opponent3: Waluigi
   clearRank: 2
+music: 
+  map: Mabinogi_-_Dungeon_Lobby
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
