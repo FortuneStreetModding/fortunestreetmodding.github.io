@@ -1,8 +1,8 @@
 ---
 name:
-  en: Quiet Street
+  en: Quiet Street (Console ver)
 desc:
-  en: A sleepy Christmas village where monkeys are on a neighborhood watch for bloons. The great hero Vrej hails from this town.
+  en: Optimised for console play. A sleepy Christmas village where monkeys are on a neighborhood watch for bloons. The great hero Vrej hails from this town.
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: quietstreet
-background: quietstreet
+background: bg009alt
 mapIcon: qs_btd6_0
 tourMode:
   bankruptcyLimit: 1
@@ -20,6 +20,7 @@ tourMode:
   opponent3: Kiryl
   clearRank: 3
 music:
+  download: https://drive.google.com/u/2/uc?id=1GJyG8PTgg7arzpn9papRPTxykpBChKdL&export=download
   map: jazztheme.100
   targetMet: primalone.100
 districtNames:
