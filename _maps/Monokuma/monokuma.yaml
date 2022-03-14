@@ -2,7 +2,7 @@
 name:
   en: Monokuma
 desc:
-  en: Upupu!
+  en: Upupu! (Note this board can crash when played on console)
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
