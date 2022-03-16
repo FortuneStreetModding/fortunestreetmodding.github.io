@@ -107,7 +107,7 @@ ventureCards:
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 0  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 1  #  88 Misadventure! All other players swap places!
   - 1  #  89 Freebie! All players take a Suit Yourself card!
   - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
@@ -135,7 +135,7 @@ ventureCards:
   - 1  # 112 Special bonus! You receive 100 times the number of shops you own in gold coins!
   - 0  # 113 Moneymaking venture! Roll the die and get the number shown x your level x 20G from the bank!
   - 0  # 114 Moneymaking venture! Take your level times 40G from all other players!
-  - 1  # 115 Misadventure! All other players can only move forward 7 on their next turn.
+  - 0  # 115 Misadventure! All other players can only move forward 7 on their next turn.
   - 0  # 116 Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
   - 0  # 117 Adventurous turning point! Everyone gets to choose which way to move on their next go.
   - 1  # 118 Lucky venture! You get a really big commission until your next turn!
@@ -143,13 +143,16 @@ ventureCards:
   - 0  # 120 Misadventure! You drop your wallet and lose 20% of your ready cash!
   - 0  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
   - 1  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
-  - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
-  - 0  # 124 Suit venture! Buy a Suit Yourself card for 50G.
+  - 1  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
+  - 1  # 124 Suit venture! Buy a Suit Yourself card for 50G.
   - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    changed:
+      - Replaced venture cards 87 and 115 with others to prevent potential crashes
   - version: 2
     changed: 
       - increased starting money to 1750
