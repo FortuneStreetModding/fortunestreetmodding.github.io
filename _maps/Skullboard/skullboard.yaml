@@ -34,6 +34,9 @@ tourMode:
   opponent3: Princessa
   clearRank: 2
 changelog:
+  - version: 3
+    added:
+      - 2 new venture cards to make 64 total
   - version: 2
     added:
       - Icon

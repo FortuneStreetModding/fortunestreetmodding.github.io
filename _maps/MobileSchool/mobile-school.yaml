@@ -8,8 +8,8 @@ theme: Mario
 initialCash: 2000
 targetAmount: 20000
 baseSalary: 300
-salaryIncrement: 150
-maxDiceRoll: 7
+salaryIncrement: 250
+maxDiceRoll: 8
 frbFile1: mobile-school
 background: bg004
 mapIcon: school
@@ -167,6 +167,13 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    changed:
+      - Pathing to be more accurate to known info about the board
+      - Salary Increment to 250
+      - Max dice roll to 8
+    added:
+      - 4 vacant lots
   - version: 2
     added:
       - Icon & BGM
