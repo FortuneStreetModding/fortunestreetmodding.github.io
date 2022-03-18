@@ -14,7 +14,6 @@ frbFile1: highrise
 background: n64Skyscraper
 mapIcon: n64Skyscraper
 music:
-  download: https://drive.google.com/u/0/uc?export=download&confirm=6c2O&id=1ZWy8Mb6Z_zNUV1K8XE5biU5wJj91-t-g
   map: n64Skyscraper_map_background.65
   stock: n64Skyscraper_map_stock.65
   ventureCards: n64Skyscraper_map_chance.65
