@@ -17,7 +17,7 @@ frbFile4: portabletree
 background: bg109
 mapIcon: portabletree
 music:
-  download: https://drive.google.com/u/2/uc?id=1uClkR6ruHjG3IZz_uP6dLe-Xq_A8N9JK&export=download&confirm=1
+  download: https://nikkums.io/cswt/BGM/YggdrasilPortable.music.zip
   map: BGM_MAP_TREE_PORTABLE.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_PORTABLE.50

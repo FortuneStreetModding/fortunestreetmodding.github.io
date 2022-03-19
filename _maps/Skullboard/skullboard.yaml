@@ -20,7 +20,7 @@ frbFile2: skullboard1
 background: bg104
 mapIcon: skull
 music:
-  download: https://drive.google.com/uc?export=download&id=1QTt0Asy7oh5tnPKBAjmPJnWKabjo7LHw
+  download: https://nikkums.io/cswt/BGM/Skullboard.music.zip
   map: BGM_MAP_SKULLBOARD
   stock: KH_BGM_STOCK
   ventureCards: KH_BGM_CASINO_SLOT

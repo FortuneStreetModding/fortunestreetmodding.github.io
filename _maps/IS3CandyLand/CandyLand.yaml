@@ -14,7 +14,7 @@ frbFile1: CandyLand
 background: bg901
 mapIcon: CandyLand
 music:
-  download: https://drive.google.com/u/2/uc?id=169KjWVLliBqx99shQfJ-PuGf438JMplC&export=download
+  download: https://nikkums.io/cswt/BGM/Candyland.music.zip
   map: BGM_MAP_CANDYLAND_IS3.75
   stock: BGM_STOCK_IS3.65
   ventureCards: BGM_VENTURE_IS3.65

@@ -4,7 +4,7 @@ name:
 desc:
   en: Ported from Itadaki Street 1. Originally designed for 3 players & poorly optimised for Fortune Street Wii. Play at own risk!
 music:
-  download: https://drive.google.com/u/0/uc?id=1FGMBDVtct7F_kSNKVhgNlu2v8DGApejl&export=download
+  download: https://nikkums.io/cswt/BGM/OnokoroIsland.music.zip
   map: BGM_MAP_ONOKORO.50
   stock: BGM_STOCK_IS1.55
   ventureCards: BGM_CHANCECARD_IS1.60

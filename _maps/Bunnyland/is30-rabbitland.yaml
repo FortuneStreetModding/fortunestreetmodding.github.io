@@ -15,7 +15,7 @@ bgmId: BGM_MAP_PEACH
 background: bg003
 mapIcon: bunny
 music: 
-  download: https://drive.google.com/u/2/uc?id=1BgQSP5pzZiCoykGfKKVfxQ-cl14Of0Q-&export=download
+  download: https://nikkums.io/cswt/BGM/Bunnyland.music.zip
   map: BGM_MAP_BUNNYLAND.60
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70

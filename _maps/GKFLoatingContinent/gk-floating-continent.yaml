@@ -17,7 +17,7 @@ frbFile4: gk-floating-continent
 background: bg109
 mapIcon: Floating
 music:
-  download: https://drive.google.com/u/0/uc?id=1K-cbeVy0cVKF_5yoeVTnaeG4nvQwmulm&export=download
+  download: https://nikkums.io/cswt/BGM/FloatingContinent.music.zip
   map: BGM_MAP_FLOATING.70
   stock: BGM_STOCK_GK.70
   ventureCards: BGM_CHANCE_GK.80
