@@ -39,6 +39,9 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 changelog:
+  - version: 2
+    changed:
+      - Target amount corrected to 17000
   - version: 1
     added: 
       - Initial Release
