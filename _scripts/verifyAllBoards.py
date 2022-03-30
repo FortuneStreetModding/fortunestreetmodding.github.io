@@ -15,8 +15,19 @@ import jsonschema
 import colorama
 import struct
 
+def inplace_change(file, attribute, value):
+    with open(file,'r',encoding="utf8") as f:
+        lines = f.readlines()
+    with open(file, 'w',encoding="utf8") as f:
+        for line in lines:
+            if line.strip().startswith(attribute):
+                f.write(f'{line.split(":", 1)[0]}: {value}\n')
+            else:
+                f.write(line)
+
 def main(argv : list):
     colorama.init()
+    autorepair = True
 
     with open("../schema/mapdescriptor.json", "r", encoding='utf8') as stream:
         yamlSchema = yaml.safe_load(stream)
@@ -49,18 +60,31 @@ def main(argv : list):
                 galaxyStatus = struct.unpack(">H", stream.read(2))[0]
                 stream.seek(0x3C)
                 squareCount = struct.unpack(">H", stream.read(2))[0]
-            errorMsg = f'The value of {colored("{attribute}", "yellow")} is {colored("{yamlValue}", "red")} in the yaml file but {colored("{frbValue}", "red")} in the frb file.'
+            errorMsg = f'The value of {colored("{attribute}", "blue")} is {colored("{yamlValue}", "yellow")} in the yaml file but {colored("{frbValue}", "yellow")} in the frb file.'
+            fixedMsg = f'{colored("Auto-Repair", "green")}: The value of {colored("{attribute}", "blue")} in the yaml file had been corrected to {colored("{frbValue}", "yellow")}.'
             strErrors = []
             if initialCash != yamlContent["initialCash"]:
                 strErrors.append(errorMsg.format(frbValue=initialCash, yamlValue=yamlContent["initialCash"], attribute="initialCash"))
+                if autorepair:
+                    inplace_change(yamlMap, "initialCash", initialCash)
+                    strErrors.append(fixedMsg.format(frbValue=initialCash, yamlValue=yamlContent["initialCash"], attribute="initialCash"))
             if targetAmount != yamlContent["targetAmount"]:
                 strErrors.append(errorMsg.format(frbValue=targetAmount, yamlValue=yamlContent["targetAmount"], attribute="targetAmount"))
             if baseSalary != yamlContent["baseSalary"]:
                 strErrors.append(errorMsg.format(frbValue=baseSalary, yamlValue=yamlContent["baseSalary"], attribute="baseSalary"))
+                if autorepair:
+                    inplace_change(yamlMap, "baseSalary", baseSalary)
+                    strErrors.append(fixedMsg.format(frbValue=initialCash, yamlValue=yamlContent["initialCash"], attribute="initialCash"))
             if salaryIncrement != yamlContent["salaryIncrement"]:
                 strErrors.append(errorMsg.format(frbValue=salaryIncrement, yamlValue=yamlContent["salaryIncrement"], attribute="salaryIncrement"))
+                if autorepair:
+                    inplace_change(yamlMap, "salaryIncrement", salaryIncrement)
+                    strErrors.append(fixedMsg.format(frbValue=initialCash, yamlValue=yamlContent["initialCash"], attribute="initialCash"))
             if maxDiceRoll != yamlContent["maxDiceRoll"]:
                 strErrors.append(errorMsg.format(frbValue=maxDiceRoll, yamlValue=yamlContent["maxDiceRoll"], attribute="maxDiceRoll"))
+                if autorepair:
+                    inplace_change(yamlMap, "maxDiceRoll", maxDiceRoll)
+                    strErrors.append(fixedMsg.format(frbValue=initialCash, yamlValue=yamlContent["initialCash"], attribute="initialCash"))
             loopingMode = "unknown"
             if galaxyStatus == 0:
                 loopingMode = "none"
