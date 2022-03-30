@@ -92,6 +92,7 @@ def main(argv : list):
         print(f'{" ":24} Upload Date:      {uploadDate.date().isoformat()}')
         print(f'{" ":24} Last Update Date: {lastUpdateDate.date().isoformat()}')
         print()
+        
             
 if __name__ == "__main__":
     main(sys.argv[1:])
