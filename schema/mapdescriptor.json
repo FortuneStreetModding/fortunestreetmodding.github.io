@@ -4,9 +4,11 @@
     "title": "MapDescriptor",
     "description": "Describes the properties of a Fortune Street map",
     "type": "object",
+    "additionalProperties": false,
     "definitions": {
         "localization": {
             "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "en": {
                     "type": "string"
@@ -29,8 +31,13 @@
             },
             "required": [
                 "en"
-            ],
-            "additionalProperties": false
+            ]
+        },
+        "districtNames": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 11,
+            "items": { "type": "string" }
         },
         "character": {
             "type": "string",
@@ -119,7 +126,6 @@
         "background",
         "tourMode"
     ],
-    "additionalProperties": false,
     "properties": {
         "name": {
             "description": "The name of the map",
@@ -168,7 +174,7 @@
         "frbFile1": {
             "description": "The filename of the main frb board file without the file extension",
             "type": "string",
-            "pattern": "^\\w+$"
+            "pattern": "^[\\w-]+$"
         },
         "frbFile2": {
             "description": "The filename to the second frb file used for dynamic maps with switches",
@@ -190,6 +196,7 @@
             "type": "array",
             "items": {
                 "type": "object",
+                "additionalProperties": false,
                 "properties": {
                     "x": {
                         "type": "integer"
@@ -201,13 +208,13 @@
                 "required": [
                     "x",
                     "y"
-                ],
-                "additionalProperties": false
+                ]
             }
         },
         "looping": {
             "description": "Controls whether the map shall loop around the edges",
             "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "mode": {
                     "type": "string",
@@ -234,12 +241,12 @@
                 "radius",
                 "horizontalPadding",
                 "verticalSquareCount"
-            ],
-            "additionalProperties": false
+            ]
         },
         "tourMode": {
             "description": "The tour configuration for single player mode",
             "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "bankruptcyLimit": {
                     "description": "How many players need to get bankrupted till the game ends",
@@ -271,62 +278,118 @@
                 "opponent1",
                 "opponent2",
                 "opponent3"
-            ],
-            "additionalProperties": false
+            ]
         },
-        "bgm": {
+        "music": {
             "description": "The background music",
             "type": "object",
+            "additionalProperties": false,
             "properties": {
+                "download": {
+                    "description": "The map main background music.",
+                    "anyOf": [{"type": "null"},{"type": "string"},{"type": "array"}]
+                },
                 "map": {
                     "description": "The map main background music.",
-                    "type": "string"
-                },
-                "promotion": {
-                    "description": "The music played when a player gets promoted.",
-                    "type": "string"
-                },
-                "winner": {
-                    "description": "The music played when a player wins the match.",
-                    "type": "string"
-                },
-                "ventureCards": {
-                    "description": "The music played when a player is picking a venture card.",
-                    "type": "string"
+                    "anyOf": [{"type": "null"},{"type": "string"}]
                 },
                 "stock": {
                     "description": "The music played when a player is buying or selling stocks.",
-                    "type": "string"
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "ventureCards": {
+                    "description": "The music played when a player is picking a venture card.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
                 },
                 "auction": {
                     "description": "The music played when an auction is taking place.",
-                    "type": "string"
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "targetMet": {
+                    "description": "The music played when a player reaches the target net worth.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "win": {
+                    "description": "The music played when a player wins the match.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "guestAppear": {
+                    "description": "The music played when a guest appears.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "guestLeave": {
+                    "description": "The music played when a guest leaves.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "badVentureCard": {
+                    "description": "The music played when venture card #13 is picked.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "takeAbreak": {
+                    "description": "The music played when the shops of a player close.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "promotionMii": {
+                    "description": "The music played when a Mii character gets promoted.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "promotionMario": {
+                    "description": "The music played when a character from Mario gets promoted.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "promotionDragonQuest": {
+                    "description": "The music played when a character from Dragon Quest gets promoted.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "forcedBuyout": {
+                    "description": "The music played when a shop is forcefully bought from another player.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "domination": {
+                    "description": "The music played when a player owns all shops in a district.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "bankruptcy": {
+                    "description": "The music played when a player bankrupts.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
                 },
                 "roundTheBlocks": {
                     "description": "The music played when the round the blocks mini game is being played.",
-                    "type": "string"
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "roundTheBlocksWin": {
+                    "description": "The music played when a player wins something during the round the blocks mini game.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "roundTheBlocks777": {
+                    "description": "The music played when a player gets triple seven during the round the blocks mini game.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
                 },
                 "memoryBlock": {
                     "description": "The music played when the round the memory block mini game is being played.",
-                    "type": "string"
+                    "anyOf": [{"type": "null"},{"type": "string"}]
                 },
                 "dartOfGold": {
                     "description": "The music played when the dart of gold mini game is being played.",
-                    "type": "string"
+                    "anyOf": [{"type": "null"},{"type": "string"}]
                 },
-                "selectYourSlime": {
+                "slurpodromeSelect": {
                     "description": "The music played when the players are picking their racing slime.",
-                    "type": "string"
+                    "anyOf": [{"type": "null"},{"type": "string"}]
                 },
-                "racingSlimes": {
+                "slurpodromeStart": {
+                    "description": "The music played at the start of the race.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "slurpodromeRace": {
                     "description": "The music played when the slimes are racing.",
-                    "type": "string"
+                    "anyOf": [{"type": "null"},{"type": "string"}]
+                },
+                "slurpodromeWin": {
+                    "description": "The music played when a slime reaches the finish line.",
+                    "anyOf": [{"type": "null"},{"type": "string"}]
                 }
-            },
-            "required": [
-                "map"
-            ],
-            "additionalProperties": false
+            }
         },
         "bgmId": {
             "description": "The background music.",
@@ -341,6 +404,95 @@
             "description": "The map icon which to display at the map select screen. You can provide your own map icon as a png file without the file extension or choose one of these: p_bg_101 = Trodain Castle, p_bg_109 = The Observatory, p_bg_102 = Ghost Ship, p_bg_105 = Slimenia, p_bg_104 = Mt. Magmageddon, p_bg_106 = Robbin' Hood Ruins, p_bg_004 = Mario Stadium, p_bg_008 = Starship Mario, p_bg_002 = Mario Circuit, p_bg_001 = Yoshi's Island, p_bg_005 = Delfino Plaza, p_bg_003 = Peach's Castle, p_bg_107 = Alefgard, p_bg_006 = Super Mario Bros, p_bg_007 = Bowser's Castle, p_bg_009 = Good Egg Galaxy, p_bg_103 = The Colossus, p_bg_108 = Alltrades Abbey, p_bg_901 = Practice Board.",
             "type": "string",
             "pattern": "^\\w+$"
+        },
+        "mutators": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "rollShopPriceMultiplier": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "maxRoll": {
+                            "type": "integer",
+                            "minimum": 2,
+                            "maximum": 9
+                        }
+                    },
+                    "required": [
+                        "maxRoll"
+                    ]
+                },
+                "shopPriceMultiplier": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "numerator": {
+                            "type": "integer",
+                            "minimum": 2,
+                            "maximum": 9
+                        },
+                        "denominator": {
+                            "type": "integer",
+                            "minimum": 2,
+                            "maximum": 9
+                        }
+                    },
+                    "required": [
+                        "numerator",
+                        "denominator"
+                    ]
+                },
+                "rollAgain": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "whenRollIs": {
+                            "type": "integer",
+                            "minimum": 5,
+                            "maximum": 9
+                        },
+                        "onlyOnce": {
+                            "type": "boolean"
+                        },
+                        "rollAgainOptional": {
+                            "type": "boolean"
+                        }
+                    },
+                    "required": [
+                        "whenRollIs",
+                        "onlyOnce",
+                        "rollAgainOptional"
+                    ]
+                }
+            }
+        },
+        "districtNames": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "en": {
+                    "$ref": "#/definitions/districtNames"
+                },
+                "de": {
+                    "$ref": "#/definitions/districtNames"
+                },
+                "fr": {
+                    "$ref": "#/definitions/districtNames"
+                },
+                "it": {
+                    "$ref": "#/definitions/districtNames"
+                },
+                "es": {
+                    "$ref": "#/definitions/districtNames"
+                },
+                "jp": {
+                    "$ref": "#/definitions/districtNames"
+                }
+            },
+            "required": [
+                "en"
+            ]
         },
         "ventureCards": {
             "description": "The venture cards which are enabled for this map.",
@@ -358,33 +510,54 @@
             "type": "array",
             "items": {
                 "type": "object",
+                "additionalProperties": false,
                 "properties": {
                     "version": {
                         "type": ["number", "string"]
                     },
                     "added": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
+                        "anyOf": [
+                            {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
                     },
                     "changed": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
+                        "anyOf": [
+                            {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
                     },
                     "removed": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
-                        }
+                        "anyOf": [
+                            {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
                     }
                 },
                 "required": [
                     "version"
-                ],
-                "additionalProperties": false
+                ]
             }
         },
         "authors": {
@@ -392,6 +565,7 @@
             "type": "array",
             "items": {
                 "type": "object",
+                "additionalProperties": false,
                 "properties": {
                     "name": {
                         "type": "string"
@@ -402,9 +576,16 @@
                 },
                 "required": [
                     "name"
-                ],
-                "additionalProperties": false
+                ]
             }
+        },
+        "notes": {
+            "description": "Additional notes of the map to be displayed on the website. Markdown supported.",
+            "type": "string"
+        },
+        "tags": {
+            "description": "Tags which are associated with this map.",
+            "type": "array"
         }
     }
 }
