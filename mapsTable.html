@@ -137,11 +137,37 @@ permalink: /mapsTable
                 {%- endif %}
                 <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=map -%}');">Map</button>
                 {%- if background.download -%}
-                <a class="btn btn-primary" href="{{ background.download }}">Background</a>
+                  {% if background.download.first -%}
+                  <div class="btn-group" role="group">
+                    <button id="btnGroupBgDrop-{%- include renderMapSlugClass.liquid map=map -%}" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Background
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupBgDrop-{%- include renderMapSlugClass.liquid map=map -%}">
+                      {% for download in background.download -%}
+                       <li><a class="dropdown-item" href="{{ download }}">{{ download | remove:'https://' | remove:'http://' | split:'/' | first }}</a></li>
+                      {% endfor -%}
+                    </ul>
+                  </div>
+                  {% else -%}
+                    <a class="btn btn-primary" href="{{ background.download }}">Background</a>
+                  {% endif -%}
                 {%- endif %}
                 {%- if map.music.download -%}
-                <a class="btn btn-primary" href="{{ map.music.download }}">Music</a>
-                {%- endif %}
+                  {% if map.music.download.first -%}
+                  <div class="btn-group" role="group">
+                    <button id="btnGroupMuiscDrop-{%- include renderMapSlugClass.liquid map=map -%}" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Music
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="btnGroupMusicDrop-{%- include renderMapSlugClass.liquid map=map -%}">
+                      {% for download in map.music.download -%}
+                      <li><a class="dropdown-item" href="{{ download }}">{{ download | remove:'https://' | remove:'http://' | split:'/' | first }}</a></li>
+                      {% endfor -%}
+                    </ul>
+                  </div>
+                  {% else -%}
+                    <a class="btn btn-primary" href="{{ map.music.download }}">Music</a>
+                  {% endif -%}
+                {% endif -%}
                 {% if background.download or map.music.download -%}
                 </div>
                 {%- endif %}
