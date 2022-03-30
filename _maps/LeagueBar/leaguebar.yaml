@@ -9,7 +9,7 @@ initialCash: 3000
 targetAmount: 20000
 baseSalary: 750
 salaryIncrement: 300
-maxDiceRoll: 8
+maxDiceRoll: 7
 frbFile1: leaguebar
 background: bg008alt
 mapIcon: bg008alt

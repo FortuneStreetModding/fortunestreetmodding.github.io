@@ -9,7 +9,7 @@ initialCash: 3000
 targetAmount: 20000
 baseSalary: 400
 salaryIncrement: 200
-maxDiceRoll: 8
+maxDiceRoll: 6
 frbFile1: dksjungle
 frbFile2: dksjungle
 frbFile3: dksjungle

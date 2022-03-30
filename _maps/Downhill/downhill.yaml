@@ -5,7 +5,7 @@ desc:
   en: If you really hate large districts, here's a challenge. Almost every district has 5 shops in it. The cannon's a beast on this map, too.
 ruleSet: Standard
 theme: Mario
-initialCash: 2000
+initialCash: 3000
 targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 200

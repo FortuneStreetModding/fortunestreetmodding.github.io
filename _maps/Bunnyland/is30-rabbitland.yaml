@@ -9,7 +9,7 @@ initialCash: 2000
 targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 200
-maxDiceRoll: 7
+maxDiceRoll: 6
 frbFile1: is30-rabbitland
 bgmId: BGM_MAP_PEACH
 background: bg003

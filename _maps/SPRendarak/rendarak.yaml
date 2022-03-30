@@ -7,7 +7,7 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500
 targetAmount: 20000
-baseSalary: 300
+baseSalary: 350
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: rendarak

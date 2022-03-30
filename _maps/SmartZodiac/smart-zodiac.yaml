@@ -9,7 +9,7 @@ initialCash: 2000
 targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 200
-maxDiceRoll: 7
+maxDiceRoll: 8
 frbFile1: smart-zodiac
 frbFile2: smart-zodiac
 background: bg104
