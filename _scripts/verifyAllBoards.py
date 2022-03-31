@@ -52,6 +52,11 @@ def main(argv : list):
                 errorCount += 1
                 cprint(f'ERROR:', 'red')
                 print(err.message)
+        with open(yamlMap, "r", encoding='utf8') as stream:
+            if not stream.readline().strip() == "---":
+                errorCount += 1
+                cprint(f'{name:24} ERROR:', 'red')
+                print("YAML file first line must be ---")
         if yamlContent:
             print(f'{" ":24} Consistency Check...', end = '')
             frbFile1 = yamlMap.parent / Path(f'{yamlContent["frbFile1"]}.frb')
