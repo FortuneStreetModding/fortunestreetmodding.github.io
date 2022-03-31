@@ -7,8 +7,8 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000
 targetAmount: 25000
-baseSalary: 300
-salaryIncrement: 150
+baseSalary: 500
+salaryIncrement: 200
 maxDiceRoll: 8
 frbFile1: palamecia
 background: bg008alt

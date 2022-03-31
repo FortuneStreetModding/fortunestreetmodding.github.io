@@ -7,7 +7,7 @@ desc:
   de: Eine Karte in Form eines Frachtschiffes das den Pillen-Planet umfasst. Das Ereignisfeld vertauscht alle Spieler was die geplannte Route vermasseln kann. Die Bezirke nahe der Bank haben mehrere freie Grundstücke, nutze sie zu deinem Vorteil.
 ruleSet: Standard
 theme: Mario
-initialCash: 2500
+initialCash: 2000
 targetAmount: 25000
 baseSalary: 400
 salaryIncrement: 200

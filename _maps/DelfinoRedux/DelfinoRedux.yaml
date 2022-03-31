@@ -5,11 +5,11 @@ desc:
   en: An edited version of the easy mode variant of Delfino Plaza
 ruleSet: Standard
 theme: Mario
-initialCash: 2000
+initialCash: 2500
 targetAmount: 20000
-baseSalary: 300
-salaryIncrement: 150
-maxDiceRoll: 7
+baseSalary: 750
+salaryIncrement: 200
+maxDiceRoll: 6
 frbFile1: DelfinoRedux
 background: bg005
 tourMode:

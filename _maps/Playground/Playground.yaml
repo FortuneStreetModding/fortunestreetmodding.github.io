@@ -7,8 +7,8 @@ ruleSet: Standard
 theme: Mario
 initialCash: 1500
 targetAmount: 13000
-baseSalary: 250
-salaryIncrement: 150
+baseSalary: 300
+salaryIncrement: 200
 maxDiceRoll: 6
 frbFile1: Playground
 background: bg001

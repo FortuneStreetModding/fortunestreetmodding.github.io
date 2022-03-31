@@ -9,7 +9,7 @@ initialCash: 1700
 targetAmount: 17000
 baseSalary: 300
 salaryIncrement: 150
-maxDiceRoll: 6
+maxDiceRoll: 7
 frbFile1: ramia
 background: bg107
 mapIcon: ramia

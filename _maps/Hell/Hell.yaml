@@ -7,11 +7,11 @@ desc:
   de: Willkommen in der Hölle, auf der oberen rechten Insel kann man nur gegen den Uhrzeigersinn gehen.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2500
+initialCash: 2000
 targetAmount: 25000
-baseSalary: 300
-salaryIncrement: 200
-maxDiceRoll: 7
+baseSalary: 400
+salaryIncrement: 100
+maxDiceRoll: 8
 frbFile1: hell
 tourMode:
   bankruptcyLimit: 1

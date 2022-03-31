@@ -9,7 +9,7 @@ initialCash: 2500
 targetAmount: 25000
 baseSalary: 300
 salaryIncrement: 200
-maxDiceRoll: 8
+maxDiceRoll: 7
 frbFile1: yoshi
 mapIcon: bg001
 background: bg001_clean

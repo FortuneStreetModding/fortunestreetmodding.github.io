@@ -9,7 +9,7 @@ initialCash: 3000
 targetAmount: 20000
 baseSalary: 400
 salaryIncrement: 200
-maxDiceRoll: 8
+maxDiceRoll: 6
 frbFile1: dksjungle
 frbFile2: dksjungle
 frbFile3: dksjungle
@@ -23,7 +23,9 @@ tourMode:
 background: bg109
 mapIcon: dksjungle
 music:
-  download: https://nikkums.io/cswt/BGM/DKsJungleAdventure.music.zip
+  download: 
+    - https://drive.google.com/u/0/uc?id=1dyaF7ZulJ-BAp1lountI4dewRE3goRN3&export=download&confirm=1
+    - https://nikkums.io/cswt/BGM/DKsJungleAdventure.music.zip
   map: DKsJungleAdventure.60
   stock: MP1_OptionHouse.50
   ventureCards: MP1_MiniGame.60

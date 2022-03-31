@@ -8,7 +8,7 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
 targetAmount: 18000
-baseSalary: 200
+baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: hotel
@@ -35,7 +35,7 @@ districtNames:
     - Fujiyama
     - Royal
     - L'Etoile
-notes:
+notes: |
   - https://sketchfab.com/3d-models/cybercity-2099-v2-3b61335c2a004a9ea31c8dab59471222
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).

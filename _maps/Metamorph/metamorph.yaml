@@ -7,7 +7,7 @@ desc:
   de: Das einzig beständige ist der Wandel.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 1000
+initialCash: 1500
 targetAmount: 10000
 baseSalary: 200
 salaryIncrement: 100
