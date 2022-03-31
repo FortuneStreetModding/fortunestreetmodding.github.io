@@ -28,11 +28,14 @@ def inplace_change(file, attribute, value):
 def main(argv : list):
     colorama.init()
     autorepair = True
+    updateCommitDates = False
 
     with open("../schema/mapdescriptor.json", "r", encoding='utf8') as stream:
         yamlSchema = yaml.safe_load(stream)
 
     yamlMaps = list(Path().glob('../_maps/*/*.yaml'))
+    errorCount = 0
+    fixedCount = 0
     for yamlMap in yamlMaps:
         name = yamlMap.parent.name
         with open(yamlMap, "r", encoding='utf8') as stream:
@@ -42,9 +45,11 @@ def main(argv : list):
                 jsonschema.validate(yamlContent, yamlSchema)
                 cprint(f'OK.', 'green')
             except yaml.YAMLError as exc:
+                errorCount += 1
                 cprint(f'ERROR:', 'red')
                 print(exc)
             except jsonschema.ValidationError as err:
+                errorCount += 1
                 cprint(f'ERROR:', 'red')
                 print(err.message)
         if yamlContent:
@@ -68,6 +73,7 @@ def main(argv : list):
                 if autorepair:
                     inplace_change(yamlMap, "initialCash", initialCash)
                     strErrors.append(fixedMsg.format(frbValue=initialCash, yamlValue=yamlContent["initialCash"], attribute="initialCash"))
+                    fixedCount += 1
             if targetAmount != yamlContent["targetAmount"]:
                 strErrors.append(errorMsg.format(frbValue=targetAmount, yamlValue=yamlContent["targetAmount"], attribute="targetAmount"))
             if baseSalary != yamlContent["baseSalary"]:
@@ -75,16 +81,19 @@ def main(argv : list):
                 if autorepair:
                     inplace_change(yamlMap, "baseSalary", baseSalary)
                     strErrors.append(fixedMsg.format(frbValue=initialCash, yamlValue=yamlContent["initialCash"], attribute="initialCash"))
+                    fixedCount += 1
             if salaryIncrement != yamlContent["salaryIncrement"]:
                 strErrors.append(errorMsg.format(frbValue=salaryIncrement, yamlValue=yamlContent["salaryIncrement"], attribute="salaryIncrement"))
                 if autorepair:
                     inplace_change(yamlMap, "salaryIncrement", salaryIncrement)
                     strErrors.append(fixedMsg.format(frbValue=initialCash, yamlValue=yamlContent["initialCash"], attribute="initialCash"))
+                    fixedCount += 1
             if maxDiceRoll != yamlContent["maxDiceRoll"]:
                 strErrors.append(errorMsg.format(frbValue=maxDiceRoll, yamlValue=yamlContent["maxDiceRoll"], attribute="maxDiceRoll"))
                 if autorepair:
                     inplace_change(yamlMap, "maxDiceRoll", maxDiceRoll)
                     strErrors.append(fixedMsg.format(frbValue=initialCash, yamlValue=yamlContent["initialCash"], attribute="initialCash"))
+                    fixedCount += 1
             loopingMode = "unknown"
             if galaxyStatus == 0:
                 loopingMode = "none"
@@ -108,21 +117,35 @@ def main(argv : list):
             if len(strErrors) > 0:
                 cprint(f'ERROR:', 'red')
                 print("\n".join(strErrors))
+                errorCount += len(strErrors)
             else:
                 cprint(f'OK:', 'green')
-        # get upload date
-        commitDatesOut = check_output(['git', 'log', '--follow', '--format=%aD', yamlMap.as_posix()], encoding="utf8")
-        commitDatesStrList = commitDatesOut.strip().splitlines()
-        uploadDate = datetime.strptime(commitDatesStrList[-1], '%a, %d %b %Y %H:%M:%S %z')
 
-        # get last update date
-        commitDatesOut = check_output(['git', 'log', '--format=%aD', yamlMap.parent.as_posix()], encoding="utf8")
-        commitDatesStrList = commitDatesOut.strip().splitlines()
-        lastUpdateDate = datetime.strptime(commitDatesStrList[0], '%a, %d %b %Y %H:%M:%S %z')
-        
-        print(f'{" ":24} Upload Date:      {uploadDate.date().isoformat()}')
-        print(f'{" ":24} Last Update Date: {lastUpdateDate.date().isoformat()}')
+        if updateCommitDates:
+            # get upload date
+            commitDatesOut = check_output(['git', 'log', '--follow', '--format=%aD', yamlMap.as_posix()], encoding="utf8")
+            commitDatesStrList = commitDatesOut.strip().splitlines()
+            uploadDate = datetime.strptime(commitDatesStrList[-1], '%a, %d %b %Y %H:%M:%S %z')
+
+            # get last update date
+            commitDatesOut = check_output(['git', 'log', '--format=%aD', yamlMap.parent.as_posix()], encoding="utf8")
+            commitDatesStrList = commitDatesOut.strip().splitlines()
+            lastUpdateDate = datetime.strptime(commitDatesStrList[0], '%a, %d %b %Y %H:%M:%S %z')
+            
+            print(f'{" ":24} Upload Date:      {uploadDate.date().isoformat()}')
+            print(f'{" ":24} Last Update Date: {lastUpdateDate.date().isoformat()}')
         print()
+
+    print("Board Validation complete")
+    if errorCount == 0:
+        cprint(f'No issues found', "green")
+    else:
+        print(f'Found {colored(str(errorCount), "red")} issue(s)')
+        if fixedCount > 0:
+            if fixedCount < errorCount:
+                print(f'{colored(str(fixedCount), "green")} issue(s) auto-repaired. Remaining issue(s): {colored(str(errorCount - fixedCount), "red")}')
+            else:
+                cprint(f'All {str(fixedCount)} issues were auto-repaired!', 'green')
         
             
 if __name__ == "__main__":
