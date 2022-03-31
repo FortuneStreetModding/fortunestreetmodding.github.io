@@ -24,8 +24,8 @@ background: bg109
 mapIcon: dksjungle
 music:
   download: 
-    - https://drive.google.com/u/0/uc?id=1dyaF7ZulJ-BAp1lountI4dewRE3goRN3&export=download&confirm=1
     - https://nikkums.io/cswt/BGM/DKsJungleAdventure.music.zip
+    - https://drive.google.com/u/0/uc?id=1dyaF7ZulJ-BAp1lountI4dewRE3goRN3&export=download&confirm=1
   map: DKsJungleAdventure.60
   stock: MP1_OptionHouse.50
   ventureCards: MP1_MiniGame.60
