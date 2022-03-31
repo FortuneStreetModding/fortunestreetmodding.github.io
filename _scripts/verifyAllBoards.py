@@ -124,19 +124,27 @@ def main(argv : list):
                 print("\n".join(strErrors))
                 errorCount += len(strErrors)
             else:
-                cprint(f'OK:', 'green')
+                cprint(f'OK.', 'green')
         if yamlContent and "music" in yamlContent and "download" in yamlContent["music"]:
+            strErrors = []
             print(f'{" ":24} Download URL Check...', end = '')
             if type(yamlContent["music"]["download"]) == str:
                 firstDownloadLink = yamlContent["music"]["download"]
+                mirrorCount = 1
             else:
                 firstDownloadLink = str(yamlContent["music"]["download"][0])
-            if firstDownloadLink.startswith("https://nikkums.io/cswt/"):
-                cprint(f'OK:', 'green')
-            else:
+                mirrorCount = len(yamlContent["music"]["download"])
+            if not firstDownloadLink.startswith("https://nikkums.io/cswt/"):
+                strErrors.append("The first download link must start with https://nikkums.io/cswt/")
+            if mirrorCount < 2:
+                strErrors.append("There should be at least 2 music download mirrors defined for each board")
+            if len(strErrors) > 0:
                 cprint(f'ERROR:', 'red')
-                print("The first download link must start with https://nikkums.io/cswt/")
+                print("\n".join(strErrors))
                 errorCount += len(strErrors)
+            else:
+                cprint(f'OK.', 'green')
+
                 
         if updateCommitDates:
             # get upload date
@@ -152,6 +160,9 @@ def main(argv : list):
             print(f'{" ":24} Upload Date:      {uploadDate.date().isoformat()}')
             print(f'{" ":24} Last Update Date: {lastUpdateDate.date().isoformat()}')
         print()
+
+    with open("../schema/mapdescriptor.json", "r", encoding='utf8') as stream:
+        yamlSchema = yaml.safe_load(stream)
 
     print("Board Validation complete")
     if errorCount == 0:
