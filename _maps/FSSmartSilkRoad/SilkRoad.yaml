@@ -16,7 +16,9 @@ frbFile1: silkroad
 background: bg107
 mapIcon: silkroad
 music: 
-  download: https://nikkums.io/cswt/BGM/SilkRoad.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/SilkRoad.music.zip
+    - https://drive.google.com/u/2/uc?id=1ZrSCKdg5hPLQm6AQ4bLiqcS332dFCR6A&export=download
   map: BGM_MAP_SILK.75
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70

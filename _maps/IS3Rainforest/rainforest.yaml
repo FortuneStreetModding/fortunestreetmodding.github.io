@@ -14,7 +14,9 @@ frbFile1: Rainforest
 background: bg107
 mapIcon: rainforest
 music:
-  download: https://nikkums.io/cswt/BGM/Rainforest.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/Rainforest.music.zip
+    - https://drive.google.com/u/2/uc?id=16wUu9_saMfkTXhQAmlIFe4ZgCtO5BfsM&export=download
   map: BGM_MAP_RAINFOREST.65
   stock: BGM_STOCK_IS3.65
   ventureCards: BGM_VENTURE_IS3.65

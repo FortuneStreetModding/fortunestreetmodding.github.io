@@ -14,7 +14,9 @@ frbFile1: smart-antarctica
 background: bg105
 mapIcon: antarctica
 music: 
-  download: https://nikkums.io/cswt/BGM/Antarctica.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/Antarctica.music.zip
+    - https://drive.google.com/u/2/uc?id=1uDlfTpxrgcxZxkWHZ3He57TSrM8Q_2Ep&export=download&confirm=1
   map: BGM_MAP_ANTARCTICA.80
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70

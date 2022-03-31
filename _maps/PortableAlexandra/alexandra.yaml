@@ -14,7 +14,9 @@ frbFile1: alexandra
 background: bg103
 mapIcon: alexandra
 music:
-  download: https://nikkums.io/cswt/BGM/Alexandra.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/Alexandra.music.zip
+    - https://drive.google.com/u/2/uc?id=1o6RvfuncYRWtb_zpThPe--oHpzCCrwxA&export=download&confirm=1
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_PORTABLE.50
   auction: BGM_AUCTION_SPECIAL.50

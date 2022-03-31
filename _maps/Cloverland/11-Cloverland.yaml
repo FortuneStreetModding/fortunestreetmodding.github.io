@@ -20,7 +20,9 @@ tourMode:
 background: bg106
 mapIcon: cloverland
 music:
-  download: https://nikkums.io/cswt/BGM/Cloverland.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/Cloverland.music.zip
+    - https://drive.google.com/u/0/uc?export=download&confirm=N0kc&id=1zdxjy9CPbdYYn_Ny5hBdgS97b4_ipvMz
   map: BGM_MAP_CLOVERLAND_IS2R.60
   stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60

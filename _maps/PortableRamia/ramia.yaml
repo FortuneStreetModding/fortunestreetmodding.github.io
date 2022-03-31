@@ -14,7 +14,9 @@ frbFile1: ramia
 background: bg107
 mapIcon: ramia
 music:
-  download: https://nikkums.io/cswt/BGM/Ramia.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/Ramia.music.zip
+    - https://drive.google.com/u/2/uc?export=download&confirm=QmQd&id=1J2Z3_XcqR8c1kcO-g9J_Yy8NOd2pFkOh
   map: BGM_MAP_RAMIA_PORTABLE.60
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_PORTABLE.50

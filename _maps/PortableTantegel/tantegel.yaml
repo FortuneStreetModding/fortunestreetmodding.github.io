@@ -14,7 +14,9 @@ frbFile1: tantegel
 background: bg101
 mapIcon: tantegel
 music:
-  download: https://nikkums.io/cswt/BGM/Tantegel.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/Tantegel.music.zip
+    - https://drive.google.com/u/2/uc?export=download&confirm=iiM3&id=1dMwcE0YgHsdf5lHcN_5pT1xfN1AUBIXn
   map: BGM_MAP_TANTEGEL_PORTABLE.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_PORTABLE.50

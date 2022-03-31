@@ -14,7 +14,9 @@ frbFile1: auSgtFrog
 background: bg005
 mapIcon: SgtFrog
 music: 
-  download: https://nikkums.io/cswt/BGM/SgtFrog.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/SgtFrog.music.zip
+    - https://drive.google.com/u/2/uc?id=1z_Nu9VZ7up5zt3gY79oXSLO9aAVMRHq4&export=download
   map: sgtfrog.70
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.60

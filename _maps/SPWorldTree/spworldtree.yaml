@@ -15,7 +15,9 @@ frbFile2: SPWorldTree1
 background: bg104
 mapIcon: spworldtree
 music:
-  download: https://nikkums.io/cswt/BGM/SPYggdrasil.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/SPYggdrasil.music.zip
+    - https://drive.google.com/u/2/uc?id=1YaULCVrJkzX4Tu5CltLYvuDobS8xzief&export=download&confirm=1
   map: BGM_MAP_WORLDTREE_SPECIAL.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_SPECIAL.50

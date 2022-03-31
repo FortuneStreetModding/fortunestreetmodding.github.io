@@ -14,7 +14,9 @@ frbFile1: Rainbow_Dream
 background: bg003
 mapIcon: Rainbow_Dream
 music: 
-  download: https://nikkums.io/cswt/BGM/RainbowDream.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/RainbowDream.music.zip
+    - https://drive.google.com/u/0/uc?id=18ExGNPhBxn6gCECJgjwggQAPf23YW7Wd&export=download
   map: Rainbow_Dream_map.70
   win: Rainbow_Dream_win_Champ.70
   promotionMii: Rainbow_Dream_promotion_StarGet.70

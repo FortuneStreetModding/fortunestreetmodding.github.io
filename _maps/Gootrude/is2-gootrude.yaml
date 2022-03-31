@@ -14,7 +14,9 @@ frbFile1: is2-gootrude
 background: bg105
 mapIcon: gootrude
 music:
-  download: https://nikkums.io/cswt/BGM/Gootrude.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/Gootrude.music.zip
+    - https://drive.google.com/u/0/uc?id=1It1ihHONcuNQHjfb4o1-qAcAgKP8_TKq&export=download
   map: BGM_MAP_GOOTRUDE_IS2R.50
   stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60

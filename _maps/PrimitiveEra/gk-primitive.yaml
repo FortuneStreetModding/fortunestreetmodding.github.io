@@ -14,7 +14,9 @@ frbFile1: gk-primitive
 background: bg001_clean
 mapIcon: gk-primitive
 music:
-  download: https://nikkums.io/cswt/BGM/PrimitiveEra.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/PrimitiveEra.music.zip
+    - https://drive.google.com/u/0/uc?id=1czy0dGU7CGdKjKNhYFv3_Q5c2daszRtP&export=download
   map: BGM_MAP_PRIMITIVE.90
   stock: BGM_STOCK_GK.70
   ventureCards: BGM_CHANCE_GK.80

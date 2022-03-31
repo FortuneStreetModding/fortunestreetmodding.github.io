@@ -14,7 +14,9 @@ frbFile1: uahigh
 background: bg004
 mapIcon: uahigh
 music:
-  download: https://nikkums.io/cswt/BGM/UAHigh.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/UAHigh.music.zip
+    - https://drive.google.com/u/2/uc?id=1BpkiIb-pqiETTpqgqdtQKT0Mkio5pyyx&export=download
   map: mha.40
   targetMet: yousayrun.40
 tourMode:

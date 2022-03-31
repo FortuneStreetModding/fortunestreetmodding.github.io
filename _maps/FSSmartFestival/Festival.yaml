@@ -16,7 +16,9 @@ frbFile1: matsuri
 background: bg105
 mapIcon: festival
 music: 
-  download: https://nikkums.io/cswt/BGM/Festival.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/Festival.music.zip
+    - https://drive.google.com/u/2/uc?id=1P_6P82ZYQ2tD-sXeF6pAVE7-KMlCV2_9&export=download
   map: BGM_MAP_FESTIVAL.70
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70

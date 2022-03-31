@@ -14,7 +14,9 @@ frbFile1: americas
 background: bg107
 mapIcon: americas
 music:
-  download: https://nikkums.io/cswt/BGM/TheAmericas.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/TheAmericas.music.zip
+    - https://drive.google.com/uc?export=download&id=1iuTDjtSRHcRB9XhkiZ19-ImAh0PbwZ_D
   map: BGM_MAP_AMERICAS.32
   stock: BGM_STOCK_IS1.55
   ventureCards: BGM_CHANCECARD_IS1.60

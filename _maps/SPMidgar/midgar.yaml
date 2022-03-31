@@ -17,7 +17,9 @@ frbFile4: midgar3
 background: bg008alt
 mapIcon: midgar
 music:
-  download: https://nikkums.io/cswt/BGM/Midgar.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/Midgar.music.zip
+    - https://drive.google.com/u/0/uc?export=download&confirm=ZJrq&id=1zvGgeBRh5qrELI3HatNNGESfkuINpZEs
   map: BGM_MAP_MIDGAR_ISSP.60
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_SPECIAL.50

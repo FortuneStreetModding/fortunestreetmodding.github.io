@@ -14,7 +14,9 @@ frbFile1: gk-queen-bunny
 background: bg008alt
 mapIcon: queen
 music:
-  download: https://nikkums.io/cswt/BGM/QueenBunny.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/QueenBunny.music.zip
+    - https://drive.google.com/u/0/uc?id=1RYcqhBlTV72Ez-dItpDZo3RBR7TgD5K-&export=download
   map: BGM_MAP_QUEENBUNNY.80
   stock: BGM_STOCK_GK.70
   ventureCards: BGM_CHANCE_GK.80

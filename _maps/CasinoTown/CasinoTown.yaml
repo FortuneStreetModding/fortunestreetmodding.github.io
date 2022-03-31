@@ -14,7 +14,9 @@ frbFile1: CasinoTown
 background: bg009
 mapIcon: CasinoTown
 music: 
-  download: https://nikkums.io/cswt/BGM/CasinoTown.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/CasinoTown.music.zip
+    - https://drive.google.com/u/0/uc?export=download&confirm=R7GK&id=1-krDAHD7DES8ML-v_Cgugh1k1KW7iFl5
   map: BGM_MAP_CASINOTOWN_IS2R.60
   stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60
