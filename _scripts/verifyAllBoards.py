@@ -98,6 +98,13 @@ def main(argv : list):
             else:
                 if loopingMode != "none":
                     strErrors.append(errorMsg.format(frbValue=loopingMode, yamlValue="none", attribute="looping mode"))
+            if "ventureCards" in yamlContent:
+                activeVentureCards = 0
+                for ventureCard in yamlContent["ventureCards"]:
+                    if ventureCard == 1:
+                        activeVentureCards+=1
+                if activeVentureCards != 64:
+                    strErrors.append(f'There are {colored(str(activeVentureCards), "yellow")} venture cards activated. It should be 64.')
             if len(strErrors) > 0:
                 cprint(f'ERROR:', 'red')
                 print("\n".join(strErrors))
