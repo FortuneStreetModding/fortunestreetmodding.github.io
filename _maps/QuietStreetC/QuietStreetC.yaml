@@ -20,7 +20,9 @@ tourMode:
   opponent3: Kiryl
   clearRank: 3
 music:
-  download: https://drive.google.com/u/2/uc?id=1GJyG8PTgg7arzpn9papRPTxykpBChKdL&export=download&confirm=1
+  download: 
+    - https://nikkums.io/cswt/BGM/QuietStreet.music.zip
+    - https://drive.google.com/u/2/uc?id=1GJyG8PTgg7arzpn9papRPTxykpBChKdL&export=download&confirm=1
   map: jazztheme.100
   targetMet: primalone.100
 districtNames:
