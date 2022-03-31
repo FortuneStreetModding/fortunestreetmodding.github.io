@@ -125,7 +125,19 @@ def main(argv : list):
                 errorCount += len(strErrors)
             else:
                 cprint(f'OK:', 'green')
-
+        if yamlContent and "music" in yamlContent and "download" in yamlContent["music"]:
+            print(f'{" ":24} Download URL Check...', end = '')
+            if type(yamlContent["music"]["download"]) == str:
+                firstDownloadLink = yamlContent["music"]["download"]
+            else:
+                firstDownloadLink = str(yamlContent["music"]["download"][0])
+            if firstDownloadLink.startswith("https://nikkums.io/cswt/"):
+                cprint(f'OK:', 'green')
+            else:
+                cprint(f'ERROR:', 'red')
+                print("The first download link must start with https://nikkums.io/cswt/")
+                errorCount += len(strErrors)
+                
         if updateCommitDates:
             # get upload date
             commitDatesOut = check_output(['git', 'log', '--follow', '--format=%aD', yamlMap.as_posix()], encoding="utf8")
