@@ -26,5 +26,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: python validateAllBoards.py --skip-autorepair --skip-update-dates --skip-mirror-validation --skip-download-validation
+        run: |
+          pip install -r requirements.txt
+          python validateAllBoards.py --skip-autorepair --skip-update-dates --skip-mirror-validation --skip-download-validation
         working-directory: ./_scripts
