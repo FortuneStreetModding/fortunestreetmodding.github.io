@@ -29,6 +29,7 @@ districtNames:
   - Miyashita P
 music:
   download: 
+    - https://nikkums.io/cswt/BGM/Shibuya.music.zip
     - https://drive.google.com/u/2/uc?id=1kFvP4eRwwED30pz4eXqHBHBzHROG3CEh&export=download&confirm=1
   map: ShibuyaMedley.40
   stock: ntwewymenu.50
