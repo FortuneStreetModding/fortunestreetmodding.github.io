@@ -14,6 +14,7 @@ import yaml
 import jsonschema
 import colorama
 import struct
+import requests
 
 def inplace_change(file, attribute, value):
     with open(file,'r',encoding="utf8") as f:
@@ -25,10 +26,40 @@ def inplace_change(file, attribute, value):
             else:
                 f.write(line)
 
+def get_filesize(url : str):   
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"  # NOQA
+    }
+    try:
+        sess = requests.session()
+        size = -1
+        if 'drive.google.com' in url:
+            headers["Accept"] = "application/json"
+            fileId = url.split("id=")[1].split("&")[0]
+            res = sess.get(f'https://www.googleapis.com/drive/v3/files/{fileId}?alt=json&fields=size&key=AIzaSyDQB22BQtznFe85nOyok2U9qO5HSr3Z5u4')
+            data = res.json()
+            if 'error' in data:
+                cprint('google drive error', 'red')
+                if 'message' in data['error']:
+                    print(data['error']['message'])
+            else:
+                size = int(data["size"])
+        else:
+            res = sess.head(url, headers=headers, stream=True, verify=True, allow_redirects=True)
+            size = int(res.headers.get("Content-Length", 0))
+        return size
+    except IOError as e:
+        print(e, file=sys.stderr)
+        return
+    finally:
+        sess.close()
+
 def main(argv : list):
     colorama.init()
+
     autorepair = True
     updateCommitDates = False
+    validateFileSizeOfMirrors = True
 
     with open("../schema/mapdescriptor.json", "r", encoding='utf8') as stream:
         yamlSchema = yaml.safe_load(stream)
@@ -128,16 +159,28 @@ def main(argv : list):
         if yamlContent and "music" in yamlContent and "download" in yamlContent["music"]:
             strErrors = []
             print(f'{" ":24} Download URL Check...', end = '')
+            mirrors = []
             if type(yamlContent["music"]["download"]) == str:
-                firstDownloadLink = yamlContent["music"]["download"]
-                mirrorCount = 1
+                mirrors.append(yamlContent["music"]["download"])
             else:
-                firstDownloadLink = str(yamlContent["music"]["download"][0])
-                mirrorCount = len(yamlContent["music"]["download"])
-            if not firstDownloadLink.startswith("https://nikkums.io/cswt/"):
+                mirrors = yamlContent["music"]["download"]
+            if not mirrors[0].startswith("https://nikkums.io/cswt/"):
                 strErrors.append("The first download link must start with https://nikkums.io/cswt/")
-            if mirrorCount < 2:
+            if len(mirrors) < 2:
                 strErrors.append("There should be at least 2 music download mirrors defined for each board")
+            if validateFileSizeOfMirrors and len(mirrors) > 1:
+                mirrorFileSizeDict = {}
+                fileSizeError = False
+                for mirror in mirrors:
+                    fileSize = get_filesize(mirror)
+                    mirrorFileSizeDict[mirror] = fileSize
+                    if mirror != mirrors[0] and mirrorFileSizeDict[mirrors[0]] != fileSize:
+                        fileSizeError = True
+                if fileSizeError:
+                    mirrorFileSizeDictStr = ""
+                    for key,value in mirrorFileSizeDict.items():
+                        mirrorFileSizeDictStr += f'{key}: {str(value)}\n'
+                    strErrors.append(f'The download size of the mirrors do not match:\n{mirrorFileSizeDictStr}')
             if len(strErrors) > 0:
                 cprint(f'ERROR:', 'red')
                 print("\n".join(strErrors))
@@ -161,8 +204,7 @@ def main(argv : list):
             print(f'{" ":24} Last Update Date: {lastUpdateDate.date().isoformat()}')
         print()
 
-    with open("../schema/mapdescriptor.json", "r", encoding='utf8') as stream:
-        yamlSchema = yaml.safe_load(stream)
+
 
     print("Board Validation complete")
     if errorCount == 0:
