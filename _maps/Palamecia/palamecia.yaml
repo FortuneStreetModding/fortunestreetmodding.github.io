@@ -14,7 +14,9 @@ frbFile1: palamecia
 background: bg008alt
 mapIcon: palamecia
 music:
-  download: https://drive.google.com/u/0/uc?export=download&confirm=wNim&id=1pqCC7-PO2g8TA3RhJYRoDLPRyaKLuyOn
+  download: 
+    - https://nikkums.io/cswt/BGM/Palamecia.music.zip
+    - https://drive.google.com/u/0/uc?export=download&confirm=wNim&id=1pqCC7-PO2g8TA3RhJYRoDLPRyaKLuyOn
   map: fangs-theme.69
   stock: sazhtheme.50
   ventureCards: pulse-de-chocobo.50

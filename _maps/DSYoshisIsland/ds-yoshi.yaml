@@ -20,7 +20,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 music:
-  download: https://drive.google.com/u/2/uc?id=12dbehk_P0NDITKngk0iwnSomyumtpD_R&export=download
+  download: 
+    - https://nikkums.io/cswt/BGM/DSYoshi.music.zip
+    - https://drive.google.com/u/2/uc?id=12dbehk_P0NDITKngk0iwnSomyumtpD_R&export=download
   map: BGM_MAP_YOSHI_ISDS.60
   stock: BGM_STOCK_ISDS.60
   ventureCards: BGM_CHANCE_ISDS.65

@@ -14,7 +14,9 @@ frbFile1: DreamWorld
 background: bg107
 mapIcon: DreamWorld
 music:
-  download: https://drive.google.com/u/0/uc?id=1oM-3XrzuN18nQFOVf7SQQWdJvoaHiQ0E&export=download
+  download: 
+    - https://nikkums.io/cswt/BGM/DreamWorld.music.zip
+    - https://drive.google.com/u/0/uc?id=1oM-3XrzuN18nQFOVf7SQQWdJvoaHiQ0E&export=download
   map: BGM_MAP_DREAMWORLD_IS2R.60
   stock: BGM_STOCK_IS2.60
   ventureCards: BGM_CHANCECARD_IS2.58

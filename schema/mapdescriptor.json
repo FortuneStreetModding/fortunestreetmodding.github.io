@@ -36,7 +36,7 @@
         "districtNames": {
             "type": "array",
             "minItems": 2,
-            "maxItems": 11,
+            "maxItems": 12,
             "items": { "type": "string" }
         },
         "character": {

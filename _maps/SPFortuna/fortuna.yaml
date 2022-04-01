@@ -14,7 +14,9 @@ frbFile1: fortuna
 background: bg108
 mapIcon: fortuna
 music:
-  download: https://drive.google.com/u/2/uc?export=download&confirm=b3li&id=18NB2FhQrXOd4Yojwpsrl34UxE-1bWX9r
+  download: 
+    - https://nikkums.io/cswt/BGM/Fortuna.music.zip
+    - https://drive.google.com/u/2/uc?export=download&confirm=b3li&id=18NB2FhQrXOd4Yojwpsrl34UxE-1bWX9r
   map: BGM_MAP_FORTUNA_SPECIAL.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_SPECIAL.50

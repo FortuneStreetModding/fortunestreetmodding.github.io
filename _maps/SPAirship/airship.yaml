@@ -14,7 +14,9 @@ frbFile1: airship
 background: bg107
 mapIcon: airship
 music:
-  download: https://drive.google.com/u/2/uc?id=1JuQblPVV24D98eyjwabsLvt2VKAhvFV_&export=download&confirm=1
+  download: 
+    - https://nikkums.io/cswt/BGM/Airships.music.zip
+    - https://drive.google.com/u/2/uc?id=1JuQblPVV24D98eyjwabsLvt2VKAhvFV_&export=download&confirm=1
   map: BGM_MAP_AIRSHIP.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_SPECIAL.50

@@ -15,7 +15,9 @@ frbFile2: train1
 background: bg102
 mapIcon: train
 music:
-  download: https://drive.google.com/uc?export=download&id=1JBWCCgPuFG0dpEM2OYPAdSJISoKLwsrl
+  download: 
+    - https://nikkums.io/cswt/BGM/PhantomTrain.music.zip
+    - https://drive.google.com/uc?export=download&id=1JBWCCgPuFG0dpEM2OYPAdSJISoKLwsrl
   map: BGM_MAP_TRAIN.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_PORTABLE.50

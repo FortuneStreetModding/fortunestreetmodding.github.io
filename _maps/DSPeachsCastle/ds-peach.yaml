@@ -20,7 +20,9 @@ tourMode:
   opponent3: Bowser
   clearRank: 2
 music:
-  download: https://drive.google.com/u/2/uc?id=1vSeqRx5SDmiTyAZxD-LB-I2gx8kZOjIG&export=download
+  download: 
+    - https://nikkums.io/cswt/BGM/DSPeach.music.zip
+    - https://drive.google.com/u/2/uc?id=1vSeqRx5SDmiTyAZxD-LB-I2gx8kZOjIG&export=download
   map: BGM_MAP_PEACH_ISDS.55
   stock: BGM_STOCK_ISDS.60
   ventureCards: BGM_CHANCE_ISDS.65

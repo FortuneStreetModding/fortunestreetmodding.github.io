@@ -14,7 +14,9 @@ frbFile1: star
 background: bg108
 mapIcon: library
 music:
-  download: https://drive.google.com/uc?export=download&id=1BN5GS7jV1MgZAoGOSM20r33Sw1fKWciF
+  download: 
+    - https://nikkums.io/cswt/BGM/LibraryOfTheAncients.music.zip
+    - https://drive.google.com/uc?export=download&id=1BN5GS7jV1MgZAoGOSM20r33Sw1fKWciF
   map: BGM_MAP_LIBRARY_PS4.55
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_PORTABLE.50

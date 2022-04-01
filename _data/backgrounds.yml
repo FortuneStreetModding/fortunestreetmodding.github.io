@@ -75,7 +75,9 @@
   bgm:  BGM_MENU
 - background: facingWorlds
   name: Facing Worlds
-  download: https://drive.google.com/uc?export=download&id=1We6EIi8CQdo8AWlKQlx8Tj_pOeEvoCcA&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/facingWorlds.background.zip
+  - https://drive.google.com/uc?export=download&id=1h6ROoxPot52SMTyphCdULAYZQgpOztLD&confirm=1
   mapIcon: facingWorlds
   music:
     map: facingWorlds_map_forgoneRejuvenation.65
@@ -96,7 +98,9 @@
     bankruptcy:
 - background: forestFairies
   name: Forest of Fairies
-  download: https://drive.google.com/uc?export=download&id=102QW9aLpmv8n8GpL5DtHNoe4m_XTqYVx&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/forestFairies.background.zip
+  - https://drive.google.com/u/2/uc?id=1pK6s9JLeMcjzbtoQr-hKhcNAfD0DBmW7&export=download
   mapIcon: forestFairies
   music:
     map: forestFairies_map_background.65
@@ -105,7 +109,9 @@
     auction: forestFairies_map_auction.65
 - background: forsakenFortress
   name: Forsaken Fortress
-  download: https://drive.google.com/uc?export=download&id=1E2Dfi-bLaZkknSo412NKzrlucnJd7AgW&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/forsakenFortress.background.zip
+  - https://drive.google.com/u/2/uc?id=1bKPi9z2hTHNMLRE0XP7w6NejsSUD6GfU&export=download
   mapIcon: forsakenFortress
   music:
     map: forsakenFortress_map_background.65
@@ -114,7 +120,9 @@
     auction: forsakenFortress_map_auction.65
 - background: galaxyColosseum
   name: Galaxy Colosseum
-  download: https://drive.google.com/uc?export=download&id=1kLUmzkl7KXX4jo50YKioX4BujsVJMXzz&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/galaxyColosseum.background.zip
+  - https://drive.google.com/u/2/uc?id=1IuWB7xGkvvII9kbUym8ZJhjGPZ2ZX_zx&export=download
   mapIcon: galaxyColosseum
   music:
     map: galaxyColosseum_map_background.65
@@ -123,7 +131,9 @@
     auction: galaxyColosseum_map_auction.80
 - background: n64Skyscraper
   name: N64 Skyscraper
-  download: https://drive.google.com/uc?export=download&id=1T5DRhUjN8hqwRaNhJp1AuDXBLgO2bM90&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/n64Skyscraper.background.zip
+  - https://drive.google.com/u/2/uc?id=1DNhnbMigQmeE_a8LNtbA-eoIshkIMk3x&export=download
   mapIcon: n64Skyscraper
   music:
     map: n64Skyscraper_map_background.65
@@ -132,7 +142,9 @@
     auction: n64Skyscraper_map_auction.65
 - background: traverseTown
   name: Traverse Town
-  download: https://drive.google.com/uc?export=download&id=1Sg-3dNH4mmz52aN-FMDPumnRB1Zcvy6C&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/traverseTown.background.zip
+  - https://drive.google.com/u/2/uc?id=1tDxBWPAMtzW43BthDiarqyYRI26n_oaP&export=download
   mapIcon: traverseTown
   music:
     map: traverseTown_map_background.65
@@ -141,7 +153,9 @@
     auction: traverseTown_map_auction.80
 - background: battlecanyon
   name: Wario's Battle Canyon
-  download: https://drive.google.com/u/0/uc?id=1MdsYB8CZaeQ4zSmQcGcy4_kPC67ll9Jl&export=download&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/WariosBattleCanyon.background.zip
+  - https://drive.google.com/u/2/uc?id=15IXheGDX1jxbEELMvNV4IbURulP906yl&export=download
   mapIcon: battlecanyon
   music:
     map: BGM_MAP_BATTLECANYON.65
@@ -162,18 +176,24 @@
     bankruptcy: MP1_WinMinigame5.60
 - background: quietstreet
   name: Quiet Street
-  download: https://drive.google.com/u/0/uc?id=1yRtD5d5KuuGIhl7MwT1SHy9OzhRSaNtN&export=download&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/QuietStreet.background.zip
+  - https://drive.google.com/u/2/uc?id=1n5YKwUD8uWj3TMJAke11crSHxkq3T28A&export=download&confirm=1
   mapIcon: qs_btd6_0
   music:
     map: jazztheme.100
     targetMet: primalone.100
 - background: bg009alt
   name: bg009alt
-  download: https://drive.google.com/u/0/uc?id=18Y1tnCobzm6x2WFvgt84_bjeHTmhm5cl&export=download&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/bg009alt.background.zip
+  - https://drive.google.com/u/2/uc?id=1rJRiPMNp7Nk3FHzBeVtIv8tbMoGDcNFr&export=download
   mapIcon: bg009alt
 - background: jungleadventure
   name: DK's Jungle Adventure
-  download: https://drive.google.com/u/0/uc?id=1gFqoM21TBLmoPadEcVvTRaEqbQyb-1xB&export=download&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/DKsJungleAdventure.background.zip
+  - https://drive.google.com/u/2/uc?id=1N6gtUF0ilZiv3FfIqokvVJujjxW0qVDi&export=download
   mapIcon: dksjungle
   music:
     map: DKsJungleAdventure.60
@@ -194,11 +214,15 @@
     bankruptcy: MP1_WinMinigame5.60
 - background: bg008alt
   name: bg008alt
-  download: https://drive.google.com/u/0/uc?id=1jEsWld-iTOlQli7BIo75gN8zyconEAYd&export=download&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/bg008alt.background.zip
+  - https://drive.google.com/u/2/uc?id=1Tr0ok1fcTgCiZETf49RzYIUOB0VxdEwa&export=download
   mapIcon: bg008alt
 - background: bg001_clean
   name: bg001_clean
-  download: https://drive.google.com/u/0/uc?id=1e_R2oUtDQY8i00HiA3AzDUqwNfMLNGKD&export=download&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/bg001_clean.background.zip
+  - https://drive.google.com/u/2/uc?id=1V5OfLjwQhK2icUhkNwIPBWpn_WDkXukN&export=download
   mapIcon: bg001
   music:
     map: 20_BGM_MAP_YOSHI

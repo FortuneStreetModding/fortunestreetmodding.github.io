@@ -1,6 +1,6 @@
 {
     "yaml.schemas": {
-        "https://raw.githubusercontent.com/FortuneStreetModding/fortunestreetmodding.github.io/master/schema/mapdescriptor.json": ["/*.yaml"],
+        "https://raw.githubusercontent.com/FortuneStreetModding/fortunestreetmodding.github.io/master/schema/mapdescriptor.json": ["/_maps/**/*.yaml"],
     },
     "cmake.configureOnOpen": false
 }

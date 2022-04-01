@@ -14,7 +14,9 @@ frbFile1: 2-02-lakemt
 background: bg001_clean
 mapIcon: lakemt
 music:
-  download: https://drive.google.com/u/0/uc?export=download&confirm=cO8f&id=1vC3PUwsdmG278b-RNtt_k8-mvhdHb5zX
+  download: 
+    - https://nikkums.io/cswt/BGM/LakeMountain.music.zip
+    - https://drive.google.com/u/0/uc?export=download&confirm=cO8f&id=1vC3PUwsdmG278b-RNtt_k8-mvhdHb5zX
   map: BGM_MAP_LAKEMT.IS2R.60
   stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60

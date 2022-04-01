@@ -23,7 +23,9 @@ tourMode:
   opponent3: Bowser
   clearRank: 1
 music: 
-  download: https://drive.google.com/u/2/uc?id=1i2WUw344_JMOEXxBsAliK8lpVTq8UulF&export=download
+  download: 
+    - https://nikkums.io/cswt/BGM/MonsterHouse.music.zip
+    - https://drive.google.com/u/2/uc?id=1i2WUw344_JMOEXxBsAliK8lpVTq8UulF&export=download
   map: BGM_MAP_MONSTER.60
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70
