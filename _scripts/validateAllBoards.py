@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 import sys
-from typing import List
-MIN_PYTHON = (3, 9)
-if sys.version_info < MIN_PYTHON:
-    sys.exit("Python %s.%s or later is required.\n" % MIN_PYTHON)
 
 from subprocess import check_output
 from pathlib import Path
@@ -15,6 +11,8 @@ import jsonschema
 import colorama
 import struct
 import requests
+import argparse
+
 
 def inplace_change(file, attribute, value):
     with open(file,'r',encoding="utf8") as f:
@@ -57,9 +55,17 @@ def get_filesize(url : str):
 def main(argv : list):
     colorama.init()
 
-    autorepair = True
-    updateCommitDates = False
-    validateFileSizeOfMirrors = True
+    parser = argparse.ArgumentParser(description='Validate all boards.')
+    parser.add_argument('--skip-autorepair', action='store_true', help='Whether the script should try to automatically repair found issues where applicable.')
+    parser.add_argument('--skip-update-dates', action='store_true', help='Update the Upload-date and Last-Update-Date of maps.')
+    parser.add_argument('--skip-mirror-validation', action='store_true', help='Whether the script should validate the file sizes of mirrors.')
+    parser.add_argument('--skip-download-validation', action='store_true', help='Whether the script should validate the file sizes of mirrors.')
+    args = parser.parse_args(argv)
+
+    autorepair = not args.skip_autorepair
+    update_dates = not args.skip_update_dates
+    mirror_validation = not args.skip_mirror_validation
+    download_validation = not args.skip_download_validation
 
     with open("../schema/mapdescriptor.json", "r", encoding='utf8') as stream:
         yamlSchema = yaml.safe_load(stream)
@@ -156,7 +162,7 @@ def main(argv : list):
                 errorCount += len(strErrors)
             else:
                 cprint(f'OK.', 'green')
-        if yamlContent and "music" in yamlContent and "download" in yamlContent["music"]:
+        if download_validation and yamlContent and "music" in yamlContent and "download" in yamlContent["music"]:
             strErrors = []
             print(f'{" ":24} Download URL Check...', end = '')
             mirrors = []
@@ -168,7 +174,7 @@ def main(argv : list):
                 strErrors.append("The first download link must start with https://nikkums.io/cswt/")
             if len(mirrors) < 2:
                 strErrors.append("There should be at least 2 music download mirrors defined for each board")
-            if validateFileSizeOfMirrors and len(mirrors) > 1:
+            if mirror_validation and len(mirrors) > 1:
                 mirrorFileSizeDict = {}
                 fileSizeError = False
                 for mirror in mirrors:
@@ -189,7 +195,7 @@ def main(argv : list):
                 cprint(f'OK.', 'green')
 
                 
-        if updateCommitDates:
+        if update_dates:
             # get upload date
             commitDatesOut = check_output(['git', 'log', '--follow', '--format=%aD', yamlMap.as_posix()], encoding="utf8")
             commitDatesStrList = commitDatesOut.strip().splitlines()
