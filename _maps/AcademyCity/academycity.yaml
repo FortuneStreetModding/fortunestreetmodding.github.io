@@ -5,7 +5,7 @@ desc:
   en: Academy City from A Certain Magical Index, home of 2.3 million espers. Will you fall victim to the city's dark side, or rise to the ranks of those who control the city?
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2261
+initialCash: 2911
 targetAmount: 24666
 baseSalary: 300
 salaryIncrement: 150
@@ -55,6 +55,12 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    added:
+      - More spaces spaces on outer wall
+    changed:
+      - Replaced bottom take-a-break square with boon square
+      - Changed initial cash from from 2261 to 2911.
   - version: 1
     added: 
       - Initial Release

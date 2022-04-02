@@ -55,6 +55,10 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed boon square on Miyashita Park to Change-of-suit square
+      - Increased property values of Miyashita Park
   - version: 1
     added: 
       - Initial Release
