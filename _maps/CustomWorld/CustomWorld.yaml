@@ -7,6 +7,9 @@ changelog:
   - version: 1
     added: 
       - Initial Release
+  - version: 2
+    added:
+      - Changed a district name to Mask1n
 authors:
   - name: Landmaster
 ruleSet: Standard
@@ -35,7 +38,7 @@ districtNames:
   - Landmaster
   - Pr. Peachy
   - Sophi
-  - Tyler
+  - Mask1n
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
