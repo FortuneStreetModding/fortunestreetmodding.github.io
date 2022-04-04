@@ -4,12 +4,12 @@ name:
 desc:
   en: A legendary archipelago in the realm of dreams where the spirits of Nikkums and co. reside when they sleep.
 changelog:
-  - version: 1
-    added: 
-      - Initial Release
   - version: 2
     added:
       - Changed a district name to Mask1n
+  - version: 1
+    added: 
+      - Initial Release
 authors:
   - name: Landmaster
 ruleSet: Standard
