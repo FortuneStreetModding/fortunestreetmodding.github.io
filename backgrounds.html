@@ -30,8 +30,8 @@ layout: default
             </ul>
             {%- if backgroundEntry.download -%}
             <div class="card-footer">
-              {% if background.download.first -%}
-                {% for download in background.download -%}
+              {% if backgroundEntry.download.first -%}
+                {% for download in backgroundEntry.download -%}
                   <a href="{{ download }}" class="btn btn-primary">{{ download | remove:'https://' | remove:'http://' | split:'/' | first }}</a>
                 {% endfor -%}
               {% else -%}
