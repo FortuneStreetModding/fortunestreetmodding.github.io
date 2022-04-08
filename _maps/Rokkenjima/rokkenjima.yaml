@@ -9,7 +9,7 @@ initialCash: 3500
 targetAmount: 24000
 baseSalary: 300
 salaryIncrement: 250
-maxDiceRoll: 9
+maxDiceRoll: 7
 frbFile1: rokkenjima0
 frbFile2: rokkenjima1
 frbFile3: rokkenjima2
@@ -58,7 +58,6 @@ changelog:
   - version: 2
     changed:
       - Inital cash changed from 3000 to 3500
-      - Maximum dice roll changed from 7 to 9
   - version: 1
     added: 
       - Initial Release
