@@ -40,6 +40,9 @@ ui_menu_*.png
 *.zip
 *.7z
 
+### Map Background and Music Download Metainformation ###
+*.cfg
+
 # Map Icons which are defined in backgrounds.yml
 facingWorlds.png
 forestFairies.png
