@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: moonlight
-background: bg104
+background: bg008alt
 mapIcon: moonlight
 music:
   download: 
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to the new bg008alt
   - version: 1
     added: 
       - Initial Release

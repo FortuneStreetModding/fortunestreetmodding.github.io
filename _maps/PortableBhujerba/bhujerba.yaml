@@ -14,7 +14,7 @@ frbFile1: bhujerba
 frbFile2: bhujerba
 frbFile3: bhujerba
 frbFile4: bhujerba
-background: bg104
+background: bg009alt
 mapIcon: bhujerba
 music:
   download: 
@@ -44,6 +44,9 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 changelog:
+  - version: 2
+    changed:
+      - Changed background to the new bg009alt
   - version: 1
     added: 
       - Initial Release

@@ -14,7 +14,7 @@ frbFile1: SpaceCafe0
 frbFile2: SpaceCafe1
 frbFile3: SpaceCafe2
 frbFile4: SpaceCafe3
-background: bg104
+background: bg009alt
 mapIcon: spacecafe
 music:
   download: 
@@ -44,6 +44,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to the new bg009alt
   - version: 1
     added: 
       - Initial Release

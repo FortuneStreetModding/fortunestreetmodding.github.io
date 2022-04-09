@@ -12,7 +12,7 @@ salaryIncrement: 200
 maxDiceRoll: 8
 frbFile1: smart-zodiac
 frbFile2: smart-zodiac
-background: bg104
+background: bg009alt
 mapIcon: zodiac
 music: 
   download: 
@@ -170,6 +170,10 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    changed:
+      - Changed background to the new bg009alt
+      - Changed layout of spaces to be consistent with original game. All pathing and values are unchanged
   - version: 2
     changed:
       - Replaced card 77 with 79.

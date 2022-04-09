@@ -12,7 +12,7 @@ salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: SPWorldTree0
 frbFile2: SPWorldTree1
-background: bg104
+background: bg008alt
 mapIcon: spworldtree
 music:
   download: 
@@ -42,6 +42,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to the new bg008alt
   - version: 1
     added: 
       - Initial Release
