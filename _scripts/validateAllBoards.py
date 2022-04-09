@@ -5,6 +5,7 @@ from subprocess import check_output
 from pathlib import Path
 from termcolor import cprint, colored
 from datetime import datetime
+from dataclasses import dataclass
 
 import yaml
 import jsonschema
@@ -12,7 +13,6 @@ import colorama
 import struct
 import requests
 import argparse
-
 
 def inplace_change(file, attribute, value):
     with open(file,'r',encoding="utf8") as f:
@@ -24,7 +24,13 @@ def inplace_change(file, attribute, value):
             else:
                 f.write(line)
 
-def get_filesize(url : str):   
+@dataclass
+class FileMetadata:
+    file_size : int
+    last_modified : datetime
+
+
+def get_file_metadata(url : str) -> FileMetadata:
     headers = {
         "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"  # NOQA
     }
@@ -34,7 +40,7 @@ def get_filesize(url : str):
         if 'drive.google.com' in url:
             headers["Accept"] = "application/json"
             fileId = url.split("id=")[1].split("&")[0]
-            res = sess.get(f'https://www.googleapis.com/drive/v3/files/{fileId}?alt=json&fields=size&key=AIzaSyDQB22BQtznFe85nOyok2U9qO5HSr3Z5u4')
+            res = sess.get(f'https://www.googleapis.com/drive/v3/files/{fileId}?alt=json&fields=size,modifiedTime&key=AIzaSyDQB22BQtznFe85nOyok2U9qO5HSr3Z5u4')
             data = res.json()
             if 'error' in data:
                 cprint('google drive error', 'red')
@@ -42,10 +48,18 @@ def get_filesize(url : str):
                     print(data['error']['message'])
             else:
                 size = int(data["size"])
+                lastModifiedStr = data["modifiedTime"]
+                # 2022-01-06T14:11:48.000Z
+                lastModifiedDate = datetime.strptime(lastModifiedStr, '%Y-%m-%dT%H:%M:%S.%fZ')
+                return FileMetadata(size, lastModifiedDate)
         else:
             res = sess.head(url, headers=headers, stream=True, verify=True, allow_redirects=True)
             size = int(res.headers.get("Content-Length", 0))
-        return size
+            lastModifiedStr = res.headers.get("Last-Modified", 0)
+            # Thu, 17 Mar 2022 12:28:08 GMT
+            lastModifiedDate = datetime.strptime(lastModifiedStr, '%a, %d %b %Y %H:%M:%S %Z')
+            return FileMetadata(size, lastModifiedDate)
+        return None
     except IOError as e:
         print(e, file=sys.stderr)
         return
@@ -178,10 +192,15 @@ def main(argv : list):
                 mirrorFileSizeDict = {}
                 fileSizeError = False
                 for mirror in mirrors:
-                    fileSize = get_filesize(mirror)
-                    mirrorFileSizeDict[mirror] = fileSize
-                    if mirror != mirrors[0] and mirrorFileSizeDict[mirrors[0]] != fileSize:
+                    fileMetadata = get_file_metadata(mirror)
+                    if fileMetadata:
+                        fileSize = fileMetadata.file_size
+                        mirrorFileSizeDict[mirror] = fileSize
+                        if mirror != mirrors[0] and mirrorFileSizeDict[mirrors[0]] != fileSize:
+                            fileSizeError = True
+                    else:
                         fileSizeError = True
+
                 if fileSizeError:
                     mirrorFileSizeDictStr = ""
                     for key,value in mirrorFileSizeDict.items():
