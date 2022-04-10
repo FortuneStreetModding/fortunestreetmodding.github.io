@@ -12,6 +12,7 @@ salaryIncrement: 175
 maxDiceRoll: 6
 frbFile1: dx_unatco3
 background: bg007
+mapIcon: unatco
 music:
   download: 
     - https://nikkums.io/cswt/BGM/unatco.music.zip
