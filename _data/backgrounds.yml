@@ -226,6 +226,15 @@
   mapIcon: bg001
   music:
     map: 20_BGM_MAP_YOSHI
+- background: quad
+  name: Quad
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/Quad.background.zip
+  - https://drive.google.com/uc?id=1RSQ6XJAGG8U43QpyQoTUaNguKKHq_6K6&export=download&confirm=1
+  mapIcon: quad_btd6
+  music:
+    map: winternights.100
+    targetMet: primalone.100
 - background: rokkenjima
   name: Rokkenjima
   download: 
