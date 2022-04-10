@@ -11,10 +11,12 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: moonlight
-background: bg104
+background: bg008alt
 mapIcon: moonlight
 music:
-  download: https://drive.google.com/u/2/uc?id=1VkDycVHvfMgCxjOs6hdgGyjGVSIqEno-&export=download
+  download: 
+    - https://nikkums.io/cswt/BGM/MoonlightCruise.music.zip
+    - https://drive.google.com/u/2/uc?id=1VkDycVHvfMgCxjOs6hdgGyjGVSIqEno-&export=download
   map: BGM_MAP_MOONLIGHT.65
   stock: BGM_STOCK_IS3.65
   ventureCards: BGM_VENTURE_IS3.65
@@ -39,6 +41,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to the new bg008alt
   - version: 1
     added: 
       - Initial Release

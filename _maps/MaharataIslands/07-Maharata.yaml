@@ -14,7 +14,9 @@ frbFile1: maharata
 background: bg105
 mapIcon: maharata
 music:
-  download: https://drive.google.com/uc?export=download&id=1SbqK_tBlqNTs55Iy3PeoHUnhaicc9KCT
+  download: 
+    - https://nikkums.io/cswt/BGM/MaharataIslands.music.zip
+    - https://drive.google.com/uc?export=download&id=1SbqK_tBlqNTs55Iy3PeoHUnhaicc9KCT
   map: BGM_MAP_MAHARATA.50
   stock: BGM_STOCK_IS1.55
   ventureCards: BGM_CHANCECARD_IS1.60

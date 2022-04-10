@@ -14,7 +14,9 @@ frbFile1: alltradesp
 background: bg108
 mapIcon: alltradesp
 music:
-  download: https://drive.google.com/u/2/uc?id=1zzvhvCJMwv3_Sftppvy-uo_q_HMEnasK&export=download
+  download: 
+    - https://nikkums.io/cswt/BGM/AlltradesPortable.music.zip
+    - https://drive.google.com/u/2/uc?id=1zzvhvCJMwv3_Sftppvy-uo_q_HMEnasK&export=download
   map: BGM_MAP_DHARMA_PORTABLE.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_PORTABLE.50

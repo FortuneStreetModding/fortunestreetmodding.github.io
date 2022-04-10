@@ -14,10 +14,12 @@ frbFile1: SpaceCafe0
 frbFile2: SpaceCafe1
 frbFile3: SpaceCafe2
 frbFile4: SpaceCafe3
-background: bg104
+background: bg009alt
 mapIcon: spacecafe
 music:
-  download: https://drive.google.com/u/2/uc?id=10SCn7wS6u-DfBlpajRSINRcAuVxd1fJa&export=download
+  download: 
+    - https://nikkums.io/cswt/BGM/SpaceCafe.music.zip
+    - https://drive.google.com/u/2/uc?id=10SCn7wS6u-DfBlpajRSINRcAuVxd1fJa&export=download
   map: BGM_MAP_SPACECAFE_IS3.75
   stock: BGM_STOCK_IS3.65
   ventureCards: BGM_VENTURE_IS3.65
@@ -42,6 +44,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to the new bg009alt
   - version: 1
     added: 
       - Initial Release

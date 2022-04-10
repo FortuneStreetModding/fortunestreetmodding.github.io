@@ -14,10 +14,12 @@ frbFile1: bhujerba
 frbFile2: bhujerba
 frbFile3: bhujerba
 frbFile4: bhujerba
-background: bg104
+background: bg009alt
 mapIcon: bhujerba
 music:
-  download: https://drive.google.com/u/2/uc?id=1XmiJyubxnOL3QAbuKnqGozie7E4ozvVg&export=download&confirm=1
+  download: 
+    - https://nikkums.io/cswt/BGM/Bhujerba.music.zip
+    - https://drive.google.com/u/2/uc?id=1XmiJyubxnOL3QAbuKnqGozie7E4ozvVg&export=download&confirm=1
   map: BGM_MAP_BHUJERBA.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_PORTABLE.50
@@ -42,6 +44,9 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 changelog:
+  - version: 2
+    changed:
+      - Changed background to the new bg009alt
   - version: 1
     added: 
       - Initial Release

@@ -17,7 +17,9 @@ frbFile4: aegis3
 background: bg009alt
 mapIcon: aegis
 music:
-  download: https://drive.google.com/u/0/uc?export=download&confirm=rfLL&id=1TMhOA-dgipBpaJRz3MZdf5eKHzIyIhVp
+  download: 
+    - https://nikkums.io/cswt/BGM/AegisRim.music.zip
+    - https://drive.google.com/u/0/uc?export=download&confirm=rfLL&id=1TMhOA-dgipBpaJRz3MZdf5eKHzIyIhVp
   map: isoleucine.50
   stock: voyagetotomorrow.55
   ventureCards: doldrums.85

@@ -10,11 +10,13 @@ targetAmount: 25000
 baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
-frbFile1: kanto
+frbFile1: Kanto
 background: bg107
-mapIcon: kanto
+mapIcon: Kanto
 music:
-  download: https://drive.google.com/u/0/uc?id=1u-mG-JIxlYrgI7LmVMnm0IjEcMhJutqd&export=download
+  download: 
+    - https://nikkums.io/cswt/BGM/Kanto.music.zip
+    - https://drive.google.com/u/0/uc?id=1u-mG-JIxlYrgI7LmVMnm0IjEcMhJutqd&export=download
   map: BGM_MAP_KANTO.55
 tourMode:
   bankruptcyLimit: 1

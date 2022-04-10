@@ -1,19 +1,18 @@
 #!/usr/bin/env python
 import sys
-from typing import List
-MIN_PYTHON = (3, 9)
-if sys.version_info < MIN_PYTHON:
-    sys.exit("Python %s.%s or later is required.\n" % MIN_PYTHON)
 
 from subprocess import check_output
 from pathlib import Path
 from termcolor import cprint, colored
 from datetime import datetime
+from dataclasses import dataclass
 
 import yaml
 import jsonschema
 import colorama
 import struct
+import requests
+import argparse
 
 def inplace_change(file, attribute, value):
     with open(file,'r',encoding="utf8") as f:
@@ -25,10 +24,62 @@ def inplace_change(file, attribute, value):
             else:
                 f.write(line)
 
+@dataclass
+class FileMetadata:
+    file_size : int
+    last_modified : datetime
+
+
+def get_file_metadata(url : str) -> FileMetadata:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"  # NOQA
+    }
+    try:
+        sess = requests.session()
+        size = -1
+        if 'drive.google.com' in url:
+            headers["Accept"] = "application/json"
+            fileId = url.split("id=")[1].split("&")[0]
+            res = sess.get(f'https://www.googleapis.com/drive/v3/files/{fileId}?alt=json&fields=size,modifiedTime&key=AIzaSyDQB22BQtznFe85nOyok2U9qO5HSr3Z5u4')
+            data = res.json()
+            if 'error' in data:
+                cprint('google drive error', 'red')
+                if 'message' in data['error']:
+                    print(data['error']['message'])
+            else:
+                size = int(data["size"])
+                lastModifiedStr = data["modifiedTime"]
+                # 2022-01-06T14:11:48.000Z
+                lastModifiedDate = datetime.strptime(lastModifiedStr, '%Y-%m-%dT%H:%M:%S.%fZ')
+                return FileMetadata(size, lastModifiedDate)
+        else:
+            res = sess.head(url, headers=headers, stream=True, verify=True, allow_redirects=True)
+            size = int(res.headers.get("Content-Length", 0))
+            lastModifiedStr = res.headers.get("Last-Modified", 0)
+            # Thu, 17 Mar 2022 12:28:08 GMT
+            lastModifiedDate = datetime.strptime(lastModifiedStr, '%a, %d %b %Y %H:%M:%S %Z')
+            return FileMetadata(size, lastModifiedDate)
+        return None
+    except IOError as e:
+        print(e, file=sys.stderr)
+        return
+    finally:
+        sess.close()
+
 def main(argv : list):
     colorama.init()
-    autorepair = True
-    updateCommitDates = False
+
+    parser = argparse.ArgumentParser(description='Validate all boards.')
+    parser.add_argument('--skip-autorepair', action='store_true', help='Whether the script should try to automatically repair found issues where applicable.')
+    parser.add_argument('--skip-update-dates', action='store_true', help='Update the Upload-date and Last-Update-Date of maps.')
+    parser.add_argument('--skip-mirror-validation', action='store_true', help='Whether the script should validate the file sizes of mirrors.')
+    parser.add_argument('--skip-download-validation', action='store_true', help='Whether the script should validate the file sizes of mirrors.')
+    args = parser.parse_args(argv)
+
+    autorepair = not args.skip_autorepair
+    update_dates = not args.skip_update_dates
+    mirror_validation = not args.skip_mirror_validation
+    download_validation = not args.skip_download_validation
 
     with open("../schema/mapdescriptor.json", "r", encoding='utf8') as stream:
         yamlSchema = yaml.safe_load(stream)
@@ -124,9 +175,46 @@ def main(argv : list):
                 print("\n".join(strErrors))
                 errorCount += len(strErrors)
             else:
-                cprint(f'OK:', 'green')
+                cprint(f'OK.', 'green')
+        if download_validation and yamlContent and "music" in yamlContent and "download" in yamlContent["music"]:
+            strErrors = []
+            print(f'{" ":24} Download URL Check...', end = '')
+            mirrors = []
+            if type(yamlContent["music"]["download"]) == str:
+                mirrors.append(yamlContent["music"]["download"])
+            else:
+                mirrors = yamlContent["music"]["download"]
+            if not mirrors[0].startswith("https://nikkums.io/cswt/"):
+                strErrors.append("The first download link must start with https://nikkums.io/cswt/")
+            if len(mirrors) < 2:
+                strErrors.append("There should be at least 2 music download mirrors defined for each board")
+            if mirror_validation and len(mirrors) > 1:
+                mirrorFileSizeDict = {}
+                fileSizeError = False
+                for mirror in mirrors:
+                    fileMetadata = get_file_metadata(mirror)
+                    if fileMetadata:
+                        fileSize = fileMetadata.file_size
+                        mirrorFileSizeDict[mirror] = fileSize
+                        if mirror != mirrors[0] and mirrorFileSizeDict[mirrors[0]] != fileSize:
+                            fileSizeError = True
+                    else:
+                        fileSizeError = True
 
-        if updateCommitDates:
+                if fileSizeError:
+                    mirrorFileSizeDictStr = ""
+                    for key,value in mirrorFileSizeDict.items():
+                        mirrorFileSizeDictStr += f'{key}: {str(value)}\n'
+                    strErrors.append(f'The download size of the mirrors do not match:\n{mirrorFileSizeDictStr}')
+            if len(strErrors) > 0:
+                cprint(f'ERROR:', 'red')
+                print("\n".join(strErrors))
+                errorCount += len(strErrors)
+            else:
+                cprint(f'OK.', 'green')
+
+                
+        if update_dates:
             # get upload date
             commitDatesOut = check_output(['git', 'log', '--follow', '--format=%aD', yamlMap.as_posix()], encoding="utf8")
             commitDatesStrList = commitDatesOut.strip().splitlines()
@@ -141,6 +229,8 @@ def main(argv : list):
             print(f'{" ":24} Last Update Date: {lastUpdateDate.date().isoformat()}')
         print()
 
+
+
     print("Board Validation complete")
     if errorCount == 0:
         cprint(f'No issues found', "green")
@@ -151,6 +241,7 @@ def main(argv : list):
                 print(f'{colored(str(fixedCount), "green")} issue(s) auto-repaired. Remaining issue(s): {colored(str(errorCount - fixedCount), "red")}')
             else:
                 cprint(f'All {str(fixedCount)} issues were auto-repaired!', 'green')
+        exit(1)
         
             
 if __name__ == "__main__":

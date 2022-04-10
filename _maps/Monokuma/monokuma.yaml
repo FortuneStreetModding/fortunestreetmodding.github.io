@@ -14,7 +14,9 @@ frbFile1: monokuma
 background: bg009alt
 mapIcon: monokuma
 music:
-  download: https://drive.google.com/u/0/uc?export=download&confirm=6c2O&id=1ZWy8Mb6Z_zNUV1K8XE5biU5wJj91-t-g
+  download: 
+    - https://nikkums.io/cswt/BGM/Monokuma.music.zip
+    - https://drive.google.com/u/0/uc?export=download&confirm=6c2O&id=1ZWy8Mb6Z_zNUV1K8XE5biU5wJj91-t-g
   map: box15.50
   stock: trialunderground.50
   ventureCards: monokumaslesson.50

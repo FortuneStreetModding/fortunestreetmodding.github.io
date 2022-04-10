@@ -14,7 +14,9 @@ frbFile1: mobile-schoolC
 background: bg004
 mapIcon: school
 music: 
-  download: https://drive.google.com/u/2/uc?id=1C8C4IfjL1svERxfpzGCIWsUEzTpcGsCI&export=download&confirm=1
+  download: 
+    - https://nikkums.io/cswt/BGM/School.music.zip
+    - https://drive.google.com/u/2/uc?id=1C8C4IfjL1svERxfpzGCIWsUEzTpcGsCI&export=download&confirm=1
   map: BGM_MAP_SCHOOL.60
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70

@@ -17,10 +17,12 @@ salaryIncrement: 350
 maxDiceRoll: 9
 frbFile1: skullboard0
 frbFile2: skullboard1
-background: bg104
+background: bg008alt
 mapIcon: skull
 music:
-  download: https://drive.google.com/uc?export=download&id=1QTt0Asy7oh5tnPKBAjmPJnWKabjo7LHw
+  download: 
+    - https://nikkums.io/cswt/BGM/Skullboard.music.zip
+    - https://drive.google.com/uc?export=download&id=1QTt0Asy7oh5tnPKBAjmPJnWKabjo7LHw
   map: BGM_MAP_SKULLBOARD
   stock: KH_BGM_STOCK
   ventureCards: KH_BGM_CASINO_SLOT
@@ -34,6 +36,9 @@ tourMode:
   opponent3: Princessa
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Changed background to the new bg008alt
   - version: 3
     added:
       - 2 new venture cards to make 64 total

@@ -20,7 +20,9 @@ tourMode:
   opponent3: Jessica
   clearRank: 2
 music:
-  download: https://drive.google.com/u/2/uc?id=1xiPa2C_EIjQ89ZjUMT_XA0Y3nD8ZGq44&export=download
+  download: 
+    - https://nikkums.io/cswt/BGM/DSRobbin.music.zip
+    - https://drive.google.com/u/2/uc?id=1xiPa2C_EIjQ89ZjUMT_XA0Y3nD8ZGq44&export=download
   map: BGM_MAP_KANDATA_ISDS.60
   stock: BGM_STOCK_ISDS.60
   ventureCards: BGM_CHANCE_ISDS.65

@@ -20,7 +20,9 @@ tourMode:
   opponent3: Waluigi
   clearRank: 2
 music: 
-  download: https://drive.google.com/uc?export=download&id=1Djix7YPZOXEvVVl49ePfewneemxJEtUN
+  download: 
+    - https://nikkums.io/cswt/BGM/DungeonLobby.music.zip
+    - https://drive.google.com/uc?export=download&id=1Djix7YPZOXEvVVl49ePfewneemxJEtUN
   map: mabinogi-dungeon
   targetMet: claimh-solas
 ventureCards:

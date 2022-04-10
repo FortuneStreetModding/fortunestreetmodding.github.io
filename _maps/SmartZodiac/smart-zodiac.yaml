@@ -12,10 +12,12 @@ salaryIncrement: 200
 maxDiceRoll: 8
 frbFile1: smart-zodiac
 frbFile2: smart-zodiac
-background: bg104
+background: bg009alt
 mapIcon: zodiac
 music: 
-  download: https://drive.google.com/u/2/uc?id=12iu-GCW1oMjAJ0deemtZIWOyB8mCPJtX&export=download
+  download: 
+    - https://nikkums.io/cswt/BGM/Zodiac.music.zip
+    - https://drive.google.com/u/2/uc?id=12iu-GCW1oMjAJ0deemtZIWOyB8mCPJtX&export=download
   map: BGM_MAP_ZODIAC.90
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70
@@ -168,6 +170,10 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    changed:
+      - Changed background to the new bg009alt
+      - Changed layout of spaces to be consistent with original game. All pathing and values are unchanged
   - version: 2
     changed:
       - Replaced card 77 with 79.
@@ -182,5 +188,4 @@ notes: |
   - This map was originally from Fortune Street Smart.
   - The venture card set has been taken from Mt. Magmageddon.
   - This map has 12 built-in vacant lots, so playing on the "None" setting for vacant lots is recommended.
-  - In the original game, Zodiac made use of spaceships that function identically to Magmalices from Mt. Magmageddon. However, changing Magmalices' locations in Wii is fickle, and can cause game crashes. Because of this, the visual design of this board has been changed, such that I could functionally recreate this board while not changing the locations of the Magmalices from where they are normally located in Mt. Magmageddon. As such, the visual design is not the same as the original Zodiac, but it plays identically.
 ...

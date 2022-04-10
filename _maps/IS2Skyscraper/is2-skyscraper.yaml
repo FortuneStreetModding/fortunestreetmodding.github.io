@@ -14,7 +14,9 @@ frbFile1: is2-skyscraper
 background: bg009alt
 mapIcon: skyscraper
 music:
-  download: https://drive.google.com/u/0/uc?export=download&confirm=RHBs&id=1mdpnqqsMKmCbyi9QcAJcl7H_sbsDgYUy
+  download: 
+    - https://nikkums.io/cswt/BGM/Skyscraper.music.zip
+    - https://drive.google.com/u/0/uc?export=download&confirm=RHBs&id=1mdpnqqsMKmCbyi9QcAJcl7H_sbsDgYUy
   map: BGM_MAP_SKYSCRAPER_IS2R.60
   stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60

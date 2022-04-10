@@ -14,7 +14,9 @@ frbFile1: alefgardSP
 background: bg107
 mapIcon: alefgardSP
 music:
-  download: https://drive.google.com/u/2/uc?export=download&confirm=UoXN&id=1wvNwr-ZplxJvtdCvOcn5uAy59Eb0znR7
+  download: 
+    - https://nikkums.io/cswt/BGM/Alefgard.music.zip
+    - https://drive.google.com/u/2/uc?export=download&confirm=UoXN&id=1wvNwr-ZplxJvtdCvOcn5uAy59Eb0znR7
   map: BGM_MAP_ALEFGARD_SPECIAL.60
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_SPECIAL.50
