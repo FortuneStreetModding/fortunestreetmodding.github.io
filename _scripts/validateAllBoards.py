@@ -130,8 +130,6 @@ def main(argv : list):
                     inplace_change(yamlMap, "initialCash", initialCash)
                     strErrors.append(fixedMsg.format(frbValue=initialCash, yamlValue=yamlContent["initialCash"], attribute="initialCash"))
                     fixedCount += 1
-            if targetAmount != yamlContent["targetAmount"]:
-                strErrors.append(errorMsg.format(frbValue=targetAmount, yamlValue=yamlContent["targetAmount"], attribute="targetAmount"))
             if baseSalary != yamlContent["baseSalary"]:
                 strErrors.append(errorMsg.format(frbValue=baseSalary, yamlValue=yamlContent["baseSalary"], attribute="baseSalary"))
                 if autorepair:
