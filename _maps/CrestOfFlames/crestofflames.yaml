@@ -3,17 +3,16 @@ name:
   en: Crest of Flames
   jp: 炎の紋章
 desc:
-  en: The Crest of the Goddess who governs the world of Fódlan. Beware of the changing paths at junctions after landing on a switch space.
-  jp: フォドラを司る女神の紋章。 スイッチマス発動後は、 分岐点でのルートが変更されます。 ご注意ください。
+  en: The Crest of the Goddess who governs the world of Fódlan. A long and perilous journey to collect the four suits awaits - beware of being sent off course by backstreet and warp spaces, and make sure to buy stocks wisely whenever you visit the banks.
+  jp: フォドラを司る女神の紋章。
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000
 targetAmount: 30000
-baseSalary: 500
-salaryIncrement: 400
+baseSalary: 400
+salaryIncrement: 500
 maxDiceRoll: 7
-frbFile1: crestofflames0
-frbFile2: crestofflames1
+frbFile1: crestofflames
 background: bg106
 mapIcon: crestofflames
 tourMode:
@@ -24,9 +23,7 @@ tourMode:
   opponent3: Angelo
   clearRank: 1
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/CrestOfFlames.music.zip
-    - https://drive.google.com/uc?export=download&confirm=1&id=1n9PL-W9g1hrUHXW3vaTGHiUD9sVh8KHI&confirm=1
+  download: https://drive.google.com/uc?export=download&id=1n9PL-W9g1hrUHXW3vaTGHiUD9sVh8KHI&confirm=1
   map: maintheme.85
   stock: wordsbelieve.85
   ventureCards: dwellinggods.85
@@ -198,6 +195,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3.0
+    changed:
+      - Reverted back to single state board. Other various adjustments to compensate.
   - version: 2.1
     changed:
       - Volume adjustment, changed audio, and revision of .yaml description for global compatibility.
@@ -215,7 +215,7 @@ changelog:
       - Venture card set has been revised. Please note that some are chosen for their swing potential on an already volatile board.
   - version: 1
     added:
-      - Initial Release. Venture card set derived from Alltrades Abbey. Please beware that this board will become a mutliple-state board in future releases.
+      - Initial Release. Venture card set derived from Alltrades Abbey.
 authors:
   - name: ZaSpai
     url: https://github.com/ZaSpai
