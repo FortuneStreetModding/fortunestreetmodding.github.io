@@ -10,7 +10,7 @@ targetAmount: 22000
 baseSalary: 350
 salaryIncrement: 75
 maxDiceRoll: 7
-frbFile1: Strategy Board 1
+frbFile1: StrategyBoard1
 background: bg008alt
 mapIcon: Strategy
 music:
