@@ -178,11 +178,11 @@
   name: Quiet Street
   download: 
   - https://nikkums.io/cswt/Backgrounds/QuietStreet.background.zip
-  - https://drive.google.com/u/2/uc?id=1n5YKwUD8uWj3TMJAke11crSHxkq3T28A&export=download&confirm=1
+  - drive.google.com/u/2/uc?id=19KZM73qwLzVow7yGi71KKgNxeFPY5hUv&export=download&confirm=1
   mapIcon: qs_btd6_0
   music:
-    map: jazztheme.100
-    targetMet: primalone.100
+    map: jazztheme.90
+    targetMet: primalone.85
 - background: bg009alt
   name: bg009alt
   download: 
@@ -230,11 +230,11 @@
   name: Quad
   download: 
   - https://nikkums.io/cswt/Backgrounds/Quad.background.zip
-  - https://drive.google.com/uc?id=1RSQ6XJAGG8U43QpyQoTUaNguKKHq_6K6&export=download&confirm=1
+  - https://drive.google.com/u/2/uc?id=1ohZl_ILLw6k6qVxmtPimaMzTyApGs4L0&export=download&confirm=1
   mapIcon: quad_btd6
   music:
-    map: winternights.100
-    targetMet: primalone.100
+    map: winternights.45
+    targetMet: primalone.85
 - background: rokkenjima
   name: Rokkenjima
   download: 

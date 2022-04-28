@@ -1,8 +1,8 @@
 ---
 name:
-  en: Quad
+  en: Quad (Console ver)
 desc:
-  en: A community park where the monkeys are having quite a hard time cleaning up the Bloon mess, to say the least.
+  en: Optimised for console play. A community park where the monkeys are having quite a hard time cleaning up the Bloon mess, to say the least.
 ruleSet: Standard
 theme: Mario
 initialCash: 1700
@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: quad
-background: quad
+background: bg101
 mapIcon: quad_btd6
 tourMode:
   bankruptcyLimit: 1
@@ -20,6 +20,9 @@ tourMode:
   opponent3: Kiryl
   clearRank: 3
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/Quad.music.zip
+    - https://drive.google.com/u/2/uc?id=1IFpwIYeZEG3P4cukqD6cbrRQnLD8aoCq&export=download&confirm=1
   map: winternights.45
   targetMet: primalone.85
 districtNames:
