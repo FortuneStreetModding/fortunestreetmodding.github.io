@@ -20,8 +20,8 @@ tourMode:
   opponent3: Kiryl
   clearRank: 3
 music:
-  map: jazztheme.100
-  targetMet: primalone.100
+  map: jazztheme.90
+  targetMet: primalone.85
 districtNames:
   en:
   - Croquedead
