@@ -9,7 +9,7 @@ initialCash: 1800
 targetAmount: 22000
 baseSalary: 350
 salaryIncrement: 100
-maxDiceRoll: 7
+maxDiceRoll: 6
 frbFile1: Strategy Board 2
 background: bg008alt
 mapIcon: Strategy
