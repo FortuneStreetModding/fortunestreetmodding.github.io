@@ -1,23 +1,23 @@
 ---
 name:
-  en: Neazi Board 2
+  en: Neazi Board 4
 desc:
   en: Strategy is key to this board. Your skills will be tested.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 1800
-targetAmount: 22000
-baseSalary: 350
+initialCash: 3200
+targetAmount: 30000
+baseSalary: 400
 salaryIncrement: 100
 maxDiceRoll: 6
-frbFile1: Strategy Board 2
+frbFile1: StrategyBoard4
 background: bg008alt
 mapIcon: Strategy
 music:
   download: 
-    - https://nikkums.io/cswt/BGM/Strategy_Board_2.music.zip
-    - https://drive.google.com/u/2/uc?id=1PgOnsodSEJg9G7SoyEpZze2BsvpTAWJQ&export=download
-  map: BGM_Strategy_Board_2_55
+    - https://nikkums.io/cswt/BGM/Strategy_Board_1.music.zip
+    - https://drive.google.com/u/2/uc?id=1-YH3Oltz1o3g3yeM-6cOZ0EbX1U8W7qy&export=download
+  map: BGM_Strategy_Board_1_60
   stock:
   ventureCards:
   auction:
@@ -35,7 +35,7 @@ music:
   bankruptcy:
 tourMode:
   bankruptcyLimit: 1
-  initialCash: 1800
+  initialCash: 2500
   opponent1: Wario
   opponent2: Waluigi
   opponent3: Luigi
