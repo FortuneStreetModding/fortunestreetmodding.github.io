@@ -20,7 +20,7 @@ districtNames:
   en:
   - Red
   - Lightblue
-  - ChromeYellow
+  - Honey
   - YellowGreen
   - Blue
   - Peach
@@ -69,7 +69,7 @@ changelog:
       - Strengthened the main island.
       - The stores with an initial value of 330 have been increased to 410 and their initial price has been increased to 78.
       - Stores with an initial value of 160 have been increased to 200 and the initial price has been increased to 33.
-      - The area name LemonYellow was changed to ChromeYellow.
+      - The area name LemonYellow was changed to Honey.
       - Target amount was reduced from 30,000 to 28,000.
       - Salary increment increased from 150 to 200.
   - version: 1
