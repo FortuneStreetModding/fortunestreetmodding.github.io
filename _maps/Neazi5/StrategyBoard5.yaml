@@ -6,9 +6,9 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500
-targetAmount: 30000
+targetAmount: 28000
 baseSalary: 500
-salaryIncrement: 150
+salaryIncrement: 200
 maxDiceRoll: 6
 frbFile1: StrategyBoard5_0
 frbFile2: StrategyBoard5_1
@@ -20,7 +20,7 @@ districtNames:
   en:
   - Red
   - Lightblue
-  - LemonYellow
+  - ChromeYellow
   - YellowGreen
   - Blue
   - Peach
@@ -58,6 +58,20 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Weakened the islands at the four corners.
+      - Square numbers 20, 42, 63, and 79 were changed to event squares.
+      - Square numbers 20, 42, 63, and 79 don't move when the switch is activated and the board changes from 3 to 4 and 4 to 1.
+      - Square numbers 16, 38, 62, and 84 don't move when the switch is activated and the board changes from 2 to 3, but now move when the board changes from 3 to 4 and 4 to 1.
+      - All islands in the four corners are now 3-shop areas.
+      - The initial value of all stores on the four corner islands is 70 and the initial price is 7.
+      - Strengthened the main island.
+      - The stores with an initial value of 330 have been increased to 410 and their initial price has been increased to 78.
+      - Stores with an initial value of 160 have been increased to 200 and the initial price has been increased to 33.
+      - The area name LemonYellow was changed to ChromeYellow.
+      - Target amount was reduced from 30,000 to 28,000.
+      - Salary increment increased from 150 to 200.
   - version: 1
     added: 
       - Initial Release
