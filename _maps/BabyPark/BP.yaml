@@ -10,7 +10,7 @@ targetAmount: 8000
 baseSalary: 25
 salaryIncrement: 125
 maxDiceRoll: 9
-frbFile1: Baby Park
+frbFile1: BabyPark
 background: bg002
 tourMode:
   bankruptcyLimit: 1
