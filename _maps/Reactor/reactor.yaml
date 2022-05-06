@@ -12,9 +12,6 @@ salaryIncrement: 200
 maxDiceRoll: 6
 frbFile1: reactor
 background: galaxyColosseum
-  download:
-    - https://nikkums.io/cswt/Backgrounds/galaxyColosseum.background.zip
-    - https://drive.google.com/uc?export=download&id=1IuWB7xGkvvII9kbUym8ZJhjGPZ2ZX_zx&confirm=1
 mapIcon: reactor
 tourMode:
   bankruptcyLimit: 1
