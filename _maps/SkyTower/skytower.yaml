@@ -24,12 +24,12 @@ music:
   download: 
     - https://nikkums.io/cswt/BGM/skytower.music.zip
     - https://drive.google.com/uc?export=download&id=1C5Lh_bixqWIc_AZNVcwtYzYcAfJN23ou&confirm=1
-  map: skytower.70
+  map: skytower.60
   stock: gb2title.65
-  ventureCards: figureroom.65
-  auction: pompmarche.60
-  targetMet: kirbyboss01.60
-  win: skystage.70
+  ventureCards: figureroom.60
+  auction: pompmarche.50
+  targetMet: kirbyboss01.55
+  win: skystage.80
   bankruptcy: kirbygameover.85
 districtNames:
   en:

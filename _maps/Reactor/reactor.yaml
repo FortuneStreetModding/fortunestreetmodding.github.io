@@ -29,7 +29,7 @@ music:
   download: 
     - https://nikkums.io/cswt/BGM/reactor.music.zip
     - https://drive.google.com/uc?export=download&id=1ZZ4PwVXATzZa5Q4YkgYTl2Kqrw6fWXqX&confirm=1
-  map: galaxy28.80
+  map: galaxy28.70
   stock: galaxyinter.70
   ventureCards: fileselect.80
   targetMet: boss10.65
