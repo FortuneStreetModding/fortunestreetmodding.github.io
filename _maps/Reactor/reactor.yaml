@@ -31,31 +31,6 @@ music:
   stock: galaxyinter.70
   ventureCards: fileselect.80
   targetMet: boss10.65
-districtNames:
-  en:
-  - District A
-  - District B
-  - District C
-  - District D
-  - District E
-  - District F
-  - District G
-  - District H
-  - District I
-  - District J
-  - District K
-  jp:
-  - エリアＡ
-  - エリアＢ
-  - エリアＣ
-  - エリアＤ
-  - エリアＥ
-  - エリアＦ
-  - エリアＧ
-  - エリアＨ
-  - エリアＩ
-  - エリアＪ
-  - エリアＫ
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -108,7 +83,7 @@ ventureCards:
   - 1  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
   - 1  #  50 Venture on! Move forward the same number of squares again.
   - 0  #  51 Venture on! Move forward 1 square more.
-  - 0  #  52 Venture on! Move forward another 2 squares.
+  - 1  #  52 Venture on! Move forward another 2 squares.
   - 0  #  53 Venture through space! Zoom over to the bank!
   - 1  #  54 Venture through space! Pay 100G to zoom straight to the bank!
   - 1  #  55 Venture on! Roll the die again and move forward (with an invitation to browse thrown in!).
@@ -143,7 +118,7 @@ ventureCards:
   - 0  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 1  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 0  #  88 Misadventure! All other players swap places!
   - 1  #  89 Freebie! All players take a Suit Yourself card!
   - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
@@ -186,6 +161,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    changed:
+      - Venture card 87 to 52
   - version: 1
     added:
       - Initial Release.

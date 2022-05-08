@@ -11,6 +11,9 @@ baseSalary: 300
 salaryIncrement: 175
 maxDiceRoll: 6
 frbFile1: waddle
+frbFile2: waddle
+frbFile3: waddle
+frbFile4: waddle
 background: bg109
 mapIcon: skytower
 tourMode:
@@ -29,33 +32,6 @@ music:
   targetMet: kirbyboss01.60
   win: skystage.70
   bankruptcy: kirbygameover.85
-districtNames:
-  en:
-  - District A
-  - District B
-  - District C
-  - District D
-  - District E
-  - District F
-  - District G
-  - District H
-  - District I
-  - District J
-  - District K
-  - District L
-  jp:
-  - エリアＡ
-  - エリアＢ
-  - エリアＣ
-  - エリアＤ
-  - エリアＥ
-  - エリアＦ
-  - エリアＧ
-  - エリアＨ
-  - エリアＩ
-  - エリアＪ
-  - エリアＫ
-  - エリアＬ
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
