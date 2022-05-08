@@ -21,7 +21,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 1
 music:
-  download: https://drive.google.com/uc?export=download&id=1C5Lh_bixqWIc_AZNVcwtYzYcAfJN23ou&confirm=1
+  download: 
+    - https://nikkums.io/cswt/BGM/skytower.music.zip
+    - https://drive.google.com/uc?export=download&id=1C5Lh_bixqWIc_AZNVcwtYzYcAfJN23ou&confirm=1
   map: skytower.70
   stock: gb2title.65
   ventureCards: figureroom.65
