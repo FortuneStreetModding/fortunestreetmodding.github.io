@@ -8,7 +8,7 @@ theme: Mario
 initialCash: 100
 targetAmount: 8000
 baseSalary: 25
-salaryIncrement: 125
+salaryIncrement: 100
 maxDiceRoll: 9
 frbFile1: BabyPark
 background: bg002
@@ -46,6 +46,7 @@ changelog:
   - version: 2
     changed:
       - Changed bottom arcade to event 68
+      - Changed salary increment from 125 to 100
   - version: 1
     added: 
       - Initial Release
