@@ -43,6 +43,9 @@ authors:
   - name: Skylighter
     url: https://www.youtube.com/channel/UCRu6DfosZnWrHFk6v7VGnmQ
 changelog:
+  - version: 2
+    changed:
+      - Changed bottom arcade to event 68
   - version: 1
     added: 
       - Initial Release
