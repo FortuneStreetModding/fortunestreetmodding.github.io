@@ -16,5 +16,5 @@ jobs:
       - name: Run the board validation script
         run: |
           pip install -r requirements.txt
-          python validateAllBoards.py --skip-autorepair --skip-update-dates --skip-mirror-validation --skip-download-validation
+          python validateAllBoards.py --skip-autorepair --skip-update-dates --skip-mirror-validation --skip-download-validation --skip-music-uniqueness-validation
         working-directory: ./_scripts

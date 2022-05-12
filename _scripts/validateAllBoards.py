@@ -6,13 +6,16 @@ from pathlib import Path
 from termcolor import cprint, colored
 from datetime import datetime
 from dataclasses import dataclass
+from typing import TypedDict
 
+import os
 import yaml
 import jsonschema
 import colorama
 import struct
 import requests
 import argparse
+import hashlib
 
 def inplace_change(file, attribute, value):
     with open(file,'r',encoding="utf8") as f:
@@ -29,6 +32,21 @@ class FileMetadata:
     file_size : int
     last_modified : datetime
 
+@dataclass
+class MusicFileMetadata:
+    file_size : int
+    file_hash : str
+    file_path : Path
+    music : str
+
+def sha256sum(filename) -> str:
+    h  = hashlib.sha256()
+    b  = bytearray(8*1024*1024)
+    mv = memoryview(b)
+    with open(filename, 'rb', buffering=0) as f:
+        while n := f.readinto(mv):
+            h.update(mv[:n])
+    return h.hexdigest()
 
 def get_file_metadata(url : str) -> FileMetadata:
     headers = {
@@ -74,12 +92,14 @@ def main(argv : list):
     parser.add_argument('--skip-update-dates', action='store_true', help='Update the Upload-date and Last-Update-Date of maps.')
     parser.add_argument('--skip-mirror-validation', action='store_true', help='Whether the script should validate the file sizes of mirrors.')
     parser.add_argument('--skip-download-validation', action='store_true', help='Whether the script should validate the file sizes of mirrors.')
+    parser.add_argument('--skip-music-uniqueness-validation', action='store_true', help='Whether the script should validate the uniqueness of music files (assumes that the files have already been downloaded).')
     args = parser.parse_args(argv)
 
     autorepair = not args.skip_autorepair
     update_dates = not args.skip_update_dates
     mirror_validation = not args.skip_mirror_validation
     download_validation = not args.skip_download_validation
+    music_uniqueness_validation = not args.skip_music_uniqueness_validation
 
     with open("../schema/mapdescriptor.json", "r", encoding='utf8') as stream:
         yamlSchema = yaml.safe_load(stream)
@@ -87,6 +107,10 @@ def main(argv : list):
     yamlMaps = list(Path().glob('../_maps/*/*.yaml'))
     errorCount = 0
     fixedCount = 0
+    bgmVolumeSensitiveHash:dict[str, MusicFileMetadata] = {}
+    bgmVolumeInsensitiveHash:dict[str, MusicFileMetadata] = {}
+
+    allErrors = []
     for yamlMap in yamlMaps:
         name = yamlMap.parent.name
         with open(yamlMap, "r", encoding='utf8') as stream:
@@ -94,20 +118,24 @@ def main(argv : list):
                 print(f'{name:24} YAML Validation...', end = '')
                 yamlContent = yaml.safe_load(stream)
                 jsonschema.validate(yamlContent, yamlSchema)
-                cprint(f'OK.', 'green')
+                cprint(f'OK', 'green')
             except yaml.YAMLError as exc:
                 errorCount += 1
                 cprint(f'ERROR:', 'red')
+                allErrors.append(exc)
                 print(exc)
             except jsonschema.ValidationError as err:
                 errorCount += 1
                 cprint(f'ERROR:', 'red')
+                allErrors.append(err.message)
                 print(err.message)
         with open(yamlMap, "r", encoding='utf8') as stream:
             if not stream.readline().strip() == "---":
                 errorCount += 1
                 cprint(f'{name:24} ERROR:', 'red')
-                print("YAML file first line must be ---")
+                errMsg = "YAML file first line must be ---"
+                allErrors.append(errMsg)
+                print(errMsg)
         if yamlContent:
             print(f'{" ":24} Consistency Check...', end = '')
             frbFile1 = yamlMap.parent / Path(f'{yamlContent["frbFile1"]}.frb')
@@ -172,8 +200,9 @@ def main(argv : list):
                 cprint(f'ERROR:', 'red')
                 print("\n".join(strErrors))
                 errorCount += len(strErrors)
+                allErrors += strErrors
             else:
-                cprint(f'OK.', 'green')
+                cprint(f'OK', 'green')
         if download_validation and yamlContent and "music" in yamlContent and "download" in yamlContent["music"]:
             strErrors = []
             print(f'{" ":24} Download URL Check...', end = '')
@@ -208,9 +237,46 @@ def main(argv : list):
                 cprint(f'ERROR:', 'red')
                 print("\n".join(strErrors))
                 errorCount += len(strErrors)
+                allErrors += strErrors
             else:
-                cprint(f'OK.', 'green')
+                cprint(f'OK', 'green')
+        if music_uniqueness_validation and yamlContent and "music" in yamlContent:
+            strErrors = []
+            print(f'{" ":24} Music Uniqueness Check...', end = '')
+            for musicType in yamlContent["music"]:
+                if musicType == "download":
+                    continue
+                music = yamlContent["music"][musicType]
+                if not music:
+                    continue
+                musicWithoutVolume = Path(music).with_suffix('').as_posix()
+                musicFilePath = yamlMap.parent / Path(f'{music}.brstm')
+                musicFileSize = os.path.getsize(musicFilePath)
+                sha256 = sha256sum(musicFilePath)
+                mapsFolder = yamlMap.parent.parent
 
+                if musicWithoutVolume in bgmVolumeInsensitiveHash:
+                    musicFileMetadata = bgmVolumeInsensitiveHash[musicWithoutVolume]
+                    if musicFileMetadata.file_hash != sha256:
+                        strErrors.append(f'The music file {musicFilePath.relative_to(mapsFolder).as_posix()} has different content from the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()}')
+                    elif Path(music).suffix != Path(musicFileMetadata.music).suffix:
+                        strErrors.append(f'The music file {musicFilePath.relative_to(mapsFolder).as_posix()} has the same content as the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()} but a different volume')
+                else:
+                    bgmVolumeInsensitiveHash[musicWithoutVolume] = MusicFileMetadata(musicFileSize, sha256, musicFilePath, music)
+                
+                if music in bgmVolumeSensitiveHash:
+                    musicFileMetadata = bgmVolumeSensitiveHash[music]
+                    if musicFileMetadata.file_hash != sha256:
+                        strErrors.append(f'The music file {musicFilePath.relative_to(mapsFolder).as_posix()} has different content from the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()}')
+                else:
+                    bgmVolumeSensitiveHash[music] = MusicFileMetadata(musicFileSize, sha256, musicFilePath, music)
+            if len(strErrors) > 0:
+                cprint(f'ERROR:', 'red')
+                print("\n".join(strErrors))
+                errorCount += len(strErrors)
+                allErrors += strErrors
+            else:
+                cprint(f'OK', 'green')
                 
         if update_dates:
             # get upload date
@@ -227,13 +293,12 @@ def main(argv : list):
             print(f'{" ":24} Last Update Date: {lastUpdateDate.date().isoformat()}')
         print()
 
-
-
     print("Board Validation complete")
     if errorCount == 0:
         cprint(f'No issues found', "green")
     else:
-        print(f'Found {colored(str(errorCount), "red")} issue(s)')
+        print(f'Found {colored(str(errorCount), "red")} issue(s):')
+        print("\n".join(allErrors))
         if fixedCount > 0:
             if fixedCount < errorCount:
                 print(f'{colored(str(fixedCount), "green")} issue(s) auto-repaired. Remaining issue(s): {colored(str(errorCount - fixedCount), "red")}')
