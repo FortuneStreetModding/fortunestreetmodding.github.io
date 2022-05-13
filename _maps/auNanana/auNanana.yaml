@@ -19,6 +19,26 @@ tourMode:
   opponent2: Dragonlord
   opponent3: BowserJr
   clearRank: 1
+music: 
+  download: 
+    - https://nikkums.io/cswt/BGM/auNanana.music.zip
+    - https://drive.google.com/u/2/uc?id=12gzLYRTDn5OkZ4nQiGEusSPoll0kalcE&export=download
+  map:
+  stock: BGM_STOCK_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.70
+  auction: BGM_AUCTION_SMART.60
+  targetMet: BGM_GOALPROP_SMART.60
+  win: BGM_WINNER_SMART.60
+  guestAppear:
+  guestLeave:
+  badVentureCard:
+  takeAbreak: ME_HOLIDAY_SMART.60
+  promotionMii: ME_LEVELUP_SMART.60
+  promotionMario: ME_LEVELUP_SMART.60
+  promotionDragonQuest: ME_LEVELUP_SMART.60
+  forcedBuyout: ME_5_BUY_SMART.60
+  domination: ME_MONOPOLY_SMART.60
+  bankruptcy: ME_BANKRUPT_SMART.60
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.

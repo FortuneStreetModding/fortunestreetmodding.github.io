@@ -18,7 +18,7 @@ music:
     - https://nikkums.io/cswt/BGM/DreamWorld.music.zip
     - https://drive.google.com/u/2/uc?id=1nsFgd2nLx_TEWpUALun2tRKu6ZBwh2Xs&export=download&confirm=1
   map: BGM_MAP_DREAMWORLD_IS2R.60
-  stock: BGM_STOCK_IS2R.60.brstm
+  stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60
   auction: BGM_AUCTION_IS2R.60
   targetMet:
