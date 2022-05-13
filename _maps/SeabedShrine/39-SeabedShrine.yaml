@@ -16,7 +16,7 @@ mapIcon: seabedshrine
 music:
   download: 
     - https://nikkums.io/cswt/BGM/SeabedShrine.music.zip
-    - https://drive.google.com/uc?export=download&id=1GE3uHRq25GseSa_Ooz9oONjbbk1DeHB0&confirm=1
+    - https://drive.google.com/u/2/uc?id=11QV-D1vj3FVfmWzJK4D4X-rbyQ7zhe8K&export=download&confirm=1
   map: BGM_MAP_SEABED.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_SPECIAL.50
@@ -32,7 +32,7 @@ music:
   promotionDragonQuest: ME_LEVELUP_SPECIAL_D.70
   forcedBuyout: ME_5_BUY_SPECIAL.60
   domination: ME_MONOPOLY_SPECIAL.50
-  bankruptcy: ME_BANKRUPTCY_SPECIAL_D.73
+  bankruptcy: ME_BANKRUPTCY_SPECIAL_D.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000

@@ -16,10 +16,10 @@ mapIcon: auCloverland
 music: 
   download: 
     - https://nikkums.io/cswt/BGM/CloverlandLite.music.zip
-    - https://drive.google.com/u/2/uc?id=1RY6l0239M2WapvVwuHBELrcjjQszt9zl&export=download
+    - https://drive.google.com/u/2/uc?id=13dhfhfa5arRD6ND0EqUaZ1beLvaXaW88&export=download
   map: BGM_MAP_CLOVERLAND_IS2R.60
   stock: BGM_STOCK_SMART.60
-  ventureCards: BGM_CHANCECARD_SMART.60
+  ventureCards: BGM_CHANCECARD_SMART.70
   auction: BGM_AUCTION_SMART.60
   targetMet: BGM_GOALPROP_SMART.60
   win: BGM_WINNER_SMART.60

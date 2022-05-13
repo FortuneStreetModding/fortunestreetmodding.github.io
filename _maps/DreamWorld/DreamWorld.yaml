@@ -16,13 +16,13 @@ mapIcon: DreamWorld
 music:
   download: 
     - https://nikkums.io/cswt/BGM/DreamWorld.music.zip
-    - https://drive.google.com/u/0/uc?id=1oM-3XrzuN18nQFOVf7SQQWdJvoaHiQ0E&export=download
+    - https://drive.google.com/u/2/uc?id=1nsFgd2nLx_TEWpUALun2tRKu6ZBwh2Xs&export=download&confirm=1
   map: BGM_MAP_DREAMWORLD_IS2R.60
-  stock: BGM_STOCK_IS2.60
-  ventureCards: BGM_CHANCECARD_IS2.58
-  auction: BGM_AUCTION_IS2.70
+  stock: BGM_STOCK_IS2R.60.brstm
+  ventureCards: BGM_CHANCECARD_IS2R.60
+  auction: BGM_AUCTION_IS2R.60
   targetMet:
-  win: BGM_WINNER_IS2.60
+  win: BGM_WINNER_IS2R.60
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_IS2.58
