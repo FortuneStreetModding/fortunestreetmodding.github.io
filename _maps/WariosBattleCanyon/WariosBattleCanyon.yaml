@@ -19,7 +19,7 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 background: battlecanyon
-mapIcon: battlecanyon
+mapIcon: battlecanyonC
 music:
   map: BGM_MAP_BATTLECANYON.65
   stock: MP1_OptionHouse.50

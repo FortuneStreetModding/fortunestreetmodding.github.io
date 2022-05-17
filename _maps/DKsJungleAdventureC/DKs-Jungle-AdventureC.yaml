@@ -21,7 +21,7 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 background: bg109
-mapIcon: dksjungle
+mapIcon: dksjungleC
 music:
   download: 
     - https://nikkums.io/cswt/BGM/DKsJungleAdventure.music.zip
