@@ -249,6 +249,9 @@ def main(argv : list):
                 music = yamlContent["music"][musicType]
                 if not music:
                     continue
+
+                mapsFolder = yamlMap.parent.parent
+
                 musicFilePath = yamlMap.parent / Path(f'{music}.brstm')
                 if not musicFilePath.exists() or not musicFilePath.is_file():
                     strErrors.append(f'The music file {musicFilePath.relative_to(mapsFolder).as_posix()} does not exist')
@@ -257,7 +260,6 @@ def main(argv : list):
                 musicWithoutVolume = Path(music).with_suffix('').as_posix()
                 musicFileSize = os.path.getsize(musicFilePath)
                 sha256 = sha256sum(musicFilePath)
-                mapsFolder = yamlMap.parent.parent
 
                 if musicWithoutVolume in bgmVolumeInsensitiveHash:
                     musicFileMetadata = bgmVolumeInsensitiveHash[musicWithoutVolume]
