@@ -44,7 +44,7 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 changelog:
-  - version 2:
+  - version: 2
     changed:
       - Fixed mistake, second bank is now a stockbroker
   - version: 1
