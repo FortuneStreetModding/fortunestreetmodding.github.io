@@ -113,9 +113,25 @@ def main(argv : list):
     allErrors = []
     for yamlMap in yamlMaps:
         name = yamlMap.parent.name
+        strErrors = []
+        print(f'{name:24} Naming Convention Check...', end = '')
+
+        if ' ' in yamlMap.name:
+            strErrors.append(f"There is a whitespace character in {yamlMap}")
+        if ' ' in name:
+            strErrors.append(f"There is a whitespace character in {name}")
+
+        if len(strErrors) > 0:
+            cprint(f'ERROR:', 'red')
+            print("\n".join(strErrors))
+            errorCount += len(strErrors)
+            allErrors += strErrors
+        else:
+            cprint(f'OK', 'green')
+
         with open(yamlMap, "r", encoding='utf8') as stream:
             try:
-                print(f'{name:24} YAML Validation...', end = '')
+                print(f'{"":24} YAML Validation...', end = '')
                 yamlContent = yaml.safe_load(stream)
                 jsonschema.validate(yamlContent, yamlSchema)
                 cprint(f'OK', 'green')
