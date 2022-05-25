@@ -26,14 +26,16 @@ layout: default
         <img src="/assets/images/CustomStreetWorldTourTitle.webp" class="card-img-top">
         <div class="card-body">
           <p class="card-text">
-            <a href="https://raw.githubusercontent.com/FortuneStreetModding/CustomStreetWorldTour/master/Setup/setup.bat" class="btn btn-primary my-2" download="setup.bat">Download CSWT Windows</a>
-            <a href="https://raw.githubusercontent.com/FortuneStreetModding/CustomStreetWorldTour/master/Setup/setup.sh" class="btn btn-primary my-2" download="setup.sh">Download CSWT Mac</a>
-            <ol>
-              <li>Download setup.bat (Windows) or setup.sh (Unix)</li>
-              <li>Put the `setup.bat`/`setup.sh` and a vanilla Fortune Street or Boom Street iso/wbfs into a new empty directory</li>
-              <li>Run the `setup.bat`/`setup.sh` to set up the needed tools automatically</li>
-              <li>Run the `CustomStreetWorldTour/build.bat` (Windows) or `CustomStreetWorldTour/build.sh` (Unix) to build Custom Street World Tour</li>
-            </ol>
+            <a href="https://github.com/FortuneStreetModding/CustomStreetWorldTour/releases/tag/1.0" class="btn btn-primary my-2" download="setup.bat">CSWT 1.0</a>
+            <div class="btn-group" role="group">
+              <button id="btnGroupLatestDrop" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                CSWT dev-build
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupLatestDrop">
+                <li><a class="dropdown-item" href="https://raw.githubusercontent.com/FortuneStreetModding/CustomStreetWorldTour/master/Setup/setup.bat">Windows</a></li>
+                <li><a class="dropdown-item" href="https://raw.githubusercontent.com/FortuneStreetModding/CustomStreetWorldTour/master/Setup/setup.sh">Mac</a></li>
+              </ul>
+            </div>
           </p>
         </div>
       </div>
