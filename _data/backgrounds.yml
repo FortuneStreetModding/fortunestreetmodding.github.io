@@ -252,3 +252,16 @@
       forcedBuyout: clash.50
       domination: horror.50
       bankruptcy: candles.50
+- background: disboard
+  name: Disboard
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/disboard.background.zip
+  - https://drive.google.com/u/2/uc?id=1Iaq1HebvE8dO_aT9-bCEr7ATLwSpPRla&export=download&confirm=1
+  mapIcon: disboard
+  music:
+      map: GameStart
+      stock: CriminalConnection
+      ventureCards: Choisies
+      auction: IGetYouBack
+      targetMet: NoGameNoLife
+      win: WinnerNGNL
