@@ -1,8 +1,8 @@
 ---
 name:
-  en: Disboard
+  en: Disboard (Console Ver.)
 desc:
-  en: Welcome to Disboard, a world where everything is decided by games! Catch a ride on the Phantasma Avant Heim as it travels around the three continents. Let's get this game started! Based on the location from No Game No Life.
+  en: Welcome to Disboard, a world where everything is decided by games! Catch a ride on the Phantasma Avant Heim as it travels around the three continents. Let's get this game started! Based on the location from No Game No Life. Optimised for Console play.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000
