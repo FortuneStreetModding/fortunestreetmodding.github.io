@@ -5,7 +5,7 @@ desc:
   en: Ported from Itadaki Street 3. Gameplay differs slightly from original.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 4500
+initialCash: 2000
 targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 150
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Changed initial cash from 4500 to 2000
   - version: 2
     changed:
       - Changed background to the new bg008alt
