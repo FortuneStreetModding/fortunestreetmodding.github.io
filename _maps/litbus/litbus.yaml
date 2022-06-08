@@ -27,6 +27,9 @@ districtNames:
   - Front Path
   - Sports Area
 music:
+  download:
+    - https://nikkums.io/cswt/BGM/litbus.music.zip
+    - https://drive.google.com/u/2/uc?id=1UL29lcMmxbPcrXnoT3LJL783DWnrLVl2&export=download&confirm=1
   map: BoysDontCryDaydream.40
   stock: BrotherSoQuiet.80
   ventureCards: ExoticToyBoxRipresa.80
