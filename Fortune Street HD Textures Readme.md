@@ -1,6 +1,6 @@
 ## Fortune Street & Boom Street HQ Texture Pack
 
-[![image](https://user-images.githubusercontent.com/10488699/174442563-d22b0453-23e6-466e-a780-d613239464fe.png)
+![image](https://user-images.githubusercontent.com/10488699/174442563-d22b0453-23e6-466e-a780-d613239464fe.png)
 
 ### [Download Here](https://drive.google.com/drive/folders/1MLcVs5P1bBjDxC5Q83Z0Y4tpixnzWMjP)
 
