@@ -29,4 +29,4 @@ jobs:
         run: aws s3 cp --recursive ./_maps/. s3://${{ env.BUCKET_NAME }}/cswt/Maps
 
       - name: Create CloudFront invalidation
-        run: aws cloudfront create-invalidation --distribution-id EK8YW6IUP9MB5 --paths "/cswt/Maps/*"
+        run: aws cloudfront create-invalidation --distribution-id EK8YW6IUP9MB5 --paths /cswt/Maps/*
