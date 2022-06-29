@@ -1,8 +1,7 @@
 name: Upload Maps to S3
 on:
-  push
-  # push:
-  #   branches: [ master ]
+  push:
+    branches: [ master ]
 
 permissions:
   id-token: write
