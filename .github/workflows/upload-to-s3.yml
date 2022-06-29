@@ -35,7 +35,9 @@ jobs:
       - name: Upload maps to S3
         working-directory: ./_maps
         run: |
-          aws s3 cp *.zip s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Maps
+          for i in *.zip; do
+            [ aws s3 cp i s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Maps ] || break
+          done
 
       - name: Create CloudFront invalidation
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Maps/*
