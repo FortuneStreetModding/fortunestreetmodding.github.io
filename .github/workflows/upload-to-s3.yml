@@ -1,7 +1,8 @@
 name: Upload Maps to S3
 on:
   push:
-#    branches: [ master ]
+    branches:
+      - master
   workflow_dispatch:
 
 permissions:
