@@ -1,8 +1,7 @@
 name: Upload Maps to S3
 on:
-  push    
-  # push:
-  #   branches: [ master ]
+  push:
+    branches: [ master ]
 env:
   BUCKET_NAME : "house.nikkums.io-lo4cd"
   AWS_REGION : "us-east-2"  
