@@ -35,7 +35,6 @@ jobs:
       - name: Upload maps to S3
         working-directory: ./_maps
         run: |
-          aws s3 rm --recursive /cswt/Maps/*
           aws s3 cp *.zip s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Maps
 
       - name: Create CloudFront invalidation
