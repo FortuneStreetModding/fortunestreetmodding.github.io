@@ -1,11 +1,8 @@
 name: Upload Maps to S3
 on:
-  push:
-    branches: [ master ]
-
-env:
-  BUCKET_NAME : "house.nikkums.io-lo4cd"
-  AWS_REGION : "us-east-2"  
+  push
+  # push:
+  #   branches: [ master ]
 
 permissions:
   id-token: write
@@ -21,12 +18,12 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::632957227412:role/github-actions-deploy-role
+          role-to-assume: ${{ secrets.ASSUME_ROLE_ARN }}
           role-session-name: ghamapuploadingrolesession
-          aws-region: ${{ env.AWS_REGION }}
+          aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Upload maps to S3
-        run: aws s3 cp --recursive ./_maps/. s3://${{ env.BUCKET_NAME }}/cswt/Maps
+        run: aws s3 cp --recursive ./_maps/. s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Maps
 
       - name: Create CloudFront invalidation
-        run: aws cloudfront create-invalidation --distribution-id EK8YW6IUP9MB5 --paths /cswt/Maps/*
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Maps/*
