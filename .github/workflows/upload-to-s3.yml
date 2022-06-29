@@ -23,4 +23,4 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
       - name:  Upload maps to S3
         run: |
-          aws s3 cp ./_maps/* s3://${{ env.BUCKET_NAME }}/cswt/Maps
+          aws s3 cp --recursive ./_maps/. s3://${{ env.BUCKET_NAME }}/cswt/Maps
