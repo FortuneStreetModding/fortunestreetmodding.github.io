@@ -2,24 +2,31 @@ name: Upload Maps to S3
 on:
   push:
     branches: [ master ]
+
 env:
   BUCKET_NAME : "house.nikkums.io-lo4cd"
   AWS_REGION : "us-east-2"  
+
 permissions:
   id-token: write
   contents: read    # This is required for actions/checkout
+
 jobs:
   UploadMapsToS3:
     runs-on: ubuntu-latest
     steps:
-      - name: Git clone the repository
+      - name: Clone the repo
         uses: actions/checkout@v3
-      - name: configure aws credentials
+
+      - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: arn:aws:iam::632957227412:role/github-actions-deploy-role
           role-session-name: ghamapuploadingrolesession
           aws-region: ${{ env.AWS_REGION }}
-      - name:  Upload maps to S3
-        run: |
-          aws s3 cp --recursive ./_maps/. s3://${{ env.BUCKET_NAME }}/cswt/Maps
+
+      - name: Upload maps to S3
+        run: aws s3 cp --recursive ./_maps/. s3://${{ env.BUCKET_NAME }}/cswt/Maps
+
+      - name: Create CloudFront invalidation
+        run: aws cloudfront create-invalidation --distribution-id EK8YW6IUP9MB5 --paths "/cswt/Maps/*"
