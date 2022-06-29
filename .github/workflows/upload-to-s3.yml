@@ -2,6 +2,7 @@ name: Upload Maps to S3
 on:
   push:
     branches: [ master ]
+  workflow_dispatch:
 
 permissions:
   id-token: write
@@ -20,9 +21,22 @@ jobs:
           role-to-assume: ${{ secrets.ASSUME_ROLE_ARN }}
           role-session-name: ghamapuploadingrolesession
           aws-region: ${{ secrets.AWS_REGION }}
+      
+      - name: Zip maps
+        shell: bash
+        working-directory: ./_maps
+        run: |
+          for mapDir in *; do
+            cd ${mapDir}
+            zip -r ../${mapDir}.zip .
+            cd ..
+          done
 
       - name: Upload maps to S3
-        run: aws s3 cp --recursive ./_maps/. s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Maps
+        working-directory: ./_maps
+        run: |
+          aws s3 rm --recursive /cswt/Maps/*
+          aws s3 cp *.zip s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Maps
 
       - name: Create CloudFront invalidation
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Maps/*
