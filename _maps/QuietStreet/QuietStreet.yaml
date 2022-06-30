@@ -22,19 +22,6 @@ tourMode:
 music:
   map: jazztheme.90
   targetMet: primalone.85
-districtNames:
-  en:
-  - Croquedead
-  - Chocbox
-  - Alch
-  - EWIE10
-  - Tokenizer
-  - Landmaster
-  - Lombre
-  - Hemi
-  - Victor
-  - Gavo
-  - Tytohbird
 changelog:
   - version: 1
     added: 

@@ -25,16 +25,6 @@ music:
     - https://drive.google.com/u/2/uc?id=1IFpwIYeZEG3P4cukqD6cbrRQnLD8aoCq&export=download&confirm=1
   map: winternights.45
   targetMet: primalone.85
-districtNames:
-  en:
-  - Croquedead
-  - Chocbox
-  - Alch
-  - EWIE10
-  - Tokenizer
-  - Landmaster
-  - Lombre
-  - Hemi
 changelog:
   - version: 1
     added: 

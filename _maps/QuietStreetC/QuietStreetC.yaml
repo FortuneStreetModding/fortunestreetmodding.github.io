@@ -25,19 +25,6 @@ music:
     - https://drive.google.com/u/2/uc?id=19za5Z0Neuq1UG-j2IfCk1ZvRJf5hU-z6&export=download
   map: jazztheme.90
   targetMet: primalone.85
-districtNames:
-  en:
-  - Croquedead
-  - Chocbox
-  - Alch
-  - EWIE10
-  - Tokenizer
-  - Landmaster
-  - Lombre
-  - Hemi
-  - Victor
-  - Gavo
-  - Tytohbird
 changelog:
   - version: 1
     added: 
