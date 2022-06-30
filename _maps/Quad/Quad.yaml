@@ -22,16 +22,6 @@ tourMode:
 music:
   map: winternights.45
   targetMet: primalone.85
-districtNames:
-  en:
-  - Croquedead
-  - Chocbox
-  - Alch
-  - EWIE10
-  - Tokenizer
-  - Landmaster
-  - Lombre
-  - Hemi
 changelog:
   - version: 1
     added: 
