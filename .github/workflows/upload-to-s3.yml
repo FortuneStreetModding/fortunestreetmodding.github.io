@@ -60,7 +60,8 @@ jobs:
           zip -r cswtpycsmm-dev.zip cswtpycsmm
       
       - name: Upload modpack to s3
-        run: aws s3 cp cswtpycsmm-dev.zip s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Builds
+        run: aws s3 cp cswtpycsmm-dev.zip s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Builds/
       
       - name: Create CloudFront invalidation for modpack
-        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Builds/*
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Builds/*
