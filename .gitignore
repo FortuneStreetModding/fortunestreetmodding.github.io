@@ -32,16 +32,23 @@ _site/
 ### cmpres and brstm ###
 *.brstm
 *.cmpres
+# exclude arc files but allow cswtpycsmm's arc directories
 *.arc
+!cswtpycsmm/cswtpycsmm/*.arc
 ui_menu_*.png
 *.scene
 
 ### Binary Files ###
 *.zip
 *.7z
+__pycache__
 
 ### Map Background and Music Download Metainformation ###
 *.cfg
+
+### cswtpycsmm extra stuff
+cswtpycsmm/mapList.yaml
+cswtpycsmm/backgrounds.yml
 
 # Map Icons which are defined in backgrounds.yml
 facingWorlds.png
