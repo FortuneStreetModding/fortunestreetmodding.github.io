@@ -1,0 +1,28 @@
+---
+name:
+  en: Lakitu's Cloud
+desc:
+  en: The one and only cloud belonging to the furious forecloser, Lakitu.
+ruleSet: Standard
+theme: Mario
+initialCash: 1800
+targetAmount: 21000
+baseSalary: 300
+salaryIncrement: 450
+maxDiceRoll: 7
+frbFile1: latitude
+background: bg002
+tourMode:
+  bankruptcyLimit: 1
+  opponent1: Toad
+  opponent2: Slime
+  opponent3: Dragonlord
+  clearRank: 3
+mapIcon: Lakitu
+changelog
+  - version:
+  - added: 
+authors:
+  - name: Hyonk Tea
+    url: https://hyonktea.carrd.co
+...
