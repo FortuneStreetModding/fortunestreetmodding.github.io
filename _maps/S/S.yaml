@@ -5,7 +5,7 @@ desc:
   en: Cool S, also called the Universal S, this symbol of Graffiti Culture was believed to originate in the late 1960s. It was first photographed in 1973 in New Your City, USA.
 ruleSet: Standard
 theme: Mario
-initialCash: 2000
+initialCash: 2500
 targetAmount: 25000
 baseSalary: 200
 salaryIncrement: 225
