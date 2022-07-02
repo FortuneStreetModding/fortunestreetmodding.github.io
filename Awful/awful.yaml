@@ -1,0 +1,28 @@
+---
+name:  
+  en:   
+desc: 
+  en: Cross the paths in the middle, or head the long way for a chance at a vacant plot, Suit Yourself card, or a chance to make bank at the arcade! Beware though, you cant go to the bank from the Boon or Take-A-Break squares.
+ruleSet: Standard
+theme: Mario
+initialCash: 2250
+targetAmount: 22500
+baseSalary: 300
+salaryIncrement: 300
+maxDiceRoll: 6
+frbFile1: awful
+background: bg002
+tourMode:
+  bankruptcyLimit: 1
+  opponent1: Toad
+  opponent2: Slime
+  opponent3: Platypunk
+  clearRank: 3
+mapIcon: Awful
+changelog
+  - version:
+  - added: 
+authors:
+  - name: Hyonk Tea
+    url: https://hyonktea.carrd.co
+...
