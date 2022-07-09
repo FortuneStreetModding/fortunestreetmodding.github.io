@@ -470,9 +470,6 @@ backgrounds: backgrounds.yml
     Vent.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Vent.zip
-    Vulvainseln.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Vulvainseln.zip
     WariosBattleCanyon.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WariosBattleCanyon.zip
