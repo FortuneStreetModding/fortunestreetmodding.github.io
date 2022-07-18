@@ -36,7 +36,9 @@ changelog:
     added: 
       - Initial Release
 authors:
-  - name: Skylighter, Cylvanis
+  - name: Skylighter
+    url: https://www.youtube.com/channel/UCRu6DfosZnWrHFk6v7VGnmQ
+  - name: Cylvanis
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 0  #   2 Venture on! Roll the die again and move forward.
