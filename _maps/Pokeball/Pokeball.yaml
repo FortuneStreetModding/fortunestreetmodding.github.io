@@ -30,11 +30,11 @@ music:
   guestLeave: PXYElegantClothes
   badVentureCard: PXYPokeFlute
   takeAbreak: PXYPokeFlute
-  promotionMii: PXYGymBadge
-  promotionMario: PXYGymBadge
-  promotionDragonQuest: PXYGymBadge
-  forcedBuyout:
-  domination:
+  promotionMii: PXYTM
+  promotionMario: PXYTM
+  promotionDragonQuest: PXYTM
+  forcedBuyout: PXYGymBadge
+  domination: PXYKeyItem
   bankruptcy: PXYLookerSorrowful
 authors:
   - name: Skylighter
