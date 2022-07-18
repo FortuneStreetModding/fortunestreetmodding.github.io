@@ -23,7 +23,8 @@ maxDiceRoll: 8
 frbFile1: chumbucket
 background: bg102
 mapIcon: chumbucketico
-bgmId: BGM_MAP_CIRCUIT
+music:
+  map: ChumBucketLab
 tourMode:
   bankruptcyLimit: 1
   opponent1: Waluigi
