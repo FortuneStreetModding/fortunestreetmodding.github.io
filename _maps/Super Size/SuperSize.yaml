@@ -19,7 +19,7 @@ tourMode:
   bankruptcyLimit: 1
   opponent1: Wario
   opponent2: Bowser
-  opponent3: Donkey Kong
+  opponent3: DonkeyKong
   clearRank: 2
 changelog:
   - version: 1
