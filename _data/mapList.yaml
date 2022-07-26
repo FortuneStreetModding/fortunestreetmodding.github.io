@@ -291,13 +291,16 @@ backgrounds: backgrounds.yml
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
+    ChumBucket.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/ChumBucket.zip
     CidsTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CidsTower.zip
+  2:
     Creeper.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Creeper.zip
-  2:
     CrestOfFlames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CrestOfFlames.zip
@@ -328,6 +331,9 @@ backgrounds: backgrounds.yml
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
+    Fillmore.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Fillmore.zip
     IS2FreewayRemix.zip:
       urls:
       - https://nikkums.io/cswt/Maps/IS2FreewayRemix.zip
@@ -406,6 +412,9 @@ backgrounds: backgrounds.yml
     Playground.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Playground.zip
+    Pokeball.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Poleball.zip
     Pollen.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Pollen.zip
@@ -455,6 +464,9 @@ backgrounds: backgrounds.yml
     SuitsMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SuitsMap.zip
+    SuperSize.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/SuperSize.zip
     ToadsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsHouse.zip

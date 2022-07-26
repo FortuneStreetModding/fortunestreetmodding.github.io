@@ -14,6 +14,9 @@ frbFile1: supersize
 background: bg101
 mapIcon: supersizeicon
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/SuperSize.music.zip
+    - https://drive.google.com/u/2/uc?id=1xy3r2p0lhqaUrhL6d9HwVdn6mG3L213h&export=download
   map: GentleMadman
 tourMode:
   bankruptcyLimit: 1

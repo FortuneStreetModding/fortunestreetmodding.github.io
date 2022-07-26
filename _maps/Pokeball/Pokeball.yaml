@@ -20,6 +20,9 @@ tourMode:
   clearRank: 3
 mapIcon: PokeballIcon
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/Pokeball.music.zip
+    - https://drive.google.com/u/2/uc?id=1tneSSJWO74XUmISZTHrOFu1CaQ7NAda3&export=download
   map: PXYRoute15
   stock: PXYPokecenter
   ventureCards: PXYMysteryGift

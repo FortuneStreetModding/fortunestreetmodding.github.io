@@ -24,6 +24,9 @@ frbFile1: chumbucket
 background: bg102
 mapIcon: chumbucketico
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/ChumBucket.music.zip
+    - https://drive.google.com/u/2/uc?id=1yEs5pmJTbsEg1i4QWtHp3pXJ-UkwN0RB&export=download
   map: ChumBucketLab
 tourMode:
   bankruptcyLimit: 1
