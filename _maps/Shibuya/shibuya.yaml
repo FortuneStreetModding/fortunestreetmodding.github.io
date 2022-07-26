@@ -27,6 +27,46 @@ districtNames:
   - Tokyu Plaza 
   - Cat Street
   - Miyashita P
+shopNames:
+  en:
+    1: 104 Bulding
+    2: Suzu Slurps
+    3: Joli becot
+    4: Top o' Topo
+    5: TOWER RECORDS
+    6: Vegelovers
+    7: garagara
+    8: NATURAL PUPPY
+    9: Bubblevision
+    11: TOKYU HANDS
+    12: SBY BBQ
+    13: Donburi Town
+    60: Gatto Nero
+    63: Spicy Curry Don
+    64: Cony x Cony
+    66: Tigre PUNKS
+    67: Justice Burger
+    69: Taiseido
+    71: Hachiko Statue
+    73: Hachiko Cafe
+    74: RyuGu
+    77: Kyoto Sweets
+    78: Trader Ryoji's
+    79: somedrinks
+    82: Tacos y Mas Tacos
+    83: Shepherd House
+    84: Moyai Mart
+    86: fluffy 'n' sweet
+    87: BLACK HONEY CHILI COOKIE
+    88: HOG FANG
+    89: Jupiter of the Monkey
+    91: Cafe WildKat
+    92: IL CAVALLO DEL RE
+    93: Petit Bonheur
+    94: Asia Fantasia
+    95: Brave & Ambitious
+    96: Cutie Pies
+    97: croaky panic
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Shibuya.music.zip
@@ -55,6 +95,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Shop name update
   - version: 2
     changed:
       - Changed boon square on Miyashita Park to Change-of-suit square
