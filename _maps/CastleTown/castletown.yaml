@@ -40,7 +40,13 @@ tourMode:
   opponent2: Waluigi
   opponent3: Luigi
   clearRank: 2
+shopNames:
+  en:
+    1: Malo Mart
 changelog:
+  - version: 4
+    changed: 
+      - Shop name update
   - version: 3
     changed:
       - Removed cannon area for stability
@@ -51,7 +57,7 @@ changelog:
     added: 
       - Initial Release
 authors:
-  - name: MalkSticks
+  - name: Sienna
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
