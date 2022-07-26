@@ -27,6 +27,61 @@ districtNames:
   - District 6
   - District 23
   - District 10
+shopNames:
+  en:
+    1: Windowless Building
+    2: Kamijou's Dorm
+    3: A Certain Highschool
+    4: Kumokawa's Apartment
+    5: Refrigerated Warehouse
+    6: Bee Hoon Street
+    7: Amusement Park
+    8: Secret Residences
+    9: 3rd Resource Recycling
+    10: Virus Isolation Center
+    11: Misawa Cram School
+    12: Kirigaoka Girls' Academy
+    13: Anti-Skill Chemical Analysis
+    14: Mass Driver
+    16: Taiyaki Stall
+    17: Hula Hoop
+    18: Dianoid
+    31: Anti-Skill Station
+    52: Judgement Branch Office
+    53: Sakugawa Middle School
+    60: Switchyard
+    63: Beauty Salon School
+    64: Conference Center
+    66: Shinshikimi Middle School
+    67: DNA Map Analysis Laboratory
+    69: L.S.S. Headquarters
+    70: School Garden
+    71: Underground Shopping Center
+    73: Botanical Ethanol Fuel Plant
+    74: Secret Garden Mimosa
+    75: Celestaquarium 
+    76: Heaven Canceller's Hospital
+    77: Topaz Gym
+    78: Takasaki University
+    79: East Connection Terminal
+    80: Elementary Particle Lab
+    81: Spa Resort Serene Springs
+    82: Experimental Airport
+    83: District 23 Terminal Station
+    84: International Airport
+    85: Nagatenjouki Academy
+    86: Adult Correctional Facility
+    87: Special Ability Institute
+    88: Reformatory
+    89: Vanishing Tunnel
+    90: Atmospheric Research Lab
+    91: Exterior
+    92: Learning Core
+    93: Asunaro Park
+    94: Observatory
+    95: Geothermal Power Station
+    96: Academy City Courthouse
+    97: Board of Directors Office
 music:
   download: 
     - https://nikkums.io/cswt/BGM/AcademyCity.music.zip
@@ -55,6 +110,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Added shop names
   - version: 3
     changed:
       - Base salary from 300 to 500
