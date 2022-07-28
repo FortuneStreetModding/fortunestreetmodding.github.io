@@ -285,6 +285,9 @@ backgrounds: backgrounds.yml
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
+    Castaway.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Castaway.zip
     CastleTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastleTown.zip
@@ -294,10 +297,10 @@ backgrounds: backgrounds.yml
     ChumBucket.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ChumBucket.zip
+  2:
     CidsTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CidsTower.zip
-  2:
     Creeper.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Creeper.zip
