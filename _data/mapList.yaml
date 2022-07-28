@@ -328,6 +328,27 @@ backgrounds: backgrounds.yml
     DungeonLobby.zip:
       urls:
       - https://nikkums.io/cswt/Maps/DungeonLobby.zip
+    Neazi1.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Neazi1.zip
+    Neazi2.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Neazi2.zip
+    Neazi3.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Neazi3.zip
+    Neazi4.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Neazi4.zip
+    Neazi5.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Neazi5.zip
+    Neazi6.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Neazi6.zip
+    Neazi7.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Neazi7.zip
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
@@ -379,27 +400,6 @@ backgrounds: backgrounds.yml
     Monokuma.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Monokuma.zip
-    Neazi1.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Neazi1.zip
-    Neazi2.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Neazi2.zip
-    Neazi3.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Neazi3.zip
-    Neazi4.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Neazi4.zip
-    Neazi5.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Neazi5.zip
-    Neazi6.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Neazi6.zip
-    Neazi7.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Neazi7.zip
     NLA.zip:
       urls:
       - https://nikkums.io/cswt/Maps/NLA.zip
