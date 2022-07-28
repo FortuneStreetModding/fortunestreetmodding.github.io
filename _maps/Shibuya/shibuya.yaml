@@ -95,6 +95,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Fixed shop price of 104 building
   - version: 3
     changed:
       - Shop name update
