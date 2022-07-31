@@ -331,27 +331,36 @@ backgrounds: backgrounds.yml
     DungeonLobby.zip:
       urls:
       - https://nikkums.io/cswt/Maps/DungeonLobby.zip
-    Neazi1.zip:
+    Ennesan01A.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Neazi1.zip
-    Neazi2.zip:
+      - https://nikkums.io/cswt/Maps/Ennesan01A.zip
+    Ennesan01B.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Neazi2.zip
-    Neazi3.zip:
+      - https://nikkums.io/cswt/Maps/Ennesan01B.zip
+    Ennesan01C.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Neazi3.zip
-    Neazi4.zip:
+      - https://nikkums.io/cswt/Maps/Ennesan01C.zip
+    Ennesan02A.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Neazi4.zip
-    Neazi5.zip:
+      - https://nikkums.io/cswt/Maps/Ennesan02A.zip
+    Ennesan02B.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Neazi5.zip
-    Neazi6.zip:
+      - https://nikkums.io/cswt/Maps/Ennesan02B.zip
+    Ennesan03.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Neazi6.zip
-    Neazi7.zip:
+      - https://nikkums.io/cswt/Maps/Ennesan03.zip
+    Ennesan04.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Neazi7.zip
+      - https://nikkums.io/cswt/Maps/Ennesan04.zip
+    Ennesan05.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan05.zip
+    Ennesan06.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan06.zip
+    Ennesan07.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan07.zip
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
