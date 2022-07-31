@@ -8,7 +8,7 @@ theme: Mario
 initialCash: 2500
 targetAmount: 16000
 baseSalary: 300
-salaryIncrement: 250
+salaryIncrement: 300
 maxDiceRoll: 8
 frbFile1: castaway1
 frbFile2: castaway2
