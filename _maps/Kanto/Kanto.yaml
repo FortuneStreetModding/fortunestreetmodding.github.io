@@ -16,8 +16,23 @@ mapIcon: Kanto
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Kanto.music.zip
-    - https://drive.google.com/u/0/uc?id=1u-mG-JIxlYrgI7LmVMnm0IjEcMhJutqd&export=download
+    - https://drive.google.com/u/2/uc?id=1sXVAUINjvFl3T4ZxgBuWmTOtYrzTlhK2&export=download
   map: BGM_MAP_KANTO.55
+  stock: PXYPokecenter
+  ventureCards: PXYMysteryGift
+  auction: PKFloats
+  targetMet: TheBattleAtTheSummit
+  win: PXYHallOfFame
+  guestAppear: PXYBasicClothes
+  guestLeave: PXYElegantClothes
+  badVentureCard: PXYPokeFlute
+  takeAbreak: PXYPokeFlute
+  promotionMii: PXYTM
+  promotionMario: PXYTM
+  promotionDragonQuest: PXYTM
+  forcedBuyout: PXYGymBadge
+  domination: PXYKeyItem
+  bankruptcy: 
 tourMode:
   bankruptcyLimit: 1
   opponent1: Dragonlord
