@@ -17,6 +17,14 @@ import requests
 import argparse
 import hashlib
 
+# https://stackoverflow.com/questions/50045617/yaml-load-force-dict-keys-to-strings
+def my_construct_mapping(self, node, deep=False):
+    data = self.construct_mapping_org(node, deep)
+    return {(str(key) if isinstance(key, int) else key): data[key] for key in data}
+
+yaml.SafeLoader.construct_mapping_org = yaml.SafeLoader.construct_mapping
+yaml.SafeLoader.construct_mapping = my_construct_mapping
+
 def inplace_change(file, attribute, value):
     with open(file,'r',encoding="utf8") as f:
         lines = f.readlines()
