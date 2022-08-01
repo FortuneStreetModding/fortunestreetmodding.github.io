@@ -44,7 +44,7 @@
         "shopNames": {
             "type": "object",
             "patternProperties": {
-                "^[0-9]+$": {
+                "^(?:100|[1-9][0-9]?)$": {
                     "type": "string"
                 }
             },
