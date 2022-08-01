@@ -40,11 +40,7 @@
             "items": { "type": "string" }
         },
         "shopNames": {
-            "type": "object",
-            "patternProperties": {
-                "^([1-9][0-9]?|100)$": { "type": "string" }
-            },
-            "additionalProperties": false
+            "type": "object"
         },
         "character": {
             "type": "string",
