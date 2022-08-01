@@ -39,6 +39,13 @@
             "maxItems": 12,
             "items": { "type": "string" }
         },
+        "shopNames": {
+            "type": "object",
+            "patternProperties": {
+                "^([1-9][0-9]?|100)$": { "type": "string" }
+            },
+            "additionalProperties": false
+        },
         "character": {
             "type": "string",
             "enum": [
@@ -504,6 +511,56 @@
                 "type": "integer",
                 "minimum": 0,
                 "maximum": 1
+            }
+        },
+        "shopNames": {
+            "description": "The (preferably) lowercase custom shop names for this map.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "en": {
+                    "$ref": "#/definitions/shopNames"
+                },
+                "de": {
+                    "$ref": "#/definitions/shopNames"
+                },
+                "fr": {
+                    "$ref": "#/definitions/shopNames"
+                },
+                "it": {
+                    "$ref": "#/definitions/shopNames"
+                },
+                "es": {
+                    "$ref": "#/definitions/shopNames"
+                },
+                "jp": {
+                    "$ref": "#/definitions/shopNames"
+                }
+            }
+        },
+        "capitalShopNames": {
+            "description": "The uppercase custom shop names for this map.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "en": {
+                    "$ref": "#/definitions/shopNames"
+                },
+                "de": {
+                    "$ref": "#/definitions/shopNames"
+                },
+                "fr": {
+                    "$ref": "#/definitions/shopNames"
+                },
+                "it": {
+                    "$ref": "#/definitions/shopNames"
+                },
+                "es": {
+                    "$ref": "#/definitions/shopNames"
+                },
+                "jp": {
+                    "$ref": "#/definitions/shopNames"
+                }
             }
         },
         "changelog": {
