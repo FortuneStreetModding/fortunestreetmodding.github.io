@@ -37,10 +37,18 @@
             "type": "array",
             "minItems": 2,
             "maxItems": 12,
-            "items": { "type": "string" }
+            "items": {
+                "type": "string"
+            }
         },
         "shopNames": {
-            "type": "object"
+            "type": "object",
+            "patternProperties": {
+                "^[0-9]+$": {
+                    "type": "string"
+                }
+            },
+            "additionalProperties": false
         },
         "character": {
             "type": "string",
