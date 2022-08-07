@@ -54,6 +54,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Updated shop values to be less extreme
   - version: 1
     added: 
       - Initial Release
