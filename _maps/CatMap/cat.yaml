@@ -14,12 +14,13 @@ salaryIncrement: 240
 maxDiceRoll: 8
 frbFile1: cat
 tourMode:
-  bankruptcyLimit: 1
-  opponent1: Mario
-  opponent2: Daisy
-  opponent3: DiddyKong
+  bankruptcyLimit: 3
+  opponent1: Toad
+  opponent2: Angelo
+  opponent3: Slime
   clearRank: 2
 background: bg002
+mapIcon: catcat
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
