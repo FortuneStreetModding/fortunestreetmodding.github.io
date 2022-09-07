@@ -361,6 +361,21 @@ backgrounds: backgrounds.yml
     Ennesan07.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan07.zip
+    Ennesan08A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan08A.zip
+    Ennesan08B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan08B.zip
+    Ennesan09.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan09.zip
+    Ennesan10A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan10A.zip
+    Ennesan10B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan10B.zip
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
