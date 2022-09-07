@@ -4,7 +4,7 @@ name:
 desc:
   en: Based on Planet Mira from Xenoblade Chronicles X. Venture across the five continents of this harsh alien world in a quest for survival.
 ruleSet: Standard
-theme: DragonQuest
+theme: Mario
 initialCash: 3000
 targetAmount: 20000
 baseSalary: 300
@@ -41,6 +41,10 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Fixed rare softlock with doors
+      - Theme changed to Mario to fix softlock
   - version: 2
     changed: 
       - Board balance, pathfinding fix

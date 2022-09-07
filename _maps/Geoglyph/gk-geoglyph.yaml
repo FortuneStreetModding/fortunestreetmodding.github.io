@@ -4,7 +4,7 @@ name:
 desc:
   en: Ported from Gorgeous King. Traverse back-and-forth between both glyphs to obtain all four suits!
 ruleSet: Standard
-theme: DragonQuest
+theme: Mario
 initialCash: 1500
 targetAmount: 20000
 baseSalary: 300
@@ -170,6 +170,11 @@ ventureCards:
   - 0  # Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    changed:
+      - Fixed positioning of board
+      - Fixed rare softlock with doors
+      - Theme changed to Mario to fix softlock
   - version: 2
     changed:
       - Icon & updated yaml for CSWT
