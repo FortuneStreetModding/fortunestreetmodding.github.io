@@ -265,3 +265,15 @@
       auction: IGetYouBack
       targetMet: NoGameNoLife
       win: WinnerNGNL
+- background: catmap-bg
+  name: Cats
+  download: 
+  - https://logg.biz/fs/catmap-assets.zip
+  mapIcon: catcat
+  music:
+      map: cats-at-play.50
+      targetMet: cat-rave.50
+      guestAppear: cat-guest-arrive.50
+      guestLeave: cat-guest-goodbye.50
+      badVentureCard: cat-curse.50
+      takeAbreak: cat-sleepy.50
