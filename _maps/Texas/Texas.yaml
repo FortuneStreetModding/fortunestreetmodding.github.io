@@ -1,18 +1,8 @@
 ---
 name:
   en: Texas
-  de: Schloss Trodain
-  fr: Château de Trodain
-  it: Castello di Trodain
-  jp: トロデーン城
-  es: Castillo de Trodain
 desc:
-  en: "Texas: YEE-HAW! Get ready to rope and ride through the Lone Star State's biggest cities. Dallas to the north, San Antonio to the south, Houston to the east and El Paso to the west"
-  de: "Schloss Trodain: Genieße die majestätische Ruhe am Hof von König Trode\xa0... und versuche, nicht an den einst so erbärmlichen Zustand des Schlosses, überwuchert von Schlingpflanzen, zu denken."
-  fr: "Château de Trodain\xa0: le domaine paisible du roi Trode... La triste vision qu'il présentait alors qu'il était enveloppé de ronces maudites est restée gravée dans nos mémoires."
-  it: "Castello di Trodain: il dominio di re Trode. Anni fa fu avvolto da un groviglio di rovi maledetti, ma un gruppo di eroi coraggiosi lo liberò da quell'orrendo sortilegio."
-  jp: トロデーン城：　トロデ王がすむ平和なお城。　かつては呪いのためイバラにおおわれていた。
-  es: "Castillo de Trodain: la apacible morada del Rey Trode. Es difícil olvidar el lamentable estado en el que se encontraba cuando las enredaderas malditas lo cubrían por completo."
+  en: YEE-HAW! Get ready to rope and ride through the Lone Star State's biggest cities. Dallas to the north, San Antonio to the south, Houston to the east and El Paso to the west
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000
@@ -170,57 +160,8 @@ districtNames:
     - S. Dallas
     - I-45
     - E. Houston
-  de:
-    - Bezirk A
-    - Bezirk B
-    - Bezirk C
-    - Bezirk D
-    - Bezirk E
-    - Bezirk F
-    - Bezirk G
-    - Bezirk H
-  fr:
-    - Quartier A
-    - Quartier B
-    - Quartier C
-    - Quartier D
-    - Quartier E
-    - Quartier F
-    - Quartier G
-    - Quartier H
-  it:
-    - Quartiere A
-    - Quartiere B
-    - Quartiere C
-    - Quartiere D
-    - Quartiere E
-    - Quartiere F
-    - Quartiere G
-    - Quartiere H
-  jp:
-    - エリアＡ
-    - エリアＢ
-    - エリアＣ
-    - エリアＤ
-    - エリアＥ
-    - エリアＦ
-    - エリアＧ
-    - エリアＨ
-  es:
-    - Distrito A
-    - Distrito B
-    - Distrito C
-    - Distrito D
-    - Distrito E
-    - Distrito F
-    - Distrito G
-    - Distrito H
 shopNames:
   en:
-    1: <未設定>10G
-    2: <未設定>20G
-    3: <未設定>30G
-    4: <未設定>40G
     5: Blockbuster Video
     6: Twice The Ice
     7: Gas Station
@@ -261,50 +202,11 @@ shopNames:
     42: BBQ Truck
     43: Glassworks
     44: BBQ Restaurant
-    45: art gallery
-    46: leatherware boutique
-    47: pet shop
-    48: nail salon
-    49: spice shop
-    50: music shop
-    51: surf shop
-    52: boating shop
-    53: cartographer's
-    54: alloy rims shop
-    55: fashion boutique
-    56: waxworks
-    57: lens shop
-    58: kaleidoscope shop
-    59: crystal ball shop
-    60: <未設定>600G
-    61: gemstone supplier
-    62: taxidermy studio
-    63: <未設定>630G
-    64: <未設定>640G
-    65: antiques dealer's
-    66: <未設定>660G
-    67: <未設定>670G
-    68: goldsmith's
-    69: <未設定>690G
-    70: fossil shop
-    71: <未設定>710G
     72: music-box shop
-    73: <未設定>730G
-    74: <未設定>740G
     75: marionette workshop
     76: health shop
-    77: <未設定>770G
-    78: <未設定>780G
-    79: <未設定>790G
     80: Reunion Tower
     81: Ft.Bliss&Ironsides
-    82: <未設定>820G
-    83: <未設定>830G
-    84: <未設定>840G
     85: The Alamo
-    86: <未設定>860G
-    87: <未設定>870G
-    88: <未設定>880G
-    89: <未設定>890G
     90: NASA HQ Houston
 ...
