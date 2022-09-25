@@ -12,6 +12,7 @@ salaryIncrement: 250
 maxDiceRoll: 7
 frbFile1: AlefgardBSide
 background: bg107
+mapIcon: BSide
 tourMode:
   bankruptcyLimit: 1
   opponent1: Dragonlord
