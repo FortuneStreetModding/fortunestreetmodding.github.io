@@ -322,9 +322,6 @@ backgrounds: backgrounds.yml
     Disboard.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Disboard.zip
-    DKsJungleAdventure.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DKsJungleAdventure.zip
     Downhill.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Downhill.zip
