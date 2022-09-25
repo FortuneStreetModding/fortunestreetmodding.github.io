@@ -291,13 +291,16 @@ backgrounds: backgrounds.yml
     CastleTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastleTown.zip
+    CatMap.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/CatMap.zip
     ChumBucket.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ChumBucket.zip
+  2:
     CidsTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CidsTower.zip
-  2:
     Creeper.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Creeper.zip
@@ -319,9 +322,6 @@ backgrounds: backgrounds.yml
     Disboard.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Disboard.zip
-    DKsJungleAdventure.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DKsJungleAdventure.zip
     Downhill.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Downhill.zip
