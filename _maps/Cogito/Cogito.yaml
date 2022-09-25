@@ -13,6 +13,7 @@ maxDiceRoll: 6
 frbFile1: starship0
 frbFile2: starship1
 background: bg102
+mapIcon: Switchship
 tourMode:
   bankruptcyLimit: 1
   opponent1: Platypunk
