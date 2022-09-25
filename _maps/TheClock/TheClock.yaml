@@ -10,10 +10,10 @@ targetAmount: 20000
 baseSalary: 400
 salaryIncrement: 250
 maxDiceRoll: 8
-frbFile1: angel0
-frbFile2: angel1
-frbFile3: angel2
-frbFile4: angel3
+frbFile1: clock0
+frbFile2: clock1
+frbFile3: clock2
+frbFile4: clock3
 background: bg109
 switchRotationOriginPoints:
   - x: 0
