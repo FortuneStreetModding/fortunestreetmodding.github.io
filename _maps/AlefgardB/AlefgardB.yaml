@@ -19,6 +19,13 @@ tourMode:
   opponent2: Angelo
   opponent3: Birdo
   clearRank: 2
+changelog:
+  - version: 1
+    added: 
+      - Initial Release
+authors:
+  - name: Crimson Hat
+    url: https://github.com/CrimsonHat1997
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 0  #   2 Venture on! Roll the die again and move forward.
