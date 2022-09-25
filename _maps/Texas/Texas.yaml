@@ -12,6 +12,7 @@ salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: Texas
 background: bg101
+mapIcon: Texas
 tourMode:
   bankruptcyLimit: 1
   opponent1: Slime
