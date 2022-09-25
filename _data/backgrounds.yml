@@ -273,7 +273,7 @@
   music:
       map: cats-at-play.50
       targetMet: cat-rave.50
-      guestAppear: cat-guest-arrive.50
-      guestLeave: cat-guest-goodbye.50
+      guestAppear: cat-guest-arrive.75
+      guestLeave: cat-guest-goodbye.75
       badVentureCard: cat-curse.50
       takeAbreak: cat-sleepy.50

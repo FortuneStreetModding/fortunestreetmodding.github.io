@@ -26,8 +26,8 @@ music:
   # above are LOOPING.
   #########################################
   # below are NON LOOPING.
-  guestAppear: cat-guest-arrive.50 # 08_ME_OJAMA_COME.brstm, when heal slime, goody bag, or lakitu appear;; samples are ozzy mandice Fortune Street Custom Board Extras tutorial; DDR Start Button; 1969年- @ Wet Willies
-  guestLeave: cat-guest-goodbye.50 # 09_ME_OJAMA_BYE.brstm, when those guys leave; Meow~<3 meow mix commercial exit, bohemian rhapsody
+  guestAppear: cat-guest-arrive.75 # 08_ME_OJAMA_COME.brstm, when heal slime, goody bag, or lakitu appear;; samples are ozzy mandice Fortune Street Custom Board Extras tutorial; DDR Start Button; 1969年- @ Wet Willies
+  guestLeave: cat-guest-goodbye.75 # 09_ME_OJAMA_BYE.brstm, when those guys leave; Meow~<3 meow mix commercial exit, bohemian rhapsody
   badVentureCard: cat-curse.50 # 06_ME_CURSE.brstm, sample from "VERY angry cat!! FUNNY!" https://www.youtube.com/watch?v=sCexB6qID_A
   takeAbreak: cat-sleepy.50 # 03_ME_HOLIDAY.brstm, "Bravely Default - Falling Asleep..." + sample of my cat snoring
   # promotionMii: # not found in original game, they typically get Mario or DQ level up theme based on the board they're in
