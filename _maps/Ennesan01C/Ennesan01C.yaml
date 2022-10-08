@@ -12,7 +12,7 @@ salaryIncrement: 75
 maxDiceRoll: 7
 frbFile1: Ennesan01C
 background: bg008alt
-mapIcon: Strategy
+mapIcon: Enne01C
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan01C.music.zip
@@ -41,6 +41,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed some venture cards
+      - Change map icon
   - version: 1
     added: 
       - Initial Release
@@ -62,13 +66,13 @@ ventureCards:
   - 1  #  13 Misadventure! The values of all your shops drop by 13%!
   - 1  #  14 Misadventure! You give everyone 30G each!
   - 1  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
-  - 0  #  16 Random venture! Shops expand in three districts picked at random!
+  - 1  #  16 Random venture! Shops expand in three districts picked at random!
   - 0  #  17 Special bonus! You receive half of your salary!
   - 0  #  18 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value.
   - 1  #  19 Price hike venture! Your shop prices go up by 30% until your next turn.
   - 1  #  20 Revaluation venture! You can expand any one of your shops by 20%.
   - 1  #  21 Random venture! You receive 20 stocks in a district picked at random!
-  - 1  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
+  - 0  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
   - 0  #  23 Revaluation venture! You can expand any one of your shops by 50%.
   - 1  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
   - 1  #  25 Misadventure! Your shop prices halve until your next turn!
@@ -95,7 +99,7 @@ ventureCards:
   - 1  #  46 Misadventure! You drop your wallet and lose 10% of your ready cash!
   - 0  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
   - 1  #  48 Misadventure! All shops in a district picked at random fall in value by 10%!
-  - 0  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
+  - 1  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
   - 1  #  50 Venture on! Move forward the same number of squares again.
   - 1  #  51 Venture on! Move forward 1 square more.
   - 1  #  52 Venture on! Move forward another 2 squares.
@@ -120,7 +124,7 @@ ventureCards:
   - 1  #  71 Capital venture! You can invest up to 200G of the bank's money in your shops.
   - 1  #  72 Dicey adventure! Roll 1/3/5 to take 20 times the number of your shops in gold coins. Roll 2/4/6 to pay the same.
   - 0  #  73 Property venture! You can buy any unowned shop or vacant plot.
-  - 1  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
+  - 0  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
   - 0  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
   - 0  #  76 Special arcade adventure! You're invited to play Round the Blocks!
   - 0  #  77 Freebie! Take five of each district's stocks.
@@ -275,5 +279,4 @@ shopNames:
     96: Initial Value 960
     97: Initial Value 970
     98: Vacant plot
-    99: Initial Value 990
 ...
