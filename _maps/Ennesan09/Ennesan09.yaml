@@ -12,11 +12,11 @@ salaryIncrement: 100
 maxDiceRoll: 5
 frbFile1: Ennesan09
 background: bg008alt
-mapIcon: Strategy
+mapIcon: Enne09
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan09.music.zip
-    - https://drive.google.com/u/2/uc?id=1jHy_EKJswZCegoZIN7h3G52uxHkgXKML&export=download
+    - https://drive.google.com/file/d/1jHy_EKJswZCegoZIN7h3G52uxHkgXKML&export=download
   map: Map_Ennesan9.80
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan.45
@@ -41,6 +41,15 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Number of event squares that can change direction increased from 3 to 2
+      - Change map icon
+  - version: 2
+    changed:
+      - Shop values for some shops changed
+      - Add event square with change of direction adjacent to spade and club suit square
+      - Number of event squares that can change direction increased from 1 to 3
   - version: 1
     added: 
       - Initial Release
