@@ -5,10 +5,10 @@ desc:
   en: The District count is 10. Strategy is key to this board. Your skills will be tested.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2000
+initialCash: 2200
 targetAmount: 22000
-baseSalary: 400
-salaryIncrement: 75
+baseSalary: 450
+salaryIncrement: 100
 maxDiceRoll: 7
 frbFile1: Ennesan01C
 background: bg008alt
@@ -43,6 +43,10 @@ tourMode:
 changelog:
   - version: 2
     changed:
+      - Shop values for some shops changed.
+      - Initial cash increased from 2000 to 2200.
+      - Base salary increased from 400 to 450.
+      - Salary increment increased from 75 to 100.
       - Changed some venture cards
       - Change map icon
   - version: 1
