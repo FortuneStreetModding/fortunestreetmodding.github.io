@@ -9,7 +9,7 @@ initialCash: 2000
 targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 150
-maxDiceRoll: 6
+maxDiceRoll: 8
 frbFile1: gk-primitive
 background: bg001_clean
 mapIcon: gk-primitive
