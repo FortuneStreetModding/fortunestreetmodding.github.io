@@ -2,13 +2,13 @@
 name:
   en: Enne-san Board 05
 desc:
-  en: All Backstreets warp to a central bank. Strategy is key to this board. Your skills will be tested.
+  en: Purple Backstreet warps to the central bank. All other Backstreets warp to the Change of suit adjacent to the Suits of the corresponding color.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
 targetAmount: 20000
 baseSalary: 300
-salaryIncrement: 150
+salaryIncrement: 125
 maxDiceRoll: 7
 frbFile1: Ennesan05
 background: bg008alt
@@ -44,9 +44,10 @@ changelog:
   - version: 4
     changed:
       - Shop values for some properties changed.
-      - Change Boon Square to Backstreet with warp to central bank
+      - Change Boon Square to Backstreet with warp to the Change of suit adjacent to the Suits of the corresponding color.
       - Added Backstreets next to the banks at the four corners to warp to the central bank.
-      - Changed the Suits earned at the Suits Square adjacent to the central bank.
+      - Suit adjacent to bank changed to change of suit
+      - Sarary increment changed to 125
       - Changed some venture cards
       - Change map icon
       - Change description
