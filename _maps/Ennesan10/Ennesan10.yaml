@@ -2,14 +2,14 @@
 name:
   en: Enne-san Board 10
 desc:
-  en: Backstreet warps to the suit square corresponding to the color. Strategy is key to this board. Your skills will be tested.
+  en: Strategy is key to this board. Your skills will be tested.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
-targetAmount: 22000
+targetAmount: 25000
 baseSalary: 250
-salaryIncrement: 200
-maxDiceRoll: 8
+salaryIncrement: 150
+maxDiceRoll: 7
 frbFile1: Ennesan10
 background: bg008alt
 mapIcon: Enne10
@@ -43,12 +43,16 @@ tourMode:
 changelog:
   - version: 2
     changed:
+      - Change vacant plot to regular property.
       - Changed the effects of some suits and event squares
+      - Change some event squares to Roll on or Change of suit
+      - Increased number of districts from 11 to 12
       - Changed some venture cards
       - Add a change of suit.
-      - Change the central event square to a Backstreet that warps to a suit corresponding to the color
+      - Central event square changed to property, number of squares increased
+      - Max Dice Roll changed from 6 to 7
+      - Salary Increment decreased from 200 to 150
       - Change map icon
-      - Change description
       - Change 10-A to 10
   - version: 1
     added: 
