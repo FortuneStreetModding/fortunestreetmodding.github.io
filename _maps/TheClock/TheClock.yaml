@@ -5,10 +5,10 @@ desc:
   en: Tick Tock, rotate the clock!
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2000
+initialCash: 2500
 targetAmount: 20000
-baseSalary: 400
-salaryIncrement: 250
+baseSalary: 500
+salaryIncrement: 350
 maxDiceRoll: 8
 frbFile1: clock0
 frbFile2: clock1
