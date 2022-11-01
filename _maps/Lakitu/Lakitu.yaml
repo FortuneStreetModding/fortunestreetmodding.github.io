@@ -10,7 +10,7 @@ targetAmount: 21000
 baseSalary: 300
 salaryIncrement: 450
 maxDiceRoll: 7
-frbFile1: latitude
+frbFile1: Lakitu
 background: bg002
 tourMode:
   bankruptcyLimit: 1
