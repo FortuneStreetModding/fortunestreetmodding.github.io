@@ -15,6 +15,7 @@ frbFile2: clock1
 frbFile3: clock2
 frbFile4: clock3
 background: bg109
+mapIcon: clock
 switchRotationOriginPoints:
   - x: 0
     y: 0
