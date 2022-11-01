@@ -272,13 +272,16 @@ backgrounds: backgrounds.yml
     AlchemistsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AlchemistsHouse.zip
+    AlefgardB.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/AlefgardB.zip
     Anchor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Anchor.zip
+  1:
     BabyPark.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/BabyPark.zip
-  1:
+      - https://nikkums.io/cswt/Maps/BabyPark.zip  
     Bakerman.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Bakerman.zip
@@ -291,13 +294,19 @@ backgrounds: backgrounds.yml
     CastleTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastleTown.zip
+    CatMap.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/CatMap.zip
+  2:
     ChumBucket.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ChumBucket.zip
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
-  2:
+    Cogito.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Cogito.zip
     CrestOfFlames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CrestOfFlames.zip
@@ -352,21 +361,15 @@ backgrounds: backgrounds.yml
     Ennesan07.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan07.zip
-    Ennesan08A.zip:
+    Ennesan08.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Ennesan08A.zip
-    Ennesan08B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan08B.zip
+      - https://nikkums.io/cswt/Maps/Ennesan08.zip
     Ennesan09.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan09.zip
-    Ennesan10A.zip:
+    Ennesan10.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Ennesan10A.zip
-    Ennesan10B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan10B.zip
+      - https://nikkums.io/cswt/Maps/Ennesan10.zip
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
