@@ -301,15 +301,12 @@ backgrounds: backgrounds.yml
     ChumBucket.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ChumBucket.zip
-    CidsTower.zip:
+    TheClock.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/CidsTower.zip
+      - https://nikkums.io/cswt/Maps/TheClock.zip
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
-    Creeper.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Creeper.zip
     CrestOfFlames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CrestOfFlames.zip
@@ -391,9 +388,6 @@ backgrounds: backgrounds.yml
     GoodybagLair.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GoodybagLair.zip
-    Hell.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Hell.zip
     HighRise.zip:
       urls:
       - https://nikkums.io/cswt/Maps/HighRise.zip
@@ -415,15 +409,9 @@ backgrounds: backgrounds.yml
     KingOfTheHill.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KingOfTheHill.zip
-    LeagueBar.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/LeagueBar.zip
     Lucky.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Lucky.zip
-    Monokuma.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Monokuma.zip
     NLA.zip:
       urls:
       - https://nikkums.io/cswt/Maps/NLA.zip
@@ -448,9 +436,6 @@ backgrounds: backgrounds.yml
     QuietStreet.zip:
       urls:
       - https://nikkums.io/cswt/Maps/QuietStreet.zip
-    RainbowDream.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/RainbowDream.zip
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
@@ -464,9 +449,6 @@ backgrounds: backgrounds.yml
       practiceBoard: true
       urls:
       - https://nikkums.io/cswt/Maps/ShellIsleRedux.zip
-    Skullboard.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Skullboard.zip
     SkyTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SkyTower.zip
