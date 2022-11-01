@@ -2,17 +2,17 @@
 name:
   en: Enne-san Board 04
 desc:
-  en: Strategy is key to this board. Your skills will be tested.
+  en: All central warp squares warp to the central bank. In addition, the collective event square adjacent to each bank and store must warp there by some means to trigger an event.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2500
+initialCash: 2700
 targetAmount: 25000
-baseSalary: 400
-salaryIncrement: 100
+baseSalary: 450
+salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: Ennesan04
 background: bg008alt
-mapIcon: Strategy
+mapIcon: Enne04
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan04.music.zip
@@ -35,12 +35,28 @@ music:
   bankruptcy: Bankrupt_Ennesan.40
 tourMode:
   bankruptcyLimit: 1
-  initialCash: 2500
+  initialCash: 2700
   opponent1: Yoshi
   opponent2: Alena
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Changed some venture cards
+      - Change map icon
+  - version: 3
+    changed:
+      - Number of areas reduced from 12 to 8.
+      - The number of stores comprising each area increased from 4-5 to 6-7.
+      - Shop values in some squares were changed.
+      - Change from 4 to 2 warp squares each to the central bank.
+      - Warp Square adjacent to vacant plot changed to Event 57.
+      - Increase collective event square
+      - Initial cash increased to 2700.
+      - Base salary increased to 450 and salary increment increased to 150.
+      - Changed some venture cards
+      - Changed description
   - version: 2
     changed:
       - Re-arrangement of event squares to make them easier to locate
@@ -69,17 +85,17 @@ ventureCards:
   - 1  #   9 Venture on! Everyone's shops close for the day! Now roll the die and move again.
   - 1  #  10 Venture on! Everyone's shop prices cut in half! Now roll the die and move again.
   - 1  #  11 Moneymaking venture! Roll the die and get 11 times the number shown in gold coins from all other players!
-  - 0  #  12 Capital venture! You can invest capital in any of your shops.
+  - 1  #  12 Capital venture! You can invest capital in any of your shops.
   - 1  #  13 Misadventure! The values of all your shops drop by 13%!
   - 1  #  14 Misadventure! You give everyone 30G each!
   - 1  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
-  - 0  #  16 Random venture! Shops expand in three districts picked at random!
+  - 1  #  16 Random venture! Shops expand in three districts picked at random!
   - 0  #  17 Special bonus! You receive half of your salary!
   - 0  #  18 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value.
   - 1  #  19 Price hike venture! Your shop prices go up by 30% until your next turn.
   - 1  #  20 Revaluation venture! You can expand any one of your shops by 20%.
-  - 1  #  21 Random venture! You receive 20 stocks in a district picked at random!
-  - 1  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
+  - 0  #  21 Random venture! You receive 20 stocks in a district picked at random!
+  - 0  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
   - 0  #  23 Revaluation venture! You can expand any one of your shops by 50%.
   - 1  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
   - 1  #  25 Misadventure! Your shop prices halve until your next turn!
@@ -96,17 +112,17 @@ ventureCards:
   - 1  #  36 Capital venture! You can pay 100G for the chance to invest in your shops.
   - 0  #  37 Random venture! Shops expand by 30% in a district picked at random!
   - 1  #  38 Stock venture! You can buy stocks in a district of your choice at 10% above the market value.
-  - 0  #  39 Suit venture! Buy a Suit Yourself card for 100G.
+  - 1  #  39 Suit venture! Buy a Suit Yourself card for 100G.
   - 1  #  40 Misadventure! You give away 10% of your ready cash to the player in last place!
   - 1  #  41 Misadventure! Stock prices fall by 10% in a district picked at random!
-  - 1  #  42 Misadventure! Stock prices fall by 20% in a district picked at random!
+  - 0  #  42 Misadventure! Stock prices fall by 20% in a district picked at random!
   - 0  #  43 Misadventure! You pay an assets tax of two gold coins per unit of stock that you own!
   - 1  #  44 Misadventure! Roll the die and pay 44 times the number in gold coins to the player in last place!
   - 0  #  45 Dicey adventure! Roll 1/3/5 to warp to a take-a-break square. Roll 2/4/6 to warp to the arcade.
   - 1  #  46 Misadventure! You drop your wallet and lose 10% of your ready cash!
   - 0  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
   - 1  #  48 Misadventure! All shops in a district picked at random fall in value by 10%!
-  - 0  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
+  - 1  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
   - 1  #  50 Venture on! Move forward the same number of squares again.
   - 1  #  51 Venture on! Move forward 1 square more.
   - 1  #  52 Venture on! Move forward another 2 squares.
@@ -123,7 +139,7 @@ ventureCards:
   - 1  #  63 Random venture! Stock prices increase by 20% in a district picked at random!
   - 0  #  64 Random venture! Stock prices increase by 30% in a district picked at random!
   - 1  #  65 Forced buyout! You can buy a vacant plot or shop for five times its value, whether someone else owns it or not.
-  - 1  #  66 Special bonus! You receive 10 of the most valuable stocks!
+  - 0  #  66 Special bonus! You receive 10 of the most valuable stocks!
   - 1  #  67 Stock venture! You can buy stocks in a district of your choice.
   - 1  #  68 Special arcade adventure! You're invited to play Memory Block!
   - 1  #  69 Stock venture! You can sell stocks you own at 20% above the market value.
@@ -131,7 +147,7 @@ ventureCards:
   - 1  #  71 Capital venture! You can invest up to 200G of the bank's money in your shops.
   - 1  #  72 Dicey adventure! Roll 1/3/5 to take 20 times the number of your shops in gold coins. Roll 2/4/6 to pay the same.
   - 0  #  73 Property venture! You can buy any unowned shop or vacant plot.
-  - 1  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
+  - 0  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
   - 0  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
   - 0  #  76 Special arcade adventure! You're invited to play Round the Blocks!
   - 0  #  77 Freebie! Take five of each district's stocks.
@@ -155,7 +171,7 @@ ventureCards:
   - 0  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
   - 0  #  96 Misadventure! All players scramble to another player's location!
   - 0  #  97 Stock rise venture! Increase stock value by 20% in a district of your choice.
-  - 0  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
+  - 1  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
   - 0  #  99 Freebie! What's inside...?
   - 0  # 100 Freebie! Take a Suit Yourself card!
   - 0  # 101 Special bonus! Your shops all grow by 21%!
@@ -283,8 +299,7 @@ shopNames:
     93: Initial Value 930
     94: Initial Value 940
     95: Initial Value 950
-    96: Initial Value 960
+    96: Initial Value 990
     97: Initial Value 970
     98: Vacant plot
-    99: Initial Value 990
 ...
