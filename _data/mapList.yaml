@@ -279,6 +279,9 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/Anchor.zip
   1:
+    Awful.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Awful.zip  
     BabyPark.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BabyPark.zip  
@@ -294,10 +297,10 @@ backgrounds: backgrounds.yml
     CastleTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastleTown.zip
+  2:
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
-  2:
     ChumBucket.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ChumBucket.zip
@@ -409,6 +412,9 @@ backgrounds: backgrounds.yml
     KingOfTheHill.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KingOfTheHill.zip
+    Lakitu.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Lakitu.zip
     Lucky.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Lucky.zip
