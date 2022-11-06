@@ -19,8 +19,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 music:
-  download:
-- https://drive.google.com/drive/u/0/folders/1G7vcHNYfh9OHdmjpihV-zF8v6WDUSm1Q
+  download: 
+    - https://nikkums.io/cswt/BGM/HeartofDelfino.music.zip
+    - https://drive.google.com/u/0/uc?id=1J8V03YHzWsm-D_Fu03YQdhpWT9EYHNV5&export=download&confirm=1
   map: board.70
   targetMet: netGoal.80
   promotionMario: fanfare.70

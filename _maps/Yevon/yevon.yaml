@@ -20,7 +20,9 @@ tourMode:
   opponent3: Bowser
   clearRank: 1
 music:
- - download: https://drive.google.com/drive/u/0/folders/1G7vcHNYfh9OHdmjpihV-zF8v6WDUSm1Q
+  download: 
+    - https://nikkums.io/cswt/BGM/Yevon.music.zip
+    - https://drive.google.com/u/0/uc?id=1GMFMwC3TjCBFHRvjgjANZwF2ergrbQy3&export=download&confirm=1
   map: main.70
   targetMet: netgoal.60
   promotionMario: promote.80
@@ -32,7 +34,7 @@ changelog:
     changed:
       - Initial Release
 authors:
-  - name: FatCat67
+  - name: Austin Coffee
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -96,7 +98,7 @@ ventureCards:
   - 1  #  60 Random venture! Stock prices increase by 10% in a district picked at random!
   - 1  #  61 Special bonus! You receive a 10% dividend on your stocks!
   - 1  #  62 Special bonus! You receive a 20% dividend on your stocks!
-  - 0  #  63 Random venture! Stock prices increase by 20% in a district picked at random!
+  - 1  #  63 Random venture! Stock prices increase by 20% in a district picked at random!
   - 1  #  64 Random venture! Stock prices increase by 30% in a district picked at random!
   - 1  #  65 Forced buyout! You can buy a vacant plot or shop for five times its value, whether someone else owns it or not.
   - 0  #  66 Special bonus! You receive 10 of the most valuable stocks!
@@ -120,7 +122,7 @@ ventureCards:
   - 0  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 1  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 0  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 1  #  88 Misadventure! All other players swap places!
   - 1  #  89 Freebie! All players take a Suit Yourself card!
   - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
