@@ -21,12 +21,10 @@ tourMode:
   clearRank: 3
 music:
 - download: https://drive.google.com/drive/u/0/folders/15nOPAnyCNRYbzIteLNfTHzDALdpciWap
-map: main.70
-  targetMet: netgoal.60
-  promotionMario: promote.80
-  promotionDragonQuest: promote.80
-  stock: stocks.70
-  ventureCards: ventureCards.80
+map: J-E-N-O-V-A.80
+  targetMet: Advent_One-Winged_Angel.70
+  promotionMario: fanfare.80
+  promotionDragonQuest: fanfare.80
 changelog:
   - version: 1
     changed:
