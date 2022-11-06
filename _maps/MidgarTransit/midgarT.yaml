@@ -21,8 +21,8 @@ tourMode:
   clearRank: 3
 music:
   download: 
-    - 
-    - 
+    - https://nikkums.io/cswt/BGM/MidgarTransit.music.zip
+    - https://drive.google.com/u/0/uc?id=18USs7tUFH0GUp6ajKosRp6nwXWtb1sYL&export=download
   map: J-E-N-O-V-A.80
   targetMet: Advent_One-Winged_Angel.70
   promotionMario: fanfare.80
