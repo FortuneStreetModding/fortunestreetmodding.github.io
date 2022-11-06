@@ -1,18 +1,8 @@
 ---
 name:
   en: Yevon
-  de: Bowsers Festung
-  fr: Château de Bowser
-  it: Castello di Bowser
-  jp: クッパ城
-  es: Castillo de Bowser
 desc:
-  en: "Yevon: Praise be to Yevon! In FF X the people of Spira follow the teachings of Yevon."
-  de: "Bowsers Festung: In Bowsers Zuhause erwarten dich die fiesesten Fallen. Ein falscher Schritt und du machst einen Bauchklatscher in brodelnd heiße Lava!"
-  fr: "Château de Bowser\xa0: le repaire de Bowser. Ce champ de mines est parsemé de mauvais tours et de pièges, où un seul faux-pas peut te faire plonger dans une mer de lave en fusion."
-  it: "Castello di Bowser: la dimora di Bowser, traboccante di trappole e trabocchetti di ogni genere. Basta fare un solo passo falso per precipitare in un mare di lava."
-  jp: クッパ城：　クッパがすむお城。　キケンなワナがたくさんしかけられており　一歩でも足をふみはずすとマグマの海に落ちることになる。
-  es: "Castillo de Bowser: el hogar de Bowser, además de una ratonera plagada de trampas donde un paso en falso te llevará de cabeza a un río de lava."
+  en: Praise be to Yevon! In FF X the people of Spira follow the teachings of Yevon.
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
@@ -22,6 +12,7 @@ salaryIncrement: 200
 maxDiceRoll: 6
 frbFile1: yevon
 background: bg106
+mapIcon: yevon
 tourMode:
   bankruptcyLimit: 1
   opponent1: Stella
@@ -29,12 +20,19 @@ tourMode:
   opponent3: Bowser
   clearRank: 1
 music:
+  download:
   map: main.70
   targetMet: netgoal.60
   promotionMario: promote.80
   promotionDragonQuest: promote.80
   stock: stocks.70
   ventureCards: ventureCards.80
+changelog:
+  - version: 1
+    changed:
+      - Initial Release
+authors:
+  - name: FatCat67
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -176,59 +174,4 @@ districtNames:
     - Camisade
     - Razzia
     - Passado
-  de:
-    - Bezirk A
-    - Bezirk B
-    - Bezirk C
-    - Bezirk D
-    - Bezirk E
-    - Bezirk F
-    - Bezirk G
-    - Bezirk H
-    - Bezirk I
-    - Bezirk J
-  fr:
-    - Quartier A
-    - Quartier B
-    - Quartier C
-    - Quartier D
-    - Quartier E
-    - Quartier F
-    - Quartier G
-    - Quartier H
-    - Quartier I
-    - Quartier J
-  it:
-    - Quartiere A
-    - Quartiere B
-    - Quartiere C
-    - Quartiere D
-    - Quartiere E
-    - Quartiere F
-    - Quartiere G
-    - Quartiere H
-    - Quartiere I
-    - Quartiere J
-  jp:
-    - エリアＡ
-    - エリアＢ
-    - エリアＣ
-    - エリアＤ
-    - エリアＥ
-    - エリアＦ
-    - エリアＧ
-    - エリアＨ
-    - エリアＩ
-    - エリアＪ
-  es:
-    - Distrito A
-    - Distrito B
-    - Distrito C
-    - Distrito D
-    - Distrito E
-    - Distrito F
-    - Distrito G
-    - Distrito H
-    - Distrito I
-    - Distrito J
 ...

@@ -12,6 +12,7 @@ salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: midgar
 background: bg102
+mapIcon: midgarT
 tourMode:
   bankruptcyLimit: 1
   opponent1: Slime
@@ -20,6 +21,12 @@ tourMode:
   clearRank: 3
 music:
 - download: https://drive.google.com/drive/u/0/folders/15nOPAnyCNRYbzIteLNfTHzDALdpciWap
+changelog:
+  - version: 1
+    changed:
+      - Initial Release
+authors:
+  - name: FatCat67
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
