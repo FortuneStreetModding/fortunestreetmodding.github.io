@@ -29,10 +29,7 @@ tourMode:
   opponent3: Princessa
   clearRank: 3
 music:
-  map: J-E-N-O-V-A.80
-  targetMet: Advent_One-Winged_Angel.70
-  promotionMario: fanfare.80
-  promotionDragonQuest: fanfare.80
+- download: https://drive.google.com/drive/u/0/folders/15nOPAnyCNRYbzIteLNfTHzDALdpciWap
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
