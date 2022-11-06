@@ -20,7 +20,7 @@ tourMode:
   opponent3: Bowser
   clearRank: 1
 music:
- - download: https://drive.google.com/drive/folders/1XOUIGqAbXYwlzBa3JSxUIIuzNUX8psQq
+ - download: https://drive.google.com/drive/u/0/folders/1G7vcHNYfh9OHdmjpihV-zF8v6WDUSm1Q
   map: main.70
   targetMet: netgoal.60
   promotionMario: promote.80
