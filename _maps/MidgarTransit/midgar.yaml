@@ -21,6 +21,12 @@ tourMode:
   clearRank: 3
 music:
 - download: https://drive.google.com/drive/u/0/folders/15nOPAnyCNRYbzIteLNfTHzDALdpciWap
+map: main.70
+  targetMet: netgoal.60
+  promotionMario: promote.80
+  promotionDragonQuest: promote.80
+  stock: stocks.70
+  ventureCards: ventureCards.80
 changelog:
   - version: 1
     changed:
