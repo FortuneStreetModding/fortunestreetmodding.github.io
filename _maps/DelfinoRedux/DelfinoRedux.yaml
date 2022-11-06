@@ -2,7 +2,7 @@
 name:
   en: Delfino Plaza Redux
 desc:
-  en: An edited version of the easy mode variant of Delfino Plaza
+  en: An edited version of the easy mode variant of Delfino Plaza.
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
@@ -18,6 +18,22 @@ tourMode:
   opponent2: Waluigi
   opponent3: Luigi
   clearRank: 2
+music:
+  download:
+- https://drive.google.com/drive/u/0/folders/1fSi80nWGDcNp188AT6CId1_BoS-OvKYe
+  map: board.70
+  targetMet: netGoal.80
+  promotionMario: fanfare.70
+  promotionDragonQuest: fanfare.70
+  takeAbreak: Inn.80
+  bankruptcy: bankrupt.90
+  auction: auction.80
+  ventureCards: venture.80
+  badVentureCard: unlucky.90
+  win: end.70
+  forcedBuyout: buyout.80
+  domination: domination.80
+  stock: stocks.80
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -148,6 +164,11 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    changed:
+      - Minor adjustments
+    added:
+      - Music
   - version: 1
     changed:
       - Initial Release
