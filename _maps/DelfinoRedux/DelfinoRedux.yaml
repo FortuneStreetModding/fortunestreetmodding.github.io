@@ -1,30 +1,16 @@
 ---
 name:
-  en: Heart of Delfino
-  de: Piazza Delfino
-  fr: Place Delfino
-  it: Delfinia
-  jp: ドルピックタウン
-  es: Ciudad Delfino
+  en: Delfino Plaza Redux
 desc:
-<<<<<<< HEAD:_maps/DelfinoRedux/DelfinoRedux.yaml
   en: An edited version of the easy mode variant of Delfino Plaza.
-=======
-  en: "Heart of Delfino: The largest metropolis on the southern resort of Isle Delfino. Once it was graffitied all over by the incorrigible Bowser Jr."
-  de: "Piazza Delfino: Die größte Metropole im Südseeparadies Isla Delfino. Die Graffiti des unverbesserlichen Bowser Jr. überzogen einst die ganze Stadt!"
-  fr: "Place Delfino\xa0: la plus grande métropole au sud de l'Île Delfino. L'incorrigible Bowser Jr. l'a un jour entièrement recouverte de graffitis."
-  it: "Delfinia: la più grande metropoli dell'Isola Delfino. Tempo fa l'incorreggibile Bowser Jr. si divertì a riempirla di orribili graffiti."
-  jp: ドルピックタウン：　南国のリゾートアイランド　ドルピック島最大の街。　以前クッパJr.によってラクガキだらけにされたことがある。
-  es: "Ciudad Delfino: la mayor metrópoli de la paradisiaca Isla Delfino. El gamberro de Bowser Jr la cubrió de grafitis una vez."
->>>>>>> main:_maps/DelfinoRedux/HeartofDelfino.yaml
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
-targetAmount: 25000
+targetAmount: 20000
 baseSalary: 750
 salaryIncrement: 200
 maxDiceRoll: 6
-frbFile1: dolpic
+frbFile1: DelfinoRedux
 background: bg005
 tourMode:
   bankruptcyLimit: 1
@@ -33,11 +19,8 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 music:
-<<<<<<< HEAD:_maps/DelfinoRedux/DelfinoRedux.yaml
   download:
 - https://drive.google.com/drive/u/0/folders/1fSi80nWGDcNp188AT6CId1_BoS-OvKYe
-=======
->>>>>>> main:_maps/DelfinoRedux/HeartofDelfino.yaml
   map: board.70
   targetMet: netGoal.80
   promotionMario: fanfare.70
@@ -180,7 +163,6 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-<<<<<<< HEAD:_maps/DelfinoRedux/DelfinoRedux.yaml
 changelog:
   - version: 2
     changed:
@@ -196,109 +178,4 @@ notes: |
   Added to repo by Deflaktor
 tags:
   - Redux
-=======
-districtNames:
-  en:
-    - District A
-    - District B
-    - District C
-    - District D
-    - District E
-    - District F
-    - District G
-    - District H
-    - District I
-    - District J
-    - District K
-    - District L
-    - District M
-    - District N
-    - District O
-    - District P
-  de:
-    - Bezirk A
-    - Bezirk B
-    - Bezirk C
-    - Bezirk D
-    - Bezirk E
-    - Bezirk F
-    - Bezirk G
-    - Bezirk H
-    - Bezirk I
-    - Bezirk J
-    - Bezirk K
-    - Bezirk L
-    - Bezirk M
-    - Bezirk N
-    - Bezirk O
-    - Bezirk P
-  fr:
-    - Quartier A
-    - Quartier B
-    - Quartier C
-    - Quartier D
-    - Quartier E
-    - Quartier F
-    - Quartier G
-    - Quartier H
-    - Quartier I
-    - Quartier J
-    - Quartier K
-    - Quartier L
-    - Quartier M
-    - Quartier N
-    - Quartier O
-    - Quartier P
-  it:
-    - Quartiere A
-    - Quartiere B
-    - Quartiere C
-    - Quartiere D
-    - Quartiere E
-    - Quartiere F
-    - Quartiere G
-    - Quartiere H
-    - Quartiere I
-    - Quartiere J
-    - Quartiere K
-    - Quartiere L
-    - Quartiere M
-    - Quartiere N
-    - Quartiere O
-    - Quartiere P
-  jp:
-    - エリアＡ
-    - エリアＢ
-    - エリアＣ
-    - エリアＤ
-    - エリアＥ
-    - エリアＦ
-    - エリアＧ
-    - エリアＨ
-    - エリアＩ
-    - エリアＪ
-    - エリアＫ
-    - エリアＬ
-    - エリアＭ
-    - エリアＮ
-    - エリアＯ
-    - エリアＰ
-  es:
-    - Distrito A
-    - Distrito B
-    - Distrito C
-    - Distrito D
-    - Distrito E
-    - Distrito F
-    - Distrito G
-    - Distrito H
-    - Distrito I
-    - Distrito J
-    - Distrito K
-    - Distrito L
-    - Distrito M
-    - Distrito N
-    - Distrito O
-    - Distrito P
->>>>>>> main:_maps/DelfinoRedux/HeartofDelfino.yaml
 ...
