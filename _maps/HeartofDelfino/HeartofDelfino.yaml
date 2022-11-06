@@ -29,6 +29,8 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 music:
+  download:
+- https://drive.google.com/drive/u/0/folders/1fSi80nWGDcNp188AT6CId1_BoS-OvKYe
   map: board.70
   targetMet: netGoal.80
   promotionMario: fanfare.70
