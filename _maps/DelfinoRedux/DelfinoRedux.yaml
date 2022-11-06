@@ -22,19 +22,19 @@ music:
   download: 
     - https://nikkums.io/cswt/BGM/HeartofDelfino.music.zip
     - https://drive.google.com/u/0/uc?id=1J8V03YHzWsm-D_Fu03YQdhpWT9EYHNV5&export=download&confirm=1
-  map: board.70
-  targetMet: netGoal.80
-  promotionMario: fanfare.70
-  promotionDragonQuest: fanfare.70
-  takeAbreak: Inn.80
-  bankruptcy: bankrupt.90
-  auction: auction.80
-  ventureCards: venture.80
-  badVentureCard: unlucky.90
-  win: end.70
-  forcedBuyout: buyout.80
-  domination: domination.80
-  stock: stocks.80
+  map: nokibay.70
+  targetMet: corona.80
+  promotionMario: shineget.70
+  promotionDragonQuest: shineget.70
+  takeAbreak: sleepymario.80
+  bankruptcy: gameover.90
+  auction: skysecret.80
+  ventureCards: delfinoventure.80
+  badVentureCard: bowserjr.90
+  win: staffroll.70
+  forcedBuyout: delfinoBuyout.80
+  domination: Delfinodomination.80
+  stock: delfinostocks.80
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
