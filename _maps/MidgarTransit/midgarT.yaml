@@ -27,6 +27,7 @@ music:
   targetMet: Advent_One-Winged_Angel.70
   promotionMario: fanfare.80
   promotionDragonQuest: fanfare.80
+  promotionMii: fanfare.80
 changelog:
   - version: 1
     changed:
