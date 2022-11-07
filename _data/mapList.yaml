@@ -445,6 +445,9 @@ backgrounds: backgrounds.yml
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
+    MidgarTransit.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MidgarTransit.zip
     MobileSchool.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MobileSchool.zip
@@ -503,6 +506,9 @@ backgrounds: backgrounds.yml
     litbus.zip:
       urls:
       - https://nikkums.io/cswt/Maps/litbus.zip
+    Yevon.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Yevon.zip
     Yoshi.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Yoshi.zip
