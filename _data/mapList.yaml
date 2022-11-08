@@ -319,9 +319,6 @@ backgrounds: backgrounds.yml
     CustomWorld.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CustomWorld.zip
-    DelfinoRedux.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DelfinoRedux.zip
     Karo.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Karo.zip
@@ -418,6 +415,9 @@ backgrounds: backgrounds.yml
     Lucky.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Lucky.zip
+    MidgarTransit.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MidgarTransit.zip
     NLA.zip:
       urls:
       - https://nikkums.io/cswt/Maps/NLA.zip
@@ -445,9 +445,6 @@ backgrounds: backgrounds.yml
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
-    MidgarTransit.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/MidgarTransit.zip
     MobileSchool.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MobileSchool.zip

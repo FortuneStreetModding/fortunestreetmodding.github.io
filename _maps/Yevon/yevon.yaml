@@ -23,10 +23,11 @@ music:
   download: 
     - https://nikkums.io/cswt/BGM/Yevon.music.zip
     - https://drive.google.com/u/0/uc?id=1-UNwW8KimOOTKgQJ3rj-osOGBsrj9kfL&export=download&confirm=1
-  map: main.70
+  map: FFXmusic.70
   targetMet: finalbossFFX.60
-  promotionMario: FFVIImusic.80
-  promotionDragonQuest: FFVIImusic.80
+  promotionMario: FFVIIfanfare.80
+  promotionDragonQuest: FFVIIfanfare.80
+  promotionMii: FFVIIfanfare.80
   stock: YevonStocks.70
   ventureCards: Chocobo.80
 changelog:
