@@ -164,16 +164,16 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 districtNames:
   en:
-    - Shinra Shuttle A
-    - Shinra Shuttle B
-    - Central Complex A
-    - Central Complex B
-    - Central Complex C
-    - Central Complex D
-    - Cross-City Link A
-    - Cross-City Link B
-    - Perimeter Line A
-    - Perimeter Line B
-    - Perimeter Line C
-    - Perimeter Line D
+    - Shinra A
+    - Shinra B
+    - Complex A
+    - Complex B
+    - Complex C
+    - Complex D
+    - City Link A
+    - City Link B
+    - Perimeter A
+    - Perimeter B
+    - Perimeter C
+    - Perimeter D
 ...
