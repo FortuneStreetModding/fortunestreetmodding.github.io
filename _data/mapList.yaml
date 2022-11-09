@@ -322,6 +322,9 @@ backgrounds: backgrounds.yml
     Karo.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Karo.zip
+    DelfinoRedux.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/DelfinoRedux.zip
     Disboard.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Disboard.zip
