@@ -385,9 +385,15 @@ backgrounds: backgrounds.yml
     GeometryDash.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GeometryDash.zip
+    Gladius.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Gladius.zip
     GoodybagLair.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GoodybagLair.zip
+    Heliodor.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Heliodor.zip
     HighRise.zip:
       urls:
       - https://nikkums.io/cswt/Maps/HighRise.zip
@@ -412,6 +418,9 @@ backgrounds: backgrounds.yml
     Lakitu.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Lakitu.zip
+    LostCanyon.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/LostCanyon.zip
     Lucky.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Lucky.zip
@@ -442,6 +451,9 @@ backgrounds: backgrounds.yml
     QuietStreet.zip:
       urls:
       - https://nikkums.io/cswt/Maps/QuietStreet.zip
+    RoamerEncampment.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
