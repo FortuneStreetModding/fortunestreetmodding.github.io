@@ -5,10 +5,10 @@ desc:
   en: Strategy is key to this board. Your skills will be tested.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2000
+initialCash: 2500
 targetAmount: 25000
-baseSalary: 250
-salaryIncrement: 150
+baseSalary: 300
+salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: Ennesan10
 background: bg008alt
@@ -35,12 +35,21 @@ music:
   bankruptcy: Bankrupt_Ennesan.40
 tourMode:
   bankruptcyLimit: 1
-  initialCash: 2000
+  initialCash: 2500
   opponent1: Yoshi
   opponent2: Alena
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Changed the effect of some event squares
+      - Change Roll on Square to Event Square
+      - Shop values for some shops changed.
+      - Increase initial cash to 2,500
+      - Increased salary increment to 200
+      - Base salary increased to 300
+      - Change map Icon
   - version: 2
     changed:
       - Change vacant plot to regular property.
