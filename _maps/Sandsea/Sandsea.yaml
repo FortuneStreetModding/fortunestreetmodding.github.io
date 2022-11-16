@@ -2,13 +2,13 @@
 name:
   en: Ogir Yensa Sandsea
 desc:
-  en: A dangerous sandsea located in Ivalice. Be careful with the tribesman that inabit this area!
+  en: from Final Fantasy XII. A dangerous sandsea located in Ivalice. 
 ruleSet: Standard 
 theme: DragonQuest
 initialCash: 2500
 targetAmount: 20000
-baseSalary: 300
-salaryIncrement: 250
+baseSalary: 400
+salaryIncrement: 350
 maxDiceRoll: 8
 frbFile1: Sanse
 background: bg104
@@ -16,8 +16,8 @@ mapIcon: Sandseaicon
 music:
   download:
     - https://nikkums.io/cswt/BGM/Sandsea.music.zip
-    - https://drive.google.com/u/2/uc?id=1KElD4r5Q7UPMRqlUBXjq8H5q54Gsx532&export=download
-  map: Sandsea
+    - https://drive.google.com/u/2/uc?id=15m24dsG2yy9CuUDPLt79FCBI9jbFrha0&export=download
+  map: sandsea
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -25,6 +25,11 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Board Structure
+      - Increased base salary and salary increments
+      - Change music to new version
   - version: 1
     added: 
       - Initial Release
