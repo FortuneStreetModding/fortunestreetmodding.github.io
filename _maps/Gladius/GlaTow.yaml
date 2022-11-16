@@ -2,21 +2,21 @@
 name:
   en: Gladius Towers
 desc:
-  en: Two twin acient towers located in Planet Zerard. Two kings used to live pacefully in the towers ages ago, but eventually they ended up in war.
+  en: from Rogue Galaxy. Two twin acient towers located in Planet Zerard. 
 ruleSet: Standard 
 theme: DragonQuest
 initialCash: 2000
 targetAmount: 20000
-baseSalary: 300
+baseSalary: 350
 salaryIncrement: 350
-maxDiceRoll: 5
+maxDiceRoll: 7
 frbFile1: GlaTow
 background: bg102
 mapIcon: gladiusicon
 music:
   download:
     - https://nikkums.io/cswt/BGM/Gladius.music.zip
-    - https://drive.google.com/u/2/uc?id=16BljyisXtilz-Vi-W_3jKk-JSM1unyX9&export=download
+    - https://drive.google.com/u/2/uc?id=1NdaSmpXu4MKC3tnl75DxU5Lt1FA3EcW0&export=download
   map: gladiustheme
 tourMode:
   bankruptcyLimit: 1
@@ -25,6 +25,12 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Board Structure
+      - Increase in base salary
+      - Change Max Dice Roll
+      - Change music to new version
   - version: 1
     added: 
       - Initial Release
