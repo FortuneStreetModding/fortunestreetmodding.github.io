@@ -16,7 +16,7 @@ mapIcon: canyonicon
 music:
   download:
     - https://nikkums.io/cswt/BGM/LostCanyon.music.zip
-    - https://drive.google.com/u/2/uc?id=1ATjPEjKaizK8AkTs2PApaH8bWdwzqByO&export=download
+    - https://drive.google.com/u/2/uc?id=1tcoUvRYTqIihEIEKGG6U9I14-GXiP5Ii&export=download
   map: canyonmusic
 tourMode:
   bankruptcyLimit: 1
@@ -25,6 +25,10 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Adjustment of shop value
+      - Change music to new version
   - version: 1
     added: 
       - Initial Release
