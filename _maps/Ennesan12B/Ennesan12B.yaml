@@ -1,25 +1,28 @@
 ---
 name:
-  en: Enne-san Board 03
+  en: Enne-san Board 12-B
 desc:
-  en: Strategy is key to this board. Your skills will be tested.
+  en: The large triangle is rotated clockwise by a switch. Green Backstreet warps to Club suit. Also, to get to the bank, you need to stop at the event square.
 ruleSet: Standard
 theme: Mario
-initialCash: 2500
-targetAmount: 25000
+initialCash: 2000
+targetAmount: 20000
 baseSalary: 300
-salaryIncrement: 150
-maxDiceRoll: 6
-frbFile1: Ennesan03
-background: bg008alt
-mapIcon: Enne03
+salaryIncrement: 250
+maxDiceRoll: 7
+frbFile1: Ennesan12B_1
+frbFile2: Ennesan12B_2
+frbFile3: Ennesan12B_3
+frbFile4: Ennesan12B_4
+background: bg009alt
+mapIcon: Enne12B
 music:
   download: 
-    - https://nikkums.io/cswt/BGM/Ennesan03.music.zip
-    - https://drive.google.com/u/0/uc?id=1VgqTPJoNg2EHDZ1SJz_1FJVNptu1lltW&export=download
-  map: Map_Ennesan3.35
+    - https://nikkums.io/cswt/BGM/Ennesan12B.music.zip
+    - https://drive.google.com/u/2/uc?id=1yVIuvjyZ86A4S0DWgx1oY62F5wjT7ZXO&export=download
+  map: Map_Ennesan12B.35
   stock: Stock_Ennesan.35
-  ventureCards: Venture_Ennesan.45
+  ventureCards: Venture_Ennesan11.45
   auction: Auction_Ennesan.120
   targetMet: Targetmet_Ennesan12.75
   win: Win_Ennesan1.45
@@ -35,33 +38,12 @@ music:
   bankruptcy: Bankrupt_Ennesan.40
 tourMode:
   bankruptcyLimit: 1
-  initialCash: 2500
+  initialCash: 2000
   opponent1: Yoshi
   opponent2: Alena
   opponent3: Bianca
   clearRank: 2
 changelog:
-  - version: 4
-    changed:
-      - Shop values for some shops changed.
-      - Change take a break square in the upper right corner of the board to event square 80.
-      - Some music changes
-      - Change map icon
-    added:
-      - Take a break and promotion music
-  - version: 3
-    changed:
-      - Changed some venture cards
-      - Change map icon
-  - version: 2
-    changed:
-      - Changed the effect of some squares
-      - Changed shop values for some shops
-      - The creator's name is changed.
-      - The name of the board was changed.
-      - Background Map Music
-    added:
-      - Background music
   - version: 1
     added: 
       - Initial Release
@@ -109,7 +91,7 @@ ventureCards:
   - 0  #  39 Suit venture! Buy a Suit Yourself card for 100G.
   - 1  #  40 Misadventure! You give away 10% of your ready cash to the player in last place!
   - 1  #  41 Misadventure! Stock prices fall by 10% in a district picked at random!
-  - 1  #  42 Misadventure! Stock prices fall by 20% in a district picked at random!
+  - 0  #  42 Misadventure! Stock prices fall by 20% in a district picked at random!
   - 0  #  43 Misadventure! You pay an assets tax of two gold coins per unit of stock that you own!
   - 1  #  44 Misadventure! Roll the die and pay 44 times the number in gold coins to the player in last place!
   - 0  #  45 Dicey adventure! Roll 1/3/5 to warp to a take-a-break square. Roll 2/4/6 to warp to the arcade.
@@ -142,11 +124,11 @@ ventureCards:
   - 1  #  72 Dicey adventure! Roll 1/3/5 to take 20 times the number of your shops in gold coins. Roll 2/4/6 to pay the same.
   - 0  #  73 Property venture! You can buy any unowned shop or vacant plot.
   - 0  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
-  - 0  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
+  - 1  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
   - 0  #  76 Special arcade adventure! You're invited to play Round the Blocks!
   - 0  #  77 Freebie! Take five of each district's stocks.
   - 1  #  78 Property venture! You can buy any unowned shop or vacant plot for 200G more than its value.
-  - 0  #  79 Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not.
+  - 1  #  79 Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not.
   - 0  #  80 Freebie! Take a Spade!
   - 1  #  81 Misadventure! All other players can only move forward 1 on their next turn.
   - 0  #  82 Freebie! Take a Club!
@@ -159,7 +141,7 @@ ventureCards:
   - 0  #  89 Freebie! All players take a Suit Yourself card!
   - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
   - 0  #  91 Cameo adventure! A healslime appears!
-  - 1  #  92 Cameo adventure! Lakitu appears!
+  - 0  #  92 Cameo adventure! Lakitu appears!
   - 1  #  93 Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 0  #  94 Freebie! Take a Diamond!
   - 0  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
