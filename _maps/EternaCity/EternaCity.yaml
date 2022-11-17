@@ -1,23 +1,23 @@
 ---
 name:
-  en: Gladius Towers
+  en: Eterna City
 desc:
-  en: from Rogue Galaxy. Two twin acient towers located in Planet Zerard. 
+  en: from Pokemon Diamond and Pearl. An ancient city located in the Sinnoh Region.
 ruleSet: Standard 
 theme: DragonQuest
 initialCash: 2000
 targetAmount: 20000
 baseSalary: 350
 salaryIncrement: 350
-maxDiceRoll: 7
-frbFile1: GlaTow
-background: bg102
-mapIcon: gladiusicon
+maxDiceRoll: 8
+frbFile1: Eterna
+background: bg105
+mapIcon: eternaicon
 music:
   download:
-    - https://nikkums.io/cswt/BGM/Gladius.music.zip
-    - https://drive.google.com/u/2/uc?id=1NdaSmpXu4MKC3tnl75DxU5Lt1FA3EcW0&export=download
-  map: gladiustheme
+    - https://nikkums.io/cswt/BGM/EternaCity.music.zip
+    - https://drive.google.com/u/2/uc?id=15B2PDMX6_poDqzB8looFoPoO9CK54ZkW&export=download
+  map: eternatheme
 tourMode:
   bankruptcyLimit: 1
   opponent1: Toad
@@ -25,12 +25,6 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
-  - version: 2
-    changed:
-      - Board Structure
-      - Increase in base salary
-      - Change Max Dice Roll
-      - Change music to new version
   - version: 1
     added: 
       - Initial Release
