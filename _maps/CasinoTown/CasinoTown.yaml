@@ -46,6 +46,9 @@ tourMode:
   opponent3: Toad
   clearRank: 1
 changelog:
+  - version: 7
+    changed:
+      - Fixed problem with Shop Model not being assigned for properties with square numbers 57 and 60.
   - version: 6
     changed:
       - Replaced Venture Card 87
