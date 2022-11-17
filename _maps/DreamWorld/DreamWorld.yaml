@@ -41,6 +41,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Corrected the initial price for shops in square numbers 1, 18, and 33 to the correct value.
   - version: 3
     changed: Replaced map music with IS2 Remastered music & updated icon
     added: 
