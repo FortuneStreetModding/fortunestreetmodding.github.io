@@ -278,3 +278,7 @@
       guestLeave: cat-guest-goodbye.75
       badVentureCard: cat-curse.50
       takeAbreak: cat-sleepy.50
+- background: psoJungle
+  name: psoJungle
+  download: https://drive.google.com/u/0/uc?id=1e_R2oUtDQY8i00HiA3AzDUqwNfMLNGKD&export=download
+  mapIcon: psoJungle
