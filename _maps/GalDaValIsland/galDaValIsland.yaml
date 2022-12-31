@@ -21,7 +21,7 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 background: psoJungle
-mapIcon: galDaValIsland
+mapIcon: psoJungle
 music:
   map: psoJungle_map_forestCage.50
   stock: psoJungle_stocks_junglePremiumArrange.50
