@@ -280,6 +280,8 @@
       takeAbreak: cat-sleepy.50
 - background: psoJungle
   name: psoJungle
-  download: https://drive.google.com/u/0/uc?id=1sdAokcISJdC0eKpRoqvVhlHZo2hwP1yo&export=download&confirm=1
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/psoJungle.background.zip
+  - https://drive.google.com/u/0/uc?id=1sdAokcISJdC0eKpRoqvVhlHZo2hwP1yo&export=download&confirm=1
   mapIcon: psoJungle
   
