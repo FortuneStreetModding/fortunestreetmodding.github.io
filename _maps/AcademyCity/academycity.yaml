@@ -11,7 +11,7 @@ baseSalary: 500
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: academycity
-background: blue_grid2
+background: grid_blue2
 mapIcon: academy
 districtNames:
   en:
@@ -112,7 +112,7 @@ tourMode:
 changelog:
   - version: 6
     changed:
-      - Changed background to blue_grid2
+      - Changed background to grid_blue2
   - version: 5
     changed:
       - Removed venture card 101
