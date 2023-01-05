@@ -20,7 +20,8 @@ tourMode:
   opponent3: Carver
   clearRank: 2
 authors:
-  - name: CrimsonHat
+  - name: Crimson Hat
+    url: https://github.com/CrimsonHat1997
 changelog:
   - version: 1
     added:
