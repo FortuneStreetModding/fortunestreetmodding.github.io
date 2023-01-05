@@ -406,9 +406,6 @@ backgrounds: backgrounds.yml
     Freighter.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Freighter.zip
-    GalDaValIsland.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/GalDaValIsland.zip
     GeometryDash.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GeometryDash.zip
