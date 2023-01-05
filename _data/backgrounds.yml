@@ -154,8 +154,8 @@
 - background: battlecanyon
   name: Wario's Battle Canyon
   download: 
-  - https://nikkums.io/cswt/Backgrounds/WariosBattleCanyon.background.zip
-  - https://drive.google.com/u/2/uc?id=1E06_g8MCQs3iOFg2YdxybAOxUwhAl5-W&export=download&confirm=1
+  - https://nikkums.io/cswt/Backgrounds/battlecanyon.background.zip
+  - https://drive.google.com/u/2/uc?id=18eXksSF-5v3Wogc_z-OUTq7JgsIOuuJn&export=download
   mapIcon: battlecanyon
   music:
     map: BGM_MAP_BATTLECANYON.65
@@ -192,8 +192,8 @@
 - background: jungleadventure
   name: DK's Jungle Adventure
   download: 
-  - https://nikkums.io/cswt/Backgrounds/DKsJungleAdventure.background.zip
-  - https://drive.google.com/u/2/uc?id=1N6gtUF0ilZiv3FfIqokvVJujjxW0qVDi&export=download&confirm=1
+  - https://nikkums.io/cswt/Backgrounds/jungleadventure.background.zip
+  - https://drive.google.com/u/2/uc?id=1DUkLvJx_MEqjKdAf197at2ZticlJUqqx&export=download
   mapIcon: dksjungle
   music:
     map: DKsJungleAdventure.60
@@ -222,7 +222,7 @@
   name: bg001_clean
   download: 
   - https://nikkums.io/cswt/Backgrounds/bg001_clean.background.zip
-  - https://drive.google.com/u/2/uc?id=1V5OfLjwQhK2icUhkNwIPBWpn_WDkXukN&export=download
+  - https://drive.google.com/u/2/uc?id=1F-wuHm-PfKR_lJ-r253_GvwdHhtN9OVA&export=download
   mapIcon: bg001
   music:
     map: 20_BGM_MAP_YOSHI
@@ -339,7 +339,6 @@
     auction: Auction_grid.50
     targetMet: Targetmet_gridlightblue.90
     win: Win_gridlightblue.60
-    forcedBuyout: ME_5_BUY_SPECIAL.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
     takeAbreak: ME_HOLIDAY_ISDS.60
