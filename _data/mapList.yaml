@@ -269,16 +269,19 @@ backgrounds: backgrounds.yml
     AegisRim.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AegisRim.zip
+    Agency.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Agency.zip
     AlchemistsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AlchemistsHouse.zip
     AlefgardB.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AlefgardB.zip
+  1:
     Anchor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Anchor.zip
-  1:
     Awful.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Awful.zip  
@@ -294,10 +297,10 @@ backgrounds: backgrounds.yml
     Castaway.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Castaway.zip
+  2:
     CastleTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastleTown.zip
-  2:
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
@@ -310,6 +313,9 @@ backgrounds: backgrounds.yml
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
+    Colony4.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Colony4.zip
     CrestOfFlames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CrestOfFlames.zip
@@ -403,6 +409,9 @@ backgrounds: backgrounds.yml
     Freighter.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Freighter.zip
+    GalDaValIsland.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/GalDaValIsland.zip
     GeometryDash.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GeometryDash.zip
@@ -445,6 +454,9 @@ backgrounds: backgrounds.yml
     Lucky.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Lucky.zip
+    MaktarResort.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MaktarResort.zip
     MidgarTransit.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MidgarTransit.zip
@@ -454,6 +466,9 @@ backgrounds: backgrounds.yml
     Palamecia.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Palamecia.zip
+    PalmBrinks.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/PalmBrinks.zip
     PlanetMira.zip:
       urls:
       - https://nikkums.io/cswt/Maps/PlanetMira.zip
@@ -491,12 +506,13 @@ backgrounds: backgrounds.yml
       practiceBoard: true
       urls:
       - https://nikkums.io/cswt/Maps/ShellIsleRedux.zip
-    SkyTower.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SkyTower.zip
     Shibuya.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Shibuya.zip
+    SkyTower.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/SkyTower.zip
+
     Schneggl.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Schneggl.zip
@@ -506,6 +522,9 @@ backgrounds: backgrounds.yml
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
+    StarlightTemple.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/StarlightTemple.zip
     Bethlehem.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Bethlehem.zip
