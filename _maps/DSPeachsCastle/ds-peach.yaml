@@ -13,6 +13,7 @@ maxDiceRoll: 6
 frbFile1: ds-peach0
 frbFile2: ds-peach1
 background: bg003fixed
+mapIcon: bg003
 tourMode:
   bankruptcyLimit: 1
   opponent1: Peach
