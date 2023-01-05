@@ -18,6 +18,7 @@ frbFile3: vent2
 frbFile4: vent3
 background: bg006fixed
 mapIcon: bg006fixed
+bgmId: "BGM_MAP_SMB"
 tourMode:
   bankruptcyLimit: 1
   opponent1: Mario
