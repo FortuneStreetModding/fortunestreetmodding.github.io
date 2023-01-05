@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: auNanana
-background: bg102
+background: bg102alt
 mapIcon: auNanana
 tourMode:
   bankruptcyLimit: 1
@@ -39,6 +39,19 @@ music:
   forcedBuyout: ME_5_BUY_SMART.60
   domination: ME_MONOPOLY_SMART.60
   bankruptcy: ME_BANKRUPT_SMART.60
+changelog:
+  - version: 3
+    changed:
+      - Changed background to bg102alt
+  - version: 2
+    added:
+      - Icon
+authors:
+  - name: Azurillkirby
+notes: |
+  - This map was originally from Itadaki Street for au, and was a collaboration with the Nanana's Buried Treasure franchise.
+  - Not a lot of information is known about Itadaki Street for au or this board, as all that was available was two promotional screenshots. Properties values have been invented for any properties whose values were not in the screenshots.
+  - The venture card set has been taken from All-Trades Abbey (Wii).
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -168,14 +181,4 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-changelog:
-  - version: 2
-    added:
-      - Icon
-authors:
-  - name: Azurillkirby
-notes: |
-  - This map was originally from Itadaki Street for au, and was a collaboration with the Nanana's Buried Treasure franchise.
-  - Not a lot of information is known about Itadaki Street for au or this board, as all that was available was two promotional screenshots. Properties values have been invented for any properties whose values were not in the screenshots.
-  - The venture card set has been taken from All-Trades Abbey (Wii).
 ...

@@ -14,7 +14,7 @@ frbFile1: aegis0
 frbFile2: aegis1
 frbFile3: aegis2
 frbFile4: aegis3
-background: bg009alt
+background: grid_blue2
 mapIcon: aegis
 districtNames:
   en:
@@ -56,6 +56,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Changed background to grid_blue2
   - version: 2
     changed:
       - Changed district names to colors for readability

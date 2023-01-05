@@ -13,7 +13,7 @@ baseSalary: 300
 salaryIncrement: 300
 maxDiceRoll: 8
 frbFile1: monster
-background: bg102
+background: bg102alt
 mapIcon: monster
 tourMode:
   bankruptcyLimit: 1
@@ -42,6 +42,25 @@ music:
   forcedBuyout: ME_5_BUY_SMART.60
   domination: ME_MONOPOLY_SMART.60
   bankruptcy: ME_BANKRUPT_SMART.60
+changelog:
+  - version: 3
+    changed:
+      - Changed background to bg102alt
+  - version: 2
+    added:
+      - Icon & FS Smart BGM
+    changed:
+      - Updated yaml for CSWT
+  - version: 1
+    added:
+      - Initial Release. Venture card set derived from Robbin' Hood Ruins.
+authors:
+  - name: ZaSpai
+    url: https://github.com/ZaSpai
+notes: |
+  - Includes an alternative map BGM: Mad Monster Mansion from Banjo Kazooie (Smash ver)
+tags:
+  - Smart
 ventureCards:
   - 0  # Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  # Venture on! Roll the die again and move forward.
@@ -171,20 +190,4 @@ ventureCards:
   - 0  # Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-changelog:
-  - version: 2
-    added:
-      - Icon & FS Smart BGM
-    changed:
-      - Updated yaml for CSWT
-  - version: 1
-    added:
-      - Initial Release. Venture card set derived from Robbin' Hood Ruins.
-authors:
-  - name: ZaSpai
-    url: https://github.com/ZaSpai
-notes: |
-  - Includes an alternative map BGM: Mad Monster Mansion from Banjo Kazooie (Smash ver)
-tags:
-  - Smart
 ...

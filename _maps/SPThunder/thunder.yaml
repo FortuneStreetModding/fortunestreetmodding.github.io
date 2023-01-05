@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: thunder
-background: bg102
+background: bg102alt
 mapIcon: thunder
 music:
   download: 
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to bg102alt
   - version: 1
     added: 
       - Initial Release

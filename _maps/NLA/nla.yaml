@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: nla
-background: bg009alt
+background: grid_blue2
 mapIcon: nla
 music:
   download: 
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Changed background to grid_blue2
   - version: 3
     added:
       - Promotion and takeAbreak MEs

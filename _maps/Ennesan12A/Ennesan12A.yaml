@@ -14,7 +14,7 @@ frbFile1: Ennesan12A_1
 frbFile2: Ennesan12A_2
 frbFile3: Ennesan12A_3
 frbFile4: Ennesan12A_4
-background: bg009alt
+background: grid_blue
 mapIcon: Enne12A
 music:
   download: 
@@ -44,6 +44,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to grid_blue
   - version: 1
     added: 
       - Initial Release

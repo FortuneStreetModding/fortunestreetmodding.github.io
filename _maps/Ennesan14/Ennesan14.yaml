@@ -12,7 +12,7 @@ salaryIncrement: 100
 maxDiceRoll: 4
 frbFile1: Ennesan14_1
 frbFile2: Ennesan14_2
-background: bg009alt
+background: grid_red
 mapIcon: Enne14
 music:
   download: 
@@ -42,6 +42,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to grid_red
   - version: 1
     added: 
       - Initial Release

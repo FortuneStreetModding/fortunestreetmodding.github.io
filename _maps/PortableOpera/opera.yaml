@@ -12,7 +12,7 @@ salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: opera0
 frbFile2: opera1
-background: bg108
+background: bg108fixed
 mapIcon: opera
 music:
   download: 
@@ -42,6 +42,9 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 changelog:
+  - version: 3
+    changed:
+      - Changed background to bg108fixed
   - version: 2
     changed:
       - Replaced Venture Card 15

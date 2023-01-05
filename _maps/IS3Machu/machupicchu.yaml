@@ -14,7 +14,7 @@ frbFile1: MachuPicchu0
 frbFile2: MachuPicchu1
 frbFile3: MachuPicchu2
 frbFile4: MachuPicchu3
-background: bg106
+background: bg106fixed
 mapIcon: machu
 music:
   download: 
@@ -44,6 +44,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to bg106fixed
   - version: 1
     added: 
       - Initial Release

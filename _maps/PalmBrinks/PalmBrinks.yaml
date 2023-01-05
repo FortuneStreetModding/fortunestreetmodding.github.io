@@ -12,7 +12,7 @@ salaryIncrement: 250
 maxDiceRoll: 8
 frbFile1: PB1
 frbFile2: PB2
-background: bg105
+background: bg105fixed
 mapIcon: palmicon
 music:
   download:
@@ -26,6 +26,9 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed background to bg105fixed
   - version: 1
     added: 
       - Initial Release

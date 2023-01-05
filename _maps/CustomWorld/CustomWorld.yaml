@@ -4,6 +4,9 @@ name:
 desc:
   en: A legendary archipelago in the realm of dreams where the spirits of Nikkums and co. reside when they sleep.
 changelog:
+  - version: 3
+    changed:
+      - Changed background to bg901fixed
   - version: 2
     added:
       - Changed a district name to Mask1n
@@ -21,7 +24,7 @@ salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: customworld0
 frbFile2: customworld1
-background: bg901
+background: bg901fixed
 mapIcon: customland
 tourMode:
   bankruptcyLimit: 1

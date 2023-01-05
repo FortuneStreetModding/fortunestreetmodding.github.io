@@ -11,7 +11,7 @@ baseSalary: 800
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: midgar
-background: bg102
+background: grid_bluegreen
 mapIcon: midgarT
 tourMode:
   bankruptcyLimit: 1
@@ -29,6 +29,9 @@ music:
   promotionDragonQuest: fanfare.80
   promotionMii: fanfare.80
 changelog:
+  - version: 2
+    changed:
+      - Changed background to grid_bluegreen
   - version: 1
     changed:
       - Initial Release

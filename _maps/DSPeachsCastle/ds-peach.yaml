@@ -12,7 +12,7 @@ salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: ds-peach0
 frbFile2: ds-peach1
-background: bg003
+background: bg003fixed
 tourMode:
   bankruptcyLimit: 1
   opponent1: Peach
@@ -40,6 +40,9 @@ music:
   domination: ME_MONOPOLY_ISDS.60
   bankruptcy: ME_BANKRUPT_ISDS.60
 changelog:
+  - version: 4
+    changed:
+      - Changed background to bg003fixed
   - version: 3
     added:
       - DS BGM
