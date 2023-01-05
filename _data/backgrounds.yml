@@ -409,3 +409,9 @@
     promotionMario: mp6star
     promotionDragonQuest: classchange.75
     forcedBuyout: ME_5BUY_ISDS.60
+- background: grid_blue2
+  name: grid_blue2
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_blue2.background.zip
+  - https://drive.google.com/u/2/uc?id=1ZgA8G4YYebdluNzXa7l7NA9q8hwvPkyx&export=download
+  mapIcon: grid_blue2

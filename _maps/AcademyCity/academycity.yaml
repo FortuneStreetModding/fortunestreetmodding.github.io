@@ -11,7 +11,7 @@ baseSalary: 500
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: academycity
-background: bg009alt
+background: blue_grid2
 mapIcon: academy
 districtNames:
   en:
@@ -110,6 +110,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Changed background to blue_grid2
   - version: 5
     changed:
       - Removed venture card 101
