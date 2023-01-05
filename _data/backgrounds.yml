@@ -427,3 +427,27 @@
   - https://nikkums.io/cswt/Backgrounds/bg901fixed.background.zip
   - https://drive.google.com/u/2/uc?id=12szJZLhpDKHOvaUiXrKSs8dkQlnjftXz&export=download
   mapIcon: bg901fixed
+- background: bg004fixed
+  name: bg004fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg004fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=12Yg8YyQYYbp5ry7iH0Qx6zWCiUv5l1ls&export=download
+  mapIcon: bg105fixed
+- background: bg105fixed
+  name: bg105fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg105fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=1kMIJt0Pox6Nuj8boKjUVO3RstAoFUwsh&export=download
+  mapIcon: bg105fixed
+- background: bg106fixed
+  name: bg106fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg106fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=1BF2zDxvE8Sn1nWg_hmkwfrL0O02jMs1_&export=download
+  mapIcon: bg106fixed
+- background: bg108fixed
+  name: bg108fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg108fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=18nSJpH2JARbdeVD-6NtaVp-dU6NqTU7F&export=download
+  mapIcon: bg108fixed
