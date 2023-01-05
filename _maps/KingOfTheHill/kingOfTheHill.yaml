@@ -15,6 +15,7 @@ maxDiceRoll: 5
 frbFile1: kingofthehill1
 frbFile2: kingofthehill2
 background: bg108fixed
+mapIcon: bg108fixed
 tourMode:
   bankruptcyLimit: 1
   opponent1: Stella
