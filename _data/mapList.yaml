@@ -340,15 +340,9 @@ backgrounds: backgrounds.yml
     DungeonLobby.zip:
       urls:
       - https://nikkums.io/cswt/Maps/DungeonLobby.zip
-    Ennesan01A.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan01A.zip
     Ennesan01B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan01B.zip
-    Ennesan01C.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan01C.zip
     Ennesan02A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan02A.zip
