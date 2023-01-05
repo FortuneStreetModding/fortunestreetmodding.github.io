@@ -17,11 +17,7 @@ frbFile2: vent1
 frbFile3: vent2
 frbFile4: vent3
 background: bg006fixed
-<<<<<<< HEAD
 mapIcon: bg006fixed
-=======
-mapIcon: p_bg_006
->>>>>>> main
 tourMode:
   bankruptcyLimit: 1
   opponent1: Mario
