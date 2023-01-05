@@ -110,6 +110,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Removed venture card 101
   - version: 4
     changed:
       - Added shop names
@@ -229,7 +232,7 @@ ventureCards:
   - 0  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
   - 0  #  99 Freebie! What's inside...?
   - 1  # 100 Freebie! Take a Suit Yourself card!
-  - 1  # 101 Special bonus! Your shops all grow by 21%!
+  - 0  # 101 Special bonus! Your shops all grow by 21%!
   - 0  # 102 Moneymaking venture! Roll the die and get 33 times the number shown in gold coins from all other players!
   - 0  # 103 Misadventure! The values of all your shops drop by 25%!
   - 0  # 104 Misadventure! You give everyone 80G each!
@@ -256,5 +259,5 @@ ventureCards:
   - 1  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
-  - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+  - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 ...

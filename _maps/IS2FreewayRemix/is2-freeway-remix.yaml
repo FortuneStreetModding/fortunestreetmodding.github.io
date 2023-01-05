@@ -5,7 +5,7 @@ desc:
   en: Remix of Freeway from Itadaki Street 2, with rebalanced shop prices and the addition of turning points at intersections.
 ruleSet: Standard
 theme: Mario
-initialCash: 2000
+initialCash: 3000
 targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 100 
@@ -169,6 +169,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 4
+    changed:
+      - Increased starting cash from 2000 to 3000
   - version: 3
     changed:
       - Fixed pathing issue
