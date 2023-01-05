@@ -406,6 +406,9 @@ backgrounds: backgrounds.yml
     Freighter.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Freighter.zip
+    GalDaValIsland.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/GalDaValIsland.zip
     GeometryDash.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GeometryDash.zip
@@ -448,9 +451,6 @@ backgrounds: backgrounds.yml
     Lucky.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Lucky.zip
-    MaktarResort.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/MaktarResort.zip
     MidgarTransit.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MidgarTransit.zip
@@ -490,9 +490,6 @@ backgrounds: backgrounds.yml
     MobileSchool.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MobileSchool.zip
-    S.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/S.zip
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
