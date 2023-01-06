@@ -15,11 +15,11 @@ desc:
   es: "Ciudad Delfino: la mayor metrópoli de la paradisiaca Isla Delfino. El gamberro de Bowser Jr la cubrió de grafitis una vez."
 ruleSet: Standard
 theme: Mario
-initialCash: 2500
+initialCash: 3500
 targetAmount: 25000
 baseSalary: 600
 salaryIncrement: 200
-maxDiceRoll: 6
+maxDiceRoll: 7
 frbFile1: rayman
 background: bg001
 music:
