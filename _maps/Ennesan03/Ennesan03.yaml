@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: Ennesan03
-background: bg008alt
+background: grid_orange
 mapIcon: Enne03
 music:
   download: 
@@ -20,14 +20,14 @@ music:
   map: Map_Ennesan3.35
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan.45
-  auction: Auction_Ennesan.120
+  auction: Auction_grid.50
   targetMet: Targetmet_Ennesan12.75
   win: Win_Ennesan1.45
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
   takeAbreak: ME_HOLIDAY_ISDS.60
-  promotionMii: classchange.75
+  promotionMii: mp6star
   promotionMario: mp6star
   promotionDragonQuest: classchange.75
   forcedBuyout: ME_5BUY_ISDS.60
@@ -41,6 +41,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Changed background to grid_orange
+      - Some music changed (all changed music is loaded from the music in the grid background.zip, so there is no change in the music.zip)
   - version: 4
     changed:
       - Shop values for some shops changed.

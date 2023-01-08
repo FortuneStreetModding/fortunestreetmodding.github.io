@@ -11,7 +11,7 @@ baseSalary: 450
 salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: Ennesan04
-background: bg008alt
+background: grid_violet
 mapIcon: Enne04
 music:
   download: 
@@ -20,27 +20,32 @@ music:
   map: Map_Ennesan4.50
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan.45
-  auction: Auction_Ennesan.120
+  auction: Auction_grid.50
   targetMet: Targetmet_Ennesan4.40
   win: Win_Ennesan4.40
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
   takeAbreak:
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
+  promotionMii: mp6star
+  promotionMario: mp6star
+  promotionDragonQuest: classchange.75
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
   bankruptcy: Bankrupt_Ennesan.40
 tourMode:
   bankruptcyLimit: 1
-  initialCash: 2700
+  initialCash: 12000
   opponent1: Yoshi
   opponent2: Alena
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Changed background to grid_red
+      - Initial cash for tour mode changed to 12000
+      - Some music changed (all changed music is loaded from the music in the grid background.zip, so there is no change in the music.zip)
   - version: 4
     changed:
       - Changed some venture cards

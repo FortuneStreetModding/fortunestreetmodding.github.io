@@ -2,7 +2,7 @@
 name:
   en: Enne-san Board 14
 desc:
-  en: A unique board to enjoy with friends. Buy up properties and stocks before investing. When the switch is pressed, you gain the ability to buy out other stores. Estimated game time is 40-60 minutes. 
+  en: A unique board to enjoy with friends in a short time. Buy up properties and stocks before investing. When the switch is pressed, you gain the ability to buy out other stores.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 500
@@ -21,14 +21,14 @@ music:
   map: Map_Ennesan14.35
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan11.45
-  auction: Auction_Ennesan.120
+  auction: Auction_grid.50
   targetMet: Targetmet_Ennesan14.35
   win: Win_Ennesan11.35
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
   takeAbreak: ME_HOLIDAY_ISDS.60
-  promotionMii: classchange.75
+  promotionMii: mp6star
   promotionMario: mp6star
   promotionDragonQuest: classchange.75
   forcedBuyout: ME_5BUY_ISDS.60
@@ -36,12 +36,19 @@ music:
   bankruptcy: Bankrupt_Ennesan.40
 tourMode:
   bankruptcyLimit: 1
-  initialCash: 500
-  opponent1: Yoshi
-  opponent2: Alena
-  opponent3: Bianca
-  clearRank: 2
+  initialCash: 8401
+  opponent1: Slime
+  opponent2: Yangus
+  opponent3: Birdo
+  clearRank: 3
 changelog:
+  - version: 3
+    changed:
+      - Partially changed description
+      - Some music changed (all changed music is loaded from the music in the grid background.zip, so there is no change in the music.zip)
+      - Changed initialCash in tour mode to 8401
+      - Changed all tour mode opponents to D rank
+      - Changed the clear condition for Tour mode to 3rd place or higher
   - version: 2
     changed:
       - Changed background to grid_red
