@@ -1,18 +1,8 @@
---- board by FatCat67
+---
 name:
   en: Rayman
-  de: Piazza Delfino
-  fr: Place Delfino
-  it: Delfinia
-  jp: ドルピックタウン
-  es: Ciudad Delfino
 desc:
-  en: "Rayman: The limbless hero of Rayman's world, that defeated the evil Mr dark and saved the great protoon and Betilla the fairy."
-  de: "Piazza Delfino: Die größte Metropole im Südseeparadies Isla Delfino. Die Graffiti des unverbesserlichen Bowser Jr. überzogen einst die ganze Stadt!"
-  fr: "Place Delfino\xa0: la plus grande métropole au sud de l'Île Delfino. L'incorrigible Bowser Jr. l'a un jour entièrement recouverte de graffitis."
-  it: "Delfinia: la più grande metropoli dell'Isola Delfino. Tempo fa l'incorreggibile Bowser Jr. si divertì a riempirla di orribili graffiti."
-  jp: ドルピックタウン：　南国のリゾートアイランド　ドルピック島最大の街。　以前クッパJr.によってラクガキだらけにされたことがある。
-  es: "Ciudad Delfino: la mayor metrópoli de la paradisiaca Isla Delfino. El gamberro de Bowser Jr la cubrió de grafitis una vez."
+  en: The limbless hero of Rayman's world, that defeated the evil Mr dark and saved the great protoon and Betilla the fairy.
 ruleSet: Standard
 theme: Mario
 initialCash: 3500
@@ -21,10 +11,9 @@ baseSalary: 600
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: rayman
-background: bg001
+background: rayman
+mapIcon: rayman
 music:
-  download:
-   - https://drive.google.com/u/0/uc?id=1iyKBS362J92p5_x4oB2_S1_ikJpgTJgF&export=download
   map: RaymanMap.70
   targetMet: RaymanNetgoal.70
   promotionMario: RaymanPromote.70
@@ -174,107 +163,4 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-districtNames:
-  en:
-    - District A
-    - District B
-    - District C
-    - District D
-    - District E
-    - District F
-    - District G
-    - District H
-    - District I
-    - District J
-    - District K
-    - District L
-    - District M
-    - District N
-    - District O
-    - District P
-  de:
-    - Bezirk A
-    - Bezirk B
-    - Bezirk C
-    - Bezirk D
-    - Bezirk E
-    - Bezirk F
-    - Bezirk G
-    - Bezirk H
-    - Bezirk I
-    - Bezirk J
-    - Bezirk K
-    - Bezirk L
-    - Bezirk M
-    - Bezirk N
-    - Bezirk O
-    - Bezirk P
-  fr:
-    - Quartier A
-    - Quartier B
-    - Quartier C
-    - Quartier D
-    - Quartier E
-    - Quartier F
-    - Quartier G
-    - Quartier H
-    - Quartier I
-    - Quartier J
-    - Quartier K
-    - Quartier L
-    - Quartier M
-    - Quartier N
-    - Quartier O
-    - Quartier P
-  it:
-    - Quartiere A
-    - Quartiere B
-    - Quartiere C
-    - Quartiere D
-    - Quartiere E
-    - Quartiere F
-    - Quartiere G
-    - Quartiere H
-    - Quartiere I
-    - Quartiere J
-    - Quartiere K
-    - Quartiere L
-    - Quartiere M
-    - Quartiere N
-    - Quartiere O
-    - Quartiere P
-  jp:
-    - エリアＡ
-    - エリアＢ
-    - エリアＣ
-    - エリアＤ
-    - エリアＥ
-    - エリアＦ
-    - エリアＧ
-    - エリアＨ
-    - エリアＩ
-    - エリアＪ
-    - エリアＫ
-    - エリアＬ
-    - エリアＭ
-    - エリアＮ
-    - エリアＯ
-    - エリアＰ
-  es:
-    - Distrito A
-    - Distrito B
-    - Distrito C
-    - Distrito D
-    - Distrito E
-    - Distrito F
-    - Distrito G
-    - Distrito H
-    - Distrito I
-    - Distrito J
-    - Distrito K
-    - Distrito L
-    - Distrito M
-    - Distrito N
-    - Distrito O
-    - Distrito P
 ...
