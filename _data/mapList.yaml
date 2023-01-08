@@ -343,9 +343,6 @@ backgrounds: backgrounds.yml
     Ennesan01B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan01B.zip
-    Ennesan02A.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan02A.zip
     Ennesan02B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan02B.zip
@@ -472,6 +469,9 @@ backgrounds: backgrounds.yml
     QuietStreet.zip:
       urls:
       - https://nikkums.io/cswt/Maps/QuietStreet.zip
+    Rayman.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Rayman.zip
     RoamerEncampment.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RoamerEncampment.zip

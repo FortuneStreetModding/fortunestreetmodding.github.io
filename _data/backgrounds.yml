@@ -469,3 +469,23 @@
   - https://nikkums.io/cswt/Backgrounds/bg006fixed.background.zip
   - https://drive.google.com/u/2/uc?id=1Idz96QrLZbPlvRXiAUg5zFnQvmuIWLhx&export=download
   mapIcon: bg006fixed
+- background: rayman
+  name: rayman
+  download:
+  - https://nikkums.io/cswt/Backgrounds/rayman.background.zip
+  mapIcon: rayman
+  music:
+    map: RaymanMap.70
+    targetMet: RaymanNetgoal.70
+    promotionMario: RaymanPromote.70
+    promotionDragonQuest: RaymanPromote.70
+    promotionMii: RaymanPromote.70
+    takeAbreak: RaymanSleeps.70
+    bankruptcy: RaymanDies.80
+    auction: RaymanAuction.70
+    ventureCards: RaymanVenture.70
+    badVentureCard: RaymanUnlucky.70
+    win: RaymanVictory.70
+    forcedBuyout: RaymanBuyout.80
+    domination: RaymanDomination.80
+    stock: RaymanStonk.70
