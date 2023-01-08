@@ -11,36 +11,43 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: Ennesan10
-background: bg008alt
+background: bg009alt
 mapIcon: Enne10
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan10.music.zip
-    - https://drive.google.com/u/2/uc?id=1cLfQbGDS3sUA892OaTqcR1upDys1h4w6&export=download
+    - https://drive.google.com/u/2/uc?id=1nNNiCKM4jSZAK5Ls6dTpufQ6gsZOsHdf&export=download
   map: Map_Ennesan10.40
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan.45
-  auction: Auction_Ennesan.120
+  auction: Auction_grid.50
   targetMet: Targetmet_Ennesan1C.40
   win: Win_Ennesan5.40
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
   takeAbreak:
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
+  promotionMii: mp6star
+  promotionMario: mp6star
+  promotionDragonQuest: mp6star
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
   bankruptcy: Bankrupt_Ennesan.40
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2500
-  opponent1: Yoshi
-  opponent2: Alena
-  opponent3: Bianca
-  clearRank: 2
+  opponent1: Peach
+  opponent2: Patty
+  opponent3: Jessica
+  clearRank: 1
 changelog:
+  - version: 4
+    changed:
+      - Changed background to bg009alt
+      - Some music changed
+      - Change Google Drive URL to download music files
+      - Changed ClearRank in Tour mode to 1st.
+      - Changed all opponents in Tour mode to S rank.
   - version: 3
     changed:
       - Changed the effect of some event squares

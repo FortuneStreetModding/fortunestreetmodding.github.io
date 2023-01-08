@@ -2,16 +2,16 @@
 name:
   en: Enne-san Board 13
 desc:
-  en: To move to other islands, one must use the event square.
+  en: Strategy board to play with 4 friends. MaxDiceRoll for this board is 4. To move to other islands, one must use the event square. BackStreet warps to the bank.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500
 targetAmount: 25000
-baseSalary: 200
-salaryIncrement: 250
+baseSalary: 250
+salaryIncrement: 450
 maxDiceRoll: 4
 frbFile1: Ennesan13
-background: bg009alt
+background: grid_lightblue
 mapIcon: Enne13
 music:
   download: 
@@ -20,14 +20,14 @@ music:
   map: Map_Ennesan13.75
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan11.45
-  auction: Auction_Ennesan.120
+  auction: Auction_grid.50
   targetMet: Targetmet_Ennesan12.75
   win: Win_Ennesan1.45
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
   takeAbreak: ME_HOLIDAY_ISDS.60
-  promotionMii: classchange.75
+  promotionMii: mp6star
   promotionMario: mp6star
   promotionDragonQuest: classchange.75
   forcedBuyout: ME_5BUY_ISDS.60
@@ -35,12 +35,25 @@ music:
   bankruptcy: Bankrupt_Ennesan.40
 tourMode:
   bankruptcyLimit: 1
-  initialCash: 2000
-  opponent1: Yoshi
-  opponent2: Alena
-  opponent3: Bianca
-  clearRank: 2
+  initialCash: 24925
+  opponent1: Slime
+  opponent2: Yangus
+  opponent3: Birdo
+  clearRank: 3
 changelog:
+  - version: 2
+    changed:
+      - Shop values for some shops changed
+      - Event squares in each district adjacent to the bank were reduced from 3 to 2.
+      - Of 8 islets where Suit is located, event squares on 4 islands increased from 1 to 2
+      - Base salary increased from 200 to 250
+      - Salary increment increased from 250 to 450
+      - Changed background to grid_lightblue
+      - Some music changed (all changed music is loaded from the music in the grid background.zip, so there is no change in the music.zip)
+      - Added some descriptions
+      - Initial cash for tour mode changed to 24925
+      - Changed all tour mode opponents to D rank
+      - Changed Tour Mode clear condition to 3rd place or higher
   - version: 1
     added: 
       - Initial Release

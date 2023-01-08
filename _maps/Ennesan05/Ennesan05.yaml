@@ -2,16 +2,16 @@
 name:
   en: Enne-san Board 05
 desc:
-  en: Purple Backstreet warps to the central bank. All other Backstreets warp to the Change of suit adjacent to the Suits of the corresponding color.
+  en: If you go to the four corner banks, you cannot move to the other triangles until you have circled one of the triangles in the area that contains them. Purple Backstreet warps to the central bank. All other Backstreets warp to the Change of suit adjacent to the Suits of the corresponding color.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
 targetAmount: 20000
-baseSalary: 300
+baseSalary: 400
 salaryIncrement: 125
 maxDiceRoll: 7
 frbFile1: Ennesan05
-background: bg008alt
+background: grid_bluegreen
 mapIcon: Enne05
 music:
   download: 
@@ -20,16 +20,16 @@ music:
   map: Map_Ennesan5.80
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan.45
-  auction: Auction_Ennesan.120
+  auction: Auction_grid.50
   targetMet: Targetmet_Ennesan4.40
   win: Win_Ennesan5.40
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak:
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
+  takeAbreak: ME_HOLIDAY_ISDS.60
+  promotionMii: mp6star
+  promotionMario: mp6star
+  promotionDragonQuest: classchange.75
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
   bankruptcy: Bankrupt_Ennesan.40
@@ -41,6 +41,12 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Base salary increased from 300 to 400
+      - Changed board description
+      - Changed background to grid_bluegreen
+      - Some music changed (all changed music is loaded from the music in the grid background.zip, so there is no change in the music.zip)
   - version: 4
     changed:
       - Shop values for some properties changed.
