@@ -370,7 +370,7 @@ permalink: /maps
               {% endif %}
             </div>
             <div class="card-footer text-muted">
-              <a class="" style="float:right" href="{%- include renderMapDownloadUrl.liquid map=map -%}">View in Repository</a>
+              <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
               <div>Download
                 {% if map.changelog -%}
                 {%- assign firstChange = map.changelog | first -%}
@@ -380,7 +380,7 @@ permalink: /maps
               {% if background.download or map.music.download -%}
               <div class="btn-group" role="group">
               {%- endif %}
-              <button class="btn btn-primary" onclick="GitZip.zipRepo('{%- include renderMapDownloadUrl.liquid map=map -%}');">Map</button>
+              <button class="btn btn-primary" onclick="{%- include renderMapDownloadScript.liquid map=map -%}">Map</button>
               {%- if background.download -%}
                 {% if background.download.first -%}
                   <div class="btn-group" role="group">

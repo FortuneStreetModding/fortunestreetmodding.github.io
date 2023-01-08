@@ -1,0 +1,13 @@
+{%- comment -%}
+
+This snippet renders the repository url for a given map item.
+
+Args:
+  map: the collection map item
+
+Renders:
+  full map repository url
+
+{%- endcomment -%}
+{%- include getParent.liquid file_path=include.map.path -%}
+{{ "https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/tree/main/" | append: gd_directory_path }}
