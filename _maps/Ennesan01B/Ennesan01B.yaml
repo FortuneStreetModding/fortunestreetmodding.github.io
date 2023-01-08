@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Fixed a setting error in the Shop Model.
   - version: 2
     changed:
       - Changed some venture cards

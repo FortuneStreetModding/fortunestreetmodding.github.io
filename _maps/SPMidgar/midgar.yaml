@@ -14,7 +14,7 @@ frbFile1: midgar0
 frbFile2: midgar1
 frbFile3: midgar2
 frbFile4: midgar3
-background: bg008alt
+background: grid_bluegreen
 mapIcon: midgar
 music:
   download: 
@@ -44,6 +44,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Changed background to grid_bluegreen
   - version: 2
     changed:
       - Changed background to bg008alt

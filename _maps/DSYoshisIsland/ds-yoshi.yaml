@@ -21,8 +21,8 @@ tourMode:
   clearRank: 2
 music:
   download: 
-    - https://nikkums.io/cswt/BGM/DSYoshi.music.zip
-    - https://drive.google.com/u/2/uc?id=12dbehk_P0NDITKngk0iwnSomyumtpD_R&export=download
+    - https://nikkums.io/cswt/BGM/DSYoshisIsland.music.zip
+    - https://drive.google.com/u/2/uc?id=1ZgcMB8rEBf4Kz40aTHPIa2AuokRO0U47&export=download
   map: BGM_MAP_YOSHI_ISDS.60
   stock: BGM_STOCK_ISDS.60
   ventureCards: BGM_CHANCE_ISDS.65

@@ -12,7 +12,7 @@ salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: train0
 frbFile2: train1
-background: bg102
+background: bg102alt
 mapIcon: train
 music:
   download: 
@@ -42,6 +42,9 @@ tourMode:
   opponent3: Princessa
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Changed background to bg102alt
   - version: 3
     changed:
       - Updated icon & yaml for CSWT

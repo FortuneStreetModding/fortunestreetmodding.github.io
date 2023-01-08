@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: au-midnight-town
-background: bg009alt
+background: grid_blue2
 mapIcon: midnight
 music: 
   download: 
@@ -40,6 +40,9 @@ tourMode:
   opponent3: Waluigi
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Changed background to grid_blue2
   - version: 5
     changed:
       - Replaced Venture Card 87
@@ -55,6 +58,16 @@ changelog:
       - Icon & BGM
     changed:
       - Updated yaml for CSWT
+authors:
+  - name: Azurillkirby
+notes: |
+  - This map was originally from Itadaki Street for au.
+  - When standing on one of the suit squares, the arrows do not point you in your next direction. Past that, sometimes the direction you press on your controller will not always take you where you want to go while standing on the suit squares. However, you still can move in the correct direction, though it may require pressing an arbitrary other direction on your controller.
+  - Not a lot of information is known about Itadaki Street for au or this board, as all that was available was a picture of the map with all of the spaces and the property values/prices. As such, a lot of information about this board has been guessed or pulled from other boards.
+  - All of the intersections on this board are force-travel-through. You may not choose your direction at any space on the board unless you land on bank. Having played almost all of the officially released maps, this is the board-type that I would suspect that the devs intended.
+  - The venture card set has been taken from Super Mario Bros with a few changes.
+tags:
+ - au
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -184,14 +197,4 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-authors:
-  - name: Azurillkirby
-notes: |
-  - This map was originally from Itadaki Street for au.
-  - When standing on one of the suit squares, the arrows do not point you in your next direction. Past that, sometimes the direction you press on your controller will not always take you where you want to go while standing on the suit squares. However, you still can move in the correct direction, though it may require pressing an arbitrary other direction on your controller.
-  - Not a lot of information is known about Itadaki Street for au or this board, as all that was available was a picture of the map with all of the spaces and the property values/prices. As such, a lot of information about this board has been guessed or pulled from other boards.
-  - All of the intersections on this board are force-travel-through. You may not choose your direction at any space on the board unless you land on bank. Having played almost all of the officially released maps, this is the board-type that I would suspect that the devs intended.
-  - The venture card set has been taken from Super Mario Bros with a few changes.
-tags:
- - au
 ...

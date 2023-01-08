@@ -14,7 +14,9 @@ salaryIncrement: 150
 maxDiceRoll: 5
 frbFile1: kingofthehill1
 frbFile2: kingofthehill2
-background: bg108
+background: bg108fixed
+mapIcon: bg108fixed
+bgmId: "BGM_MAP_DHAMA"
 tourMode:
   bankruptcyLimit: 1
   opponent1: Stella
@@ -22,6 +24,9 @@ tourMode:
   opponent3: Carver
   clearRank: 1
 changelog:
+  - version: 3
+    changed:
+      - Changed background to bg108fixed
   - version: 2
     changed: 
       - Changed to new md format

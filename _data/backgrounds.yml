@@ -154,8 +154,8 @@
 - background: battlecanyon
   name: Wario's Battle Canyon
   download: 
-  - https://nikkums.io/cswt/Backgrounds/WariosBattleCanyon.background.zip
-  - https://drive.google.com/u/2/uc?id=1E06_g8MCQs3iOFg2YdxybAOxUwhAl5-W&export=download&confirm=1
+  - https://nikkums.io/cswt/Backgrounds/battlecanyon.background.zip
+  - https://drive.google.com/u/2/uc?id=18eXksSF-5v3Wogc_z-OUTq7JgsIOuuJn&export=download
   mapIcon: battlecanyon
   music:
     map: BGM_MAP_BATTLECANYON.65
@@ -178,7 +178,7 @@
   name: Quiet Street
   download: 
   - https://nikkums.io/cswt/Backgrounds/QuietStreet.background.zip
-  - drive.google.com/u/2/uc?id=19KZM73qwLzVow7yGi71KKgNxeFPY5hUv&export=download&confirm=1
+  - https://drive.google.com/u/2/uc?id=19KZM73qwLzVow7yGi71KKgNxeFPY5hUv&export=download&confirm=1
   mapIcon: qs_btd6_0
   music:
     map: jazztheme.90
@@ -192,8 +192,8 @@
 - background: jungleadventure
   name: DK's Jungle Adventure
   download: 
-  - https://nikkums.io/cswt/Backgrounds/DKsJungleAdventure.background.zip
-  - https://drive.google.com/u/2/uc?id=1N6gtUF0ilZiv3FfIqokvVJujjxW0qVDi&export=download&confirm=1
+  - https://nikkums.io/cswt/Backgrounds/jungleadventure.background.zip
+  - https://drive.google.com/u/2/uc?id=1DUkLvJx_MEqjKdAf197at2ZticlJUqqx&export=download
   mapIcon: dksjungle
   music:
     map: DKsJungleAdventure.60
@@ -222,7 +222,7 @@
   name: bg001_clean
   download: 
   - https://nikkums.io/cswt/Backgrounds/bg001_clean.background.zip
-  - https://drive.google.com/u/2/uc?id=1V5OfLjwQhK2icUhkNwIPBWpn_WDkXukN&export=download
+  - https://drive.google.com/u/2/uc?id=1F-wuHm-PfKR_lJ-r253_GvwdHhtN9OVA&export=download
   mapIcon: bg001
   music:
     map: 20_BGM_MAP_YOSHI
@@ -278,3 +278,194 @@
       guestLeave: cat-guest-goodbye.75
       badVentureCard: cat-curse.50
       takeAbreak: cat-sleepy.50
+- background: psoJungle
+  name: psoJungle
+  download: 
+  - https://nikkums.io/cswt/Backgrounds/psoJungle.background.zip
+  - https://drive.google.com/u/0/uc?id=1sdAokcISJdC0eKpRoqvVhlHZo2hwP1yo&export=download&confirm=1
+  mapIcon: psoJungle
+- background: grid_blue
+  name: grid_blue
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_blue.background.zip
+  - https://drive.google.com/u/2/uc?id=1mAgtKc9exLCWv7c9yE44bfzqMixdoIqy&export=download
+  mapIcon: grid_blue
+  music:
+    map: Map_gridblue.40
+    stock: Stock_gridblue.80
+    ventureCards: Venture_gridblue.45
+    auction: Auction_grid.50
+    targetMet: Targetmet_gridblue.45
+    win: Win_gridblue.45
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60
+- background: grid_bluegreen
+  name: grid_bluegreen
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_bluegreen.background.zip
+  - https://drive.google.com/u/2/uc?id=1N4BTEfMY4Y040GjEWNE5Q1dLYlzzRI7l&export=download
+  mapIcon: grid_aomidori
+  music:
+    map: Map_gridbluegreen.40
+    stock: Stock_gridbluegreen.80
+    ventureCards: Venture_gridbluegreen.45
+    auction: Auction_grid.50
+    targetMet: Targetmet_gridbluegreen.40
+    win: Win_gridbluegreen.40
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60
+- background: grid_lightblue
+  name: grid_lightblue
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_lightblue.background.zip
+  - https://drive.google.com/u/2/uc?id=1AIPkzAmFsrv1NCEYZKqR9wApz1vs4rr6&export=download
+  mapIcon: grid_mizuiro
+  music:
+    map: Map_gridlightblue.40
+    stock: Stock_gridlightblue.80
+    ventureCards: Venture_gridlightblue.45
+    auction: Auction_grid.50
+    targetMet: Targetmet_gridlightblue.90
+    win: Win_gridlightblue.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60
+- background: grid_orange
+  name: grid_orange
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_orange.background.zip
+  - https://drive.google.com/u/2/uc?id=1V-4spYqjX_8BOVOgfAI4fMErBIE_4-SF&export=download
+  mapIcon: grid_orange
+  music:
+    map: Map_gridorange.75
+    stock: Stock_gridorange.40
+    ventureCards: Venture_gridorange.45
+    auction: Auction_grid.50
+    targetMet: Targetmet_gridorange.50
+    win: Win_gridorange.40
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60
+- background: grid_red
+  name: grid_red
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_red.background.zip
+  - https://drive.google.com/u/2/uc?id=1tmLjs5Lv701-jW2HVtrjxtmJ3Y0AvPBG&export=download
+  mapIcon: grid_red
+  music:
+    map: Map_gridred.35
+    stock: Stock_gridred.35
+    ventureCards: Venture_gridred.35
+    auction: Auction_grid.50
+    targetMet: Targetmet_gridred.75
+    win: Win_gridred.35
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60
+- background: grid_violet
+  name: grid_violet
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_violet.background.zip
+  - https://drive.google.com/u/2/uc?id=1GVyxJWJHVzbY6Tn3v31XDm7auRbKtZWg&export=download
+  mapIcon: grid_violet
+  music:
+    map: Map_gridviolet.35
+    stock: Stock_gridviolet.35
+    ventureCards: Venture_gridviolet.40
+    auction: Auction_grid.50
+    targetMet: Targetmet_gridviolet.40
+    win: Win_gridviolet.45
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60
+- background: grid_blue2
+  name: grid_blue2
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_blue2.background.zip
+  - https://drive.google.com/u/2/uc?id=1ZgA8G4YYebdluNzXa7l7NA9q8hwvPkyx&export=download
+  mapIcon: grid_blue2
+- background: bg102alt
+  name: bg102alt
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg102alt.background.zip
+  - https://drive.google.com/u/2/uc?id=1RDyDvhNthK0Zw4qdVzlyT3NL--kU4mdM&export=download
+  mapIcon: bg102alt
+- background: bg901fixed
+  name: bg901fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg901fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=12szJZLhpDKHOvaUiXrKSs8dkQlnjftXz&export=download
+  mapIcon: bg901fixed
+- background: bg004fixed
+  name: bg004fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg004fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=12Yg8YyQYYbp5ry7iH0Qx6zWCiUv5l1ls&export=download
+  mapIcon: bg105fixed
+- background: bg105fixed
+  name: bg105fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg105fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=1kMIJt0Pox6Nuj8boKjUVO3RstAoFUwsh&export=download
+  mapIcon: bg105fixed
+- background: bg106fixed
+  name: bg106fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg106fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=1BF2zDxvE8Sn1nWg_hmkwfrL0O02jMs1_&export=download
+  mapIcon: bg106fixed
+- background: bg108fixed
+  name: bg108fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg108fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=18nSJpH2JARbdeVD-6NtaVp-dU6NqTU7F&export=download
+  mapIcon: bg107fixed
+- background: bg107fixed
+  name: bg107fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg107fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=18m7olIpu6K1vZaPvdIwB7c_QqhHjGt9N&export=download
+  mapIcon: bg107fixed
+- background: bg003fixed
+  name: bg003fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg003fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=1kNbbgITdF1DFcG6SuuAhJVbMIu5oQrzY&export=download
+  mapIcon: bg003fixed
+- background: bg006fixed
+  name: bg006fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg006fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=1Idz96QrLZbPlvRXiAUg5zFnQvmuIWLhx&export=download
+  mapIcon: bg006fixed

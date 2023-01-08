@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 250
 maxDiceRoll: 8
 frbFile1: shibuya
-background: bg008alt
+background: grid_blue2
 mapIcon: shibuya
 districtNames:
   en:
@@ -95,6 +95,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Changed background to grid_blue2
   - version: 4
     changed:
       - Fixed shop price of 104 building

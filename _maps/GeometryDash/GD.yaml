@@ -11,7 +11,7 @@ baseSalary: 200
 salaryIncrement: 200
 maxDiceRoll: 6
 frbFile1: GD
-background: bg009alt
+background: grid_blue2
 tourMode:
   bankruptcyLimit: 3
   opponent1: Platypunk
@@ -43,6 +43,9 @@ authors:
   - name: Skylighter
     url: https://www.youtube.com/channel/UCRu6DfosZnWrHFk6v7VGnmQ
 changelog:
+  - version: 2
+    changed:
+      - Changed background to grid_blue2
   - version: 1
     added: 
       - Initial Release

@@ -41,6 +41,8 @@ tourMode:
   opponent3: Carver
   clearRank: 2
 changelog:
+  - version: 5
+      - Corrected initial price for square numbers 1 and 20 to the correct value.
   - version: 4
     added:
       - IS2 Remastered BGM

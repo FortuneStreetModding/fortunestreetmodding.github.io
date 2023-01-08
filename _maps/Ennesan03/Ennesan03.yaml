@@ -16,20 +16,20 @@ mapIcon: Enne03
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan03.music.zip
-    - https://drive.google.com/u/0/uc?id=18pdXTy1totEnGKgZPEs-M_riHftUCeR_&export=download
+    - https://drive.google.com/u/0/uc?id=1VgqTPJoNg2EHDZ1SJz_1FJVNptu1lltW&export=download
   map: Map_Ennesan3.35
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan.45
   auction: Auction_Ennesan.120
-  targetMet: Targetmet_Ennesan3.35
+  targetMet: Targetmet_Ennesan12.75
   win: Win_Ennesan1.45
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak:
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
+  takeAbreak: ME_HOLIDAY_ISDS.60
+  promotionMii: classchange.75
+  promotionMario: mp6star
+  promotionDragonQuest: classchange.75
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
   bankruptcy: Bankrupt_Ennesan.40
@@ -41,6 +41,14 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Shop values for some shops changed.
+      - Change take a break square in the upper right corner of the board to event square 80.
+      - Some music changes
+      - Change map icon
+    added:
+      - Take a break and promotion music
   - version: 3
     changed:
       - Changed some venture cards
