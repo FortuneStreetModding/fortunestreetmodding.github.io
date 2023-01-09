@@ -6,7 +6,7 @@ desc:
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
-targetAmount: 20000
+targetAmount: 25000
 baseSalary: 750
 salaryIncrement: 200
 maxDiceRoll: 6
