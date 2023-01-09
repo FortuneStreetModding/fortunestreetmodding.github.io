@@ -24,19 +24,19 @@ music:
   download: 
     - https://nikkums.io/cswt/BGM/Cogito.music.zip
     - https://drive.google.com/uc?export=download&id=1GWU_9Rrv37wfMM7DYlTvVAja6I2HrcTu&confirm=1
-  map: CaptainSquare_remake
-  stock: hoshikuzunocaptain_remake
-  ventureCards: hoshikuzunocaptain_remake
-  auction: megalomania_remake
-  targetMet: megalomania_remake
-  win: BestEndRoll_remake
+  map: CaptainSquare_remake.130
+  stock: hoshikuzunocaptain_remake.130
+  ventureCards: hoshikuzunocaptain_remake.130
+  auction: megalomania_remake.130
+  targetMet: megalomania_remake.130
+  win: BestEndRoll_remake.130
   guestAppear:
   guestLeave:
   badVentureCard: 
   takeAbreak: 
-  promotionMii: lalversus_remake
-  promotionMario: lalversus_remake
-  promotionDragonQuest: lalversus_remake
+  promotionMii: lalversus_remake.130
+  promotionMario: lalversus_remake.130
+  promotionDragonQuest: lalversus_remake.130
   forcedBuyout:
   domination:
   bankruptcy:
