@@ -12,8 +12,9 @@ salaryIncrement: 350
 maxDiceRoll: 6
 frbFile1: starship0
 frbFile2: starship1
-background: grid_blue2
+background: grid_blue
 mapIcon: Switchship
+bgmId: "BGM_MAP_GHOSTSHIP"
 tourMode:
   bankruptcyLimit: 1
   opponent1: Platypunk
@@ -21,6 +22,11 @@ tourMode:
   opponent3: Alena
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Some squares changed to switches
+      - Changed mapBGM to ghost ship
+      - Background to changed to grid_blue
   - version: 2
     changed:
       - Background to changed to grid_blue2
