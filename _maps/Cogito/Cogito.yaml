@@ -21,7 +21,30 @@ tourMode:
   opponent2: Carver
   opponent3: Alena
   clearRank: 2
+music:
+  download: 
+    - https://nikkums.io/cswt/BGM/Cogito.music.zip
+    - https://drive.google.com/uc?export=download&id=1GWU_9Rrv37wfMM7DYlTvVAja6I2HrcTu&confirm=1
+  map: CaptainSquare_remake
+  stock: hoshikuzunocaptain_remake
+  ventureCards: hoshikuzunocaptain_remake
+  auction: megalomania_remake
+  targetMet: megalomania_remake
+  win: BestEndRoll_remake
+  guestAppear:
+  guestLeave:
+  badVentureCard: 
+  takeAbreak: 
+  promotionMii: lalversus_remake
+  promotionMario: lalversus_remake
+  promotionDragonQuest: lalversus_remake
+  forcedBuyout:
+  domination:
+  bankruptcy:
 changelog:
+  - version: 4
+    added:
+      - Music
   - version: 3
     changed:
       - Some squares changed to switches
