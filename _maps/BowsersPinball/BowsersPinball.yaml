@@ -42,7 +42,7 @@ music:
 changelog:
   - version: 2
     changed:
-      - Fixed inability to warp to level-up event squares with balloon ports, etc.
+      - Fixed inability to warp to level-up event squares with balloon ports, etc. not working properly.
   - version: 1
     added:
       - Initial release
