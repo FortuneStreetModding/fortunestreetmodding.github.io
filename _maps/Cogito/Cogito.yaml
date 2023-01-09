@@ -189,15 +189,15 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 districtNames:
   en:
-    - Cold Sleep Mod.
-    - Relaxation Mod.
+    - Cold Sleep
+    - Relaxation
     - Medbay
-    - Crew Quarters
-    - Interface Room
+    - Crew Qtrs
+    - Interface
     - Cockpit
-    - Cargo Hold
-    - M.Comput. OD-10
+    - Cargo
+    - OD-10
     - Airlock
-    - Secret Storage
-    - Behemoth Crate
+    - Secret
+    - Behemoth
 ...
