@@ -20,7 +20,7 @@ music:
   map: Map_Ennesan11.45
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan11.45
-  auction: Auction_grid.50
+  auction:
   targetMet: Targetmet_Ennesan11.45
   win: Win_Ennesan11.35
   guestAppear:
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Change auction music to vanilla music
   - version: 2
     changed:
       - Changed background to grid_orange

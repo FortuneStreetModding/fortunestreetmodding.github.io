@@ -21,7 +21,7 @@ music:
   map: Map_Ennesan14.35
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan11.45
-  auction: Auction_grid.50
+  auction:
   targetMet: Targetmet_Ennesan14.35
   win: Win_Ennesan11.35
   guestAppear:
@@ -42,6 +42,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 3
 changelog:
+  - version: 4
+    changed:
+      - Change auction music to vanilla music
   - version: 3
     changed:
       - Partially changed description
