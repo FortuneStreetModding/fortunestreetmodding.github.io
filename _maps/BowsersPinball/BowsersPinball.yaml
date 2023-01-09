@@ -40,6 +40,9 @@ music:
   domination:
   bankruptcy:
 changelog:
+  - version: 2
+    changed:
+      - Fixed inability to warp to level-up event squares with balloon ports, etc.
   - version: 1
     added:
       - Initial release
