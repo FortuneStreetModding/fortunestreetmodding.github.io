@@ -14,7 +14,6 @@ frbFile1: starship0
 frbFile2: starship1
 background: grid_blue
 mapIcon: Switchship
-bgmId: "BGM_MAP_GHOSTSHIP"
 tourMode:
   bankruptcyLimit: 1
   opponent1: Platypunk
