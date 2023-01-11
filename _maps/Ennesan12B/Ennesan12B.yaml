@@ -2,13 +2,13 @@
 name:
   en: Enne-san Board 12-B
 desc:
-  en: The large triangle is rotated clockwise by a switch. Green Backstreet warps to Club suit. Also, to get to the bank, you need to stop at the event square.
+  en: The large triangle is rotated clockwise by a switch. Backstreet warps to Club suit.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
 targetAmount: 20000
-baseSalary: 350
-salaryIncrement: 250
+baseSalary: 300
+salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: Ennesan12B_1
 frbFile2: Ennesan12B_2
@@ -44,6 +44,17 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Path has changed significantly
+      - You can move through the bank to another triangle
+      - Shop values for some shops changed
+      - Changed the effect of some event squares
+      - One additional BackStreet warp to Club, bringing the total to 2.
+      - Adjusted coordinates of some squares
+      - Base salary reduced to 300
+      - Salary increment reduced to 200
+      - Deleted some descriptions
   - version: 4
     changed:
       - Change auction music to vanilla music
