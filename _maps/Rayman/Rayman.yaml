@@ -34,6 +34,13 @@ tourMode:
   opponent2: Waluigi
   opponent3: Luigi
   clearRank: 2
+changelog:
+  - version: 1
+    added: 
+      - Initial Release
+authors:
+  - name: FatCat67
+    url: https://twitter.com/Sophilautia
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
