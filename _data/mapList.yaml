@@ -469,9 +469,6 @@ backgrounds: backgrounds.yml
     QuietStreet.zip:
       urls:
       - https://nikkums.io/cswt/Maps/QuietStreet.zip
-    Rayman.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Rayman.zip
     RoamerEncampment.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
