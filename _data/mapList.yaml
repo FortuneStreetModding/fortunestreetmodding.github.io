@@ -279,12 +279,6 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/AlefgardB.zip
   1:
-    Anchor.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Anchor.zip
-    Awful.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Awful.zip  
     BabyPark.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BabyPark.zip  
@@ -297,13 +291,13 @@ backgrounds: backgrounds.yml
     Castaway.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Castaway.zip
-  2:
     CastleTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastleTown.zip
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
+  2:
     ChumBucket.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ChumBucket.zip
@@ -472,9 +466,6 @@ backgrounds: backgrounds.yml
     Rayman.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rayman.zip
-    RoamerEncampment.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
