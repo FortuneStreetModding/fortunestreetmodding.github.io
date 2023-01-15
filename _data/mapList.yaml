@@ -472,9 +472,6 @@ backgrounds: backgrounds.yml
     MobileSchool.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MobileSchool.zip
-    Sandsea.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Sandsea.zip
     ShellIsleRedux.zip:
       practiceBoard: true
       urls:
