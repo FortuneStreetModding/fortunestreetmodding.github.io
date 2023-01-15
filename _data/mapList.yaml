@@ -473,9 +473,6 @@ backgrounds: backgrounds.yml
     SkyTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SkyTower.zip
-    Schneggl.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Schneggl.zip
     Spirograph.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Spirograph.zip
