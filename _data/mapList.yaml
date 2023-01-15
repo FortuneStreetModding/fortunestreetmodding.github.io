@@ -279,9 +279,6 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/BabyPark.zip  
   1:
-    Bakerman.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Bakerman.zip
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
@@ -297,10 +294,10 @@ backgrounds: backgrounds.yml
     ChumBucket.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ChumBucket.zip
-  2:
     TheClock.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/TheClock.zip
+      - https://nikkums.io/cswt/Maps/TheClock.zip      
+  2:
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
