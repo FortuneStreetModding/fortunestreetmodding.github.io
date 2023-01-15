@@ -445,9 +445,6 @@ backgrounds: backgrounds.yml
     Pokeball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Pokeball.zip
-    Pollen.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Pollen.zip
     Quad.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Quad.zip
