@@ -269,19 +269,16 @@ backgrounds: backgrounds.yml
     AegisRim.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AegisRim.zip
-    Agency.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Agency.zip
     AlchemistsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AlchemistsHouse.zip
     AlefgardB.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AlefgardB.zip
-  1:
     BabyPark.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BabyPark.zip  
+  1:
     Bakerman.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Bakerman.zip
@@ -297,10 +294,10 @@ backgrounds: backgrounds.yml
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
-  2:
     ChumBucket.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ChumBucket.zip
+  2:
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
