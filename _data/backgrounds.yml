@@ -489,3 +489,8 @@
     forcedBuyout: RaymanBuyout.80
     domination: RaymanDomination.80
     stock: RaymanStonk.70
+- background: floatingSpaceRock
+  name: floatingSpaceRock
+  mapIcon: floatingSpaceRock
+  download: 
+  - https://drive.google.com/u/0/uc?id=1xAJimVmghOKEhWq7UBey6J7gr9LdX-OO&export=download
