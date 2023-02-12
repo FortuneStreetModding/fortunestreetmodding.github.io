@@ -5,8 +5,8 @@ desc:
   en: The limbless hero of Rayman's world, that defeated the evil Mr dark and saved the great protoon and Betilla the fairy.
 ruleSet: Standard
 theme: Mario
-initialCash: 3500
-targetAmount: 25000
+initialCash: 4000
+targetAmount: 28000
 baseSalary: 600
 salaryIncrement: 200
 maxDiceRoll: 7
@@ -35,6 +35,10 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed initial cash from 3500 to 4000
+      - Changed target amount from 25000 to 28000
   - version: 1
     added: 
       - Initial Release
