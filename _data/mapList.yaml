@@ -460,9 +460,6 @@ backgrounds: backgrounds.yml
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
-    MobileSchool.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/MobileSchool.zip
     ShellIsleRedux.zip:
       practiceBoard: true
       urls:
