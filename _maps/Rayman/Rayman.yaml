@@ -39,6 +39,7 @@ changelog:
     changed:
       - Changed initial cash from 3500 to 4000
       - Changed target amount from 25000 to 28000
+      - Various changes to property values
   - version: 1
     added: 
       - Initial Release
