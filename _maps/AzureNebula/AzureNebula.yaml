@@ -21,6 +21,7 @@ tourMode:
   clearRank: 1
 music:
   download:
+  - https://nikkums.io/cswt/BGM/AzureNebula.music.zip
   - https://drive.google.com/u/0/uc?id=1TkkAHnMdDC41197iuk9MZHo2XZ1PP-5C&export=download
   map: AzureNebula_map_Unrailed-SpaceSuite.60
   stock: AzureNebula_stock_Moo2-CharismaticHuman.60 
