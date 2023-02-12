@@ -2,7 +2,7 @@
 name:
   en: Enne-san Board 15
 desc:
-  en: Suit adjacent to the change of direction event and the store directly above the bank must be in a condition to change direction in order to proceed.
+  en: The suit adjacent to the change of direction events and the square directly above the bank can only be accessed by landing on the preceding square. Good luck!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1600
