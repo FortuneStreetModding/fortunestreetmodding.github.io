@@ -260,9 +260,6 @@ backgrounds: backgrounds.yml
 1:
   #practiceBoard: ShellIsleRedux
   0:
-    Abwarten.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Abwarten.zip
     AcademyCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AcademyCity.zip
@@ -278,10 +275,10 @@ backgrounds: backgrounds.yml
     AzureNebula.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AzureNebula.zip
-  1:
     BabyPark.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BabyPark.zip  
+  1:
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
@@ -376,6 +373,9 @@ backgrounds: backgrounds.yml
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
+    Evergreen.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Evergreen.zip
     Fillmore.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Fillmore.zip
