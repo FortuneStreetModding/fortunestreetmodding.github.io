@@ -313,6 +313,9 @@ backgrounds: backgrounds.yml
     CustomWorld.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CustomWorld.zip
+    DeathStarfish.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/DeathStarfish.zip
     DelfinoRedux.zip:
       urls:
       - https://nikkums.io/cswt/Maps/DelfinoRedux.zip
