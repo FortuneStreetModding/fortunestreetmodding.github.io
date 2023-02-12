@@ -298,108 +298,108 @@
             "additionalProperties": false,
             "properties": {
                 "download": {
-                    "description": "The map main background music.",
+                    "description": "List of download URLs.",
                     "anyOf": [{"type": "null"},{"type": "string"},{"type": "array"}]
                 },
                 "map": {
                     "description": "The map main background music.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "stock": {
                     "description": "The music played when a player is buying or selling stocks.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "ventureCards": {
                     "description": "The music played when a player is picking a venture card.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "auction": {
                     "description": "The music played when an auction is taking place.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "targetMet": {
                     "description": "The music played when a player reaches the target net worth.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "win": {
                     "description": "The music played when a player wins the match.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "guestAppear": {
                     "description": "The music played when a guest appears.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "guestLeave": {
                     "description": "The music played when a guest leaves.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "badVentureCard": {
                     "description": "The music played when venture card #13 is picked.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "takeAbreak": {
                     "description": "The music played when the shops of a player close.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "promotionMii": {
                     "description": "The music played when a Mii character gets promoted.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "promotionMario": {
                     "description": "The music played when a character from Mario gets promoted.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "promotionDragonQuest": {
                     "description": "The music played when a character from Dragon Quest gets promoted.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "forcedBuyout": {
                     "description": "The music played when a shop is forcefully bought from another player.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "domination": {
                     "description": "The music played when a player owns all shops in a district.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "bankruptcy": {
                     "description": "The music played when a player bankrupts.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "roundTheBlocks": {
                     "description": "The music played when the round the blocks mini game is being played.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "roundTheBlocksWin": {
                     "description": "The music played when a player wins something during the round the blocks mini game.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "roundTheBlocks777": {
                     "description": "The music played when a player gets triple seven during the round the blocks mini game.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "memoryBlock": {
                     "description": "The music played when the round the memory block mini game is being played.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "dartOfGold": {
                     "description": "The music played when the dart of gold mini game is being played.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "slurpodromeSelect": {
                     "description": "The music played when the players are picking their racing slime.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "slurpodromeStart": {
                     "description": "The music played at the start of the race.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "slurpodromeRace": {
                     "description": "The music played when the slimes are racing.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 },
                 "slurpodromeWin": {
                     "description": "The music played when a slime reaches the finish line.",
-                    "anyOf": [{"type": "null"},{"type": "string"}]
+                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48}]
                 }
             }
         },
@@ -415,7 +415,8 @@
         "mapIcon": {
             "description": "The map icon which to display at the map select screen. You can provide your own map icon as a png file without the file extension or choose one of these: p_bg_101 = Trodain Castle, p_bg_109 = The Observatory, p_bg_102 = Ghost Ship, p_bg_105 = Slimenia, p_bg_104 = Mt. Magmageddon, p_bg_106 = Robbin' Hood Ruins, p_bg_004 = Mario Stadium, p_bg_008 = Starship Mario, p_bg_002 = Mario Circuit, p_bg_001 = Yoshi's Island, p_bg_005 = Delfino Plaza, p_bg_003 = Peach's Castle, p_bg_107 = Alefgard, p_bg_006 = Super Mario Bros, p_bg_007 = Bowser's Castle, p_bg_009 = Good Egg Galaxy, p_bg_103 = The Colossus, p_bg_108 = Alltrades Abbey, p_bg_901 = Practice Board.",
             "type": "string",
-            "pattern": "^[\\w-]+$"
+            "pattern": "^[\\w-]+$",
+			"maxLength": 13
         },
         "mutators": {
             "type": "object",
