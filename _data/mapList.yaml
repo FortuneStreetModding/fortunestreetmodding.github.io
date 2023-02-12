@@ -275,10 +275,13 @@ backgrounds: backgrounds.yml
     AlefgardB.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AlefgardB.zip
+    AzureNebula.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/AzureNebula.zip
+  1:
     BabyPark.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BabyPark.zip  
-  1:
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
