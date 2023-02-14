@@ -266,9 +266,6 @@ backgrounds: backgrounds.yml
     AegisRim.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AegisRim.zip
-    AlchemistsHouse.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/AlchemistsHouse.zip
     AlefgardB.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AlefgardB.zip
@@ -277,11 +274,11 @@ backgrounds: backgrounds.yml
       - https://nikkums.io/cswt/Maps/AzureNebula.zip
     BabyPark.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/BabyPark.zip  
-  1:
+      - https://nikkums.io/cswt/Maps/BabyPark.zip
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
+  1:
     Castaway.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Castaway.zip
@@ -296,11 +293,11 @@ backgrounds: backgrounds.yml
       - https://nikkums.io/cswt/Maps/ChumBucket.zip
     TheClock.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/TheClock.zip      
-  2:
+      - https://nikkums.io/cswt/Maps/TheClock.zip
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
+  2:
     Colony4.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony4.zip
@@ -454,12 +451,6 @@ backgrounds: backgrounds.yml
     Quad.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Quad.zip
-    QuietStreet.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/QuietStreet.zip
-    Rayman.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Rayman.zip
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
