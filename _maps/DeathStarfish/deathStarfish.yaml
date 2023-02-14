@@ -15,7 +15,8 @@ mapIcon: deathStarfish
 background: bg102
 music:
   download:
-    - https://drive.google.com/u/2/uc?id=1jyFS471vUh9Xzp0yCTtvd3Qb6ags_tB3&export=download&confirm=1
+  - https://nikkums.io/cswt/BGM/DeathStarfish.music.zip
+  - https://drive.google.com/u/2/uc?id=1jyFS471vUh9Xzp0yCTtvd3Qb6ags_tB3&export=download&confirm=1
   map: Secret_of_Monkey_Island-LeChucksTheme.90
 tourMode:
   bankruptcyLimit: 1
