@@ -416,7 +416,7 @@
             "description": "The map icon which to display at the map select screen. You can provide your own map icon as a png file without the file extension or choose one of these: p_bg_101 = Trodain Castle, p_bg_109 = The Observatory, p_bg_102 = Ghost Ship, p_bg_105 = Slimenia, p_bg_104 = Mt. Magmageddon, p_bg_106 = Robbin' Hood Ruins, p_bg_004 = Mario Stadium, p_bg_008 = Starship Mario, p_bg_002 = Mario Circuit, p_bg_001 = Yoshi's Island, p_bg_005 = Delfino Plaza, p_bg_003 = Peach's Castle, p_bg_107 = Alefgard, p_bg_006 = Super Mario Bros, p_bg_007 = Bowser's Castle, p_bg_009 = Good Egg Galaxy, p_bg_103 = The Colossus, p_bg_108 = Alltrades Abbey, p_bg_901 = Practice Board.",
             "type": "string",
             "pattern": "^[\\w-]+$",
-			"maxLength": 13
+            "maxLength": 13
         },
         "mutators": {
             "type": "object",
