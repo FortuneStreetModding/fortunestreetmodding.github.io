@@ -155,14 +155,14 @@
   name: Wario's Battle Canyon
   download: 
   - https://nikkums.io/cswt/Backgrounds/battlecanyon.background.zip
-  - https://drive.google.com/u/2/uc?id=18eXksSF-5v3Wogc_z-OUTq7JgsIOuuJn&export=download
+  - https://drive.google.com/u/2/uc?id=1n0ALnPulaX28d-Ywr68g8eBBsyML9XQR&export=download
   mapIcon: battlecanyon
   music:
     map: BGM_MAP_BATTLECANYON.65
     stock: MP1_OptionHouse.50
     ventureCards: MP1_MiniGame.60
     auction: MP1_ChanceTime.55
-    targetMet: Hurry Up.60
+    targetMet: HurryUp.60
     win: MP1_Ending.60
     guestAppear: MP1_OJAMA_COME.60
     guestLeave: MP1_OJAMA_BYE.60
