@@ -173,7 +173,7 @@ authors:
 changelog:
   - version: 2
     changed:
-      - Initial cash changed from 2000 to 25000
+      - Initial cash changed from 2000 to 2500
       - Base salary changed from 300 to 400
       - Salary increment changed from 200 to 250
   - version: 1
