@@ -5,10 +5,10 @@ desc:
   en: The Kanto Region, where the Pokémon series all began.
 ruleSet: Standard
 theme: Mario
-initialCash: 2000
+initialCash: 2500
 targetAmount: 25000
-baseSalary: 300
-salaryIncrement: 200
+baseSalary: 400
+salaryIncrement: 250
 maxDiceRoll: 7
 frbFile1: Kanto
 background: bg107
@@ -171,6 +171,11 @@ ventureCards:
 authors:
   - name: Azurillkirby
 changelog:
+  - version: 2
+    changed:
+      - Initial cash changed from 2000 to 25000
+      - Base salary changed from 300 to 400
+      - Salary increment changed from 200 to 250
   - version: 1
     added: 
       - Initial Release
