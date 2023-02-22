@@ -42,6 +42,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 3
 changelog:
+  - version: 5
+    changed:
+      - Fixed a bug that caused soft lock when warping to a switch with a balloon port when in state 2.
   - version: 4
     changed:
       - Change auction music to vanilla music
