@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - You can now warp to Spade Suit and Heart Suit in the Balloon Port by hovering over them with the crosshair button.
   - version: 5
     changed:
       - Change auction music to vanilla music
