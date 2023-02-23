@@ -23,7 +23,7 @@ music:
   map: Map_Ennesan7.35
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan.45
-  auction: Auction_grid.50
+  auction:
   targetMet: Targetmet_Ennesan1B.45
   win: Win_Ennesan1.45
   guestAppear:
@@ -44,6 +44,12 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 7
+    changed:
+      - Changed venture card 87 to 47
+  - version: 6
+    changed:
+      - Change auction music to vanilla music
   - version: 5
     changed:
       - Coordinate Adjustments
@@ -122,7 +128,7 @@ ventureCards:
   - 1  #  44 Misadventure! Roll the die and pay 44 times the number in gold coins to the player in last place!
   - 0  #  45 Dicey adventure! Roll 1/3/5 to warp to a take-a-break square. Roll 2/4/6 to warp to the arcade.
   - 1  #  46 Misadventure! You drop your wallet and lose 10% of your ready cash!
-  - 0  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
+  - 1  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
   - 1  #  48 Misadventure! All shops in a district picked at random fall in value by 10%!
   - 1  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
   - 1  #  50 Venture on! Move forward the same number of squares again.
@@ -162,7 +168,7 @@ ventureCards:
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 0  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 0  #  88 Misadventure! All other players swap places!
   - 0  #  89 Freebie! All players take a Suit Yourself card!
   - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.

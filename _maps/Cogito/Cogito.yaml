@@ -12,7 +12,7 @@ salaryIncrement: 350
 maxDiceRoll: 6
 frbFile1: starship0
 frbFile2: starship1
-background: grid_blue2
+background: grid_blue
 mapIcon: Switchship
 tourMode:
   bankruptcyLimit: 1
@@ -20,7 +20,35 @@ tourMode:
   opponent2: Carver
   opponent3: Alena
   clearRank: 2
+music:
+  download: 
+    - https://nikkums.io/cswt/BGM/Cogito.music.zip
+    - https://drive.google.com/uc?export=download&id=1GWU_9Rrv37wfMM7DYlTvVAja6I2HrcTu&confirm=1
+  map: CaptainSquare_remake.130
+  stock: hoshikuzunocaptain_remake.130
+  ventureCards: hoshikuzunocaptain_remake.130
+  auction: megalomania_remake.130
+  targetMet: megalomania_remake.130
+  win: BestEndRoll_remake.130
+  guestAppear:
+  guestLeave:
+  badVentureCard: 
+  takeAbreak: 
+  promotionMii: lalversus_remake.130
+  promotionMario: lalversus_remake.130
+  promotionDragonQuest: lalversus_remake.130
+  forcedBuyout:
+  domination:
+  bankruptcy:
 changelog:
+  - version: 4
+    added:
+      - Music
+  - version: 3
+    changed:
+      - Some squares changed to switches
+      - Changed mapBGM to ghost ship
+      - Background to changed to grid_blue
   - version: 2
     changed:
       - Background to changed to grid_blue2
@@ -161,15 +189,15 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 districtNames:
   en:
-    - Cold Sleep Mod.
-    - Relaxation Mod.
+    - Cold Sleep
+    - Relaxation
     - Medbay
-    - Crew Quarters
-    - Interface Room
+    - Crew Qtrs
+    - Interface
     - Cockpit
-    - Cargo Hold
-    - M.Comput. OD-10
+    - Cargo
+    - OD-10
     - Airlock
-    - Secret Storage
-    - Behemoth Crate
+    - Secret
+    - Behemoth
 ...

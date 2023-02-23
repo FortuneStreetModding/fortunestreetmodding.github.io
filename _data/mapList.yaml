@@ -260,44 +260,28 @@ backgrounds: backgrounds.yml
 1:
   #practiceBoard: ShellIsleRedux
   0:
-    Abwarten.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Abwarten.zip
     AcademyCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AcademyCity.zip
     AegisRim.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AegisRim.zip
-    Agency.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Agency.zip
-    AlchemistsHouse.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/AlchemistsHouse.zip
     AlefgardB.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AlefgardB.zip
-  1:
-    Anchor.zip:
+    AzureNebula.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Anchor.zip
-    Awful.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Awful.zip  
+      - https://nikkums.io/cswt/Maps/AzureNebula.zip
     BabyPark.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/BabyPark.zip  
-    Bakerman.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Bakerman.zip
+      - https://nikkums.io/cswt/Maps/BabyPark.zip
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
+  1:
     Castaway.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Castaway.zip
-  2:
     CastleTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastleTown.zip
@@ -313,6 +297,7 @@ backgrounds: backgrounds.yml
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
+  2:
     Colony4.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony4.zip
@@ -325,9 +310,9 @@ backgrounds: backgrounds.yml
     CustomWorld.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CustomWorld.zip
-    Karo.zip:
+    DeathStarfish.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Karo.zip
+      - https://nikkums.io/cswt/Maps/DeathStarfish.zip
     DelfinoRedux.zip:
       urls:
       - https://nikkums.io/cswt/Maps/DelfinoRedux.zip
@@ -349,9 +334,6 @@ backgrounds: backgrounds.yml
     Ennesan03.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan03.zip
-    Ennesan04.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan04.zip
     Ennesan05.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan05.zip
@@ -376,18 +358,24 @@ backgrounds: backgrounds.yml
     Ennesan12B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan12B.zip
-    Ennesan13.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan13.zip
     Ennesan14.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan14.zip
+    Ennesan15.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan15.zip
+    Ennesan16.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan16.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
+    Evergreen.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Evergreen.zip
     Fillmore.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Fillmore.zip
@@ -460,30 +448,12 @@ backgrounds: backgrounds.yml
     Pokeball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Pokeball.zip
-    Pollen.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Pollen.zip
     Quad.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Quad.zip
-    QuietStreet.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/QuietStreet.zip
-    Rayman.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Rayman.zip
-    RoamerEncampment.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
-    MobileSchool.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/MobileSchool.zip
-    Sandsea.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Sandsea.zip
     ShellIsleRedux.zip:
       practiceBoard: true
       urls:
@@ -494,9 +464,6 @@ backgrounds: backgrounds.yml
     SkyTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SkyTower.zip
-    Schneggl.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Schneggl.zip
     Spirograph.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Spirograph.zip

@@ -1,0 +1,34 @@
+---
+name: 
+  en: The Death Starfish
+desc: 
+  en: Sailing onboard of LeChuck's ghost ship.
+ruleSet: Standard
+theme: DragonQuest
+initialCash: 900
+targetAmount: 13000
+baseSalary: 200
+salaryIncrement: 100
+maxDiceRoll: 5
+frbFile1: deathStarfish
+mapIcon: deathStarfish
+background: bg102
+music:
+  download:
+  - https://nikkums.io/cswt/BGM/DeathStarfish.music.zip
+  - https://drive.google.com/u/2/uc?id=1jyFS471vUh9Xzp0yCTtvd3Qb6ags_tB3&export=download&confirm=1
+  map: Secret_of_Monkey_Island-LeChucksTheme.90
+tourMode:
+  bankruptcyLimit: 1
+  opponent1: Dragonlord
+  opponent2: Princessa
+  opponent3: Yangus
+  clearRank: 1
+changelog:
+  - version: 1
+    added: 
+      - Initial Release
+authors:
+  - name: Deflaktor
+    url: https://github.com/Deflaktor
+...

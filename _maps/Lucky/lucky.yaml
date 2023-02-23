@@ -40,6 +40,10 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Pathing changed to avoid loops
+      - Adjusted shop prices slightly based on feedback
   - version: 2
     changed:
       - Changed background to grid_orange

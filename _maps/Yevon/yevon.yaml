@@ -31,6 +31,9 @@ music:
   stock: YevonStocks.70
   ventureCards: Chocobo.80
 changelog:
+  - version: 2
+    changed:
+      - Fixed pathing errors
   - version: 1
     changed:
       - Initial Release

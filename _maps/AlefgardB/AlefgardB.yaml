@@ -5,7 +5,7 @@ desc:
   en: Alefgard on the B Side. The center island is now a critical point in dominating all but one district. A 3rd backstreet has been installed. Vacant plots are now in fixed squares.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2500
+initialCash: 2700
 targetAmount: 25000
 baseSalary: 375
 salaryIncrement: 250
@@ -20,6 +20,10 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Increased starting amount to 2700
+      - Various layout changes
   - version: 1
     added: 
       - Initial Release

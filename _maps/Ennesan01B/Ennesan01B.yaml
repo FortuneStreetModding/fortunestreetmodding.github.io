@@ -20,7 +20,7 @@ music:
   map: Map_Ennesan1B.45
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan.45
-  auction: Auction_grid.50
+  auction:
   targetMet: Targetmet_Ennesan1B.45
   win: Win_Ennesan1.45
   guestAppear:
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Change auction music to vanilla music
   - version: 4
     changed:
       - Increased salary increment from 75 to 100
