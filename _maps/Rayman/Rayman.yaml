@@ -35,6 +35,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Board structure adjusted with new pathing and a new door
   - version: 2
     changed:
       - Changed initial cash from 3500 to 4000
