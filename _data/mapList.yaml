@@ -412,9 +412,6 @@ backgrounds: backgrounds.yml
     InsideOut.zip:
       urls:
       - https://nikkums.io/cswt/Maps/InsideOut.zip
-    Hampelmann.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Hampelmann.zip
     Kanto.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Kanto.zip
@@ -451,6 +448,9 @@ backgrounds: backgrounds.yml
     Quad.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Quad.zip
+    Rayman.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Rayman.zip
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
