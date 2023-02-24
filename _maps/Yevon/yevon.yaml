@@ -31,6 +31,10 @@ music:
   stock: YevonStocks.70
   ventureCards: Chocobo.80
 changelog:
+  - version: 3
+    changed:
+      - Increased shop value next to bank. Note that the Shop Price for that store has not changed.
+      - Changed vacant plots in Yojinmbo and Camisade districts to shops with a shop value of 90.
   - version: 2
     changed:
       - Fixed pathing errors
