@@ -44,6 +44,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Changed some of the event squares in the center triangle at states 1 and 3.
+      - Changed some shop values in the center triangle.
   - version: 5
     changed:
       - Path has changed significantly
