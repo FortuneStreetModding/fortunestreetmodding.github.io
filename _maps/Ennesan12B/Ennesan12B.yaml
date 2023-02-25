@@ -44,6 +44,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 7
+    changed:
+      - Changed so that one large triangle cannot be looped when in state 3.
+      - Fixed Path bug with large triangle above at state 3.
   - version: 6
     changed:
       - Fixed soft lock issue

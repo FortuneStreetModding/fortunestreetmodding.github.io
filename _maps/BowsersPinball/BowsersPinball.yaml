@@ -40,6 +40,11 @@ music:
   domination:
   bankruptcy:
 changelog:
+  - version: 3
+    changed:
+      - Changed shop values for some shops.
+      - Changed vacant plot in District B to a shop with a shop value of 310.
+      - Changed shop with a shop value of 260 in District J to vacant plot.
   - version: 2
     changed:
       - Fixed inability to warp to level-up event squares with balloon ports, etc. not working properly.
