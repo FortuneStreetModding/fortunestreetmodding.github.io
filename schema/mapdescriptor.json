@@ -43,6 +43,7 @@
             "additionalProperties": false,
             "properties": {
                 "rollShopPriceMultiplier": {
+                    "description": "Whenever a player stops at a shop of an opponent, the die must be rolled. Then, the price to be paid is multiplied with whatever was rolled.",
                     "type": "object",
                     "additionalProperties": false,
                     "minProperties": 1,
@@ -58,6 +59,7 @@
                     }
                 },
                 "shopPriceMultiplier": {
+                    "description": "A flat multiplier to all shop prices. Applies to 3-star shops as well but not to anything that is not considered a shop, like for example the circus tent. Also scales the shop models accordingly.",
                     "type": "object",
                     "additionalProperties": false,
                     "minProperties": 1,
@@ -78,6 +80,7 @@
                     }
                 },
                 "stockPriceMultiplier": {
+                    "description": "A flat multiplier to all stock values.",
                     "type": "object",
                     "additionalProperties": false,
                     "minProperties": 1,
