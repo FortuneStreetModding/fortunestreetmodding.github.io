@@ -9,36 +9,37 @@ initialCash: 2500
 targetAmount: 32000
 baseSalary: 1000
 salaryIncrement: 200
-maxDiceRoll: 7
+maxDiceRoll: 6
 frbFile1: MillenialFair
 background: bg005
 mapIcon: Nu
 music:
-  map: Fair.95
-  stock: Factory.90
-  ventureCards: Spekkio.85
-  auction: Lab.90
-  targetMet: Revolution.90
-  win: Wings.85
-  guestAppear: Mitsuda.85
-  guestLeave: Huh.85
-  badVentureCard: Mystery.85
-  takeAbreak: Goodnight.85
-  promotionMii: Fan1.85
-  promotionMario: Fan1.85
-  promotionDragonQuest: Fan1.85
-  forcedBuyout: Fanfare3.90
-  domination: Fanfare2.90
-  bankruptcy: Prayer.85  
-  roundTheBlocks: Omen.85
-  roundTheBlocksWin: Fanfare3.90
-  roundTheBlocks777: Fanfare2.90
-  memoryBlock: Bobonga.95
-  dartOfGold: Ayla.90
-  slurpodromeSelect: Battle2.90
-  slurpodromeStart: Fanfare3.90
-  slurpodromeRace: Bike.80
-  slurpodromeWin: Fanfare2.90
+  download: https://drive.google.com/u/0/uc?id=12NzcseE5UZnDc6g25INxmF55yBODX-7m&export=download&confirm=1
+  map: Fair.80
+  stock: Factory.70
+  ventureCards: Spekkio.65
+  auction: Lab.70
+  targetMet: Revolution.70
+  win: Wings.65
+  guestAppear: Mitsuda.65
+  guestLeave: Huh.65
+  badVentureCard: Mystery.65
+  takeAbreak: Goodnight.65
+  promotionMii: Fan1.65
+  promotionMario: Fan1.65
+  promotionDragonQuest: Fan1.65
+  forcedBuyout: Fanfare3.70
+  domination: Fanfare2.70
+  bankruptcy: Prayer.65  
+  roundTheBlocks: Omen.65
+  roundTheBlocksWin: Fanfare3.70
+  roundTheBlocks777: Fanfare2.70
+  memoryBlock: Bobonga.75
+  dartOfGold: Ayla.70
+  slurpodromeSelect: Battle2.70
+  slurpodromeStart: Fanfare3.70
+  slurpodromeRace: Bike.60
+  slurpodromeWin: Fanfare2.70
 tourMode:
   bankruptcyLimit: 1
   opponent1: Dragonlord
