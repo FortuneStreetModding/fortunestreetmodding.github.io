@@ -41,6 +41,11 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Changed Waypoints setting to force the user to go to the hexagon when going from the pentagon to the bank.
+      - Changed shop values for some shops
+      - Changed the effect of some event squares
   - version: 3
     changed:
       - Change auction music to vanilla music
