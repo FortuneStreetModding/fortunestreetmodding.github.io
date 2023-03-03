@@ -279,6 +279,9 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
   1:
+    BowsersPinball.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/BowsersPinball.zip
     Castaway.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Castaway.zip
@@ -294,10 +297,10 @@ backgrounds: backgrounds.yml
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
+  2:
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
-  2:
     Colony4.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony4.zip
@@ -328,24 +331,12 @@ backgrounds: backgrounds.yml
     Ennesan01B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan01B.zip
-    Ennesan02B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan02B.zip
-    Ennesan03.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan03.zip
-    Ennesan05.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan05.zip
     Ennesan06.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan06.zip
     Ennesan07.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan07.zip
-    Ennesan09.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan09.zip
     Ennesan10.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan10.zip
@@ -355,18 +346,15 @@ backgrounds: backgrounds.yml
     Ennesan12A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan12A.zip
-    Ennesan12B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan12B.zip
-    Ennesan14.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan14.zip
     Ennesan15.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan15.zip
     Ennesan16.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan16.zip
+    Ennesan17.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan17.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
