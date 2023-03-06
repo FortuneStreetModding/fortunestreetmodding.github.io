@@ -331,21 +331,12 @@ backgrounds: backgrounds.yml
     Ennesan02B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan02B.zip
-    Ennesan03.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan03.zip
-    Ennesan05.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan05.zip
     Ennesan06.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan06.zip
     Ennesan07.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan07.zip
-    Ennesan09.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan09.zip
     Ennesan10.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan10.zip
@@ -355,9 +346,6 @@ backgrounds: backgrounds.yml
     Ennesan12A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan12A.zip
-    Ennesan12B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan12B.zip
     Ennesan14.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan14.zip
@@ -373,9 +361,6 @@ backgrounds: backgrounds.yml
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
-    Evergreen.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Evergreen.zip
     Fillmore.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Fillmore.zip
@@ -470,9 +455,6 @@ backgrounds: backgrounds.yml
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
-    StarlightTemple.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/StarlightTemple.zip
     Bethlehem.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Bethlehem.zip
