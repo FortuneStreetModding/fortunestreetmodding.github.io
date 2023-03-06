@@ -409,6 +409,9 @@ backgrounds: backgrounds.yml
     MidgarTransit.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MidgarTransit.zip
+    MillennialFair.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MillennialFair.zip   
     NLA.zip:
       urls:
       - https://nikkums.io/cswt/Maps/NLA.zip
