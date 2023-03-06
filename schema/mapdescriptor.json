@@ -58,8 +58,8 @@
                         }
                     }
                 },
-                "shopPriceMultiplier": {
-                    "description": "A flat multiplier to all shop prices. Applies to 3-star shops as well but not to anything that is not considered a shop, like for example the circus tent. Also scales the shop models accordingly.",
+                "shopPrice": {
+                    "description": "A flat multiplier to all shop prices. Applies to 3-star shops as well but not to anything that is not considered a shop, like for example the circus tent.",
                     "type": "object",
                     "additionalProperties": false,
                     "minProperties": 1,
@@ -69,17 +69,22 @@
                         },
                         "numerator": {
                             "type": "integer",
-                            "minimum": 2,
-                            "maximum": 9
+                            "minimum": 0
                         },
                         "denominator": {
                             "type": "integer",
-                            "minimum": 2,
-                            "maximum": 9
+                            "minimum": 1
+                        },
+                        "constant": {
+                            "type": "integer"
+                        },
+                        "affectShopRank": {
+                            "description": "Whether to scale the shop models accordingly.",
+                            "type": "boolean"
                         }
                     }
                 },
-                "stockPriceMultiplier": {
+                "stockPrice": {
                     "description": "A flat multiplier to all stock values.",
                     "type": "object",
                     "additionalProperties": false,
@@ -90,13 +95,14 @@
                         },
                         "numerator": {
                             "type": "integer",
-                            "minimum": 2,
-                            "maximum": 9
+                            "minimum": 0
                         },
                         "denominator": {
                             "type": "integer",
-                            "minimum": 2,
-                            "maximum": 9
+                            "minimum": 1
+                        },
+                        "constant": {
+                            "type": "integer"
                         }
                     }
                 }
