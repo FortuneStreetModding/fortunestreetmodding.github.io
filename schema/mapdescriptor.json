@@ -237,9 +237,9 @@
             "type": "integer"
         },
         "maxDiceRoll": {
-            "description": "The maximum roll a player can get on this map. Lower than 5 or higher than 9 is known to cause crashes",
+            "description": "The maximum roll a player can get on this map. Lower than 4 or higher than 9 is known to cause crashes",
             "type": "integer",
-            "minimum": 5,
+            "minimum": 4,
             "maximum": 9
         },
         "frbFile1": {
