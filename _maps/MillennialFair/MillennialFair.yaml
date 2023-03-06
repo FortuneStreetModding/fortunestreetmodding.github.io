@@ -14,7 +14,8 @@ frbFile1: MillennialFair
 background: bg005
 mapIcon: Nu
 music:
-  download: https://nikkums.io/cswt/BGM/MillennialFair.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/MillennialFair.music.zip
   map: Fair.95
   stock: Factory.90
   ventureCards: Spekkio.85
