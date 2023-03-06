@@ -1,8 +1,8 @@
 ---
 name:
-  en: Millenial Fair
+  en: Millennial Fair
 desc:
-  en: Spend a day at Guardia's Millenial Fair! Try Lucca's Telepads, and collect plenty of Suit Yourself cards!
+  en: Spend a day at Guardia's Millennial Fair! Try Lucca's Telepads, and collect plenty of Suit Yourself cards!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500
@@ -10,7 +10,7 @@ targetAmount: 32000
 baseSalary: 1000
 salaryIncrement: 200
 maxDiceRoll: 6
-frbFile1: MillenialFair
+frbFile1: MillennialFair
 background: bg005
 mapIcon: Nu
 music:
