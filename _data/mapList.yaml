@@ -358,9 +358,6 @@ backgrounds: backgrounds.yml
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
-    Evergreen.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Evergreen.zip
     Fillmore.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Fillmore.zip
@@ -455,9 +452,6 @@ backgrounds: backgrounds.yml
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
-    StarlightTemple.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/StarlightTemple.zip
     Bethlehem.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Bethlehem.zip

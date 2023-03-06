@@ -22,9 +22,10 @@ tourMode:
 mutators:
   rollShopPriceMultiplier:
     maxRoll: 6
-  shopPriceMultiplier:
+  shopPrice:
     numerator: 2
     denominator: 7
+    affectShopRank: true
 districtNames:
   en:
     - President
