@@ -328,9 +328,6 @@ backgrounds: backgrounds.yml
     Ennesan01B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan01B.zip
-    Ennesan02B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan02B.zip
     Ennesan06.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan06.zip
@@ -346,15 +343,15 @@ backgrounds: backgrounds.yml
     Ennesan12A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan12A.zip
-    Ennesan14.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan14.zip
     Ennesan15.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan15.zip
     Ennesan16.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan16.zip
+    Ennesan17.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan17.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
