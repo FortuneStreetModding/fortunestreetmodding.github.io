@@ -301,6 +301,9 @@ backgrounds: backgrounds.yml
     Colony4.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony4.zip
+    ColossusEX.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/ColossusEX.zip
     CrestOfFlames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CrestOfFlames.zip
