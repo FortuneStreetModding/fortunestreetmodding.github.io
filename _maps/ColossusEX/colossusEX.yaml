@@ -7,12 +7,12 @@ name:
   jp: 魔神像 EX
   es: El Coloso EX
 desc:
-  en: "The Colossus EX: The same Colossus you know and love, but with four states instead of two! Now, rather than rotating 180 degrees twice, it rotates 90 degrees four times."
-  de: "Der Koloss EX: Derselbe Koloss, den du kennst und liebst, aber mit vier Zuständen statt zwei! Anstatt sich zweimal um 180 Grad zu drehen, dreht es sich jetzt viermal um 90 Grad."
-  fr: "Le Colosse EX : Le même Colosse que vous connaissez et aimez, mais avec quatre états au lieu de deux ! Maintenant, plutôt que de tourner deux fois à 180 degrés, il tourne quatre fois à 90 degrés."
-  it: "Il Colosso EX: lo stesso colosso che conosci e ami, ma con quattro stati invece di due! Ora, invece di ruotare di 180 gradi due volte, ruota di 90 gradi quattro volte."
-  jp: "魔神像 EX: あなたが知っていて愛する同じ Colossus ですが、2 つではなく 4 つの状態があります! これで、180 度を 2 回回転させるのではなく、90 度を 4 回回転させます。"
-  es: "El Coloso EX: ¡El mismo Coloso que conoces y amas, pero con cuatro estados en lugar de dos! Ahora, en lugar de girar 180 grados dos veces, gira 90 grados cuatro veces."
+  en: The same Colossus you know and love, but with four states instead of two! Now, rather than rotating 180 degrees twice, it rotates 90 degrees four times.
+  de: Derselbe Koloss, den du kennst und liebst, aber mit vier Zuständen statt zwei! Anstatt sich zweimal um 180 Grad zu drehen, dreht es sich jetzt viermal um 90 Grad.
+  fr: Le même Colosse que vous connaissez et aimez, mais avec quatre états au lieu de deux ! Maintenant, plutôt que de tourner deux fois à 180 degrés, il tourne quatre fois à 90 degrés.
+  it: lo stesso colosso che conosci e ami, ma con quattro stati invece di due! Ora, invece di ruotare di 180 gradi due volte, ruota di 90 gradi quattro volte.
+  jp: あなたが知っていて愛する同じ Colossus ですが、2 つではなく 4 つの状態があります! これで、180 度を 2 回回転させるのではなく、90 度を 4 回回転させます。
+  es: ¡El mismo Coloso que conoces y amas, pero con cuatro estados en lugar de dos! Ahora, en lugar de girar 180 grados dos veces, gira 90 grados cuatro veces.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
