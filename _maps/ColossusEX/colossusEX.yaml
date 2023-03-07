@@ -182,10 +182,6 @@ districtNames:
     - District J
     - District K
     - District L
-    - District M
-    - District N
-    - District O
-    - District P
   de:
     - Bezirk A
     - Bezirk B
@@ -199,10 +195,6 @@ districtNames:
     - Bezirk J
     - Bezirk K
     - Bezirk L
-    - Bezirk M
-    - Bezirk N
-    - Bezirk O
-    - Bezirk P
   fr:
     - Quartier A
     - Quartier B
@@ -216,10 +208,6 @@ districtNames:
     - Quartier J
     - Quartier K
     - Quartier L
-    - Quartier M
-    - Quartier N
-    - Quartier O
-    - Quartier P
   it:
     - Quartiere A
     - Quartiere B
@@ -233,10 +221,6 @@ districtNames:
     - Quartiere J
     - Quartiere K
     - Quartiere L
-    - Quartiere M
-    - Quartiere N
-    - Quartiere O
-    - Quartiere P
   jp:
     - エリアＡ
     - エリアＢ
@@ -250,10 +234,6 @@ districtNames:
     - エリアＪ
     - エリアＫ
     - エリアＬ
-    - エリアＭ
-    - エリアＮ
-    - エリアＯ
-    - エリアＰ
   es:
     - Distrito A
     - Distrito B
@@ -267,10 +247,6 @@ districtNames:
     - Distrito J
     - Distrito K
     - Distrito L
-    - Distrito M
-    - Distrito N
-    - Distrito O
-    - Distrito P
 shopNames:
   en:
     1: <未設定>10G
