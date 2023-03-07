@@ -495,3 +495,10 @@
   download: 
   - https://nikkums.io/cswt/Backgrounds/floatingSpaceRock.background.zip
   - https://drive.google.com/u/0/uc?id=1xAJimVmghOKEhWq7UBey6J7gr9LdX-OO&export=download
+- background: bg103fixed
+  name: bg103fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg103fixed.background.zip
+  mapIcon: bg103fixed
+  music:
+    map: bg103fixed.85
