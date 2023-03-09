@@ -4,14 +4,14 @@ name:
   de: Der Koloss EX
   fr: Colosse EX
   it: Il Colosso EX
-  jp: 魔神像 EX
+  jp: 聖地ゴルド EX
   es: El Coloso EX
 desc:
   en: The same Colossus you know and love, but with four states instead of two! Now, rather than rotating 180 degrees twice, it rotates 90 degrees four times.
   de: Derselbe Koloss, den du kennst und liebst, aber mit vier Zuständen statt zwei! Anstatt sich zweimal um 180 Grad zu drehen, dreht es sich jetzt viermal um 90 Grad.
   fr: Le même Colosse que vous connaissez et aimez, mais avec quatre états au lieu de deux ! Maintenant, plutôt que de tourner deux fois à 180 degrés, il tourne quatre fois à 90 degrés.
   it: lo stesso colosso che conosci e ami, ma con quattro stati invece di due! Ora, invece di ruotare di 180 gradi due volte, ruota di 90 gradi quattro volte.
-  jp: あなたが知っていて愛する同じ Colossus ですが、2 つではなく 4 つの状態があります! これで、180 度を 2 回回転させるのではなく、90 度を 4 回回転させます。
+  jp: あなたが知っていて愛する同じ 聖地ゴルド ですが、2 つではなく 4 つの状態があります! これで、180 度を 2 回回転させるのではなく、90 度を 4 回回転させます。
   es: ¡El mismo Coloso que conoces y amas, pero con cuatro estados en lugar de dos! Ahora, en lugar de girar 180 grados dos veces, gira 90 grados cuatro veces.
 ruleSet: Standard
 theme: DragonQuest
@@ -62,8 +62,11 @@ changelog:
     changed:
       - Changed initial Shop Price for some properties.
       - Change map music
+      - Changed the name of the board for the Japanese version to "聖地ゴルド EX".
+      - Changed the name of the district in the Japanese version to that of the "聖地ゴルド" Board.
     added:
       - Add non-map music
+      - Added Enne-san as author name since Enne-san updated to v2.
   - version: 1
     added:
       - Initial Release
@@ -253,17 +256,17 @@ districtNames:
     - Quartiere K
     - Quartiere L
   jp:
-    - エリアＡ
-    - エリアＢ
-    - エリアＣ
-    - エリアＤ
-    - エリアＥ
-    - エリアＦ
-    - エリアＧ
-    - エリアＨ
-    - エリアＩ
-    - エリアＪ
-    - エリアＫ
+    - トラペッタ
+    - トロデーン
+    - アスカンタ
+    - パルミド
+    - レティシア
+    - マイエラ
+    - リブルアーチ
+    - サザンビーク
+    - ベルガラック
+    - オークニス
+    - サヴェッラ
     - エリアＬ
   es:
     - Distrito A
