@@ -41,6 +41,13 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed the event square at the intersection of the inner road connecting Suits to Suits and the road to the bank to property.
+      - Changed Districts A, B, C, and D from 2 shops to 3 shops.
+      - Changed Districts E, H, I, and L from 6 shops to 5 shops.
+      - Changed shop values for some shops.
+      - Changed the effect of some event squares.
   - version: 1
     added: 
       - Initial Release
