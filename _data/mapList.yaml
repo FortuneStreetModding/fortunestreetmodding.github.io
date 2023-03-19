@@ -288,19 +288,16 @@ backgrounds: backgrounds.yml
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
-    ChumBucket.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/ChumBucket.zip
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
-  2:
     Colony4.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony4.zip
+  2:
     CrestOfFlames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CrestOfFlames.zip
