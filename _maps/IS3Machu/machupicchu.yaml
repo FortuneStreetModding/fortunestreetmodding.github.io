@@ -2,7 +2,7 @@
 name:
   en: Machu Picchu (IS3)
 desc:
-  en: Ported from Itadaki Street 3. Gameplay differs slightly from original. Use the switch to sequentially unlock the four corners of the board.
+  en: Ported from Itadaki Street 3. Gameplay differs slightly from original. Use the switch to sequentially unlock the four corners of the board. Please don't use B-Button selecting while playing! Recommended for human players.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -44,6 +44,10 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Added failsafe pathing in case of rare softlock
+      - Updated description
   - version: 2
     changed:
       - Changed background to bg106fixed
