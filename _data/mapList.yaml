@@ -394,9 +394,6 @@ backgrounds: backgrounds.yml
     KingOfTheHill.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KingOfTheHill.zip
-    LostCanyon.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/LostCanyon.zip
     Lucky.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Lucky.zip
