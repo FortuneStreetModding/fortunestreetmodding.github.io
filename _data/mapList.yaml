@@ -269,16 +269,19 @@ backgrounds: backgrounds.yml
     AlefgardB.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AlefgardB.zip
+    Anchor.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Anchor.zip
     AzureNebula.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AzureNebula.zip
     BabyPark.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BabyPark.zip
+  1:
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
-  1:
     Castaway.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Castaway.zip
@@ -294,10 +297,10 @@ backgrounds: backgrounds.yml
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
+  2:
     CrestOfFlames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CrestOfFlames.zip
-  2:
     Crossroads.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Crossroads.zip
