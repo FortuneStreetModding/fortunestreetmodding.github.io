@@ -25,6 +25,9 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Square 74 changed from venture square to change-of-suit square
   - version: 3
     changed:
       - Board structure to prevent easy looping and suits
