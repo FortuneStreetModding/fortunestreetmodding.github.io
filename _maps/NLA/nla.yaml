@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: nla
-background: nla
+background: NLA
 mapIcon: nla
 music:
   map: nla.50
