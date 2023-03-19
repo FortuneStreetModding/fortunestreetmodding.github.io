@@ -8,7 +8,7 @@ theme: Mario
 initialCash: 2500
 targetAmount: 25000
 baseSalary: 400
-salaryIncrement: 250
+salaryIncrement: 300
 maxDiceRoll: 7
 frbFile1: Kanto
 background: bg107
@@ -171,6 +171,9 @@ ventureCards:
 authors:
   - name: Azurillkirby
 changelog:
+  - version: 3
+    changed:
+      - Salary increment changed from 250 to 300
   - version: 2
     changed:
       - Initial cash changed from 2000 to 2500
