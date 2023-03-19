@@ -7,10 +7,10 @@ desc:
   de: The Marvelous Wondergraph.
 ruleSet: Standard
 theme: Mario
-initialCash: 1000
+initialCash: 1300
 targetAmount: 15000
-baseSalary: 100
-salaryIncrement: 100
+baseSalary: 250
+salaryIncrement: 125
 maxDiceRoll: 6
 frbFile1: Spirograph0
 frbFile2: Spirograph1
@@ -153,6 +153,11 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    chamnged:
+      - Initial cash changed from 1000 to 1300
+      - Base salary changed from 100 to 250
+      - Salary increment changed from 100 to 125
   - version: 1
     added: 
       - Initial Release
