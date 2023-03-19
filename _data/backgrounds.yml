@@ -587,7 +587,7 @@
     promotionDragonQuest: classchange.75
     forcedBuyout: ME_5BUY_ISDS.60
 - background: NLA
-  name: New Los Angeles
+  name: NLA
   download:
   - https://nikkums.io/cswt/Backgrounds/NLA.background.zip
   mapIcon: nla
