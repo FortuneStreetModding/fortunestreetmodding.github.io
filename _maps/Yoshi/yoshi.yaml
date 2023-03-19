@@ -13,6 +13,7 @@ maxDiceRoll: 7
 frbFile1: yoshi
 mapIcon: bg001
 background: bg001_clean
+bgmId: "BGM_MAP_YOSHI"
 tourMode:
   bankruptcyLimit: 1
   opponent1: Mario
@@ -149,6 +150,10 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    changed:
+      - Music Fixed
+      - Various changes to board layout and shop prices, including removing backstreets from egg
   - version: 2
     changed:
       - Board layout overhaul by Crimson Hat and Sophilautia with Ozzy's blessing
