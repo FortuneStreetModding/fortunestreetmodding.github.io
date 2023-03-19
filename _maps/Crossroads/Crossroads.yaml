@@ -26,6 +26,9 @@ authors:
   - name: Giftshaven
     url: https://github.com/Giftshaven
 changelog:
+  - version: 3
+    changed:
+      - Fixed pathing errors
   - version: 2
     changed:
       - Rearranged most of the non-property spaces, including the location of the bank. Players will now start on the lower middle path, instead of the intersection on the right
