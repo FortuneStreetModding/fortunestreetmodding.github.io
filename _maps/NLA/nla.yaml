@@ -11,18 +11,15 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: nla
-background: grid_blue2
+background: nla
 mapIcon: nla
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/NLA.music.zip
-    - https://drive.google.com/u/2/uc?export=download&confirm=_qXD&id=1OXHTRdU_zaFyJQ2MTWM895k0pzJZdUWx
   map: nla.50
   stock: bladehome.50
   ventureCards: briefing.50
   auction: wirfliegen.60
   targetMet: thekeywevelost.50
-  win: yourvoice.50
+  win: bymyside.60
   guestAppear:
   guestLeave:
   badVentureCard:
@@ -33,6 +30,14 @@ music:
   forcedBuyout:
   domination:
   bankruptcy:
+  roundTheBlocksWin: X-Levelup.80
+  roundTheBlocks777: X-Levelup.80
+  memoryBlock: comical.50
+  dartOfGold: comical.50
+  slurpodromeSelect: comical.50
+  slurpodromeStart: X-Encoutner.50
+  slurpodromeRace: uncontrollable.50
+  slurpodromeWin: X-Levelup.80
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -40,7 +45,59 @@ tourMode:
   opponent2: Waluigi
   opponent3: Luigi
   clearRank: 2
+districtNames:
+  en:
+  - S. Admin.
+  - N. Resid.
+  - S. Resid.
+  - Highway A
+  - Highway B
+  - Test Hangar
+  - Highway C
+  - N. Indust.
+  - Commerce. A
+  - Commerce. B 
+  - N. Admin
+  - Manon Ship
+shopNames:
+  en:
+    10: Government Building
+    11: Ishmael Hills
+    15: Army Pizza
+    16: BLADE Hangar
+    17: Highway
+    18: Outfitters Test Hangar
+    19: Mim Maintenance Center
+    20: Cathedral
+    22: BLADE Barracks
+    24: Isyqua
+    26: Diet Building
+    27: Cargo Transport
+    30: Water Purification Plant
+    31: BLADE Tower
+    32: Sports Complex
+    35: Skell Maintenance
+    37: Waste Management Facility
+    38: Professor B's Laboratory
+    39: Deliverance Park
+    40: Barista Court
+    41: Warehouse
+    42: Sarah's Market
+    47: Repenta Diner
+    50: Rosemoss Restaurant
+    51: Integrated Production Plant
+    54: Nopon Bazaar
 changelog:
+  - version: 5
+    added:
+      - District Names
+      - Shop Names
+      - Custom 2D Background
+      - New music
+    changed:
+      - Shop prices
+      - New Industrial District in North-West corner
+      - New icon
   - version: 4
     changed:
       - Changed background to grid_blue2

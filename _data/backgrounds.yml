@@ -586,3 +586,27 @@
     promotionMario: mp6star
     promotionDragonQuest: classchange.75
     forcedBuyout: ME_5BUY_ISDS.60
+- background: NLA
+  name: New Los Angeles
+  download:
+  - https://nikkums.io/cswt/Backgrounds/NLA.background.zip
+  mapIcon: nla
+  music:
+    map: nla.50
+    stock: bladehome.50
+    ventureCards: briefing.50
+    auction: wirfliegen.60
+    targetMet: thekeywevelost.50
+    win: bymyside.60
+    takeAbreak: X-Encoutner.50
+    promotionMii: X-Levelup.80
+    promotionMario: X-Levelup.80
+    promotionDragonQuest: X-Levelup.80
+    roundTheBlocksWin: X-Levelup.80
+    roundTheBlocks777: X-Levelup.80
+    memoryBlock: comical.50
+    dartOfGold: comical.50
+    slurpodromeSelect: comical.50
+    slurpodromeStart: X-Encoutner.50
+    slurpodromeRace: uncontrollable.50
+    slurpodromeWin: X-Levelup.80
