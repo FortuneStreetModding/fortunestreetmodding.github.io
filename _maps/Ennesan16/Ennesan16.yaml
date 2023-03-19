@@ -2,7 +2,7 @@
 name:
   en: Enne-san Board 16
 desc:
-  en: When the switch is pressed, the warp destination of the green pipe changes to an island corresponding to an event square where you can get a specific Suit.
+  en: When the switch is pressed, the warp destination of the green pipe changes to an island corresponding to an event square where you can get a specific Suit. Please don't use B-Button selecting while playing! Recommended for human players.
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
