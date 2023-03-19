@@ -301,9 +301,6 @@ backgrounds: backgrounds.yml
     Colony4.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony4.zip
-    ColossusEX.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/ColossusEX.zip
     CrestOfFlames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CrestOfFlames.zip
@@ -316,9 +313,6 @@ backgrounds: backgrounds.yml
     DeathStarfish.zip:
       urls:
       - https://nikkums.io/cswt/Maps/DeathStarfish.zip
-    DelfinoRedux.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DelfinoRedux.zip
     Disboard.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Disboard.zip
@@ -415,9 +409,6 @@ backgrounds: backgrounds.yml
     MidgarTransit.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MidgarTransit.zip
-    MillennialFair.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/MillennialFair.zip   
     NLA.zip:
       urls:
       - https://nikkums.io/cswt/Maps/NLA.zip
