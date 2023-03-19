@@ -24,15 +24,18 @@ tourMode:
   opponent3: Princessa
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Adjusted post-switch pathing to be more consistent between switches
   - version: 5
     changed:
-        - Changed background to bg901fixed
+      - Changed background to bg901fixed
   - version: 4
     changed:
-        - Removed venture cards 87 & 115, added cards to reach 64 total
+      - Removed venture cards 87 & 115, added cards to reach 64 total
   - version: 3
     added:
-        - More forks, custom venture list, new background and music
+      - More forks, custom venture list, new background and music
 authors:
   - name: Lulink
 ventureCards:
