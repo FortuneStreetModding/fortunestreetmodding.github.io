@@ -6,7 +6,7 @@ desc:
 ruleSet: Standard
 theme: Mario
 initialCash: 1600
-targetAmount: 16000
+targetAmount: 18000
 baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 6
@@ -27,6 +27,9 @@ authors:
   - name: Giftshaven
     url: https://github.com/Giftshaven
 changelog:
+  - version: 3
+    changed:
+    - Changed target amount to 18,000.
   - version: 2
     changed:
     - Replaced venture cards 87 & 115 with 81 & 119

@@ -502,3 +502,87 @@
   mapIcon: bg103fixed
   music:
     map: bg103fixed.85
+- background: grid_red2
+  name: grid_red2
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_red2.background.zip
+  - https://drive.google.com/u/0/uc?id=1GhZyLOpLssevejoPwZ21_zweN9zp2td7&export=download
+  mapIcon: grid_red
+  music:
+    map: Map_gridred2.60
+    stock: Stock_grid.70
+    ventureCards: Venture_gridred2.45
+    auction:
+    targetMet: Targetmet_gridred2.40
+    win: Win_gridred2.35
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60
+- background: grid_gray
+  name: grid_gray
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_gray.background.zip
+  - https://drive.google.com/u/0/uc?id=1XimpsNoWLKn91b20nsPHSIMuQ60XxQUk&export=download
+  mapIcon: grid_gray
+  music:
+    map: Map_gridgray.40
+    stock: Stock_grid.70
+    ventureCards: Venture_gridgray.40
+    auction:
+    targetMet: Targetmet_gridgray.40
+    win: Win_gridgray.60
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60
+- background: grid_green
+  name: grid_green
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_green.background.zip
+  - https://drive.google.com/u/0/uc?id=1e_Edh2kLFX3kaRnDqVr7hsp07OljSF2C&export=download
+  mapIcon: grid_green
+  music:
+    map: Map_gridgreen.50
+    stock: Stock_grid.70
+    ventureCards: Venture_gridgreen.45
+    auction:
+    targetMet: Targetmet_gridgreen.40
+    win: Win_gridgreen.40
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60
+- background: grid_blackwhite
+  name: grid_blackwhite
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_blackwhite.background.zip
+  - https://drive.google.com/u/0/uc?id=1dEphlNGjPscrbQxH0YrLHTpBb1nrMGZY&export=download
+  mapIcon: grid_bw
+  music:
+    map: Map_gridbw.50
+    stock: Stock_grid.70
+    ventureCards: Venture_gridbw.45
+    auction:
+    targetMet: Targetmet_gridbw.50
+    win: Win_gridbw.40
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60

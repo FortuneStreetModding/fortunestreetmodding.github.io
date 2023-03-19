@@ -2,13 +2,13 @@
 name:
   en: Crossroads
 desc:
-  en: You can only go straight when entering the middle of this board, unless you can land directly where the roads cross.
+  en: You can only go forwards when entering the middle of this board, unless you can land directly where the roads cross.
 ruleSet: Standard
 theme: Mario
-initialCash: 1800
-targetAmount: 18000
+initialCash: 2000
+targetAmount: 20000
 baseSalary: 300
-salaryIncrement: 150
+salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: crossroads-00
 frbFile2: crossroads-01
@@ -30,10 +30,9 @@ changelog:
     changed:
       - Rearranged most of the non-property spaces, including the location of the bank. Players will now start on the lower middle path, instead of the intersection on the right
       - More waypoints have been added at the two middle intersections. Players can choose the upper or lower paths upon reaching these interactions, but must continue going forward
-      - The lift square can be accessed from district G
+      - The lift square can be accessed from district H
       - Target amount increased (from 18000 to 20000)
       - Salary increment increased (from 150 to 200)
-      - Removed venture cards 83 and 87, replaced with 88 and 75
   - version: 1
     added: 
       - Initial Release

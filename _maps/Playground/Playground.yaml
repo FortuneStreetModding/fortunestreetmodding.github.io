@@ -22,6 +22,9 @@ authors:
   - name: Giftshaven
     url: https://github.com/Giftshaven
 changelog:
+  - version: 3
+    changed:
+      - 2 vacant plots changed to properties with an initial value of 190
   - version: 2
     changed:
       - Removed venture card 115, replaced with 46
