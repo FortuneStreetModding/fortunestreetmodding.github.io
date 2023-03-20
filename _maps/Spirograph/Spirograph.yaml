@@ -154,7 +154,7 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
   - version: 2
-    chamnged:
+    changed:
       - Initial cash changed from 1000 to 1300
       - Base salary changed from 100 to 250
       - Salary increment changed from 100 to 125

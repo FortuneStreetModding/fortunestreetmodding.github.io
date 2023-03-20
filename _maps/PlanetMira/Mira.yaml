@@ -21,18 +21,26 @@ music:
   stock: bladehome.50
   ventureCards: briefing.50
   auction: wirfliegen.60
-  targetMet: no_ex01.50
+  targetMet: raTEoREkiSImeAra1.50
   win: yourvoice.50
-  guestAppear:
-  guestLeave:
-  badVentureCard: 
-  takeAbreak: X-Encoutner.50
+  guestAppear: X-event.80
+  guestLeave: X-fanfare.80
+  badVentureCard: X-Encounter.50
+  takeAbreak: X-Encounter.50
   promotionMii: X-Levelup.80
   promotionMario: X-Levelup.80
   promotionDragonQuest: X-Levelup.80
-  forcedBuyout:
-  domination:
-  bankruptcy:
+  forcedBuyout: X-buyout.50
+  domination: X-Levelup.80
+  bankruptcy: X-bankruptcy.80
+  roundTheBlocksWin: X-Levelup.80
+  roundTheBlocks777: X-fanfare.80
+  memoryBlock: comical.50
+  dartOfGold: comical.50
+  slurpodromeSelect: comical.50
+  slurpodromeStart: X-event.80
+  slurpodromeRace: uncontrollable.50
+  slurpodromeWin: X-fanfare.80
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
