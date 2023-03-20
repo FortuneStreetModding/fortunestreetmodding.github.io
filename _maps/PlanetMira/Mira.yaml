@@ -15,8 +15,7 @@ background: bg009alt
 mapIcon: mira
 music:
   download: 
-    - https://nikkums.io/cswt/BGM/Mira.music.zip
-    - https://drive.google.com/u/2/uc?export=download&confirm=vUc-&id=1gHzNzj6WGEMVqfX28ApI7Y2OOqu57aps
+    - https://nikkums.io/cswt/BGM/PlanetMira.music.zip
   map: noctilum_day.50
   stock: bladehome.50
   ventureCards: briefing.50
