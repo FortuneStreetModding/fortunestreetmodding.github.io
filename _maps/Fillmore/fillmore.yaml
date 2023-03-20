@@ -6,7 +6,7 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1200
-targetAmount: 15000
+targetAmount: 20000
 baseSalary: 150
 salaryIncrement: 150
 maxDiceRoll: 6
@@ -41,6 +41,10 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Target amount set to 20000
+      - Slight change to squares on the left side of board
   - version: 2
     changed:
       - Changed background to bg107fixed
