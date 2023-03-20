@@ -1,8 +1,8 @@
 ---
 name:
-  en: Millennial Fair
+  en: Millenial Fair
 desc:
-  en: Spend a day at Guardia's Millennial Fair! Try Lucca's Telepads, and collect plenty of Suit Yourself cards!
+  en: Spend a day at Guardia's Millenial Fair! Try Lucca's Telepads, and collect plenty of Suit Yourself cards!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500
@@ -14,7 +14,7 @@ frbFile1: MillennialFair
 background: bg005
 mapIcon: Nu
 music:
-  download: https://nikkums.io/cswt/BGM/MillennialFair.music.zip
+  download: https://drive.google.com/u/0/uc?id=13kL1ArTj9X1UJnJVXsAkHO6g4td3KmH9&export=download&confirm=1
   map: Fair.95
   stock: Factory.90
   ventureCards: Spekkio.85
@@ -31,7 +31,6 @@ music:
   forcedBuyout: Fanfare3.90
   domination: Fanfare2.90
   bankruptcy: Prayer.85  
-  roundTheBlocks: Omen.85
   roundTheBlocksWin: Fanfare3.90
   roundTheBlocks777: Fanfare2.90
   memoryBlock: Bobonga.95
@@ -47,6 +46,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 1.1
+    added:
+      - Temporary removal of Round The Blocks music
   - version: 1
     added: 
       - Initial Release
