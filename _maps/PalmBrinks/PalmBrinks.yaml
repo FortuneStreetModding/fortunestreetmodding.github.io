@@ -26,6 +26,9 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Squares adjusted for better balance
   - version: 2
     changed:
       - Changed background to bg105fixed
@@ -34,20 +37,6 @@ changelog:
       - Initial Release
 authors:
   - name: Anonymous
-districtNames:
-  en:
-    - District A
-    - District B
-    - District C
-    - District D
-    - District E
-    - District F
-    - District G
-    - District H
-    - District I
-    - District J
-    - District K
-    - District L 
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
