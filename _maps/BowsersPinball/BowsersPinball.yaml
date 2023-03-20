@@ -40,6 +40,9 @@ music:
   domination:
   bankruptcy:
 changelog:
+  - version: 4
+    changed:
+      - Adjusted pathing to prevent rare softlock
   - version: 3
     changed:
       - Changed shop values for some shops.
