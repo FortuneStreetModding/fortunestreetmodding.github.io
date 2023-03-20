@@ -260,6 +260,9 @@ backgrounds: backgrounds.yml
 1:
   #practiceBoard: ShellIsleRedux
   0:
+    3Square.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/3Square.zip
     AcademyCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AcademyCity.zip
@@ -275,10 +278,13 @@ backgrounds: backgrounds.yml
     AzureNebula.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AzureNebula.zip
+  1:
     BabyPark.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BabyPark.zip
-  1:
+    BowsersPinball.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/BowsersPinball.zip
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
@@ -291,13 +297,13 @@ backgrounds: backgrounds.yml
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
+  2:
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
-  2:
     CrestOfFlames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CrestOfFlames.zip
