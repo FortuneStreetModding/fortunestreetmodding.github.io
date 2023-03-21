@@ -155,7 +155,6 @@
   name: Wario's Battle Canyon
   download: 
   - https://nikkums.io/cswt/Backgrounds/battlecanyon.background.zip
-  - https://drive.google.com/u/2/uc?id=1n0ALnPulaX28d-Ywr68g8eBBsyML9XQR&export=download
   mapIcon: battlecanyon
   music:
     map: BGM_MAP_BATTLECANYON.65
