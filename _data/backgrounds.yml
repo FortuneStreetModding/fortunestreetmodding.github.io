@@ -188,29 +188,6 @@
   - https://nikkums.io/cswt/Backgrounds/bg009alt.background.zip
   - https://drive.google.com/u/2/uc?id=1zppXoPxsgdq2kl8-VUgaSxubZGjrIrmE&export=download
   mapIcon: bg009alt
-- background: jungleadventure
-  name: DK's Jungle Adventure
-  download: 
-  - https://nikkums.io/cswt/Backgrounds/jungleadventure.background.zip
-  - https://drive.google.com/u/2/uc?id=1DUkLvJx_MEqjKdAf197at2ZticlJUqqx&export=download
-  mapIcon: dksjungle
-  music:
-    map: DKsJungleAdventure.60
-    stock: MP1_OptionHouse.50
-    ventureCards: MP1_MiniGame.60
-    auction: MP1_ChanceTime.55
-    targetMet: CrocodileCacophony.55
-    win: MP1_Ending.60
-    guestAppear: MP1_OJAMA_COME.60
-    guestLeave: MP1_OJAMA_BYE.60
-    badVentureCard: MP1_Miss.60
-    takeAbreak: MP1_Miss.60
-    promotionMii: MP1_WinMinigame4.60
-    promotionMario: MP1_WinMinigame4.60
-    promotionDragonQuest: MP1_WinMinigame4.60
-    forcedBuyout: MP1_WinMinigame3.60
-    domination: MP1_Monopoly.60
-    bankruptcy: MP1_WinMinigame5.60
 - background: bg008alt
   name: bg008alt
   download: 
@@ -255,7 +232,6 @@
   name: Disboard
   download: 
   - https://nikkums.io/cswt/Backgrounds/disboard.background.zip
-  - https://drive.google.com/u/2/uc?id=1Iaq1HebvE8dO_aT9-bCEr7ATLwSpPRla&export=download&confirm=1
   mapIcon: disboard
   music:
       map: GameStart
