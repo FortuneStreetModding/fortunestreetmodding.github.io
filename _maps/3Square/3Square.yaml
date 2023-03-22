@@ -24,7 +24,6 @@ districtNames:
 music:
   download: 
     - https://nikkums.io/cswt/BGM/3Square.music.zip
-    - https://drive.google.com/u/2/uc?id=1bHTkHE1ufrsF8vDXjWAHU18DBoOcG5Js&export=download&confirm=1
   map: leucine
   stock: HistoriaCrux.70
   ventureCards: Choisies
@@ -33,8 +32,7 @@ music:
   win: HandsUpToTheSky
   guestAppear: BossEndActionXC3.80
   guestLeave: BossEndXC3.80
-  badVentureCard: MP1_Miss.60
-  takeAbreak: MP1_Miss.60
+  takeAbreak: seinfeld.68
   promotionMii: RobotnikPromotion.80
   promotionMario: RobotnikPromotion.80
   promotionDragonQuest: RobotnikPromotion.80
@@ -202,7 +200,7 @@ notes: |
   - Guest Appear, Guest Leave, Buyout, Domination, Bankruptcy
     - Various fanfares from Xenoblade Chronicles 3
   - Take a Break
-    - Mario Party 1 - Miss!
+    - Seinfeld Laugh Track
   - Memory Block
     - Mario Party 1 - Chance Time
   - Promotion
