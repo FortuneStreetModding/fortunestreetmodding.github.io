@@ -591,3 +591,15 @@
     slurpodromeStart: X-event.80
     slurpodromeRace: uncontrollable.50
     slurpodromeWin: X-fanfare.80
+- background: bethlehem
+  name: bethlehem
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bethlehem.background.zip
+  mapIcon: bethlehem
+  music:
+    map: MagicAndWeapons.50
+    stock: CrossExamination.50
+    ventureCards: ModernWeapons
+    auction: madness
+    targetMet: hitthetech.50
+    win: railgunt.50
