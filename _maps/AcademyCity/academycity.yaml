@@ -11,7 +11,7 @@ baseSalary: 500
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: academycity
-background: grid_blue2
+background: academycity
 mapIcon: academy
 districtNames:
   en:
@@ -83,25 +83,12 @@ shopNames:
     96: Academy City Courthouse
     97: Board of Directors Office
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/AcademyCity.music.zip
-    - https://drive.google.com/u/2/uc?id=1bHTkHE1ufrsF8vDXjWAHU18DBoOcG5Js&export=download&confirm=1
   map: yochou.50
   stock: quietploy.50
   ventureCards: judgementnokatsudou.50
   auction: madness.50
   targetMet: BreakThrough.50
   win: railgunt.50
-  guestAppear:
-  guestLeave:
-  badVentureCard:
-  takeAbreak:
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
-  forcedBuyout:
-  domination:
-  bankruptcy:
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -110,6 +97,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 7
+    added:
+      - Added custom 2D background
   - version: 6
     changed:
       - Changed background to grid_blue2

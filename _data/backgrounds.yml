@@ -603,3 +603,15 @@
     auction: madness
     targetMet: hitthetech.50
     win: railgunt.50
+- background: academycity
+  name: academycity
+  download:
+  - https://nikkums.io/cswt/Backgrounds/academycity.background.zip
+  mapIcon: academy
+  music:
+    map: yochou.50
+    stock: quietploy.50
+    ventureCards: judgementnokatsudou.50
+    auction: madness.50
+    targetMet: BreakThrough.50
+    win: railgunt.50
