@@ -263,15 +263,10 @@
   name: grid_blue
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_blue.background.zip
-  - https://drive.google.com/u/2/uc?id=1mAgtKc9exLCWv7c9yE44bfzqMixdoIqy&export=download
+  - https://drive.google.com/u/2/uc?id=1y20s3N5-IvYrlORfSAOU3q2-hHmutR_V&export=download
   mapIcon: grid_blue
   music:
-    map: Map_gridblue.40
-    stock: Stock_gridblue.80
-    ventureCards: Venture_gridblue.45
-    auction: Auction_grid.50
-    targetMet: Targetmet_gridblue.45
-    win: Win_gridblue.45
+    stock: Stock_grid.70
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
@@ -284,15 +279,10 @@
   name: grid_bluegreen
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_bluegreen.background.zip
-  - https://drive.google.com/u/2/uc?id=1N4BTEfMY4Y040GjEWNE5Q1dLYlzzRI7l&export=download
+  - https://drive.google.com/u/2/uc?id=1iiU2kEIVpeYtH4gesmqQYSllupZghUP7&export=download
   mapIcon: grid_aomidori
   music:
-    map: Map_gridbluegreen.40
-    stock: Stock_gridbluegreen.80
-    ventureCards: Venture_gridbluegreen.45
-    auction: Auction_grid.50
-    targetMet: Targetmet_gridbluegreen.40
-    win: Win_gridbluegreen.40
+    stock: Stock_grid.70
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
@@ -305,15 +295,11 @@
   name: grid_lightblue
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_lightblue.background.zip
-  - https://drive.google.com/u/2/uc?id=1AIPkzAmFsrv1NCEYZKqR9wApz1vs4rr6&export=download
+  - https://drive.google.com/u/2/uc?id=1UHa4gJyh5cxUNV6At97VAYE65_MPwSoL&export=download
   mapIcon: grid_mizuiro
   music:
-    map: Map_gridlightblue.40
-    stock: Stock_gridlightblue.80
-    ventureCards: Venture_gridlightblue.45
-    auction: Auction_grid.50
-    targetMet: Targetmet_gridlightblue.90
-    win: Win_gridlightblue.60
+    stock: Stock_grid.70
+    badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
     takeAbreak: ME_HOLIDAY_ISDS.60
@@ -325,15 +311,10 @@
   name: grid_orange
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_orange.background.zip
-  - https://drive.google.com/u/2/uc?id=1V-4spYqjX_8BOVOgfAI4fMErBIE_4-SF&export=download
+  - https://drive.google.com/u/2/uc?id=1klQROMGwa0mAWTwJJgXF3A1P5eBrGljZ&export=download
   mapIcon: grid_orange
   music:
-    map: Map_gridorange.75
-    stock: Stock_gridorange.40
-    ventureCards: Venture_gridorange.45
-    auction: Auction_grid.50
-    targetMet: Targetmet_gridorange.50
-    win: Win_gridorange.40
+    stock: Stock_grid.70
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
@@ -346,15 +327,10 @@
   name: grid_red
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_red.background.zip
-  - https://drive.google.com/u/2/uc?id=1tmLjs5Lv701-jW2HVtrjxtmJ3Y0AvPBG&export=download
+  - https://drive.google.com/u/2/uc?id=1UfFTIGWgnDC4HAD9NC5FrXw4L1-qeS1-&export=download
   mapIcon: grid_red
   music:
-    map: Map_gridred.35
-    stock: Stock_gridred.35
-    ventureCards: Venture_gridred.35
-    auction: Auction_grid.50
-    targetMet: Targetmet_gridred.75
-    win: Win_gridred.35
+    stock: Stock_grid.70
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
@@ -367,15 +343,10 @@
   name: grid_violet
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_violet.background.zip
-  - https://drive.google.com/u/2/uc?id=1GVyxJWJHVzbY6Tn3v31XDm7auRbKtZWg&export=download
+  - https://drive.google.com/u/2/uc?id=13XSxFhfVaVu4wCbm7rGPr6Us69PrAnc_&export=download
   mapIcon: grid_violet
   music:
-    map: Map_gridviolet.35
-    stock: Stock_gridviolet.35
-    ventureCards: Venture_gridviolet.40
-    auction: Auction_grid.50
-    targetMet: Targetmet_gridviolet.40
-    win: Win_gridviolet.45
+    stock: Stock_grid.70
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
@@ -388,8 +359,18 @@
   name: grid_blue2
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_blue2.background.zip
-  - https://drive.google.com/u/2/uc?id=1ZgA8G4YYebdluNzXa7l7NA9q8hwvPkyx&export=download
+  - https://drive.google.com/u/2/uc?id=1VRTFXTYJo_acwRKhugKMQL2C_IkQBUsR&export=download
   mapIcon: grid_blue2
+  music:
+    stock: Stock_grid.70
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60
 - background: bg102alt
   name: bg102alt
   download:
