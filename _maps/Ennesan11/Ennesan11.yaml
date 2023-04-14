@@ -18,7 +18,7 @@ music:
     - https://nikkums.io/cswt/BGM/Ennesan11.music.zip
     - https://drive.google.com/u/2/uc?id=1nQi6vAun6gnD85Kb-OWg4roS8EZPWsCX&export=download
   map: Map_Ennesan11.45
-  stock: Stock_Ennesan.35
+  stock: Stock_grid.70
   ventureCards: Venture_Ennesan11.45
   auction:
   targetMet: Targetmet_Ennesan11.45
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Change stock music
   - version: 4
     changed:
       - Changed Waypoints setting to force the user to go to the hexagon when going from the pentagon to the bank.
