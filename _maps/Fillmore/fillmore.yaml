@@ -5,9 +5,9 @@ desc:
   en: The first city, where the divine acts of God first made their mark against the diabolical Tanzra. With capitalism on His side, surely Tanzra stands no chance, right?
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 1200
-targetAmount: 20000
-baseSalary: 150
+initialCash: 1500
+targetAmount: 17000
+baseSalary: 250
 salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: fillmore1
@@ -41,6 +41,11 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Reduce target amount from 20000 to 17000
+      - Initial cash increased from 1200 to 1500
+      - Base salary increased from 150 to 250
   - version: 3
     changed:
       - Target amount set to 20000
