@@ -10,10 +10,12 @@ targetAmount: 22000
 baseSalary: 600
 salaryIncrement: 0
 maxDiceRoll: 6
-frbFile1: Ennesan19_1
-frbFile2: Ennesan19_2
-frbFile3: Ennesan19_3
-frbFile4: Ennesan19_4
+frbFiles:
+- Ennesan19_1
+- Ennesan19_2
+- Ennesan19_3
+- Ennesan19_4
+- Ennesan19_5
 background: grid_gray
 mapIcon: Enne19
 music:
@@ -24,6 +26,7 @@ music:
   - Map_Ennesan19_1.55
   - Map_Ennesan19_2.50
   - Map_Ennesan19_2.50
+  - Map_Ennesan19_1.55
   - Map_Ennesan19_1.55
   stock: Stock_grid.70
   ventureCards: Venture_Ennesan19.60
