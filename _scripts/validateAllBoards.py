@@ -162,7 +162,7 @@ def main(argv : list):
                 print(errMsg)
         if yamlContent:
             print(f'{" ":24} Consistency Check...', end = '')
-            frbFile1 = yamlMap.parent / Path(f'{yamlContent["frbFile1"]}.frb')
+            frbFile1 = yamlMap.parent / Path(f'{yamlContent["frbFiles"][0] if "frbFiles" in yamlContent else yamlContent["frbFile1"]}.frb')
             with open(frbFile1, "rb") as stream:
                 stream.seek(0x20)
                 initialCash = struct.unpack(">H", stream.read(2))[0]

@@ -197,9 +197,16 @@
         "baseSalary",
         "salaryIncrement",
         "maxDiceRoll",
-        "frbFile1",
         "background",
         "tourMode"
+    ],
+    "oneOf": [
+        {
+            "required": ["frbFile1"]
+        },
+        {
+            "required": ["frbFiles"]
+        }
     ],
     "properties": {
         "name": {
@@ -267,6 +274,15 @@
             "description": "The filename to the fourth frb file used for dynamic maps with switches",
             "type": "string",
             "pattern": "^[\\w-]+$"
+        },
+        "frbFiles": {
+            "description": "The filenames to the frb file(s) used (switches will cycle through them in order)",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "pattern": "^[\\w-]+$"
+            }
         },
         "switchRotationOriginPoints": {
             "description": "The origin points under which the squares should rotate around during the switch board change animation sequence. When this property is omitted the squares will move linearly to their destination.",
