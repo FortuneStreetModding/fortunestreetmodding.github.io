@@ -6,6 +6,12 @@
     "type": "object",
     "additionalProperties": false,
     "definitions": {
+        "musicFile": {
+            "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+        },
+        "musicFiles": {
+            "anyOf": [{"$ref": "#/definitions/musicFile"},{"type": "array", "minItems": 1, "items": {"$ref": "#/definitions/musicFile"}}]
+        },
         "localization": {
             "type": "object",
             "additionalProperties": false,
@@ -191,9 +197,16 @@
         "baseSalary",
         "salaryIncrement",
         "maxDiceRoll",
-        "frbFile1",
         "background",
         "tourMode"
+    ],
+    "oneOf": [
+        {
+            "required": ["frbFile1"]
+        },
+        {
+            "required": ["frbFiles"]
+        }
     ],
     "properties": {
         "name": {
@@ -261,6 +274,15 @@
             "description": "The filename to the fourth frb file used for dynamic maps with switches",
             "type": "string",
             "pattern": "^[\\w-]+$"
+        },
+        "frbFiles": {
+            "description": "The filenames to the frb file(s) used (switches will cycle through them in order)",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "pattern": "^[\\w-]+$"
+            }
         },
         "switchRotationOriginPoints": {
             "description": "The origin points under which the squares should rotate around during the switch board change animation sequence. When this property is omitted the squares will move linearly to their destination.",
@@ -363,103 +385,103 @@
                 },
                 "map": {
                     "description": "The looping map main background music.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "stock": {
                     "description": "The looping music played when a player is buying or selling stocks.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "ventureCards": {
                     "description": "The looping music played when a player is picking a venture card.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "auction": {
                     "description": "The looping music played when an auction is taking place.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "targetMet": {
                     "description": "The looping music played when a player reaches the target net worth.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "win": {
                     "description": "The looping music played when a player wins the match.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "guestAppear": {
                     "description": "The jingle played when a guest appears.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "guestLeave": {
                     "description": "The jingle played when a guest leaves.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "badVentureCard": {
                     "description": "The jingle played when venture card #13 is picked.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "takeAbreak": {
                     "description": "The jingle played when the shops of a player close.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "promotionMii": {
                     "description": "The jingle played when a Mii character gets promoted.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "promotionMario": {
                     "description": "The jingle played when a character from Mario gets promoted.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "promotionDragonQuest": {
                     "description": "The jingle played when a character from Dragon Quest gets promoted.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "forcedBuyout": {
                     "description": "The jingle played when a shop is forcefully bought from another player.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "domination": {
                     "description": "The jingle played when a player owns all shops in a district.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "bankruptcy": {
                     "description": "The jingle played when a player bankrupts.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "roundTheBlocks": {
                     "description": "The looping music played when the round the blocks mini game is being played.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "roundTheBlocksWin": {
                     "description": "The jingle played when a player wins something during the round the blocks mini game.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "roundTheBlocks777": {
                     "description": "The jingle played when a player gets triple seven during the round the blocks mini game.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "memoryBlock": {
                     "description": "The looping music played when the round the memory block mini game is being played.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "dartOfGold": {
                     "description": "The looping music played when the dart of gold mini game is being played.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "slurpodromeSelect": {
                     "description": "The looping music played when the players are picking their racing slime.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "slurpodromeStart": {
                     "description": "The jingle played at the start of the race.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "slurpodromeRace": {
                     "description": "The looping music played when the slimes are racing.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 },
                 "slurpodromeWin": {
                     "description": "The jingle played when a slime reaches the finish line.",
-                    "anyOf": [{"type": "null"},{"type": "string", "maxLength": 48, "pattern": "^[\\w-]+(\\.\\d{1,3})?$"}]
+                    "$ref": "#/definitions/musicFiles"
                 }
             }
         },
