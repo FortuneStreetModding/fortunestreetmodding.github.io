@@ -26,6 +26,9 @@ authors:
   - name: Giftshaven
     url: https://github.com/Giftshaven
 changelog:
+  - version: 4
+    changed:
+      - Unfixed pathing 'errors'
   - version: 3
     changed:
       - Fixed pathing errors
