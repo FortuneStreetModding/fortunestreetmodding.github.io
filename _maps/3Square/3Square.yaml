@@ -33,9 +33,9 @@ music:
   guestAppear: BossEndActionXC3.80
   guestLeave: BossEndXC3.80
   takeAbreak: seinfeld.68
-  promotionMii: RobotnikPromotion.80
-  promotionMario: RobotnikPromotion.80
-  promotionDragonQuest: RobotnikPromotion.80
+  promotionMii: RobotnikPromotion.65
+  promotionMario: RobotnikPromotion.65
+  promotionDragonQuest: RobotnikPromotion.65
   forcedBuyout: BossKillXC3.80
   domination: ChainEndXC3.80
   bankruptcy: SadXC3.80
@@ -48,6 +48,10 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Replaced Venture Square with Arcade
+      - Reduced promotion volume from 80 to 65
   - version: 1
     added: 
       - Initial Release
