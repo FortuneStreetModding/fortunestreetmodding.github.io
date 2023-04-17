@@ -355,6 +355,12 @@ backgrounds: backgrounds.yml
     Ennesan18.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan18.zip
+    Ennesan19.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan19.zip
+    Ennesan20.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan20.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip

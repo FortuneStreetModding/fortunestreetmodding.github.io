@@ -11,14 +11,14 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: Ennesan10
-background: bg009alt
+background: grid_blackwhite
 mapIcon: Enne10
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan10.music.zip
     - https://drive.google.com/u/2/uc?id=1Ou6C-BXmPHylkEahtbBiPnLwDPF664k6&export=download
   map: Map_Ennesan10.40
-  stock: Stock_Ennesan.35
+  stock: Stock_grid.70
   ventureCards: Venture_Ennesan.45
   auction:
   targetMet: Targetmet_Ennesan1C.40
@@ -41,6 +41,10 @@ tourMode:
   opponent3: Jessica
   clearRank: 1
 changelog:
+  - version: 6
+    changed:
+      - Change background from bg009alt to grid_blackwhite
+      - Change stock music
   - version: 5
     changed:
       - Corrected download link

@@ -18,7 +18,7 @@ music:
     - https://nikkums.io/cswt/BGM/Ennesan06.music.zip
     - https://drive.google.com/u/0/uc?id=1OMfzr8ClSdBeY9II6Dck0W2HkM1i4FZM&export=download
   map: Map_Ennesan6.40
-  stock: Stock_Ennesan.35
+  stock: Stock_grid.70
   ventureCards: Venture_Ennesan.45
   auction:
   targetMet: Targetmet_Ennesan4.40
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 7
+    changed:
+      - Change stock music
   - version: 6
     changed:
       - Changed the effect of Event Square 39 to Venture Card 106

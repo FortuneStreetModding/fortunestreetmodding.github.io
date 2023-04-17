@@ -18,7 +18,7 @@ music:
     - https://nikkums.io/cswt/BGM/Ennesan01B.music.zip
     - https://drive.google.com/u/0/uc?id=1DdnluwVBjUXqcqaAJ48A7x5T1qyISoeR&export=download
   map: Map_Ennesan1B.45
-  stock: Stock_Ennesan.35
+  stock: Stock_grid.70
   ventureCards: Venture_Ennesan.45
   auction:
   targetMet: Targetmet_Ennesan1B.45
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Change stock music
   - version: 5
     changed:
       - Change auction music to vanilla music
