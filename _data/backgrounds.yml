@@ -483,15 +483,10 @@
   name: grid_gray
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_gray.background.zip
-  - https://drive.google.com/u/0/uc?id=1XimpsNoWLKn91b20nsPHSIMuQ60XxQUk&export=download
+  - https://drive.google.com/u/0/uc?id=16k-c88i9IJCqClRS1lNDjdPXLnQcg4s2&export=download
   mapIcon: grid_gray
   music:
-    map: Map_gridgray.40
     stock: Stock_grid.70
-    ventureCards: Venture_gridgray.40
-    auction:
-    targetMet: Targetmet_gridgray.40
-    win: Win_gridgray.60
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
