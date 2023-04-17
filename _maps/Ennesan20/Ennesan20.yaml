@@ -20,6 +20,9 @@ frbFiles:
 background: grid_gray
 mapIcon: Enne20
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/Ennesan20.music.zip
+    - https://drive.google.com/u/2/uc?id=1ToV45ktrMnJtsVlv6urLKDmvOPvxdccV&export=download
   map: 
   - Map_Ennesan20_1.65
   - Map_Ennesan20_2.65
