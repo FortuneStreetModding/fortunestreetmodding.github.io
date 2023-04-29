@@ -499,15 +499,10 @@
   name: grid_green
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_green.background.zip
-  - https://drive.google.com/u/0/uc?id=1e_Edh2kLFX3kaRnDqVr7hsp07OljSF2C&export=download
+  - https://drive.google.com/u/0/uc?id=1Vlq8-0paC8OXMZCYSNRDLyGpH_48xcGh&export=download
   mapIcon: grid_green
   music:
-    map: Map_gridgreen.50
     stock: Stock_grid.70
-    ventureCards: Venture_gridgreen.45
-    auction:
-    targetMet: Targetmet_gridgreen.40
-    win: Win_gridgreen.40
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
