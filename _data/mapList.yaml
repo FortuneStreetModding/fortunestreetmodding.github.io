@@ -325,6 +325,9 @@ backgrounds: backgrounds.yml
     DungeonLobby.zip:
       urls:
       - https://nikkums.io/cswt/Maps/DungeonLobby.zip
+    EdenCenter.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/EdenCenter.zip
     Ennesan01B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan01B.zip
