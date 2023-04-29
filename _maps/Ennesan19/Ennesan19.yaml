@@ -2,7 +2,7 @@
 name:
   en: Enne-san Board 19
 desc:
-  en: This board has a salary increment of 0. Also, pressing the switch changes the effect of successive event squares connecting suits and suits.
+  en: This board has a salary increment of 0. Also, pressing the switch changes the effect of successive event squares connecting suits and suits.(except state 1)
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500
@@ -16,6 +16,7 @@ frbFiles:
 - Ennesan19_3
 - Ennesan19_4
 - Ennesan19_5
+- Ennesan19_6
 background: grid_gray
 mapIcon: Enne19
 music:
@@ -26,6 +27,7 @@ music:
   - Map_Ennesan19_1.55
   - Map_Ennesan19_2.50
   - Map_Ennesan19_2.50
+  - Map_Ennesan19_1.55
   - Map_Ennesan19_1.55
   - Map_Ennesan19_1.55
   stock: Stock_grid.70
@@ -51,6 +53,13 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Only in Board State 1, the bridge connecting the suit to the suit was lost.
+      - Increased board state from 5 to 6
+      - Adjustment of shop values in some shops
+      - No more vacant plots from District I
+      - Changed the effect of some event squares
   - version: 1
     added: 
       - Initial Release
