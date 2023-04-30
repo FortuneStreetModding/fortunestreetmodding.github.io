@@ -2,13 +2,13 @@
 name:
   en: Enne-san Board 20
 desc:
-  en: Each time a switch is pressed, the location where you can go changes. When the switch is pressed 5 times, the decisive battle will take place on the upper right island.
+  en: When the switch is pressed 7 times, the effect of the event square becomes very strong. The terrain and event squares change with each push of the switch.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
-targetAmount: 40000
+targetAmount: 50000
 baseSalary: 400
-salaryIncrement: 150
+salaryIncrement: 100
 maxDiceRoll: 6
 frbFiles:
 - Ennesan20_1
@@ -17,6 +17,16 @@ frbFiles:
 - Ennesan20_4
 - Ennesan20_5
 - Ennesan20_6
+- Ennesan20_7
+- Ennesan20_8
+- Ennesan20_9
+- Ennesan20_10
+- Ennesan20_11
+- Ennesan20_11
+- Ennesan20_11
+- Ennesan20_11
+- Ennesan20_11
+- Ennesan20_11
 background: grid_gray
 mapIcon: Enne20
 music:
@@ -27,8 +37,18 @@ music:
   - Map_Ennesan20_1.65
   - Map_Ennesan20_2.65
   - Map_Ennesan20_3.65
+  - Map_Ennesan20_3.65
+  - Map_Ennesan20_4.45
   - Map_Ennesan20_4.45
   - Map_Ennesan20_5.40
+  - Map_Ennesan19_1.55
+  - Map_Ennesan19_1.55
+  - Map_Ennesan19_1.55
+  - Map_Ennesan19_1.55
+  - Map_Ennesan19_1.55
+  - Map_Ennesan19_1.55
+  - Map_Ennesan19_1.55
+  - Map_Ennesan19_1.55
   - Map_Ennesan19_1.55
   stock: Stock_grid.70
   ventureCards: Venture_Ennesan19.60
@@ -53,6 +73,16 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Increased board state from 6 to 11. Board state 11 continues until the switch is pressed 6 times.
+      - Changed districts J, K, and L from a 3 shops district to a 2 shops district.
+      - If a switch is pressed after the top right island is opened in board state 7, a door can now be used to escape from the top right island.
+      - Increased target amount from 40000 to 50000
+      - Decreased salary increment from 150 to 100
+      - Shop values for some shops changed.
+      - Changed the effect of some event squares
+      - Change mapIcon
   - version: 1
     added: 
       - Initial Release
