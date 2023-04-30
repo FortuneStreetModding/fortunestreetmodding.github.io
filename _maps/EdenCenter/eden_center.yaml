@@ -20,6 +20,7 @@ music:
   targetMet: ngay_xuan_tham_nhau.79
   win: ngay_xuan_tham_nhau.79
   download:
+    - https://nikkums.io/cswt/BGM/EdenCenter.music.zip
     - https://drive.google.com/u/0/uc?id=1f-cgmxgTAqr0EpaZ8UcsbXaQvibHAu5P&export=download
 tourMode:
   bankruptcyLimit: 1
