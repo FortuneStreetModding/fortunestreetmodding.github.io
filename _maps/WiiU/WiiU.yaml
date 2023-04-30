@@ -7,12 +7,12 @@ name:
   jp: Wii U
   es: Wii U
 desc:
-  en: "The Wii U had a plethora of wonderful games. Its eShop finally went offline on March 27th, 2023, giving it a lifespan of over 10 years."
-  de: "Die Wii U hatte eine Fülle wunderbarer Spiele. Sein eShop ging schließlich am 27. März 2023 offline, was ihm eine Lebensdauer von über 10 Jahren verleiht."
-  fr: "La Wii U avait une pléthore de jeux merveilleux. Son eShop s'est finalement déconnecté le 27 mars 2023, lui donnant une durée de vie de plus de 10 ans."
-  it: "Il Wii U aveva una miriade di giochi meravigliosi. Il suo eShop è finalmente andato offline il 27 marzo 2023, dandogli una durata di oltre 10 anni."
-  jp: "Wii Uには素晴らしいゲームがたくさんありました。 その eShop は 2023 年 3 月 27 日についにオフラインになり、10 年以上の寿命を迎えました。"
-  es: "La Wii U tenía una plétora de juegos maravillosos. Su eShop finalmente se desconectó el 27 de marzo de 2023, lo que le dio una vida útil de más de 10 años."
+  en: The Wii U had a plethora of wonderful games. Its eShop finally went offline on March 27th, 2023, giving it a lifespan of over 10 years.
+  de: Die Wii U hatte eine Fülle wunderbarer Spiele. Sein eShop ging schließlich am 27. März 2023 offline, was ihm eine Lebensdauer von über 10 Jahren verleiht.
+  fr: La Wii U avait une pléthore de jeux merveilleux. Son eShop s'est finalement déconnecté le 27 mars 2023, lui donnant une durée de vie de plus de 10 ans.
+  it: Il Wii U aveva una miriade di giochi meravigliosi. Il suo eShop è finalmente andato offline il 27 marzo 2023, dandogli una durata di oltre 10 anni.
+  jp: Wii Uには素晴らしいゲームがたくさんありました。 その eShop は 2023 年 3 月 27 日についにオフラインになり、10 年以上の寿命を迎えました。
+  es: La Wii U tenía una plétora de juegos maravillosos. Su eShop finalmente se desconectó el 27 de marzo de 2023, lo que le dio una vida útil de más de 10 años.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
