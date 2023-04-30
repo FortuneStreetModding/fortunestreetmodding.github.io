@@ -488,6 +488,9 @@ backgrounds: backgrounds.yml
     litbus.zip:
       urls:
       - https://nikkums.io/cswt/Maps/litbus.zip
+    WiiU.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/WiiU.zip
     Yevon.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Yevon.zip
