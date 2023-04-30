@@ -28,18 +28,26 @@ music:
   stock: HistoriaCrux.70
   ventureCards: Choisies
   auction: KaleidoscopicCoreXC3.70
-  targetMet: MoebiusXC3.80
+  targetMet: MoebiusLoop.80
   win: HandsUpToTheSky
-  guestAppear: BossEndActionXC3.80
-  guestLeave: BossEndXC3.80
+  guestAppear: BossEndActionXC3.70
+  guestLeave: BossEndXC3.70
   takeAbreak: seinfeld.68
   promotionMii: RobotnikPromotion.65
   promotionMario: RobotnikPromotion.65
   promotionDragonQuest: RobotnikPromotion.65
-  forcedBuyout: BossKillXC3.80
-  domination: ChainEndXC3.80
+  forcedBuyout: BossKillXC3.70
+  domination: ChainEndXC3.70
   bankruptcy: SadXC3.80
-  memoryBlock: ChanceTime.80
+  memoryBlock: PaisanoPower.30
+  dartOfGold: KirbyAirRideShooting
+  roundTheBlocks: PerfectNGNL.40
+  roundTheBlocksWin: OverkillXC3.80
+  roundTheBlocks777: ShulkVictory.75
+  slurpodromeRace: GasGasGas.70
+  slurpodromeSelect: KirbyAirRideMenu
+  slurpodromeStart: HorseRaceStart.75
+  slurpodromeWin: GameOverYeah
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -48,6 +56,12 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    added:
+      - Music for Dart of Gold, Round the Blocks, Round the Blocks Win, Round the Blocks Jackpot, Slurpodrome Select, Slurpodrome Start, Slurpodrome Race, Slurpodrome Win
+    changed:
+      - Music for Target Met, Memory Block
+      - Some music volumes adjusted
   - version: 2
     changed:
       - Replaced Venture Square with Arcade
@@ -196,17 +210,31 @@ notes: |
   - Venture Cards
     - No Game No Life OST - Choisies
   - Target Met
-    - Xenoblade Chronicles 3 OST - Moebius
+    - Xenoblade Chronicles 3 OST - Moebius, Moebius M, Moebius Unleashed, Moebius M Unleashed
   - Auction
     - Xenoblade Chronicles 3 OST - Kaleidoscopic Core
   - Win
     - Hiroyuki Sawano feat. Laco  - Hands Up to the Sky (may be DMCA flagged if recorded)
-  - Guest Appear, Guest Leave, Buyout, Domination, Bankruptcy
+  - Guest Appear, Guest Leave, Buyout, Domination, Bankruptcy, Round The Blocks Win
     - Various fanfares from Xenoblade Chronicles 3
   - Take a Break
     - Seinfeld Laugh Track
   - Memory Block
-    - Mario Party 1 - Chance Time
+    - BotanicSage - Paisano Power
   - Promotion
     - The Adventures of Sonic the Hedgehog
+  - Dart Of Gold
+    - Kirby Air Ride - Shooting
+  - Round the Blocks:
+    - No Game No Life OST - Perfect!
+  - Round The Blocks Jackpot
+    - Super Smash Bros. Ultimate OST - Shulk Victory
+  - Slurpodrome Select
+    - Kirby Air Ride OST - Main Menu
+  - Slurpodrome Start
+    - Ocarina of Time OST - Horse Race Start
+  - Slurpodrome Race
+    - Manuel - Gas Gas Gas
+  - Slurpodrome Win
+    - Sega Rally OST - Game Over Yeah!
 ...
