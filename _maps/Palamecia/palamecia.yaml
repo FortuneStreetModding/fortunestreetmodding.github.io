@@ -33,12 +33,56 @@ music:
   forcedBuyout:
   domination:
   bankruptcy:
+  memoryBlock: XanaduFFXIII2
+  dartOfGold: XanaduFFXIII2
+  roundTheBlocks: XanaduFFXIII2
+  roundTheBlocksWin: CongratulatoryFanfareFFXIII2
+  roundTheBlocks777: SalvationsFanfareFFXIIILR
+  slurpodromeRace: CrazyChocoboFFXIII2
+  slurpodromeSelect: XanaduFFXIII2
+  slurpodromeStart: 
+  slurpodromeWin: CongratulatoryFanfareFFXIII2
 tourMode:
   bankruptcyLimit: 1
   opponent1: Mario
   opponent2: Luigi
   opponent3: Peach
   clearRank: 2
+changelog:
+  - version: 3
+    added:
+      - Arcade music
+  - version: 2
+    changed:
+      - Updated board balance.
+  - version: 1
+    added: 
+      - Initial Release
+authors:
+  - name: Sophilautia
+    url: https://twitter.com/Sophilautia
+notes: |
+  The following music has been used for this board:
+  - Map
+    - Final Fantasy XIII - Fang's Theme
+  - Stocks
+    - Final Fantasy XIII - Sazh's Theme
+  - Venture Cards
+    - Final Fantasy XIII - Pulse de Chocobo
+  - Target Met
+    - Final Fantasy XIII - Defiers of Fate
+  - Auction
+    - Final Fantasy XIII - Eidolons
+  - Win
+    - Final Fantasy XIII - Separate Paths
+  - Promotion
+    - Final Fantasy XIII - Glory's Fanfare
+  - Memory Block, Dart of Gold, Round the Blocks & Slurpodrome Select
+    - Final Fantasy XIII-2 - Xanadu, Palace of Pleasure
+  - Round the Blocks Win & Slurpodrome Win
+    - Final Fantasy XIII-2 - Congratulatory Fanfare
+  - Round the Blocks Jackpot
+    - Final Fantasy XIII Lightning Returns - Salvation's Fanfare
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -168,14 +212,4 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-changelog:
-  - version: 2
-    changed:
-      - Updated board balance.
-  - version: 1
-    added: 
-      - Initial Release
-authors:
-  - name: Sophilautia
-    url: https://twitter.com/Sophilautia
 ...
