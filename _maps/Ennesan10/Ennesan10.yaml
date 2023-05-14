@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: Ennesan10
-background: grid_blackwhite
+background: grid_yellow
 mapIcon: Enne10
 music:
   download: 
@@ -41,6 +41,10 @@ tourMode:
   opponent3: Jessica
   clearRank: 1
 changelog:
+  - version: 7
+    changed:
+      - Change background from grid_blackwhite to grid_yellow
+      - Change mapIcon
   - version: 6
     changed:
       - Change background from bg009alt to grid_blackwhite
