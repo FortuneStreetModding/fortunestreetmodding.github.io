@@ -15,7 +15,7 @@ frbFile2: TickTockTrader2
 frbFile3: TickTockTrader3
 frbFile4: TickTockTrader4
 background: bg001_clean
-mapIcon: quad
+mapIcon: clock
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
