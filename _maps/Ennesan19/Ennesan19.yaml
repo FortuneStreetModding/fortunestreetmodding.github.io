@@ -2,19 +2,19 @@
 name:
   en: Enne-san Board 19
 desc:
-  en: This board has a salary increment of 0. Also, pressing the switch changes the effect of successive event squares connecting suits and suits.(except state 1)
+  en: This board has a salary increment of 0. Also, each time the switch is pressed 3 times, the bridge connecting Suits to Suits is temporarily disabled.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500
 targetAmount: 22000
-baseSalary: 600
+baseSalary: 700
 salaryIncrement: 0
 maxDiceRoll: 6
 frbFiles:
 - Ennesan19_1
 - Ennesan19_2
 - Ennesan19_3
-- Ennesan19_4
+- Ennesan19_1
 - Ennesan19_5
 - Ennesan19_6
 background: grid_gray
@@ -28,7 +28,7 @@ music:
   - Map_Ennesan19_2.50
   - Map_Ennesan19_2.50
   - Map_Ennesan19_1.55
-  - Map_Ennesan19_1.55
+  - Map_Ennesan19_2.50
   - Map_Ennesan19_1.55
   stock: Stock_grid.70
   ventureCards: Venture_Ennesan19.60
@@ -53,6 +53,16 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Changed so that the bridge is temporarily unavailable every time the switch is pressed 3 times.
+      - Board state 4 now changes to the same state as board state 1.
+      - The board now changes from 1 to 2 to 3 to 1 to 5 to 6 to 1 to 2... as in the frb file.
+      - Suites location changed so that CPU can go through other places than bridges.
+      - When the board state is 6, the bridge connecting suit to suit composed of properties can be connected.
+      - The starting position of the game has been changed from the bank on the left to the Warp Event Square in the center.
+      - Changed the effect of some event squares
+      - Base salary increased from 600 to 700
   - version: 2
     changed:
       - Only in Board State 1, the bridge connecting the suit to the suit was lost.
