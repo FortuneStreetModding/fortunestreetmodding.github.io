@@ -30,12 +30,12 @@ districtNames:
   - Valar Sth
   - Avant Heim
 music:
-  map: GameStart
-  stock: CriminalConnection
-  ventureCards: Choisies
-  auction: IGetYouBack
-  targetMet: NoGameNoLife
-  win: WinnerNGNL
+  map: NoGameNoLifeMedley.40
+  stock: CriminalConnection.40
+  ventureCards: Choisies.40
+  auction: IGetYouBack.40
+  targetMet: NoGameNoLife.40
+  win: WinnerNGNL.40
   guestAppear:
   guestLeave:
   badVentureCard:
@@ -46,6 +46,16 @@ music:
   forcedBuyout: 
   domination: 
   bankruptcy:
+  memoryBlock: PerfectNGNL.40
+  dartOfGold: PerfectNGNL.40
+  roundTheBlocks: PerfectNGNL.40
+  roundTheBlocksWin: 
+  roundTheBlocks777: 
+  slurpodromeRace: 
+  slurpodromeSelect: 
+  slurpodromeStart: 
+  slurpodromeWin: 
+
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -54,6 +64,12 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Board music changed to a 25 minute medley
+      - Intro cam fixed
+    added:
+      - Arcade music
   - version: 1
     added: 
       - Initial Release
