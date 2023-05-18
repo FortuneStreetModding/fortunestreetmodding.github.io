@@ -467,6 +467,9 @@ backgrounds: backgrounds.yml
     SuperSize.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SuperSize.zip
+    TickTockTrader.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TickTockTrader.zip
     ToadsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsHouse.zip
