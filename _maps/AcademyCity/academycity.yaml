@@ -83,7 +83,7 @@ shopNames:
     96: Academy City Courthouse
     97: Board of Directors Office
 music:
-  map: yochou.50
+  map: AcademyCityMedley
   stock: quietploy.50
   ventureCards: judgementnokatsudou.50
   auction: madness.50
@@ -97,6 +97,10 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 8
+    changed:
+      - Changed map music to 25 minute medley
+      - Intro cam fixed
   - version: 7
     added:
       - Added custom 2D background

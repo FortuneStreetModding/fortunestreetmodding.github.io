@@ -23,7 +23,7 @@ districtNames:
   - Seville
   - Milan
 music:
-  map: MagicAndWeapons.50
+  map: BethlehemMedley
   stock: CrossExamination.50
   ventureCards: ModernWeapons
   auction: madness
@@ -37,6 +37,10 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Changed map music to 20 minute medley
+      - Intro cam fixed
   - version: 3
     added:
       - Custom 2D background
