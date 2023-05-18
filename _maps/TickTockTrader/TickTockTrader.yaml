@@ -14,7 +14,7 @@ frbFile1: TickTockTrader
 frbFile2: TickTockTrader2
 frbFile3: TickTockTrader3
 frbFile4: TickTockTrader4
-background: bg001
+background: bg001_clean
 mapIcon: quad
 tourMode:
   bankruptcyLimit: 1
