@@ -586,3 +586,19 @@
     auction: madness.50
     targetMet: BreakThrough.50
     win: railgunt.50
+- background: grid_yellow
+  name: grid_yellow
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_yellow.background.zip
+  - https://drive.google.com/u/0/uc?id=1PHj6lPD_9rBwUZ8pupZGtNdGYL1uMCFe&export=download
+  mapIcon: grid_yellow
+  music:
+    stock: Stock_grid.70
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: ME_HOLIDAY_ISDS.60
+    promotionMii: mp6star
+    promotionMario: mp6star
+    promotionDragonQuest: classchange.75
+    forcedBuyout: ME_5BUY_ISDS.60

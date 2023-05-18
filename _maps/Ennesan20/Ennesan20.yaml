@@ -2,7 +2,7 @@
 name:
   en: Enne-san Board 20
 desc:
-  en: When the switch is pressed 7 times, the effect of the event square becomes very strong. The terrain and event squares change with each push of the switch.
+  en: The game is likely to be long. Pressing the switch 8 times strengthens the effect of the event square on the upper right island. From there, pressing the switch 2 more times will make other islands very strong.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -36,12 +36,12 @@ music:
   map: 
   - Map_Ennesan20_1.65
   - Map_Ennesan20_2.65
+  - Map_Ennesan20_2.65
   - Map_Ennesan20_3.65
   - Map_Ennesan20_3.65
   - Map_Ennesan20_4.45
   - Map_Ennesan20_4.45
   - Map_Ennesan20_5.40
-  - Map_Ennesan19_1.55
   - Map_Ennesan19_1.55
   - Map_Ennesan19_1.55
   - Map_Ennesan19_1.55
@@ -73,6 +73,16 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Changed some terrain
+      - Change Districts K and L to 3 Shops Districts and all other Districts to 4 Shops Districts.
+      - Increased from 6 to 7 the number of times a switch must be pressed to open the upper right island.
+      - When the switch is pressed 7 times and the top-right island is opened, it is now possible to avoid moving to the top-right island.
+      - Decreased the number of switch presses required to make the effect of an event square very strong on islands other than the upper right from 3 to 2.
+      - Changed the effect of some event squares
+      - Shop values for some shops changed.
+      - Change description
   - version: 2
     changed:
       - Increased board state from 6 to 11. Board state 11 continues until the switch is pressed 6 times.
