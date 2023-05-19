@@ -23,7 +23,7 @@ districtNames:
   - Seville
   - Milan
 music:
-  map: MagicAndWeapons.50
+  map: BethlehemMedley
   stock: CrossExamination.50
   ventureCards: ModernWeapons
   auction: madness
