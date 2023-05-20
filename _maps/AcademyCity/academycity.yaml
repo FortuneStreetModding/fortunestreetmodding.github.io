@@ -83,12 +83,21 @@ shopNames:
     96: Academy City Courthouse
     97: Board of Directors Office
 music:
-  map: AcademyCityMedley
-  stock: quietploy.50
-  ventureCards: judgementnokatsudou.50
-  auction: madness.50
-  targetMet: BreakThrough.50
-  win: railgunt.50
+  map: AcademyCityMedley.43
+  stock: quietploy
+  ventureCards: judgementnokatsudou
+  auction: madness
+  targetMet: BreakThrough
+  win: railgunt
+  memoryBlock: FunnyDays.40
+  dartOfGold: FunnyDays.40
+  roundTheBlocks: FunnyDays.40
+  roundTheBlocksWin: 
+  roundTheBlocks777: 
+  slurpodromeSelect: FunnyDays.40
+  slurpodromeRace: CrossSpeedShort
+  slurpodromeStart: 
+  slurpodromeWin: 
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -97,6 +106,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 9
+    added:
+      - Arcade music
   - version: 8
     changed:
       - Changed map music to 25 minute medley

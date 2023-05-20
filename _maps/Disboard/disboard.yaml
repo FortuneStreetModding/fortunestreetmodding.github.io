@@ -46,13 +46,13 @@ music:
   forcedBuyout: 
   domination: 
   bankruptcy:
-  memoryBlock: PerfectNGNL.40
-  dartOfGold: PerfectNGNL.40
-  roundTheBlocks: PerfectNGNL.40
+  memoryBlock: A_PerfectNGNL.40
+  dartOfGold: A_PerfectNGNL.40
+  roundTheBlocks: A_PerfectNGNL.40
   roundTheBlocksWin: 
   roundTheBlocks777: 
-  slurpodromeRace: 
-  slurpodromeSelect: 
+  slurpodromeRace: A_NGNLShort.40
+  slurpodromeSelect: A_PerfectNGNL.40
   slurpodromeStart: 
   slurpodromeWin: 
 
@@ -64,12 +64,19 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    added:
+      - Race music
+    changed:
+      - Arcade music fixed
   - version: 2
     changed:
       - Board music changed to a 25 minute medley
       - Intro cam fixed
     added:
-      - Arcade music
+      - Race music
+    changed:
+      - Arcade music fixed
   - version: 1
     added: 
       - Initial Release

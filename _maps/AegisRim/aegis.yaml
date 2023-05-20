@@ -31,23 +31,32 @@ districtNames:
 music:
   download: 
     - https://nikkums.io/cswt/BGM/AegisRim.music.zip
-    - https://drive.google.com/u/0/uc?export=download&confirm=rfLL&id=1TMhOA-dgipBpaJRz3MZdf5eKHzIyIhVp
-  map: isoleucine.50
+  map: AegisMedley
   stock: voyagetotomorrow.55
   ventureCards: doldrums.85
-  auction: valine.50
-  targetMet: deoxyribose.50
-  win: deoxyribose_win.50
+  auction: ARHighAlert
+  targetMet: deoxyribose
+  win: deoxyribose_win
   guestAppear:
   guestLeave:
   badVentureCard:
   takeAbreak:
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
+  promotionMii: ARPromotion
+  promotionMario: ARPromotion
+  promotionDragonQuest: ARPromotion
   forcedBuyout:
   domination:
   bankruptcy:
+  roundTheBlocksWin: ARPromotion
+  roundTheBlocks777: ARIsoleucineWin
+  roundTheBlocks: ARGoodTimes
+  memoryBlock: ARGoodTimes
+  dartOfGold: ARGoodTimes
+  slurpodromeSelect: ARGoodTimes
+  slurpodromeStart: 
+  slurpodromeRace: GoSentinelsGo
+  slurpodromeWin: ARIsoleucineWin
+
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -56,6 +65,14 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Adjustments to pathing to nerf small loops
+      - Changed map music to 20 minute medley
+      - New auction music
+    added:
+      - Promotion jingle
+      - Arcade Music
   - version: 3
     changed:
       - Changed background to grid_blue2

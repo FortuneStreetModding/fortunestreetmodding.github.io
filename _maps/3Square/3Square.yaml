@@ -24,7 +24,7 @@ districtNames:
 music:
   download: 
     - https://nikkums.io/cswt/BGM/3Square.music.zip
-  map: leucine
+  map: AegisMedley
   stock: HistoriaCrux.70
   ventureCards: Choisies
   auction: KaleidoscopicCoreXC3.70
@@ -39,15 +39,15 @@ music:
   forcedBuyout: BossKillXC3.70
   domination: ChainEndXC3.70
   bankruptcy: SadXC3.80
-  memoryBlock: PaisanoPower.30
-  dartOfGold: KirbyAirRideShooting
-  roundTheBlocks: PerfectNGNL.40
-  roundTheBlocksWin: OverkillXC3.80
-  roundTheBlocks777: ShulkVictory.75
-  slurpodromeRace: GasGasGas.70
-  slurpodromeSelect: KirbyAirRideMenu
-  slurpodromeStart: HorseRaceStart.75
-  slurpodromeWin: GameOverYeah
+  memoryBlock: A_PaisanoPower.30
+  dartOfGold: A_KirbyAirRideShooting
+  roundTheBlocks: A_PerfectNGNL.40
+  roundTheBlocksWin: A_OverkillXC3.80
+  roundTheBlocks777: A_ShulkVictory.75
+  slurpodromeRace: A_GasGasGas.70
+  slurpodromeSelect: A_KirbyAirRideMenu
+  slurpodromeStart: A_HorseRaceStart.75
+  slurpodromeWin: A_GameOverYeah
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -56,6 +56,10 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Arcade music fixed
+      - Map music changed to AegisMedley
   - version: 3
     added:
       - Music for Dart of Gold, Round the Blocks, Round the Blocks Win, Round the Blocks Jackpot, Slurpodrome Select, Slurpodrome Start, Slurpodrome Race, Slurpodrome Win
@@ -204,7 +208,7 @@ ventureCards:
 notes: |
   The following music has been used for this map:
   - Map
-    - 13 Sentinels: Aegis Rim OST - LEUCINE
+    - 13 Sentinels: Aegis Rim OST - (VALINE), (LEUCINE), (ISOLEUCINE), (LYSINE)
   - Stocks
     - Final Fantasy XIII-2 OST - Historia Crux
   - Venture Cards

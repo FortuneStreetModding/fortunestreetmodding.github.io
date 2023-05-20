@@ -14,30 +14,31 @@ frbFile1: nla
 background: NLA
 mapIcon: nla
 music:
-  map: nla.50
+  map: NLAMedley.43
   stock: bladehome.50
   ventureCards: briefing.50
   auction: wirfliegen.60
   targetMet: thekeywevelost.50
   win: bymyside.60
-  guestAppear: X-event.80
-  guestLeave: X-fanfare.80
+  guestAppear: A_X-event.80
+  guestLeave: A_X-fanfare.80
   badVentureCard: X-Encounter.50
   takeAbreak: X-Encounter.50
-  promotionMii: X-Levelup.80
-  promotionMario: X-Levelup.80
-  promotionDragonQuest: X-Levelup.80
+  promotionMii: A_X-Levelup.80
+  promotionMario: A_X-Levelup.80
+  promotionDragonQuest: A_X-Levelup.80
   forcedBuyout: X-buyout.50
-  domination: X-Levelup.80
+  domination: A_X-Levelup.80
   bankruptcy: X-bankruptcy.80
-  roundTheBlocksWin: X-Levelup.80
-  roundTheBlocks777: X-fanfare.80
-  memoryBlock: comical.50
-  dartOfGold: comical.50
-  slurpodromeSelect: comical.50
-  slurpodromeStart: X-event.80
-  slurpodromeRace: uncontrollable.50
-  slurpodromeWin: X-fanfare.80
+  roundTheBlocksWin: A_X-Levelup.80
+  roundTheBlocks777: A_X-fanfare.80
+  roundTheBlocks: A_comical
+  memoryBlock: A_comical
+  dartOfGold: A_comical
+  slurpodromeSelect: A_comical
+  slurpodromeStart: A_X-event.80
+  slurpodromeRace: A_uncontrollable
+  slurpodromeWin: A_X-fanfare.80
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -88,6 +89,10 @@ shopNames:
     51: Integrated Production Plant
     54: Nopon Bazaar
 changelog:
+  - version: 6
+    changed:
+      - Changed map music to a 25 minute medley
+      - Fixed arcade music
   - version: 5
     added:
       - District Names

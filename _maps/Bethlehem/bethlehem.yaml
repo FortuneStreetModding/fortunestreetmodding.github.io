@@ -23,12 +23,21 @@ districtNames:
   - Seville
   - Milan
 music:
-  map: BethlehemMedley
-  stock: CrossExamination.50
-  ventureCards: ModernWeapons
+  map: BethlehemMedley.43
+  stock: CrossExamination
+  ventureCards: ModernWeapons.40
   auction: madness
-  targetMet: hitthetech.50
-  win: railgunt.50
+  targetMet: hitthetech
+  win: railgunt
+  memoryBlock: A_todayatschool.40
+  dartOfGold: A_todayatschool.40
+  roundTheBlocks: A_todayatschool.40
+  roundTheBlocksWin: 
+  roundTheBlocks777: 
+  slurpodromeSelect: A_todayatschool.40
+  slurpodromeRace: A_PanicShort
+  slurpodromeStart: 
+  slurpodromeWin: 
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -37,6 +46,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 5
+    added:
+      - Arcade music
   - version: 4
     changed:
       - Changed map music to 20 minute medley
