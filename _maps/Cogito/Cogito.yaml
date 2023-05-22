@@ -41,6 +41,9 @@ music:
   domination:
   bankruptcy:
 changelog:
+  - version: 5
+    changed:
+      - Fixed a bug in board state 1 where if a switch was pressed after advancing to square ID 14 to 15 or 61 to 37 and stopped, the arrows would display incorrectly and change direction.
   - version: 4
     added:
       - Music
