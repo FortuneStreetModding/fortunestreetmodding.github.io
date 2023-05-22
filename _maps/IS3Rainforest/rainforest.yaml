@@ -41,6 +41,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Fixed a bug where the suit on the lower right island was not Change of Suit.
   - version: 1
     added: 
       - Initial Release
