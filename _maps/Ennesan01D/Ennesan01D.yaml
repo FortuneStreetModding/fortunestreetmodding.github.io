@@ -2,37 +2,38 @@
 name:
   en: Enne-san Board 01-D
 desc:
-  en: Based on 01-A. An island has been added and all districts are now 4 shops districts.
+  en: The District count is 12. Based on 01-A. An island has been added and all districts are now 4 shops districts.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1800
 targetAmount: 20000
 baseSalary: 400
 salaryIncrement: 100
-maxDiceRoll: 7
+maxDiceRoll: 9
 frbFile1: Ennesan01D
 background: grid_green
 mapIcon: Enne01D
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan01D.music.zip
-    - https://drive.google.com/u/0/uc?id=1vQ7PVeoCX0WUq0Ysv4rS5pdPuWxk8Wm1&export=download
-  map: Map_Ennesan1D.40
+    - https://drive.google.com/u/0/uc?id=16jOAUbnzjuMaBeAJITjXgirYiOoHlMq8&export=download
+  map: Ennesan1D_Map.60
   stock: Stock_grid.70
   ventureCards: Venture_Ennesan11.45
-  auction: 
-  targetMet: Targetmet_Ennesan15.40
-  win: Win_Ennesan19.50
+  auction: Auction_grid.55
+  targetMet: Targetmet_Ennesan8.45
+  win: Ennesan1_Win.45
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak: ME_HOLIDAY_ISDS.60
-  promotionMii: mp6star
-  promotionMario: mp6star
-  promotionDragonQuest: classchange.75
+  takeAbreak: takeAbreak_grid.45
+  promotionMii: Promotion_grid.40
+  promotionMario: Promotion_grid.40
+  promotionDragonQuest: Promotion_grid.40
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
   bankruptcy: Bankrupt_grid.40
+  memoryBlock: Arcade_grid.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1800
@@ -41,6 +42,15 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Reversed the location of BackStreet and the bank.
+      - Changed starting point from upper left to lower right BackStreet.
+      - Warp event squares on the island increased from 3 to 4
+      - maxDiceRoll increased from 7 to 9
+      - Changed some music
+      - Changed mapIcon
+      - Added the number of districts to the description.
   - version: 1
     added: 
       - Initial Release
