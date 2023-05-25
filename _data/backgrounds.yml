@@ -267,14 +267,24 @@
   mapIcon: grid_blue
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_bluegreen
   name: grid_bluegreen
   download:
@@ -283,14 +293,24 @@
   mapIcon: grid_aomidori
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_lightblue
   name: grid_lightblue
   download:
@@ -299,14 +319,24 @@
   mapIcon: grid_mizuiro
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_orange
   name: grid_orange
   download:
@@ -315,14 +345,24 @@
   mapIcon: grid_orange
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_red
   name: grid_red
   download:
@@ -331,14 +371,24 @@
   mapIcon: grid_red
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_violet
   name: grid_violet
   download:
@@ -347,14 +397,24 @@
   mapIcon: grid_violet
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_blue2
   name: grid_blue2
   download:
@@ -363,14 +423,24 @@
   mapIcon: grid_blue2
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: bg102alt
   name: bg102alt
   download:
@@ -465,20 +535,25 @@
   - https://drive.google.com/u/0/uc?id=1heRkvZ0ysna8tFcZD7nIxQiVyjdpybYi&export=download
   mapIcon: grid_red
   music:
-    map: Map_gridred2.60
     stock: Stock_grid.70
-    ventureCards: Venture_gridred2.45
-    auction:
-    targetMet: Targetmet_gridred2.40
-    win: Win_gridred2.35
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_gray
   name: grid_gray
   download:
@@ -487,14 +562,24 @@
   mapIcon: grid_gray
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_green
   name: grid_green
   download:
@@ -503,14 +588,24 @@
   mapIcon: grid_green
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_blackwhite
   name: grid_blackwhite
   download:
@@ -518,20 +613,25 @@
   - https://drive.google.com/u/0/uc?id=19jJDEIQ77VIQzYUUdBK4cqx0j_pCDDLW&export=download
   mapIcon: grid_bw
   music:
-    map: Map_gridbw.50
     stock: Stock_grid.70
-    ventureCards: Venture_gridbw.45
-    auction:
-    targetMet: Targetmet_gridbw.50
-    win: Win_gridbw.40
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: NLA
   name: NLA
   download:
