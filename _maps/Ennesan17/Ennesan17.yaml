@@ -16,23 +16,24 @@ mapIcon: Enne17
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan17.music.zip
-    - https://drive.google.com/u/0/uc?id=167NkQiI0pgn4uIASqUFdxLl3SGAidk_o&export=download
-  map: Map_Ennesan17.70
-  stock: Stock_Ennesan15.70
+    - https://drive.google.com/u/0/uc?id=17oMktdPJRTMs-3PAQ3414HOOCtRcW4DH&export=download
+  map: Ennesan17_Map.70
+  stock: Stock_grid.70
   ventureCards: Venture_Ennesan.45
-  auction: 
-  targetMet: Targetmet_Ennesan1C.40
-  win: Win_Ennesan16.40
+  auction: Auction_grid.55
+  targetMet: Targetmet_Ennesan17.35
+  win: Ennesan17_Win.45
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak: ME_HOLIDAY_ISDS.60
-  promotionMii: mp6star
-  promotionMario: mp6star
-  promotionDragonQuest: classchange.75
+  takeAbreak: takeAbreak_grid.45
+  promotionMii: Promotion_grid.40
+  promotionMario: Promotion_grid.40
+  promotionDragonQuest: Promotion_grid.40
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
-  bankruptcy: Bankrupt_Ennesan.40
+  bankruptcy: Bankrupt_grid.40
+  memoryBlock: Arcade_grid.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 3000
@@ -41,6 +42,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Changed some music
   - version: 2
     changed:
       - Changed the event square at the intersection of the inner road connecting Suits to Suits and the road to the bank to property.
@@ -175,13 +179,13 @@ ventureCards:
   - 1  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
   - 0  # 120 Misadventure! You drop your wallet and lose 20% of your ready cash!
   - 1  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
-  - 1  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
+  - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
   - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 0  # 124 Suit venture! Buy a Suit Yourself card for 50G.
   - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
-  - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+  - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 shopNames:
   en:
     1: Initial Value 10
