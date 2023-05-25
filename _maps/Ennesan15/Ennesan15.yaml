@@ -16,23 +16,24 @@ mapIcon: Enne15
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan15.music.zip
-    - https://drive.google.com/u/0/uc?id=1r7oUNgWPLsdUW6bXuZTfLJti9_y1rxRf&export=download
-  map: Map_Ennesan15.50
-  stock: Stock_Ennesan15.70
+    - https://drive.google.com/u/0/uc?id=1O4gXKIyJFS-YwsFMmZHj9umwAT4rvlOC&export=download
+  map: Ennesan15_Map.45
+  stock: Stock_grid.70
   ventureCards: Venture_Ennesan11.45
-  auction:
+  auction: Auction_grid.55
   targetMet: Targetmet_Ennesan15.40
-  win: Win_Ennesan5.40
+  win: Ennesan10_Win.40
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak: ME_HOLIDAY_ISDS.60
-  promotionMii: mp6star
-  promotionMario: mp6star
-  promotionDragonQuest: classchange.75
+  takeAbreak: takeAbreak_grid.45
+  promotionMii: Promotion_grid.40
+  promotionMario: Promotion_grid.40
+  promotionDragonQuest: Promotion_grid.40
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
-  bankruptcy: Bankrupt_Ennesan.40
+  bankruptcy: Bankrupt_grid.40
+  memoryBlock: Arcade_grid.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1600
@@ -41,6 +42,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Reduced shop value and initial shop price for District H.
+      - Changed some music
   - version: 3
     changed:
       - Reduce target amount from 16000 to 15000
