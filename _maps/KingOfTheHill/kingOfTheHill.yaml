@@ -24,6 +24,9 @@ tourMode:
   opponent3: Carver
   clearRank: 1
 changelog:
+  - version: 4
+    changed:
+      - Fixed a problem in which the board did not change when a switch was pressed.
   - version: 3
     changed:
       - Changed background to bg108fixed

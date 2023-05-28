@@ -22,29 +22,30 @@ mapIcon: Enne19
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan19.music.zip
-    - https://drive.google.com/u/2/uc?id=1-snKGgSEZangz3Jlh0KiA4JdCtW0GQwN&export=download
+    - https://drive.google.com/u/0/uc?id=1N2n3UrdThrkPl04obY6svSvePAIeTQrX&export=download
   map: 
-  - Map_Ennesan19_1.55
+  - Ennesan19_1_Map.55
   - Map_Ennesan19_2.50
   - Map_Ennesan19_2.50
-  - Map_Ennesan19_1.55
+  - Ennesan19_1_Map.55
   - Map_Ennesan19_2.50
-  - Map_Ennesan19_1.55
+  - Ennesan19_1_Map.55
   stock: Stock_grid.70
-  ventureCards: Venture_Ennesan19.60
-  auction: 
+  ventureCards: Arcade_grid.60
+  auction: Auction_grid.55
   targetMet: Targetmet_Ennesan19.40
-  win: Win_Ennesan19.50
+  win: Ennesan19_Win.50
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak: ME_HOLIDAY_ISDS.60
-  promotionMii: mp6star
-  promotionMario: mp6star
-  promotionDragonQuest: classchange.75
+  takeAbreak: takeAbreak_grid.45
+  promotionMii: Promotion_grid.40
+  promotionMario: Promotion_grid.40
+  promotionDragonQuest: Promotion_grid.40
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
   bankruptcy: Bankrupt_grid.40
+  memoryBlock: Arcade_grid.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2500
@@ -53,6 +54,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Changed some music
   - version: 3
     changed:
       - Changed so that the bridge is temporarily unavailable every time the switch is pressed 3 times.

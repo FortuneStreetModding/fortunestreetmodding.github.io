@@ -171,6 +171,9 @@ ventureCards:
 authors:
   - name: Azurillkirby
 changelog:
+  - version: 4
+    changed:
+      - Fixed an issue where some stores in District K would not be displayed when viewing boards in Board Views.
   - version: 3
     changed:
       - Salary increment changed from 250 to 300

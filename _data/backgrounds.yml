@@ -263,114 +263,184 @@
   name: grid_blue
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_blue.background.zip
-  - https://drive.google.com/u/2/uc?id=1y20s3N5-IvYrlORfSAOU3q2-hHmutR_V&export=download
+  - https://drive.google.com/u/2/uc?id=1VBnw2vTXA1BDSJCD3I3RqpeGwtdEvZQv&export=download
   mapIcon: grid_blue
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_bluegreen
   name: grid_bluegreen
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_bluegreen.background.zip
-  - https://drive.google.com/u/2/uc?id=1iiU2kEIVpeYtH4gesmqQYSllupZghUP7&export=download
+  - https://drive.google.com/u/2/uc?id=1g2B8miIbndj8voZt9bU7ODdpHhBQHddq&export=download
   mapIcon: grid_aomidori
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_lightblue
   name: grid_lightblue
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_lightblue.background.zip
-  - https://drive.google.com/u/2/uc?id=1UHa4gJyh5cxUNV6At97VAYE65_MPwSoL&export=download
+  - https://drive.google.com/u/2/uc?id=12fscbXCV-CBapgDYZyP1OkGZWbK3XwFj&export=download
   mapIcon: grid_mizuiro
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_orange
   name: grid_orange
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_orange.background.zip
-  - https://drive.google.com/u/2/uc?id=1klQROMGwa0mAWTwJJgXF3A1P5eBrGljZ&export=download
+  - https://drive.google.com/u/2/uc?id=1-CK8NjFuinSKsg5WUYCXrw8sRnLYJYlC&export=download
   mapIcon: grid_orange
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_red
   name: grid_red
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_red.background.zip
-  - https://drive.google.com/u/2/uc?id=1UfFTIGWgnDC4HAD9NC5FrXw4L1-qeS1-&export=download
+  - https://drive.google.com/u/2/uc?id=1nE0n0HtHUHkPNUyOcXEv9p6RfUg3vmSZ&export=download
   mapIcon: grid_red
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_violet
   name: grid_violet
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_violet.background.zip
-  - https://drive.google.com/u/2/uc?id=13XSxFhfVaVu4wCbm7rGPr6Us69PrAnc_&export=download
+  - https://drive.google.com/u/2/uc?id=18bd7Zh9Apr04GyZ870-EdJ7UcD3FoZ9B&export=download
   mapIcon: grid_violet
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_blue2
   name: grid_blue2
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_blue2.background.zip
-  - https://drive.google.com/u/2/uc?id=1VRTFXTYJo_acwRKhugKMQL2C_IkQBUsR&export=download
+  - https://drive.google.com/u/2/uc?id=1V4V5eRBb0sA-wwQBKiHNgG1J2wbJuR4R&export=download
   mapIcon: grid_blue2
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: bg102alt
   name: bg102alt
   download:
@@ -462,76 +532,106 @@
   name: grid_red2
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_red2.background.zip
-  - https://drive.google.com/u/0/uc?id=1GhZyLOpLssevejoPwZ21_zweN9zp2td7&export=download
+  - https://drive.google.com/u/0/uc?id=1heRkvZ0ysna8tFcZD7nIxQiVyjdpybYi&export=download
   mapIcon: grid_red
   music:
-    map: Map_gridred2.60
     stock: Stock_grid.70
-    ventureCards: Venture_gridred2.45
-    auction:
-    targetMet: Targetmet_gridred2.40
-    win: Win_gridred2.35
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_gray
   name: grid_gray
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_gray.background.zip
-  - https://drive.google.com/u/0/uc?id=16k-c88i9IJCqClRS1lNDjdPXLnQcg4s2&export=download
+  - https://drive.google.com/u/0/uc?id=1o9Z0SWLaUdUcNzCaFw-Mi1WLT7ufrrMw&export=download
   mapIcon: grid_gray
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_green
   name: grid_green
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_green.background.zip
-  - https://drive.google.com/u/0/uc?id=1Vlq8-0paC8OXMZCYSNRDLyGpH_48xcGh&export=download
+  - https://drive.google.com/u/0/uc?id=1ss0LS5vRQ0yn5qscYQLAjwCYyl4Vyud_&export=download
   mapIcon: grid_green
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_blackwhite
   name: grid_blackwhite
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_blackwhite.background.zip
-  - https://drive.google.com/u/0/uc?id=1dEphlNGjPscrbQxH0YrLHTpBb1nrMGZY&export=download
+  - https://drive.google.com/u/0/uc?id=19jJDEIQ77VIQzYUUdBK4cqx0j_pCDDLW&export=download
   mapIcon: grid_bw
   music:
-    map: Map_gridbw.50
     stock: Stock_grid.70
-    ventureCards: Venture_gridbw.45
-    auction:
-    targetMet: Targetmet_gridbw.50
-    win: Win_gridbw.40
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
 - background: NLA
   name: NLA
   download:
@@ -590,15 +690,51 @@
   name: grid_yellow
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_yellow.background.zip
-  - https://drive.google.com/u/0/uc?id=1PHj6lPD_9rBwUZ8pupZGtNdGYL1uMCFe&export=download
+  - https://drive.google.com/u/0/uc?id=1oDW5sun9L5onBf57ydb9BWeAkCXlZB_r&export=download
   mapIcon: grid_yellow
   music:
     stock: Stock_grid.70
+    auction: Auction_grid.55
     badVentureCard: ME_CURSE_ISDS.60
     domination: ME_MONOPOLY_ISDS.60
     bankruptcy: Bankrupt_grid.40
-    takeAbreak: ME_HOLIDAY_ISDS.60
-    promotionMii: mp6star
-    promotionMario: mp6star
-    promotionDragonQuest: classchange.75
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
     forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: grid_lightblue2
+  name: grid_lightblue2
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_lightblue2.background.zip
+  - https://drive.google.com/u/0/uc?id=1H2tf2Ku5W6LV7RL8HoNI4gLKYRq5B6HQ&export=download
+  mapIcon: grid_lb2
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80

@@ -2,7 +2,7 @@
 name:
   en: Enne-san Board 20
 desc:
-  en: The game is likely to be long. Pressing the switch 8 times strengthens the effect of the event square on the upper right island. From there, pressing the switch 2 more times will make other islands very strong.
+  en: Pressing the switch 8 times strengthens the effect of the event square on the upper right island. From there, pressing the switch 2 more times will make other islands very strong.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -32,9 +32,9 @@ mapIcon: Enne20
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan20.music.zip
-    - https://drive.google.com/u/2/uc?id=1ToV45ktrMnJtsVlv6urLKDmvOPvxdccV&export=download
+    - https://drive.google.com/u/0/uc?id=1xksonm57-8iNyw88K5cYE6BQfi50Z_HB&export=download
   map: 
-  - Map_Ennesan20_1.65
+  - Ennesan20_1_Map.65
   - Map_Ennesan20_2.65
   - Map_Ennesan20_2.65
   - Map_Ennesan20_3.65
@@ -42,29 +42,30 @@ music:
   - Map_Ennesan20_4.45
   - Map_Ennesan20_4.45
   - Map_Ennesan20_5.40
-  - Map_Ennesan19_1.55
-  - Map_Ennesan19_1.55
-  - Map_Ennesan19_1.55
-  - Map_Ennesan19_1.55
-  - Map_Ennesan19_1.55
-  - Map_Ennesan19_1.55
-  - Map_Ennesan19_1.55
-  - Map_Ennesan19_1.55
+  - Map_Ennesan20_6.40
+  - Map_Ennesan20_7.40
+  - Ennesan19_1_Map.55
+  - Ennesan19_1_Map.55
+  - Ennesan19_1_Map.55
+  - Ennesan19_1_Map.55
+  - Ennesan19_1_Map.55
+  - Ennesan19_1_Map.55
   stock: Stock_grid.70
-  ventureCards: Venture_Ennesan19.60
-  auction: 
-  targetMet: Targetmet_Ennesan19.40
-  win: Win_Ennesan5.40
+  ventureCards: Arcade_grid.60
+  auction: Auction_grid.55
+  targetMet: Targetmet_Ennesan17.35
+  win: Ennesan17_Win.45
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak: ME_HOLIDAY_ISDS.60
-  promotionMii: mp6star
-  promotionMario: mp6star
-  promotionDragonQuest: classchange.75
+  takeAbreak: takeAbreak_grid.45
+  promotionMii: Promotion_grid.40
+  promotionMario: Promotion_grid.40
+  promotionDragonQuest: Promotion_grid.40
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
   bankruptcy: Bankrupt_grid.40
+  memoryBlock: Arcade_grid.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -73,6 +74,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Decrease shop prices in Districts K and L from 450 to 300.
+      - Changed some music
   - version: 3
     changed:
       - Changed some terrain

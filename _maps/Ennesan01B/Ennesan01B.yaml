@@ -16,23 +16,24 @@ mapIcon: Enne01B
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan01B.music.zip
-    - https://drive.google.com/u/0/uc?id=1DdnluwVBjUXqcqaAJ48A7x5T1qyISoeR&export=download
-  map: Map_Ennesan1B.45
+    - https://drive.google.com/u/0/uc?id=1W_PTLJXYr2hBAYb5bM58LKe-AnUPQ9B0&export=download
+  map: Ennesan1B_Map.45
   stock: Stock_grid.70
   ventureCards: Venture_Ennesan.45
-  auction:
-  targetMet: Targetmet_Ennesan1B.45
-  win: Win_Ennesan1.45
+  auction: Auction_grid.55
+  targetMet: Targetmet_Ennesan1A.50
+  win: Ennesan1_Win.45
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak:
-  promotionMii: mp6star
-  promotionMario: mp6star
-  promotionDragonQuest: classchange.75
+  takeAbreak: takeAbreak_grid.45
+  promotionMii: Promotion_grid.40
+  promotionMario: Promotion_grid.40
+  promotionDragonQuest: Promotion_grid.40
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
-  bankruptcy: Bankrupt_Ennesan.40
+  bankruptcy: Bankrupt_grid.40
+  memoryBlock: Arcade_grid.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1700
@@ -41,6 +42,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 7
+    changed:
+      - Changed some music
   - version: 6
     changed:
       - Change stock music
