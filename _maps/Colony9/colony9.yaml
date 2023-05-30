@@ -11,7 +11,7 @@ baseSalary: 400
 salaryIncrement: 300
 maxDiceRoll: 8
 frbFile1: colony9
-background: Colony9bg
+background: Colony9
 mapIcon: colony9icon
 music:
   map: CNMap.60
