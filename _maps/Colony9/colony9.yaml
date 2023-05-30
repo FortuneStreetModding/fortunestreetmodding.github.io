@@ -14,7 +14,7 @@ frbFile1: colony9
 background: colony9bg
 mapIcon: colony9icon
 music:
-  download: https://drive.google.com/u/0/uc?id=1CyMb247XLciHIcBI8mkDK-qclKLZSGba&export=download&confirm=1
+  download: https://nikkums.io/cswt/BGM/colony9.music.zip
   map: CNMap.60
   stock: CNStock.70
   ventureCards: CNCard.60
