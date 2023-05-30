@@ -2,12 +2,12 @@
 name:
   en: Enne-san Board 17
 desc:
-  en: The event square for the gathering and 3x buyout is available by stopping and warping to the event square next to it.
+  en: The event squares adjacent to the warp event squares at the four corners can be used by stopping at the warp event square and warping to it.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 3000
+initialCash: 3300
 targetAmount: 30000
-baseSalary: 400
+baseSalary: 450
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: Ennesan17
@@ -36,12 +36,17 @@ music:
   memoryBlock: Arcade_grid.60
 tourMode:
   bankruptcyLimit: 1
-  initialCash: 3000
+  initialCash: 3300
   opponent1: Yoshi
   opponent2: Alena
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Initial cash increased from 3000 to 3300
+      - Base salary increased from 400 to 450
+      - Changed the effect of some event squares
   - version: 3
     changed:
       - Changed some music

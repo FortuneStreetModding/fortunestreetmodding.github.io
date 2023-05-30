@@ -738,3 +738,19 @@
     slurpodromeStart: A_X-event.80
     slurpodromeRace: slurRace_grid.65
     slurpodromeWin: RTB777_SlurWin_grid.80
+- background: Colony9bg
+  name: Colony9
+  download:
+  - https://nikkums.io/cswt/Backgrounds/Colony9.background.zip
+  - https://drive.google.com/u/0/uc?id=1M06AqT8COf0UjAh6GAf2-awYqvq6xgrS&export=download
+  mapIcon: colony9icon
+  music:
+    map: CNMap.60
+    stock: CNStock.70
+    ventureCards: CNCard.60
+    auction: CNAuction.70
+    targetMet: CNTarget.60
+    win: CNWin.60
+    promotionMii: CNPromotion.60
+    promotionMario: CNPromotion.60
+    promotionDragonQuest: CNPromotion.60
