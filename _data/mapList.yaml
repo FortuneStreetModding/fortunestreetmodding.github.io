@@ -304,6 +304,9 @@ backgrounds: backgrounds.yml
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
+    Colony9.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Colony9.zip
     CrestOfFlames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CrestOfFlames.zip
