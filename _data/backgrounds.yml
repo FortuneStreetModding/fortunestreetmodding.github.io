@@ -738,11 +738,10 @@
     slurpodromeStart: A_X-event.80
     slurpodromeRace: slurRace_grid.65
     slurpodromeWin: RTB777_SlurWin_grid.80
-- background: Colony9bg
+- background: Colony9
   name: Colony9
   download:
   - https://nikkums.io/cswt/Backgrounds/Colony9.background.zip
-  - https://drive.google.com/u/0/uc?id=1M06AqT8COf0UjAh6GAf2-awYqvq6xgrS&export=download
   mapIcon: colony9icon
   music:
     map: CNMap.60
