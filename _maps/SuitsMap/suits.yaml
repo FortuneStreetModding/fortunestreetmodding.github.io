@@ -24,6 +24,9 @@ tourMode:
   opponent3: Carver
   clearRank: 1
 changelog:
+  - version: 5
+    changed: 
+      - Moved all squares a bit to the bottom to not clip into the background model
   - version: 4
     changed: 
       - Ported over to new .yaml file format
