@@ -4,6 +4,9 @@ name:
 desc:
   en: A legendary archipelago in the realm of dreams where the spirits of Nikkums and co. reside when they sleep.
 changelog:
+  - version: 4
+    changed:
+      - Remove district names
   - version: 3
     changed:
       - Changed background to bg901fixed
@@ -32,16 +35,6 @@ tourMode:
   opponent2: Slime
   opponent3: Kiryl
   clearRank: 3
-districtNames:
-  en:
-  - Nikkums
-  - Deflaktor
-  - Mystic
-  - ZaSpai
-  - Landmaster
-  - Pr. Peachy
-  - Sophi
-  - Mask1n
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
