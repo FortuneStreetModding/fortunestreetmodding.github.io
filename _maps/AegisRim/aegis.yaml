@@ -65,6 +65,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Fix bottom switch square to have 4 states
   - version: 4
     changed:
       - Adjustments to pathing to nerf small loops
