@@ -10,9 +10,9 @@ targetAmount: 20000
 baseSalary: 275
 salaryIncrement: 225
 maxDiceRoll: 7
-frbFile1: Turtle Fortress
+frbFile1: TurtleFortress
 background: bg005
-mapIcon: Turtle Fort
+mapIcon: TurtleFort
 music:
   download: https://drive.google.com/file/d/1IRqZ7aHl-kS0uJan9X3WgEQmzgMOY83G/view?usp=drive_link
   map: Turtle Fortress.50
