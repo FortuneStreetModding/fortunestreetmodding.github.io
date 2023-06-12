@@ -451,6 +451,9 @@ backgrounds: backgrounds.yml
     Quad.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Quad.zip
+    RainbowRoadWii.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/RainbowRoadWii.zip
     Rayman.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rayman.zip
