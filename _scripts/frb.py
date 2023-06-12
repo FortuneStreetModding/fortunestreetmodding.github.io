@@ -178,16 +178,9 @@ class BoardFile:
     def normalize(self):
         # determine the square count
         self._board_data._square_count = len(self._board_data.squares)
-
-        # fix the length of the list annotation for the squares field
-        self._board_data.__annotations__['squares'].__metadata__ = self._board_data._square_count,
-
-        # fix the length of the annotation for the custom_data field
-        self.__annotations__['custom_data'].__metadata__ = len(self.custom_data),
-
         # fix the headers
         # self
-        self._header.magic_number = MagicNumber.BOARD_DATA.value
+        self._header.magic_number = MagicNumber.BOARD_FILE.value
         self._header.header_size = BoardFile.size() + Square.size()*len(self._board_data.squares)
         # board_info
         self.board_info._header.magic_number = MagicNumber.BOARD_INFO.value
@@ -196,13 +189,16 @@ class BoardFile:
         self._board_data._header.magic_number = MagicNumber.BOARD_DATA.value
         self._board_data._header.header_size = BoardData.size() + Square.size()*len(self._board_data.squares)
 
-def read(file: Path) -> BoardFile:
+def read(file_path: Path) -> BoardFile:
+    # HACK: fix the length of the list annotation for the squares field
+    BoardData.__annotations__['squares'].__metadata__ = 0,
+    # HACK: fix the length of the annotation for the custom_data field
+    BoardFile.__annotations__['custom_data'].__metadata__ = 0,
     reader = Reader[BoardFile](ByteOrder.BIG).allocate()
     board_file: BoardFile = None
-    with open(file, "rb") as fp:
+    with open(file_path, "rb") as fp:
         while (data := fp.read(1)):
             reader.feed(data)
-
             if reader.is_complete():
                 if board_file is None:
                     board_file = reader.build()
@@ -218,11 +214,15 @@ def read(file: Path) -> BoardFile:
                     # and now read the rest of the custom meta data (i.e. advanced auto-path data, auto-path range, etc.)
                     bytes_left = fp.read()
                     board_file.custom_data = bytes_left
-                    break
-    return board_file
+                    return board_file
+    return None
 
-def write(board_file: BoardFile, file: Path):
+def write(board_file: BoardFile, file_path: Path):
     board_file.normalize()
+    # HACK: fix the length of the list annotation for the squares field
+    BoardData.__annotations__['squares'].__metadata__ = board_file._board_data._square_count,
+    # HACK: fix the length of the annotation for the custom_data field
+    BoardFile.__annotations__['custom_data'].__metadata__ = len(board_file.custom_data),
     data = serialize(board_file, ByteOrder.BIG)
-    with open(file, "wb") as fp:
+    with open(file_path, "wb") as fp:
         fp.write(data)
