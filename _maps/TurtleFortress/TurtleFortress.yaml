@@ -16,20 +16,7 @@ mapIcon: TurtleFort
 music:
   download: https://nikkums.io/cswt/BGM/TurtleFortress.Music.zip
   map: TurtleFortress.50
-  stock:
-  ventureCards: 
-  auction: 
   targetMet: TurtleTarget.50
-  win: 
-  guestAppear:
-  guestLeave:
-  badVentureCard:
-  takeAbreak:
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
-  forcedBuyout:
-  domination:
   bankruptcy:
 tourMode:
   bankruptcyLimit: 1
@@ -43,7 +30,6 @@ changelog:
       - Initial Release
 authors:
   - name: Jim007
-    url:
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.

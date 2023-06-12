@@ -488,6 +488,9 @@ backgrounds: backgrounds.yml
     ToadsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsHouse.zip
+    TurtleFortress.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TurtleFortress.zip
     UAHigh.zip:
       urls:
       - https://nikkums.io/cswt/Maps/UAHigh.zip
