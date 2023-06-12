@@ -307,12 +307,6 @@ backgrounds: backgrounds.yml
     Colony9.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony9.zip
-    CrestOfFlames.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/CrestOfFlames.zip
-    Crossroads.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Crossroads.zip
     CustomWorld.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CustomWorld.zip
@@ -385,9 +379,6 @@ backgrounds: backgrounds.yml
     Fillmore.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Fillmore.zip
-    IS2FreewayRemix.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IS2FreewayRemix.zip
     Freighter.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Freighter.zip
@@ -497,9 +488,6 @@ backgrounds: backgrounds.yml
     VennDiagram.zip:
       urls:
       - https://nikkums.io/cswt/Maps/VennDiagram.zip
-    Vent.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Vent.zip
     WariosBattleCanyon.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WariosBattleCanyon.zip
