@@ -14,12 +14,12 @@ frbFile1: TurtleFortress
 background: bg005
 mapIcon: TurtleFort
 music:
-  download: https://drive.google.com/file/d/1IRqZ7aHl-kS0uJan9X3WgEQmzgMOY83G/view?usp=drive_link
-  map: Turtle Fortress.50
+  download: https://nikkums.io/cswt/BGM/TurtleFortress.Music.zip
+  map: TurtleFortress.50
   stock:
   ventureCards: 
   auction: 
-  targetMet: Turtle Target.50
+  targetMet: TurtleTarget.50
   win: 
   guestAppear:
   guestLeave:
