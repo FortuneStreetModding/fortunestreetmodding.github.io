@@ -1,10 +1,10 @@
 ---
 name:
-  en: Rainbow road mkwii
-  fr: Route arc-en-ciel (wii)
+  en: Rainbow Road MKWii
+  fr: Route arc-en-ciel (Wii)
 desc:
   en: A map based on Rainbow Road from Mario Kart Wii
-  fr: Route arc-en-ciel de mario kart wii 
+  fr: Route arc-en-ciel de Mario Kart Wii 
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
