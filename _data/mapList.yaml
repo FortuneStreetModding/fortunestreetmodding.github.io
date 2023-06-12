@@ -442,6 +442,9 @@ backgrounds: backgrounds.yml
     Quad.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Quad.zip
+    RainbowRoadWii.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/RainbowRoadWii.zip
     Rayman.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rayman.zip
@@ -479,6 +482,9 @@ backgrounds: backgrounds.yml
     ToadsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsHouse.zip
+    TurtleFortress.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TurtleFortress.zip
     UAHigh.zip:
       urls:
       - https://nikkums.io/cswt/Maps/UAHigh.zip
