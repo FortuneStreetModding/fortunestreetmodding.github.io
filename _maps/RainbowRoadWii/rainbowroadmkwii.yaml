@@ -3,8 +3,8 @@ name:
   en: Rainbow road mkwii
   fr: Route arc-en-ciel (wii)
 desc:
-  en: a map based on the rainbow road from mkwii
-  fr: route arc-en-ciel de mario kart wii 
+  en: A map based on the rainbow road from mkwii
+  fr: Route arc-en-ciel de mario kart wii 
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
@@ -13,9 +13,6 @@ baseSalary: 500
 salaryIncrement: 300
 maxDiceRoll: 8
 frbFile1: rainbowroadmkwii
-frbFile2: rainbowroadmkwii
-frbFile3: rainbowroadmkwii
-frbFile4: rainbowroadmkwii
 background: bg009alt
 mapIcon: icone
 music:
@@ -48,7 +45,6 @@ changelog:
       - Initial Release
 authors:
   - name: Artamone
-    
 districtNames:
   en:
     - champignon
