@@ -415,6 +415,9 @@ backgrounds: backgrounds.yml
     KingOfTheHill.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KingOfTheHill.zip
+    KoopaTycoonTown.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/KoopaTycoonTown.zip
     Lucky.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Lucky.zip
