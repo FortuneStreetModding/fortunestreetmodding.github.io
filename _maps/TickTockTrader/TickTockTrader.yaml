@@ -2,7 +2,7 @@
 name:
   en: Tick Tock Trader
 desc:
-  en: Tick Tock Trader reveloves around being able to invest while making sure you dont get left behind. Do you bet big on the easy side or take a chance at large gains? What ever the choice dont get left behind! Tick Tock Trader offers a truly one-of-a-kind experience that will keep you on the edge of your seat. So why wait? Invest in Tick Tock Trader today and discover the ultimate test of your strategic prowess!
+  en: Tick Tock Trader reveloves around being able to invest while making sure you dont get left behind. Take a chance or run out of time!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -14,8 +14,8 @@ frbFile1: TickTockTrader
 frbFile2: TickTockTrader2
 frbFile3: TickTockTrader3
 frbFile4: TickTockTrader4
-background: bg001_clean
-mapIcon: clock
+background: bg001
+mapIcon: quad
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
