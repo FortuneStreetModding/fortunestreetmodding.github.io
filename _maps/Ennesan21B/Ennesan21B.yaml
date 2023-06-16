@@ -2,11 +2,11 @@
 name:
   en: Enne-san Board 21-B
 desc:
-  en: It will be a long game. When the switch is pressed, the large rectangle rotates clockwise. Otherwise, it is the same as 21-A.
+  en: It will be a long game. BackStreet warps to Right side switch. Also, it is not possible to proceed from the bank toward the vacant plot. When the switch is pressed, the large rectangle rotates clockwise.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000
-targetAmount: 30000
+targetAmount: 27000
 baseSalary: 400
 salaryIncrement: 200
 maxDiceRoll: 8
@@ -44,12 +44,15 @@ music:
   memoryBlock: Arcade_grid.60
 tourMode:
   bankruptcyLimit: 1
-  initialCash: 3000
   opponent1: Yoshi
   opponent2: Alena
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Decrease target amount from 30000 to 27000
+      - Change description
   - version: 1
     added: 
       - Initial Release
