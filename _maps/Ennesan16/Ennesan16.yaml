@@ -16,6 +16,7 @@ frbFiles:
 - Ennesan16_3
 - Ennesan16_4
 - Ennesan16_5
+- Ennesan16_6
 background: grid_violet
 mapIcon: Enne16
 music:
@@ -49,7 +50,6 @@ music:
   slurpodromeWin: RTB777_SlurWin_grid.80
 tourMode:
   bankruptcyLimit: 1
-  initialCash: 3600
   opponent1: Yoshi
   opponent2: Alena
   opponent3: Bianca
@@ -62,6 +62,9 @@ mutators:
     denominator: 4
     affectShopRank: true
 changelog:
+  - version: 3
+    added:
+      - Board state 6
   - version: 2
     added:
       - Arcade Music
@@ -265,6 +268,7 @@ shopNames:
     46: Initial Value 460
     47: Initial Value 470
     50: Initial Value 500
+    60: Initial Value 600
     70: Initial Value 700
     97: Initial Value 990
     98: Vacant plot
