@@ -436,9 +436,6 @@ backgrounds: backgrounds.yml
     Playground.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Playground.zip
-    Pokeball.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Pokeball.zip
     Quad.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Quad.zip
