@@ -13,7 +13,7 @@ baseSalary: 500
 salaryIncrement: 300
 maxDiceRoll: 8
 frbFile1: rainbowroadmkwii
-background: bg009alt
+background: RainbowRoadWii
 mapIcon: icone
 music:
   download: 
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+    added:
+      - 3D Background added
   - version: 1
     added: 
       - Initial Release

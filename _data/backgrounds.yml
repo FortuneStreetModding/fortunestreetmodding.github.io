@@ -753,3 +753,47 @@
     promotionMii: CNPromotion.60
     promotionMario: CNPromotion.60
     promotionDragonQuest: CNPromotion.60
+- background: RainbowRoadWii
+  name: RainbowRoadWii
+  download:
+  - https://nikkums.io/cswt/Backgrounds/RainbowRoadWii.background.zip
+  mapIcon: icone
+  music:
+    map: mk7moon.40
+    stock: wifimedley
+    ventureCards: chainchomp
+    auction: mk7coconutmall
+    targetMet: mkdbrainbow
+    win: mk71st
+    guestAppear: welcomemk64
+    guestLeave: mkwii2eme
+    badVentureCard: mk64lost
+    takeAbreak: mkdsfail
+    promotionMii: mkdstop5
+    promotionMario: mkdstop5
+    promotionDragonQuest: mkdstop5
+    forcedBuyout: mkwiibossintro
+    domination: mkdsbosssucces
+    bankruptcy: mk64lost
+- background: LuigisMansion
+  name: LuigisMansion
+  download:
+  - https://nikkums.io/cswt/Backgrounds/LuigisMansion.background.zip
+  mapIcon: mansionicone
+  music:
+    map: luigismansionssbwiiuremixmap
+    stock: professorstock
+    ventureCards: shyguyventure.100
+    auction: trainingauction
+    targetMet: doubledashluigitargetmet
+    win: staffrollwin
+    guestAppear: nintendoguest
+    guestLeave: areadoorunlockguestleave
+    badventureCard: goodnightbadcartbankrupcy
+    takeAbreak: chaunceytakeabreak
+    promotionMii: gotkeypromotion
+    promotionMario: gotkeypromotion
+    promotionDragonQuest: gotkeypromotion
+    forcedBuyout: warpboobyout
+    domination: roomcleareddomination
+    bankruptcy: goodnightbadcartbankrupcy
