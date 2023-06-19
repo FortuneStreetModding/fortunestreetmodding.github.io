@@ -14,7 +14,8 @@ frbFile1: TurtleFortress
 background: bg005
 mapIcon: TurtleFort
 music:
-  download: https://drive.google.com/file/d/1IRqZ7aHl-kS0uJan9X3WgEQmzgMOY83G/view?usp=drive_link
+  download: 
+    - https://nikkums.io/cswt/BGM/TurtleFortress.music.zip
   map: TurtleFortress.50
   stock:
   ventureCards: 
