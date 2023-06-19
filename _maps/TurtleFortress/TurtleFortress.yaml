@@ -14,7 +14,9 @@ frbFile1: TurtleFortress
 background: bg005
 mapIcon: TurtleFort
 music:
-  download: https://drive.google.com/file/d/12GzA4aDb0cscyoim6qhakHqttLgrACXs/view?usp=drive_link
+  download: 
+    - https://nikkums.io/cswt/BGM/TurtleFortress.music.zip
+    - https://drive.google.com/u/0/uc?id=12GzA4aDb0cscyoim6qhakHqttLgrACXs&export=download
   map: TurtleFortress.50
   stock:
   ventureCards: 
@@ -39,13 +41,23 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 3
-    added: 
+    changed: 
       - added 2 more ways to the island since it was underused
-      - raised starting cash and target goal
-      - replaced arcade on island with event square, and moved arcade to a more trafficed location. 
+      - Initial cash increased from 2000 to 2500
+      - Increased target amount from 20,000 to 25,000
+      - Salary increments increased from 225 to 230
+      - replaced arcade on island with event square, and moved arcade to a more trafficed location.
+      - Partially changed description
+      - Change venture card number 15 to 92
+  - version: 2
+    changed:
+      - Slight change in board shape
+      - Change the location of a vacant plot
+  - version: 1
+    added:
+      - Initial Release
 authors:
   - name: Jim007
-    url:
 districtNames:
   en:
     - Gate
