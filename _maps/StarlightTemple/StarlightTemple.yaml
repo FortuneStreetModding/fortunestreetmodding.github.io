@@ -13,11 +13,7 @@ maxDiceRoll: 8
 frbFile1: ST
 background: bg105
 mapIcon: starlighticon
-music:
-  download:
-    - https://nikkums.io/cswt/BGM/StarlightTemple.music.zip
-    - https://drive.google.com/u/2/uc?id=1aBP70J3nFoO_pbaKb_XrP24aLNMj63Co&export=download
-  map: starlight
+bgmId: "BGM_MAP_SLABACCA"
 tourMode:
   bankruptcyLimit: 1
   opponent1: Toad
@@ -25,6 +21,9 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 2
+    removed:
+      - Custom music (due to bad loop)
   - version: 1
     added: 
       - Initial Release
