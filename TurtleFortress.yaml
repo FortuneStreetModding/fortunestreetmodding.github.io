@@ -2,7 +2,7 @@
 name:
   en: Turtle Fortress
 desc:
-  en: Turtle Fortress, a castle built so tough its walls have never been breached, until now! Who will be the first to storm the castle gates, capture the territory, and take home the loot.  
+  en: A castle built so tough its walls have never been breached, until now! Who will be the first to storm the castle gates, capture the territory, and take home the loot.  
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -41,9 +41,11 @@ changelog:
   - version: 2
     added: 
       - 2nd release
+  - version: 1
+    added:
+      - Initial release
 authors:
   - name: Jim007
-    url:
 districtNames:
   en:
     - Gate
