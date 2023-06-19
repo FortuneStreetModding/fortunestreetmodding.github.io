@@ -753,10 +753,10 @@
     promotionMii: CNPromotion.60
     promotionMario: CNPromotion.60
     promotionDragonQuest: CNPromotion.60
-- background: RainbowRoadWii
-  name: RainbowRoadWii
+- background: rainbowroadbg
+  name: rainbowroadbg
   download:
-  - https://nikkums.io/cswt/Backgrounds/RainbowRoadWii.background.zip
+  - https://nikkums.io/cswt/Backgrounds/rainbowroadbg.background.zip
   mapIcon: icone
   music:
     map: mk7moon.40

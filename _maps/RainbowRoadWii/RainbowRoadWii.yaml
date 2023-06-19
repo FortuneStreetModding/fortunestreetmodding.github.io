@@ -13,11 +13,9 @@ baseSalary: 500
 salaryIncrement: 300
 maxDiceRoll: 8
 frbFile1: rainbowroadmkwii
-background: RainbowRoadWii
+background: rainbowroadbg
 mapIcon: icone
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/RainbowRoadWii.music.zip
   map: mk7moon.40
   stock: wifimedley
   ventureCards: chainchomp
