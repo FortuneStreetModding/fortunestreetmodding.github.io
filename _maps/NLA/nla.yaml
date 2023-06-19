@@ -89,6 +89,9 @@ shopNames:
     51: Integrated Production Plant
     54: Nopon Bazaar
 changelog:
+  - version: 7
+    changed:
+      - Shop prices reduced in S. Admin, S Resid, N Resid and Manon Ship
   - version: 6
     changed:
       - Changed map music to a 25 minute medley
