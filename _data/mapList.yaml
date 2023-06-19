@@ -473,9 +473,6 @@ backgrounds: backgrounds.yml
     SuitsMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SuitsMap.zip
-    SuperSize.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SuperSize.zip
     TickTockTrader.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TickTockTrader.zip
