@@ -445,9 +445,6 @@ backgrounds: backgrounds.yml
     RainbowRoadWii.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RainbowRoadWii.zip
-    Rayman.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Rayman.zip
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
