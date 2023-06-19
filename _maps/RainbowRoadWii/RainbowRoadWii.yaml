@@ -16,7 +16,8 @@ frbFile1: rainbowroadmkwii
 background: bg009alt
 mapIcon: icone
 music:
-  download: https://nikkums.io/cswt/BGM/RainbowRoadWii.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/RainbowRoadWii.music.zip
   map: mk7moon.40
   stock: wifimedley
   ventureCards: chainchomp

@@ -14,23 +14,12 @@ frbFile1: koopa_tycoon
 background: bg901fixed
 mapIcon: koopa_tycoon
 music:
-  download: https://nikkums.io/cswt/BGM/KoopaTycoonTown.music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/KoopaTycoonTown.music.zip
   map: koopa_tycoon.50
-  stock: 
-  ventureCards: 
-  auction: 
-  targetMet: 
-  win: 
-  guestAppear:
-  guestLeave:
-  badVentureCard:
-  takeAbreak:
   promotionMii: tycoon_promotion.50
   promotionMario: tycoon_promotion.50
   promotionDragonQuest: tycoon_promotion.50
-  forcedBuyout:
-  domination:
-  bankruptcy:
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi

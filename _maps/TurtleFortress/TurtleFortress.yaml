@@ -14,10 +14,10 @@ frbFile1: TurtleFortress
 background: bg005
 mapIcon: TurtleFort
 music:
-  download: https://nikkums.io/cswt/BGM/TurtleFortress.Music.zip
+  download: 
+    - https://nikkums.io/cswt/BGM/TurtleFortress.music.zip
   map: TurtleFortress.50
   targetMet: TurtleTarget.50
-  bankruptcy:
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
