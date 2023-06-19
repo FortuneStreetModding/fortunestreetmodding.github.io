@@ -46,6 +46,12 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 6
+    added:
+      - One more square in Milan district, moved Vacant Plot there
+    changed:
+      - Original Milan Vacant Plot changed to Venture Square
+      - Lower event square changed to event 72
   - version: 5
     added:
       - Arcade music
