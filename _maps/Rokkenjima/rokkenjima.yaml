@@ -14,7 +14,7 @@ frbFile1: rokkenjima0
 frbFile2: rokkenjima1
 frbFile3: rokkenjima2
 frbFile4: rokkenjima3
-background: rokkenjima
+background: umineko
 mapIcon: rokkenjima
 districtNames:
   en:
@@ -31,22 +31,31 @@ districtNames:
   - Mansion 4
   - Kinzo Study
 music:
-  map: endlessnine.40
+  map: UminekoMedley.40
   stock: deadangle.50
   ventureCards: blackliliana.50
   auction: dreadofthegrave.50
-  targetMet: Worldenddominator.40
-  win: tsubasa.50
-  guestAppear:
+  targetMet: lastendconductor.40
+  win: HappinessOfMarionette
+  guestAppear: 
   guestLeave:
-  badVentureCard:
+  badVentureCard: ahaha.50
   takeAbreak: ahaha.50
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
+  promotionMii: A_UminekoPromotion
+  promotionMario: A_UminekoPromotion
+  promotionDragonQuest: A_UminekoPromotion
   forcedBuyout: clash.50
   domination: horror.50
   bankruptcy: candles.50
+  memoryBlock: A_StuffedDoll
+  dartOfGold: A_MonochromeClock
+  roundTheBlocks: A_MonochromeClock
+  roundTheBlocksWin: A_UminekoPromotion
+  roundTheBlocks777: A_Happiness
+  slurpodromeRace: A_TsubasaPinomix
+  slurpodromeSelect: A_MonochromeClock
+  slurpodromeStart: A_UminekoRaceStart
+  slurpodromeWin: A_UminekoPromotion
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -55,6 +64,10 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    added:
+      - Custom 3D background
+      - New music (including 25 minute medley)
   - version: 2
     changed:
       - Inital cash changed from 3000 to 3500

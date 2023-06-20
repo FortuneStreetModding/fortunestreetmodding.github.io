@@ -211,23 +211,35 @@
   music:
     map: winternights.45
     targetMet: primalone.85
-- background: rokkenjima
-  name: Rokkenjima
+- background: umineko
+  name: umineko
   download: 
-  - https://nikkums.io/cswt/Backgrounds/rokkenjima.background.zip
-  - https://drive.google.com/u/2/uc?id=1XKDx4_rpPz2NAMUkpqlBns5J27UCcdSy&export=download&confirm=1
+  - https://nikkums.io/cswt/Backgrounds/umineko.background.zip
   mapIcon: rokkenjima
   music:
-      map: endlessnine.40
-      stock: deadangle.50
-      ventureCards: blackliliana.50
-      auction: dreadofthegrave.50
-      targetMet: Worldenddominator.40
-      win: tsubasa.50
-      takeAbreak: ahaha.50
-      forcedBuyout: clash.50
-      domination: horror.50
-      bankruptcy: candles.50
+    map: UminekoMedley.40
+    stock: deadangle.50
+    ventureCards: blackliliana.50
+    auction: dreadofthegrave.50
+    targetMet: lastendconductor.40
+    win: HappinessOfMarionette
+    badVentureCard: ahaha.50
+    takeAbreak: ahaha.50
+    promotionMii: A_UminekoPromotion
+    promotionMario: A_UminekoPromotion
+    promotionDragonQuest: A_UminekoPromotion
+    forcedBuyout: clash.50
+    domination: horror.50
+    bankruptcy: candles.50
+    memoryBlock: A_StuffedDoll
+    dartOfGold: A_MonochromeClock
+    roundTheBlocks: A_MonochromeClock
+    roundTheBlocksWin: A_UminekoPromotion
+    roundTheBlocks777: A_Happiness
+    slurpodromeRace: A_TsubasaPinomix
+    slurpodromeSelect: A_MonochromeClock
+    slurpodromeStart: A_UminekoRaceStart
+    slurpodromeWin: A_UminekoPromotion
 - background: disboard
   name: Disboard
   download: 
