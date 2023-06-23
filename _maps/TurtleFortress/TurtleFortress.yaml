@@ -2,11 +2,11 @@
 name:
   en: Turtle Fortress
 desc:
-  en: A castle built so tough its walls have never been breached, until now! Who will be the first to storm the castle gates, capture the territory, and take home the loot?  
+  en: Turtle Fortress, a castle built so tough its walls have never been breached, until now! Who will be the first to storm the castle gates, capture the territory, and take home the loot?  
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
-targetAmount: 25000
+targetAmount: 22000
 baseSalary: 275
 salaryIncrement: 230
 maxDiceRoll: 7
@@ -40,6 +40,12 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 4
+    changed: 
+      - Lowered Target amount from 25k to 22k
+      - Swapped out the event 12 square with a second stockbroker tile
+      - removed vacant plots in the south wall and added one to the north wall district 
+      - Slight change in board shape back to original to make it easier to play on different types of controllers
   - version: 3
     changed: 
       - added 2 more ways to the island since it was underused
