@@ -11,6 +11,7 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 6
 frbFile1: ToadsTreasureHunt
+frbFile2: ToadsTreasureHuntS
 background: bg003fixed
 mapIcon: ToadsTreasure
 music:
@@ -169,7 +170,7 @@ ventureCards:
   - 0  #  92 Cameo adventure! Lakitu appears!
   - 0  #  93 Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 0  #  94 Freebie! Take a Diamond!
-  - 1  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
+  - 0  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
   - 0  #  96 Misadventure! All players scramble to another player's location!
   - 0  #  97 Stock rise venture! Increase stock value by 20% in a district of your choice.
   - 0  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
@@ -179,7 +180,7 @@ ventureCards:
   - 0  # 102 Moneymaking venture! Roll the die and get 33 times the number shown in gold coins from all other players!
   - 0  # 103 Misadventure! The values of all your shops drop by 25%!
   - 0  # 104 Misadventure! You give everyone 80G each!
-  - 0  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
+  - 1  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
   - 0  # 106 Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)
   - 0  # 107 Revaluation venture! You can expand any one of your shops by 30%.
   - 0  # 108 Cashback venture! You can sell a shop back to the bank for four times its shop value.
