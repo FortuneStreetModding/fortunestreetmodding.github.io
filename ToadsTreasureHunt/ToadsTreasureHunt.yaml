@@ -14,7 +14,9 @@ frbFile1: ToadsTreasureHunt
 background: bg003fixed
 mapIcon: ToadsTreasure
 music:
-  download: https://drive.google.com/file/d/1D0uwiJ9xkVBQc9PAq0YkT9L9yX321i1C/view?usp=drive_link
+  download: 
+    - https://nikkums.io/cswt/BGM/ToadsTreasure.music.zip
+    - https://drive.google.com/u/0/uc?id=1Q9grjV_L-o7tmCqEhm3-ykPtgC6vLOgY&export=download
   map: ToadsTreasure.50
   stock: 
   ventureCards: 
@@ -38,20 +40,21 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
-version: 5
-    added:
+  - version: 5
+    changed:
       - Adjusted a square on the roof line a bit
-version: 4
-    added:
-      - Adjusted tile to make path lower from 65 to 60 to lesson stutter in balloon tesst
-      -swapped event tile 28 and 92 locations 
+  - version: 4
+    changed:
+      - Adjusted tile to make path lower from 65 to 60 to lesson stutter in balloon test
+      - Swapped event tile 28 and 92 locations 
   - version: 3
-    added:
+    changed:
       - Adjusted tile spacing slightly
   - version: 2
-    added: 
-      - Lowered the path count from 70 to 65 to lesson stuttering
+    added:
       - Added 4 more squares to the board 2 events and two properties
+    changed: 
+      - Lowered the path count from 70 to 65 to lesson stuttering
   - version: 1
     added: 
       - Initial Release
