@@ -38,6 +38,10 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+    added: 
+      - Lowered the path count from 70 to 65 to lesson stuttering
+      - Added 4 more squares to the board 2 events and two properties
   - version: 1
     added: 
       - Initial Release
