@@ -38,6 +38,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 3
+    added:
+      - Adjusted tile spacing slightly
   - version: 2
     added: 
       - Lowered the path count from 70 to 65 to lesson stuttering
