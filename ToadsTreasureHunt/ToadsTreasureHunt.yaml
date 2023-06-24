@@ -38,6 +38,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+version: 5
+    added:
+      - Adjusted a square on the roof line a bit
 version: 4
     added:
       - Adjusted tile to make path lower from 65 to 60 to lesson stutter in balloon tesst
