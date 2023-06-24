@@ -38,6 +38,10 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+version: 4
+    added:
+      - Adjusted tile to make path lower from 65 to 60 to lesson stutter in balloon tesst
+      -swapped event tile 28 and 92 locations 
   - version: 3
     added:
       - Adjusted tile spacing slightly
