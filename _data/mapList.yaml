@@ -464,9 +464,6 @@ backgrounds: backgrounds.yml
     SuitsMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SuitsMap.zip
-    TickTockTrader.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/TickTockTrader.zip
     ToadsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsHouse.zip
