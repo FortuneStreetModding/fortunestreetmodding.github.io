@@ -20,8 +20,10 @@ frbFiles:
 - FortuneGateFG7
 background: facingWorlds
 mapIcon: FortuneGate
-music:
-  download: https://drive.google.com/file/d/1tdsS_aU5A7vuHzPmHs4eTZwQjT0uGnv9/view?usp=sharing
+mmusic:
+  download: https://drive.google.com/file/d/1tdsS_aU5A7vuHzPmHs4eTZwQjT0uGnv9/view?usp=drive_link
+  map: FortuneGate.65
+  TargetMet: FortuneGateTarget.70
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
