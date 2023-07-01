@@ -446,10 +446,6 @@ backgrounds: backgrounds.yml
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
-    ShellIsleRedux.zip:
-      practiceBoard: true
-      urls:
-      - https://nikkums.io/cswt/Maps/ShellIsleRedux.zip
     Shibuya.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Shibuya.zip
