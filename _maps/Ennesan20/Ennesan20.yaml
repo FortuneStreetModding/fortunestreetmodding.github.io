@@ -2,7 +2,7 @@
 name:
   en: Enne-san Board 20
 desc:
-  en: Pressing the switch 8 times strengthens the effect of the event square on the upper right island. From there, pressing the switch 2 more times will make other islands very strong.
+  en: It will be a long game. Pressing the switch 8 times strengthens the effect of the event square on the upper right island. From there, pressing the switch 2 more times will make other islands very strong.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -25,7 +25,7 @@ frbFiles:
 - Ennesan20_11
 - Ennesan20_11
 - Ennesan20_11
-- Ennesan20_11
+- Ennesan20_15
 - Ennesan20_11
 background: grid_gray
 mapIcon: Enne20
@@ -74,6 +74,12 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    Added: 
+      - Added to description that the game will be longer
+    changed:
+      - Changed to return to state 8 if the switch is pressed when in state 15 (switch is pressed 4 times when in state 11).
+      - No matter how many times the switch is pressed, it no longer returns to the initial state.
   - version: 4
     changed:
       - Decrease shop prices in Districts K and L from 450 to 300.
