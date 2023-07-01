@@ -2,7 +2,7 @@
 name:
   en: Fortune Gate FG1
 desc:
-  en: Join up with elite team "FG1" as they embark a mission through the Fortune Gate. No vacant plots included, but feel free to add a few if desired.
+  en: Join up with elite team FG1 as they embark a mission through the Fortune Gate. No vacant plots included, but feel free to add a few if desired.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500
@@ -20,8 +20,10 @@ frbFiles:
 - FortuneGateFG7
 background: facingWorlds
 mapIcon: FortuneGate
-mmusic:
-  download: https://drive.google.com/file/d/1tdsS_aU5A7vuHzPmHs4eTZwQjT0uGnv9/view?usp=drive_link
+music:
+  download: 
+    - https://nikkums.io/cswt/BGM/FortuneGateFG1.music.zip
+    - https://drive.google.com/u/0/uc?id=1ymrEPQ50mw4yOIQYiCgo4Z8VD3lH_x5j&export=download
   map: FortuneGate.65
   TargetMet: FortuneGateTarget.70
 tourMode:
