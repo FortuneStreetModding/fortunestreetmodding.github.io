@@ -42,7 +42,7 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 5
-    Added: 
+    added: 
       - Added to description that the game will be longer
     changed:
       - Changed the effect of some event squares

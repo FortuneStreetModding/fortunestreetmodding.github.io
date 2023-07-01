@@ -75,7 +75,7 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 5
-    Added: 
+    added: 
       - Added to description that the game will be longer
     changed:
       - Changed to return to state 8 if the switch is pressed when in state 15 (switch is pressed 4 times when in state 11).
