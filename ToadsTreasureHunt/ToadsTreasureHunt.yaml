@@ -12,6 +12,8 @@ salaryIncrement: 200
 maxDiceRoll: 6
 frbFile1: ToadsTreasureHunt
 frbFile2: ToadsTreasureHuntS
+frbFile3: ToadsTreasureHuntS2
+frbFile4: ToadsTreasureHunts3
 background: bg003fixed
 mapIcon: ToadsTreasure
 music:
@@ -41,21 +43,6 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
-  - version: 5
-    changed:
-      - Adjusted a square on the roof line a bit
-  - version: 4
-    changed:
-      - Adjusted tile to make path lower from 65 to 60 to lesson stutter in balloon test
-      - Swapped event tile 28 and 92 locations 
-  - version: 3
-    changed:
-      - Adjusted tile spacing slightly
-  - version: 2
-    added:
-      - Added 4 more squares to the board 2 events and two properties
-    changed: 
-      - Lowered the path count from 70 to 65 to lesson stuttering
   - version: 1
     added: 
       - Initial Release
