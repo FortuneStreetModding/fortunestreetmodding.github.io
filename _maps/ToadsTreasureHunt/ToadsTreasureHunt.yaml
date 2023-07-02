@@ -1,27 +1,30 @@
 ---
 name:
-  en: Turtle Fortress
+  en: Toad's Treasure Hunt
 desc:
-  en: Turtle Fortress, a castle built so tough its walls have never been breached, until now! Who will be the first to storm the castle gates, capture the territory, and take home the loot?  
+  en: Toad's on the hunt, scouring the Mushroom Kingdom in search of treasure. 
 ruleSet: Standard
 theme: Mario
-initialCash: 2500
-targetAmount: 22000
-baseSalary: 275
-salaryIncrement: 230
-maxDiceRoll: 7
-frbFile1: TurtleFortress
-background: bg005
-mapIcon: TurtleFort
+initialCash: 2200
+targetAmount: 20000
+baseSalary: 300
+salaryIncrement: 200
+maxDiceRoll: 6
+frbFile1: ToadsTreasureHunt
+frbFile2: ToadsTreasureHuntS
+frbFile3: ToadsTreasureHuntS2
+frbFile4: ToadsTreasureHunts3
+background: bg003fixed
+mapIcon: ToadsTreasure
 music:
   download: 
-    - https://nikkums.io/cswt/BGM/TurtleFortress.music.zip
-    - https://drive.google.com/u/0/uc?id=12GzA4aDb0cscyoim6qhakHqttLgrACXs&export=download
-  map: TurtleFortress.50
-  stock:
+    - https://nikkums.io/cswt/BGM/ToadsTreasure.music.zip
+    - https://drive.google.com/u/0/uc?id=1Q9grjV_L-o7tmCqEhm3-ykPtgC6vLOgY&export=download
+  map: ToadsTreasure.50
+  stock: 
   ventureCards: 
-  auction: 
-  targetMet: TurtleTarget.50
+  auction:
+  targetMet: ToadsTarget.50 
   win: 
   guestAppear:
   guestLeave:
@@ -40,44 +43,25 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
-  - version: 4
-    changed: 
-      - Lowered Target amount from 25k to 22k
-      - Swapped out the event 12 square with a second stockbroker tile
-      - removed vacant plots in the south wall and added one to the north wall district 
-      - Slight change in board shape back to original to make it easier to play on different types of controllers
-  - version: 3
-    changed: 
-      - added 2 more ways to the island since it was underused
-      - Initial cash increased from 2000 to 2500
-      - Increased target amount from 20,000 to 25,000
-      - Salary increments increased from 225 to 230
-      - replaced arcade on island with event square, and moved arcade to a more trafficed location.
-      - Partially changed description
-      - Change venture card number 15 to 92
-  - version: 2
-    changed:
-      - Slight change in board shape
-      - Change the location of a vacant plot
   - version: 1
-    added:
+    added: 
       - Initial Release
 authors:
   - name: Jim007
 districtNames:
   en:
-    - Gate
-    - Bridge
-    - South Wall
-    - SW Tower
-    - SE Tower
-    - West Wall
-    - East Wall
-    - NW Tower
-    - NE Tower
-    - North Wall
-    - West Court
-    - East Court
+    - District A
+    - District B
+    - District C
+    - District D
+    - District E
+    - District F
+    - District G
+    - District H
+    - District I
+    - District J
+    - District K
+    - District L
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -93,7 +77,7 @@ ventureCards:
   - 1  #  12 Capital venture! You can invest capital in any of your shops.
   - 1  #  13 Misadventure! The values of all your shops drop by 13%!
   - 1  #  14 Misadventure! You give everyone 30G each!
-  - 0  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
+  - 1  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
   - 0  #  16 Random venture! Shops expand in three districts picked at random!
   - 1  #  17 Special bonus! You receive half of your salary!
   - 0  #  18 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value.
@@ -104,7 +88,7 @@ ventureCards:
   - 0  #  23 Revaluation venture! You can expand any one of your shops by 50%.
   - 0  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
   - 1  #  25 Misadventure! Your shop prices halve until your next turn!
-  - 0  #  26 Lucky venture! You get a big commission until your next turn!
+  - 1  #  26 Lucky venture! You get a big commission until your next turn!
   - 1  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
   - 1  #  28 Cameo adventure! A goodybag appears!
   - 0  #  29 Freebie! Take a Heart!
@@ -164,16 +148,16 @@ ventureCards:
   - 0  #  83 Dicey adventure! Roll 1/3/5 and warp to a random location. Roll 2/4/6 and everyone else warps.
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
-  - 0  #  86 Moneymaking venture! Take 100G from all other players!
+  - 1  #  86 Moneymaking venture! Take 100G from all other players!
   - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 1  #  88 Misadventure! All other players swap places!
   - 0  #  89 Freebie! All players take a Suit Yourself card!
   - 0  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
   - 1  #  91 Cameo adventure! A healslime appears!
-  - 1  #  92 Cameo adventure! Lakitu appears!
+  - 0  #  92 Cameo adventure! Lakitu appears!
   - 0  #  93 Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 0  #  94 Freebie! Take a Diamond!
-  - 1  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
+  - 0  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
   - 0  #  96 Misadventure! All players scramble to another player's location!
   - 0  #  97 Stock rise venture! Increase stock value by 20% in a district of your choice.
   - 0  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
@@ -183,7 +167,7 @@ ventureCards:
   - 0  # 102 Moneymaking venture! Roll the die and get 33 times the number shown in gold coins from all other players!
   - 0  # 103 Misadventure! The values of all your shops drop by 25%!
   - 0  # 104 Misadventure! You give everyone 80G each!
-  - 0  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
+  - 1  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
   - 0  # 106 Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)
   - 0  # 107 Revaluation venture! You can expand any one of your shops by 30%.
   - 0  # 108 Cashback venture! You can sell a shop back to the bank for four times its shop value.
@@ -202,8 +186,8 @@ ventureCards:
   - 0  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
   - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
   - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
-  - 1  # 124 Suit venture! Buy a Suit Yourself card for 50G.
-  - 1  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
+  - 0  # 124 Suit venture! Buy a Suit Yourself card for 50G.
+  - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
