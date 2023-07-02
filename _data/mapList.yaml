@@ -376,6 +376,9 @@ backgrounds: backgrounds.yml
     Fillmore.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Fillmore.zip
+    FortuneGateFG1.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
     Freighter.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Freighter.zip
@@ -473,6 +476,9 @@ backgrounds: backgrounds.yml
     ToadsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsHouse.zip
+    ToadsTreasureHunt.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/ToadsTreasureHunt.zip
     TurtleFortress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TurtleFortress.zip
