@@ -13,12 +13,12 @@ maxDiceRoll: 6
 frbFile1: ToadsTreasureHunt
 frbFile2: ToadsTreasureHuntS
 frbFile3: ToadsTreasureHuntS2
-frbFile4: ToadsTreasureHunts3
+frbFile4: ToadsTreasureHuntS3
 background: bg003fixed
 mapIcon: ToadsTreasure
 music:
   download: 
-    - https://nikkums.io/cswt/BGM/ToadsTreasure.music.zip
+    - https://nikkums.io/cswt/BGM/ToadsTreasureHunt.music.zip
     - https://drive.google.com/u/0/uc?id=1Q9grjV_L-o7tmCqEhm3-ykPtgC6vLOgY&export=download
   map: ToadsTreasure.50
   stock: 
