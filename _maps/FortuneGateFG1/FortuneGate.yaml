@@ -25,7 +25,7 @@ music:
     - https://nikkums.io/cswt/BGM/FortuneGateFG1.music.zip
     - https://drive.google.com/u/0/uc?id=1ymrEPQ50mw4yOIQYiCgo4Z8VD3lH_x5j&export=download
   map: FortuneGate.65
-  TargetMet: FortuneGateTarget.70
+  targetMet: FortuneGateTarget.70
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
