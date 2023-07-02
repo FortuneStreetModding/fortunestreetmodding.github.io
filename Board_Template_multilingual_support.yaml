@@ -1,46 +1,214 @@
 ---
 name:
-  en: Gladius Towers
+  en: BOARD NAME
+  de: REMOVE UNUSED LANGUAGES (en CAN NOT BE DELETED)
+  fr: 
+  it: 
+  jp: 
+  es: 
 desc:
-  en: from Rogue Galaxy. Two twin acient towers located in Planet Zerard. 
-ruleSet: Standard 
-theme: DragonQuest
-initialCash: 2000
-targetAmount: 20000
-baseSalary: 350
-salaryIncrement: 350
-maxDiceRoll: 7
-frbFile1: GlaTow
-background: bg102
-mapIcon: gladiusicon
+  en: YOUR DESCRIPTION HERE
+  de: REMOVE UNUSED LANGUAGES (en CAN NOT BE DELETED)
+  fr: 
+  it: 
+  jp:
+  es: 
+ruleSet: Standard OR Easy
+theme: Mario OR DragonQuest
+initialCash: XXXX
+targetAmount: XXXXX
+baseSalary: XXX
+salaryIncrement: XXX
+maxDiceRoll: X
+frbFiles:
+- FRB FILENAME FOR STATE 1
+- FRB FILENAME FOR STATE 2, CAN REMOVE UNUSED STATES
+- FRB FILENAME FOR STATE 3, CAN REMOVE UNUSED STATES
+- FRB FILENAME FOR STATE 4, CAN REMOVE UNUSED STATES
+- FRB FILENAME FOR STATE 5, CAN REMOVE UNUSED STATES
+- FRB FILENAME FOR STATE 6, CAN REMOVE UNUSED STATES
+background: BACKGROUND NAME
+mapIcon: MAP ICON FILENAME
+music:
+  download:
+  - https://nikkums.io/cswt/BGM/XXXXX.music.zip REMOVE THIS DESCRIPTION AND XXXXXX AND MAKE XXXXXX PART THE NAME OF THE ZIP FILE THAT CONTAINS THE FRB AND YAML
+  - GOOGLE DRIVE DIRECT LINK TO ZIP CONTAINING MUSIC, CAN DELETE THIS TEXT WHILE TESTING
+  map: 
+  - BRSTM.VOLUME FOR STATE 1
+  - BRSTM.VOLUME FOR STATE 2, CAN REMOVE UNUSED STATES
+  - BRSTM.VOLUME FOR STATE 3, CAN REMOVE UNUSED STATES
+  - BRSTM.VOLUME FOR STATE 4, CAN REMOVE UNUSED STATES
+  - BRSTM.VOLUME FOR STATE 5, CAN REMOVE UNUSED STATES
+  - BRSTM.VOLUME FOR STATE 6, CAN REMOVE UNUSED STATES
+  stock: CAN DELETE THIS ENTIRE SECTION IF UNNEEDED
+  ventureCards: 
+  auction: 
+  targetMet: 
+  win: 
+  guestAppear:
+  guestLeave:
+  badVentureCard:
+  takeAbreak:
+  promotionMii:
+  promotionMario:
+  promotionDragonQuest:
+  forcedBuyout:
+  domination:
+  bankruptcy:
+  roundTheBlocks: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
+  roundTheBlocksWin: 
+  roundTheBlocks777: 
+  memoryBlock: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
+  dartOfGold: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
+  slurpodromeSelect: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
+  slurpodromeStart: 
+  slurpodromeRace: 
+  slurpodromeWin: 
 tourMode:
   bankruptcyLimit: 1
-  opponent1: Toad
-  opponent2: Wario
-  opponent3: Dragonlord
+  opponent1: Yoshi
+  opponent2: Alena
+  opponent3: Bianca
   clearRank: 2
+#mutators: WHEN USING MUTATOR, DELETE THE LEADING #
+#  rollShopPriceMultiplier: WHEN PAYING, ROLL THE DICE AND PAY THE VALUE MULTIPLIED BY THE NUMBER OF EYES THAT COME UP 
+#    maxRoll: 6 WHEN USING rollShopPriceMultiplier, REMOVE # FROM mutators TO maxRoll
+#  shopPrice: CHANGE SHOP PRICE BASED ON (numerator/denominator) + constant
+#    numerator: 2
+#    denominator: 7
+#    constant: 0 IF shopPrice IS USED, mutators AND # FROM shopPrice TO affectShopRank SHOULD BE DELETED
+#    affectShopRank: true 
+#  stockPrice: CHANGE THE STOCK PRICE BASED ON (numerator/denominator) + constant
+#    numerator: 1
+#    denominator: 1
+#    constant: -2 IF stockPrice IS USED, mutators AND # FROM stockPrice TO constant SHOULD BE DELETED
 changelog:
-  - version: 5
-    removed:
-      - Custom music (due to bad loop)
-  - version: 4
-    changed:
-      - Square 74 changed from venture square to change-of-suit square
-  - version: 3
-    changed:
-      - Board structure to prevent easy looping and suits
-  - version: 2
-    changed:
-      - Board Structure
-      - Increase in base salary
-      - Change Max Dice Roll
-      - Change music to new version
   - version: 1
     added: 
       - Initial Release
 authors:
-  - name: Anonymous
-ventureCards:
+  - name: YOUR NAME
+    url: YOUR URL IF DESIRED
+districtNames:
+  en:
+    - District A
+    - District B
+    - District C
+    - District D
+    - District E
+    - District F
+    - District G
+    - District H
+    - District I
+    - District J
+    - District K
+    - District L (REMOVE UNUSED LANGUAGES AND DISTRICTS, OR ENTIRE SECTION IF NOT USING. HOWEVER, DO NOT DELETE en)
+  de:
+    - Bezirk A
+    - Bezirk B
+    - Bezirk C
+    - Bezirk D
+    - Bezirk E
+    - Bezirk F
+    - Bezirk G
+    - Bezirk H
+    - Bezirk I
+    - Bezirk J
+    - Bezirk K
+    - Bezirk L
+  fr:
+    - Quartier A
+    - Quartier B
+    - Quartier C
+    - Quartier D
+    - Quartier E
+    - Quartier F
+    - Quartier G
+    - Quartier H
+    - Quartier I
+    - Quartier J
+    - Quartier K
+    - Quartier L
+  it:
+    - Quartiere A
+    - Quartiere B
+    - Quartiere C
+    - Quartiere D
+    - Quartiere E
+    - Quartiere F
+    - Quartiere G
+    - Quartiere H
+    - Quartiere I
+    - Quartiere J
+    - Quartiere K
+    - Quartiere L
+  jp:
+    - エリア A
+    - エリア B
+    - エリア C
+    - エリア D
+    - エリア E
+    - エリア F
+    - エリア G
+    - エリア H
+    - エリア I
+    - エリア J
+    - エリア K
+    - エリア L
+  es:
+    - Distrito A
+    - Distrito B
+    - Distrito C
+    - Distrito D
+    - Distrito E
+    - Distrito F
+    - Distrito G
+    - Distrito H
+    - Distrito I
+    - Distrito J
+    - Distrito K
+    - Distrito L
+shopNames:
+  en:
+    1: (CUSTOM SHOP NAMES GO HERE. BELOW ARE THE UNUSED SHOP SLOTS, BUT YOU CAN REPLACE ANY SHOP IDS FROM 1-98. REMOVE UNUSED SHOPS OR LANGUAGES)
+    2:
+    3:
+    4:
+    60:
+    63:
+    64:
+    66:
+    67:
+    69:
+    71:
+    73:
+    74:
+    77:
+    78:
+    79:
+    82:
+    83:
+    84:
+    86:
+    87:
+    88:
+    89:
+    91:
+    92:
+    93:
+    94:
+    95:
+    96:
+    97:
+  de:
+    1:
+  fr:
+    1:
+  es:
+    1:
+  it:
+    1:
+ventureCards: #VENTURE CARD IN WHICH 1 APPEARS NEXT TO -, 0 DOES NOT APPEAR. WHEN CHANGING THE VENTURE CARD THAT APPEARS, THE NUMBER OF 1S SHOULD BE 64
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
   - 1  #   3 Venture through space! Zoom over to any non-venture, non-suit square you like!
@@ -108,7 +276,7 @@ ventureCards:
   - 1  #  65 Forced buyout! You can buy a vacant plot or shop for five times its value, whether someone else owns it or not.
   - 1  #  66 Special bonus! You receive 10 of the most valuable stocks!
   - 1  #  67 Stock venture! You can buy stocks in a district of your choice.
-  - 1  #  68 Special arcade adventure! You're invited to play Memory Block!
+  - 0  #  68 Special arcade adventure! You're invited to play Memory Block!
   - 0  #  69 Stock venture! You can sell stocks you own at 20% above the market value.
   - 1  #  70 Special bonus! You get a sudden promotion and receive a salary! (You lose any suits you have.)
   - 1  #  71 Capital venture! You can invest up to 200G of the bank's money in your shops.
@@ -127,7 +295,7 @@ ventureCards:
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 0  #  86 Moneymaking venture! Take 100G from all other players!
-  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 1  #  88 Misadventure! All other players swap places!
   - 0  #  89 Freebie! All players take a Suit Yourself card!
   - 0  #  90 Price hike venture! All shop prices go up by 30% until your next turn.

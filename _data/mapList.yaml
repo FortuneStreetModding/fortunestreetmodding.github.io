@@ -258,7 +258,7 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/30thCrystalTower.zip
 1:
-  #practiceBoard: ShellIsleRedux
+  #practiceBoard: DeathStarfish
   0:
     3Square.zip:
       urls:
@@ -311,6 +311,7 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/CustomWorld.zip
     DeathStarfish.zip:
+      practiceBoard: true
       urls:
       - https://nikkums.io/cswt/Maps/DeathStarfish.zip
     Disboard.zip:
@@ -448,10 +449,6 @@ backgrounds: backgrounds.yml
     Rokkenjima.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Rokkenjima.zip
-    ShellIsleRedux.zip:
-      practiceBoard: true
-      urls:
-      - https://nikkums.io/cswt/Maps/ShellIsleRedux.zip
     Shibuya.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Shibuya.zip
@@ -470,9 +467,6 @@ backgrounds: backgrounds.yml
     SuitsMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SuitsMap.zip
-    TickTockTrader.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/TickTockTrader.zip
     ToadsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsHouse.zip

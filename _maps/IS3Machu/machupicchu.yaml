@@ -10,10 +10,15 @@ targetAmount: 25000
 baseSalary: 250
 salaryIncrement: 200
 maxDiceRoll: 7
-frbFile1: MachuPicchu0
-frbFile2: MachuPicchu1
-frbFile3: MachuPicchu2
-frbFile4: MachuPicchu3
+frbFiles:
+- MachuPicchu0
+- MachuPicchu1
+- MachuPicchu2
+- MachuPicchu3
+- MachuPicchu3
+- MachuPicchu3
+- MachuPicchu4
+- MachuPicchu3
 background: bg106fixed
 mapIcon: machu
 music:
@@ -44,6 +49,11 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 4
+    added:
+      - State 5 to 8 (Exactly the same as state 4)
+    changed:
+      - Changed so that pressing the switch after state 4 does not return to the first state.
   - version: 3
     changed:
       - Added failsafe pathing in case of rare softlock
