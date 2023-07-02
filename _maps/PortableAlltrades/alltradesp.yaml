@@ -41,6 +41,9 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 changelog:
+  - version: 2
+    changed:
+      - Fixed a problem in which the coordinates of some squares were different from the original.
   - version: 1
     added: 
       - Initial Release
