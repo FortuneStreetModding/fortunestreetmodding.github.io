@@ -9,7 +9,7 @@ initialCash: 2000
 targetAmount: 25000
 baseSalary: 300
 salaryIncrement: 300
-maxDiceRoll: 8
+maxDiceRoll: 6
 frbFile1: TickTockTrader
 frbFile2: TickTockTrader2
 frbFile3: TickTockTrader3
