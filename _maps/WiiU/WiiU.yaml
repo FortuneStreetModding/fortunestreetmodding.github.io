@@ -26,17 +26,18 @@ mapIcon: WiiU
 music:
   download: 
     - https://nikkums.io/cswt/BGM/WiiU.music.zip
+    - https://drive.google.com/u/0/uc?id=1k1fRXR2gTyD35G93W3bANxKB4UTQv__6&export=download
   auction: WiiUeShopMay2019.85
   badVentureCard: Mario3DWorldMiss.75
-  dartOfGold: NintendolandMarioChaseSlideHill.75
+  dartOfGold: A_NintendolandMarioChaseSlideHill.75
   domination: WiiUMiiverseJingle.75
   map: WiiUeShopApr2014.70
-  memoryBlock: Mario3DWorldAthletic.75
-  roundTheBlocks: Mario3DWorldSuperBellHill.75
+  memoryBlock: A_Mario3DWorldAthletic.75
+  roundTheBlocks: A_Mario3DWorldSuperBellHill.75
   roundTheBlocksWin: Mario3DWorldCourseClear.75
   roundTheBlocks777: Mario3DWorldWorldClear.75
   slurpodromeRace: Mario3DWorldMountMustDash.75
-  slurpodromeSelect: Mario3DWorldSlotMachine.75
+  slurpodromeSelect: A_Mario3DWorldSlotMachine.75
   slurpodromeStart: Mario3DWorldMountMustDashIntro.75
   slurpodromeWin: MarioKart8FirstPlaceFinishFanfare.85
   stock: WiiUeShopJan2014.75
@@ -51,6 +52,9 @@ tourMode:
   opponent3: Toad
   clearRank: 1
 changelog:
+  - version: 2
+    changed:
+      - Reduced loading time when landing in an arcade
   - version: 1
     added:
       - Initial board release.
