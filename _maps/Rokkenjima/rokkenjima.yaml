@@ -31,6 +31,8 @@ districtNames:
   - Mansion 4
   - Kinzo Study
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/Rokkenjima.music.zip
   map: UminekoMedley.40
   stock: deadangle.50
   ventureCards: blackliliana.50
