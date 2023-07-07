@@ -14,7 +14,7 @@ frbFile1: rokkenjima0
 frbFile2: rokkenjima1
 frbFile3: rokkenjima2
 frbFile4: rokkenjima3
-background: umineko
+background: bg102
 mapIcon: rokkenjima
 districtNames:
   en:
