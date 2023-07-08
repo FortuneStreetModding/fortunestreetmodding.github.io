@@ -23,7 +23,7 @@ music:
   download: 
     - https://nikkums.io/cswt/BGM/auNanana.music.zip
     - https://drive.google.com/u/2/uc?id=12gzLYRTDn5OkZ4nQiGEusSPoll0kalcE&export=download
-  map: BGM_MAP_GHOSTSHIP
+  map: 
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70
   auction: BGM_AUCTION_SMART.60
@@ -43,7 +43,6 @@ changelog:
   - version: 4
     changed:
       - Corrected an error in setting the initial shop price for 180 properties in District A.
-      - mapBGM changed from Mario Circuit to Ghost Ship
   - version: 3
     changed:
       - Changed background to bg102alt
