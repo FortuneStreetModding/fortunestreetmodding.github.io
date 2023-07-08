@@ -14,7 +14,7 @@ frbFile1: rokkenjima0
 frbFile2: rokkenjima1
 frbFile3: rokkenjima2
 frbFile4: rokkenjima3
-background: umineko
+background: bg102
 mapIcon: rokkenjima
 districtNames:
   en:
@@ -31,6 +31,8 @@ districtNames:
   - Mansion 4
   - Kinzo Study
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/Rokkenjima.music.zip
   map: UminekoMedley.40
   stock: deadangle.50
   ventureCards: blackliliana.50
