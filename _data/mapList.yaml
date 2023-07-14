@@ -428,9 +428,6 @@ backgrounds: backgrounds.yml
     Palamecia.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Palamecia.zip
-    PalmBrinks.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PalmBrinks.zip
     PlanetMira.zip:
       urls:
       - https://nikkums.io/cswt/Maps/PlanetMira.zip
