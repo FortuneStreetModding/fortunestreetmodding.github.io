@@ -41,6 +41,9 @@ music:
   domination: ME_MONOPOLY_ISDS.60
   bankruptcy: ME_BANKRUPT_ISDS.60
 changelog:
+  - version: 5
+    fixed:
+      - Fixed board crash or softlock when pressing switches in games built with CSMM 5.0.0 or later
   - version: 4
     changed:
       - Changed background to bg003fixed
