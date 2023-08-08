@@ -170,7 +170,7 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
   - version: 5
-    fixed:
+    changed:
       - Fixed board crash or softlock when pressing switches in games built with CSMM 5.0.0 or later
   - version: 4
     added:
