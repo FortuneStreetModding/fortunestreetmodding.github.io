@@ -42,6 +42,9 @@ tourMode:
   opponent3: Princessa
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Fixed board crash or softlock when pressing switches in games built with CSMM 5.0.0 or later
   - version: 4
     changed:
       - Changed background to bg102alt
