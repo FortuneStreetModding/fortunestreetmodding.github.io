@@ -10,8 +10,12 @@ targetAmount: 25000
 baseSalary: 250
 salaryIncrement: 200
 maxDiceRoll: 6
-frbFile1: yevon
-background: bg106
+frbFiles:
+- yevon
+- yevon_2
+- yevon_3
+- yevon_4
+background: bg106fixed
 mapIcon: yevon
 tourMode:
   bankruptcyLimit: 1
@@ -31,6 +35,16 @@ music:
   stock: YevonStocks.70
   ventureCards: Chocobo.80
 changelog:
+  - version: 4
+    added:
+      - Board State 2 to 4
+      - Elements that change the effect of the event square depending on the switch
+    changed:
+      - Arcade between diamond suit and club suit changed to switch
+      - Changed Boon Square to an arcade
+      - Shop value 90 properties in Yojimbo (District G) and Camisade (District H) changed to switch
+      - Yojimbo (District G) and Camisade (District H) decreased from 5 to 4 shops districts.
+      - Changed background from bg106 to bg106fixed
   - version: 3
     changed:
       - Increased shop value next to bank. Note that the Shop Price for that store has not changed.

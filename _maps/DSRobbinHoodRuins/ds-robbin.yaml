@@ -169,6 +169,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 5
+    changed:
+      - Fixed board crash or softlock when pressing switches in games built with CSMM 5.0.0 or later
   - version: 4
     added:
       - DS BGM

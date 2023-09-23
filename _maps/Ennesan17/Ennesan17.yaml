@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Fixed Softlock issue when warping to event squares adjacent to the lower left and lower right warp event squares
   - version: 5
     added: 
       - Added to description that the game will be longer

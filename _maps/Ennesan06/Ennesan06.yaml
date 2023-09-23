@@ -42,6 +42,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 9
+    changed:
+      - When passing through the event square way, where shop values increase or decrease, one can now proceed toward the outside of the board in addition to proceeding to the bank.
+      - Changed the effect of the event square adjacent to the spade suit from 106 to 100 venture cards.
   - version: 8
     changed:
       - Changed some music

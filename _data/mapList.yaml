@@ -356,15 +356,12 @@ backgrounds: backgrounds.yml
     Ennesan20.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan20.zip
-    Ennesan21B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan21B.zip
     Ennesan22A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan22A.zip
-    Ennesan22B.zip:
+    Ennesan23.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Ennesan22B.zip
+      - https://nikkums.io/cswt/Maps/Ennesan23.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
@@ -428,9 +425,6 @@ backgrounds: backgrounds.yml
     Palamecia.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Palamecia.zip
-    PalmBrinks.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PalmBrinks.zip
     PlanetMira.zip:
       urls:
       - https://nikkums.io/cswt/Maps/PlanetMira.zip
@@ -443,9 +437,6 @@ backgrounds: backgrounds.yml
     RainbowRoadWii.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RainbowRoadWii.zip
-    Rokkenjima.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Rokkenjima.zip
     Shibuya.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Shibuya.zip
