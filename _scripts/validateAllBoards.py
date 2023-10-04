@@ -9,6 +9,7 @@ import colorama
 import argparse
 
 from validation.consistency import check_consistency
+from validation.doors import check_doors
 from validation.errors import get_all_errors, get_all_warnings, get_error_count, get_fixed_count, get_warning_count
 from validation.frb import read
 from validation.metadata import update_last_update_date
@@ -64,6 +65,7 @@ def main(argv: list):
         frbContent = read(frbFile1)
 
         check_consistency(frbContent, yamlContent, autorepair, yamlMap, name)
+        check_doors(frbContent, name)
         check_max_paths(frbContent, name)
         check_venture(yamlContent)
 
@@ -83,18 +85,23 @@ def main(argv: list):
     errorCount = get_error_count()
     fixedCount = get_fixed_count()
     warningCount = get_warning_count()
+    issueCount = errorCount + warningCount
 
     print("Board Validation complete!")
 
-    if errorCount == 0 and warningCount == 0:
+    if issueCount == 0:
         cprint("No issues found", "green")
     else:
         print(f'Found {colored(str(errorCount), "red")} errors(s) and {colored(str(warningCount), "yellow")} warnings(s):')
-        print("\n".join(allErrors))
-        print("\n".join(allWarnings))
+        if errorCount > 0:
+            print("---Errors---")
+            print("\n".join(allErrors))
+        if warningCount > 0:
+            print("\n---Warnings---")
+            print("\n".join(allWarnings))
         if fixedCount > 0:
-            if fixedCount < errorCount:
-                print(f'{colored(str(fixedCount), "green")} issue(s) auto-repaired. Remaining issue(s): {colored(str(errorCount - fixedCount), "red")}')
+            if fixedCount < issueCount:
+                print(f'{colored(str(fixedCount), "green")} issue(s) auto-repaired. Remaining issue(s): {colored(str(issueCount - fixedCount), "red")}')
             else:
                 cprint(f"All {str(fixedCount)} issues were auto-repaired!", "green")
         exit(1)

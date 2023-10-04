@@ -1,4 +1,4 @@
-import _scripts.validation.frb as frb
+import validation.frb as frb
 from pathlib import Path
 from termcolor import cprint
 import colorama

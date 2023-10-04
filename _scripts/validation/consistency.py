@@ -1,5 +1,5 @@
 from validation.autorepair import inplace_change
-from validation.errors import get_error_message, get_fixed_message, process_strErrors, process_strFixes
+from validation.errors import get_consistency_error_message, get_fixed_message, process_strErrors, process_strFixes
 from validation.frb import LoopingMode
 
 strErrors = []
@@ -12,7 +12,7 @@ def compare_values(frbValue, yamlValue, attribute, autorepair, yamlMap, name):
     if not frbValue or not yamlValue: 
         return
     if frbValue != yamlValue:
-        strErrors.append(get_error_message(attribute, frbValue, yamlValue, name))
+        strErrors.append(get_consistency_error_message(attribute, frbValue, yamlValue, name))
         if autorepair:
             inplace_change(yamlMap, attribute, frbValue)
             strFixes.append(get_fixed_message(attribute, frbValue))

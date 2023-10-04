@@ -31,7 +31,7 @@ def sha256sum(filename) -> str:
 
 def check_music_download(mirror_validation, yaml):
     strErrors = []
-    print(f'{" ":24} Download URL Check...', end="")
+    print(f'{" ":24} Download URL Check...........', end="")
     mirrors = []
     if type(yaml["music"]["download"]) is str:
         mirrors.append(yaml["music"]["download"])
@@ -70,7 +70,7 @@ def check_music_download(mirror_validation, yaml):
 
 def check_music_uniqueness(yamlMap, yamlContent):
     strErrors = []
-    print(f'{" ":24} Music Uniqueness check...', end="")
+    print(f'{" ":24} Music Uniqueness check.......', end="")
     for musicType in yamlContent["music"]:
         if musicType == "download":
             continue

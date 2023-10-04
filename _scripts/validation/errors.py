@@ -7,15 +7,12 @@ errorCount = 0
 fixedCount = 0
 warningCount = 0
 
-errorMsg = f'In board {colored("{filename}", "green")}: The value of {colored("{attribute}", "blue")} is {colored("{yamlValue}", "yellow")} in the yaml file but {colored("{frbValue}", "yellow")} in the frb file.'
-fixedMsg = f'{colored("Auto-Repair", "green")}: The value of {colored("{attribute}", "blue")} in the yaml file had been corrected to {colored("{frbValue}", "yellow")}.'
+informational_consistency_autorepaired_message = f'{colored("Auto-Repair", "green")}: The value of {colored("{attribute}", "blue")} in the yaml file had been corrected to {colored("{frbValue}", "yellow")}.'
 
-max_paths_warning_message=f'In board {colored("{filename}", "green")}: The Max Paths value of {colored("{max_paths}", "red")} is higher than {colored("{limit}", "yellow")}.'
+error_consistency_message = f'In board {colored("{filename}", "green")}: The value of {colored("{attribute}", "blue")} is {colored("{yamlValue}", "yellow")} in the yaml file but {colored("{frbValue}", "yellow")} in the frb file.'
+error_doors_and_dice_message = f'In board {colored("{filename}", "green")}: The board contains {colored("One Way Alley Door squares", "yellow")} while its Max Dice Roll is set to {colored("9", "red")}.'
 
-error_message = (
-    f'The value of {colored("{attribute}", "blue")} is {colored("{yamlValue}", "yellow")} ',
-    f'in the yaml file but {colored("{frbValue}", "yellow")} in the frb file.'
-)
+warning_max_paths_message=f'In board {colored("{filename}", "green")}: The Max Paths value of {colored("{max_paths}", "red")} is higher than {colored("{limit}", "yellow")}.'
 
 def process_strErrors(strErrors):
     # Ensure we're working with the global values.
@@ -24,8 +21,8 @@ def process_strErrors(strErrors):
 
     if len(strErrors) > 0:
         # Print a ERROR in red, followed by the errors themselves.
-        cprint("ERROR:", "red")
-        print("\n".join(strErrors))
+        cprint("ERROR", "red")
+        #print("\n".join(strErrors))
 
         # Add the strErrors to the allErrors list, as well as the error count.
         errorCount += len(strErrors)
@@ -40,7 +37,7 @@ def process_strWarnings(strWarnings):
     global allWarnings
 
     if len(strWarnings) > 0:
-        # Print a WARNING in yellow, followed by the errors themselves.
+        # Print a WARNING in yellow, followed by the warnings themselves.
         cprint("WARNING", "yellow")
         #print("\n".join(strWarnings))
 
@@ -89,11 +86,14 @@ def get_all_warnings():
     return allWarnings
 
 
-def get_error_message(attribute, frbValue, yamlValue, filename):
-    return errorMsg.format(attribute=attribute, filename=filename, frbValue=frbValue, yamlValue=yamlValue)
+def get_consistency_error_message(attribute, frbValue, yamlValue, filename):
+    return error_consistency_message.format(attribute=attribute, filename=filename, frbValue=frbValue, yamlValue=yamlValue)
+
+def get_doors_and_dice_error_message(filename):
+    return error_doors_and_dice_message.format(filename=filename)
 
 def get_fixed_message(attribute, frbValue):
-    return fixedMsg.format(attribute=attribute, frbValue=frbValue)
+    return informational_consistency_autorepaired_message.format(attribute=attribute, frbValue=frbValue)
 
 def get_path_warning(filename, max_paths, limit):
-    return max_paths_warning_message.format(filename=filename, max_paths=max_paths, limit=limit)
+    return warning_max_paths_message.format(filename=filename, max_paths=max_paths, limit=limit)
