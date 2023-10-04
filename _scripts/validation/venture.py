@@ -5,7 +5,7 @@ from validation.errors import process_strErrors
 
 def check_venture(yaml):
     strErrors = []
-    print(f'{" ":24} Venture Card check...', end="")
+    print(f'{" ":24} Venture Card Check...........', end="")
     if "ventureCards" in yaml:
         activeVentureCards = 0
         for ventureCard in yaml["ventureCards"]:

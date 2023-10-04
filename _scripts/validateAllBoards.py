@@ -9,11 +9,12 @@ import colorama
 import argparse
 
 from validation.consistency import check_consistency
-from validation.errors import get_all_errors, get_error_count, get_fixed_count
-from validation.frb import load_frb
+from validation.errors import get_all_errors, get_all_warnings, get_error_count, get_fixed_count, get_warning_count
+from validation.frb import read
 from validation.metadata import update_last_update_date
 from validation.music import check_music_download, check_music_uniqueness
 from validation.naming import check_naming_convention
+from validation.paths import check_max_paths
 from validation.venture import check_venture
 from validation.yaml import load_yaml, load_yaml_schema
 
@@ -60,9 +61,10 @@ def main(argv: list):
         if not yamlContent: 
             return
         frbFile1 = yamlMap.parent / Path(f'{yamlContent["frbFiles"][0] if "frbFiles" in yamlContent else yamlContent["frbFile1"]}.frb')
-        frbContent = load_frb(frbFile1)
+        frbContent = read(frbFile1)
 
-        check_consistency(frbContent, yamlContent, autorepair, yamlMap)
+        check_consistency(frbContent, yamlContent, autorepair, yamlMap, name)
+        check_max_paths(frbContent, name)
         check_venture(yamlContent)
 
         if (download_validation and "music" in yamlContent and "download" in yamlContent["music"]):
@@ -72,21 +74,24 @@ def main(argv: list):
             check_music_uniqueness(yamlMap, yamlContent)
 
         if update_dates:
-            update_last_update_date(yamlMap)\
+            update_last_update_date(yamlMap)
             
         print("\n")
 
     allErrors = get_all_errors()
+    allWarnings = get_all_warnings()
     errorCount = get_error_count()
     fixedCount = get_fixed_count()
+    warningCount = get_warning_count()
 
-    print("Board Validation complete")
+    print("Board Validation complete!")
 
-    if errorCount == 0:
+    if errorCount == 0 and warningCount == 0:
         cprint("No issues found", "green")
     else:
-        print(f'Found {colored(str(errorCount), "red")} issue(s):')
+        print(f'Found {colored(str(errorCount), "red")} errors(s) and {colored(str(warningCount), "yellow")} warnings(s):')
         print("\n".join(allErrors))
+        print("\n".join(allWarnings))
         if fixedCount > 0:
             if fixedCount < errorCount:
                 print(f'{colored(str(fixedCount), "green")} issue(s) auto-repaired. Remaining issue(s): {colored(str(errorCount - fixedCount), "red")}')

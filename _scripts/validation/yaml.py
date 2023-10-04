@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-from termcolor import cprint
 import yaml
 import jsonschema
 
@@ -25,7 +24,7 @@ def load_yaml(name, yamlMap, yamlSchema):
         stream.seek(0x0)
 
         try:
-            print(f'{"":24} YAML Validation Check...', end="")
+            print(f'{"":24} YAML Validation Check........', end="")
             yamlContent = yaml.safe_load(stream)
             jsonschema.validate(yamlContent, yamlSchema)
         except yaml.YAMLError as exc:
