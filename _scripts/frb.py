@@ -4,11 +4,11 @@ from enum import Enum
 from pathlib import Path
 
 from bytechomp.datatypes import (
-    U8,   # 8-bit unsigned integer
+    U8,  # 8-bit unsigned integer
     U16,  # 16-bit unsigned integer
     U32,  # 32-bit unsigned integer
     U64,  # 64-bit unsigned integer
-    I8,   # 8-bit signed integer
+    I8,  # 8-bit signed integer
     I16,  # 16-bit signed integer
     I32,  # 32-bit signed integer
     I64,  # 64-bit signed integer
@@ -16,6 +16,7 @@ from bytechomp.datatypes import (
     F32,  # 32-bit float
     F64,  # 64-bit float
 )
+
 
 class SquareType(Enum):
     Property: U16 = 0x00
@@ -72,15 +73,18 @@ class SquareType(Enum):
 
     VacantPlot: U16 = 0x30
 
+
 class LoopingMode(Enum):
     NONE: U16 = 0
     VERTICAL: U16 = 2
     BOTH: U16 = 1
 
+
 class MagicNumber(Enum):
     BOARD_FILE = bytes("I4DT", encoding="utf8")
     BOARD_DATA = bytes("I4PL", encoding="utf8")
     BOARD_INFO = bytes("I4DT", encoding="utf8")
+
 
 @dataclass
 class Header:
@@ -91,10 +95,12 @@ class Header:
     def size() -> int:
         return 0x10
 
+
 @dataclass
 class WaypointData:
     entryId: U8
     destinations: Annotated[list[U8], 3]
+
 
 @dataclass
 class Square:
@@ -122,18 +128,20 @@ class Square:
     def size() -> int:
         return 0x20
 
+
 @dataclass
 class BoardData:
     _header: Header = field(repr=False, compare=False)
     _unknown1: U32 = field(repr=False, compare=False)
     _square_count: U16 = field(repr=False, compare=False)
     _unknown2: U16 = field(repr=False, compare=False)
-     # we have to put 0 as length for the list of squares, since bytechomp does not support it properly yet
+    # we have to put 0 as length for the list of squares, since bytechomp does not support it properly yet
     squares: Annotated[list[Square], 0]
 
     @staticmethod
     def size() -> int:
         return 0x10
+
 
 @dataclass
 class BoardInfo:
@@ -146,7 +154,7 @@ class BoardInfo:
     max_dice_roll: U16
     _galaxy_status: U16
     version_flag: U32 = field(repr=False, compare=False)
-    
+
     @property
     def galaxy_status(self) -> LoopingMode:
         return LoopingMode(self._galaxy_status)
@@ -159,6 +167,7 @@ class BoardInfo:
     def size() -> int:
         return 0x20
 
+
 @dataclass
 class BoardFile:
     _header: Header = field(repr=False, compare=False)
@@ -170,34 +179,39 @@ class BoardFile:
     @property
     def squares(self) -> list[Square]:
         return self._board_data.squares
-    
+
     @staticmethod
     def size() -> int:
         return Header.size() + BoardInfo.size() + BoardData.size()
-    
+
     def normalize(self):
         # determine the square count
         self._board_data._square_count = len(self._board_data.squares)
         # fix the headers
         # self
         self._header.magic_number = MagicNumber.BOARD_FILE.value
-        self._header.header_size = BoardFile.size() + Square.size()*len(self._board_data.squares)
+        self._header.header_size = BoardFile.size() + Square.size() * len(
+            self._board_data.squares
+        )
         # board_info
         self.board_info._header.magic_number = MagicNumber.BOARD_INFO.value
         self.board_info._header.header_size = BoardInfo.size()
         # board_data
         self._board_data._header.magic_number = MagicNumber.BOARD_DATA.value
-        self._board_data._header.header_size = BoardData.size() + Square.size()*len(self._board_data.squares)
+        self._board_data._header.header_size = BoardData.size() + Square.size() * len(
+            self._board_data.squares
+        )
+
 
 def read(file_path: Path) -> BoardFile:
     # HACK: fix the length of the list annotation for the squares field
-    BoardData.__annotations__['squares'].__metadata__ = 0,
+    BoardData.__annotations__["squares"].__metadata__ = (0,)
     # HACK: fix the length of the annotation for the custom_data field
-    BoardFile.__annotations__['custom_data'].__metadata__ = 0,
+    BoardFile.__annotations__["custom_data"].__metadata__ = (0,)
     reader = Reader[BoardFile](ByteOrder.BIG).allocate()
     board_file: BoardFile = None
     with open(file_path, "rb") as fp:
-        while (data := fp.read(1)):
+        while data := fp.read(1):
             reader.feed(data)
             if reader.is_complete():
                 if board_file is None:
@@ -206,7 +220,10 @@ def read(file_path: Path) -> BoardFile:
                     # now that we know the size of the squares, read the rest of it
                     @dataclass
                     class Squares:
-                        squares: Annotated[list[Square], board_file._board_data._square_count]
+                        squares: Annotated[
+                            list[Square], board_file._board_data._square_count
+                        ]
+
                     reader = Reader[Squares](ByteOrder.BIG).allocate()
                 else:
                     # we read the squares and put it into our original board_file struct
@@ -217,12 +234,17 @@ def read(file_path: Path) -> BoardFile:
                     return board_file
     return None
 
+
 def write(board_file: BoardFile, file_path: Path):
     board_file.normalize()
     # HACK: fix the length of the list annotation for the squares field
-    BoardData.__annotations__['squares'].__metadata__ = board_file._board_data._square_count,
+    BoardData.__annotations__["squares"].__metadata__ = (
+        board_file._board_data._square_count,
+    )
     # HACK: fix the length of the annotation for the custom_data field
-    BoardFile.__annotations__['custom_data'].__metadata__ = len(board_file.custom_data),
+    BoardFile.__annotations__["custom_data"].__metadata__ = (
+        len(board_file.custom_data),
+    )
     data = serialize(board_file, ByteOrder.BIG)
     with open(file_path, "wb") as fp:
         fp.write(data)

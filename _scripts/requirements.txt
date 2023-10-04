@@ -1,5 +1,6 @@
-termcolor
+bytechomp
 colorama
 jsonschema
+requests
+termcolor
 pyyaml
-bytechomp
