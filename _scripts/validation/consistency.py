@@ -1,6 +1,21 @@
+from termcolor import colored
+
 from validation.autorepair import inplace_change
-from validation.errors import get_consistency_error_message, get_fixed_message, process_strErrors, process_strFixes
+from validation.errors import process_strErrors, process_strFixes
 from validation.frb import LoopingMode
+
+# Informational, Error, and Warning Messages
+autorepair_success = (
+    f'{colored("Auto-Repair", "green")}: The value of {colored("{attribute}", "blue")} '
+    f'in the yaml file had been corrected to {colored("{frbValue}", "yellow")}.'
+)
+
+mismatch_error = (
+    f'({colored("{filename}", "green")}): The value of {colored("{attribute}", "blue")} '
+    f'is {colored("{yamlValue}", "yellow")} in the yaml file but {colored("{frbValue}", "yellow")} '
+    'in the frb file.'
+)
+
 
 strErrors = []
 strFixes = []
@@ -12,11 +27,10 @@ def compare_values(frbValue, yamlValue, attribute, autorepair, yamlMap, name):
     if not frbValue or not yamlValue: 
         return
     if frbValue != yamlValue:
-        strErrors.append(get_consistency_error_message(attribute, frbValue, yamlValue, name))
+        strErrors.append(mismatch_error.format(attribute, frbValue, yamlValue, name))
         if autorepair:
             inplace_change(yamlMap, attribute, frbValue)
-            strFixes.append(get_fixed_message(attribute, frbValue))
-
+            strFixes.append(autorepair_success.format(attribute, frbValue))
 
 
 def convert_galaxy_status(galaxyStatus):
@@ -35,7 +49,7 @@ def check_consistency(frb, yaml, autorepair, yamlMap, name):
     global strErrors
     global strFixes
     loopingMode = ""
-    print(f'{" ":24} FRB/YAML Consistency Check...', end="")
+    print(f'{" ":24} FRB/YAML Consistency Check.........', end="")
 
     compare_values(frb.board_info.base_salary, yaml["baseSalary"], "baseSalary", autorepair, yamlMap, name)
     compare_values(frb.board_info.initial_cash, yaml["initialCash"], "initialCash", autorepair, yamlMap, name)

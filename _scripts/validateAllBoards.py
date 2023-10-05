@@ -10,13 +10,13 @@ import argparse
 
 from validation.consistency import check_consistency
 from validation.doors import check_doors
-from validation.errors import get_all_errors, get_all_warnings, get_error_count, get_fixed_count, get_warning_count
+from validation.errors import get_count, get_text, IssueType
 from validation.frb import read
 from validation.metadata import update_last_update_date
 from validation.music import check_music_download, check_music_uniqueness
 from validation.naming import check_naming_convention
 from validation.paths import check_max_paths
-from validation.venture import check_venture
+from validation.venture import check_venture_cards
 from validation.yaml import load_yaml, load_yaml_schema
 
 
@@ -67,7 +67,7 @@ def main(argv: list):
         check_consistency(frbContent, yamlContent, autorepair, yamlMap, name)
         check_doors(frbContent, name)
         check_max_paths(frbContent, name)
-        check_venture(yamlContent)
+        check_venture_cards(frbContent, yamlContent, name)
 
         if (download_validation and "music" in yamlContent and "download" in yamlContent["music"]):
             check_music_download(mirror_validation, yamlContent)
@@ -80,11 +80,11 @@ def main(argv: list):
             
         print("\n")
 
-    allErrors = get_all_errors()
-    allWarnings = get_all_warnings()
-    errorCount = get_error_count()
-    fixedCount = get_fixed_count()
-    warningCount = get_warning_count()
+    allErrors = get_text(IssueType.ERRORS)
+    allWarnings = get_text(IssueType.WARNINGS)
+    errorCount = get_count(IssueType.ERRORS)
+    fixedCount = get_count(IssueType.FIXED)
+    warningCount = get_count(IssueType.WARNINGS)
     issueCount = errorCount + warningCount
 
     print("Board Validation complete!")

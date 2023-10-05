@@ -2,9 +2,21 @@ import hashlib
 import os
 from dataclasses import dataclass
 from pathlib import Path
+from termcolor import colored
 
 from validation.errors import process_strErrors
 from validation.network import get_file_metadata
+
+
+music_content_diff_error = (
+    f'The music file {colored("{file_1}", "green")} has different content from the  '
+    f'music file {colored("{file_2}", "green")}.'
+)
+
+music_content_volume_error = (
+    f'The music file {colored("{file_1}", "green")} has the same content as the music '
+    f'file {colored("{file_2}", "green")} but a different volume'
+)
 
 
 @dataclass
@@ -31,7 +43,7 @@ def sha256sum(filename) -> str:
 
 def check_music_download(mirror_validation, yaml):
     strErrors = []
-    print(f'{" ":24} Download URL Check...........', end="")
+    print(f'{" ":24} Download URL Check.................', end="")
     mirrors = []
     if type(yaml["music"]["download"]) is str:
         mirrors.append(yaml["music"]["download"])
@@ -70,7 +82,7 @@ def check_music_download(mirror_validation, yaml):
 
 def check_music_uniqueness(yamlMap, yamlContent):
     strErrors = []
-    print(f'{" ":24} Music Uniqueness check.......', end="")
+    print(f'{" ":24} Music Uniqueness Check.............', end="")
     for musicType in yamlContent["music"]:
         if musicType == "download":
             continue
@@ -96,13 +108,17 @@ def check_music_uniqueness(yamlMap, yamlContent):
         if musicWithoutVolume in bgmVolumeInsensitiveHash:
             musicFileMetadata = bgmVolumeInsensitiveHash[musicWithoutVolume]
             if musicFileMetadata.file_hash != sha256:
-                strErrors.append(
-                    f"The music file {musicFilePath.relative_to(mapsFolder).as_posix()} has different content from the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()}"
-                )
+                file1=musicFilePath.relative_to(mapsFolder).as_posix()
+                file2=musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()
+                
+                strErrors.append(music_content_diff_error.format(file1=file1, file2=file2))
+
             elif Path(music).suffix != Path(musicFileMetadata.music).suffix:
-                strErrors.append(
-                    f"The music file {musicFilePath.relative_to(mapsFolder).as_posix()} has the same content as the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()} but a different volume"
-                )
+                file1=musicFilePath.relative_to(mapsFolder).as_posix()
+                file2=musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()
+                
+                strErrors.append(music_content_volume_error.format(file1=file1, file2=file2))
+
         else:
             bgmVolumeInsensitiveHash[musicWithoutVolume] = MusicFileMetadata(
                 musicFileSize, sha256, musicFilePath, music
@@ -111,9 +127,10 @@ def check_music_uniqueness(yamlMap, yamlContent):
         if music in bgmVolumeSensitiveHash:
             musicFileMetadata = bgmVolumeSensitiveHash[music]
             if musicFileMetadata.file_hash != sha256:
-                strErrors.append(
-                    f"The music file {musicFilePath.relative_to(mapsFolder).as_posix()} has different content from the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()}"
-                )
+                file1=musicFilePath.relative_to(mapsFolder).as_posix()
+                file2=musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()
+
+                strErrors.append(music_content_diff_error.format(file1=file1, file2=file2))
         else:
             bgmVolumeSensitiveHash[music] = MusicFileMetadata(
                 musicFileSize, sha256, musicFilePath, music
