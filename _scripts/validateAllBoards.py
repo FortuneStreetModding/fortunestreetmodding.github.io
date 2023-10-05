@@ -153,7 +153,10 @@ def main(argv: list):
                 print(f'{colored(str(fixedCount), "green")} issue(s) auto-repaired. Remaining issue(s): {colored(str(issueCount - fixedCount), "red")}')
             else:
                 cprint(f"All {str(fixedCount)} issues were auto-repaired!", "green")
-        exit(1)
+        if(errorCount > 0):
+            exit(1)
+        else:
+            exit(0)
 
 
 if __name__ == "__main__":
