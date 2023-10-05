@@ -26,6 +26,7 @@ def check_doors(frb, name):
     
     for s in frb._board_data.squares:
         if s.square_type in doors:
-            strErrors.append(doors_and_dice_error.format(name))
+            strErrors.append(doors_and_dice_error.format(filename=name))
+            break
     process_strErrors(strErrors)
     strErrors.clear()

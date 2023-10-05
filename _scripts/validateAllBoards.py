@@ -11,6 +11,7 @@ import argparse
 from validation.consistency import check_consistency
 from validation.doors import check_doors
 from validation.errors import get_count, get_text, IssueType
+from validation.filesystem import check_for_screenshots, check_for_stray_maps
 from validation.frb import read
 from validation.metadata import update_last_update_date
 from validation.music import check_music_download, check_music_uniqueness
@@ -29,17 +30,43 @@ def my_construct_mapping(self, node, deep=False):
 yaml.SafeLoader.construct_mapping_org = yaml.SafeLoader.construct_mapping
 yaml.SafeLoader.construct_mapping = my_construct_mapping
 
+# Argument Help Strings
+skip_autorepair_help = (
+    'Whether the script should try to automatically repair found '
+    'issues where applicable.'
+)
+
+skip_update_dates_help = (
+    'Whether the script should try to automatically repair found '
+    'issues where applicable.'
+)
+
+skip_mirror_validation_help = (
+    'Whether the script should try to automatically repair found '
+    'issues where applicable.'
+)
+
+skip_download_validation_help = (
+    'Whether the script should try to automatically repair found '
+    'issues where applicable.'
+)
+
+skip_music_uniqueness_help = (
+    'Whether the script should try to automatically repair found '
+    'issues where applicable.'
+)
+
 
 def main(argv: list):
     colorama.init()
 
     # Parsing Arguments
     parser = argparse.ArgumentParser(description="Validate all boards.")
-    parser.add_argument("--skip-autorepair", action="store_true", help="Whether the script should try to automatically repair found issues where applicable.",)
-    parser.add_argument("--skip-update-dates", action="store_true", help="Update the Upload-date and Last-Update-Date of maps.",)
-    parser.add_argument("--skip-mirror-validation", action="store_true", help="Whether the script should validate the file sizes of mirrors.")
-    parser.add_argument("--skip-download-validation", action="store_true", help="Whether the script should validate the file sizes of mirrors.")
-    parser.add_argument("--skip-music-uniqueness-validation", action="store_true", help="Whether the script should validate the uniqueness of music files (assumes that the files have already been downloaded).")
+    parser.add_argument("--skip-autorepair", action="store_true", help=skip_autorepair_help,)
+    parser.add_argument("--skip-update-dates", action="store_true", help=skip_update_dates_help,)
+    parser.add_argument("--skip-mirror-validation", action="store_true", help=skip_mirror_validation_help)
+    parser.add_argument("--skip-download-validation", action="store_true", help=skip_download_validation_help)
+    parser.add_argument("--skip-music-uniqueness-validation", action="store_true", help=skip_music_uniqueness_help)
     args = parser.parse_args(argv)
 
     # Script Settings
@@ -53,6 +80,19 @@ def main(argv: list):
     yamlSchema = load_yaml_schema()
     yamlMaps = list(Path().glob("../_maps/*/*.yaml"))
 
+    # Global/Startup/Pre-Run/Non-Board-Specific Checks
+    # can go here, so we can error out before we
+    # enumerate everything to save everyone time.
+
+    print(f'--------------\n', end="")
+    print(f'Startup Checks', end="")
+    check_for_stray_maps()
+    print(f'--------------', end="")
+    check_for_screenshots()
+
+    print("\n")
+
+    # Board Checks
     for yamlMap in yamlMaps:
         name = yamlMap.parent.name
 
@@ -80,14 +120,15 @@ def main(argv: list):
             
         print("\n")
 
+    print("Board Validation complete!")
+    
+    # Getting the final errors and counts
     allErrors = get_text(IssueType.ERRORS)
     allWarnings = get_text(IssueType.WARNINGS)
     errorCount = get_count(IssueType.ERRORS)
     fixedCount = get_count(IssueType.FIXED)
     warningCount = get_count(IssueType.WARNINGS)
     issueCount = errorCount + warningCount
-
-    print("Board Validation complete!")
 
     if issueCount == 0:
         cprint("No issues found", "green")

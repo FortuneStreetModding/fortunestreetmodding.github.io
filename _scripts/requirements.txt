@@ -1,5 +1,6 @@
 bytechomp
 colorama
+GitPython
 jsonschema
 requests
 termcolor

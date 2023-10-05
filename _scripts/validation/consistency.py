@@ -27,10 +27,10 @@ def compare_values(frbValue, yamlValue, attribute, autorepair, yamlMap, name):
     if not frbValue or not yamlValue: 
         return
     if frbValue != yamlValue:
-        strErrors.append(mismatch_error.format(attribute, frbValue, yamlValue, name))
+        strErrors.append(mismatch_error.format(attribute=attribute, frbValue=frbValue, yamlValue=yamlValue, filename=name))
         if autorepair:
             inplace_change(yamlMap, attribute, frbValue)
-            strFixes.append(autorepair_success.format(attribute, frbValue))
+            strFixes.append(autorepair_success.format(attribute=attribute, frbValue=frbValue))
 
 
 def convert_galaxy_status(galaxyStatus):
