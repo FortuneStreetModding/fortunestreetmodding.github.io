@@ -41,6 +41,11 @@ skip_update_dates_help = (
     'issues where applicable.'
 )
 
+skip_max_paths_help = (
+    'Whether the script should calculate each board\'s Max Paths '
+    'value.'
+)
+
 skip_mirror_validation_help = (
     'Whether the script should try to automatically repair found '
     'issues where applicable.'
@@ -63,7 +68,8 @@ def main(argv: list):
     # Parsing Arguments
     parser = argparse.ArgumentParser(description="Validate all boards.")
     parser.add_argument("--skip-autorepair", action="store_true", help=skip_autorepair_help,)
-    parser.add_argument("--skip-update-dates", action="store_true", help=skip_update_dates_help,)
+    parser.add_argument("--skip-update-dates", action="store_true", help=skip_update_dates_help)
+    parser.add_argument("--skip-max-paths-validation", action="store_true", help=skip_max_paths_help)
     parser.add_argument("--skip-mirror-validation", action="store_true", help=skip_mirror_validation_help)
     parser.add_argument("--skip-download-validation", action="store_true", help=skip_download_validation_help)
     parser.add_argument("--skip-music-uniqueness-validation", action="store_true", help=skip_music_uniqueness_help)
@@ -72,6 +78,7 @@ def main(argv: list):
     # Script Settings
     autorepair = not args.skip_autorepair
     update_dates = not args.skip_update_dates
+    max_paths = not args.skip_max_paths_validation
     mirror_validation = not args.skip_mirror_validation
     download_validation = not args.skip_download_validation
     music_uniqueness_validation = not args.skip_music_uniqueness_validation
@@ -106,7 +113,8 @@ def main(argv: list):
 
         check_consistency(frbContent, yamlContent, autorepair, yamlMap, name)
         check_doors(frbContent, name)
-        check_max_paths(frbContent, name)
+        if max_paths:
+            check_max_paths(frbContent, name)
         check_venture_cards(frbContent, yamlContent, name)
 
         if (download_validation and "music" in yamlContent and "download" in yamlContent["music"]):
