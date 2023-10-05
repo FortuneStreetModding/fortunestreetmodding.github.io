@@ -72,3 +72,4 @@ def check_max_paths(frb, name):
     if result[1] > 100:
         strWarnings.append(max_paths_warning.format(filename=name, max_paths=result[1], limit=100))
     process_strWarnings(strWarnings=strWarnings)
+    

@@ -36,13 +36,3 @@ def get_files_two_layers_recursively(path, extension):
             files.append(file.name)
 
     return files
-
-
-def compare_lists(list1, list2):
-    list1.sort()
-    list2.sort()
-
-    if(list1==list2):
-        return True
-    else:
-        return False

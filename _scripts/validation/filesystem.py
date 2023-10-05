@@ -57,4 +57,3 @@ def check_for_screenshots():
         strErrors.append(maps_without_screenshots_error.format(filenames=frbs_with_no_screenshots))
     
     process_strErrors(strErrors)
-    
