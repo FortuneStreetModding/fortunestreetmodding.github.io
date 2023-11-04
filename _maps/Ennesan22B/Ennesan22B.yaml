@@ -2,7 +2,7 @@
 name:
   en: Enne-san Board 22-B
 desc:
-  en: There are 24 shops on vacant plots and no limit on the number of buildings, so stores can be built freely. Initial cash is 6000, but base salary and salary increments are 0.
+  en: There are 22 shops on vacant plots and no limit on the number of buildings, so stores can be built freely. Initial cash is 6000, but base salary and salary increments are 0.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 6000
@@ -43,6 +43,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Number of vacant plots reduced from 24 to 22
+      - Partially changed description
   - version: 1
     added: 
       - Initial Release
