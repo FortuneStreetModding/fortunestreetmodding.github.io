@@ -809,3 +809,29 @@
     forcedBuyout: warpboobyout
     domination: roomcleareddomination
     bankruptcy: goodnightbadcartbankrupcy
+- background: grid_rainbow
+  name: grid_rainbow
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_rainbow.background.zip
+  - https://drive.google.com/u/0/uc?id=1McdADXpwSj4pHFv2NRBjXh6QWUklBPSo&export=download
+  mapIcon: grid_rainbow
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
