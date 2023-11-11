@@ -39,6 +39,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Changed shop values and initial shop value for some shops
   - version: 2
     added:
       - 3D Background added
