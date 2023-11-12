@@ -5,7 +5,7 @@ desc:
   en: It will be a long game. The event squares adjacent to the warp event squares at the four corners can be used by stopping at the warp event square and warping to it.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 3300
+initialCash: 3000
 targetAmount: 30000
 baseSalary: 450
 salaryIncrement: 150
@@ -41,6 +41,11 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 7
+    changed:
+      - First move changed to warp to any shop of your choice.
+      - Initial cash decreased from 3300 to 3000
+      - Adjust shop values in the 4 districts around the bank.
   - version: 6
     changed:
       - Fixed Softlock issue when warping to event squares adjacent to the lower left and lower right warp event squares

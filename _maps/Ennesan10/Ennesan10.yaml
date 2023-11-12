@@ -42,6 +42,9 @@ tourMode:
   opponent3: Jessica
   clearRank: 1
 changelog:
+  - version: 9
+    changed:
+      - First move changed to warp to any shop of your choice.
   - version: 8
     changed:
       - Changed some music
