@@ -5,7 +5,7 @@ desc:
   en: It will be a long game. The event squares adjacent to the warp event squares at the four corners can be used by stopping at the warp event square and warping to it.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 3300
+initialCash: 3000
 targetAmount: 30000
 baseSalary: 450
 salaryIncrement: 150
