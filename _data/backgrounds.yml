@@ -835,3 +835,29 @@
     slurpodromeStart: A_X-event.80
     slurpodromeRace: slurRace_grid.65
     slurpodromeWin: RTB777_SlurWin_grid.80
+- background: spookyhallow
+  name: spooky Hallow
+  download:
+  - https://nikkums.io/cswt/Backgrounds/spookyhallow.background.zip
+  - https://drive.google.com/file/d/1AEB-ueVNb4N1giIzx-RxQrwScT_PYn0C/view?usp=sharing
+  mapIcon: spookyhallow
+  music:
+    map: spookyhallowMAP
+    stock: spookyhallowSTOCK
+    ventureCards: spookyhallowVEN
+    auction: spookyhallowAUCTION
+    targetMet: spookyhallowFINAL
+    win: spookyhallowWIN
+    badVentureCard: spookyhallowVENBAD
+    takeAbreak: spookyhallowBREAK
+    promotionMii: spookyhallowPROMO
+    promotionMario: spookyhallowPROMO
+    promotionDragonQuest: spookyhallowPROMO
+    domination: spookyhallowDOMINATION
+    roundTheBlocks: A_spookyhallowROB
+    roundTheBlocks777: spookyhallowROB777
+    memoryBlock: A_spookyhallowMEM
+    dartOfGold: A_spookyhallowDOG
+    slurpodromeSelect: A_spookyhallowSRP
+    slurpodromeStart: spookyhallowSRPSTART
+    slurpodromeRace: spookyhallowSRPRACE
