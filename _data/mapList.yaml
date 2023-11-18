@@ -365,6 +365,9 @@ backgrounds: backgrounds.yml
     Ennesan27.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan27.zip
+    Ennesan27.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan28.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
@@ -374,6 +377,9 @@ backgrounds: backgrounds.yml
     Fillmore.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Fillmore.zip
+    Fortunapolis.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Fortunapolis.zip
     FortuneGateFG1.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
@@ -386,6 +392,9 @@ backgrounds: backgrounds.yml
     GeometryDash.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GeometryDash.zip
+    GiantBeanstalk.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/GiantBeanstalk.zip
     Gladius.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Gladius.zip
@@ -419,6 +428,9 @@ backgrounds: backgrounds.yml
     Lucky.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Lucky.zip
+    MagmaliceMine.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MagmaliceMine.zip
     MidgarTransit.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MidgarTransit.zip
@@ -446,12 +458,18 @@ backgrounds: backgrounds.yml
     SkyTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SkyTower.zip
+    slimeguyspaydayexpress.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
     Spirograph.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Spirograph.zip
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
+    starcarnival.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/starcarnival.zip
     Bethlehem.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Bethlehem.zip
