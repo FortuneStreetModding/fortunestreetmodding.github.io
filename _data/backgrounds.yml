@@ -861,3 +861,31 @@
     slurpodromeSelect: A_spookyhallowSRP
     slurpodromeStart: spookyhallowSRPSTART
     slurpodromeRace: spookyhallowSRPRACE
+- background: starcarnival
+  name: Star Carnival
+  download:
+  - https://nikkums.io/cswt/Backgrounds/starcarnival.background.zip
+  - https://drive.google.com/file/d/1x6Q3e2QUDFsQsUbagl_mf3dQy53W4UxN/view?usp=sharing
+  mapIcon: istarcarnival
+  music:
+    map: starcarnivalMAP
+    stock: starcarnivalSTOCK
+    ventureCards: starcarnivalVEN
+    auction: starcarnivalAUCTION
+    targetMet: starcarnivalFINAL
+    win: starcarnivalWIN
+    guestAppear: starcarnivalGUESTA
+    badVentureCard: starcarnivalVENBAD
+    promotionMii: starcarnivalPROMO
+    promotionMario: starcarnivalPROMO
+    promotionDragonQuest: starcarnivalPROMO
+    domination: starcarnivalDOMINATION
+    roundTheBlocks: A_starcarnivalROB
+    roundTheBlocksWin: starcarnivalROBWIN
+    roundTheBlocks777: starcarnivalROB777
+    memoryBlock: A_starcarnivalMEM
+    dartOfGold: A_starcarnivalDOG
+    slurpodromeSelect: A_starcarnivalSRP
+    slurpodromeStart: starcarnivalSRPSTART
+    slurpodromeRace: starcarnivalSRPRACE
+    slurpodromeWin: starcarnivalSRPWIN
