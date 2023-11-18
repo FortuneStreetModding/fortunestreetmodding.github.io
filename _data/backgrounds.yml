@@ -889,3 +889,33 @@
     slurpodromeStart: starcarnivalSRPSTART
     slurpodromeRace: starcarnivalSRPRACE
     slurpodromeWin: starcarnivalSRPWIN
+- background: BGmagmine
+  name: Magma Mine
+  download:
+  - https://nikkums.io/cswt/Backgrounds/BGmagmine.background.zip
+  - https://drive.google.com/file/d/1wNPRFzdueHcpg9M0FEMOfTrbDKR4dzGr/view?usp=sharing
+  mapIcon: MagmaliceMine
+  map: 
+    - magmineMAP1
+    - magmineMAP2
+    - magmineMAP3
+    - magmineMAP4
+  stock: magmineSTO
+  ventureCards: magmineVCN
+  auction: magmineAUC
+  targetMet: magmineHUR
+  win: magmineWIN
+  badVentureCard: magmineVCB
+  promotionMii: magminePRO
+  promotionMario: magminePRO
+  forcedBuyout: magmineBYO
+  domination: magmineDOM
+  roundTheBlocks: A_magmineROB
+  roundTheBlocksWin: ROB_magmine_WIN
+  roundTheBlocks777: ROB_magmine_SEV
+  memoryBlock: A_magmineMEM
+  dartOfGold: A_magmineDOG
+  slurpodromeSelect: A_magmineSRP
+  slurpodromeStart: SRP_magmine_STR
+  slurpodromeRace: SRP_magmine_RAC
+  slurpodromeWin: SRP_magmine_WIN
