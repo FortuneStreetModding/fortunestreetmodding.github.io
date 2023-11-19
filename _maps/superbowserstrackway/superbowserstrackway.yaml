@@ -17,12 +17,12 @@ mapIcon: sbowsersICON
 music:
   download:
   - https://nikkums.io/cswt/BGM/superbowserstrackway.music.zip
-  - https://drive.google.com/file/d/1WXelhf8vCtMlz1igIoGevv5RnU6AqxIg/view?usp=sharing
+  - https://drive.google.com/file/d/1aRfWRKTQ68TJv4HTK8JeUOg6ezF9MfF9/view?usp=sharing
   map: superbowserstrackway_MAP
   stock: superbowserstrackway_STOCKS
   ventureCards: superbowserstrackway_VENTURE
-  auction: 
-  targetMet: 
+  auction: superbowserstrackway_AUC
+  targetMet: superbowserstrackway_TARGET
   win: 
   guestAppear:
   guestLeave:
@@ -34,7 +34,7 @@ music:
   forcedBuyout:
   domination:
   bankruptcy:
-  roundTheBlocks:
+  roundTheBlocks: A_superbowserstrackway_ARCADE
   roundTheBlocksWin: 
   roundTheBlocks777: 
   memoryBlock:
