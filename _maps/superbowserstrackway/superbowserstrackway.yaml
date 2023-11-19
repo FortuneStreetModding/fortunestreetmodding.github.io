@@ -5,9 +5,9 @@ desc:
   en: In his many failed attempts to stomp out Mario, king Bowser has been known to transform into what can only be described as a giant super version of himself, plodding all around the Mushroom Kingdom leaving dinosour like footprints behind. This one's for sale!!  
 ruleSet: Standard
 theme: Mario
-initialCash: 3000
+initialCash: 2500
 targetAmount: 20000
-baseSalary: 350
+baseSalary: 300
 salaryIncrement: 275
 maxDiceRoll: 6
 frbFiles:
