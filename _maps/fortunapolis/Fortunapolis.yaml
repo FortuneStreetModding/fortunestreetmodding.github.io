@@ -42,11 +42,12 @@ changelog:
       - Initial Release
   - version: 2
       - Changed the location of the switch at the bottom left side
-      - Added a rotating suit to the left middle of the map
+      - Added a rotating suit to the left middle of the map and an 83 misadventure warp event
       - Altered some rewards in the center of the board 
       - Made it so that event square 6 becomes event square 79 when the switch is pressed, also the Healslimes become Lakitus
       - Swapped the move +2 events in the jail with a cannon and a 96 event
       - Exchanged a few venture cards and raised the target to help balance the gameplay
+      - Moved the location of the switch to raise the chance of going to jail
 authors:
   - name: jim007
 ventureCards:
