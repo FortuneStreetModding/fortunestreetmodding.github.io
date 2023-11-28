@@ -46,8 +46,10 @@ changelog:
   - version: 1
     added: 
       - Initial Release
+  - version: 2
+      - swapped out various event squares to make it a little more varied and hopefully easier to buy property and go to the bank. 
 authors:
-  - name: Jimmy007
+  - name: phellen007
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
