@@ -23,7 +23,7 @@ mapIcon: FortuneGate
 music:
   download: 
     - https://nikkums.io/cswt/BGM/FortuneGateFG1.music.zip
-    - https://drive.google.com/file/d/1tdsS_aU5A7vuHzPmHs4eTZwQjT0uGnv9/view?usp=drive_link
+    - https://drive.google.com/uc?export=download&confirm=1&id=1tdsS_aU5A7vuHzPmHs4eTZwQjT0uGnv9
   map: FortuneGate.65
   targetMet: FortuneGateTarget.70
 tourMode:
