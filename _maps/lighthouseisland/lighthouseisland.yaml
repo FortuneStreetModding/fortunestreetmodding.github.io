@@ -4,7 +4,7 @@ name:
 desc:
   en: Job posting - Lightkeeper needed! Want to get paid to basically keep the lights on, all while enjoying endless ocean views on your own private island? Then this job might be for you. Responsibilites include helping ships & their crew navigate their cargo safely into the harbor at night. Apply today! 
 ruleSet: Standard
-theme: Mario
+theme: DragonQuest
 initialCash: 2400
 targetAmount: 20000
 baseSalary: 360
@@ -19,7 +19,7 @@ mapIcon: lightICON
 music:
   download:
   - https://nikkums.io/cswt/BGM/lighthouseisland.music.zip
-  - https://drive.google.com/file/d/1yoEBKlOkr9pJNWev-xWZ8nuIWdHYGhU2/view?usp=sharing
+  - https://drive.google.com/uc?export=download&confirm=1&id=1yoEBKlOkr9pJNWev-xWZ8nuIWdHYGhU2
   map: lighthouse_MAP
   stock: lighthouse_VENTURE
   ventureCards: Lighthouse_VENTURE
