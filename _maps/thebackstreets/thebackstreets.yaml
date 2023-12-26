@@ -19,7 +19,7 @@ mapIcon: backstreets
 music:
   download: 
   - https://nikkums.io/cswt/BGM/thebackstreets.music.zip
-  - https://drive.google.com/file/d/1RwK5rUJhayHv4o-By0IpTIyW7AADd-0_/view?usp=sharing
+  - https://drive.google.com/uc?export=download&confirm=1&id=1RwK5rUJhayHv4o-By0IpTIyW7AADd-0_
   map: BackstreetMAP.50
   stock: BackstreetSTOCK.50
   ventureCards: BackstreetVENT.50
