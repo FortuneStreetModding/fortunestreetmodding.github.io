@@ -42,6 +42,7 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 5
+    changed:
       - Lowered target amount to 20k
       - Added three pairs of magmalices
       - added another switch and another portal 
