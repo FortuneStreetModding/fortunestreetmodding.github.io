@@ -23,7 +23,7 @@ mapIcon: FortuneGate
 music:
   download: 
     - https://nikkums.io/cswt/BGM/FortuneGateFG1.music.zip
-    - https://drive.google.com/u/0/uc?id=1ymrEPQ50mw4yOIQYiCgo4Z8VD3lH_x5j&export=download
+    - https://drive.google.com/uc?export=download&confirm=1&id=1tdsS_aU5A7vuHzPmHs4eTZwQjT0uGnv9
   map: FortuneGate.65
   targetMet: FortuneGateTarget.70
 tourMode:
@@ -33,6 +33,10 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+      - Added a switch on the mainland
+      - adjusted the placement of the backstreets
+      - changed the music
   - version: 1
     added: 
       - Initial Release

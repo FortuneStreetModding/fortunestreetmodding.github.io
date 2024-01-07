@@ -4,14 +4,15 @@ name:
 desc:
   en: Turtle Fortress, a castle built so tough its walls have never been breached, until now! Who will be the first to storm the castle gates, capture the territory, and take home the loot?  
 ruleSet: Standard
-theme: Mario
+theme: DragonQuest
 initialCash: 2500
-targetAmount: 22000
+targetAmount: 20000
 baseSalary: 275
 salaryIncrement: 230
 maxDiceRoll: 7
 frbFile1: TurtleFortress
-background: bg005
+frbFile2: TurtleFortress2
+background: bg107fixed
 mapIcon: TurtleFort
 music:
   download: 
@@ -40,6 +41,19 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 5
+      - Lowered target amount to 20k
+      - Added three pairs of magmalices
+      - added another switch and another portal 
+      - Moved location of the bank
+      - Added another rotating suit square where the bank used to be
+      - changed out a few take a break squares with event 91
+      - added an event 79 buyout x3 square
+      - Shrunk the board size by 8 squares
+      - Took away 2 districts and rearranged district placement
+      - Changed the background
+      - switched the theme to DragonQuest
+      - Added a switch that extends a drawbridge and another that retracts it on the center isle      
   - version: 4
     changed: 
       - Lowered Target amount from 25k to 22k
@@ -68,14 +82,12 @@ districtNames:
   en:
     - Gate
     - Bridge
-    - South Wall
     - SW Tower
     - SE Tower
     - West Wall
     - East Wall
     - NW Tower
     - NE Tower
-    - North Wall
     - West Court
     - East Court
 ventureCards:
