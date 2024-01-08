@@ -217,9 +217,9 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.14.4)
     multipart-post (2.1.1)
-    nokogiri (1.13.6-x64-mingw-ucrt)
-      racc (~> 1.4)
     nokogiri (1.13.6-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.13.6-x64-unknown)
       racc (~> 1.4)
     nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
@@ -255,7 +255,7 @@ GEM
     thread_safe (0.3.6)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
-    tzinfo (1.2.9)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
@@ -266,8 +266,8 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
-  x64-mingw-ucrt
   x64-mingw32
+  x64-unknown
   x86_64-linux
 
 DEPENDENCIES
