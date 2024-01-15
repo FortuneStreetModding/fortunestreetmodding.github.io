@@ -47,7 +47,8 @@ changelog:
     added: 
       - Initial Release
   - version: 2
-      - swapped out various event squares to make it a little more varied and hopefully easier to buy property and go to the bank. 
+      - swapped out various event squares to make it a little more varied and hopefully easier to buy property and go to the bank.
+      - moved an event square to another location in order to fix a soft lock that occured during an appearance characters movement on the board.        
 authors:
   - name: phellen007
 ventureCards:
