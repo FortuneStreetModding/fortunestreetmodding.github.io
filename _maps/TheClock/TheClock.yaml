@@ -28,6 +28,9 @@ tourMode:
 authors:
   - name: RyanDCB2
 changelog:
+  - version: 2
+    changed:
+      - Change the two vacant plots on the bridge to regular properties and adjust their shop values to be appropriate
   - version: 1
     added:
       - Initial release
