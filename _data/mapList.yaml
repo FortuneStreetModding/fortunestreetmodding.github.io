@@ -380,9 +380,6 @@ backgrounds: backgrounds.yml
     GeometryDash.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GeometryDash.zip
-    Gladius.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Gladius.zip
     GoodybagLair.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GoodybagLair.zip
