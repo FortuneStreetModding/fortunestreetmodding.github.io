@@ -1,10 +1,10 @@
 ---
 name:
-  en: LuigisMansion
-  fr: LuigisMansion 
+  en: Luigi's Mansion
+  fr: Luigi's Mansion 
 desc:
-  en: a luigi's mansion themed board based on the map of the mario kart double dash arena 
-  fr: un plateau sur le thème de luigi's mansion 
+  en: A Luigi's Mansion themed board based on the map of the Mario Kart Double Dash arena 
+  fr: Un plateau sur le thème de luigi's mansion 
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
