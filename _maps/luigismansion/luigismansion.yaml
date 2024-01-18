@@ -16,7 +16,7 @@ frbFile1: luigismansion
 frbFile2: luigismansion2
 frbFile3: luigismansion3
 frbFile4: luigismansion4
-background: mansion
+background: LuigisMansion
 mapIcon: icone
 music:
   map: maintheme
