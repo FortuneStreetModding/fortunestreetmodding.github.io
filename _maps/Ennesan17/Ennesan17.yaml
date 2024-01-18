@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 8
+    changed:
+      - Change event square in upper left corner from Venture Card 112 to 23.
   - version: 7
     changed:
       - First move changed to warp to any shop of your choice.
