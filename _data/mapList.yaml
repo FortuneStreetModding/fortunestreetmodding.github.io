@@ -332,9 +332,6 @@ backgrounds: backgrounds.yml
     Ennesan06.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan06.zip
-    Ennesan07.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan07.zip
     Ennesan10.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan10.zip
