@@ -260,9 +260,6 @@ backgrounds: backgrounds.yml
 1:
   #practiceBoard: DeathStarfish
   0:
-    AcademyCity.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/AcademyCity.zip
     AegisRim.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AegisRim.zip
@@ -278,10 +275,10 @@ backgrounds: backgrounds.yml
     BabyPark.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BabyPark.zip
-  1:
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
+  1:
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
@@ -297,10 +294,10 @@ backgrounds: backgrounds.yml
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
-  2:
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
+  2:
     Colony9.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony9.zip
