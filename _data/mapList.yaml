@@ -473,9 +473,6 @@ backgrounds: backgrounds.yml
     VennDiagram.zip:
       urls:
       - https://nikkums.io/cswt/Maps/VennDiagram.zip
-    WariosBattleCanyon.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/WariosBattleCanyon.zip
     litbus.zip:
       urls:
       - https://nikkums.io/cswt/Maps/litbus.zip
