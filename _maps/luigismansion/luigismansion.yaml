@@ -196,10 +196,10 @@ ventureCards:
   - 0  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
   - 0  # 120 Misadventure! You drop your wallet and lose 20% of your ready cash!
   - 0  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
-  - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
+  - 1  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
   - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 0  # 124 Suit venture! Buy a Suit Yourself card for 50G.
-  - 1  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
+  - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
