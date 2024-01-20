@@ -42,6 +42,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Changed the effect of the event square under the bank, where you can earn diamonds, to buy yourself card for 100G.
+      - Shop values in some shops changed.
   - version: 4
     changed:
       - Reduced shop value and initial shop price for District H.

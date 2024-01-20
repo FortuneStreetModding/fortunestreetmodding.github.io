@@ -161,7 +161,6 @@ changelog:
   - version: 2
     changed: 
       - Merged the inner districts resulting in two 6-shop districts
-changelog:
   - version: 1
     added: 
       - Initial Release
