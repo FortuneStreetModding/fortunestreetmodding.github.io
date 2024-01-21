@@ -48,8 +48,10 @@ changelog:
       - Swapped the move +2 events in the jail with a cannon and a 96 event
       - Exchanged a few venture cards and raised the target to help balance the gameplay
       - Moved the location of the switch to raise the chance of going to jail
+  - version: 3
+      - Adjusted the locations of the magmalice squares to try and increase player traffic along the four corners of the board
 authors:
-  - name: jim007
+  - name: phellen007
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
