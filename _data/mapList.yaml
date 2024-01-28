@@ -407,9 +407,6 @@ backgrounds: backgrounds.yml
     KoopaTycoonTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KoopaTycoonTown.zip
-    Lucky.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Lucky.zip
     MidgarTransit.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MidgarTransit.zip
