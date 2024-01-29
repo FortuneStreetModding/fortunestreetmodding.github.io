@@ -11,7 +11,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: nla
-background: NLA
+background: nla
 mapIcon: nla
 music:
   map: NLAMedley.43
