@@ -44,7 +44,6 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 2
-    changed:
       - Map size has been reduced to 59 squares
       - Districts that used to have 5 properties now have 4
       - Removed districts 8,9, and 10
@@ -56,7 +55,7 @@ changelog:
     added: 
       - Initial Release
 authors:
-  - name: Jim007
+  - name: phellen007
 districtNames:
   en:
     - District A

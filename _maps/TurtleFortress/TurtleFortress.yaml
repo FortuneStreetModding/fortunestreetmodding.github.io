@@ -5,14 +5,31 @@ desc:
   en: Turtle Fortress, a castle built so tough its walls have never been breached, until now! Who will be the first to storm the castle gates, capture the territory, and take home the loot?  
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2500
+initialCash: 2750
 targetAmount: 20000
 baseSalary: 275
 salaryIncrement: 230
-maxDiceRoll: 7
-frbFile1: TurtleFortress
-frbFile2: TurtleFortress2
-background: bg107fixed
+maxDiceRoll: 6
+frbFiles:
+- TurtleFortress
+- TurtleFortress2
+- TurtleFortress3
+- TurtleFortress4
+- TurtleFortress5
+- TurtleFortress6
+- TurtleFortress7
+- TurtleFortress8
+- TurtleFortress9
+- TurtleFortress10
+- TurtleFortress11
+- TurtleFortress12
+- TurtleFortress13
+- TurtleFortress14
+- TurtleFortress15
+- TurtleFortress16
+- TurtleFortress17
+- TurtleFortress18
+background: facingWorlds
 mapIcon: TurtleFort
 music:
   download: 
@@ -41,6 +58,18 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - removed magmalices
+      - board is more compact now
+      - max dice roll now 6 instead of 7
+      - board states increased from 2 to 18
+      - bank location moved to draw bridge so that it will move around the map
+      - new event squares and event cards
+      - island in the center now attaches to the mainland in many of the board states
+      - moved location of the switches
+      - removed 2 cannons from the island and replaced with switches
+      - adjusted property values and districts
   - version: 5
     changed:
       - Lowered target amount to 20k
@@ -78,7 +107,7 @@ changelog:
     added:
       - Initial Release
 authors:
-  - name: Jim007
+  - name: phellen007
 districtNames:
   en:
     - Gate

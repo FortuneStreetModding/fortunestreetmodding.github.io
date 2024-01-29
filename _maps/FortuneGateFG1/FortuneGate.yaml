@@ -1,8 +1,8 @@
 ---
 name:
-  en: Fortune Gate FG1
+  en: Fortune Gate
 desc:
-  en: Join up with elite team FG1 as they embark a mission through the Fortune Gate. No vacant plots included, but feel free to add a few if desired.
+  en: Join up with elite team FG1 as they embark a mission through the Fortune Gate. Vacant plots not included, but feel free to add a few.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500
@@ -33,8 +33,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 3
+      - swapped out one of the stockbrokers with a backstreet that leads to the center isle
   - version: 2
-    changed:
       - Added a switch on the mainland
       - adjusted the placement of the backstreets
       - changed the music
@@ -42,7 +43,7 @@ changelog:
     added: 
       - Initial Release
 authors:
-  - name: Jim007
+  - name: phellen007
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
