@@ -71,11 +71,11 @@ music:
   download: 
     - https://nikkums.io/cswt/BGM/Shibuya.music.zip
   map: ShibuyaMedley.40
-  stock: ntwewymenu.50
-  ventureCards: ntwewyshop.50
-  auction: lastcall.50
+  stock: ntwewymenu
+  ventureCards: ntwewyshop
+  auction: lastcall
   targetMet: Twister.40
-  win: ntwewyending.50
+  win: ntwewyending
   guestAppear: twewyjingle
   guestLeave: twewyjingle
   badVentureCard:
