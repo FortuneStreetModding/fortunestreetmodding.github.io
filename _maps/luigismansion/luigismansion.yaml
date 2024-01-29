@@ -17,7 +17,7 @@ frbFile2: luigismansion2
 frbFile3: luigismansion3
 frbFile4: luigismansion4
 background: LuigisMansion
-mapIcon: LuigisMansionicone
+mapIcon: Mansionicone
 music:
   map: maintheme
   stock: professorstock
