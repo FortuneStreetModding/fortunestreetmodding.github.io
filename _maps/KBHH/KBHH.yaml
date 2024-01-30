@@ -149,8 +149,8 @@ changelog:
     added: 
       - Initial Release
 authors:
-  - name: JimmyV007 & McKrak
-    url: 
+  - name: McKrak
+  - name: phellen007
 notes: |
   This board can be played on both Dolphin Emulator and Original Hardware (Wii, Wii U).
 ventureCards:
