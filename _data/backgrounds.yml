@@ -835,3 +835,84 @@
     slurpodromeStart: A_X-event.80
     slurpodromeRace: slurRace_grid.65
     slurpodromeWin: RTB777_SlurWin_grid.80
+- background: KBHH
+  name: King Boo's Haunted Hideaway
+  download:
+  - https://nikkums.io/cswt/Backgrounds/KBHH.background.zip
+  - https://drive.google.com/uc?export=download&id=1fjYD4jDfawueHEV-zHnzcUoD68Yvu82r&confirm=1
+  mapIcon: iconKBHH
+  music:
+    map: 
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    stock: starcarnival_STOCK
+    ventureCards: starcarnival_VEN
+    auction: starcarnival_AUCTION
+    targetMet: starcarnival_FINAL
+    win: starcarnival_WIN
+    guestAppear: starcarnival_GUESTA
+    guestLeave: starcarnival_GUESTL
+    badVentureCard: starcarnival_VENBAD
+    takeAbreak: starcarnival_BREAK
+    promotionMii: starcarnival_PROMO
+    promotionMario: starcarnival_PROMO
+    promotionDragonQuest: starcarnival_PROMO
+    forcedBuyout: starcarnival_BUYOUT
+    domination: starcarnival_DOMINATION
+    bankruptcy: starcarnival_LOSE
+    roundTheBlocks: A_starcarnival_ROB
+    roundTheBlocksWin: starcarnival_ROBWIN
+    roundTheBlocks777: starcarnival_ROB777
+    memoryBlock: A_starcarnival_MEM
+    dartOfGold: A_starcarnival_DOG
+    slurpodromeSelect: A_starcarnival_SRP
+    slurpodromeStart: starcarnival_SRPSTART
+    slurpodromeRace: starcarnival_SRPRACE
+    slurpodromeWin: starcarnival_SRPWIN
+    
