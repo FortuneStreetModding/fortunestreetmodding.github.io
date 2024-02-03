@@ -24,7 +24,7 @@ music:
   stock: BackstreetSTOCK.50
   ventureCards: BackstreetVENT.50
   auction: BackstreetSTOCK.50
-  targetMet: backstreetTARGET.50
+  targetMet: BackstreetTARGET.50
   roundTheBlocks: A_BackstreetARCADE.50
   roundTheBlocksWin: ArcadeWin.50
   roundTheBlocks777: 
