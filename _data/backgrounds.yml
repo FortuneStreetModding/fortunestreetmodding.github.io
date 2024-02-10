@@ -915,4 +915,37 @@
     slurpodromeStart: starcarnival_SRPSTART
     slurpodromeRace: starcarnival_SRPRACE
     slurpodromeWin: starcarnival_SRPWIN
-    
+- background: mp9_magmine
+  name: Magma Mine
+  download:
+  - https://nikkums.io/cswt/Backgrounds/mp9_magmine.background.zip
+  - https://drive.google.com/uc?export=download&id=1aNAeKcxMH5qNw5tdqJNUanBlxopcCKpe&confirm=1
+  mapIcon: imp9_magmine
+  music:
+    map: 
+      - mp9_magmine_MAP1
+      - mp9_magmine_MAP2
+      - mp9_magmine_MAP3
+      - mp9_magmine_MAP4
+    stock: mp9_STOCK
+    ventureCards: mp9_VEN
+    auction: mp9_AUC
+    targetMet: mp9_magmine_FINAL
+    win: mp9_WIN
+    guestAppear: mp9_GUESTA
+    badVentureCard: mp9_VENBAD
+    promotionMii: mp9_PROMO
+    promotionMario: mp9_PROMO
+    promotionDragonQuest: mp9_PROMO
+    forcedBuyout: mp9_BYO
+    domination: mp9_DOM
+    bankruptcy: mp9_LOSE
+    roundTheBlocks: A_mp9_ROB
+    roundTheBlocksWin: mp9_ROB_WIN
+    roundTheBlocks777: mp9_ROB_777
+    memoryBlock: A_mp9_MEM
+    dartOfGold: A_mp9_DOG
+    slurpodromeSelect: A_mp9_SRP
+    slurpodromeStart: mp9_SRP_START
+    slurpodromeRace: mp9_SRP_RACE
+    slurpodromeWin: mp9_SRP_WIN
