@@ -53,7 +53,7 @@ tourMode:
   bankruptcyLimit: 1
   opponent1: Wario
   opponent2: Birdo
-  opponent3: Diddy Kong
+  opponent3: DiddyKong
   clearRank: 2
 changelog:
   - version: 1
