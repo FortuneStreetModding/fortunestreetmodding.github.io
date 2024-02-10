@@ -8,7 +8,7 @@ theme: DragonQuest
 initialCash: 2700
 targetAmount: 18000
 baseSalary: 300
-salaryIncrement: 250
+salaryIncrement: 220
 maxDiceRoll: 6
 frbFile1: mp9_magmine1
 frbFile2: mp9_magmine2
