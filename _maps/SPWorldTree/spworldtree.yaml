@@ -15,8 +15,8 @@ frbFile2: SPWorldTree1
 background: bg008alt
 mapIcon: spworldtree
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/SPYggdrasil.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/SPWorldTree.music.zip
     - https://drive.google.com/uc?export=download&id=1Ve2Sv7Dqdpp0mmvGEYAbUTmwsFRn1m_3&confirm=1
   map: BGM_MAP_WORLDTREE_SPECIAL.50
   stock: BGM_STOCK_SPECIAL.60
@@ -65,7 +65,7 @@ changelog:
     changed:
       - Changed background to the new bg008alt
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia
