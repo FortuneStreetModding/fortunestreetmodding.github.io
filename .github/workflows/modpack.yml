@@ -1,0 +1,46 @@
+name: Build and upload modpacks
+on:
+  push:
+    branches:
+      - 'nikkums/**'
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read    # This is required for actions/checkout
+
+jobs:
+  UploadPyCSMMToS3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the repo
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.ASSUME_ROLE_ARN }}
+          role-session-name: ModpackBuildingRoleSession
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Build all modpacks
+        run: |
+            mkdir -p _modpacks/build
+            build_dir=$(pwd)/_modpacks/build
+            for d in _modpacks/*/* ; do
+                echo $d
+                modpack_id=$(jq -r "keys[0]" $d/manifest.json)
+                resources_directory="_data/modpack_common_files/" + $(jq -r ".$modpack_id.resources" $d/manifest.json)
+                mkdir -p $d/$modpack_id
+                cp -r $resources_directory/. $d/$modpack_id
+                cp $d/manifest.json $build_dir/$modpack_id.json
+                cp $d/modlist.txt $d/mapList.yaml $d/manifest.json $d/$modpack_id/
+                cd $d/$modpack_id && zip -r $build_dir/$modpack_id.zip .
+                cd -
+            done
+
+      - name: Upload modpacks to S3
+        run: aws s3 cp /_modpacks/build/*.zip s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Modpacks/
+
+      - name: Create CloudFront invalidation for modpack
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Modpacks/*

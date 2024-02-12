@@ -1,0 +1,80 @@
+backgrounds: backgrounds.yml
+0:
+  #practiceBoard: non-selective
+  0:
+    Ennesan31C.zip:
+    Ennesan32.zip:
+    Ennesan33.zip:
+    MoguMap.zip:
+    mp9_magmine.zip:
+    KBHH.zip:
+  1:
+    luigismansion.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/luigismansion.zip
+    CastawayBayCSide.zip:
+    Ennesan29.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan29.zip
+    Ennesan30A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
+    Ennesan30B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30B.zip
+    fortunapolis.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/fortunapolis.zip
+    giantbeanstalk.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
+  2:
+    giantbeanstalk.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
+    thebackstreets.zip:
+    lighthouseisland.zip:
+    slimeguyspaydayexpress.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
+    superbowserstrackway.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/superbowserstrackway.zip
+    non-selective.zip:
+      practiceBoard: true
+1:
+  #practiceBoard: non-selective
+  0:
+    FortuneGateFG1.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
+    TurtleFortress.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TurtleFortress.zip
+    Ennesan15.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan15.zip
+    Ennesan17.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan17.zip
+    TheClock.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TheClock.zip
+    Shibuya.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Shibuya.zip
+  1:
+    non-selective.zip:
+    non-selective.zip:
+    non-selective.zip:
+    non-selective.zip:
+    non-selective.zip:
+    non-selective.zip:
+  2:
+    non-selective.zip:
+    non-selective.zip:
+    non-selective.zip:
+    non-selective.zip:
+    non-selective.zip:
+    non-selective.zip:
+      practiceBoard: true
