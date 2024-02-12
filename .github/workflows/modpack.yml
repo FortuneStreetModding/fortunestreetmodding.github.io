@@ -23,18 +23,17 @@ jobs:
           role-session-name: ModpackBuildingRoleSession
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - name: Install dependencies
-        run: sudo apt-get install jq
-
       - name: Build all modpacks
         run: |
             mkdir -p _modpacks/build
             build_dir=$(pwd)/_modpacks/build
             for d in _modpacks/*/* ; do
                 modpack_id=$(jq -r "keys[0]" $d/manifest.json)
-                resources_directory=("_data/modpack_common_files/" + $(jq -r .$modpack_id.resources $d/manifest.json))
-                echo $resources_directory
                 echo $modpack_id
+                resource_name=$(jq -r .$modpack_id.resources $d/manifest.json)
+                echo $resource_name
+                resources_directory=("_data/modpack_common_files/" + $resource_name)
+                echo $resources_directory
                 mkdir -p $d/$modpack_id
                 cp -r $resources_directory $d/$modpack_id
                 cp $d/manifest.json $build_dir/$modpack_id.json
