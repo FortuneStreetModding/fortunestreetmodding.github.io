@@ -32,7 +32,7 @@ jobs:
             build_dir=$(pwd)/_modpacks/build
             for d in _modpacks/*/* ; do
                 modpack_id=$(jq -r "keys[0]" $d/manifest.json)
-                resources_directory=("_data/modpack_common_files/" + $(jq -r ".$modpack_id.resources" $d/manifest.json))
+                resources_directory=("_data/modpack_common_files/" + $(jq -r .$modpack_id.resources $d/manifest.json))
                 echo $resources_directory
                 echo $modpack_id
                 mkdir -p $d/$modpack_id
