@@ -31,9 +31,8 @@ jobs:
             mkdir -p _modpacks/build
             build_dir=$(pwd)/_modpacks/build
             for d in _modpacks/*/* ; do
-                echo $d
                 modpack_id=$(jq -r "keys[0]" $d/manifest.json)
-                resources_directory="_data/modpack_common_files/" + $(jq -r ".$modpack_id.resources" $d/manifest.json)
+                resources_directory=("_data/modpack_common_files/" + $(jq -r ".$modpack_id.resources" $d/manifest.json))
                 mkdir -p $d/$modpack_id
                 cp -r $resources_directory/. $d/$modpack_id
                 cp $d/manifest.json $build_dir/$modpack_id.json
