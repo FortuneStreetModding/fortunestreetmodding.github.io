@@ -25,7 +25,7 @@ tourMode:
 music: 
   download: 
     - https://nikkums.io/cswt/BGM/MonsterHouse.music.zip
-    - https://drive.google.com/u/2/uc?id=1i2WUw344_JMOEXxBsAliK8lpVTq8UulF&export=download
+    - https://drive.google.com/uc?export=download&id=1BN5KMPeeZR6GT5Jh-in_-yqnmo0ojz4p&confirm=1
   map: BGM_MAP_MONSTER.60
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70
@@ -34,7 +34,7 @@ music:
   win: BGM_WINNER_SMART.60
   guestAppear:
   guestLeave:
-  badVentureCard:
+  badVentureCard: ME_CURSE_SMART.70
   takeAbreak: ME_HOLIDAY_SMART.60
   promotionMii: ME_LEVELUP_SMART.60
   promotionMario: ME_LEVELUP_SMART.60
@@ -42,7 +42,20 @@ music:
   forcedBuyout: ME_5_BUY_SMART.60
   domination: ME_MONOPOLY_SMART.60
   bankruptcy: ME_BANKRUPT_SMART.60
+  memoryBlock: A_ARCADE_SMART.100
+  dartOfGold: A_ARCADE_SMART.100
+  roundTheBlocks: A_ARCADE_SMART.100
+  roundTheBlocksWin: ME_ARCADEWIN_SMART.60
+  roundTheBlocks777: ME_ARCADE777_SMART.60
+  slurpodromeRace: 
+  slurpodromeSelect: A_ARCADE_SMART.100
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_SMART.60
 changelog:
+  - version: 4
+    added:
+      - Bad Venture Music
+      - Arcade Music
   - version: 3
     changed:
       - Changed background to bg102alt
