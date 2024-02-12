@@ -32,10 +32,10 @@ _site/
 ### cmpres and brstm ###
 *.brstm
 *.cmpres
-!_data/modpack_common_files/cswt/*.cmpres
+!_data/modpack_common_files/cswt/*/*.cmpres
 # exclude arc files but allow cswtpycsmm's arc directories
 *.arc
-!_data/modpack_common_files/cswt//cswtpycsmm/*.arc
+!_data/modpack_common_files/cswt/cswtpycsmm/*.arc
 *.scene
 
 ### Binary Files ###
