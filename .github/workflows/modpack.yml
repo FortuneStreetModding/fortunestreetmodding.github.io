@@ -36,8 +36,7 @@ jobs:
                 cp -r $resource_directory/. $d/$modpack_id/
                 cp $d/manifest.json $build_dir/$modpack_id.json
                 cp $d/modlist.txt $d/mapList.yaml $d/manifest.json $d/$modpack_id/
-                other_files=$(test -d $d/other_files)
-                if $other_files; then
+                if [[ -d $d/other_files ]] ; then
                     cp -r $d/other_files/. $d/$modpack_id/
                 fi
                 cd $d/$modpack_id && zip -r $build_dir/$modpack_id.zip .
