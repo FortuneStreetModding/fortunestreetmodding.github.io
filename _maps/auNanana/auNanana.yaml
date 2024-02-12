@@ -22,7 +22,7 @@ tourMode:
 music: 
   download: 
     - https://nikkums.io/cswt/BGM/auNanana.music.zip
-    - https://drive.google.com/u/2/uc?id=12gzLYRTDn5OkZ4nQiGEusSPoll0kalcE&export=download
+    - https://drive.google.com/uc?export=download&id=1KjomkeDOXLFRbS4Lt-qT2LNwefv1WLoq&confirm=1
   map: 
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70
@@ -31,7 +31,7 @@ music:
   win: BGM_WINNER_SMART.60
   guestAppear:
   guestLeave:
-  badVentureCard:
+  badVentureCard: ME_CURSE_SMART.70
   takeAbreak: ME_HOLIDAY_SMART.60
   promotionMii: ME_LEVELUP_SMART.60
   promotionMario: ME_LEVELUP_SMART.60
@@ -39,7 +39,20 @@ music:
   forcedBuyout: ME_5_BUY_SMART.60
   domination: ME_MONOPOLY_SMART.60
   bankruptcy: ME_BANKRUPT_SMART.60
+  memoryBlock: A_ARCADE_SMART.100
+  dartOfGold: A_ARCADE_SMART.100
+  roundTheBlocks: A_ARCADE_SMART.100
+  roundTheBlocksWin: ME_ARCADEWIN_SMART.60
+  roundTheBlocks777: ME_ARCADE777_SMART.60
+  slurpodromeRace: 
+  slurpodromeSelect: A_ARCADE_SMART.100
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_SMART.60
 changelog:
+  - version: 5
+    added:
+      - Bad Venture Music
+      - Arcade Music
   - version: 4
     changed:
       - Corrected an error in setting the initial shop price for 180 properties in District A.
@@ -49,6 +62,9 @@ changelog:
   - version: 2
     added:
       - Icon
+  - version: 1
+    added:
+      - Initial Release
 authors:
   - name: Azurillkirby
 notes: |
