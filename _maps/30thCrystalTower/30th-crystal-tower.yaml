@@ -16,7 +16,7 @@ mapIcon: is30
 music: 
   download: 
     - https://nikkums.io/cswt/BGM/30thCrystalTower.music.zip
-    - https://drive.google.com/u/0/uc?export=download&confirm=KRsd&id=1XFvtFKNGpIz4QKwYgB3uUqLEFYiC2SvN&confirm=1
+    - https://drive.google.com/uc?export=download&id=1MHDkw44BaX2GSOMbqtIX66ZxaMYaGPk8&confirm=1
   map: BGM_MAP_CRYSTAL_TOWER_30.50
   stock: BGM_STOCK_30TH.60
   ventureCards: BGM_CHANCECARD_30TH.70
@@ -33,6 +33,15 @@ music:
   forcedBuyout: ME_5_BUY_30TH.60
   domination: ME_MONOPOLY_30TH.55
   bankruptcy:
+  memoryBlock: A_BGM_MEMORY_30th.100
+  dartOfGold: A_BGM_DART_30th.100
+  roundTheBlocks: A_BGM_ROUND_30th.120
+  roundTheBlocksWin: ME_ARCADEWIN_30th.135
+  roundTheBlocks777: ME_ARCADE777_30th.100
+  slurpodromeRace: BGM_RACE_30th.105
+  slurpodromeSelect: A_BGM_ROUND_30th.120
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_30th.100
 tourMode:
   bankruptcyLimit: 1
   opponent1: Slime
@@ -40,11 +49,17 @@ tourMode:
   opponent3: Princessa
   clearRank: 3
 changelog:
+  - version: 3
+    added:
+      - Arcade Music
   - version: 2
     changed:
       - Updated yaml for CSWT
     added:
       - Icon & BGM
+  - version: 1
+    added: 
+      - Initial Release
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
