@@ -30,7 +30,7 @@ jobs:
             for d in _modpacks/*/* ; do
                 modpack_id=$(jq -r "keys[0]" $d/manifest.json)
                 resource_name=$(jq -r .$modpack_id.resources $d/manifest.json)
-                resource_directory=()"_data/modpack_common_files/" + $resource_name)
+                resource_directory=("_data/modpack_common_files/" + $resource_name)
                 echo ($resource_directory)
                 mkdir -p $d/$modpack_id
                 cp -r $resource_directory/. $d/$modpack_id
