@@ -32,39 +32,17 @@ _site/
 ### cmpres and brstm ###
 *.brstm
 *.cmpres
-!cswtpycsmm/**/*.cmpres
+!_data/modpack_common_files/cswt/*/*.cmpres
 # exclude arc files but allow cswtpycsmm's arc directories
 *.arc
-!cswtpycsmm/cswtpycsmm/*.arc
-ui_menu_*.png
+!_data/modpack_common_files/cswt/cswtpycsmm/*.arc
 *.scene
 
 ### Binary Files ###
 *.zip
+!_modpacks/cswt/development/other_files/*.zip
 *.7z
 __pycache__
 
 ### Map Background and Music Download Metainformation ###
 *.cfg
-
-### cswtpycsmm extra stuff
-cswtpycsmm/mapList.yaml
-cswtpycsmm/backgrounds.yml
-
-# Map Icons which are defined in backgrounds.yml
-facingWorlds.png
-forestFairies.png
-forsakenFortress.png
-galaxyColosseum.png
-n64Skyscraper.png
-traverseTown.png
-battlecanyon.png
-quietstreet.png
-bg009alt.png
-dksjungle.png
-bg008alt.png
-bg001_clean.png
-
-_maps/PortableBhujerba/bg107fixed.png
-
-_maps/AegisRim/grid_blue2.png

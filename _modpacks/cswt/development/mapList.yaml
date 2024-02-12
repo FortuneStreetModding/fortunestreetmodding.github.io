@@ -1,0 +1,85 @@
+backgrounds: backgrounds.yml
+0:
+  0:
+    CastawayBayCSide.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
+    Ennesan29.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan29.zip
+    Ennesan30A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
+    fortunapolis.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/fortunapolis.zip
+    giantbeanstalk.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
+    KBHH.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/KBHH.zip
+  1:
+    lighthouseisland.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/lighthouseisland.zip
+    luigismansion.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/luigismansion.zip
+    MoguMap.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MoguMap.zip
+    mp9_magmine.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/mp9_magmine.zip
+    slimeguyspaydayexpress.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
+    superbowserstrackway.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/superbowserstrackway.zip
+  2:
+    thebackstreets.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/thebackstreets.zip
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+      practiceBoard: true
+1:
+  0:
+    Ennesan15.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan15.zip
+    Ennesan17.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan17.zip
+    FortuneGateFG1.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
+    Shibuya.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Shibuya.zip
+    TheClock.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TheClock.zip
+    TurtleFortress.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TurtleFortress.zip
+  1:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+  2:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+      practiceBoard: true
