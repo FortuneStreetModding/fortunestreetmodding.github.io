@@ -16,13 +16,13 @@ mapIcon: maharata
 music:
   download: 
     - https://nikkums.io/cswt/BGM/MaharataIslands.music.zip
-    - https://drive.google.com/uc?export=download&id=1SbqK_tBlqNTs55Iy3PeoHUnhaicc9KCT
+    - https://drive.google.com/uc?export=download&id=15RnbaleUxqy3oi4AJS5a2JJSSOwpVN21&confirm=1
   map: BGM_MAP_MAHARATA.50
   stock: BGM_STOCK_IS1.55
   ventureCards: BGM_CHANCECARD_IS1.60
   auction: BGM_AUCTION_IS1.50
   targetMet:
-  win: BGM_WINNER_IS1.50
+  win: BGM_WINNER_IS1.75
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_IS1.50
@@ -31,8 +31,17 @@ music:
   promotionMario: ME_LEVELUP_IS1.50
   promotionDragonQuest: ME_LEVELUP_IS1.50
   forcedBuyout:
-  domination:
-  bankruptcy:
+  domination: ME_MONOPOLY_IS1.60
+  bankruptcy: ME_BANKRUPT_IS1.75
+  memoryBlock: A_BGM_ARCADE_IS1.75
+  dartOfGold: A_BGM_ARCADE_IS1.75
+  roundTheBlocks: A_BGM_ARCADE_IS1.75
+  roundTheBlocksWin: 
+  roundTheBlocks777: 
+  slurpodromeRace: 
+  slurpodromeSelect: A_BGM_ARCADE_IS1.75
+  slurpodromeStart: 
+  slurpodromeWin: 
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -41,6 +50,13 @@ tourMode:
   opponent3: Carver
   clearRank: 2
 changelog:
+  - version: 4
+    added:
+      - Domination Music
+      - Bankrupt Music
+      - Arcade Music
+    changed:
+      - Win Music
   - version: 3
     changed:
       - Updated icon & yaml for CSWT
