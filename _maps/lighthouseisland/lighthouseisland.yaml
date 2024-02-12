@@ -2,7 +2,7 @@
 name:
   en: Lighthouse Island
 desc:
-  en: Job posting - Lightkeeper needed! Want to get paid to basically keep the lights on, all while enjoying endless ocean views on your own private island? Then this job might be for you. Responsibilites include helping ships & their crew navigate their cargo safely into the harbor at night. Apply today! 
+  en: Job posting - Lightkeeper needed! Want to get paid to basically keep the lights on, all while enjoying endless ocean views on your own private island? Then this job might be for you. Responsibilites include helping ships & their crew navigate their cargo safely into the harbor at night. Apply today!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2400
@@ -22,10 +22,10 @@ music:
   - https://drive.google.com/uc?export=download&confirm=1&id=1yoEBKlOkr9pJNWev-xWZ8nuIWdHYGhU2
   map: lighthouse_MAP
   stock: lighthouse_VENTURE
-  ventureCards: Lighthouse_VENTURE
+  ventureCards: lighthouse_VENTURE
   auction: lighthouse_VENTURE
   targetMet: lighthouse_TARGET
-  win: 
+  win:
   guestAppear:
   guestLeave:
   badVentureCard:
@@ -36,15 +36,15 @@ music:
   forcedBuyout:
   domination:
   bankruptcy:
-  roundTheBlocks: 
-  roundTheBlocksWin: 
-  roundTheBlocks777: 
-  memoryBlock: 
-  dartOfGold: 
-  slurpodromeSelect: 
-  slurpodromeStart: 
-  slurpodromeRace: 
-  slurpodromeWin: 
+  roundTheBlocks:
+  roundTheBlocksWin:
+  roundTheBlocks777:
+  memoryBlock:
+  dartOfGold:
+  slurpodromeSelect:
+  slurpodromeStart:
+  slurpodromeRace:
+  slurpodromeWin:
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -53,7 +53,7 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: phellen007
