@@ -14,8 +14,8 @@ frbFile1: 2-01-kaigara
 background: bg105
 mapIcon: shell
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/ShellIsle.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/ShellIsland.music.zip
     - https://drive.google.com/uc?export=download&id=18yiuuVOujsqFJnqhHjFQRIEw_Ly90hGE&confirm=1
   map: BGM_MAP_SHELLISLE_IS2R.60
   stock: BGM_STOCK_IS2R.60
@@ -38,9 +38,9 @@ music:
   roundTheBlocks: A_BGM_ARCADE_IS2.75
   roundTheBlocksWin: ME_ARCADEWIN_IS2.75
   roundTheBlocks777: ME_ARCADE777_IS2.75
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_BGM_ARCADE_IS2.75
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_IS2.75
 tourMode:
   bankruptcyLimit: 1
@@ -65,7 +65,7 @@ changelog:
     changed:
       - Fixed bankruptcy music
   - version: 2
-    changed: 
+    changed:
       - Ported over to new .yaml file format.
     added:
       - Stock music
@@ -76,9 +76,9 @@ changelog:
       - Take a Break ME
       - Promotion ME
       - Forced Buyout ME
-      - Bankruptcy ME      
+      - Bankruptcy ME
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia
