@@ -33,12 +33,12 @@ jobs:
                 resource_directory="_data/modpack_common_files/$resource_name"
                 echo "$resource_directory"
                 mkdir -p $d/$modpack_id
-                cp -a $resource_directory/. $d/$modpack_id/
+                cp -r $resource_directory/. $d/$modpack_id/
                 cp $d/manifest.json $build_dir/$modpack_id.json
                 cp $d/modlist.txt $d/mapList.yaml $d/manifest.json $d/$modpack_id/
                 other_files=$(test -d $d/other_files)
                 if $other_files; then
-                    cp $d/other_files/* $d/$modpack_id/
+                    cp -r $d/other_files/. $d/$modpack_id/
                 fi
                 cd $d/$modpack_id && zip -r $build_dir/$modpack_id.zip .
                 cd -
