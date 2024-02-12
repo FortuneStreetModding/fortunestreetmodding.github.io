@@ -1,478 +1,84 @@
 backgrounds: backgrounds.yml
 0:
-  #practiceBoard: ShellIsland
   0:
-    CastleTrodain.zip:
+    CastawayBayCSide.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/CastleTrodain.zip
-    Observatory.zip:
+      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
+    Ennesan29.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Observatory.zip
-    GhostShip.zip:
+      - https://nikkums.io/cswt/Maps/Ennesan29.zip
+    Ennesan30A.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/GhostShip.zip
-    Slimenia.zip:
+      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
+    fortunapolis.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Slimenia.zip
-    MtMagmageddon.zip:
+      - https://nikkums.io/cswt/Maps/fortunapolis.zip
+    giantbeanstalk.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/MtMagmageddon.zip
-    RobbinHoodRuins.zip:
+      - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
+    KBHH.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/RobbinHoodRuins.zip
-    MarioStadium.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/MarioStadium.zip
-    StarshipMario.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/StarshipMario.zip
-    MarioCircuit.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/MarioCircuit.zip
-    YoshiIsland.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/YoshiIsland.zip
-    DelfinoPlaza.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DelfinoPlaza.zip
-    PeachCastle.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PeachCastle.zip
-    Alefgard.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Alefgard.zip
-    SuperMarioBros.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SuperMarioBros.zip
-    BowserCastle.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/BowserCastle.zip
-    GoodEggGalaxy.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/GoodEggGalaxy.zip
-    Colossus.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Colossus.zip
-    AlltradesAbbey.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/AlltradesAbbey.zip
+      - https://nikkums.io/cswt/Maps/KBHH.zip
   1:
-    MaharataIslands.zip:
+    lighthouseisland.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/MaharataIslands.zip
-    TheAmericas.zip:
+      - https://nikkums.io/cswt/Maps/lighthouseisland.zip
+    luigismansion.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/TheAmericas.zip
-    ShellIsland.zip:
-      practiceBoard: true
+      - https://nikkums.io/cswt/Maps/luigismansion.zip
+    MoguMap.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/ShellIsland.zip
-    LakeMountain.zip:
+      - https://nikkums.io/cswt/Maps/MoguMap.zip
+    mp9_magmine.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/LakeMountain.zip
-    Cloverland.zip:
+      - https://nikkums.io/cswt/Maps/mp9_magmine.zip
+    slimeguyspaydayexpress.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Cloverland.zip
-    MoonCity.zip:
+      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
+    superbowserstrackway.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/MoonCity.zip
+      - https://nikkums.io/cswt/Maps/superbowserstrackway.zip
   2:
-    Gootrude.zip:
+    thebackstreets.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Gootrude.zip
-    IS2Skyscraper.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IS2Skyscraper.zip
-    DreamWorld.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DreamWorld.zip
-    IS2Freeway.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IS2Freeway.zip
-    IS2UnderwaterMetropolis.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IS2UnderwaterMetropolis.zip
-    CasinoTown.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/CasinoTown.zip
-    IS2SophiesCave.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IS2SophiesCave.zip
-    Geoglyph.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Geoglyph.zip
-    QueenBunny.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/QueenBunny.zip
-    PrimitiveEra.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PrimitiveEra.zip
-    GKFLoatingContinent.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/GKFLoatingContinent.zip
-    IS3CandyLand.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IS3CandyLand.zip
-    IS3Rainforest.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IS3Rainforest.zip
-    IS3Moonlight.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IS3Moonlight.zip
-    IS3Machu.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IS3Machu.zip
-    IS3Space.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IS3Space.zip
-    SPTycoon.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SPTycoon.zip
-    SPAlltrades.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SPAlltrades.zip
-    SeabedShrine.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SeabedShrine.zip
-    SPFortuna.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SPFortuna.zip
-    SPWorldTree.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SPWorldTree.zip
-    SPRendarak.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SPRendarak.zip
-    SPAlefgard.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SPAlefgard.zip
-    SPMidgar.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SPMidgar.zip
-    SPThunder.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SPThunder.zip
-    Rabanastre.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Rabanastre.zip
-    SPNalbina.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SPNalbina.zip
-    SPAirship.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SPAirship.zip
-    PortableTantegel.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PortableTantegel.zip
-    PortableRamia.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PortableRamia.zip
-    LibraryOfTheAncients.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/LibraryOfTheAncients.zip
-    PortableTree.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PortableTree.zip
-    PortableVale.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PortableVale.zip
-    PortableAlexandra.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PortableAlexandra.zip
-    PhantomTrain.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PhantomTrain.zip
-    PortableOpera.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PortableOpera.zip
-    PortableBhujerba.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PortableBhujerba.zip
-    PortableAlltrades.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PortableAlltrades.zip
-    DSYoshisIsland.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DSYoshisIsland.zip
-    DSColossus.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DSColossus.zip
-    DSPeachsCastle.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DSPeachsCastle.zip
-    DSDelfinoPlaza.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DSDelfinoPlaza.zip
-    DSRobbinHoodRuins.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DSRobbinHoodRuins.zip
-    DSAlefgard.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DSAlefgard.zip
-    FSSmartSilkRoad.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/FSSmartSilkRoad.zip
-    FSSmartFestival.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/FSSmartFestival.zip
-    MobileSchoolNew.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/MobileSchoolNew.zip
-    SmartAntarctica.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SmartAntarctica.zip
-    SmartZodiac.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SmartZodiac.zip
-    SmartAquarium.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SmartAquarium.zip
-    FSSmartMonsterHouse.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/FSSmartMonsterHouse.zip
-    Bunnyland.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Bunnyland.zip
-    auMidnightTown.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/auMidnightTown.zip
-    auShellIsle.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/auShellIsle.zip
-    auCloverland.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/auCloverland.zip
-    auGlorious.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/auGlorious.zip
-    auNanana.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/auNanana.zip
-    auSgtFrog.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/auSgtFrog.zip
-    30thDragonlordsCastle.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/30thDragonlordsCastle.zip
-    30thCrystalTower.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/30thCrystalTower.zip
+      - https://nikkums.io/cswt/Maps/thebackstreets.zip
+    placeholder.zip:
+      practiceBoard: true
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
 1:
-  #practiceBoard: DeathStarfish
   0:
-    AegisRim.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/AegisRim.zip
-    AlefgardB.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/AlefgardB.zip
-    Anchor.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Anchor.zip
-    AzureNebula.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/AzureNebula.zip
-    BabyPark.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/BabyPark.zip
-    BowsersPinball.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/BowsersPinball.zip
-  1:
-    Reactor.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Reactor.zip
-    Castaway.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Castaway.zip
-    CastleTown.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/CastleTown.zip
-    CatMap.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/CatMap.zip
-    TheClock.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/TheClock.zip
-    Cogito.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Cogito.zip
-  2:
-    Colony9.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Colony9.zip
-    CustomWorld.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/CustomWorld.zip
-    DeathStarfish.zip:
-      practiceBoard: true
-      urls:
-      - https://nikkums.io/cswt/Maps/DeathStarfish.zip
-    Disboard.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Disboard.zip
-    Downhill.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Downhill.zip
-    DungeonLobby.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/DungeonLobby.zip
-    EdenCenter.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/EdenCenter.zip
-    Ennesan01B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan01B.zip
-    Ennesan01D.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan01D.zip
-    Ennesan06.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan06.zip
-    Ennesan10.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan10.zip
     Ennesan15.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan15.zip
     Ennesan17.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan17.zip
-    Ennesan18.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan18.zip
-    Ennesan20.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan20.zip
-    Ennesan22A.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan22A.zip
-    Ennesan23.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan23.zip
-    Ennesan25.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan25.zip
-    Ennesan26B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan26B.zip
-    Ennesan27.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan27.zip
-    EternaCity.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/EternaCity.zip
-    FacingWorlds.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/FacingWorlds.zip
-    Fillmore.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Fillmore.zip
     FortuneGateFG1.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
-    Freighter.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Freighter.zip
-    GalDaValIsland.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/GalDaValIsland.zip
-    GeometryDash.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/GeometryDash.zip
-    GoodybagLair.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/GoodybagLair.zip
-    Heliodor.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Heliodor.zip
-    HighRise.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/HighRise.zip
-    Hotel.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Hotel.zip
-    IleDeFrance.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IleDeFrance.zip
-    InsideOut.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/InsideOut.zip
-    Kanto.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Kanto.zip
-    KingOfTheHill.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/KingOfTheHill.zip
-    KoopaTycoonTown.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/KoopaTycoonTown.zip
-    MidgarTransit.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/MidgarTransit.zip
-    NLA.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/NLA.zip
-    Palamecia.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Palamecia.zip
-    PlanetMira.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PlanetMira.zip
-    Playground.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Playground.zip
-    Quad.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Quad.zip
-    RainbowRoadWii.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/RainbowRoadWii.zip
     Shibuya.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Shibuya.zip
-    SkyTower.zip:
+    TheClock.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/SkyTower.zip
-    Spirograph.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Spirograph.zip
-    Squid.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Squid.zip
-    Bethlehem.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Bethlehem.zip
-    SuitsMap.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SuitsMap.zip
-    ToadsHouse.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/ToadsHouse.zip
-    ToadsTreasureHunt.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/ToadsTreasureHunt.zip
+      - https://nikkums.io/cswt/Maps/TheClock.zip
     TurtleFortress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TurtleFortress.zip
-    UAHigh.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/UAHigh.zip
-    Unatco.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Unatco.zip
-    VennDiagram.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/VennDiagram.zip
-    litbus.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/litbus.zip
-    WiiU.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/WiiU.zip
-    Yevon.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Yevon.zip
-    Yoshi.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Yoshi.zip
+  1:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+  2:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:

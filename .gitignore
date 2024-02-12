@@ -40,6 +40,7 @@ _site/
 
 ### Binary Files ###
 *.zip
+!_modpacks/cswt/development/*.zip
 *.7z
 __pycache__
 
