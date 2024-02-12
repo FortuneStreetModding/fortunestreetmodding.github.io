@@ -16,7 +16,7 @@ mapIcon: auShellIsle
 music: 
   download: 
     - https://nikkums.io/cswt/BGM/ShellIsleLite.music.zip
-    - https://drive.google.com/u/2/uc?id=188UgoCvfNh2JvMwjDQngtm3EakDH01Zq&export=download
+    - https://drive.google.com/uc?export=download&id=1GOrsLJBKv6J3ahpEnHfgAfSoypOxHidQ&confirm=1
   map: BGM_MAP_SHELLISLE_IS2R.60
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70
@@ -25,7 +25,7 @@ music:
   win: BGM_WINNER_SMART.60
   guestAppear:
   guestLeave:
-  badVentureCard:
+  badVentureCard: ME_CURSE_SMART.70
   takeAbreak: ME_HOLIDAY_SMART.60
   promotionMii: ME_LEVELUP_SMART.60
   promotionMario: ME_LEVELUP_SMART.60
@@ -33,6 +33,15 @@ music:
   forcedBuyout: ME_5_BUY_SMART.60
   domination: ME_MONOPOLY_SMART.60
   bankruptcy: ME_BANKRUPT_SMART.60
+  memoryBlock: A_ARCADE_SMART.100
+  dartOfGold: A_ARCADE_SMART.100
+  roundTheBlocks: A_ARCADE_SMART.100
+  roundTheBlocksWin: ME_ARCADEWIN_SMART.60
+  roundTheBlocks777: ME_ARCADE777_SMART.60
+  slurpodromeRace: 
+  slurpodromeSelect: A_ARCADE_SMART.100
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_SMART.60
 tourMode:
   bankruptcyLimit: 1
   opponent1: Slime
@@ -169,9 +178,16 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    added:
+      - Bad Venture Music
+      - Arcade Music
   - version: 2
     added:
       - Icon & BGM
+  - version: 1
+    added:
+      - Initial Release
 authors:
   - name: Azurillkirby
 notes: |

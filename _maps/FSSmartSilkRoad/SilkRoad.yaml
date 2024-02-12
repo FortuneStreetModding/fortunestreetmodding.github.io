@@ -18,23 +18,32 @@ mapIcon: silkroad
 music: 
   download: 
     - https://nikkums.io/cswt/BGM/SilkRoad.music.zip
-    - https://drive.google.com/u/2/uc?id=1ZrSCKdg5hPLQm6AQ4bLiqcS332dFCR6A&export=download
+    - https://drive.google.com/uc?export=download&id=1uM_Mll-tSun76po2ClOR60jdRBqeU82g&confirm=1
   map: BGM_MAP_SILK.75
-  stock: BGM_STOCK_SMART.60
-  ventureCards: BGM_CHANCECARD_SMART.70
-  auction: BGM_AUCTION_SMART.60
-  targetMet: BGM_GOALPROP_SMART.60
-  win: BGM_WINNER_SMART.60
+  stock: BGM_STOCK_MOBILE.80
+  ventureCards: BGM_CHANCECARD_MOBILE.60
+  auction: BGM_AUCTION_MOBILE.50
+  targetMet: BGM_GOALPROP_MOBILE.100
+  win: BGM_WINNER_MOBILE.120
   guestAppear:
   guestLeave:
-  badVentureCard:
-  takeAbreak: ME_HOLIDAY_SMART.60
-  promotionMii: ME_LEVELUP_SMART.60
-  promotionMario: ME_LEVELUP_SMART.60
-  promotionDragonQuest: ME_LEVELUP_SMART.60
-  forcedBuyout: ME_5_BUY_SMART.60
-  domination: ME_MONOPOLY_SMART.60
-  bankruptcy: ME_BANKRUPT_SMART.60
+  badVentureCard: ME_CURSE_MOBILE.50
+  takeAbreak: ME_HOLIDAY_MOBILE.110
+  promotionMii: ME_LEVELUP_MOBILE.70
+  promotionMario: ME_LEVELUP_MOBILE.70
+  promotionDragonQuest: ME_LEVELUP_MOBILE.70
+  forcedBuyout: ME_5_BUY_MOBILE.65
+  domination: ME_MONOPOLY_MOBILE.45
+  bankruptcy: ME_BANKRUPT_MOBILE.130
+  memoryBlock: A_BGM_ARCADE_MOBILE.120
+  dartOfGold: A_BGM_ARCADE_MOBILE.120
+  roundTheBlocks: A_BGM_ARCADE_MOBILE.120
+  roundTheBlocksWin: ME_ARCADEWIN_MOBILE.100
+  roundTheBlocks777: ME_ARCADE777_MOBILE.80
+  slurpodromeRace:
+  slurpodromeSelect: A_BGM_ARCADE_MOBILE.120
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_MOBILE.80
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -172,6 +181,12 @@ ventureCards:
   - 0  # Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    added:
+      - Bad Venture Card Music
+      - Arcade Music
+    changed:
+      - Change all music to Itadaki Street Mobile music except Map music
   - version: 2
     added:
       - Icon & BGM

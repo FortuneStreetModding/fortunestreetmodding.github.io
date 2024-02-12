@@ -16,7 +16,7 @@ mapIcon: gk-primitive
 music:
   download: 
     - https://nikkums.io/cswt/BGM/PrimitiveEra.music.zip
-    - https://drive.google.com/u/0/uc?id=1czy0dGU7CGdKjKNhYFv3_Q5c2daszRtP&export=download
+    - https://drive.google.com/uc?export=download&id=1bKZe_n6p2_C2FAYal6Po81bvHPkbDI_k&confirm=1
   map: BGM_MAP_PRIMITIVE.90
   stock: BGM_STOCK_GK.70
   ventureCards: BGM_CHANCE_GK.80
@@ -33,6 +33,15 @@ music:
   forcedBuyout: ME_5_BUY_GK.70
   domination:
   bankruptcy: ME_BANKRUPT_GK.70
+  memoryBlock: A_BGM_ARCADE_GK.100
+  dartOfGold: A_BGM_ARCADE_GK.100
+  roundTheBlocks: A_BGM_ARCADE_GK.100
+  roundTheBlocksWin: ME_ARCADEWIN_GK.100
+  roundTheBlocks777: ME_ARCADE777_GK.50
+  slurpodromeRace: 
+  slurpodromeSelect: A_BGM_ARCADE_GK.100
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_GK.50
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1500
@@ -170,6 +179,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 5
+    added:
+      - Arcade Music
   - version: 4
     changed:
       - Corrected the initial price of the property to the correct value

@@ -16,7 +16,7 @@ mapIcon: underwater
 music:
   download: 
     - https://nikkums.io/cswt/BGM/UnderwaterMetropolis.music.zip
-    - https://drive.google.com/u/0/uc?export=download&confirm=eTQN&id=1nZHHRMzAdssEwXn9EN7kDB4lUMB3Q6V1
+    - https://drive.google.com/uc?export=download&id=175HChhcXdu07RRQKKlqsvbeKk-I3aN6Y&confirm=1
   map: BGM_MAP_UNDERWATER_IS2R.60
   stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60
@@ -33,6 +33,15 @@ music:
   forcedBuyout: ME_5BUY_IS2.58
   domination:
   bankruptcy: ME_BANKRUPTCY_IS2.60
+  memoryBlock: A_BGM_ARCADE_IS2.75
+  dartOfGold: A_BGM_ARCADE_IS2.75
+  roundTheBlocks: A_BGM_ARCADE_IS2.75
+  roundTheBlocksWin: ME_ARCADEWIN_IS2.75
+  roundTheBlocks777: ME_ARCADE777_IS2.75
+  slurpodromeRace: 
+  slurpodromeSelect: A_BGM_ARCADE_IS2.75
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_IS2.75
 tourMode:
   bankruptcyLimit: 1
   opponent1: Peach
@@ -171,6 +180,9 @@ ventureCards:
 authors:
   - name: Azurillkirby
 changelog:
+  - version: 4
+    added:
+      - Arcade Music
   - version: 3
     changed:
       - Replaced Venture Card 87
@@ -178,6 +190,8 @@ changelog:
     changed:
       - Changed background to bg008alt
   - version: 1
+    added: 
+      - Initial Release
 notes: |
   - This map was originally from Itadaki Street 2.
   - The venture card set has been taken from Peach's Castle.

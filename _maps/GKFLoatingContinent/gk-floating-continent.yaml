@@ -19,7 +19,7 @@ mapIcon: Floating
 music:
   download: 
     - https://nikkums.io/cswt/BGM/FloatingContinent.music.zip
-    - https://drive.google.com/u/0/uc?id=1K-cbeVy0cVKF_5yoeVTnaeG4nvQwmulm&export=download
+    - https://drive.google.com/uc?export=download&id=1Pw8a0LBKbC84DrVgvNAZNPNvMeMNlIHp&confirm=1
   map: BGM_MAP_FLOATING.70
   stock: BGM_STOCK_GK.70
   ventureCards: BGM_CHANCE_GK.80
@@ -36,9 +36,15 @@ music:
   forcedBuyout: ME_5_BUY_GK.70
   domination:
   bankruptcy: ME_BANKRUPT_GK.70
-switchRotationOriginPoints:
-  - x: 0
-    y: 0
+  memoryBlock: A_BGM_ARCADE_GK.100
+  dartOfGold: A_BGM_ARCADE_GK.100
+  roundTheBlocks: A_BGM_ARCADE_GK.100
+  roundTheBlocksWin: ME_ARCADEWIN_GK.100
+  roundTheBlocks777: ME_ARCADE777_GK.50
+  slurpodromeRace: 
+  slurpodromeSelect: A_BGM_ARCADE_GK.100
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_GK.50
 tourMode:
   bankruptcyLimit: 1
   opponent1: Stella
@@ -175,7 +181,14 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    added:
+      - Arcade Music
+    changed:
+      - Change the starting point from the bank on the right to the bank on the left
   - version: 1
+    added:
+      - Initial Release
 authors:
   - name: Azurillkirby
 notes: |

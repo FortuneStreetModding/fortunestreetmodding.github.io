@@ -16,7 +16,7 @@ mapIcon: AlltradesSP
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Alltrades.music.zip
-    - https://drive.google.com/u/2/uc?export=download&confirm=X-GJ&id=19jP04Jn7EmMMJZnbdzmTj86lWtUPCXS9
+    - https://drive.google.com/uc?export=download&id=1EnoZ7kwvPKr1aE6WBLiNCj2uTO40DWll&confirm=1
   map: BGM_MAP_ALLTRADES_SPECIAL.60
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_SPECIAL.50
@@ -24,23 +24,37 @@ music:
   targetMet: BGM_GOALPROP_ALLTRADES_SPECIAL.60
   win: BGM_WINNER_SPECIAL.50
   guestAppear: ME_OJAMA_COME_SPECIAL.60
-  guestLeave:
+  guestLeave: ME_OJAMA_BYE_SPECIAL.40
   badVentureCard: ME_CURSE_SPECIAL.70
-  takeAbreak:
+  takeAbreak: ME_HOLIDAY_SPECIAL.50
   promotionMii: ME_LEVELUP_D_SPECIAL.60
   promotionMario: ME_LEVELUP_D_SPECIAL.60
   promotionDragonQuest: ME_LEVELUP_D_SPECIAL.60
   forcedBuyout: ME_5_BUY_SPECIAL.60
   domination: ME_MONOPOLY_SPECIAL.50
-  bankruptcy: ME_BANKRUPTCY_SPECIAL_D.60
+  bankruptcy: ME_BANKRUPTCY_SPECIAL.40
+  memoryBlock: A_BGM_MEMORY_SPECIAL.50
+  dartOfGold: A_BGM_DART_SPECIAL.70
+  roundTheBlocks: A_BGM_ROUND_SPECIAL.70
+  roundTheBlocksWin: ME_ARCADEWIN_SPECIAL.40
+  roundTheBlocks777: ME_ARCADE777_SPECIAL.40
+  slurpodromeRace: BGM_RACE_SPECIAL.60
+  slurpodromeSelect: A_BGM_RACESELECT_SPECIAL.60
+  slurpodromeStart: ME_RACESTART_SPECIAL.60
+  slurpodromeWin: ME_LEVELUP_F_SPECIAL.50
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
-  opponent1: Wario
-  opponent2: Waluigi
-  opponent3: Luigi
+  opponent1: Bianca
+  opponent2: Carver
+  opponent3: Kiryl
   clearRank: 2
 changelog:
+  - version: 3
+    added:
+      - Guest Leave Music
+      - Take a Break Music
+      - Arcade Music
   - version: 2
     changed:
       - Fixed pathing error
