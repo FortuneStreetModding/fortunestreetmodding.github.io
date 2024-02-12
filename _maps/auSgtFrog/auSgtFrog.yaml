@@ -13,9 +13,9 @@ maxDiceRoll: 7
 frbFile1: auSgtFrog
 background: bg005
 mapIcon: SgtFrog
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/SgtFrog.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/auSgtFrog.music.zip
     - https://drive.google.com/uc?export=download&id=1gF9ioJjQXS2QP4A1cuBJ6swM9-opjFna&confirm=1
   map: sgtfrog.70
   stock: BGM_STOCK_SMART.60
@@ -38,9 +38,9 @@ music:
   roundTheBlocks: A_ARCADE_SMART.100
   roundTheBlocksWin: ME_ARCADEWIN_SMART.60
   roundTheBlocks777: ME_ARCADE777_SMART.60
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_ARCADE_SMART.100
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_SMART.60
 tourMode:
   bankruptcyLimit: 1
@@ -188,10 +188,10 @@ changelog:
     changed:
       - Replaced Venture Card 87
   - version: 2
-    changed: 
+    changed:
       - Added music and icon
   - version: 1
-    added: 
+    added:
       - Initial Release
 notes: |
   - This map was originally from Itadaki Street for au. It was a promotion with the anime of the same name.

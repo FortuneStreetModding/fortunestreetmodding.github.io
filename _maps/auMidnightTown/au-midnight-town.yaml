@@ -13,9 +13,9 @@ maxDiceRoll: 7
 frbFile1: au-midnight-town
 background: grid_blue2
 mapIcon: midnight
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/MidnightTown.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/auMidnightTown.music.zip
     - https://drive.google.com/uc?export=download&id=1fE0qay8Y1FBpQq0HgIft72oMwosBM-aP&confirm=1
   map: HAZE.50
   stock: BGM_STOCK_SMART.60
@@ -38,9 +38,9 @@ music:
   roundTheBlocks: A_ARCADE_SMART.100
   roundTheBlocksWin: ME_ARCADEWIN_SMART.60
   roundTheBlocks777: ME_ARCADE777_SMART.60
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_ARCADE_SMART.100
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_SMART.60
 tourMode:
   bankruptcyLimit: 1

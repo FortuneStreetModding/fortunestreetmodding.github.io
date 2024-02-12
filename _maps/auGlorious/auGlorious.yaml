@@ -13,9 +13,9 @@ maxDiceRoll: 7
 frbFile1: auGlorious
 background: bg108
 mapIcon: auGlorious
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/GloriousSpecialty.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/auGlorious.music.zip
     - https://drive.google.com/uc?export=download&id=1rANF6XEpna5DYHh1Kd-Nqdoqg_vogDCP&confirm=1
   map: BGM_MAP_JAPAN_IS2R.60
   stock: BGM_STOCK_SMART.60
@@ -38,9 +38,9 @@ music:
   roundTheBlocks: A_ARCADE_SMART.100
   roundTheBlocksWin: ME_ARCADEWIN_SMART.60
   roundTheBlocks777: ME_ARCADE777_SMART.60
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_ARCADE_SMART.100
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_SMART.60
 tourMode:
   bankruptcyLimit: 1

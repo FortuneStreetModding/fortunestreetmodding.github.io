@@ -13,9 +13,9 @@ maxDiceRoll: 6
 frbFile1: auShellIsle
 background: bg105
 mapIcon: auShellIsle
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/ShellIsleLite.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/auShellIsle.music.zip
     - https://drive.google.com/uc?export=download&id=1GOrsLJBKv6J3ahpEnHfgAfSoypOxHidQ&confirm=1
   map: BGM_MAP_SHELLISLE_IS2R.60
   stock: BGM_STOCK_SMART.60
@@ -38,9 +38,9 @@ music:
   roundTheBlocks: A_ARCADE_SMART.100
   roundTheBlocksWin: ME_ARCADEWIN_SMART.60
   roundTheBlocks777: ME_ARCADE777_SMART.60
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_ARCADE_SMART.100
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_SMART.60
 tourMode:
   bankruptcyLimit: 1

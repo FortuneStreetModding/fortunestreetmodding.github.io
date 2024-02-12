@@ -22,8 +22,8 @@ frbFiles:
 background: bg106fixed
 mapIcon: machu
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/MachuPicchu.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/IS3Machu.music.zip
     - https://drive.google.com/uc?export=download&id=1M2luz0-Wze_ZzVmdi4LVJ-byYnQocsQ4&confirm=1
   map: BGM_MAP_MACHU.65
   stock: BGM_STOCK_IS3.65
@@ -46,9 +46,9 @@ music:
   roundTheBlocks: A_BGM_ARCADE_IS3.65
   roundTheBlocksWin: ME_ARCADEWIN_IS3.75
   roundTheBlocks777: ME_ARCADE777_IS3.90
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_BGM_ARCADE_IS3.65
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_IS3.90
 tourMode:
   bankruptcyLimit: 1
@@ -81,7 +81,7 @@ changelog:
     changed:
       - Changed background to bg106fixed
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia
