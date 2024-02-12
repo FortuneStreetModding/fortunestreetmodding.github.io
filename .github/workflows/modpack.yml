@@ -52,7 +52,7 @@ jobs:
             jq -s . "${json_files[@]}" > $build_dir/packs.json
 
       - name: Upload modpacks to S3
-        run: aws s3 cp /_modpacks/build/ s3://${{ secrets.S3_BUCKET_NAME }}/Modpacks/ --recursive --exclude "*" --include "*.zip" --include "packs.json"
+        run: aws s3 cp ./_modpacks/build/ s3://${{ secrets.S3_BUCKET_NAME }}/Modpacks/ --recursive --exclude "*" --include "*.zip" --include "packs.json"
 
       - name: Create CloudFront invalidation for modpack
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Modpacks/*
