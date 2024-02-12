@@ -34,7 +34,7 @@ jobs:
                 modpack_id=$(jq -r "keys[0]" $d/manifest.json)
                 resources_directory=("_data/modpack_common_files/" + $(jq -r ".$modpack_id.resources" $d/manifest.json))
                 mkdir -p $d/$modpack_id
-                cp -r $resources_directory/. $d/$modpack_id
+                cp -r $resources_directory $d/$modpack_id
                 cp $d/manifest.json $build_dir/$modpack_id.json
                 cp $d/modlist.txt $d/mapList.yaml $d/manifest.json $d/$modpack_id/
                 cd $d/$modpack_id && zip -r $build_dir/$modpack_id.zip .
