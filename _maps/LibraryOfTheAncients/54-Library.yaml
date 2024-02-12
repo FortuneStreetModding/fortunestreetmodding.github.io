@@ -6,7 +6,7 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1600
-targetAmount: 15000
+targetAmount: 16000
 baseSalary: 300
 salaryIncrement: 100
 maxDiceRoll: 6
@@ -16,31 +16,49 @@ mapIcon: library
 music:
   download: 
     - https://nikkums.io/cswt/BGM/LibraryOfTheAncients.music.zip
-    - https://drive.google.com/uc?export=download&id=1BN5GS7jV1MgZAoGOSM20r33Sw1fKWciF
-  map: BGM_MAP_LIBRARY_PS4.55
+    - https://drive.google.com/uc?export=download&id=1cv_0m-EmxBhDGwGf-iBs1UvfeHS2zNnc&confirm=1
+  map: BGM_MAP_LIBRARY_PORTABLE.50
   stock: BGM_STOCK_SPECIAL.60
   ventureCards: BGM_CHANCECARD_PORTABLE.50
   auction: BGM_AUCTION_SPECIAL.50
   targetMet: BGM_GOALPROP_LIBRARY.50
   win: BGM_WINNER_SPECIAL.50
   guestAppear: ME_OJAMA_COME_SPECIAL.60
-  guestLeave:
+  guestLeave: ME_OJAMA_BYE_SPECIAL.40
   badVentureCard: ME_CURSE_SPECIAL.70
-  takeAbreak:
+  takeAbreak: ME_HOLIDAY_SPECIAL.50
   promotionMii: ME_LEVELUP_F_SPECIAL.50
   promotionMario: ME_LEVELUP_F_SPECIAL.50
   promotionDragonQuest: ME_LEVELUP_F_SPECIAL.50
   forcedBuyout: ME_5_BUY_SPECIAL.60
   domination: ME_MONOPOLY_SPECIAL.50
-  bankruptcy: ME_BANKRUPTCY_SPECIAL_F.60
+  bankruptcy: ME_BANKRUPTCY_SPECIAL.40
+  memoryBlock: A_BGM_GOALPROP_WORLDTREE_SPECIAL.50
+  dartOfGold: A_BGM_DART_PORTABLE.45
+  roundTheBlocks: A_BGM_ROUND_SPECIAL.70
+  roundTheBlocksWin: ME_ARCADEWIN_SPECIAL.40
+  roundTheBlocks777: ME_ARCADE777_SPECIAL.40
+  slurpodromeRace: BGM_RACE_SPECIAL.60
+  slurpodromeSelect: A_BGM_RACESELECT_SPECIAL.60
+  slurpodromeStart: ME_RACESTART_SPECIAL.60
+  slurpodromeWin: ME_RACEWIN_PORTABLE.50
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2500
-  opponent1: Patty
-  opponent2: Dragonlord
-  opponent3: BowserJr
+  opponent1: Angelo
+  opponent2: Princessa
+  opponent3: Daisy
   clearRank: 1
 changelog:
+  - version: 4
+    added:
+      - Guest Leave Music
+      - Take a Break Music
+      - Arcade Music
+    changed:
+      - Target amount increased from 15,000 to 16,000
+      - MapBGM changed to music of Itadaki Street Portable
+      - Bankrupt Music
   - version: 3
     changed:
       - Updated icon & yaml for CSWT
