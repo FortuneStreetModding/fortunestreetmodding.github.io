@@ -2,7 +2,7 @@
 name:
   en: Super Bowser's Trackway
 desc:
-  en: In his many failed attempts to stomp out Mario, king Bowser has been known to transform into what can only be described as a giant super version of himself, plodding all around the Mushroom Kingdom leaving dinosour like footprints behind. This one's for sale!!  
+  en: In his many failed attempts to stomp out Mario, king Bowser has been known to transform into what can only be described as a giant super version of himself, plodding all around the Mushroom Kingdom leaving dinosour like footprints behind. This one's for sale!!
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -10,8 +10,7 @@ targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 275
 maxDiceRoll: 6
-frbFiles:
- - superbowserstrackway
+frbFile1: superbowserstrackway
 background: forestFairies
 mapIcon: sbowsersICON
 music:
@@ -23,7 +22,7 @@ music:
   ventureCards: superbowserstrackway_VENTURE
   auction: superbowserstrackway_AUC
   targetMet: superbowserstrackway_TARGET
-  win: 
+  win:
   guestAppear:
   guestLeave:
   badVentureCard:
@@ -35,14 +34,14 @@ music:
   domination:
   bankruptcy:
   roundTheBlocks: A_superbowserstrackway_ARCADE
-  roundTheBlocksWin: 
-  roundTheBlocks777: 
+  roundTheBlocksWin:
+  roundTheBlocks777:
   memoryBlock:
   dartOfGold:
   slurpodromeSelect:
-  slurpodromeStart: 
-  slurpodromeRace: 
-  slurpodromeWin: 
+  slurpodromeStart:
+  slurpodromeRace:
+  slurpodromeWin:
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -51,9 +50,10 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 2
+    changed:
       - theme and shape is the same, the rest of the board is entirely different
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: phellen007
