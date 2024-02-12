@@ -19,7 +19,6 @@ backgrounds: backgrounds.yml
     KBHH.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KBHH.zip
-
   1:
     lighthouseisland.zip:
       urls:
@@ -39,7 +38,6 @@ backgrounds: backgrounds.yml
     superbowserstrackway.zip:
       urls:
       - https://nikkums.io/cswt/Maps/superbowserstrackway.zip
-
   2:
     thebackstreets.zip:
       urls:
