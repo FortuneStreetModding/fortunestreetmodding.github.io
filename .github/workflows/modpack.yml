@@ -10,7 +10,7 @@ permissions:
   contents: read    # This is required for actions/checkout
 
 jobs:
-  UploadPyCSMMToS3:
+  BuildModpacks:
     runs-on: ubuntu-latest
     steps:
       - name: Clone the repo
@@ -38,9 +38,19 @@ jobs:
                 cd $d/$modpack_id && zip -r $build_dir/$modpack_id.zip .
                 cd -
             done
+      - name: Combine manifests
+        run: |
+            build_dir=$(pwd)/_modpacks/build
+            mkdir -p $build_dir
+            json_files=()
+            for d in $build_dir/*.json ; do
+                json_files+=($d)
+            done
+
+            jq -s . "${json_files[@]}" > $build_dir/packs.json
 
       - name: Upload modpacks to S3
-        run: aws s3 cp /_modpacks/build/*.zip s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Modpacks/
+        run: aws s3 cp /_modpacks/build/ s3://${{ secrets.S3_BUCKET_NAME }}/Modpacks/ --recursive --exclude "*" --include "*.zip" --include "packs.json"
 
       - name: Create CloudFront invalidation for modpack
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Modpacks/*
