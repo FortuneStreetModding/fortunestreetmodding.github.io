@@ -23,6 +23,9 @@ jobs:
           role-session-name: ModpackBuildingRoleSession
           aws-region: ${{ secrets.AWS_REGION }}
 
+      - name: Install dependencies
+        run: sudo apt-get install jq
+
       - name: Build all modpacks
         run: |
             mkdir -p _modpacks/build
