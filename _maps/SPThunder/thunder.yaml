@@ -14,8 +14,8 @@ frbFile1: thunder
 background: bg102alt
 mapIcon: thunder
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/ThunderPlains.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/SPThunder.music.zip
     - https://drive.google.com/uc?export=download&id=11FBOI551Ak-j5LPebEWSUITcRFAkkWnj&confirm=1
   map: BGM_MAP_THUNDER.50
   stock: BGM_STOCK_SPECIAL.60
@@ -61,7 +61,7 @@ changelog:
     changed:
       - Changed background to bg102alt
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia
