@@ -15,7 +15,7 @@ background: bg901
 mapIcon: CandyLand
 music:
   download:
-    - https://nikkums.io/cswt/BGM/IS3Candyland.music.zip
+    - https://nikkums.io/cswt/BGM/IS3CandyLand.music.zip
     - https://drive.google.com/uc?export=download&id=1_2A6Lc58p3B6JZHJK8BZpK-APNoEGsxm&confirm=1
   map: BGM_MAP_CANDYLAND_IS3.75
   stock: BGM_STOCK_IS3.65

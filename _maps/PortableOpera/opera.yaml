@@ -16,7 +16,7 @@ background: bg108fixed
 mapIcon: opera
 music:
   download:
-    - https://nikkums.io/cswt/BGM/PortableOperaHouse.music.zip
+    - https://nikkums.io/cswt/BGM/PortableOpera.music.zip
     - https://drive.google.com/uc?export=download&id=1dVTWaJRQdb0N5xVqZsprh1wt_na9VFe3&confirm=1
   map: BGM_MAP_OPERA.50
   stock: BGM_STOCK_SPECIAL.60
