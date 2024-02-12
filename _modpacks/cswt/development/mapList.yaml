@@ -19,6 +19,7 @@ backgrounds: backgrounds.yml
     KBHH.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KBHH.zip
+
   1:
     lighthouseisland.zip:
       urls:
@@ -38,16 +39,17 @@ backgrounds: backgrounds.yml
     superbowserstrackway.zip:
       urls:
       - https://nikkums.io/cswt/Maps/superbowserstrackway.zip
+
   2:
     thebackstreets.zip:
       urls:
       - https://nikkums.io/cswt/Maps/thebackstreets.zip
     placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
       practiceBoard: true
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
 1:
   0:
     Ennesan15.zip:
@@ -82,3 +84,4 @@ backgrounds: backgrounds.yml
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
+      practiceBoard: true
