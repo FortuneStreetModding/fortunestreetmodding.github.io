@@ -17,8 +17,8 @@ frbFile4: nalbina
 background: bg109
 mapIcon: nalbina
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Nalbina.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/SPNalbina.music.zip
     - https://drive.google.com/uc?export=download&id=10hSuWfKyHi2gf2lmEArTUE48Taqahizg&confirm=1
   map: BGM_MAP_NALBINA_SPECIAL.50
   stock: BGM_STOCK_SPECIAL.60
@@ -61,7 +61,7 @@ changelog:
     changed:
       - Bankrupt Music
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

@@ -13,9 +13,9 @@ maxDiceRoll: 8
 frbFile1: mobile-schoolC
 background: bg004
 mapIcon: school
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/School.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/MobileSchoolNew.music.zip
     - https://drive.google.com/uc?export=download&id=16wfXvjh_gWffD-1U8gCefSahyJxs5mgr&confirm=1
   map: BGM_MAP_SCHOOL.60
   stock: BGM_STOCK_MOBILE.80
@@ -40,7 +40,7 @@ music:
   roundTheBlocks777: ME_ARCADE777_MOBILE.80
   slurpodromeRace:
   slurpodromeSelect: A_BGM_ARCADE_MOBILE.120
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_MOBILE.80
 tourMode:
   bankruptcyLimit: 1

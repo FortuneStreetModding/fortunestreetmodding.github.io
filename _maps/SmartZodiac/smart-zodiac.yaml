@@ -13,9 +13,9 @@ maxDiceRoll: 8
 frbFile1: smart-zodiac
 background: bg009alt
 mapIcon: zodiac
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/Zodiac.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/SmartZodiac.music.zip
     - https://drive.google.com/uc?export=download&id=10R_7lsliQA4sgUMUiccdbVz_UsvOyrAM&confirm=1
   map: BGM_MAP_ZODIAC.90
   stock: BGM_STOCK_SMART.60
@@ -38,9 +38,9 @@ music:
   roundTheBlocks: A_ARCADE_SMART.100
   roundTheBlocksWin: ME_ARCADEWIN_SMART.60
   roundTheBlocks777: ME_ARCADE777_SMART.60
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_ARCADE_SMART.100
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_SMART.60
 tourMode:
   bankruptcyLimit: 1
@@ -193,7 +193,7 @@ changelog:
     changed:
       - Replaced card 77 with 79.
   - version: 1
-    added: 
+    added:
       - Initial Release
 tags:
   - Smart

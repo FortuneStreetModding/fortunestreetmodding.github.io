@@ -15,9 +15,9 @@ maxDiceRoll: 8
 frbFile1: matsuri
 background: bg105
 mapIcon: festival
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/Festival.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/FSSmartFestival.music.zip
     - https://drive.google.com/uc?export=download&id=1rLKHVnTEPQyMIqlamCPFibTxtBXXVaLB&confirm=1
   map: BGM_MAP_FESTIVAL.70
   stock: BGM_STOCK_MOBILE.80
@@ -42,7 +42,7 @@ music:
   roundTheBlocks777: ME_ARCADE777_MOBILE.80
   slurpodromeRace:
   slurpodromeSelect: A_BGM_ARCADE_MOBILE.120
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_MOBILE.80
 tourMode:
   bankruptcyLimit: 1

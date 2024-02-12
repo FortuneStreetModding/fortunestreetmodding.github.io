@@ -17,8 +17,8 @@ frbFile4: portabletree
 background: bg109
 mapIcon: portabletree
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/YggdrasilPortable.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/PortableTree.music.zip
     - https://drive.google.com/uc?export=download&id=1kJ2gXOYoF_HNGnl_z4fs9avAxW_XqgLj&confirm=1
   map: BGM_MAP_TREE_PORTABLE.50
   stock: BGM_STOCK_SPECIAL.60
@@ -67,7 +67,7 @@ changelog:
     changed:
       - Fixed mistake, second bank is now a stockbroker
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

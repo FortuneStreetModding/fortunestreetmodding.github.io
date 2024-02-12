@@ -15,9 +15,9 @@ maxDiceRoll: 8
 frbFile1: silkroad
 background: bg107
 mapIcon: silkroad
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/SilkRoad.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/FSSmartSilkRoad.music.zip
     - https://drive.google.com/uc?export=download&id=1uM_Mll-tSun76po2ClOR60jdRBqeU82g&confirm=1
   map: BGM_MAP_SILK.75
   stock: BGM_STOCK_MOBILE.80
@@ -42,7 +42,7 @@ music:
   roundTheBlocks777: ME_ARCADE777_MOBILE.80
   slurpodromeRace:
   slurpodromeSelect: A_BGM_ARCADE_MOBILE.120
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_MOBILE.80
 tourMode:
   bankruptcyLimit: 1

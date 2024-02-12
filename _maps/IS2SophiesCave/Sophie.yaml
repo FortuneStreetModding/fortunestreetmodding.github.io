@@ -14,8 +14,8 @@ frbFile1: Sophie
 background: bg007
 mapIcon: sophie
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/SophiesCave.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/IS2SophiesCave.music.zip
     - https://drive.google.com/uc?export=download&id=1b555RAG9-1TIN5-WjPOletBv7qk_CzI4&confirm=1
   map: BGM_MAP_SOPHIE_IS2R.60
   stock: BGM_STOCK_IS2R.60
@@ -38,9 +38,9 @@ music:
   roundTheBlocks: A_BGM_ARCADE_IS2.75
   roundTheBlocksWin: ME_ARCADEWIN_IS2.75
   roundTheBlocks777: ME_ARCADE777_IS2.75
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_BGM_ARCADE_IS2.75
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_IS2.75
 tourMode:
   bankruptcyLimit: 1
@@ -182,7 +182,7 @@ changelog:
     added:
       - Arcade Music
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
     - name: Sophilautia

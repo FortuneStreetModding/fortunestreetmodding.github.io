@@ -14,8 +14,8 @@ frbFile1: AlltradesSP
 background: bg108
 mapIcon: AlltradesSP
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Alltrades.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/SPAlltrades.music.zip
     - https://drive.google.com/uc?export=download&id=1EnoZ7kwvPKr1aE6WBLiNCj2uTO40DWll&confirm=1
   map: BGM_MAP_ALLTRADES_SPECIAL.60
   stock: BGM_STOCK_SPECIAL.60
@@ -59,7 +59,7 @@ changelog:
     changed:
       - Fixed pathing error
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

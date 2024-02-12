@@ -14,8 +14,8 @@ frbFile1: tycoon
 background: bg101
 mapIcon: tycoon
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Tycoon.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/SPTycoon.music.zip
     - https://drive.google.com/uc?export=download&id=1RFdFPzIRmyyqNKUpLForMnhdm59JcO7g&confirm=1
   map: BGM_MAP_TYCOON_SPECIAL.60
   stock: BGM_STOCK_SPECIAL.60
@@ -58,7 +58,7 @@ changelog:
     changed:
       - Bankrupt Music
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

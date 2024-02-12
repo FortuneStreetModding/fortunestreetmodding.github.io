@@ -13,9 +13,9 @@ maxDiceRoll: 7
 frbFile1: smart-aquarium
 background: bg008alt
 mapIcon: aquarium
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/Aquarium.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/SmartAquarium.music.zip
     - https://drive.google.com/uc?export=download&id=1It2a-v6awW4FyHas_UHqMjyMSJ5QOMpT&confirm=1
   map: BGM_MAP_AQUARIUM.60
   stock: BGM_STOCK_SMART.60
@@ -38,9 +38,9 @@ music:
   roundTheBlocks: A_ARCADE_SMART.100
   roundTheBlocksWin: ME_ARCADEWIN_SMART.60
   roundTheBlocks777: ME_ARCADE777_SMART.60
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_ARCADE_SMART.100
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_SMART.60
 tourMode:
   bankruptcyLimit: 1

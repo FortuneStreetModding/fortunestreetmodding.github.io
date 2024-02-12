@@ -14,8 +14,8 @@ frbFile1: ramia
 background: bg107
 mapIcon: ramia
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Ramia.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/PortableRamia.music.zip
     - https://drive.google.com/uc?export=download&id=1Aj-dVT_braRqr4xO9fnlXLmRreUfscjM&confirm=1
   map: BGM_MAP_RAMIA_PORTABLE.60
   stock: BGM_STOCK_SPECIAL.60
@@ -59,7 +59,7 @@ changelog:
     changed:
       - Target amount corrected to 17000
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

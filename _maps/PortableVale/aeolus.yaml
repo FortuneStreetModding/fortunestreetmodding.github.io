@@ -14,8 +14,8 @@ frbFile1: aeolus
 background: bg105
 mapIcon: aeolus
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/AeolusVale.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/PortableVale.music.zip
     - https://drive.google.com/uc?export=download&id=1Zk2jumdYkfgWDpdaza2DsfOmbNGvU5IY&confirm=1
   map: BGM_MAP_VALE.50
   stock: BGM_STOCK_SPECIAL.60
@@ -56,7 +56,7 @@ changelog:
       - Take a Break Music
       - Arcade Music
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

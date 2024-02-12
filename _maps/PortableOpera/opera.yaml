@@ -15,8 +15,8 @@ frbFile2: opera1
 background: bg108fixed
 mapIcon: opera
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/OperaHouse.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/PortableOperaHouse.music.zip
     - https://drive.google.com/uc?export=download&id=1dVTWaJRQdb0N5xVqZsprh1wt_na9VFe3&confirm=1
   map: BGM_MAP_OPERA.50
   stock: BGM_STOCK_SPECIAL.60
@@ -65,7 +65,7 @@ changelog:
     changed:
       - Replaced Venture Card 15
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

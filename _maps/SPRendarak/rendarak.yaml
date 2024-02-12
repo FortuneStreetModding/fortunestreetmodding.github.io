@@ -14,8 +14,8 @@ frbFile1: rendarak
 background: bg008alt
 mapIcon: rendarak
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Rendarak.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/SPRendarak.music.zip
     - https://drive.google.com/uc?export=download&id=1fGtBomxkLOWmybzQTAbKV6Ld4F_377es&confirm=1
   map: BGM_MAP_RENDARAK.45
   stock: BGM_STOCK_SPECIAL.60
@@ -58,7 +58,7 @@ changelog:
     changed:
       - Initial cash reduced from 2500 to 2000
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

@@ -14,8 +14,8 @@ frbFile1: tantegel
 background: bg101
 mapIcon: tantegel
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Tantegel.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/PortableTantegel.music.zip
     - https://drive.google.com/uc?export=download&id=1Gat-Ij4B2cLDxaXZmRBTNeJiY9AhwNkJ&confirm=1
   map: BGM_MAP_TANTEGEL_PORTABLE.50
   stock: BGM_STOCK_SPECIAL.60
@@ -58,7 +58,7 @@ changelog:
     changed:
       - Targetmet music is the same as Alefgard (Special), so rename the file to the corresponding one.
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

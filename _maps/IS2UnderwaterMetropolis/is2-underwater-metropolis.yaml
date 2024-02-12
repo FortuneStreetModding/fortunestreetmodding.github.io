@@ -14,8 +14,8 @@ frbFile1: is2-underwater-metropolis
 background: bg008alt
 mapIcon: underwater
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/UnderwaterMetropolis.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/IS2UnderwaterMetropolis.music.zip
     - https://drive.google.com/uc?export=download&id=175HChhcXdu07RRQKKlqsvbeKk-I3aN6Y&confirm=1
   map: BGM_MAP_UNDERWATER_IS2R.60
   stock: BGM_STOCK_IS2R.60
@@ -38,9 +38,9 @@ music:
   roundTheBlocks: A_BGM_ARCADE_IS2.75
   roundTheBlocksWin: ME_ARCADEWIN_IS2.75
   roundTheBlocks777: ME_ARCADE777_IS2.75
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_BGM_ARCADE_IS2.75
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_IS2.75
 tourMode:
   bankruptcyLimit: 1
@@ -190,7 +190,7 @@ changelog:
     changed:
       - Changed background to bg008alt
   - version: 1
-    added: 
+    added:
       - Initial Release
 notes: |
   - This map was originally from Itadaki Street 2.

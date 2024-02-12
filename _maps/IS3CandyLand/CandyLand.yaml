@@ -14,8 +14,8 @@ frbFile1: CandyLand
 background: bg901
 mapIcon: CandyLand
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Candyland.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/IS3Candyland.music.zip
     - https://drive.google.com/uc?export=download&id=1_2A6Lc58p3B6JZHJK8BZpK-APNoEGsxm&confirm=1
   map: BGM_MAP_CANDYLAND_IS3.75
   stock: BGM_STOCK_IS3.65
@@ -38,9 +38,9 @@ music:
   roundTheBlocks: A_BGM_ARCADE_IS3.65
   roundTheBlocksWin: ME_ARCADEWIN_IS3.75
   roundTheBlocks777: ME_ARCADE777_IS3.90
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_BGM_ARCADE_IS3.65
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_IS3.90
 tourMode:
   bankruptcyLimit: 1
@@ -64,7 +64,7 @@ changelog:
     changed:
       - Win BGM
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

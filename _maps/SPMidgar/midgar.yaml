@@ -17,8 +17,8 @@ frbFile4: midgar3
 background: grid_bluegreen
 mapIcon: midgar
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Midgar.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/SPMidgar.music.zip
     - https://drive.google.com/uc?export=download&id=1Ok6LblULh3smZD3fMkU1LCXxWvNkkMT3&confirm=1
   map: BGM_MAP_MIDGAR_ISSP.60
   stock: BGM_STOCK_SPECIAL.60
@@ -67,7 +67,7 @@ changelog:
     changed:
       - Changed background to bg008alt
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

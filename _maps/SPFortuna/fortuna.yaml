@@ -14,8 +14,8 @@ frbFile1: fortuna
 background: bg108
 mapIcon: fortuna
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Fortuna.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/SPFortuna.music.zip
     - https://drive.google.com/uc?export=download&id=1gbtRIeQNus3SifVuae5rMuD_upyPd1tq&confirm=1
   map: BGM_MAP_FORTUNA_SPECIAL.50
   stock: BGM_STOCK_SPECIAL.60
@@ -56,7 +56,7 @@ changelog:
       - Take a Break Music
       - Arcade Music
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

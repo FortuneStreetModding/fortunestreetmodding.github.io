@@ -14,8 +14,8 @@ frbFile1: alltradesp
 background: bg108
 mapIcon: alltradesp
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/AlltradesPortable.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/PortableAlltrades.music.zip
     - https://drive.google.com/uc?export=download&id=1lU1PqkSEt0PLbB57HYuBc4R1agFw-QXd&confirm=1
   map: BGM_MAP_DHARMA_PORTABLE.50
   stock: BGM_STOCK_SPECIAL.60
@@ -59,7 +59,7 @@ changelog:
     changed:
       - Fixed a problem in which the coordinates of some squares were different from the original.
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

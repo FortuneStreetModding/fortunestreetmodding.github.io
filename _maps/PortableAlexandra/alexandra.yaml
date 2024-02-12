@@ -14,8 +14,8 @@ frbFile1: alexandra
 background: bg103
 mapIcon: alexandra
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Alexandra.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/PortableAlexandra.music.zip
     - https://drive.google.com/uc?export=download&id=17GdbbJvv_WeBOg3KDvyr9MpVHRem822j&confirm=1
   map: BGM_MAP_ALEXANDRA.50
   stock: BGM_STOCK_SPECIAL.60
@@ -56,7 +56,7 @@ changelog:
       - Take a Break Music
       - Arcade Music
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

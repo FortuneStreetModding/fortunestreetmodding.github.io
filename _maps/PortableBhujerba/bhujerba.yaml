@@ -14,8 +14,8 @@ frbFile1: bhujerba
 background: bg107fixed
 mapIcon: bhujerba
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Bhujerba.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/PortableBhujerba.music.zip
     - https://drive.google.com/uc?export=download&id=115QTqVnEAs3YP8mDVP7w34SRH6CYwVYk&confirm=1
   map: BGM_MAP_BHUJERBA.50
   stock: BGM_STOCK_SPECIAL.60
@@ -65,7 +65,7 @@ changelog:
     changed:
       - Changed background to the new bg009alt
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

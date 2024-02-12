@@ -14,8 +14,8 @@ frbFile1: crystalp
 background: bg008alt
 mapIcon: crystalp
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/CrystalTower.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/PortableCrystalTower.music.zip
     - https://drive.google.com/u/2/uc?id=1ksd8iWEeJKp2h4mAwMSOavHOFrJh7nea&export=download
   map: BGM_MAP_CRYSTAL_PORTABLE.55
   stock: BGM_STOCK_SPECIAL.60
@@ -42,7 +42,7 @@ tourMode:
   clearRank: 1
 changelog:
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

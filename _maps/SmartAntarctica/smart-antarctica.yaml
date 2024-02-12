@@ -13,9 +13,9 @@ maxDiceRoll: 6
 frbFile1: smart-antarctica
 background: bg105
 mapIcon: antarctica
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/Antarctica.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/SmartAntarctica.music.zip
     - https://drive.google.com/uc?export=download&id=1lxQTGFmW3uTL_ZqORawLdp4-bsenfFai&confirm=1
   map: BGM_MAP_ANTARCTICA.80
   stock: BGM_STOCK_SMART.60
@@ -38,9 +38,9 @@ music:
   roundTheBlocks: A_ARCADE_SMART.100
   roundTheBlocksWin: ME_ARCADEWIN_SMART.60
   roundTheBlocks777: ME_ARCADE777_SMART.60
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_ARCADE_SMART.100
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_SMART.60
 tourMode:
   bankruptcyLimit: 1
@@ -193,7 +193,7 @@ changelog:
     changed:
       - Updated yaml for CSWT
   - version: 1
-    added: 
+    added:
       - Initial Release
 notes: |
   - This map was originally from Fortune Street Smart.

@@ -22,9 +22,9 @@ tourMode:
   opponent2: Dragonlord
   opponent3: Bowser
   clearRank: 1
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/MonsterHouse.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/FSSmartMonsterHouse.music.zip
     - https://drive.google.com/uc?export=download&id=1BN5KMPeeZR6GT5Jh-in_-yqnmo0ojz4p&confirm=1
   map: BGM_MAP_MONSTER.60
   stock: BGM_STOCK_SMART.60
@@ -47,9 +47,9 @@ music:
   roundTheBlocks: A_ARCADE_SMART.100
   roundTheBlocksWin: ME_ARCADEWIN_SMART.60
   roundTheBlocks777: ME_ARCADE777_SMART.60
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_ARCADE_SMART.100
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_SMART.60
 changelog:
   - version: 4

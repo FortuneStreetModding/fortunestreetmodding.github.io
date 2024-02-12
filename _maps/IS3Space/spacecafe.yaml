@@ -17,8 +17,8 @@ frbFile4: SpaceCafe3
 background: grid_violet
 mapIcon: spacecafe
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/SpaceCafe.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/IS3Space.music.zip
     - https://drive.google.com/uc?export=download&id=102CCuTkKC1cPFXVds3lcuPcJcI0I7m2h&confirm=1
   map: BGM_MAP_SPACECAFE_IS3.75
   stock: BGM_STOCK_IS3.65
@@ -41,9 +41,9 @@ music:
   roundTheBlocks: A_BGM_ARCADE_IS3.65
   roundTheBlocksWin: ME_ARCADEWIN_IS3.75
   roundTheBlocks777: ME_ARCADE777_IS3.90
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_BGM_ARCADE_IS3.65
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_IS3.90
 tourMode:
   bankruptcyLimit: 1
@@ -70,7 +70,7 @@ changelog:
     changed:
       - Changed background to the new bg009alt
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

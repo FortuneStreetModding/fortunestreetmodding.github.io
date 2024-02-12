@@ -14,8 +14,8 @@ frbFile1: alefgardSP
 background: bg107
 mapIcon: alefgardSP
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Alefgard.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/SPAlefgard.music.zip
     - https://drive.google.com/uc?export=download&id=13a1GDS70EFWs2dmpeub7_KOzXNhUnY_b&confirm=1
   map: BGM_MAP_ALEFGARD_SPECIAL.60
   stock: BGM_STOCK_SPECIAL.60
@@ -56,7 +56,7 @@ changelog:
       - Take a Break Music
       - Arcade Music
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia

@@ -17,8 +17,8 @@ frbFile4: gk-floating-continent
 background: bg109
 mapIcon: Floating
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/FloatingContinent.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/GKFloatingContinent.music.zip
     - https://drive.google.com/uc?export=download&id=1Pw8a0LBKbC84DrVgvNAZNPNvMeMNlIHp&confirm=1
   map: BGM_MAP_FLOATING.70
   stock: BGM_STOCK_GK.70
@@ -41,9 +41,9 @@ music:
   roundTheBlocks: A_BGM_ARCADE_GK.100
   roundTheBlocksWin: ME_ARCADEWIN_GK.100
   roundTheBlocks777: ME_ARCADE777_GK.50
-  slurpodromeRace: 
+  slurpodromeRace:
   slurpodromeSelect: A_BGM_ARCADE_GK.100
-  slurpodromeStart: 
+  slurpodromeStart:
   slurpodromeWin: ME_ARCADE777_GK.50
 tourMode:
   bankruptcyLimit: 1
