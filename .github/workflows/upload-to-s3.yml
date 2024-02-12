@@ -22,7 +22,7 @@ jobs:
           role-to-assume: ${{ secrets.ASSUME_ROLE_ARN }}
           role-session-name: ghamapuploadingrolesession
           aws-region: ${{ secrets.AWS_REGION }}
-      
+
       - name: Zip maps
         shell: bash
         working-directory: ./_maps
@@ -38,30 +38,3 @@ jobs:
 
       - name: Create CloudFront invalidation for maps
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Maps/*
-  UploadPyCSMMToS3:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Clone the repo
-        uses: actions/checkout@v3
-
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          role-to-assume: ${{ secrets.ASSUME_ROLE_ARN }}
-          role-session-name: ghamapuploadingrolesession
-          aws-region: ${{ secrets.AWS_REGION }}
-      
-      - name: Copy over mapList.yaml and backgrounds.yml
-        run: |
-          cp _data/mapList.yaml _data/backgrounds.yml cswtpycsmm
-      
-      - name: Zip modpack and map list files
-        run: |
-          zip -r cswtpycsmm-dev.zip cswtpycsmm
-      
-      - name: Upload modpack to s3
-        run: aws s3 cp cswtpycsmm-dev.zip s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Builds/
-      
-      - name: Create CloudFront invalidation for modpack
-        run: |
-          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Builds/*
