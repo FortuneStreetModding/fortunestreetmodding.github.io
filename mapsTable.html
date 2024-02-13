@@ -104,11 +104,8 @@ permalink: /mapsTable
                 {{ map.frbFile1 }}
               {%- endcapture -%}
             {%- else -%}
-              {%- capture frbFiles -%}
-                {% for frbFile in map.frbFiles -%}
-                  {{ frbFile }}
-                {% endfor -%}
-              {%- endcapture -%}
+              {%- assign frbFiles = map.frbFiles | map: 'frbFiles' -%}
+              {{ frbFiles | join: ', ' }}
             {%- endif -%}
             {%- assign background = site.data.backgrounds | where: "background", map.background | first %}
             <tr>
