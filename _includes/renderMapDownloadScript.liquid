@@ -11,7 +11,6 @@ Renders:
 {%- endcomment -%}
 {%- include getParent.liquid file_path=include.map.path -%}
 
-
 {%- capture frbFiles -%}
   {%- if include.map.frbFile4 -%}
       {{ include.map.frbFile1 }},{{include.map.frbFile2}},{{include.map.frbFile3}},{{include.map.frbFile4}}
@@ -26,18 +25,16 @@ Renders:
   {%- endif -%}
 {%- endcapture %}
 
+{% assign frbList = frbFiles | split: "," %}
+{% assign url = "https://raw.githubusercontent.com/FortuneStreetModding/fortunestreetmodding.github.io/main/" %}
+{% assign frb_url_base = url | prepend: ",'" | append: gd_directory_path | append: "/" %}
 
-{% assign frbList = frbFiles | split: ", " %}
-{% assign url_base = "https://raw.githubusercontent.com/FortuneStreetModding/fortunestreetmodding.github.io/main/" %}
-
-{%- capture urls -%}
-  {{- url_base | prepend: "'" | append: include.map.path | append: "'" -}}-
-  {% for frb in frbList %}
-    {{- url_base | prepend: ",'" | append: gd_directory_path | append: "/" | append: frb | append: ".frb'" -}}
-  {% endfor %}
+saveZip('{{ gd_directory_name }}', [
+  {{- url | prepend: "'" | append: include.map.path | append: "'" -}}
   {%- if include.map.mapIcon -%}
-    {{- url_base | prepend: ",'" | append: gd_directory_path | append: "/" | append: include.map.mapIcon | append: ".png'" -}}
+  {{- url | prepend: ",'" | append: gd_directory_path | append: "/" | append: include.map.mapIcon | append: ".png'" -}}
   {%- endif -%}
-{%- endcapture %}
-
-saveZip('{{ gd_directory_name }}', {{ urls }});
+  {% for frb in frbList -%}
+    {{- frb_url_base | append: frb | append: ".frb'" -}}
+  {% endfor -%}
+  ]);
