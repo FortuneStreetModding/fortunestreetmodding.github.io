@@ -32,15 +32,15 @@ _site/
 ### cmpres and brstm ###
 *.brstm
 *.cmpres
-!_data/modpack_common_files/cswt/*/*.cmpres
-# exclude arc files but allow cswtpycsmm's arc directories
+!_modpacks/resources/*/*/*.cmpres
+# exclude arc files but allow them for modpacks
 *.arc
-!_data/modpack_common_files/cswt/cswtpycsmm/*.arc
+!_modpacks/resources/*/*/*.arc
 *.scene
 
 ### Binary Files ###
 *.zip
-!_modpacks/cswt/development/other_files/*.zip
+!_modpacks/packs/cswt/development/other_files/*.zip
 *.7z
 __pycache__
 
