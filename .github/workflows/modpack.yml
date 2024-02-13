@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   BuildModpacks:
+    if: github.repository == 'FortuneStreetModding/fortunestreetmodding.github.io'
     runs-on: ubuntu-latest
     steps:
       - name: Clone the repo

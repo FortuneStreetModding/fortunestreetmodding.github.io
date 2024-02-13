@@ -105,8 +105,8 @@ permalink: /mapsTable
               {%- endcapture -%}
             {%- else -%}
               {%- capture frbFiles -%}
-                {% for download in map.music.download -%}
-                  {{ download }}
+                {% for frbFile in map.frbFiles -%}
+                  {{ frbFile }}
                 {% endfor -%}
               {%- endcapture -%}
             {%- endif -%}
