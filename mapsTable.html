@@ -50,7 +50,7 @@ permalink: /mapsTable
       </p>
     </div>
   </section>
-  
+
   <!--- Maps -->
   <div class="album">
     <div class="container-fluid">
@@ -99,9 +99,13 @@ permalink: /mapsTable
               {%- capture frbFiles -%}
                 {{ map.frbFile1 }},{{map.frbFile2}}
               {%- endcapture -%}
-            {%- else -%}
+            {%- elsif map.frbFile1 -%}
               {%- capture frbFiles -%}
                 {{ map.frbFile1 }}
+              {%- endcapture -%}
+            {%- elsif map.frbFiles -%}
+              {%- capture frbFiles -%}
+                {{ map.frbFiles }}
               {%- endcapture -%}
             {%- endif -%}
             {%- assign background = site.data.backgrounds | where: "background", map.background | first %}
