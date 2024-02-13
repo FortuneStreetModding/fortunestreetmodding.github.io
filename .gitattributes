@@ -1,11 +1,12 @@
-# Text files
-*.html          text eol=lf
-*.liquid        text eol=lf
-*.md            text eol=lf
-*.py            text eol=lf
-*.txt           text eol=lf
-*.yaml          text eol=lf
-*.yml           text eol=lf
+* text=auto
+
+*.html          text
+*.liquid        text
+*.md            text
+*.py            text
+*.txt           text
+*.yaml          text
+*.yml           text
 
 # Unix-only files that need to be LF
 *.sh            text eol=lf

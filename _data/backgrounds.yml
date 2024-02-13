@@ -1,0 +1,952 @@
+- background: bg001
+  mapIcon: p_bg_001
+  bgm:  BGM_MAP_YOSHI
+  name: Yoshi's Island
+- background: bg002
+  mapIcon: p_bg_002
+  bgm:  BGM_MAP_CIRCUIT
+  name: Mario Circuit
+- background: bg003
+  mapIcon: p_bg_003
+  bgm:  BGM_MAP_PEACH
+  name: Peach's Castle
+- background: bg004
+  mapIcon: p_bg_004
+  bgm:  BGM_MAP_STADIUM
+  name: Mario Stadium
+- background: bg005
+  mapIcon: p_bg_005
+  bgm:  BGM_MAP_DOLPIC
+  name: Delfino Plaza
+- background: bg006
+  mapIcon: p_bg_006
+  bgm:  BGM_MAP_SMB
+  name: Super Mario Bros.
+- background: bg007
+  mapIcon: p_bg_007
+  bgm:  BGM_MAP_KOOPA
+  name: Bowser's Castle
+- background: bg008
+  mapIcon: p_bg_008
+  bgm:  BGM_MAP_STARSHIP
+  name: Starship Mario
+- background: bg009
+  mapIcon: p_bg_009
+  bgm:  BGM_MAP_EGG
+  name: Good Egg Galaxy
+- background: bg101
+  mapIcon: p_bg_101
+  bgm:  BGM_MAP_TRODAIN
+  name: Castle Trodain
+- background: bg102
+  mapIcon: p_bg_102
+  bgm:  BGM_MAP_GHOSTSHIP
+  name: Ghost Ship
+- background: bg103
+  mapIcon: p_bg_103
+  bgm:  BGM_MAP_MAJINZOU
+  name: Colossus
+- background: bg104
+  mapIcon: p_bg_104
+  bgm:  BGM_MAP_SINOKAZAN
+  name: Mt Magmageddon
+- background: bg105
+  mapIcon: p_bg_105
+  bgm:  BGM_MAP_SLABACCA
+  name: Slimenia
+- background: bg106
+  mapIcon: p_bg_106
+  bgm:  BGM_MAP_KANDATA
+  name: Robbin' Hood Ruins
+- background: bg107
+  mapIcon: p_bg_107
+  bgm:  BGM_MAP_ALEFGARD
+  name: Alefgard
+- background: bg108
+  mapIcon: p_bg_108
+  bgm:  BGM_MAP_DHAMA
+  name: Alltrades Abbey
+- background: bg109
+  mapIcon: p_bg_109
+  bgm:  BGM_MAP_ANGEL
+  name: The Observatory
+- background: bg901
+  name: Tutorial
+  bgm:  BGM_MENU
+- background: facingWorlds
+  name: Facing Worlds
+  download:
+  - https://nikkums.io/cswt/Backgrounds/facingWorlds.background.zip
+  - https://drive.google.com/u/0/uc?id=1kb3o9tBzi88VQrZHztzrm5-EwZjCdSdO&export=download
+  mapIcon: facingWorlds
+  music:
+    map: facingWorlds_map_forgoneRejuvenation.65
+    stock: facingWorlds_stock_killWillyforegone.80
+    ventureCards: facingWorlds_ventureCards_crxForeDest.80
+    auction: facingWorlds_auction_saintDiorInstrum.80
+    targetMet: facingWorlds_targetMet_forgoneMothership.70
+    win: facingWorlds_win_ending.80
+    guestAppear:
+    guestLeave:
+    badVentureCard:
+    takeAbreak: facingWorlds_takeABreak.80
+    promotionMii: facingWorlds_promotion_flagCaptured.70
+    promotionMario: facingWorlds_promotion_flagCaptured.70
+    promotionDragonQuest: facingWorlds_promotion_flagCaptured.70
+    forcedBuyout: facingWorlds_forcedBuyout_victoryConcept2.80
+    domination: facingWorlds_domination_introCity.90
+    bankruptcy:
+- background: forestFairies
+  name: Forest of Fairies
+  download:
+  - https://nikkums.io/cswt/Backgrounds/forestFairies.background.zip
+  - https://drive.google.com/u/2/uc?id=1pK6s9JLeMcjzbtoQr-hKhcNAfD0DBmW7&export=download
+  mapIcon: forestFairies
+  music:
+    map: forestFairies_map_background.65
+    stock: forestFairies_map_stock.65
+    ventureCards: forestFairies_map_chance.65
+    auction: forestFairies_map_auction.65
+- background: forsakenFortress
+  name: Forsaken Fortress
+  download:
+  - https://nikkums.io/cswt/Backgrounds/forsakenFortress.background.zip
+  - https://drive.google.com/u/2/uc?id=1bKPi9z2hTHNMLRE0XP7w6NejsSUD6GfU&export=download
+  mapIcon: forsakenFortress
+  music:
+    map: forsakenFortress_map_background.65
+    stock: forsakenFortress_map_stock.65
+    ventureCards: forsakenFortress_map_chance.65
+    auction: forsakenFortress_map_auction.65
+- background: galaxyColosseum
+  name: Galaxy Colosseum
+  download:
+  - https://nikkums.io/cswt/Backgrounds/galaxyColosseum.background.zip
+  - https://drive.google.com/u/2/uc?id=1IuWB7xGkvvII9kbUym8ZJhjGPZ2ZX_zx&export=download
+  mapIcon: galaxyColosseum
+  music:
+    map: galaxyColosseum_map_background.65
+    stock: galaxyColosseum_map_stock.65
+    ventureCards: galaxyColosseum_map_chance.65
+    auction: galaxyColosseum_map_auction.80
+- background: n64Skyscraper
+  name: N64 Skyscraper
+  download:
+  - https://nikkums.io/cswt/Backgrounds/n64Skyscraper.background.zip
+  - https://drive.google.com/u/2/uc?id=1DNhnbMigQmeE_a8LNtbA-eoIshkIMk3x&export=download
+  mapIcon: n64Skyscraper
+  music:
+    map: n64Skyscraper_map_background.65
+    stock: n64Skyscraper_map_stock.65
+    ventureCards: n64Skyscraper_map_chance.65
+    auction: n64Skyscraper_map_auction.65
+- background: traverseTown
+  name: Traverse Town
+  download:
+  - https://nikkums.io/cswt/Backgrounds/traverseTown.background.zip
+  - https://drive.google.com/u/2/uc?id=1tDxBWPAMtzW43BthDiarqyYRI26n_oaP&export=download
+  mapIcon: traverseTown
+  music:
+    map: traverseTown_map_background.65
+    stock: traverseTown_map_stock.80
+    ventureCards: traverseTown_map_chance.80
+    auction: traverseTown_map_auction.80
+- background: battlecanyon
+  name: Wario's Battle Canyon
+  download:
+  - https://nikkums.io/cswt/Backgrounds/battlecanyon.background.zip
+  mapIcon: battlecanyon
+  music:
+    map: BGM_MAP_BATTLECANYON.65
+    stock: MP1_OptionHouse.50
+    ventureCards: MP1_MiniGame.60
+    auction: MP1_ChanceTime.55
+    targetMet: HurryUp.60
+    win: MP1_Ending.60
+    guestAppear: MP1_OJAMA_COME.60
+    guestLeave: MP1_OJAMA_BYE.60
+    badVentureCard: MP1_Miss.60
+    takeAbreak: MP1_Miss.60
+    promotionMii: MP1_WinMinigame4.60
+    promotionMario: MP1_WinMinigame4.60
+    promotionDragonQuest: MP1_WinMinigame4.60
+    forcedBuyout: MP1_WinMinigame3.60
+    domination: MP1_Monopoly.60
+    bankruptcy: MP1_WinMinigame5.60
+- background: quietstreet
+  name: Quiet Street
+  download:
+  - https://nikkums.io/cswt/Backgrounds/QuietStreet.background.zip
+  - https://drive.google.com/u/2/uc?id=19KZM73qwLzVow7yGi71KKgNxeFPY5hUv&export=download&confirm=1
+  mapIcon: qs_btd6_0
+  music:
+    map: jazztheme.90
+    targetMet: primalone.85
+- background: bg009alt
+  name: bg009alt
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg009alt.background.zip
+  - https://drive.google.com/u/2/uc?id=1zppXoPxsgdq2kl8-VUgaSxubZGjrIrmE&export=download
+  mapIcon: bg009alt
+- background: bg008alt
+  name: bg008alt
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg008alt.background.zip
+  - https://drive.google.com/u/2/uc?id=196KQJNVui70pJwx3rGP4rHMRpQCS19VC&export=download
+  mapIcon: bg008alt
+- background: bg001_clean
+  name: bg001_clean
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg001_clean.background.zip
+  - https://drive.google.com/u/2/uc?id=1F-wuHm-PfKR_lJ-r253_GvwdHhtN9OVA&export=download
+  mapIcon: bg001
+  music:
+    map: 20_BGM_MAP_YOSHI
+- background: quad
+  name: Quad
+  download:
+  - https://nikkums.io/cswt/Backgrounds/Quad.background.zip
+  - https://drive.google.com/u/2/uc?id=1ohZl_ILLw6k6qVxmtPimaMzTyApGs4L0&export=download&confirm=1
+  mapIcon: quad_btd6
+  music:
+    map: winternights.45
+    targetMet: primalone.85
+- background: umineko
+  name: umineko
+  download:
+  - https://nikkums.io/cswt/Backgrounds/umineko.background.zip
+  mapIcon: rokkenjima
+  music:
+    map: UminekoMedley.40
+    stock: deadangle.50
+    ventureCards: blackliliana.50
+    auction: dreadofthegrave.50
+    targetMet: lastendconductor.40
+    win: HappinessOfMarionette
+    badVentureCard: ahaha.50
+    takeAbreak: ahaha.50
+    promotionMii: A_UminekoPromotion
+    promotionMario: A_UminekoPromotion
+    promotionDragonQuest: A_UminekoPromotion
+    forcedBuyout: clash.50
+    domination: horror.50
+    bankruptcy: candles.50
+    memoryBlock: A_StuffedDoll
+    dartOfGold: A_MonochromeClock
+    roundTheBlocks: A_MonochromeClock
+    roundTheBlocksWin: A_UminekoPromotion
+    roundTheBlocks777: A_Happiness
+    slurpodromeRace: A_TsubasaPinomix
+    slurpodromeSelect: A_MonochromeClock
+    slurpodromeStart: A_UminekoRaceStart
+    slurpodromeWin: A_UminekoPromotion
+- background: disboard
+  name: Disboard
+  download:
+  - https://nikkums.io/cswt/Backgrounds/disboard.background.zip
+  mapIcon: disboard
+  music:
+      map: GameStart
+      stock: CriminalConnection
+      ventureCards: Choisies
+      auction: IGetYouBack
+      targetMet: NoGameNoLife
+      win: WinnerNGNL
+- background: catmap-bg
+  name: Cats
+  download:
+  - https://nikkums.io/cswt/Backgrounds/catmap-assets.zip
+  - https://logg.biz/fs/catmap-assets.zip
+  mapIcon: catcat
+  music:
+      map: cats-at-play.50
+      targetMet: cat-rave.50
+      guestAppear: cat-guest-arrive.75
+      guestLeave: cat-guest-goodbye.75
+      badVentureCard: cat-curse.50
+      takeAbreak: cat-sleepy.50
+- background: psoJungle
+  name: psoJungle
+  download:
+  - https://nikkums.io/cswt/Backgrounds/psoJungle.background.zip
+  - https://drive.google.com/u/0/uc?id=1sdAokcISJdC0eKpRoqvVhlHZo2hwP1yo&export=download&confirm=1
+  mapIcon: psoJungle
+- background: grid_blue
+  name: grid_blue
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_blue.background.zip
+  - https://drive.google.com/u/2/uc?id=1VBnw2vTXA1BDSJCD3I3RqpeGwtdEvZQv&export=download
+  mapIcon: grid_blue
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: grid_bluegreen
+  name: grid_bluegreen
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_bluegreen.background.zip
+  - https://drive.google.com/u/2/uc?id=1g2B8miIbndj8voZt9bU7ODdpHhBQHddq&export=download
+  mapIcon: grid_aomidori
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: grid_lightblue
+  name: grid_lightblue
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_lightblue.background.zip
+  - https://drive.google.com/u/2/uc?id=12fscbXCV-CBapgDYZyP1OkGZWbK3XwFj&export=download
+  mapIcon: grid_mizuiro
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: grid_orange
+  name: grid_orange
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_orange.background.zip
+  - https://drive.google.com/u/2/uc?id=1-CK8NjFuinSKsg5WUYCXrw8sRnLYJYlC&export=download
+  mapIcon: grid_orange
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: grid_red
+  name: grid_red
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_red.background.zip
+  - https://drive.google.com/u/2/uc?id=1nE0n0HtHUHkPNUyOcXEv9p6RfUg3vmSZ&export=download
+  mapIcon: grid_red
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: grid_violet
+  name: grid_violet
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_violet.background.zip
+  - https://drive.google.com/u/2/uc?id=18bd7Zh9Apr04GyZ870-EdJ7UcD3FoZ9B&export=download
+  mapIcon: grid_violet
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: grid_blue2
+  name: grid_blue2
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_blue2.background.zip
+  - https://drive.google.com/u/2/uc?id=1V4V5eRBb0sA-wwQBKiHNgG1J2wbJuR4R&export=download
+  mapIcon: grid_blue2
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: bg102alt
+  name: bg102alt
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg102alt.background.zip
+  - https://drive.google.com/u/2/uc?id=1RDyDvhNthK0Zw4qdVzlyT3NL--kU4mdM&export=download
+  mapIcon: bg102alt
+- background: bg901fixed
+  name: bg901fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg901fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=12szJZLhpDKHOvaUiXrKSs8dkQlnjftXz&export=download
+  mapIcon: bg901fixed
+- background: bg004fixed
+  name: bg004fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg004fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=12Yg8YyQYYbp5ry7iH0Qx6zWCiUv5l1ls&export=download
+  mapIcon: bg105fixed
+- background: bg105fixed
+  name: bg105fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg105fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=1kMIJt0Pox6Nuj8boKjUVO3RstAoFUwsh&export=download
+  mapIcon: bg105fixed
+- background: bg106fixed
+  name: bg106fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg106fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=1BF2zDxvE8Sn1nWg_hmkwfrL0O02jMs1_&export=download
+  mapIcon: bg106fixed
+- background: bg108fixed
+  name: bg108fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg108fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=18nSJpH2JARbdeVD-6NtaVp-dU6NqTU7F&export=download
+  mapIcon: bg107fixed
+- background: bg107fixed
+  name: bg107fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg107fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=18m7olIpu6K1vZaPvdIwB7c_QqhHjGt9N&export=download
+  mapIcon: bg107fixed
+- background: bg003fixed
+  name: bg003fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg003fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=1kNbbgITdF1DFcG6SuuAhJVbMIu5oQrzY&export=download
+  mapIcon: bg003fixed
+- background: bg006fixed
+  name: bg006fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg006fixed.background.zip
+  - https://drive.google.com/u/2/uc?id=1Idz96QrLZbPlvRXiAUg5zFnQvmuIWLhx&export=download
+  mapIcon: bg006fixed
+- background: rayman
+  name: rayman
+  download:
+  - https://nikkums.io/cswt/Backgrounds/rayman.background.zip
+  mapIcon: rayman
+  music:
+    map: RaymanMap.70
+    targetMet: RaymanNetgoal.70
+    promotionMario: RaymanPromote.70
+    promotionDragonQuest: RaymanPromote.70
+    promotionMii: RaymanPromote.70
+    takeAbreak: RaymanSleeps.70
+    bankruptcy: RaymanDies.80
+    auction: RaymanAuction.70
+    ventureCards: RaymanVenture.70
+    badVentureCard: RaymanUnlucky.70
+    win: RaymanVictory.70
+    forcedBuyout: RaymanBuyout.80
+    domination: RaymanDomination.80
+    stock: RaymanStonk.70
+- background: floatingSpaceRock
+  name: floatingSpaceRock
+  mapIcon: floatingSpaceRock
+  download:
+  - https://nikkums.io/cswt/Backgrounds/floatingSpaceRock.background.zip
+  - https://drive.google.com/u/0/uc?id=1xAJimVmghOKEhWq7UBey6J7gr9LdX-OO&export=download
+- background: bg103fixed
+  name: bg103fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg103fixed.background.zip
+  mapIcon: bg103fixed
+  music:
+    map: bg103fixed.85
+- background: grid_red2
+  name: grid_red2
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_red2.background.zip
+  - https://drive.google.com/u/0/uc?id=1z8U2heW6XO_lQOvklsm4tHcAo787P-qG&export=download
+  mapIcon: grid_red
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: grid_gray
+  name: grid_gray
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_gray.background.zip
+  - https://drive.google.com/u/0/uc?id=1o9Z0SWLaUdUcNzCaFw-Mi1WLT7ufrrMw&export=download
+  mapIcon: grid_gray
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: grid_green
+  name: grid_green
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_green.background.zip
+  - https://drive.google.com/u/0/uc?id=1ss0LS5vRQ0yn5qscYQLAjwCYyl4Vyud_&export=download
+  mapIcon: grid_green
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: grid_blackwhite
+  name: grid_blackwhite
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_blackwhite.background.zip
+  - https://drive.google.com/u/0/uc?id=19jJDEIQ77VIQzYUUdBK4cqx0j_pCDDLW&export=download
+  mapIcon: grid_bw
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: NLA
+  name: NLA
+  download:
+  - https://nikkums.io/cswt/Backgrounds/NLA.background.zip
+  mapIcon: nla
+  music:
+    map: nla.50
+    stock: bladehome.50
+    ventureCards: briefing.50
+    auction: wirfliegen.60
+    targetMet: thekeywevelost.50
+    win: bymyside.60
+    guestAppear: X-event.80
+    guestLeave: X-fanfare.80
+    badVentureCard: X-Encounter.50
+    takeAbreak: X-Encounter.50
+    promotionMii: X-Levelup.80
+    promotionMario: X-Levelup.80
+    promotionDragonQuest: X-Levelup.80
+    forcedBuyout: X-buyout.50
+    domination: X-Levelup.80
+    bankruptcy: X-bankruptcy.80
+    roundTheBlocksWin: X-Levelup.80
+    roundTheBlocks777: X-fanfare.80
+    memoryBlock: comical.50
+    dartOfGold: comical.50
+    slurpodromeSelect: comical.50
+    slurpodromeStart: X-event.80
+    slurpodromeRace: uncontrollable.50
+    slurpodromeWin: X-fanfare.80
+- background: bethlehem
+  name: bethlehem
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bethlehem.background.zip
+  mapIcon: bethlehem
+  music:
+    map: MagicAndWeapons.50
+    stock: CrossExamination.50
+    ventureCards: ModernWeapons
+    auction: madness
+    targetMet: hitthetech.50
+    win: railgunt.50
+- background: academycity
+  name: academycity
+  download:
+  - https://nikkums.io/cswt/Backgrounds/academycity.background.zip
+  mapIcon: academy
+  music:
+    map: yochou.50
+    stock: quietploy.50
+    ventureCards: judgementnokatsudou.50
+    auction: madness.50
+    targetMet: BreakThrough.50
+    win: railgunt.50
+- background: grid_yellow
+  name: grid_yellow
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_yellow.background.zip
+  - https://drive.google.com/u/0/uc?id=1oDW5sun9L5onBf57ydb9BWeAkCXlZB_r&export=download
+  mapIcon: grid_yellow
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: grid_lightblue2
+  name: grid_lightblue2
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_lightblue2.background.zip
+  - https://drive.google.com/u/0/uc?id=1H2tf2Ku5W6LV7RL8HoNI4gLKYRq5B6HQ&export=download
+  mapIcon: grid_lb2
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: Colony9
+  name: Colony9
+  download:
+  - https://nikkums.io/cswt/Backgrounds/Colony9.background.zip
+  mapIcon: colony9icon
+  music:
+    map: CNMap.60
+    stock: CNStock.70
+    ventureCards: CNCard.60
+    auction: CNAuction.70
+    targetMet: CNTarget.60
+    win: CNWin.60
+    promotionMii: CNPromotion.60
+    promotionMario: CNPromotion.60
+    promotionDragonQuest: CNPromotion.60
+- background: rainbowroadbg
+  name: rainbowroadbg
+  download:
+  - https://nikkums.io/cswt/Backgrounds/rainbowroadbg.background.zip
+  mapIcon: icone
+  music:
+    map: mk7moon.40
+    stock: wifimedley
+    ventureCards: chainchomp
+    auction: mk7coconutmall
+    targetMet: mkdbrainbow
+    win: mk71st
+    guestAppear: welcomemk64
+    guestLeave: mkwii2eme
+    badVentureCard: mk64lost
+    takeAbreak: mkdsfail
+    promotionMii: mkdstop5
+    promotionMario: mkdstop5
+    promotionDragonQuest: mkdstop5
+    forcedBuyout: mkwiibossintro
+    domination: mkdsbosssucces
+    bankruptcy: mk64lost
+- background: LuigisMansion
+  name: LuigisMansion
+  download:
+  - https://nikkums.io/cswt/Backgrounds/LuigisMansion.background.zip
+  - https://drive.google.com/uc?export=download&id=1SF_UsA3-fuyxqsxU29DwgrUoOg9D5Ysb&confirm=1
+  mapIcon: mansionicone
+  music:
+    map: luigismansionssbwiiuremixmap
+    stock: professorstock
+    ventureCards: shyguyventure.100
+    auction: trainingauction
+    targetMet: doubledashluigitargetmet
+    win: staffrollwin
+    guestAppear: nintendoguest
+    guestLeave: areadoorunlockguestleave
+    badventureCard: goodnightbadcartbankrupcy
+    takeAbreak: chaunceytakeabreak
+    promotionMii: gotkeypromotion
+    promotionMario: gotkeypromotion
+    promotionDragonQuest: gotkeypromotion
+    forcedBuyout: warpboobyout
+    domination: roomcleareddomination
+    bankruptcy: goodnightbadcartbankrupcy
+- background: grid_rainbow
+  name: grid_rainbow
+  download:
+  - https://nikkums.io/cswt/Backgrounds/grid_rainbow.background.zip
+  - https://drive.google.com/u/0/uc?id=1McdADXpwSj4pHFv2NRBjXh6QWUklBPSo&export=download
+  mapIcon: grid_rainbow
+  music:
+    stock: Stock_grid.70
+    auction: Auction_grid.55
+    badVentureCard: ME_CURSE_ISDS.60
+    domination: ME_MONOPOLY_ISDS.60
+    bankruptcy: Bankrupt_grid.40
+    takeAbreak: takeAbreak_grid.45
+    promotionMii: Promotion_grid.40
+    promotionMario: Promotion_grid.40
+    promotionDragonQuest: Promotion_grid.40
+    forcedBuyout: ME_5BUY_ISDS.60
+    roundTheBlocks: Arcade_grid.60
+    roundTheBlocksWin: Promotion_grid.40
+    roundTheBlocks777: RTB777_SlurWin_grid.80
+    memoryBlock: Arcade_grid.60
+    dartOfGold: Arcade_grid.60
+    slurpodromeSelect: Arcade_slurS_grid.75
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: slurRace_grid.65
+    slurpodromeWin: RTB777_SlurWin_grid.80
+- background: KBHH
+  name: King Boo's Haunted Hideaway
+  download:
+  - https://nikkums.io/cswt/Backgrounds/KBHH.background.zip
+  - https://drive.google.com/uc?export=download&id=1fjYD4jDfawueHEV-zHnzcUoD68Yvu82r&confirm=1
+  mapIcon: iconKBHH
+  music:
+    map:
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    - KBHH_MAP
+    - KBHH_MAP
+    - KBHH_MAPALT
+    stock: starcarnival_STOCK
+    ventureCards: starcarnival_VEN
+    auction: starcarnival_AUCTION
+    targetMet: starcarnival_FINAL
+    win: starcarnival_WIN
+    guestAppear: starcarnival_GUESTA
+    guestLeave: starcarnival_GUESTL
+    badVentureCard: starcarnival_VENBAD
+    takeAbreak: starcarnival_BREAK
+    promotionMii: starcarnival_PROMO
+    promotionMario: starcarnival_PROMO
+    promotionDragonQuest: starcarnival_PROMO
+    forcedBuyout: starcarnival_BUYOUT
+    domination: starcarnival_DOMINATION
+    bankruptcy: starcarnival_LOSE
+    roundTheBlocks: A_starcarnival_ROB
+    roundTheBlocksWin: starcarnival_ROBWIN
+    roundTheBlocks777: starcarnival_ROB777
+    memoryBlock: A_starcarnival_MEM
+    dartOfGold: A_starcarnival_DOG
+    slurpodromeSelect: A_starcarnival_SRP
+    slurpodromeStart: starcarnival_SRPSTART
+    slurpodromeRace: starcarnival_SRPRACE
+    slurpodromeWin: starcarnival_SRPWIN
+- background: mp9_magmine
+  name: Magma Mine
+  download:
+  - https://nikkums.io/cswt/Backgrounds/mp9_magmine.background.zip
+  - https://drive.google.com/uc?export=download&id=1aNAeKcxMH5qNw5tdqJNUanBlxopcCKpe&confirm=1
+  mapIcon: imp9_magmine
+  music:
+    map:
+      - mp9_magmine_MAP1
+      - mp9_magmine_MAP2
+      - mp9_magmine_MAP3
+      - mp9_magmine_MAP4
+    stock: mp9_STOCK
+    ventureCards: mp9_VEN
+    auction: mp9_AUC
+    targetMet: mp9_magmine_FINAL
+    win: mp9_WIN
+    guestAppear: mp9_GUESTA
+    badVentureCard: mp9_VENBAD
+    promotionMii: mp9_PROMO
+    promotionMario: mp9_PROMO
+    promotionDragonQuest: mp9_PROMO
+    forcedBuyout: mp9_BYO
+    domination: mp9_DOM
+    bankruptcy: mp9_LOSE
+    roundTheBlocks: A_mp9_ROB
+    roundTheBlocksWin: mp9_ROB_WIN
+    roundTheBlocks777: mp9_ROB_777
+    memoryBlock: A_mp9_MEM
+    dartOfGold: A_mp9_DOG
+    slurpodromeSelect: A_mp9_SRP
+    slurpodromeStart: mp9_SRP_START
+    slurpodromeRace: mp9_SRP_RACE
+    slurpodromeWin: mp9_SRP_WIN
