@@ -26,11 +26,8 @@ Renders:
   {%- endif -%}
 {%- endcapture %}
 
-
 {% assign frbList = frbFiles | split: "," %}
 {% assign url_base = "https://raw.githubusercontent.com/FortuneStreetModding/fortunestreetmodding.github.io/main/" %}
-
-{% echo frbList %}
 
 {%- capture urls -%}
   {{- url_base | prepend: "'" | append: include.map.path | append: "'" -}}-
