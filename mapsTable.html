@@ -103,9 +103,11 @@ permalink: /mapsTable
               {%- capture frbFiles -%}
                 {{ map.frbFile1 }}
               {%- endcapture -%}
-            {%- elsif map.frbFiles -%}
+            {%- else -%}
               {%- capture frbFiles -%}
-                {{ map.frbFiles }}
+                {% for download in map.music.download -%}
+                  {{ download }}
+                {% endfor -%}
               {%- endcapture -%}
             {%- endif -%}
             {%- assign background = site.data.backgrounds | where: "background", map.background | first %}

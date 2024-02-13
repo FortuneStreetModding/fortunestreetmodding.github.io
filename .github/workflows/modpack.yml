@@ -27,10 +27,10 @@ jobs:
         run: |
             mkdir -p _modpacks/build
             build_dir=$(pwd)/_modpacks/build
-            for d in _modpacks/*/* ; do
+            for d in _modpacks/packs/*/* ; do
                 modpack_id=$(jq -r "keys[0]" $d/manifest.json)
                 resource_name=$(jq -r ".$modpack_id.resources" $d/manifest.json)
-                resource_directory="_modpacks/$resource_name/resources"
+                resource_directory="_modpacks/resources/$resource_name"
                 echo "$resource_directory"
                 mkdir -p $d/$modpack_id
                 cp "_data/backgrounds.yml" $d/$modpack_id/backgrounds.yml
