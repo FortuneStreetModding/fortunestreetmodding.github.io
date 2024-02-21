@@ -19,7 +19,7 @@ frbFiles:
 - Ennesan24_4
 - Ennesan24_7
 - Ennesan24_7
-background: BGmagmine
+background: mp9_magmine
 mapIcon: Enne24
 music:
   download: 
@@ -58,6 +58,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed to correct background name
   - version: 1
     added: 
       - Initial Release
