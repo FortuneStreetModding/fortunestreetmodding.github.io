@@ -2,7 +2,7 @@
 name:
   en: Lighthouse Island
 desc:
-  en: Job posting - Lightkeeper needed! Want to get paid to basically keep the lights on, all while enjoying endless ocean views on your own private island? Then this job might be for you. Responsibilites include helping ships & their crew navigate their cargo safely into the harbor at night. Apply today!
+  en: Job posting - Lightkeeper needed! Want to get paid to basically keep the lights on, all while enjoying endless ocean views on your own private island? Then this job might be for you. Responsibilites include helping ships & their crew navigate their cargo safely into the harbor at night. Apply today! 
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2400
@@ -10,22 +10,27 @@ targetAmount: 20000
 baseSalary: 360
 salaryIncrement: 225
 maxDiceRoll: 6
-frbFile1: lighthouse
-frbFile2: lighthouse2
-frbFile3: lighthouse3
-frbFile4: lighthouse4
+frbFiles:
+ - lighthouse
+ - lighthouse2
+ - lighthouse3
+ - lighthouse4
 background: bg102alt
 mapIcon: lightICON
 music:
   download:
   - https://nikkums.io/cswt/BGM/lighthouseisland.music.zip
-  - https://drive.google.com/uc?export=download&confirm=1&id=1yoEBKlOkr9pJNWev-xWZ8nuIWdHYGhU2
-  map: lighthouse_MAP
-  stock: lighthouse_VENTURE
-  ventureCards: lighthouse_VENTURE
-  auction: lighthouse_VENTURE
+  - https://drive.google.com/uc?export=download&confirm=1&id=1X6C4CAy3gjBe04uUajqOIyF1pfb6ZN3M
+  map: 
+   - lighthouse_MAP
+   - lighthouse_MAP2
+   - lighthouse_MAP3
+   - lighthouse_MAP4
+  stock: lighthouse_STOCK
+  ventureCards: lighthouse_VENTURE.95
+  auction: lighthouse_STOCK
   targetMet: lighthouse_TARGET
-  win:
+  win: 
   guestAppear:
   guestLeave:
   badVentureCard:
@@ -36,15 +41,15 @@ music:
   forcedBuyout:
   domination:
   bankruptcy:
-  roundTheBlocks:
-  roundTheBlocksWin:
-  roundTheBlocks777:
-  memoryBlock:
-  dartOfGold:
-  slurpodromeSelect:
-  slurpodromeStart:
-  slurpodromeRace:
-  slurpodromeWin:
+  roundTheBlocks: A_lighthouse_MINI
+  roundTheBlocksWin: 
+  roundTheBlocks777: 
+  memoryBlock: A_lighthouse_MINI
+  dartOfGold: A_lighthouse_MINI
+  slurpodromeSelect: 
+  slurpodromeStart: 
+  slurpodromeRace: 
+  slurpodromeWin: 
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -52,8 +57,13 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Music has been completely changed
+      - swapped some squares and redid the top of the lighthouse, players can now loop around and go back down to the green door
+      - opened up the ability to walk passed the heart suit instead of players being forced to walk through the pink door
   - version: 1
-    added:
+    added: 
       - Initial Release
 authors:
   - name: phellen007
