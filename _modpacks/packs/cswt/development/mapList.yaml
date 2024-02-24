@@ -1,55 +1,62 @@
 backgrounds: backgrounds.yml
 0:
   0:
-    CastawayBayCSide.zip:
+    birdosbigtop.zip:
+        urls:
+          - https://nikkums.io/cswt/Maps/birdosbigtop.zip
+    mkwii_funkystadium.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
-    Ennesan29.zip:
+        - https://nikkums.io/cswt/Maps/mkwii_funkystadium.zip
+    starcarnival.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Ennesan29.zip
-    Ennesan30A.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
-    fortunapolis.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/fortunapolis.zip
-    giantbeanstalk.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
-    KBHH.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/KBHH.zip
-  1:
-    lighthouseisland.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/lighthouseisland.zip
-    luigismansion.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/luigismansion.zip
+        - https://nikkums.io/cswt/Maps/starcarnival.zip
     MoguMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MoguMap.zip
+    CastawayBayCSide.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
+    luigismansion.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/luigismansion.zip
+  1:
     mp9_magmine.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mp9_magmine.zip
+    KBHH.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/KBHH.zip
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
     superbowserstrackway.zip:
       urls:
       - https://nikkums.io/cswt/Maps/superbowserstrackway.zip
-  2:
     thebackstreets.zip:
       urls:
       - https://nikkums.io/cswt/Maps/thebackstreets.zip
-    placeholder.zip:
-    placeholder.zip:
+    fortunapolis.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/fortunapolis.zip
+  2:
+    giantbeanstalk.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
+    Ennesan29.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan29.zip
+    Ennesan30A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
       practiceBoard: true
 1:
   0:
+    lighthouseisland.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/lighthouseisland.zip
     Ennesan15.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan15.zip
@@ -65,11 +72,10 @@ backgrounds: backgrounds.yml
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
+  1:
     TurtleFortress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TurtleFortress.zip
-  1:
-    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
