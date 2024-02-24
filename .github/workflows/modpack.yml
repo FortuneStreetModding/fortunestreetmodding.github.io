@@ -17,6 +17,9 @@ jobs:
       - name: Clone the repo
         uses: actions/checkout@v4
 
+      - name: Pull in the latest changes
+        run: git pull origin main
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
