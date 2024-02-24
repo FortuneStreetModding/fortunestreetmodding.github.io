@@ -42,9 +42,15 @@ backgrounds: backgrounds.yml
     thebackstreets.zip:
       urls:
       - https://nikkums.io/cswt/Maps/thebackstreets.zip
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
+    birdosbigtop.zip:
+      urls:
+        - https://nikkums.io/cswt/Maps/birdosbigtop.zip
+    starcarnival.zip:
+      urls:
+        - https://nikkums.io/cswt/Maps/starcarnival.zip
+    mkwii_funkystadium.zip:
+      urls:
+        - https://nikkums.io/cswt/Maps/mkwii_funkystadium.zip
     placeholder.zip:
     placeholder.zip:
       practiceBoard: true
