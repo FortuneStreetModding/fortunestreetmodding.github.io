@@ -19,12 +19,7 @@ backgrounds: backgrounds.yml
     birdosbigtop.zip:
       urls:
       - https://nikkums.io/cswt/Maps/birdosbigtop.zip
-    mkwii_funkystadium.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/mkwii_funkystadium.zip
-    starcarnival.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/starcarnival.zip
+  1:
     MoguMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MoguMap.zip
@@ -34,7 +29,6 @@ backgrounds: backgrounds.yml
     luigismansion.zip:
       urls:
       - https://nikkums.io/cswt/Maps/luigismansion.zip
-  1:
     mkwii_funkystadium.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mkwii_funkystadium.zip
@@ -44,6 +38,7 @@ backgrounds: backgrounds.yml
     MoguMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MoguMap.zip
+  2:
     CastawayBayCSide.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
@@ -53,7 +48,6 @@ backgrounds: backgrounds.yml
     mp9_magmine.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mp9_magmine.zip
-  2:
     KBHH.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KBHH.zip
