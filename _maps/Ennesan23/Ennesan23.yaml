@@ -23,10 +23,10 @@ frbFiles:
 background: grid_lightblue2
 mapIcon: Enne23
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan23.music.zip
     - https://drive.google.com/u/0/uc?id=1X_oALP5c5LCuwNrH9bbjPlBPKpEWTFig&export=download
-  map: 
+  map:
   - Ennesan23_1_Map.50
   - Ennesan23_2_Map.45
   - Ennesan23_2_Map.45
@@ -72,7 +72,7 @@ changelog:
       - Increased salary increment from 150 to 200
       - Change the file name of the referenced music file (no change to the music)
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

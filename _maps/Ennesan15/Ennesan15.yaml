@@ -14,7 +14,7 @@ frbFile1: Ennesan15
 background: grid_bluegreen
 mapIcon: Enne15
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan15.music.zip
     - https://drive.google.com/u/0/uc?id=1O4gXKIyJFS-YwsFMmZHj9umwAT4rvlOC&export=download
   map: Ennesan15_Map.45
@@ -59,7 +59,7 @@ changelog:
       - Increased base salary from 300 to 325
       - Increased salary increment from 100 to 125
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

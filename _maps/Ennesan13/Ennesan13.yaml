@@ -14,7 +14,7 @@ frbFile1: Ennesan13
 background: grid_lightblue
 mapIcon: Enne13
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan13.music.zip
     - https://drive.google.com/u/2/uc?id=13y8j_rkAsRb10kFh9aGNJALC_wJNsiyz&export=download
   map: Map_Ennesan13.75
@@ -41,7 +41,7 @@ tourMode:
   opponent3: Birdo
   clearRank: 3
 changelog:
-  - version: 4
+  - version: 3
     changed:
       - Change auction music to vanilla music
   - version: 2
@@ -58,7 +58,7 @@ changelog:
       - Changed all tour mode opponents to D rank
       - Changed Tour Mode clear condition to 3rd place or higher
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

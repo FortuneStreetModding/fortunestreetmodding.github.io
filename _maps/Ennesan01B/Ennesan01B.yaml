@@ -14,7 +14,7 @@ frbFile1: Ennesan01B
 background: grid_blue
 mapIcon: Enne01B
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan01B.music.zip
     - https://drive.google.com/u/0/uc?id=1W_PTLJXYr2hBAYb5bM58LKe-AnUPQ9B0&export=download
   map: Ennesan1B_Map.45
@@ -64,7 +64,7 @@ changelog:
       - Changed some venture cards
       - Change map icon
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

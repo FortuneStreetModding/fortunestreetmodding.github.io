@@ -15,10 +15,10 @@ frbFiles:
 background: grid_rainbow
 mapIcon: Enne30B
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan30B.music.zip
     - https://drive.google.com/u/2/uc?id=1a3IZmdcuJReN8E818TaakvT_oLOcKaAH&export=download
-  map: 
+  map:
   - Ennesan30_Map.40
   stock: Stock_grid.70
   ventureCards: Venture_Ennesan11.45
@@ -44,7 +44,7 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

@@ -22,10 +22,10 @@ frbFiles:
 background: mp9_magmine
 mapIcon: Enne24
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan24.music.zip
     - https://drive.google.com/u/2/uc?id=1LEgLGYEEJfSfc-J4KHZ7_5aIDFUng2xo&export=download
-  map: 
+  map:
   - Ennesan24_1_Map.50
   - Ennesan24_1_Map.50
   - Ennesan24_1_Map.50
@@ -62,7 +62,7 @@ changelog:
     changed:
       - Changed to correct background name
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

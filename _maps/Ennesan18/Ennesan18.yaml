@@ -14,7 +14,7 @@ frbFile1: Ennesan18
 background: grid_red2
 mapIcon: Enne18
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan18.music.zip
     - https://drive.google.com/u/0/uc?id=1RbdBoL7wQFIBx08MFh5jvGPvOLDzG2Rl&export=download
   map: Ennesan18_Map.50
@@ -46,7 +46,7 @@ changelog:
     changed:
       - Changed some music
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

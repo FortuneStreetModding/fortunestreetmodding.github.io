@@ -15,10 +15,10 @@ frbFiles:
 background: grid_lightblue2
 mapIcon: Enne21A
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan21A.music.zip
     - https://drive.google.com/u/0/uc?id=125NV46vAASnZvmP6WEOF6DG-qOXXITly&export=download
-  map: 
+  map:
   - Ennesan21A_Map.35
   stock: Stock_grid.70
   ventureCards: Arcade_grid.60
@@ -45,7 +45,7 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

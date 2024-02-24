@@ -14,7 +14,7 @@ frbFile1: Ennesan10
 background: grid_yellow
 mapIcon: Enne10
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan10.music.zip
     - https://drive.google.com/u/0/uc?id=1Cc0sOcVwdexeZ-BJ89XqoV4Je9hmSEJa&export=download
   map: Ennesan10_Map.40
@@ -90,7 +90,7 @@ changelog:
       - Change map icon
       - Change 10-A to 10
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san
