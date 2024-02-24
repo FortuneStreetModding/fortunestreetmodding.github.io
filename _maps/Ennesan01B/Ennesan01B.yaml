@@ -7,8 +7,8 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 1700
 targetAmount: 18000
-baseSalary: 350
-salaryIncrement: 100
+baseSalary: 300
+salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: Ennesan01B
 background: grid_blue
@@ -42,6 +42,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 8
+    changed:
+      - Base salary decreased from 350 to 300
+      - Salary increments increased from 100 to 150
   - version: 7
     changed:
       - Changed some music
