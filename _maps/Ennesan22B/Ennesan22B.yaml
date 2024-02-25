@@ -15,10 +15,10 @@ frbFiles:
 background: grid_lightblue2
 mapIcon: Enne22B
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan22B.music.zip
     - https://drive.google.com/u/0/uc?id=1VMuKhaUnHCgh0mHQBtGhDWuh27BmRqEq&export=download
-  map: 
+  map:
   - Ennesan22B_Map.40
   stock: Stock_grid.70
   ventureCards: Arcade_grid.60
@@ -48,7 +48,7 @@ changelog:
       - Number of vacant plots reduced from 24 to 22
       - Partially changed description
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

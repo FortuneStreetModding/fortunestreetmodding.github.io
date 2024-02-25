@@ -17,7 +17,7 @@ frbFile4: Ennesan12A_4
 background: grid_blue
 mapIcon: Enne12A
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan12A.music.zip
     - https://drive.google.com/u/0/uc?id=1d348U7UGkE--QkNPfSPA3N_tiK18QwX2&export=download
   map: Ennesan12A_Map.75
@@ -78,7 +78,7 @@ changelog:
     changed:
       - Changed background to grid_blue
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

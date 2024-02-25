@@ -14,7 +14,7 @@ frbFile1: Ennesan06
 background: grid_lightblue
 mapIcon: Enne06
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan06.music.zip
     - https://drive.google.com/u/0/uc?id=1_nTN_RbDuHvWEFAb2xOi0i9uAptNoC2y&export=download
   map: Ennesan6_Map.40
@@ -83,7 +83,7 @@ changelog:
     added:
       - Background Music
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

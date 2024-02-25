@@ -15,7 +15,7 @@ frbFile2: Ennesan14_2
 background: grid_red
 mapIcon: Enne14
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan14.music.zip
     - https://drive.google.com/u/2/uc?id=1gGVwPh27WcKrNPuOC1oPTW5RRYdzwvjU&export=download
   map: Map_Ennesan14.35
@@ -59,7 +59,7 @@ changelog:
     changed:
       - Changed background to grid_red
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

@@ -17,7 +17,7 @@ frbFile4: Ennesan08_4
 background: bg008alt
 mapIcon: Enne08
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan08.music.zip
     - https://drive.google.com/u/2/uc?id=1I0Ij37csK9GiiQXAdo-XIyAm1xtGIgkT&export=download
   map: Map_Ennesan8.35
@@ -54,7 +54,7 @@ changelog:
       - Change 08-B to 08
       - Change description
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

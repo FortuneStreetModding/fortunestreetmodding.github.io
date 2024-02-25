@@ -7,8 +7,8 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
 targetAmount: 20000
-baseSalary: 350
-salaryIncrement: 150
+baseSalary: 300
+salaryIncrement: 200
 maxDiceRoll: 7
 frbFiles:
 - Ennesan23_1
@@ -23,10 +23,10 @@ frbFiles:
 background: grid_lightblue2
 mapIcon: Enne23
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan23.music.zip
     - https://drive.google.com/u/0/uc?id=1X_oALP5c5LCuwNrH9bbjPlBPKpEWTFig&export=download
-  map: 
+  map:
   - Ennesan23_1_Map.50
   - Ennesan23_2_Map.45
   - Ennesan23_2_Map.45
@@ -37,7 +37,7 @@ music:
   - Ennesan23_2_Map.45
   - Ennesan23_2_Map.45
   stock: Stock_grid.70
-  ventureCards: Venture_Ennesan19.60
+  ventureCards: Arcade_grid.60
   auction: Auction_grid.55
   targetMet: Targetmet_Ennesan12.75
   win: Ennesan1_Win.45
@@ -66,8 +66,13 @@ mutators:
     denominator: 3
     affectShopRank: true
 changelog:
+  - version: 2
+    changed:
+      - Decreased base salary from 350 to 300
+      - Increased salary increment from 150 to 200
+      - Change the file name of the referenced music file (no change to the music)
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

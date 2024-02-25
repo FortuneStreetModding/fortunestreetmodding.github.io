@@ -20,7 +20,7 @@ frbFiles:
 background: grid_violet
 mapIcon: Enne16
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan16.music.zip
     - https://drive.google.com/u/0/uc?id=1GBTwLLo8QwbX8qC7tdeD4CwvSJv3FUhL&export=download
   map: Ennesan16_Map.35
@@ -85,7 +85,7 @@ changelog:
       - Changed some music
       - Changed mapIcon
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

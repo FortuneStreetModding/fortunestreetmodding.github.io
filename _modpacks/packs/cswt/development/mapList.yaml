@@ -1,15 +1,25 @@
 backgrounds: backgrounds.yml
 0:
   0:
+    Ennesan31C.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan31C.zip
+    Ennesan32A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan32A.zip
+    Ennesan32B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan32B.zip
+    Ennesan33.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan33.zip
+    Ennesan34.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan34.zip
     birdosbigtop.zip:
-        urls:
-          - https://nikkums.io/cswt/Maps/birdosbigtop.zip
-    mkwii_funkystadium.zip:
       urls:
-        - https://nikkums.io/cswt/Maps/mkwii_funkystadium.zip
-    starcarnival.zip:
-      urls:
-        - https://nikkums.io/cswt/Maps/starcarnival.zip
+      - https://nikkums.io/cswt/Maps/birdosbigtop.zip
+  1:
     MoguMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MoguMap.zip
@@ -19,7 +29,22 @@ backgrounds: backgrounds.yml
     luigismansion.zip:
       urls:
       - https://nikkums.io/cswt/Maps/luigismansion.zip
-  1:
+    mkwii_funkystadium.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/mkwii_funkystadium.zip
+    starcarnival.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/starcarnival.zip
+    MoguMap.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MoguMap.zip
+  2:
+    CastawayBayCSide.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
+    luigismansion.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/luigismansion.zip
     mp9_magmine.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mp9_magmine.zip
@@ -38,7 +63,6 @@ backgrounds: backgrounds.yml
     fortunapolis.zip:
       urls:
       - https://nikkums.io/cswt/Maps/fortunapolis.zip
-  2:
     giantbeanstalk.zip:
       urls:
       - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
@@ -48,8 +72,9 @@ backgrounds: backgrounds.yml
     Ennesan30A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan30A.zip
-    placeholder.zip:
-    placeholder.zip:
+    Ennesan30B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30B.zip
     placeholder.zip:
       practiceBoard: true
 1:

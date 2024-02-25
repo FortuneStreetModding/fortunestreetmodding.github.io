@@ -17,7 +17,7 @@ frbFile4: Ennesan07_4
 background: grid_violet
 mapIcon: Enne07
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan07.music.zip
     - https://drive.google.com/u/0/uc?id=19MOLwkONMhjRiOl4yUrC0M_VytdxGbLo&export=download
   map: Ennesan7_Map.35
@@ -81,7 +81,7 @@ changelog:
     added:
       - Background music
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

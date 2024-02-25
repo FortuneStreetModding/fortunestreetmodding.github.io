@@ -14,7 +14,7 @@ frbFile1: Ennesan01D
 background: grid_green
 mapIcon: Enne01D
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan01D.music.zip
     - https://drive.google.com/u/0/uc?id=16jOAUbnzjuMaBeAJITjXgirYiOoHlMq8&export=download
   map: Ennesan1D_Map.60
@@ -52,7 +52,7 @@ changelog:
       - Changed mapIcon
       - Added the number of districts to the description.
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san
