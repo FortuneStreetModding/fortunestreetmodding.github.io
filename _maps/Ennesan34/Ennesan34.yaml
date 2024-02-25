@@ -69,7 +69,7 @@ ventureCards:
   - 1  #  11 Moneymaking venture! Roll the die and get 11 times the number shown in gold coins from all other players!
   - 1  #  12 Capital venture! You can invest capital in any of your shops.
   - 1  #  13 Misadventure! The values of all your shops drop by 13%!
-  - 0  #  14 Misadventure! You give everyone 30G each!
+  - 1  #  14 Misadventure! You give everyone 30G each!
   - 1  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
   - 1  #  16 Random venture! Shops expand in three districts picked at random!
   - 1  #  17 Special bonus! You receive half of your salary!
@@ -83,7 +83,7 @@ ventureCards:
   - 1  #  25 Misadventure! Your shop prices halve until your next turn!
   - 1  #  26 Lucky venture! You get a big commission until your next turn!
   - 1  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
-  - 1  #  28 Cameo adventure! A goodybag appears!
+  - 0  #  28 Cameo adventure! A goodybag appears!
   - 0  #  29 Freebie! Take a Heart!
   - 1  #  30 Venture on! All shops charge a 100G flat rate! Now roll the die and move again.
   - 1  #  31 Random venture! Shops expand by 10% in a district picked at random!
