@@ -39,8 +39,8 @@ music:
   - Map_Ennesan20_2.65
   - Map_Ennesan20_3.65
   - Map_Ennesan20_3.65
-  - Map_Ennesan20_4.45
-  - Map_Ennesan20_4.45
+  - Map_Ennesan20_4.40
+  - Map_Ennesan20_4.40
   - Map_Ennesan20_5.40
   - Map_Ennesan20_6.40
   - Map_Ennesan20_7.40
@@ -74,6 +74,11 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Changed Event Square on top right island to warp to any Suit Square until the top right island is released.
+      - Changed switch locations on some board states
+      - Changed some music
   - version: 5
     added:
       - Added to description that the game will be longer
