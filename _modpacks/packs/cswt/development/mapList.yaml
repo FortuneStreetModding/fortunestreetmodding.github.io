@@ -1,6 +1,9 @@
 backgrounds: backgrounds.yml
 0:
   0:
+    Ennesan36.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan36.zip
     Ennesan31C.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan31C.zip
@@ -16,10 +19,10 @@ backgrounds: backgrounds.yml
     Ennesan34.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan34.zip
+  1:
     birdosbigtop.zip:
       urls:
       - https://nikkums.io/cswt/Maps/birdosbigtop.zip
-  1:
     MoguMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MoguMap.zip
@@ -35,9 +38,6 @@ backgrounds: backgrounds.yml
     starcarnival.zip:
       urls:
       - https://nikkums.io/cswt/Maps/starcarnival.zip
-    MoguMap.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/MoguMap.zip
   2:
     CastawayBayCSide.zip:
       urls:
@@ -79,6 +79,9 @@ backgrounds: backgrounds.yml
       practiceBoard: true
 1:
   0:
+    Ennesan20.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan20.zip
     lighthouseisland.zip:
       urls:
       - https://nikkums.io/cswt/Maps/lighthouseisland.zip
@@ -94,14 +97,13 @@ backgrounds: backgrounds.yml
     Shibuya.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Shibuya.zip
+  1:
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
-  1:
     TurtleFortress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TurtleFortress.zip
-    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
