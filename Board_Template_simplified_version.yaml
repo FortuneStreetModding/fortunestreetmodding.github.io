@@ -2,7 +2,8 @@
 name:
   en: BOARD NAME
 desc:
-  en: YOUR DESCRIPTION HERE
+  en: YOUR BOARD DESCRIPTION HERE. (_______________________________________________________________________THIS IS THE LENGTH LIMIT_____________________________________________________)
+
 ruleSet: Standard OR Easy
 theme: Mario OR DragonQuest
 initialCash: XXXX
