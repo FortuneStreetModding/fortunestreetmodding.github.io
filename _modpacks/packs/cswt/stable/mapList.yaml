@@ -440,6 +440,9 @@ backgrounds: backgrounds.yml
     SuitsMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SuitsMap.zip
+    superbowserstrackway.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/superbowserstrackway.zip
     ToadsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsHouse.zip
