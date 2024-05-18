@@ -20,9 +20,6 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan34.zip
   1:
-    birdosbigtop.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/birdosbigtop.zip
     MoguMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MoguMap.zip
@@ -35,28 +32,19 @@ backgrounds: backgrounds.yml
     mkwii_funkystadium.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mkwii_funkystadium.zip
-    starcarnival.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/starcarnival.zip
-  2:
     CastawayBayCSide.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
-    luigismansion.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/luigismansion.zip
     mp9_magmine.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mp9_magmine.zip
+  2:
     KBHH.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KBHH.zip
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
-    superbowserstrackway.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/superbowserstrackway.zip
     thebackstreets.zip:
       urls:
       - https://nikkums.io/cswt/Maps/thebackstreets.zip
