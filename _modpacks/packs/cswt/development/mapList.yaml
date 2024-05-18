@@ -57,16 +57,16 @@ backgrounds: backgrounds.yml
     Ennesan29.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan29.zip
+    placeholder.zip:
+      practiceBoard: true
+1:
+  0:
     Ennesan30A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan30A.zip
     Ennesan30B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan30B.zip
-    placeholder.zip:
-      practiceBoard: true
-1:
-  0:
     Ennesan20.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan20.zip
@@ -79,13 +79,10 @@ backgrounds: backgrounds.yml
     Ennesan17.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan17.zip
+  1:
     FortuneGateFG1.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
-    Shibuya.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Shibuya.zip
-  1:
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
