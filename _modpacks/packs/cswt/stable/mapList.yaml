@@ -275,10 +275,13 @@ backgrounds: backgrounds.yml
     BabyPark.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BabyPark.zip
+    birdosbigtop.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/birdosbigtop.zip
+  1:
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
-  1:
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
@@ -294,10 +297,10 @@ backgrounds: backgrounds.yml
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
+  2:
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
-  2:
     Colony9.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony9.zip
@@ -434,6 +437,9 @@ backgrounds: backgrounds.yml
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
+    starcarnival.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/starcarnival.zip
     Bethlehem.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Bethlehem.zip
