@@ -380,6 +380,9 @@ backgrounds: backgrounds.yml
     GeometryDash.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GeometryDash.zip
+    giantbeanstalk.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
     GoodybagLair.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GoodybagLair.zip
@@ -410,6 +413,9 @@ backgrounds: backgrounds.yml
     KoopaTycoonTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KoopaTycoonTown.zip
+    mp9_magmine.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/mp9_magmine.zip
     MidgarTransit.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MidgarTransit.zip
