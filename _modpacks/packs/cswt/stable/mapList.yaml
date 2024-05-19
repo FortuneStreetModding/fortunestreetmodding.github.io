@@ -288,19 +288,16 @@ backgrounds: backgrounds.yml
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
-    Castaway.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Castaway.zip
     CastleTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastleTown.zip
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
-  2:
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
+  2:
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
