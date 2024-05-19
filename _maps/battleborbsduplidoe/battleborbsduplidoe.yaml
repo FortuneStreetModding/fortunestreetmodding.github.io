@@ -78,7 +78,7 @@ ventureCards:
   - 1  #   4 Moneymaking venture! Roll the die and get 40 times the number shown in gold coins from the player in 1st place!
   - 1  #   5 Venture through space! Zoom over to any shop or vacant plot!
   - 1  #   6 Venture through space! Zoom over to any venture or suit square!
-  - 1  #   7 Special bonus! Your shops all grow by 7%!
+  - 0  #   7 Special bonus! Your shops all grow by 7%!
   - 1  #   8 Venture on! Everyone's shop prices increase by 30%! Now roll the die and move again.
   - 1  #   9 Venture on! Everyone's shops close for the day! Now roll the die and move again.
   - 1  #  10 Venture on! Everyone's shop prices cut in half! Now roll the die and move again.
@@ -87,7 +87,7 @@ ventureCards:
   - 1  #  13 Misadventure! The values of all your shops drop by 13%!
   - 0  #  14 Misadventure! You give everyone 30G each!
   - 1  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
-  - 0  #  16 Random venture! Shops expand in three districts picked at random!
+  - 1  #  16 Random venture! Shops expand in three districts picked at random!
   - 1  #  17 Special bonus! You receive half of your salary!
   - 0  #  18 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value.
   - 0  #  19 Price hike venture! Your shop prices go up by 30% until your next turn.
