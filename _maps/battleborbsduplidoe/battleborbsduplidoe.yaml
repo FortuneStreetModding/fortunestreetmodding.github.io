@@ -78,7 +78,7 @@ ventureCards:
   - 1  #   4 Moneymaking venture! Roll the die and get 40 times the number shown in gold coins from the player in 1st place!
   - 1  #   5 Venture through space! Zoom over to any shop or vacant plot!
   - 1  #   6 Venture through space! Zoom over to any venture or suit square!
-  - 0  #   7 Special bonus! Your shops all grow by 7%!
+  - 1  #   7 Special bonus! Your shops all grow by 7%!
   - 1  #   8 Venture on! Everyone's shop prices increase by 30%! Now roll the die and move again.
   - 1  #   9 Venture on! Everyone's shops close for the day! Now roll the die and move again.
   - 1  #  10 Venture on! Everyone's shop prices cut in half! Now roll the die and move again.
@@ -158,7 +158,7 @@ ventureCards:
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 0  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 1  #  88 Misadventure! All other players swap places!
   - 0  #  89 Freebie! All players take a Suit Yourself card!
   - 0  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
