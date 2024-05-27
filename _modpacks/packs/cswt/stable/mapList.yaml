@@ -266,44 +266,38 @@ backgrounds: backgrounds.yml
     AlefgardB.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AlefgardB.zip
-    Anchor.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Anchor.zip
     AzureNebula.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AzureNebula.zip
     BabyPark.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BabyPark.zip
+    thebackstreets.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/thebackstreets.zip
+    birdosbigtop.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/birdosbigtop.zip
+  1:
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
-  1:
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
-    Castaway.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Castaway.zip
     CastleTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastleTown.zip
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
-    TheClock.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/TheClock.zip
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
-  2:
     Colony9.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony9.zip
-    CustomWorld.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/CustomWorld.zip
+  2:
     DeathStarfish.zip:
       practiceBoard: true
       urls:
@@ -323,9 +317,6 @@ backgrounds: backgrounds.yml
     Ennesan01B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan01B.zip
-    Ennesan01D.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan01D.zip
     Ennesan06.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan06.zip
@@ -353,12 +344,6 @@ backgrounds: backgrounds.yml
     Ennesan25.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan25.zip
-    Ennesan26B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan26B.zip
-    Ennesan27.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan27.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
@@ -368,6 +353,9 @@ backgrounds: backgrounds.yml
     Fillmore.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Fillmore.zip
+    fortunapolis.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/fortunapolis.zip
     FortuneGateFG1.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
@@ -380,6 +368,9 @@ backgrounds: backgrounds.yml
     GeometryDash.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GeometryDash.zip
+    giantbeanstalk.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
     GoodybagLair.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GoodybagLair.zip
@@ -389,9 +380,6 @@ backgrounds: backgrounds.yml
     HighRise.zip:
       urls:
       - https://nikkums.io/cswt/Maps/HighRise.zip
-    Hotel.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Hotel.zip
     IleDeFrance.zip:
       urls:
       - https://nikkums.io/cswt/Maps/IleDeFrance.zip
@@ -404,9 +392,15 @@ backgrounds: backgrounds.yml
     KingOfTheHill.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KingOfTheHill.zip
+    luigismansion.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/luigismansion.zip
     KoopaTycoonTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KoopaTycoonTown.zip
+    mp9_magmine.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/mp9_magmine.zip
     MidgarTransit.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MidgarTransit.zip
@@ -440,12 +434,18 @@ backgrounds: backgrounds.yml
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
+    starcarnival.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/starcarnival.zip
     Bethlehem.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Bethlehem.zip
     SuitsMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SuitsMap.zip
+    superbowserstrackway.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/superbowserstrackway.zip
     ToadsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsHouse.zip

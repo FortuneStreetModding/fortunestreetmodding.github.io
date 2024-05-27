@@ -20,10 +20,10 @@ frbFiles:
 background: grid_gray
 mapIcon: Enne19
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan19.music.zip
     - https://drive.google.com/u/0/uc?id=1N2n3UrdThrkPl04obY6svSvePAIeTQrX&export=download
-  map: 
+  map:
   - Ennesan19_1_Map.55
   - Map_Ennesan19_2.50
   - Map_Ennesan19_2.50
@@ -75,7 +75,7 @@ changelog:
       - No more vacant plots from District I
       - Changed the effect of some event squares
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

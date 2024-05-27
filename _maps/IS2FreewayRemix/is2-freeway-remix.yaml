@@ -8,14 +8,14 @@ theme: Mario
 initialCash: 3000
 targetAmount: 20000
 baseSalary: 300
-salaryIncrement: 200 
+salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: is2-freeway-remix
 background: bg002
 mapIcon: freeway
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Freeway.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/IS2FreewayRemix.music.zip
     - https://drive.google.com/u/0/uc?id=10mA1GUne2X24hEfIXDWQdJ9I5kpiHjMA&export=download
   map: BGM_MAP_FREEWAY_IS2R.60
   stock: BGM_STOCK_IS2R.60

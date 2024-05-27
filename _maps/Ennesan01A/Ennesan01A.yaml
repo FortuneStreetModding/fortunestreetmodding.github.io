@@ -14,7 +14,7 @@ frbFile1: Ennesan01A
 background: grid_lightblue
 mapIcon: Enne01A
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan01A.music.zip
     - https://drive.google.com/u/0/uc?id=1ILGA_no94EpmHTV9nkMYeI6MoQr7nb5x&export=download
   map: Map_Ennesan1A.45
@@ -58,7 +58,7 @@ changelog:
     added:
       - Music additions
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

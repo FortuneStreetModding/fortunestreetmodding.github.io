@@ -950,3 +950,137 @@
     slurpodromeStart: mp9_SRP_START
     slurpodromeRace: mp9_SRP_RACE
     slurpodromeWin: mp9_SRP_WIN
+- background: mkwii_funkystadium
+  name: Funky Stadium
+  download:
+  - https://nikkums.io/cswt/Backgrounds/mkwii_funkystadium.background.zip
+  - https://drive.google.com/uc?export=download&id=17tEyDEDZPSICRHv940ejO7vswqWvx-5R&confirm=1
+  mapIcon: imkwii_funky
+  music:
+    map: 
+      - mkwii_funkystadium_MAP
+    stock: mkwii_STOCK
+    ventureCards: mkwii_VEN
+    auction: mkwii_AUC
+    targetMet: mkwii_FINAL
+    win: mkwii_WIN
+    guestAppear: mkwii_GUESTA
+    badVentureCard: mkwii_VENBAD
+    promotionMii: mk8_PROMO
+    promotionMario: mk8_PROMO
+    promotionDragonQuest: mk8_PROMO
+    forcedBuyout: mkwii_BYO
+    domination: mkwii_DOM
+    roundTheBlocks: A_mkwii_ROB
+    roundTheBlocksWin: mkwii_ROB_WIN
+    roundTheBlocks777: mkwii_ROB_777
+    memoryBlock: A_mkwii_MEM
+    dartOfGold: A_mkwii_DOG
+    slurpodromeSelect: A_mkwii_SRP
+    slurpodromeStart: mkwii_SRP_START
+    slurpodromeRace: mkwii_SRP_RACE
+    slurpodromeWin: mkwii_SRP_WIN
+- background: starcarnival
+  name: Star Carnival (Dynamic)
+  download:
+  - https://nikkums.io/cswt/Backgrounds/starcarnival.background.zip
+  - https://drive.google.com/uc?export=download&id=11zYD4BNe8WUbQVP6Gld6Po6UA7Z5kXen&confirm=1
+  mapIcon: istarcarnival
+  music:
+    map: 
+    - starcarnival_MAP
+    - starcarnival_MAP
+    - starcarnival_MAP
+    - starcarnival_MAP
+    - starcarnival_MAPALT
+    - starcarnival_MAPALT
+    - starcarnival_MAPALT
+    - starcarnival_MAPALT
+    stock: starcarnival_STOCK
+    ventureCards: starcarnival_VEN
+    auction: starcarnival_AUCTION
+    targetMet: starcarnival_FINAL
+    win: starcarnival_WIN
+    guestAppear: starcarnival_GUESTA
+    guestLeave: starcarnival_GUESTL
+    badVentureCard: starcarnival_VENBAD
+    takeAbreak: starcarnival_BREAK
+    promotionMii: starcarnival_PROMO
+    promotionMario: starcarnival_PROMO
+    promotionDragonQuest: starcarnival_PROMO
+    forcedBuyout: starcarnival_BUYOUT
+    domination: starcarnival_DOMINATION
+    bankruptcy: starcarnival_LOSE
+    roundTheBlocks: A_starcarnival_ROB
+    roundTheBlocksWin: starcarnival_ROBWIN
+    roundTheBlocks777: starcarnival_ROB777
+    memoryBlock: A_starcarnival_MEM
+    dartOfGold: A_starcarnival_DOG
+    slurpodromeSelect: A_starcarnival_SRP
+    slurpodromeStart: starcarnival_SRPSTART
+    slurpodromeRace: starcarnival_SRPRACE
+    slurpodromeWin: starcarnival_SRPWIN
+- background: starcarnival_d
+  name: Star Carnival (Day)
+  download:
+  - https://nikkums.io/cswt/Backgrounds/starcarnival_d.background.zip
+  - https://drive.google.com/uc?export=download&id=1xqrBf_9nDGGmd2PknXA6pH150kpFOLDP&confirm=1
+  mapIcon: istarcarniv_d
+  music:
+    map: starcarnival_MAP
+    stock: starcarnival_STOCK
+    ventureCards: starcarnival_VEN
+    auction: starcarnival_AUCTION
+    targetMet: starcarnival_FINAL
+    win: starcarnival_WIN
+    guestAppear: starcarnival_GUESTA
+    guestLeave: starcarnival_GUESTL
+    badVentureCard: starcarnival_VENBAD
+    takeAbreak: starcarnival_BREAK
+    promotionMii: starcarnival_PROMO
+    promotionMario: starcarnival_PROMO
+    promotionDragonQuest: starcarnival_PROMO
+    forcedBuyout: starcarnival_BUYOUT
+    domination: starcarnival_DOMINATION
+    bankruptcy: starcarnival_LOSE
+    roundTheBlocks: A_starcarnival_ROB
+    roundTheBlocksWin: starcarnival_ROBWIN
+    roundTheBlocks777: starcarnival_ROB777
+    memoryBlock: A_starcarnival_MEM
+    dartOfGold: A_starcarnival_DOG
+    slurpodromeSelect: A_starcarnival_SRP
+    slurpodromeStart: starcarnival_SRPSTART
+    slurpodromeRace: starcarnival_SRPRACE
+    slurpodromeWin: starcarnival_SRPWIN
+- background: starcarnival_n
+  name: Star Carnival (Night)
+  download:
+  - https://nikkums.io/cswt/Backgrounds/starcarnival_n.background.zip
+  - https://drive.google.com/uc?export=download&id=1s_l-C8wDhcz2csI6BY8iOzb1jJdMgm7N&confirm=1
+  mapIcon: istarcarniv_n
+  music:
+    map: starcarnival_MAPALT
+    stock: starcarnival_STOCK
+    ventureCards: starcarnival_VEN
+    auction: starcarnival_AUCTION
+    targetMet: starcarnival_FINAL
+    win: starcarnival_WIN
+    guestAppear: starcarnival_GUESTA
+    guestLeave: starcarnival_GUESTL
+    badVentureCard: starcarnival_VENBAD
+    takeAbreak: starcarnival_BREAK
+    promotionMii: starcarnival_PROMO
+    promotionMario: starcarnival_PROMO
+    promotionDragonQuest: starcarnival_PROMO
+    forcedBuyout: starcarnival_BUYOUT
+    domination: starcarnival_DOMINATION
+    bankruptcy: starcarnival_LOSE
+    roundTheBlocks: A_starcarnival_ROB
+    roundTheBlocksWin: starcarnival_ROBWIN
+    roundTheBlocks777: starcarnival_ROB777
+    memoryBlock: A_starcarnival_MEM
+    dartOfGold: A_starcarnival_DOG
+    slurpodromeSelect: A_starcarnival_SRP
+    slurpodromeStart: starcarnival_SRPSTART
+    slurpodromeRace: starcarnival_SRPRACE
+    slurpodromeWin: starcarnival_SRPWIN

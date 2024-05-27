@@ -14,7 +14,7 @@ frbFile1: Ennesan17
 background: grid_blue2
 mapIcon: Enne17
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan17.music.zip
     - https://drive.google.com/u/0/uc?id=17oMktdPJRTMs-3PAQ3414HOOCtRcW4DH&export=download
   map: Ennesan17_Map.70
@@ -53,7 +53,7 @@ changelog:
     changed:
       - Fixed Softlock issue when warping to event squares adjacent to the lower left and lower right warp event squares
   - version: 5
-    added: 
+    added:
       - Added to description that the game will be longer
     changed:
       - Changed the effect of some event squares
@@ -76,7 +76,7 @@ changelog:
       - Changed shop values for some shops.
       - Changed the effect of some event squares.
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

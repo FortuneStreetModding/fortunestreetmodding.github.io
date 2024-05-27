@@ -28,10 +28,10 @@ frbFiles:
 background: grid_blue
 mapIcon: Enne25
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan25.music.zip
     - https://drive.google.com/u/2/uc?id=1Mna0_xCnmaLCmg07SyC8mqHNElRjLnMK&export=download
-  map: 
+  map:
   - Ennesan25_1_Map.40
   - Ennesan25_1_Map.40
   - Ennesan25_1_Map.40

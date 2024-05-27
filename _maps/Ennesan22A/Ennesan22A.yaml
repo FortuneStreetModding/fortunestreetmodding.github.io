@@ -15,10 +15,10 @@ frbFiles:
 background: grid_yellow
 mapIcon: Enne22A
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan22A.music.zip
     - https://drive.google.com/u/0/uc?id=1zRo-4ydscDq05eimuiakqFEFpHer4t4A&export=download
-  map: 
+  map:
   - Ennesan22A_Map.40
   stock: Stock_grid.70
   ventureCards: Arcade_grid.60
@@ -54,7 +54,7 @@ changelog:
       - Changed the effect of some event squares
       - Venture cards 84 and 88 changed to 21 and 85
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

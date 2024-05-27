@@ -30,17 +30,17 @@ frbFiles:
 background: grid_gray
 mapIcon: Enne20
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan20.music.zip
     - https://drive.google.com/u/0/uc?id=1xksonm57-8iNyw88K5cYE6BQfi50Z_HB&export=download
-  map: 
+  map:
   - Ennesan20_1_Map.65
   - Map_Ennesan20_2.65
   - Map_Ennesan20_2.65
   - Map_Ennesan20_3.65
   - Map_Ennesan20_3.65
-  - Map_Ennesan20_4.45
-  - Map_Ennesan20_4.45
+  - Map_Ennesan20_4.40
+  - Map_Ennesan20_4.40
   - Map_Ennesan20_5.40
   - Map_Ennesan20_6.40
   - Map_Ennesan20_7.40
@@ -74,8 +74,13 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Changed Event Square on top right island to warp to any Suit Square until the top right island is released.
+      - Changed switch locations on some board states
+      - Changed some music
   - version: 5
-    added: 
+    added:
       - Added to description that the game will be longer
     changed:
       - Changed to return to state 8 if the switch is pressed when in state 15 (switch is pressed 4 times when in state 11).
@@ -105,7 +110,7 @@ changelog:
       - Changed the effect of some event squares
       - Change mapIcon
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

@@ -9,9 +9,9 @@ name:
 desc:
   en: YOUR DESCRIPTION HERE
   de: REMOVE UNUSED LANGUAGES (en CAN NOT BE DELETED)
-  fr: 
+  fr: _____________________________________________________________________________________THIS IS THE LENGTH LIMIT_____________________________________________________________________
   it: 
-  jp:
+  jp: 
   es: 
 ruleSet: Standard OR Easy
 theme: Mario OR DragonQuest
@@ -30,10 +30,14 @@ frbFiles:
 background: BACKGROUND NAME
 mapIcon: MAP ICON FILENAME
 music:
-  download:
-  - https://nikkums.io/cswt/BGM/XXXXX.music.zip REMOVE THIS DESCRIPTION AND XXXXXX AND MAKE XXXXXX PART THE NAME OF THE ZIP FILE THAT CONTAINS THE FRB AND YAML
-  - GOOGLE DRIVE DIRECT LINK TO ZIP CONTAINING MUSIC, CAN DELETE THIS TEXT WHILE TESTING
-  map: 
+  download: # GOOGLE DRIVE DIRECT LINK TO ZIP CONTAINING MUSIC, CAN DELETE THIS TEXT WHILE TESTING
+    - https://nikkums.io/cswt/BGM/XXX.music.zip
+    - https://drive.google.com/uc?export=download&id=XXX&confirm=1
+# As an example, extract 1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy from 
+# https://drive.google.com/file/d/1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy/view?usp=sharing
+# Paste in the XXX part of the google link
+# The 5 lines that contain this "#" should be crossed out after the "#".
+  map:
   - BRSTM.VOLUME FOR STATE 1
   - BRSTM.VOLUME FOR STATE 2, CAN REMOVE UNUSED STATES
   - BRSTM.VOLUME FOR STATE 3, CAN REMOVE UNUSED STATES
@@ -84,7 +88,7 @@ tourMode:
 #    constant: -2 IF stockPrice IS USED, mutators AND # FROM stockPrice TO constant SHOULD BE DELETED
 changelog:
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: YOUR NAME

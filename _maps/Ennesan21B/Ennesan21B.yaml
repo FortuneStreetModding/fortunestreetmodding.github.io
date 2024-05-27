@@ -18,10 +18,10 @@ frbFiles:
 background: grid_green
 mapIcon: Enne21B
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan21B.music.zip
     - https://drive.google.com/u/0/uc?id=1Mgv2cApDfDjS2U1okkE9EgVKmesxmPA7&export=download
-  map: 
+  map:
   - Ennesan21B_Map.45
   - Ennesan21B_Map.45
   - Ennesan21B_Map.45
@@ -54,7 +54,7 @@ changelog:
       - Decrease target amount from 30000 to 27000
       - Change description
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

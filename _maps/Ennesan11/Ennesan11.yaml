@@ -14,7 +14,7 @@ frbFile1: Ennesan11
 background: grid_orange
 mapIcon: Enne11
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan11.music.zip
     - https://drive.google.com/u/0/uc?id=1i4_g8roWA8Xc52s4Lq-fL4w6UREBSWwm&export=download
   map: Ennesan11_Map.40
@@ -62,7 +62,7 @@ changelog:
       - Changed background to grid_orange
       - Some music changed (all changed music is loaded from the music in the grid background.zip, so there is no change in the music.zip)
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san

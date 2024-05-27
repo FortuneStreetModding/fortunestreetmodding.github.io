@@ -15,15 +15,15 @@ frbFiles:
 background: grid_red2
 mapIcon: Enne28
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan28.music.zip
     - https://drive.google.com/u/2/uc?id=1AXNnCj_pvitZtWFMt8DyqRUrLbBz3gqX&export=download
-  map: 
+  map:
   - Ennesan28_Map.40
   stock: Stock_grid.70
   ventureCards: Venture_Ennesan24.60
   auction: Auction_grid.55
-  targetMet: Targetmet_Ennesan23.40
+  targetMet: Targetmet_Ennesan28.40
   win: Ennesan24_Win.60
   guestAppear:
   guestLeave:
@@ -49,7 +49,7 @@ mutators:
     constant: -12
 changelog:
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san
