@@ -130,7 +130,7 @@ ventureCards:
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 1  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 1  #  88 Misadventure! All other players swap places!
   - 1  #  89 Freebie! All players take a Suit Yourself card!
   - 0  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
@@ -169,7 +169,7 @@ ventureCards:
   - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 0  # 124 Suit venture! Buy a Suit Yourself card for 50G.
   - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
-  - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
+  - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 ...
