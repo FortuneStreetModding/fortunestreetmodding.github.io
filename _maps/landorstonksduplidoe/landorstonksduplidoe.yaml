@@ -15,7 +15,9 @@ frbFiles:
 background: bg108
 mapIcon: dupliFish
 music:
-  download: https://drive.google.com/uc?export=download&id=1uCYsoAcRqBpAWJFlIUbF6Uiu5s35hwXC&confirm=1
+  download: 
+   - https://nikkums.io/cswt/BGM/landorstonksduplidoe.music.zip
+   - https://drive.google.com/uc?export=download&id=1uCYsoAcRqBpAWJFlIUbF6Uiu5s35hwXC&confirm=1
   map:
   - mapHD.70
   stock: stockPASBR.70

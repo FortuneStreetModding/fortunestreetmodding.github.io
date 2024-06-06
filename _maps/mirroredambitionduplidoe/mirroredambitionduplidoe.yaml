@@ -2,7 +2,7 @@
 name:
   en: Mirrored Ambition
 desc:
-  en: "A great power awaits for those who roam the skies! Controlling the underworld has its own benefits, too..."
+  en: A great power awaits for those who roam the skies! Controlling the underworld has its own benefits, too...
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000
@@ -15,7 +15,9 @@ frbFiles:
 background: bg106
 mapIcon: dupliBorbHH
 music:
-  download: https://drive.google.com/uc?export=download&id=11Ni9ek_EVEajvFMMxvwCXEHIdU2ey6Ym&confirm=1
+  download: 
+   - https://nikkums.io/cswt/BGM/mirroredambitionduplidoe.music.zip
+   - https://drive.google.com/uc?export=download&id=11Ni9ek_EVEajvFMMxvwCXEHIdU2ey6Ym&confirm=1
   map: mapVNCD
   stock: stock64000Q.80
   ventureCards: ventureCardsSB

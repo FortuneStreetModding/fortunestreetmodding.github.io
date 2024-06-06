@@ -2,7 +2,7 @@
 name:
   en: Super Generic RPG
 desc:
-  en: "Cross the bridge, get the suits, save the world. Not a hero? Impede another's progress by foregoing your quest and building homes... It will be a long night."
+  en: Cross the bridge, get the suits, save the world. Not a hero? Impede another's progress by foregoing your quest and building homes... It will be a long night.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -15,8 +15,9 @@ frbFiles:
 background: bg102
 mapIcon: dupliBorbRPG
 music:
-  download:
-    - https://drive.google.com/uc?export=download&id=1xWZKhIIWk5wyrI-TVwb5Ci7xEh04KotD&confirm=1
+  download: 
+   - https://nikkums.io/cswt/BGM/tightropeduplidoe.music.zip
+   - https://drive.google.com/uc?export=download&id=1xWZKhIIWk5wyrI-TVwb5Ci7xEh04KotD&confirm=1
   map:
   - map99
   stock: stockDEL

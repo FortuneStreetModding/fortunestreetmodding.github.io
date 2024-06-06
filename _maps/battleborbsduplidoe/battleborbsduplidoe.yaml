@@ -2,7 +2,7 @@
 name:
   en: Battle Borbs
 desc:
-  en: "Reach the borbs for the suits! One bridge favors fortune, but the other is truly cursed... Will you take the chance?"
+  en: Reach the borbs for the suits! One bridge favors fortune, but the other is truly cursed... Will you take the chance?
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
@@ -15,7 +15,9 @@ frbFiles:
 background: bg008
 mapIcon: dupliBB
 music:
-  download: https://drive.google.com/uc?export=download&id=19XUJRkcir8t849zmrVi0WevRgoOhr7vv&confirm=1
+  download: 
+   - https://nikkums.io/cswt/BGM/battleborbsduplidoe.music.zip
+   - https://drive.google.com/uc?export=download&id=19XUJRkcir8t849zmrVi0WevRgoOhr7vv&confirm=1
   map:
   - mapSH
   stock: stockCTR.80
