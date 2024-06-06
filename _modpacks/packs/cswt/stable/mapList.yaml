@@ -279,9 +279,6 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/birdosbigtop.zip
   1:
-    BowsersPinball.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/BowsersPinball.zip
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
@@ -297,11 +294,11 @@ backgrounds: backgrounds.yml
     Colony9.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony9.zip
-  2:
     DeathStarfish.zip:
       practiceBoard: true
       urls:
       - https://nikkums.io/cswt/Maps/DeathStarfish.zip
+  2:
     Disboard.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Disboard.zip
