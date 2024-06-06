@@ -13,6 +13,13 @@ maxDiceRoll: 7
 frbFile1: thunder
 background: bg102alt
 mapIcon: thunder
+tourMode:
+  bankruptcyLimit: 1
+  initialCash: 2000
+  opponent1: Mario
+  opponent2: Bianca
+  opponent3: Alena
+  clearRank: 2
 changelog:
   - version: 3
     added:
