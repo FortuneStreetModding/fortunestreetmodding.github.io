@@ -16,7 +16,7 @@ background: bg008alt
 mapIcon: castaway
 music:
   download: 
-    - https://nikkums.io/cswt/BGM/Castaway.music.zip
+    - https://nikkums.io/cswt/BGM/CastawayBayCSide.music.zip
     - https://drive.google.com/u/2/uc?id=1CeJQVjErBG6P2qw995wjpuIl9zYKJnzd&export=download
   map: castawaybay
   stock: mp6options
@@ -42,6 +42,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Added a switch by the bank, looping the circle is now allowed, some event squares switched out
   - version: 1
     added: 
       - Initial Release
