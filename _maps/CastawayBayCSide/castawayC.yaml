@@ -5,7 +5,7 @@ desc:
   en: Welcome to Castaway Bay from Mario Party 6! Stop on DK's Riverboat to buy a Spade. Whenever someone stops on a switch, DK's Riverboat will swap places with Bowser's Battle Yacht! Watch out! If you stop on Bowser's Battle Yacht, your properties will drop in value!
 ruleSet: Standard
 theme: Mario
-initialCash: 2600
+initialCash: 2500
 targetAmount: 16000
 baseSalary: 300
 salaryIncrement: 300
@@ -42,6 +42,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Added a switch by the bank, looping the circle is now allowed, some event squares switched out
   - version: 1
     added: 
       - Initial Release
