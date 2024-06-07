@@ -48,9 +48,21 @@ backgrounds: backgrounds.yml
     theclocktower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/theclocktower.zip
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
+    theloopsduplidoe.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/theloopsduplidoe.zip
+    landorstonksduplidoe.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/landorstonksduplidoe.zip
+    mirroredambitionduplidoe.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/mirroredambitionduplidoe.zip
+    battleborbsduplidoe.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/battleborbsduplidoe.zip
+    tightropeduplidoe.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/tightropeduplidoe.zip
       practiceBoard: true
 1:
   0:
