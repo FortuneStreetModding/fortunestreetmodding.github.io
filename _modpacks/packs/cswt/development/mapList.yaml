@@ -63,6 +63,12 @@ backgrounds: backgrounds.yml
     tightropeduplidoe.zip:
       urls:
       - https://nikkums.io/cswt/Maps/tightropeduplidoe.zip
+    MonopolyUK.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MonopolyUK.zip
+    MonopolyUS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MonopolyUS.zip
       practiceBoard: true
 1:
   0:
