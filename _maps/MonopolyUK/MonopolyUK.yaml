@@ -16,7 +16,7 @@ frbFiles:
 background: bg101
 music:
   download:
-    - https://drive.google.com/u/2/uc?id=1dyCHT9DH_fXWpyxdU3Mc9D01zUBy5-vQ&export=download
+    - https://nikkums.io/cswt/BGM/Monopoly.music.zip
   map: MUSIC_00011.75
   stock: MUSIC_00010S.75
   ventureCards: MUSIC_00000S.75
@@ -35,7 +35,7 @@ changelog:
       - Initial Release
 authors:
   - name: Jack5
-    url: youtube.com/@Jack5Official
+    url: https://youtube.com/@Jack5Official
 shopNames:
   en:
     6: Old Kent Road
