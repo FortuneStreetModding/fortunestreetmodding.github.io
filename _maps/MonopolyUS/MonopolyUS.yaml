@@ -1,9 +1,9 @@
 --- 
 name:
-  en: Monopoly (UK)
+  en: Monopoly (US)
 desc:
   en: The Monopoly/Fortune Street crossover you're expecting! This board attempts to be as accurate to Monopoly as possible while taking into account Fortune Street's stocks that replace houses and hotels. Music - Monopoly Party (2002)
-mapIcon: p_mp_uk
+mapIcon: p_mp_us
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -38,34 +38,34 @@ authors:
     url: youtube.com/@Jack5Official
 shopNames:
   en:
-    6: Old Kent Road
-    7: Whitechapel Road
-    8: The Angel Islington
-    9: Euston Road
-    10: Pentonville Road
-    11: Pall Mall
-    12: Whitehall
-    13: Northumberland Avenue
-    14: Bow Street
+    6: Mediterranean Avenue
+    7: Baltic Avenue
+    8: Oriental Avenue
+    9: Vermont Avenue
+    10: Connecticut Avenue
+    11: St. Charles Place
+    12: States Avenue
+    13: Virginia Avenue
+    14: St. James Place
     15: Electric Company
     16: Water Works
-    17: Marlborough Street
-    18: Vine Street
-    19: King's Cross Station
-    20: Marylebone Station
-    21: Fenchurch St Station
-    22: Liverpool Street Station
-    23: The Strand
-    24: Fleet Street
-    25: Trafalgar Square
-    26: Leicester Square
-    27: Coventry Street
-    28: Piccadilly
-    29: Regent Street
-    30: Oxford Street
-    32: Bond Street
-    35: Park Lane
-    40: Mayfair
+    17: Tennessee Avenue
+    18: New York Avenue
+    19: Reading Railroad
+    20: Pennsylvania Railroad
+    21: B. & O. Railroad
+    22: Short Line
+    23: Kentucky Avenue
+    24: Indiana Avenue
+    25: Illinois Avenue
+    26: Atlantic Avenue
+    27: Ventnor Avenue
+    28: Marvin Gardens
+    29: Pacific Avenue
+    30: North Carolina Avenue
+    32: Pennsylvania Avenue
+    35: Park Place
+    40: Boardwalk
 districtNames:
   en:
     - Reds
@@ -73,10 +73,10 @@ districtNames:
     - Oranges
     - Greens
     - Dark Blues
-    - Pinks
-    - Purples
+    - Pinks (Magentas)
+    - Purples (Browns)
     - Yellows
-    - Stations
+    - Train Stations
     - Utilities
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
@@ -103,12 +103,12 @@ ventureCards:
   - 0  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
   - 0  #  23 Revaluation venture! You can expand any one of your shops by 50%.
   - 0  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
-  - 0  #  25 Misadventure! Your shop prices halve until your next turn!
+  - 1  #  25 Misadventure! Your shop prices halve until your next turn!
   - 1  #  26 Lucky venture! You get a big commission until your next turn!
-  - 0  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
+  - 1  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
   - 1  #  28 Cameo adventure! A goodybag appears!
   - 1  #  29 Freebie! Take a Heart!
-  - 0  #  30 Venture on! All shops charge a 100G flat rate! Now roll the die and move again.
+  - 1  #  30 Venture on! All shops charge a 100G flat rate! Now roll the die and move again.
   - 0  #  31 Random venture! Shops expand by 10% in a district picked at random!
   - 0  #  32 Random venture! Shops expand by 20% in a district picked at random!
   - 0  #  33 Cashback venture! You can sell a shop back to the bank for three times its shop value.
@@ -119,7 +119,7 @@ ventureCards:
   - 1  #  38 Stock venture! You can buy stocks in a district of your choice at 10% above the market value.
   - 1  #  39 Suit venture! Buy a Suit Yourself card for 100G.
   - 1  #  40 Misadventure! You give away 10% of your ready cash to the player in last place!
-  - 0  #  41 Misadventure! Stock prices fall by 10% in a district picked at random!
+  - 1  #  41 Misadventure! Stock prices fall by 10% in a district picked at random!
   - 0  #  42 Misadventure! Stock prices fall by 20% in a district picked at random!
   - 1  #  43 Misadventure! You pay an assets tax of two gold coins per unit of stock that you own!
   - 1  #  44 Misadventure! Roll the die and pay 44 times the number in gold coins to the player in last place!
@@ -133,15 +133,15 @@ ventureCards:
   - 1  #  52 Venture on! Move forward another 2 squares.
   - 1  #  53 Venture through space! Zoom over to the bank!
   - 0  #  54 Venture through space! Pay 100G to zoom straight to the bank!
-  - 0  #  55 Venture on! Roll the die again and move forward (with an invitation to browse thrown in!).
-  - 0  #  56 Venture on! Roll the die again and move forward (with a half-price special offer thrown in!).
+  - 1  #  55 Venture on! Roll the die again and move forward (with an invitation to browse thrown in!).
+  - 1  #  56 Venture on! Roll the die again and move forward (with a half-price special offer thrown in!).
   - 1  #  57 Venture through space! Zoom to any square you like.
   - 0  #  58 Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!
   - 1  #  59 Stock venture! You can buy stocks in a district of your choice at 10% below the market value.
-  - 0  #  60 Random venture! Stock prices increase by 10% in a district picked at random!
+  - 1  #  60 Random venture! Stock prices increase by 10% in a district picked at random!
   - 1  #  61 Special bonus! You receive a 10% dividend on your stocks!
   - 1  #  62 Special bonus! You receive a 20% dividend on your stocks!
-  - 0  #  63 Random venture! Stock prices increase by 20% in a district picked at random!
+  - 1  #  63 Random venture! Stock prices increase by 20% in a district picked at random!
   - 0  #  64 Random venture! Stock prices increase by 30% in a district picked at random!
   - 0  #  65 Forced buyout! You can buy a vacant plot or shop for five times its value, whether someone else owns it or not.
   - 1  #  66 Special bonus! You receive 10 of the most valuable stocks!
