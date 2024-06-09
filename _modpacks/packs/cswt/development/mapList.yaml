@@ -45,9 +45,9 @@ backgrounds: backgrounds.yml
     Ennesan29.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan29.zip
-    theclocktower.zip:
+    TheClockTower.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/theclocktower.zip
+      - https://nikkums.io/cswt/Maps/TheClockTower.zip
     theloopsduplidoe.zip:
       urls:
       - https://nikkums.io/cswt/Maps/theloopsduplidoe.zip
