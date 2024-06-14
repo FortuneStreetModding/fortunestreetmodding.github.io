@@ -69,6 +69,9 @@ backgrounds: backgrounds.yml
     MonopolyUS.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MonopolyUS.zip
+    princesspeachsbirthdaycake.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/princesspeachsbirthdaycake.zip
       practiceBoard: true
 1:
   0:
