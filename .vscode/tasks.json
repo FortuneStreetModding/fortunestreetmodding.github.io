@@ -1,40 +1,21 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
-        {
-            "label": "install jekyll and bundler",
-            "type": "shell",
-            "command": "gem install jekyll bundler",
-            "problemMatcher": []
+      {
+        "label": "Run Dev Server",
+        "type": "shell",
+        "command": "npm",
+        "args": ["run", "dev"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
         },
-        {
-            "label": "jekyll serve",
-            "type": "shell",
-            "command": "bundle",
-            "args": ["exec", "jekyll", "serve", "--incremental"],
-            "isBackground": true,
-            "presentation": {
-                "reveal": "always",
-                "panel": "shared",
-                "showReuseMessage": false
-            },
-            "problemMatcher": {
-                "pattern":[
-                    {
-                        "regexp": ".",
-                        "file": 1,
-                        "location": 2,
-                        "message": 3
-                    }
-                ],
-                "background": {
-                    "activeOnStart": true,
-                    "beginsPattern": "^.*Generating",
-                    "endsPattern": "^.*Server running"
-                }
-            }
-        }
+        "presentation": {
+          "reveal": "always",
+          "panel": "shared",
+          "focus": true
+        },
+        "problemMatcher": []
+      }
     ]
-}
+  }

@@ -1,5 +1,7 @@
 {
     "recommendations": [
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "ms-python.python",
+        "esbenp.prettier-vscode"
     ]
 }

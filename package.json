@@ -1,0 +1,25 @@
+{
+  "name": "example-with-mdx",
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start"
+  },
+  "dependencies": {
+    "@mdx-js/mdx": "^2.3.0",
+    "@solidjs/router": "^0.13.6",
+    "@solidjs/start": "^1.0.2",
+    "@vinxi/plugin-mdx": "^3.7.1",
+    "solid-js": "^1.8.17",
+    "solid-mdx": "^0.0.7"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "eslint": "^9.5.0",
+    "gh-pages": "^6.1.1",
+    "vinxi": "^0.3.11"
+  }
+}
