@@ -1,6 +1,15 @@
-# Build and develop locally
+# Fortune Street Modding
 
-- Install [bun](https://bun.sh/)
-- Run `bun install`
-- Run `bun run dev`
+This is the website for the [Fortune Street Modding](https://github.com/FortuneStreetModding) project. It includes quick links to **Custom Street World Tour**, the **HQ Texture Pack** and the **Gecko Codes**, as well as a variety of custom maps and backgrounds, plus useful tools for modding such as the **Calculator** and **District Simulator**.
 
+This repository doubles as the way for users to submit new custom maps and backgrounds to the project. For more information, please visit the [wiki](https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/wiki).
+
+## Local installation
+
+1. Install [Bun](https://bun.sh/).
+2. Navigate to the location of the cloned repository and execute the following commands:
+    - `bun install`
+    - `bun run dev`
+3. Open a web browser and navigate to `http://localhost:3000`.
+
+## [License](LICENSE)
