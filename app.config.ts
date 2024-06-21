@@ -1,6 +1,7 @@
 import { defineConfig } from "@solidjs/start/config";
 /* @ts-ignore */
 import pkg from "@vinxi/plugin-mdx";
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 import fsp from "node:fs/promises";
 import { join } from "pathe";
 
@@ -13,8 +14,16 @@ export default defineConfig({
         jsx: true,
         jsxImportSource: "solid-js",
         providerImportSource: "solid-mdx"
+      }),
+      viteStaticCopy({
+        targets: [
+          {
+            src: 'node_modules/monaco-yaml-prebuilt/dist/**',
+            dest: '.'
+          }
+        ]
       })
-    ]
+    ],
   },
   server: {
     extends: "static",

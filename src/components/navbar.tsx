@@ -25,6 +25,7 @@ export default function Component() {
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" classList={{ active: location.pathname === "/calculator" }} href="/calculator">Address Calculator</a></li>
                 <li><a class="dropdown-item" classList={{ active: location.pathname === "/simulator" }} href="/simulator">District Simulator</a></li>
+                <li><a class="dropdown-item" classList={{ active: location.pathname === "/editor" }} href="/editor">Board Yaml Editor</a></li>
               </ul>
             </li>
             <li class="nav-item">
