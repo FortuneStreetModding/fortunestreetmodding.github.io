@@ -1,24 +1,22 @@
----
 name:
   en: BOARD NAME
 desc:
   en: YOUR BOARD DESCRIPTION HERE. (_______________________________________________________________________THIS IS THE LENGTH LIMIT_____________________________________________________)
-ruleSet: Standard OR Easy
-theme: Mario OR DragonQuest
-initialCash: XXXX
-targetAmount: XXXXX
-baseSalary: XXX
-salaryIncrement: XXX
-maxDiceRoll: X
+ruleSet: Standard # OR Easy
+theme: Mario # OR DragonQuest
+initialCash: 1000
+targetAmount: 10000
+baseSalary: 100
+salaryIncrement: 50
+maxDiceRoll: 6
 frbFiles:
-  - FRB FILENAME FOR STATE 1
-  - FRB FILENAME FOR STATE 2, CAN REMOVE UNUSED STATES
-  - FRB FILENAME FOR STATE 3, CAN REMOVE UNUSED STATES
-  - FRB FILENAME FOR STATE 4, CAN REMOVE UNUSED STATES
-  - FRB FILENAME FOR STATE 5, CAN REMOVE UNUSED STATES
-  - FRB FILENAME FOR STATE 6, CAN REMOVE UNUSED STATES
-background: BACKGROUND NAME
-mapIcon: MAP ICON FILENAME
+  - FRB_FILENAME_FOR_STATE_1
+  - FRB_FILENAME_FOR_STATE_2 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_3 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_4 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_5 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_6 # CAN REMOVE UNUSED STATES
+background: bg001
 music:
   download: # GOOGLE DRIVE DIRECT LINK TO ZIP CONTAINING MUSIC, CAN DELETE THIS TEXT WHILE TESTING
     - https://nikkums.io/cswt/BGM/XXX.music.zip
@@ -27,14 +25,7 @@ music:
 # https://drive.google.com/file/d/1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy/view?usp=sharing
 # Paste in the XXX part of the google link
 # The 5 lines that contain this "#" should be crossed out after the "#".
-  map:
-  - BRSTM.VOLUME FOR STATE 1
-  - BRSTM.VOLUME FOR STATE 2, CAN REMOVE UNUSED STATES
-  - BRSTM.VOLUME FOR STATE 3, CAN REMOVE UNUSED STATES
-  - BRSTM.VOLUME FOR STATE 4, CAN REMOVE UNUSED STATES
-  - BRSTM.VOLUME FOR STATE 5, CAN REMOVE UNUSED STATES
-  - BRSTM.VOLUME FOR STATE 6, CAN REMOVE UNUSED STATES
-  stock: CAN DELETE THIS ENTIRE SECTION IF UNNEEDED
+  stock: CAN_DELETE_THIS_ENTIRE_SECTION_IF_UNNEEDED
   ventureCards: 
   auction: 
   targetMet: 
@@ -49,12 +40,12 @@ music:
   forcedBuyout:
   domination:
   bankruptcy:
-  roundTheBlocks: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
+  roundTheBlocks: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
   roundTheBlocksWin: 
   roundTheBlocks777: 
-  memoryBlock: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
-  dartOfGold: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
-  slurpodromeSelect: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
+  memoryBlock: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
+  dartOfGold: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
+  slurpodromeSelect: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
   slurpodromeStart: 
   slurpodromeRace: 
   slurpodromeWin: 
@@ -88,35 +79,35 @@ districtNames:
 shopNames:
   en:
     1: (CUSTOM SHOP NAMES GO HERE. BELOW ARE THE UNUSED SHOP SLOTS, BUT YOU CAN REPLACE ANY SHOP IDS FROM 1-98. REMOVE UNUSED SHOPS OR LANGUAGES)
-    2:
-    3:
-    4:
-    60:
-    63:
-    64:
-    66:
-    67:
-    69:
-    71:
-    73:
-    74:
-    77:
-    78:
-    79:
-    82:
-    83:
-    84:
-    86:
-    87:
-    88:
-    89:
-    91:
-    92:
-    93:
-    94:
-    95:
-    96:
-    97:
+    2: ''
+    3: ''
+    4: ''
+    60: ''
+    63: ''
+    64: ''
+    66: ''
+    67: ''
+    69: ''
+    71: ''
+    73: ''
+    74: ''
+    77: ''
+    78: ''
+    79: ''
+    82: ''
+    83: ''
+    84: ''
+    86: ''
+    87: ''
+    88: ''
+    89: ''
+    91: ''
+    92: ''
+    93: ''
+    94: ''
+    95: ''
+    96: ''
+    97: ''
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -246,4 +237,3 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

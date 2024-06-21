@@ -1,4 +1,3 @@
----
 name:
   en: BOARD NAME
   de: REMOVE UNUSED LANGUAGES (en CAN NOT BE DELETED)
@@ -341,4 +340,3 @@ ventureCards: #VENTURE CARD IN WHICH 1 APPEARS NEXT TO -, 0 DOES NOT APPEAR. WHE
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

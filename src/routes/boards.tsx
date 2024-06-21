@@ -1,8 +1,7 @@
-import { RouteSectionProps, createAsyncStore } from '@solidjs/router';
-import { For, Match, Show, Switch, createMemo, createResource, createSignal, onMount } from 'solid-js';
-import { getBoards, getBoardsSync } from '~/lib/loadyamlfiles';
+import { RouteSectionProps } from '@solidjs/router';
+import { For, Match, Show, Switch } from 'solid-js';
+import { getBoardsSync } from '~/lib/loadyamlfiles';
 import "./boards.css"
-import { MapDescriptor } from '~/lib/mapdescriptor';
 
 export default function (props: RouteSectionProps) {
   const boards = getBoardsSync();
