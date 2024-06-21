@@ -8,7 +8,7 @@ initialCash: 1000
 targetAmount: 10000
 baseSalary: 100
 salaryIncrement: 50
-maxDiceRoll: 6
+maxDiceRoll: 6 # should be between 4 and 9. A 9 is only working fine in boards without doors. With 7 or 8 make sure that players cannot go through multiple doors in a single dice roll.
 frbFiles:
   - FRB_FILENAME_FOR_STATE_1
   - FRB_FILENAME_FOR_STATE_2 # CAN REMOVE UNUSED STATES
@@ -24,7 +24,8 @@ music:
 # As an example, extract 1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy from 
 # https://drive.google.com/file/d/1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy/view?usp=sharing
 # Paste in the XXX part of the google link
-# The 5 lines that contain this "#" should be crossed out after the "#".
+# The 5 lines that contain this \"#\" should be crossed out after the \"#\".
+  map: mapMusic.50 # the part after the dot is the volume 0-100
   stock: CAN_DELETE_THIS_ENTIRE_SECTION_IF_UNNEEDED
   ventureCards: 
   auction: 

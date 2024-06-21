@@ -21,9 +21,16 @@ export function getYaml(filePath: string): {} {
   return yamlData;
 }
 
-export function getYamlStr(filePath: string): string {
+export async function getYamlStr(filePath: string): Promise<string> {
   "use server";
-  return readFileSync(filePath, 'utf8');
+  const yamlContent = readFileSync(filePath, 'utf8');
+  return yamlContent;
+}
+
+export function getYamlStrSync(filePath: string): string {
+  "use server";
+  const yamlContent = readFileSync(filePath, 'utf8');
+  return yamlContent;
 }
 
 export function getBoardsSync(): YamlDict {
