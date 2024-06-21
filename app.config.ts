@@ -38,6 +38,6 @@ export default defineConfig({
       },
     }
   },
-  ssr: false,
+  ssr: true,
   appRoot: 'src'
 });

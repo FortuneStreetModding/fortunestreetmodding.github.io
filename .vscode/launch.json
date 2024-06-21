@@ -13,6 +13,14 @@
             "preLaunchTask": "Run Dev Server"
         },
         {
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222,
+            "name": "Attach Chrome",
+            "webRoot": "${workspaceRoot}",
+            "sourceMaps": true
+        },
+        {
             "name": "Python: Current File",
             "type": "debugpy",
             "request": "launch",

@@ -16,7 +16,7 @@ export default function Component() {
               <a class="nav-link active" classList={{ active: location.pathname === "/" }} href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" classList={{ active: location.pathname === "/maps" }} href="/maps">Maps</a>
+              <a class="nav-link" classList={{ active: location.pathname === "/boards" }} href="/boards">Boards</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

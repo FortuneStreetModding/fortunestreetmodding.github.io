@@ -4,22 +4,28 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start"
+    "start": "vinxi start",
+    "json2ts": "json2ts --input schema/mapdescriptor.json --output src/lib/mapdescriptor.d.ts"
   },
   "dependencies": {
     "@mdx-js/mdx": "^2.3.0",
     "@solidjs/router": "^0.13.6",
     "@solidjs/start": "^1.0.2",
+    "@types/slug": "^5.0.8",
     "@vinxi/plugin-mdx": "^3.7.1",
+    "slug": "^9.1.0",
     "solid-js": "^1.8.17",
-    "solid-mdx": "^0.0.7"
+    "solid-mdx": "^0.0.7",
+    "yaml": "^2.4.5"
   },
   "engines": {
     "node": ">=18"
   },
   "devDependencies": {
+    "@rollup/plugin-yaml": "^4.1.2",
     "eslint": "^9.5.0",
     "gh-pages": "^6.1.1",
+    "json-schema-to-typescript": "^14.0.5",
     "vinxi": "^0.3.11"
   }
 }
