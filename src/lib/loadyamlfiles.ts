@@ -74,3 +74,11 @@ export function getBoardsSync(): YamlDict {
   });
   return yamlDict;
 };
+
+export function getVentureCardsSync(): Object[] {
+  "use server";
+  const filePath = "./_data/ventureCards.yml";
+  const yamlContent = readFileSync(filePath, 'utf8');
+  const yamlData = parse(yamlContent);
+  return Object.values(yamlData);
+};
