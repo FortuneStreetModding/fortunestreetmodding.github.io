@@ -94,8 +94,13 @@ export async function getVentureCards(): Promise<VentureCard[]> {
   return parse(yamlContent);
 };
 
-export async function getVentureCardEffects(): Promise<(string | undefined)[]> {
+export async function getVentureCardEffects(): Promise<(string)[]> {
   "use server";
-  const effects = await getVentureCards();
-  return [...new Set(effects.map(card => card.effect))].sort();
+  const cards = await getVentureCards();
+  return [...new Set(cards.map(card => card.effect))].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 }
+
+export async function getVentureCardTypes(): Promise<(string)[]> {
+  "use server";
+  const cards = await getVentureCards();
+  return [...new Set(cards.map(card => card.description.split("!")[0]))].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))};

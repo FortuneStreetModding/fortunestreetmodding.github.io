@@ -1,54 +1,5 @@
-function get_effects() {
-    // TODO: Reassign effects and grades
-    let effects = [
-        "Buy Suit Yourself",  // 2
-        "Buy stocks",  // 3
-        "Buy shop",  // 6 - Grades finalised
-        "Cameo adventure",  // 3 - Grades finalised
-        "Choose way to move",  // 2 - Grades finalised
-        "Expand one shop",  // 4
-        "Get commission",  // 2 - Grades finalised
-        "Get gold from 1st",  // 4
-        "Get gold from all",  // 3
-        "Get gold x level",  // 3
-        "Get gold x shops",  // 4
-        "Get stocks",  // 3
-        "Get suits",  // 9 - Consider re-assigning amongst "Buy Suit Yourself"
-        "Give gold to all",  // 2
-        "Give gold to last",  // 3
-        "Go to square",  // 7 - Grades finalised
-        "Income tax",  // 3
-        "Invest capital",  // 4 - Grades finalised
-        "Move forward",  // 3
-        "Other players movement",  // 3
-        "Play arcade games",  // 3 - Grades finalised
-        "Shop prices change",  // 3
-        "Random district shops drop",  // 2
-        "Random stock price change",  // 5 - Grades finalised
-        "Roll after shop price change",  // 4
-        "Roll and expand shops",  // 1
-        "Roll and get from bank",  // 2
-        "Roll and move forward",  // 4
-        "Roll random to close shops",  // 1
-        "Roll random to expand shops",  // 2
-        "Roll random to take or pay",  // 1
-        "Roll random to warp",  // 3
-        "Salary bonus",  // 2 - Grades finalised
-        "Scramble",  // 2
-        "Sell shop back",  // 7 - Grades finalised
-        "Sell stocks",  // 2
-        "Shops expand in random district",  // 4
-        "Stock rise",  // 1
-        "Stocks dividend",  // 2
-        "Your shops change value",  // 4
-    ];
-    return effects.map((x) => x.toLowerCase().replaceAll(" ", "-"));
-}
-
 export function check_cards() {
-    console.log("Checking cards")
     const difficulty = document.getElementById("difficulty");
-    const effects = get_effects();
     for (let i = 1; i <= 128; i++) {
         const card = document.getElementById("card" + i.toString());
         if (!card) continue;
@@ -57,6 +8,7 @@ export function check_cards() {
         const cardStandard = card.getAttribute("data-standard") === "true";
         const cardSentiment = parseInt(card.getAttribute("data-sentiment"));
         const cardGrade = parseInt(card.getAttribute("data-grade"));
+        const cardType = card.getAttribute("data-type");
         const cardEffect = card.getAttribute("data-effect");
         // Check difficulty
         if (difficulty.value === "both" && (!cardEasy || !cardStandard)) {
@@ -90,37 +42,20 @@ export function check_cards() {
                 break;
             }
         }
+        // Check type
+        if (document.getElementById("types").value !== "any" && cardType !== document.getElementById("types").value) {
+            card.style.display = "none";
+            continue;
+        }
         // Check effect
-        console.log(cardEffect);
-        for (let j = 0; j < effects.length; j++) {
-            if (cardEffect === effects[j] && !document.getElementById(effects[j]).checked) {
-                card.style.display = "none";
-                continue;
-            }
+        if (document.getElementById("effects").value !== "any" && cardEffect !== document.getElementById("effects").value) {
+            card.style.display = "none";
+            continue;
         }
     }
 }
 
-export function hide_all_effects() {
-    console.log("Hiding all effects")
-    const effects = get_effects();
-    for (let i = 0; i < effects.length; i++) {
-        document.getElementById(effects[i]).checked = false;
-    }
-    check_cards();
-}
-
-export function show_all_effects() {
-    console.log("Showing all effects")
-    const effects = get_effects();
-    for (let i = 0; i < effects.length; i++) {
-        document.getElementById(effects[i]).checked = true;
-    }
-    check_cards();
-}
-
 export function reset_filters() {
-    console.log("Resetting filters")
     document.getElementById("difficulty").value = "any";
     for (let j = 0; j <= 4; j++) {
         document.getElementById("grade" + j.toString()).checked = true;
@@ -128,44 +63,50 @@ export function reset_filters() {
     document.getElementById("sentimentPositive").checked = true;
     document.getElementById("sentimentNeutral").checked = true;
     document.getElementById("sentimentNegative").checked = true;
-    show_all_effects();
+    document.getElementById("types").value = "any";
+    document.getElementById("effects").value = "any";
+    check_cards();
+}
+
+export function reset_selected_cards() {
+    for (let i = 1; i <= 128; i++) {
+        document.getElementById("card" + i.toString() + "selected").checked = document.getElementById("card" + i.toString()).getAttribute("data-standard") === "true";
+    }
+    check_selected_cards();
 }
 
 export function check_selected_cards() {
-    console.log("Checking selected cards")
     document.getElementById("yaml").style.display = "none";
     let chosenCards = 0;
     for (let i = 1; i <= 128; i++) {
         if (document.getElementById("card" + i.toString() + "selected").checked) {
             chosenCards++;
+            document.getElementById("card" + i.toString()).style.opacity = 1;
+        } else {
+            document.getElementById("card" + i.toString()).style.opacity = 0.625;
         }
     }
     document.getElementById("cardsSelected").textContent = chosenCards.toString() + " cards selected";
     if (chosenCards === 64) {
-        console.log("Correct number of cards chosen");
-        // Enable button with ID generateYaml
         document.getElementById("generateYaml").disabled = false;
     } else {
-        // Disable button with ID generateYaml
         document.getElementById("generateYaml").disabled = true;
     }
     return chosenCards === 64;
 }
 
-export function deselect_all_cards() {
-    console.log("Deselecting all cards")
+export function select_all_cards(select = true) {
     for (let i = 1; i <= 128; i++) {
-        document.getElementById("card" + i.toString() + "selected").checked = false;
+        document.getElementById("card" + i.toString() + "selected").checked = select;
     }
     check_selected_cards();
 }
 
-export function select_visible_cards() {
-    console.log("Selecting visible cards")
+export function select_visible_cards(select = true) {
     for (let i = 1; i <= 128; i++) {
         console.log(i, document.getElementById("card" + i.toString()).style.display);
         if (document.getElementById("card" + i.toString()).style.display === "block") {
-            document.getElementById("card" + i.toString() + "selected").checked = true;
+            document.getElementById("card" + i.toString() + "selected").checked = select;
         }
     }
     check_selected_cards();
@@ -173,31 +114,29 @@ export function select_visible_cards() {
 
 export function generate_yaml() {
     if (check_selected_cards()) {
-        console.log("Generating YAML")
-        let yaml_string = "ventureCards:";
+        let yaml_str = "ventureCards:";
         for (let i = 1; i <= 128; i++) {
             let yaml_selected = "0";
             if (document.getElementById("card" + i.toString() + "selected").checked) {
                 yaml_selected = "1";
             }
             // Add spaces in front of i to make it easier to read
-            let i_string = i.toString();
+            let i_str = i.toString();
             if (i < 100) {
-                i_string = " " + i_string;
+                i_str = " " + i_str;
                 if (i < 10) {
-                    i_string = " " + i_string;
+                    i_str = " " + i_str;
                 }
             }
-            yaml_string = yaml_string + "\n  - " + yaml_selected + "  # " + i_string;
+            yaml_str = yaml_str + "\n  - " + yaml_selected + "  # " + i_str;
         }
-        document.getElementById("generatedYaml").textContent = yaml_string;
+        document.getElementById("generatedYaml").textContent = yaml_str;
         document.getElementById("yaml").style.display = "block";
         document.getElementById("yaml").scrollIntoView({behavior: "smooth"});
     }
 }
 
 export function copy_yaml_to_clipboard() {
-    console.log("Copying YAML to clipboard")
     navigator.clipboard.writeText(document.getElementById("generatedYaml").textContent);
     document.getElementById("copyYaml").innerText = "Copied!";
 }
