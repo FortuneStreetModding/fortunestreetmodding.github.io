@@ -2,28 +2,16 @@ import type { MapDescriptor } from './mapdescriptor';
 import slug from 'slug';
 import { parse } from 'path';
 
-export interface MapDescriptorExtended extends MapDescriptor {
+interface MapDescriptorExtended extends MapDescriptor {
   path: string;
   slug: string;
   imageUrls: string[];
 }
 
-export interface VentureCard {
-  defaultEasy: boolean;
-  defaultStandard: boolean;
-  description: string;
-  descriptionExtra?: string;
-  effect: string;
-  grade: number;
-  sentiment: number;
-}
+const boards = getBoards();
+export default boards;
 
-export function getBoard(slug: string): MapDescriptorExtended | undefined {
-  const boards = getBoards();
-  return boards.find(board => board.slug === slug);
-}
-
-export function getBoards(): MapDescriptorExtended[] {
+function getBoards(): MapDescriptorExtended[] {
   const boardFiles: Record<string, MapDescriptor> = import.meta.glob('/_maps/*/*.{yml,yaml}', { eager: true });
   const boards: MapDescriptorExtended[] = [];
   for (const [path, boardConst] of Object.entries(boardFiles)) {
@@ -59,10 +47,3 @@ export function getBoards(): MapDescriptorExtended[] {
   }
   return boards;
 };
-/*
-export async function getVentureCardEffects(): Promise<(string | undefined)[]> {
-  "use server";
-  const effects = await getVentureCards();
-  return [...new Set(effects.map(card => card.effect))].sort();
-}
-*/

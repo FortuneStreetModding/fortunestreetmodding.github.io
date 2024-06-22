@@ -1,7 +1,6 @@
 ---
 import Layout from '~/layouts/layout.astro';
-import { getBoards } from '~/lib/yamlfiles';
-const boards = getBoards();
+import boards from '~/lib/getboards';
 import "./boards.css"
 ---
 <Layout title="Boards">
