@@ -110,11 +110,18 @@ export default function (props: RouteSectionProps) {
             <For each={cards}>
             {(card, index) => (
             <div class="col" style="display: block;" id={"card" + (index() + 1).toString()} data-easy={card.defaultEasy} data-standard={card.defaultStandard} data-effect={slug(card.effect)} data-grade={card.grade} data-sentiment={card.sentiment}>
-              <div class={sentiment_to_div_class(card.sentiment)}>
+              <div class={sentiment_to_div_class(card.sentiment)} style="height: 100%;">
                 <div class="row row-cols-2 g-2">
                   <div class="col-4">
-                    <p><strong>{index() + 1}</strong></p>
-                    <img src={"/images/card_" + (index() + 1).toString() + ".webp"} alt={"Venture Card " + (index() + 1).toString()} style="max-width: 100%; height: auto;"/>
+                    <header><p>Card No. {index() + 1}</p></header>
+                    <figure><img src={"/images/card_" + (index() + 1).toString() + ".webp"} alt={"Venture Card " + (index() + 1).toString()} style="max-width: 100%; height: auto;"/></figure>
+                    <footer><p><strong>
+                      <Show when={card.grade === 0}>D</Show>
+                      <Show when={card.grade === 1}>C</Show>
+                      <Show when={card.grade === 2}>B</Show>
+                      <Show when={card.grade === 3}>A</Show>
+                      <Show when={card.grade === 4}>S</Show>
+                    </strong></p></footer>
                   </div>
                   <div class="col-8">
                     <input type="checkbox" id={"card" + (index() + 1).toString() + "selected"} checked={card.defaultStandard} onChange={() => check_selected_cards()}/>
@@ -122,14 +129,19 @@ export default function (props: RouteSectionProps) {
                     <Show when={card.descriptionExtra !== null}>
                     <p>{card.descriptionExtra}</p>
                     </Show>
-                    <Show when={card.defaultEasy}>
-                    <p>Easy</p>
-                    </Show>
-                    <Show when={card.defaultStandard}>
-                    <p>Standard</p>
-                    </Show>
+                    <p>
+                      <Show when={card.defaultEasy}>
+                      Easy
+                      </Show>
+                      <Show when={card.defaultEasy && card.defaultStandard}>
+                      /
+                      </Show>
+                      <Show when={card.defaultStandard}>
+                      Standard
+                      </Show>
+                    </p>
                     <Show when={card.effect !== null}>
-                    <p>{card.effect} ({card.grade})</p>
+                    <p>{card.effect}</p>
                     </Show>
                   </div>
                 </div>
