@@ -1,0 +1,25 @@
+---
+import Layout from '~/layouts/layout.astro';
+import { getBoards } from '~/lib/yamlfiles';
+const boards = getBoards();
+export function getStaticPaths() {
+  return boards.map(board => {
+    return {
+      params: {
+        boardslug: board.slug
+      }
+    }
+  })
+}
+const { boardslug } = Astro.params;
+const board = boards.find(board => board.slug === boardslug);
+---
+<Layout title={board? board.name.en : "Invalid Board"}>
+  <div class="album">
+    <div class="container">
+      <div class="row">
+        <div>User {board?.name.en}</div>
+      </div>
+    </div>
+  </div>
+</Layout>

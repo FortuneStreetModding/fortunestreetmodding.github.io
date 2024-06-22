@@ -80,3 +80,9 @@ Thumbs.db
 # bun
 
 bun.lockb
+
+# build output
+dist/
+
+# generated types
+.astro/
