@@ -4,43 +4,41 @@ import boards from '~/lib/getboards';
 import "./boards.css"
 ---
 <Layout title="Boards">
-  <main role="main">
-    <div class="album">
-      <div class="container">
-        <div class="row">
-          {boards.map((board, boardIndex) => (
-            <>
-            <div class="col mb-4 mapCard">
-              <div class="card h-100">
-                <div class="relative-container">
-                  {board.frbFiles!.map((item, index) => (
-                    <div>
-                      <input class={`btn-check state-${index}`} type="radio" name={`state-${board.slug}`} id={`state-${index}-${board.slug}`} autocomplete="off" checked={index==0}/>
-                      <label class={`btn btn-primary btn-state-tiny state-${index}`} for={`state-${index}-${board.slug}`}>{index+1}</label>
-                    </div>
-                  ))}
-                  <a class="map-state" href={`/boards/${board.slug}`}>
-                    {board.frbFiles!.map((item, index) => (
-                      <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
-                    ))}
-                  </a>
-                  <img class="card-img-top mapCard-image-background" src={board.imageUrls[0]} loading="lazy" />
-                  <div class="card-body">
-                    Name and Stuff
+  <div class="album">
+    <div class="container">
+      <div class="row">
+        {boards.map((board, boardIndex) => (
+          <>
+          <div class="col mb-4 mapCard">
+            <div class="card h-100">
+              <div class="relative-container">
+                {board.frbFiles!.map((item, index) => (
+                  <div>
+                    <input class={`btn-check state-${index}`} type="radio" name={`state-${board.slug}`} id={`state-${index}-${board.slug}`} autocomplete="off" checked={index==0}/>
+                    <label class={`btn btn-primary btn-state-tiny state-${index}`} for={`state-${index}-${board.slug}`}>{index+1}</label>
                   </div>
-                  <div class="card-footer text-muted"></div>
-                  <div class="card-footer text-muted"></div>
+                ))}
+                <a class="map-state" href={`/boards/${board.slug}`}>
+                  {board.frbFiles!.map((item, index) => (
+                    <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
+                  ))}
+                </a>
+                <img class="card-img-top mapCard-image-background" src={board.imageUrls[0]} loading="lazy" />
+                <div class="card-body">
+                  Name and Stuff
                 </div>
+                <div class="card-footer text-muted"></div>
+                <div class="card-footer text-muted"></div>
               </div>
             </div>
-            {boardIndex > 0 && boardIndex % 3 == 2 && (<div class="w-100"></div>)}
-            </>
-          ))}
-          {boards.length > 0 && boards.length % 3 == 0 && (<div class="w-100"></div>)}
-          {boards.length > 0 && boards.length % 3 == 1 && (<div class="col mapCard"></div><div class="col mapCard"></div>)}
-          {boards.length > 0 && boards.length % 3 == 2 && (<div class="col mapCard"></div>)}
-        </div>
+          </div>
+          {boardIndex > 0 && boardIndex % 3 == 2 && (<div class="w-100"></div>)}
+          </>
+        ))}
+        {boards.length > 0 && boards.length % 3 == 0 && (<div class="w-100"></div>)}
+        {boards.length > 0 && boards.length % 3 == 1 && (<div class="col mapCard"></div><div class="col mapCard"></div>)}
+        {boards.length > 0 && boards.length % 3 == 2 && (<div class="col mapCard"></div>)}
       </div>
     </div>
-  </main>
+  </div>
 </Layout>

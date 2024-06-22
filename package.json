@@ -8,7 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "json2ts": "json2ts --input schema/mapdescriptor.json --output src/lib/mapdescriptor.d.ts"
+    "json2ts": "json2ts --input public/schema/mapdescriptor.json --output src/lib/mapdescriptor.d.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
@@ -16,8 +16,9 @@
     "@rollup/plugin-yaml": "^4.1.2",
     "@types/globalthis": "^1.0.4",
     "@types/slug": "^5.0.8",
-    "slug": "^9.1.0",
     "astro": "^4.11.0",
+    "monaco-yaml": "^5.2.0",
+    "slug": "^9.1.0",
     "solid-js": "^1.8.17",
     "typescript": "^5.5.2"
   }

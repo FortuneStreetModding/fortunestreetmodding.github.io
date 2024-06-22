@@ -1,7 +1,7 @@
 ---
 import slug from 'slug';
 import Layout from '~/layouts/layout.astro';
-import cardsYaml from "/_data/ventureCards.yml";
+import cardsYaml from "../../_data/ventureCards.yml";
 import type { VentureCard } from '~/lib/venturecard';
 const cards = cardsYaml as VentureCard[];
 const effects: string[] = [...new Set(cards.map(card => card.effect))].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));

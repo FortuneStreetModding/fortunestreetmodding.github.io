@@ -1,7 +1,6 @@
 ---
 import Layout from '~/layouts/layout.astro';
-import { getBoards } from '~/lib/getboards';
-const boards = getBoards();
+import boards from '~/lib/getboards';
 export function getStaticPaths() {
   return boards.map(board => {
     return {

@@ -7,6 +7,8 @@ import yaml from '@rollup/plugin-yaml';
 export default defineConfig({
   integrations: [solidJs()],
   vite: {
-    plugins: [yaml()]
+    plugins: [
+      yaml()
+    ]
   }
 });
