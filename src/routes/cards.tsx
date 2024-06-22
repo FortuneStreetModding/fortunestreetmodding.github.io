@@ -1,14 +1,13 @@
 import { RouteSectionProps } from '@solidjs/router';
 import { For, Show, createResource } from 'solid-js';
-import { getVentureCards, getVentureCardEffects } from '~/lib/loadyamlfiles';
+import { getVentureCards, getVentureCardEffects, getVentureCardTypes } from '~/lib/loadyamlfiles';
 import slug from 'slug';
 import {
   check_cards,
-  hide_all_effects,
-  show_all_effects,
   reset_filters,
+  reset_selected_cards,
   check_selected_cards,
-  deselect_all_cards,
+  select_all_cards,
   select_visible_cards,
   generate_yaml,
   copy_yaml_to_clipboard
@@ -29,6 +28,7 @@ function sentiment_to_div_class(sentiment: number) {
 export default function (props: RouteSectionProps) {
   const [cards] = createResource(getVentureCards);
   const [effects] = createResource(getVentureCardEffects);
+  const [types] = createResource(getVentureCardTypes);
 
   return (
   <div class="w3-card-4 w3-center w3-display-topmiddle w3-margin-bottom-16">
@@ -37,17 +37,14 @@ export default function (props: RouteSectionProps) {
       <div class="row row-cols-2 g-2">
         <div class="col-3">
           <div class="mb-3">
-            <button class="btn btn-primary" onClick={() => deselect_all_cards()}>Deselect all</button> <button class="btn btn-primary" onClick={() => select_visible_cards()}>Select visible</button> <button class="btn btn-primary" onClick={() => reset_filters()}>Reset filters</button>
+            <button class="btn btn-primary" onClick={() => select_all_cards(false)}>Deselect all</button> <button class="btn btn-primary" onClick={() => select_all_cards()}>Select all</button>
           </div>
-        </div>
-        <div class="col-9">
           <div class="mb-3">
-            <label class="form-label" id="cardsSelected">64 cards selected</label> <button class="btn btn-primary" id="generateYaml" onClick={() => generate_yaml()}>Generate YAML (requires 64)</button>
+            <button class="btn btn-primary" onClick={() => select_visible_cards(false)}>Deselect visible</button> <button class="btn btn-primary" onClick={() => select_visible_cards()}>Select visible</button>
           </div>
-        </div>
-      </div>
-      <div class="row row-cols-2 g-2">
-        <div class="col-3">
+          <div class="mb-3">
+            <button class="btn btn-primary" onClick={() => reset_selected_cards()}>Reset selected</button> <button class="btn btn-primary" onClick={() => reset_filters()}>Reset filters</button>
+          </div>
           <h2>Gamemode</h2>
           <div class="mb-3">
             <p>The game difficulty cards are in by default. If you are using defaults, you don't need to include <code>ventureCards</code> in your board's YAML.</p>
@@ -88,62 +85,79 @@ export default function (props: RouteSectionProps) {
               <label class="form-check-label" for="sentimentNegative">Negative</label>
             </div>
           </div>
+          <h2>Types</h2>
+          <div class="mb-3">
+            <select class="form-select" id="types" onChange={() => check_cards()}>
+              <option value="any">Any</option>
+              <For each={types()}>
+              {(type) => (
+              <option value={slug(type)}>{type}</option>
+              )}
+              </For>
+            </select>
+          </div>
           <h2>Effects</h2>
           <div class="mb-3">
-            <button type="button" class="btn btn-primary" id="effectsNone" onClick={() => hide_all_effects()}>None</button> <button type="button" class="btn btn-primary" id="effectsAll" onClick={() => show_all_effects()}>All</button>
-          </div>
-          <div class="mb-3">
-            <For each={effects()}>
-            {(effect) => (
-            <Show when={effect !== null}>
-            <div class="form-check">
-              {/* TODO: Fix these checkboxes not firing their onChange outputs */}
-              <input type="checkbox" class="form-check-input" checked id={slug(effect!)} onChange={() => check_cards()}/>
-              <label class="form-check-label" for={slug(effect!)}>{effect}</label>
-            </div>
-            </Show>
-            )}
-            </For>
+            <select class="form-select" id="effects" onChange={() => check_cards()}>
+              <option value="any">Any</option>
+              <For each={effects()}>
+              {(effect) => (
+              <option value={slug(effect)}>{effect}</option>
+              )}
+              </For>
+            </select>
           </div>
         </div>
         <div class="col-9">
+          <div class="row">
+            <div class="mb-3">
+              <label class="form-label" id="cardsSelected">64 cards selected</label> <button class="btn btn-primary" id="generateYaml" onClick={() => generate_yaml()}>Generate YAML (requires 64)</button>
+            </div>
+          </div>
           <div class="row row-cols-2 g-2">
             <For each={cards()}>
             {(card, index) => (
-            <div class="col" style="display: block;" id={"card" + (index() + 1).toString()} data-easy={card.defaultEasy} data-standard={card.defaultStandard} data-effect={slug(card.effect)} data-grade={card.grade} data-sentiment={card.sentiment}>
+            <div class="col" style={"display: block; opacity: " + (card.defaultStandard ? "1" : "0.625") + ";"} id={"card" + (index() + 1).toString()} data-easy={card.defaultEasy} data-standard={card.defaultStandard} data-type={slug(card.description.split("!")[0])} data-effect={slug(card.effect)} data-grade={card.grade} data-sentiment={card.sentiment}>
               <div class={sentiment_to_div_class(card.sentiment)} style="height: 100%;">
                 <div class="row row-cols-2 g-2">
                   <div class="col-4">
-                    <header><p>Card No. {index() + 1}</p></header>
-                    <figure><img src={"/images/card_" + (index() + 1).toString() + ".webp"} alt={"Venture Card " + (index() + 1).toString()} style="max-width: 100%; height: auto;"/></figure>
-                    <footer><p><strong>
-                      <Show when={card.grade === 0}>D</Show>
-                      <Show when={card.grade === 1}>C</Show>
-                      <Show when={card.grade === 2}>B</Show>
-                      <Show when={card.grade === 3}>A</Show>
-                      <Show when={card.grade === 4}>S</Show>
-                    </strong></p></footer>
+                    <div class="card-body" style="padding-right: 0;">
+                      <header><p>Card No. {index() + 1}</p></header>
+                      <figure><img src={"/venturecards/venturecard_" + String(index() + 1).padStart(3, '0') + ".webp"} alt={"Venture Card " + (index() + 1).toString()} style="max-width: 100%; height: auto;"/></figure>
+                      <footer><p><strong>
+                        <Show when={card.grade === 0}>D</Show>
+                        <Show when={card.grade === 1}>C</Show>
+                        <Show when={card.grade === 2}>B</Show>
+                        <Show when={card.grade === 3}>A</Show>
+                        <Show when={card.grade === 4}>S</Show>
+                      </strong></p></footer>
+                    </div>
                   </div>
                   <div class="col-8">
-                    <input type="checkbox" id={"card" + (index() + 1).toString() + "selected"} checked={card.defaultStandard} onChange={() => check_selected_cards()}/>
-                    <p><strong>{card.description}</strong></p>
-                    <Show when={card.descriptionExtra !== null}>
-                    <p>{card.descriptionExtra}</p>
-                    </Show>
-                    <p>
-                      <Show when={card.defaultEasy}>
-                      Easy
+                    <div style="text-align: right;">
+                      <input type="checkbox" style="position: relative; z-index: 1; width: 24px; height: 24px; top: 4px; right: 4px;" id={"card" + (index() + 1).toString() + "selected"} checked={card.defaultStandard} onChange={() => check_selected_cards()}/>
+                    </div>
+                    <div class="card-body">
+                      <p><strong>{card.description}</strong></p>
+                      <Show when={card.descriptionExtra !== undefined}>
+                      <p><i>({card.descriptionExtra})</i></p>
                       </Show>
-                      <Show when={card.defaultEasy && card.defaultStandard}>
-                      /
+                      <Show when={card.defaultEasy || card.defaultStandard}>
+                      <p>
+                        Default in: 
+                        <Show when={card.defaultEasy}>
+                        Easy
+                        </Show>
+                        <Show when={card.defaultEasy && card.defaultStandard}>
+                        /
+                        </Show>
+                        <Show when={card.defaultStandard}>
+                        Standard
+                        </Show>
+                      </p>
                       </Show>
-                      <Show when={card.defaultStandard}>
-                      Standard
-                      </Show>
-                    </p>
-                    <Show when={card.effect !== null}>
-                    <p>{card.effect}</p>
-                    </Show>
+                      <p><i>Effect: {card.effect}</i></p>
+                    </div>
                   </div>
                 </div>
               </div>
