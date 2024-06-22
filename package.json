@@ -17,6 +17,7 @@
     "@types/globalthis": "^1.0.4",
     "@types/slug": "^5.0.8",
     "astro": "^4.11.0",
+    "monaco-editor": "^0.50.0",
     "monaco-yaml": "^5.2.0",
     "slug": "^9.1.0",
     "solid-js": "^1.8.17",
