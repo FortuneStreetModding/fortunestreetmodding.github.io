@@ -132,6 +132,7 @@ export default function (props: RouteSectionProps) {
 
   return (
     <>
+      <script src="monaco-editor.js"></script>
       <div class="row p-3" style="max-width: 600px">
         <label for="preset" class="col-sm-2 col-form-label">Preset</label>
         <div class="col-sm-10">
@@ -165,7 +166,6 @@ export default function (props: RouteSectionProps) {
           </div>
         </div>
       </div>
-      <script src="monaco-editor.js"></script>
     </>
   );
 }

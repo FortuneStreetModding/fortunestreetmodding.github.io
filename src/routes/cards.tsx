@@ -1,7 +1,7 @@
-import { RouteSectionProps } from "@solidjs/router";
-import { For, Show } from "solid-js";
-import { getVentureCardsSync, getVentureCardEffectsSync } from "~/lib/loadyamlfiles";
-import slug from "slug";
+import { RouteSectionProps } from '@solidjs/router';
+import { For, Show, createResource } from 'solid-js';
+import { getVentureCards, getVentureCardEffects } from '~/lib/loadyamlfiles';
+import slug from 'slug';
 import {
   check_cards,
   hide_all_effects,
@@ -12,7 +12,7 @@ import {
   select_visible_cards,
   generate_yaml,
   copy_yaml_to_clipboard
-} from "~/lib/cards";
+} from '~/lib/cards';
 
 function sentiment_to_div_class(sentiment: number) {
   let classes = "card text-center";
@@ -27,8 +27,8 @@ function sentiment_to_div_class(sentiment: number) {
 }
 
 export default function (props: RouteSectionProps) {
-  const cards = getVentureCardsSync();
-  const effects = getVentureCardEffectsSync();
+  const [cards] = createResource(getVentureCards);
+  const [effects] = createResource(getVentureCardEffects);
 
   return (
   <div class="w3-card-4 w3-center w3-display-topmiddle w3-margin-bottom-16">
@@ -92,7 +92,7 @@ export default function (props: RouteSectionProps) {
             <button type="button" class="btn btn-primary" id="effectsNone" onClick={() => hide_all_effects()}>None</button> <button type="button" class="btn btn-primary" id="effectsAll" onClick={() => show_all_effects()}>All</button>
           </div>
           <div class="mb-3">
-            <For each={effects}>
+            <For each={effects()}>
             {(effect) => (
             <Show when={effect !== null}>
             <div class="form-check">
@@ -107,7 +107,7 @@ export default function (props: RouteSectionProps) {
         </div>
         <div class="col-9">
           <div class="row row-cols-2 g-2">
-            <For each={cards}>
+            <For each={cards()}>
             {(card, index) => (
             <div class="col" style="display: block;" id={"card" + (index() + 1).toString()} data-easy={card.defaultEasy} data-standard={card.defaultStandard} data-effect={slug(card.effect)} data-grade={card.grade} data-sentiment={card.sentiment}>
               <div class={sentiment_to_div_class(card.sentiment)} style="height: 100%;">
