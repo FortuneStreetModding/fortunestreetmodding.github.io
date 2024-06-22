@@ -1,9 +1,0 @@
-collections:
-    - maps
-    - backgrounds
-
-defaults:
-    - scope:
-        path: "jszip"
-      values:
-        js: true
