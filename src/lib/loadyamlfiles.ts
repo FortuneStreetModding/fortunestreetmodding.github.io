@@ -14,6 +14,16 @@ interface YamlDict {
   [key: string]: MapDescriptorExtended;
 }
 
+export interface VentureCard {
+  defaultEasy: boolean;
+  defaultStandard: boolean;
+  description: string;
+  descriptionExtra?: string;
+  effect: string;
+  grade: number;
+  sentiment: number;
+}
+
 export function getYaml(filePath: string): {} {
   "use server";
   const yamlContent = readFileSync(filePath, 'utf8');
@@ -75,3 +85,16 @@ export function getBoardsSync(): YamlDict {
   });
   return yamlDict;
 };
+
+export async function getVentureCards(): Promise<VentureCard[]> {
+  "use server";
+  const filePath = "./_data/ventureCards.yml";
+  const yamlContent = readFileSync(filePath, 'utf8');
+  return parse(yamlContent);
+};
+
+export async function getVentureCardEffects(): Promise<(string | undefined)[]> {
+  "use server";
+  const effects = await getVentureCards();
+  return [...new Set(effects.map(card => card.effect))].sort();
+}
