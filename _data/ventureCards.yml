@@ -253,8 +253,8 @@
   defaultStandard: true
   description: "Dicey adventure! Roll 1/3/5 and your shops close for the day. Roll 2/4/6 and everyone else's shops close."
   # TODO: Add descriptionExtra
-  effect: "Roll random to close shops"
-  grade: 0
+  effect: "Roll to change shops"
+  grade: 1
   sentiment: 0
 - # 35
   defaultEasy: false
@@ -675,8 +675,8 @@
   defaultEasy: false
   defaultStandard: false
   description: "Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%."
-  effect: "Roll random to expand shops"
-  grade: 0
+  effect: "Roll to change shops"
+  grade: 3
   sentiment: 0
 - # 94
   defaultEasy: true
@@ -893,8 +893,8 @@
   defaultEasy: false
   defaultStandard: false
   description: "Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%."
-  effect: "Roll random to expand shops"
-  grade: 1
+  effect: "Roll to change shops"
+  grade: 4
   sentiment: 0
 - # 124
   defaultEasy: false
@@ -915,8 +915,8 @@
   defaultEasy: false
   defaultStandard: false
   description: "Revaluation venture! Roll the die and expand your shops by 2% for each number."
-  effect: "Roll and expand shops"
-  grade: 0
+  effect: "Roll to change shops"
+  grade: 2
   sentiment: 1
 - # 127
   defaultEasy: false

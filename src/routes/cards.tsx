@@ -61,6 +61,7 @@ export default function (props: RouteSectionProps) {
           </div>
           <h2>Grade</h2>
           <div class="mb-3">
+            <p>Card grades are assigned by the Fortune Street modding community based on their power among cards with similar effects.</p>
             <input type="checkbox" class="btn-check-outlined" id="grade0" autocomplete="off" checked onChange={() => check_cards()}/>
             <label class="btn btn-primary" for="grade0">D</label>
             <input type="checkbox" class="btn-check-outlined" id="grade1" autocomplete="off" checked onChange={() => check_cards()}/>

@@ -1,5 +1,5 @@
 function get_effects() {
-    // TODO: Reassign effects and grades
+    // TODO: Reassign effects and grades, consider creating sub-categories
     let effects = [
         "Buy Suit Yourself",  // 2
         "Buy stocks",  // 3
@@ -26,13 +26,11 @@ function get_effects() {
         "Random district shops drop",  // 2
         "Random stock price change",  // 5 - Grades finalised
         "Roll after shop price change",  // 4
-        "Roll and expand shops",  // 1
         "Roll and get from bank",  // 2
         "Roll and move forward",  // 4
-        "Roll random to close shops",  // 1
-        "Roll random to expand shops",  // 2
         "Roll random to take or pay",  // 1
         "Roll random to warp",  // 3
+        "Roll to change shops",  // 4
         "Salary bonus",  // 2 - Grades finalised
         "Scramble",  // 2
         "Sell shop back",  // 7 - Grades finalised
