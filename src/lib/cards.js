@@ -1,62 +1,45 @@
+// TODO: Reassign effects and grades
 const effects = [
-    "Buy Suit Yourself",
-    "Buy stocks in district",
-    "Buy unowned shop",
-    "Cameo adventure",
-    "Choose way to move",
-    "Drop wallet",
-    "Expand one shop",
-    "Forced auction",
-    "Forced buyout",
-    "Free Suit Yourself",
-    "Free stocks",
-    "Free suit",
-    "Get big commission",
-    "Get gold x level",
-    "Give everyone gold",
-    "Give to last place",
-    "Impromptu party",
-    "Invest bank's money",
-    "Invest capital",
-    "Move forward",
-    "Other players movement",
-    "Pay assets tax",
-    "Pay last place",
-    "Play arcade games",
-    "Price hike",
-    "Random district shops drop",
-    "Random district stocks decrease",
-    "Random district stocks increase",
-    "Receive most valuable stocks",
-    "Receive gold x shops",
-    "Receive half salary",
-    "Receive stocks in random district",
-    "Roll after shop price change",
-    "Roll and expand shops",
-    "Roll and get from 1st",
-    "Roll and get from all",
-    "Roll and get from bank",
-    "Roll and move forward",
-    "Roll random to close shops",
-    "Roll random to expand shops",
-    "Roll random to take or pay",
-    "Roll random to warp",
-    "Roll to get all suits",
-    "Scramble",
-    "Sell shop back",
-    "Sell stocks",
-    "Shop prices halve",
-    "Shops expand in random district",
-    "Stock rise",
-    "Stocks dividend",
-    "Sudden promotion",
-    "Take gold from all",
-    "Winner pays you",
-    "Your shops drop",
-    "Your shops grow",
-    "Zoom to any",
-    "Zoom to bank",
-    "Zoom to non-venture"
+    "Buy Suit Yourself",  // 2
+    "Buy stocks",  // 3
+    "Buy shop",  // 6 - Grades finalised
+    "Cameo adventure",  // 3 - Grades finalised
+    "Choose way to move",  // 2 - Grades finalised
+    "Expand one shop",  // 4
+    "Get commission",  // 2 - Grades finalised
+    "Get gold from 1st",  // 4
+    "Get gold from all",  // 3
+    "Get gold x level",  // 3
+    "Get gold x shops",  // 4
+    "Get stocks",  // 3
+    "Get suits",  // 9 - Consider re-assigning amongst "Buy Suit Yourself"
+    "Give gold to all",  // 2
+    "Give gold to last",  // 3
+    "Go to square",  // 7 - Grades finalised
+    "Income tax",  // 3
+    "Invest capital",  // 4 - Grades finalised
+    "Move forward",  // 3
+    "Other players movement",  // 3
+    "Play arcade games",  // 3 - Grades finalised
+    "Shop prices change",  // 3
+    "Random district shops drop",  // 2
+    "Random stock price change",  // 5 - Grades finalised
+    "Roll after shop price change",  // 4
+    "Roll and expand shops",  // 1
+    "Roll and get from bank",  // 2
+    "Roll and move forward",  // 4
+    "Roll random to close shops",  // 1
+    "Roll random to expand shops",  // 2
+    "Roll random to take or pay",  // 1
+    "Roll random to warp",  // 3
+    "Salary bonus",  // 2 - Grades finalised
+    "Scramble",  // 2
+    "Sell shop back",  // 7 - Grades finalised
+    "Sell stocks",  // 2
+    "Shops expand in random district",  // 4
+    "Stock rise",  // 1
+    "Stocks dividend",  // 2
+    "Your shops change value",  // 4
 ];
 
 export function check_cards() {
@@ -190,10 +173,19 @@ export function generate_yaml() {
             if (document.getElementById("card" + i.toString() + "selected").checked) {
                 yaml_selected = "1";
             }
-            yaml_string = yaml_string + "\n  - " + yaml_selected + "  # " + i;
+            // Add spaces in front of i to make it easier to read
+            let i_string = i.toString();
+            if (i < 100) {
+                i_string = " " + i_string;
+                if (i < 10) {
+                    i_string = " " + i_string;
+                }
+            }
+            yaml_string = yaml_string + "\n  - " + yaml_selected + "  # " + i_string;
         }
         document.getElementById("generatedYaml").textContent = yaml_string;
         document.getElementById("yaml").style.display = "block";
+        document.getElementById("yaml").scrollIntoView({behavior: "smooth"});
     }
 }
 

@@ -4,16 +4,15 @@
 # defaultStandard: Whether the card is found in standard mode by default.
 # description: The in-game description of the card.
 # descriptionExtra (optional): An add-on to the in-game description in case it is not descriptive enough.
-# effect: The group name for cards with similar effects. This is an abstraction of the existing groups denoted in the in-game descriptions before the exclamation mark.
-# grade: The power of a card within an effect group, ranging between 0 and 4 (D, C, B, A, S). Power is measured by how devastating the effect is with regards to the sentiment and the other cards in the group. In order to avoid bias, a card's power is strictly ordered within its effect group. In cases where there are not enough unique power levels to fill all the grades, prefer the grades closest to B, rounding up if necessary.
-# TODO: Reassign effects and grades.
+# effect: The group name for cards with similar effects. This is an abstraction of the existing groups denoted in the in-game descriptions before the exclamation mark. Effect groups should have between 4-6 cards in them, unless no other cards satisfy the requirements, or abstracting the group would create groups that are too small.
+# grade: The power of a card within an effect group, ranging between 0 and 4 (D, C, B, A, S). Power is measured by how devastating the effect is with regards to the sentiment and the other cards in the group with similar effects. In order to avoid bias, a card's power is strictly ordered compared to other cards in its effect group. In cases where there are not enough unique power levels to fill all the grades, prefer the grades closest to 2 (B), rounding up if necessary. (This philosophy may be changed at a later date once the grading system is put into practice.)
 # sentiment: How beneficial the effect is to the player who draws the card (-1 = negative, 0 = neutral, 1 = positive).
 - # 1
   defaultEasy: true
   defaultStandard: true
   description: "Adventurous turning point! You can choose which way to move on your next go."
   effect: "Choose way to move"
-  grade: 1
+  grade: 3
   sentiment: 1
 - # 2
   defaultEasy: true
@@ -26,37 +25,38 @@
   defaultEasy: true
   defaultStandard: true
   description: "Venture through space! Zoom over to any non-venture, non-suit square you like!"
-  effect: "Zoom to non-venture"
-  grade: 1
+  effect: "Go to square"
+  grade: 2
   sentiment: 1
 - # 4
   defaultEasy: true
   defaultStandard: false
   description: "Moneymaking venture! Roll the die and get 40 times the number shown in gold coins from the player in 1st place!"
-  effect: "Roll and get from 1st"
-  grade: 0
+  descriptionExtra: "If you are in 1st place, this has no effect."
+  effect: "Get gold from 1st"
+  grade: 1
   sentiment: 1
 - # 5
   defaultEasy: true
   defaultStandard: true
   description: "Venture through space! Zoom over to any shop or vacant plot!"
   # TODO: Add descriptionExtra
-  effect: "Zoom to any"
-  grade: 0
+  effect: "Go to square"
+  grade: 1
   sentiment: 1
 - # 6
   defaultEasy: true
   defaultStandard: true
   description: "Venture through space! Zoom over to any venture or suit square!"
   descriptionExtra: "Upon landing on the square, you will draw another venture card."
-  effect: "Zoom to any"
-  grade: 1
+  effect: "Go to square"
+  grade: 3
   sentiment: 1
 - # 7
   defaultEasy: true
   defaultStandard: true
   description: "Special bonus! Your shops all grow by 7%!"
-  effect: "Your shops grow"
+  effect: "Your shops change value"
   grade: 0
   sentiment: 1
 - # 8
@@ -87,7 +87,7 @@
   defaultEasy: true
   defaultStandard: true
   description: "Moneymaking venture! Roll the die and get 11 times the number shown in gold coins from all other players!"
-  effect: "Roll and get from all"
+  effect: "Get gold from all"
   grade: 0
   sentiment: 1
 - # 12
@@ -95,20 +95,20 @@
   defaultStandard: true
   description: "Capital venture! You can invest capital in any of your shops."
   effect: "Invest capital"
-  grade: 1
+  grade: 4
   sentiment: 1
 - # 13
   defaultEasy: false
   defaultStandard: true
   description: "Misadventure! The values of all your shops drop by 13%!"
-  effect: "Your shops drop"
-  grade: 0
+  effect: "Your shops change value"
+  grade: 1
   sentiment: -1
 - # 14
   defaultEasy: true
   defaultStandard: false
   description: "Misadventure! You give everyone 30G each!"
-  effect: "Give everyone gold"
+  effect: "Give gold to all"
   grade: 0
   sentiment: -1
 - # 15
@@ -129,22 +129,22 @@
   defaultEasy: true
   defaultStandard: true
   description: "Special bonus! You receive half of your salary!"
-  effect: "Receive half salary"
-  grade: 0
+  effect: "Salary bonus"
+  grade: 2
   sentiment: 1
 - # 18
   defaultEasy: true
   defaultStandard: true
   description: "Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value."
   effect: "Sell shop back"
-  grade: 1
+  grade: 2
   sentiment: -1
 - # 19
   defaultEasy: true
   defaultStandard: true
   description: "Price hike venture! Your shop prices go up by 30% until your next turn."
-  effect: "Price hike"
-  grade: 1
+  effect: "Shop prices change"
+  grade: 3
   sentiment: 1
 - # 20
   defaultEasy: true
@@ -157,7 +157,7 @@
   defaultEasy: false
   defaultStandard: true
   description: "Random venture! You receive 20 stocks in a district picked at random!"
-  effect: "Receive stocks in random district"
+  effect: "Get stocks"
   grade: 0
   sentiment: 1
 - # 22
@@ -165,7 +165,7 @@
   defaultStandard: true
   description: "Cashback venture! You can sell a shop back to the bank for twice its shop value."
   effect: "Sell shop back"
-  grade: 1
+  grade: 2
   sentiment: 1
 - # 23
   defaultEasy: true
@@ -179,28 +179,28 @@
   defaultStandard: false
   description: "Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value."
   effect: "Sell shop back"
-  grade: 0
+  grade: 1
   sentiment: -1
 - # 25
   defaultEasy: true
   defaultStandard: true
   description: "Misadventure! Your shop prices halve until your next turn!"
-  effect: "Shop prices halve"
-  grade: 0
+  effect: "Shop prices change"
+  grade: 2
   sentiment: -1
 - # 26
   defaultEasy: true
   defaultStandard: true
   description: "Lucky venture! You get a big commission until your next turn!"
   # TODO: Add descriptionExtra
-  effect: "Get big commission"
-  grade: 0
+  effect: "Get commission"
+  grade: 2
   sentiment: 1
 - # 27
   defaultEasy: true
   defaultStandard: true
   description: "Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!"
-  effect: "Receive gold x shops"
+  effect: "Get gold x shops"
   grade: 0
   sentiment: 1
 - # 28
@@ -209,15 +209,15 @@
   description: "Cameo adventure! A goodybag appears!"
   descriptionExtra: "Goodybag pays rent for any shop he lands on."
   effect: "Cameo adventure"
-  grade: 1
+  grade: 2
   sentiment: 0
 - # 29
   defaultEasy: true
   defaultStandard: true
   description: "Freebie! Take a Heart!"
   descriptionExtra: "If you already have a Heart, take 100G instead."
-  effect: "Free suit"
-  grade: 0
+  effect: "Get suits"
+  grade: 1
   sentiment: 1
 - # 30
   defaultEasy: true
@@ -246,7 +246,7 @@
   defaultStandard: true
   description: "Cashback venture! You can sell a shop back to the bank for three times its shop value."
   effect: "Sell shop back"
-  grade: 2
+  grade: 3
   sentiment: 1
 - # 34
   defaultEasy: false
@@ -268,7 +268,7 @@
   defaultStandard: true
   description: "Capital venture! You can pay 100G for the chance to invest in your shops."
   effect: "Invest capital"
-  grade: 0
+  grade: 3
   sentiment: 1
 - # 37
   defaultEasy: false
@@ -281,7 +281,7 @@
   defaultEasy: false
   defaultStandard: true
   description: "Stock venture! You can buy stocks in a district of your choice at 10% above the market value."
-  effect: "Buy stocks in district"
+  effect: "Buy stocks"
   grade: 2
   sentiment: 1
 - # 39
@@ -296,36 +296,37 @@
   defaultStandard: true
   description: "Misadventure! You give away 10% of your ready cash to the player in last place!"
   descriptionExtra: "If you are in last place, this has no effect."
-  effect: "Give to last place"
+  effect: "Give gold to last"
   grade: 0
   sentiment: -1
 - # 41
   defaultEasy: false
   defaultStandard: true
   description: "Misadventure! Stock prices fall by 10% in a district picked at random!"
-  effect: "Random district stocks decrease"
+  effect: "Random stock price change"
   grade: 0
   sentiment: -1
 - # 42
   defaultEasy: false
   defaultStandard: true
   description: "Misadventure! Stock prices fall by 20% in a district picked at random!"
-  effect: "Random district stocks decrease"
-  grade: 1
+  effect: "Random stock price change"
+  grade: 2
   sentiment: -1
 - # 43
   defaultEasy: false
   defaultStandard: true
   description: "Misadventure! You pay an assets tax of two gold coins per unit of stock that you own!"
-  effect: "Pay assets tax"
-  grade: 0
+  effect: "Income tax"
+  grade: 2
   sentiment: -1
 - # 44
   defaultEasy: true
   defaultStandard: false
   description: "Misadventure! Roll the die and pay 44 times the number in gold coins to the player in last place!"
-  effect: "Pay last place"
-  grade: 0
+  descriptionExtra: "If you are in last place, this has no effect."
+  effect: "Give gold to last"
+  grade: 2
   sentiment: -1
 - # 45
   defaultEasy: false
@@ -338,7 +339,7 @@
   defaultEasy: false
   defaultStandard: true
   description: "Misadventure! You drop your wallet and lose 10% of your ready cash!"
-  effect: "Drop wallet"
+  effect: "Income tax"
   grade: 0
   sentiment: -1
 - # 47
@@ -346,8 +347,8 @@
   defaultStandard: false
   description: "Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits."
   descriptionExtra: "You do not get extra gold for any suits you already have."
-  effect: "Roll to get all suits"
-  grade: 0
+  effect: "Get suits"
+  grade: 3
   sentiment: 0
 - # 48
   defaultEasy: false
@@ -388,14 +389,14 @@
   defaultEasy: false
   defaultStandard: true
   description: "Venture through space! Zoom over to the bank!"
-  effect: "Zoom to bank"
+  effect: "Go to square"
   grade: 1
   sentiment: 1
 - # 54
   defaultEasy: false
   defaultStandard: true
   description: "Venture through space! Pay 100G to zoom straight to the bank!"
-  effect: "Zoom to bank"
+  effect: "Go to square"
   grade: 0
   sentiment: 1
 - # 55
@@ -416,29 +417,29 @@
   defaultEasy: true
   defaultStandard: true
   description: "Venture through space! Zoom to any square you like."
-  effect: "Zoom to any"
-  grade: 2
+  effect: "Go to square"
+  grade: 4
   sentiment: 1
 - # 58
   defaultEasy: true
   defaultStandard: false
   description: "Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!"
-  effect: "Zoom to non-venture"
-  grade: 0
+  effect: "Go to square"
+  grade: 1
   sentiment: 1
 - # 59
   defaultEasy: false
   defaultStandard: true
   description: "Stock venture! You can buy stocks in a district of your choice at 10% below the market value."
-  effect: "Buy stocks in district"
+  effect: "Buy stocks"
   grade: 0
   sentiment: 1
 - # 60
   defaultEasy: false
   defaultStandard: true
   description: "Random venture! Stock prices increase by 10% in a district picked at random!"
-  effect: "Random district stocks increase"
-  grade: 0
+  effect: "Random stock price change"
+  grade: 1
   sentiment: 0
 - # 61
   defaultEasy: false
@@ -458,35 +459,35 @@
   defaultEasy: false
   defaultStandard: true
   description: "Random venture! Stock prices increase by 20% in a district picked at random!"
-  effect: "Random district stocks increase"
-  grade: 1
+  effect: "Random stock price change"
+  grade: 3
   sentiment: 0
 - # 64
   defaultEasy: false
   defaultStandard: false
   description: "Random venture! Stock prices increase by 30% in a district picked at random!"
-  effect: "Random district stocks increase"
-  grade: 2
+  effect: "Random stock price change"
+  grade: 4
   sentiment: 0
 - # 65
   defaultEasy: true
   defaultStandard: false
   description: "Forced buyout! You can buy a vacant plot or shop for five times its value, whether someone else owns it or not."
-  effect: "Forced buyout"
-  grade: 0
+  effect: "Buy shop"
+  grade: 2
   sentiment: 1
 - # 66
   defaultEasy: false
   defaultStandard: false
   description: "Special bonus! You receive 10 of the most valuable stocks!"
-  effect: "Receive most valuable stocks"
-  grade: 0
+  effect: "Get stocks"
+  grade: 2
   sentiment: 1
 - # 67
   defaultEasy: false
   defaultStandard: true
   description: "Stock venture! You can buy stocks in a district of your choice."
-  effect: "Buy stocks in district"
+  effect: "Buy stocks"
   grade: 1
   sentiment: 1
 - # 68
@@ -494,7 +495,7 @@
   defaultStandard: false
   description: "Special arcade adventure! You're invited to play Memory Block!"
   effect: "Play arcade games"
-  grade: 0
+  grade: 1
   sentiment: 1
 - # 69
   defaultEasy: false
@@ -507,15 +508,15 @@
   defaultEasy: false
   defaultStandard: true
   description: "Special bonus! You get a sudden promotion and receive a salary! (You lose any suits you have.)"
-  effect: "Sudden promotion"
-  grade: 0
+  effect: "Salary bonus"
+  grade: 3
   sentiment: 1
 - # 71
   defaultEasy: true
   defaultStandard: true
   description: "Capital venture! You can invest up to 200G of the bank's money in your shops."
-  effect: "Invest bank's money"
-  grade: 0
+  effect: "Invest capital"
+  grade: 1
   sentiment: 1
 - # 72
   defaultEasy: true
@@ -528,21 +529,21 @@
   defaultEasy: true
   defaultStandard: true
   description: "Property venture! You can buy any unowned shop or vacant plot."
-  effect: "Buy unowned shop"
+  effect: "Buy shop"
   grade: 2
   sentiment: 1
 - # 74
   defaultEasy: true
   defaultStandard: false
   description: "Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value)."
-  effect: "Forced auction"
-  grade: 0
+  effect: "Sell shop back"
+  grade: 3
   sentiment: -1
 - # 75
   defaultEasy: true
   defaultStandard: true
   description: "Property venture! You can buy any unowned shop or vacant plot for twice its value."
-  effect: "Buy unowned shop"
+  effect: "Buy shop"
   grade: 0
   sentiment: 1
 - # 76
@@ -550,36 +551,36 @@
   defaultStandard: false
   description: "Special arcade adventure! You're invited to play Round the Blocks!"
   effect: "Play arcade games"
-  grade: 1
+  grade: 2
   sentiment: 1
 - # 77
   defaultEasy: false
   defaultStandard: true
   description: "Freebie! Take five of each district's stocks."
-  effect: "Free stocks"
-  grade: 0
+  effect: "Get stocks"
+  grade: 1
   sentiment: 1
 - # 78
   defaultEasy: true
   defaultStandard: true
   description: "Property venture! You can buy any unowned shop or vacant plot for 200G more than its value."
-  effect: "Buy unowned shop"
+  effect: "Buy shop"
   grade: 1
   sentiment: 1
 - # 79
   defaultEasy: true
   defaultStandard: false
   description: "Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not."
-  effect: "Forced buyout"
-  grade: 2
+  effect: "Buy shop"
+  grade: 4
   sentiment: 1
 - # 80
   defaultEasy: true
   defaultStandard: true
   description: "Freebie! Take a Spade!"
   descriptionExtra: "If you already have a Spade, take 100G instead."
-  effect: "Free suit"
-  grade: 0
+  effect: "Get suits"
+  grade: 1
   sentiment: 1
 - # 81
   defaultEasy: true
@@ -593,8 +594,8 @@
   defaultStandard: true
   description: "Freebie! Take a Club!"
   descriptionExtra: "If you already have a Club, take 100G instead."
-  effect: "Free suit"
-  grade: 0
+  effect: "Get suits"
+  grade: 1
   sentiment: 1
 - # 83
   defaultEasy: false
@@ -608,7 +609,7 @@
   defaultStandard: true
   description: "Moneymaking venture! The winning player must pay you 10% of their ready cash!"
   descriptionExtra: "If you are in 1st place, this has no effect."
-  effect: "Winner pays you"
+  effect: "Get gold from 1st"
   grade: 0
   sentiment: 1
 - # 85
@@ -622,8 +623,8 @@
   defaultEasy: true
   defaultStandard: true
   description: "Moneymaking venture! Take 100G from all other players!"
-  effect: "Take gold from all"
-  grade: 0
+  effect: "Get gold from all"
+  grade: 1
   sentiment: 1
 - # 87
   defaultEasy: true
@@ -643,15 +644,16 @@
   defaultEasy: false
   defaultStandard: false
   description: "Freebie! All players take a Suit Yourself card!"
-  effect: "Free Suit Yourself"
+  descriptionExtra: "No-one can own more than 9 Suit Yourself cards."
+  effect: "Get suits"
   grade: 0
   sentiment: 0
 - # 90
   defaultEasy: false
   defaultStandard: false
   description: "Price hike venture! All shop prices go up by 30% until your next turn."
-  effect: "Price hike"
-  grade: 0
+  effect: "Shop prices change"
+  grade: 1
   sentiment: 0
 - # 91
   defaultEasy: false
@@ -659,7 +661,7 @@
   description: "Cameo adventure! A healslime appears!"
   descriptionExtra: "Healslime allows you to get a suit of your choice if you pass it on your turn."
   effect: "Cameo adventure"
-  grade: 2
+  grade: 3
   sentiment: 0
 - # 92
   defaultEasy: false
@@ -667,7 +669,7 @@
   description: "Cameo adventure! Lakitu appears!"
   descriptionExtra: "Lakitu forces any shops they land on to close until their next turn."
   effect: "Cameo adventure"
-  grade: 0
+  grade: 1
   sentiment: 0
 - # 93
   defaultEasy: false
@@ -681,15 +683,15 @@
   defaultStandard: true
   description: "Freebie! Take a Diamond!"
   descriptionExtra: "If you already have a Diamond, take 100G instead."
-  effect: "Free suit"
-  grade: 0
+  effect: "Get suits"
+  grade: 1
   sentiment: 1
 - # 95
   defaultEasy: false
   defaultStandard: false
   description: "Misadventure! You throw an impromptu party. All other players come to your location!"
-  effect: "Impromptu party"
-  grade: 0
+  effect: "Scramble"
+  grade: 1
   sentiment: 1
 - # 96
   defaultEasy: false
@@ -709,50 +711,51 @@
   defaultEasy: true
   defaultStandard: true
   description: "Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not."
-  effect: "Forced buyout"
-  grade: 1
+  effect: "Buy shop"
+  grade: 3
   sentiment: 1
 - # 99
   defaultEasy: false
   defaultStandard: false
   description: "Freebie! What's inside...?"
   descriptionExtra: "Get all four suits! You do not get extra gold for any suits you already have."
-  effect: "Free Suit Yourself"
+  effect: "Get suits"
   grade: 3
   sentiment: 1
 - # 100
   defaultEasy: true
   defaultStandard: true
   description: "Freebie! Take a Suit Yourself card!"
-  effect: "Free Suit Yourself"
+  descriptionExtra: "You cannot own more than 9 Suit Yourself cards."
+  effect: "Get suits"
   grade: 2
   sentiment: 1
 - # 101
   defaultEasy: false
   defaultStandard: false
   description: "Special bonus! Your shops all grow by 21%!"
-  effect: "Your shops grow"
-  grade: 1
+  effect: "Your shops change value"
+  grade: 2
   sentiment: 1
 - # 102
   defaultEasy: true
   defaultStandard: false
   description: "Moneymaking venture! Roll the die and get 33 times the number shown in gold coins from all other players!"
-  effect: "Roll and get from all"
-  grade: 1
+  effect: "Get gold from all"
+  grade: 2
   sentiment: 1
 - # 103
   defaultEasy: false
   defaultStandard: false
   description: "Misadventure! The values of all your shops drop by 25%!"
-  effect: "Your shops drop"
-  grade: 1
+  effect: "Your shops change value"
+  grade: 3
   sentiment: -1
 - # 104
   defaultEasy: false
   defaultStandard: false
   description: "Misadventure! You give everyone 80G each!"
-  effect: "Give everyone gold"
+  effect: "Give gold to all"
   grade: 1
   sentiment: -1
 - # 105
@@ -766,8 +769,9 @@
   defaultEasy: true
   defaultStandard: false
   description: "Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)"
-  effect: "Free Suit Yourself"
-  grade: 2
+  descriptionExtra: "You cannot own more than 9 Suit Yourself cards."
+  effect: "Get suits"
+  grade: 4
   sentiment: 1
 - # 107
   defaultEasy: true
@@ -781,7 +785,7 @@
   defaultStandard: false
   description: "Cashback venture! You can sell a shop back to the bank for four times its shop value."
   effect: "Sell shop back"
-  grade: 3
+  grade: 4
   sentiment: 1
 - # 109
   defaultEasy: false
@@ -794,7 +798,7 @@
   defaultEasy: false
   defaultStandard: false
   description: "Special bonus! You receive 77 times the number of shops you own in gold coins from the bank!"
-  effect: "Receive gold x shops"
+  effect: "Get gold x shops"
   grade: 2
   sentiment: 1
 - # 111
@@ -802,13 +806,13 @@
   defaultStandard: false
   description: "Cashback venture! You can sell a shop back to the bank for 500G more than its shop value."
   effect: "Sell shop back"
-  grade: 0
+  grade: 1
   sentiment: 1
 - # 112
   defaultEasy: false
   defaultStandard: false
   description: "Special bonus! You receive 100 times the number of shops you own in gold coins!"
-  effect: "Receive gold x shops"
+  effect: "Get gold x shops"
   grade: 3
   sentiment: 1
 - # 113
@@ -836,51 +840,54 @@
   defaultEasy: true
   defaultStandard: false
   description: "Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!"
-  effect: "Roll and get from 1st"
-  grade: 1
+  descriptionExtra: "If you are in 1st place, this has no effect."
+  effect: "Get gold from 1st"
+  grade: 3
   sentiment: 1
 - # 117
   defaultEasy: true
   defaultStandard: false
   description: "Adventurous turning point! Everyone gets to choose which way to move on their next go."
   effect: "Choose way to move"
-  grade: 0
+  grade: 2
   sentiment: 0
 - # 118
   defaultEasy: false
   defaultStandard: false
   description: "Lucky venture! You get a really big commission until your next turn!"
   # TODO: Add descriptionExtra
-  effect: "Get big commission"
-  grade: 1
+  effect: "Get commission"
+  grade: 3
   sentiment: 1
 - # 119
   defaultEasy: false
   defaultStandard: false
   description: "Misadventure! You give 20% of your ready cash to the player in last place!"
-  effect: "Give to last place"
+  descriptionExtra: "If you are in last place, this has no effect."
+  effect: "Give gold to last"
   grade: 1
   sentiment: -1
 - # 120
   defaultEasy: false
   defaultStandard: false
   description: "Misadventure! You drop your wallet and lose 20% of your ready cash!"
-  effect: "Drop wallet"
+  effect: "Income tax"
   grade: 1
   sentiment: -1
 - # 121
   defaultEasy: false
   defaultStandard: false
   description: "Capital venture! You can invest up to 400G of the bank's money in your shops."
-  effect: "Invest bank's money"
-  grade: 1
+  effect: "Invest capital"
+  grade: 2
   sentiment: 1
 - # 122
   defaultEasy: false
   defaultStandard: false
   description: "Moneymaking venture! The winning player must pay you 20% of their ready cash!"
-  effect: "Winner pays you"
-  grade: 1
+  descriptionExtra: "If you are in 1st place, this has no effect."
+  effect: "Get gold from 1st"
+  grade: 2
   sentiment: 1
 - # 123
   defaultEasy: false
@@ -916,12 +923,12 @@
   defaultStandard: false
   description: "Special arcade adventure! You're invited to play Round the Blocks and Memory Block!"
   effect: "Play arcade games"
-  grade: 2
+  grade: 3
   sentiment: 1
 - # 128
   defaultEasy: false
   defaultStandard: false
   description: "Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!"
-  effect: "Receive gold x shops"
+  effect: "Get gold x shops"
   grade: 1
   sentiment: 1

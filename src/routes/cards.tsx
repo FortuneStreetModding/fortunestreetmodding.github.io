@@ -37,7 +37,7 @@ export default function (props: RouteSectionProps) {
         <div class="col-3">
           <h2>Gamemode</h2>
           <div class="mb-3">
-            <p>The game difficulty venture cards are found in by default.</p>
+            <p>The game difficulty cards are in by default. If you are using defaults, you don't need to include <code>ventureCards</code> in your board's YAML.</p>
             <select class="form-select" id="difficulty" onChange={() => check_cards()}>
               <option value="any">Any</option>
               <option value="both">Both</option>
@@ -103,6 +103,7 @@ export default function (props: RouteSectionProps) {
                     <p><strong>{index() + 1}</strong></p>
                   </div>
                   <div class="col-8">
+                    <input type="checkbox" id={"card" + (index() + 1).toString() + "selected"} checked={card.defaultStandard} onChange={() => check_selected_cards()}/>
                     <p><strong>{card.description}</strong></p>
                     <Show when={card.descriptionExtra !== null}>
                     <p>{card.descriptionExtra}</p>
@@ -116,7 +117,6 @@ export default function (props: RouteSectionProps) {
                     <Show when={card.effect !== null}>
                     <p>{card.effect} ({card.grade})</p>
                     </Show>
-                    <input type="checkbox" id={"card" + (index() + 1).toString() + "selected"} checked={card.defaultStandard} onChange={() => check_selected_cards()}/>
                   </div>
                 </div>
               </div>
