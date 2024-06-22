@@ -1,5 +1,5 @@
 import { RouteSectionProps } from '@solidjs/router';
-import { For, Match, Show, Switch, createResource } from 'solid-js';
+import { For, Match, Show, Switch, createResource, onMount } from 'solid-js';
 import { getBoardsList } from '~/lib/loadyamlfiles';
 import "./boards.css"
 
@@ -46,7 +46,7 @@ export default function (props: RouteSectionProps) {
               </>
             )}
           </For>
-          <Switch>
+          <Switch >
             <Match when={boardsList.length > 0 && boardsList.length % 3 == 0}>
             <div class="w-100"></div>
             </Match>
