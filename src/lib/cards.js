@@ -1,4 +1,4 @@
-var effectGroups = [
+const effects = [
     "Buy Suit Yourself",
     "Buy stocks in district",
     "Buy unowned shop",
@@ -62,15 +62,15 @@ var effectGroups = [
 export function check_cards() {
     console.log("Checking cards")
     const difficulty = document.getElementById("difficulty");
-    for (let i = 0; i < 128; i++) {
-        const card = document.getElementById("card" + i);
+    for (let i = 1; i <= 128; i++) {
+        const card = document.getElementById("card" + i.toString());
         if (!card) continue;
         card.style.display = "block";
         const cardEasy = card.getAttribute("data-easy") === "true";
         const cardStandard = card.getAttribute("data-standard") === "true";
-        const cardSentiment = parseInt(card.getAttribute("data-effect-sentiment"));
-        const cardPower = parseInt(card.getAttribute("data-effect-group-power"));
-        const cardGroup = card.getAttribute("data-effect-group");
+        const cardSentiment = parseInt(card.getAttribute("data-sentiment"));
+        const cardGrade = parseInt(card.getAttribute("data-grade"));
+        const cardEffect = card.getAttribute("data-effect");
         // Check difficulty
         if (difficulty.value === "both" && (!cardEasy || !cardStandard)) {
             card.style.display = "none";
@@ -86,31 +86,26 @@ export function check_cards() {
             continue;
         }
         // Check sentiment
-        if (!document.getElementById("effectSentimentPositive").checked && cardSentiment === 1) {
+        if (!document.getElementById("sentimentPositive").checked && cardSentiment === 1) {
             card.style.display = "none";
             continue;
-        } else if (!document.getElementById("effectSentimentNeutral").checked && cardSentiment === 0) {
+        } else if (!document.getElementById("sentimentNeutral").checked && cardSentiment === 0) {
             card.style.display = "none";
             continue;
-        } else if (!document.getElementById("effectSentimentNegative").checked && cardSentiment === -1) {
-            card.style.display = "none";
-            continue;
-        }
-        // Check power
-        let powerMin = parseInt(document.getElementById("effectGroupPowerMin").value);
-        let powerMax = parseInt(document.getElementById("effectGroupPowerMax").value);
-        if (powerMax < powerMin) {
-            powerMax = powerMin;
-            document.getElementById("effectGroupPowerMax").value = powerMin;
-        }
-        if (cardPower < powerMin || cardPower > powerMax) {
+        } else if (!document.getElementById("sentimentNegative").checked && cardSentiment === -1) {
             card.style.display = "none";
             continue;
         }
-        // Check effect group
-        // TODO: Fix this
-        for (let j = 0; j < effectGroups.length; j++) {
-            if (cardGroup === effectGroups[j] && !document.getElementById(effectGroups[j]).checked) {
+        // Check grade
+        for (let j = 0; j <= 4; j++) {
+            if (!document.getElementById("grade" + j.toString()).checked && cardGrade === j) {
+                card.style.display = "none";
+                break;
+            }
+        }
+        // Check effect
+        for (let j = 0; j < effects.length; j++) {
+            if (cardEffect === effects[j] && !document.getElementById(effects[j]).checked) {
                 card.style.display = "none";
                 continue;
             }
@@ -118,18 +113,92 @@ export function check_cards() {
     }
 }
 
-export function hide_all_effect_groups() {
-    console.log("Hiding all effect groups")
-    for (let i = 0; i < effectGroups.length; i++) {
-        document.getElementById(effectGroups[i]).checked = false;
+export function hide_all_effects() {
+    console.log("Hiding all effects")
+    for (let i = 0; i < effects.length; i++) {
+        document.getElementById(effects[i]).checked = false;
     }
     check_cards();
 }
 
-export function show_all_effect_groups() {
-    console.log("Showing all effect groups")
-    for (let i = 0; i < effectGroups.length; i++) {
-        document.getElementById(effectGroups[i]).checked = true;
+export function show_all_effects() {
+    console.log("Showing all effects")
+    for (let i = 0; i < effects.length; i++) {
+        document.getElementById(effects[i]).checked = true;
     }
     check_cards();
+}
+
+export function reset_filters() {
+    console.log("Resetting filters")
+    document.getElementById("difficulty").value = "any";
+    for (let j = 0; j <= 4; j++) {
+        document.getElementById("grade" + j.toString()).checked = true;
+    }
+    document.getElementById("sentimentPositive").checked = true;
+    document.getElementById("sentimentNeutral").checked = true;
+    document.getElementById("sentimentNegative").checked = true;
+    show_all_effects();
+}
+
+export function check_selected_cards() {
+    console.log("Checking selected cards")
+    document.getElementById("yaml").style.display = "none";
+    let chosenCards = 0;
+    for (let i = 1; i <= 128; i++) {
+        if (document.getElementById("card" + i.toString() + "selected").checked) {
+            chosenCards++;
+        }
+    }
+    document.getElementById("cardsSelected").textContent = chosenCards.toString() + " cards selected";
+    if (chosenCards === 64) {
+        console.log("Correct number of cards chosen");
+        // Enable button with ID generateYaml
+        document.getElementById("generateYaml").disabled = false;
+    } else {
+        // Disable button with ID generateYaml
+        document.getElementById("generateYaml").disabled = true;
+    }
+    return chosenCards === 64;
+}
+
+export function deselect_all_cards() {
+    console.log("Deselecting all cards")
+    for (let i = 1; i <= 128; i++) {
+        document.getElementById("card" + i.toString() + "selected").checked = false;
+    }
+    check_selected_cards();
+}
+
+export function select_visible_cards() {
+    console.log("Selecting visible cards")
+    for (let i = 1; i <= 128; i++) {
+        console.log(i, document.getElementById("card" + i.toString()).style.display);
+        if (document.getElementById("card" + i.toString()).style.display === "block") {
+            document.getElementById("card" + i.toString() + "selected").checked = true;
+        }
+    }
+    check_selected_cards();
+}
+
+export function generate_yaml() {
+    if (check_selected_cards()) {
+        console.log("Generating YAML")
+        let yaml_string = "ventureCards:";
+        for (let i = 1; i <= 128; i++) {
+            let yaml_selected = "0";
+            if (document.getElementById("card" + i.toString() + "selected").checked) {
+                yaml_selected = "1";
+            }
+            yaml_string = yaml_string + "\n  - " + yaml_selected + "  # " + i;
+        }
+        document.getElementById("generatedYaml").textContent = yaml_string;
+        document.getElementById("yaml").style.display = "block";
+    }
+}
+
+export function copy_yaml_to_clipboard() {
+    console.log("Copying YAML to clipboard")
+    navigator.clipboard.writeText(document.getElementById("generatedYaml").textContent);
+    document.getElementById("copyYaml").innerText = "Copied!";
 }

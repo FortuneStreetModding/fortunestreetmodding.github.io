@@ -19,9 +19,9 @@ export interface VentureCard {
   defaultStandard: boolean;
   description: string;
   descriptionExtra?: string;
-  effectGroup: string;
-  effectGroupPower: number;
-  effectSentiment: number;
+  effect: string;
+  grade: number;
+  sentiment: number;
 }
 
 export async function getBoards(source: any): Promise<YamlDict> {
@@ -92,7 +92,7 @@ export function getVentureCardsSync(): VentureCard[] {
   return parse(yamlContent);
 };
 
-export function getVentureCardGroupsSync(): (string | undefined)[] {
+export function getVentureCardEffectsSync(): (string | undefined)[] {
   "use server";
-  return [...new Set(getVentureCardsSync().map(card => card.effectGroup))].sort();
+  return [...new Set(getVentureCardsSync().map(card => card.effect))].sort();
 }
