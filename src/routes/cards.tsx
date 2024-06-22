@@ -14,6 +14,18 @@ import {
   copy_yaml_to_clipboard
 } from "~/lib/cards";
 
+function sentiment_to_div_class(sentiment: number) {
+  let classes = "card text-center";
+  if (sentiment === 1) {
+    classes += " bg-success";
+  } else if (sentiment === 0) {
+    classes += " bg-secondary";
+  } else if (sentiment === -1) {
+    classes += " bg-danger";
+  }
+  return classes;
+}
+
 export default function (props: RouteSectionProps) {
   const cards = getVentureCardsSync();
   const effects = getVentureCardEffectsSync();
@@ -98,10 +110,11 @@ export default function (props: RouteSectionProps) {
             <For each={cards}>
             {(card, index) => (
             <div class="col" style="display: block;" id={"card" + (index() + 1).toString()} data-easy={card.defaultEasy} data-standard={card.defaultStandard} data-effect={slug(card.effect)} data-grade={card.grade} data-sentiment={card.sentiment}>
-              <div class="card text-center">
+              <div class={sentiment_to_div_class(card.sentiment)}>
                 <div class="row row-cols-2 g-2">
                   <div class="col-4">
                     <p><strong>{index() + 1}</strong></p>
+                    <img src={"/images/card_" + (index() + 1).toString() + ".webp"} alt={"Venture Card " + (index() + 1).toString()} style="max-width: 100%; height: auto;"/>
                   </div>
                   <div class="col-8">
                     <input type="checkbox" id={"card" + (index() + 1).toString() + "selected"} checked={card.defaultStandard} onChange={() => check_selected_cards()}/>
