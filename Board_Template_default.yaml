@@ -1,34 +1,22 @@
----
 name:
   en: BOARD NAME
-  de: REMOVE UNUSED LANGUAGES (en CAN NOT BE DELETED)
-  fr: 
-  it: 
-  jp: 
-  es: 
 desc:
-  en: YOUR DESCRIPTION HERE
-  de: REMOVE UNUSED LANGUAGES (en CAN NOT BE DELETED)
-  fr: _____________________________________________________________________________________THIS IS THE LENGTH LIMIT_____________________________________________________________________
-  it: 
-  jp: 
-  es: 
-ruleSet: Standard OR Easy
-theme: Mario OR DragonQuest
-initialCash: XXXX
-targetAmount: XXXXX
-baseSalary: XXX
-salaryIncrement: XXX
-maxDiceRoll: X
+  en: YOUR BOARD DESCRIPTION HERE. (_______________________________________________________________________THIS IS THE LENGTH LIMIT_____________________________________________________)
+ruleSet: Standard # OR Easy
+theme: Mario # OR DragonQuest
+initialCash: 1000
+targetAmount: 10000
+baseSalary: 100
+salaryIncrement: 50
+maxDiceRoll: 6 # should be between 4 and 9. A 9 is only working fine in boards without doors. With 7 or 8 make sure that players cannot go through multiple doors in a single dice roll.
 frbFiles:
-- FRB FILENAME FOR STATE 1
-- FRB FILENAME FOR STATE 2, CAN REMOVE UNUSED STATES
-- FRB FILENAME FOR STATE 3, CAN REMOVE UNUSED STATES
-- FRB FILENAME FOR STATE 4, CAN REMOVE UNUSED STATES
-- FRB FILENAME FOR STATE 5, CAN REMOVE UNUSED STATES
-- FRB FILENAME FOR STATE 6, CAN REMOVE UNUSED STATES
-background: BACKGROUND NAME
-mapIcon: MAP ICON FILENAME
+  - FRB_FILENAME_FOR_STATE_1
+  - FRB_FILENAME_FOR_STATE_2 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_3 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_4 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_5 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_6 # CAN REMOVE UNUSED STATES
+background: bg001
 music:
   download: # GOOGLE DRIVE DIRECT LINK TO ZIP CONTAINING MUSIC, CAN DELETE THIS TEXT WHILE TESTING
     - https://nikkums.io/cswt/BGM/XXX.music.zip
@@ -36,15 +24,9 @@ music:
 # As an example, extract 1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy from 
 # https://drive.google.com/file/d/1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy/view?usp=sharing
 # Paste in the XXX part of the google link
-# The 5 lines that contain this "#" should be crossed out after the "#".
-  map:
-  - BRSTM.VOLUME FOR STATE 1
-  - BRSTM.VOLUME FOR STATE 2, CAN REMOVE UNUSED STATES
-  - BRSTM.VOLUME FOR STATE 3, CAN REMOVE UNUSED STATES
-  - BRSTM.VOLUME FOR STATE 4, CAN REMOVE UNUSED STATES
-  - BRSTM.VOLUME FOR STATE 5, CAN REMOVE UNUSED STATES
-  - BRSTM.VOLUME FOR STATE 6, CAN REMOVE UNUSED STATES
-  stock: CAN DELETE THIS ENTIRE SECTION IF UNNEEDED
+# The 5 lines that contain this \"#\" should be crossed out after the \"#\".
+  map: mapMusic.50 # the part after the dot is the volume 0-100
+  stock: CAN_DELETE_THIS_ENTIRE_SECTION_IF_UNNEEDED
   ventureCards: 
   auction: 
   targetMet: 
@@ -59,33 +41,21 @@ music:
   forcedBuyout:
   domination:
   bankruptcy:
-  roundTheBlocks: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
+  roundTheBlocks: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
   roundTheBlocksWin: 
   roundTheBlocks777: 
-  memoryBlock: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
-  dartOfGold: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
-  slurpodromeSelect: THE FILE NAME MUST BE PREFIXED WITH A_ OR Arcade_
+  memoryBlock: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
+  dartOfGold: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
+  slurpodromeSelect: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
   slurpodromeStart: 
   slurpodromeRace: 
   slurpodromeWin: 
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
-  opponent2: Alena
-  opponent3: Bianca
+  opponent2: Birdo
+  opponent3: Toad
   clearRank: 2
-#mutators: WHEN USING MUTATOR, DELETE THE LEADING #
-#  rollShopPriceMultiplier: WHEN PAYING, ROLL THE DICE AND PAY THE VALUE MULTIPLIED BY THE NUMBER OF EYES THAT COME UP 
-#    maxRoll: 6 WHEN USING rollShopPriceMultiplier, REMOVE # FROM mutators TO maxRoll
-#  shopPrice: CHANGE SHOP PRICE BASED ON (numerator/denominator) + constant
-#    numerator: 2
-#    denominator: 7
-#    constant: 0 IF shopPrice IS USED, mutators AND # FROM shopPrice TO affectShopRank SHOULD BE DELETED
-#    affectShopRank: true 
-#  stockPrice: CHANGE THE STOCK PRICE BASED ON (numerator/denominator) + constant
-#    numerator: 1
-#    denominator: 1
-#    constant: -2 IF stockPrice IS USED, mutators AND # FROM stockPrice TO constant SHOULD BE DELETED
 changelog:
   - version: 1
     added:
@@ -106,113 +76,40 @@ districtNames:
     - District I
     - District J
     - District K
-    - District L (REMOVE UNUSED LANGUAGES AND DISTRICTS, OR ENTIRE SECTION IF NOT USING. HOWEVER, DO NOT DELETE en)
-  de:
-    - Bezirk A
-    - Bezirk B
-    - Bezirk C
-    - Bezirk D
-    - Bezirk E
-    - Bezirk F
-    - Bezirk G
-    - Bezirk H
-    - Bezirk I
-    - Bezirk J
-    - Bezirk K
-    - Bezirk L
-  fr:
-    - Quartier A
-    - Quartier B
-    - Quartier C
-    - Quartier D
-    - Quartier E
-    - Quartier F
-    - Quartier G
-    - Quartier H
-    - Quartier I
-    - Quartier J
-    - Quartier K
-    - Quartier L
-  it:
-    - Quartiere A
-    - Quartiere B
-    - Quartiere C
-    - Quartiere D
-    - Quartiere E
-    - Quartiere F
-    - Quartiere G
-    - Quartiere H
-    - Quartiere I
-    - Quartiere J
-    - Quartiere K
-    - Quartiere L
-  jp:
-    - エリア A
-    - エリア B
-    - エリア C
-    - エリア D
-    - エリア E
-    - エリア F
-    - エリア G
-    - エリア H
-    - エリア I
-    - エリア J
-    - エリア K
-    - エリア L
-  es:
-    - Distrito A
-    - Distrito B
-    - Distrito C
-    - Distrito D
-    - Distrito E
-    - Distrito F
-    - Distrito G
-    - Distrito H
-    - Distrito I
-    - Distrito J
-    - Distrito K
-    - Distrito L
+    - District L (REMOVE UNUSED LANGUAGES AND DISTRICTS, OR ENTIRE SECTION IF NOT USING)
 shopNames:
   en:
     1: (CUSTOM SHOP NAMES GO HERE. BELOW ARE THE UNUSED SHOP SLOTS, BUT YOU CAN REPLACE ANY SHOP IDS FROM 1-98. REMOVE UNUSED SHOPS OR LANGUAGES)
-    2:
-    3:
-    4:
-    60:
-    63:
-    64:
-    66:
-    67:
-    69:
-    71:
-    73:
-    74:
-    77:
-    78:
-    79:
-    82:
-    83:
-    84:
-    86:
-    87:
-    88:
-    89:
-    91:
-    92:
-    93:
-    94:
-    95:
-    96:
-    97:
-  de:
-    1:
-  fr:
-    1:
-  es:
-    1:
-  it:
-    1:
-ventureCards: #VENTURE CARD IN WHICH 1 APPEARS NEXT TO -, 0 DOES NOT APPEAR. WHEN CHANGING THE VENTURE CARD THAT APPEARS, THE NUMBER OF 1S SHOULD BE 64
+    2: ''
+    3: ''
+    4: ''
+    60: ''
+    63: ''
+    64: ''
+    66: ''
+    67: ''
+    69: ''
+    71: ''
+    73: ''
+    74: ''
+    77: ''
+    78: ''
+    79: ''
+    82: ''
+    83: ''
+    84: ''
+    86: ''
+    87: ''
+    88: ''
+    89: ''
+    91: ''
+    92: ''
+    93: ''
+    94: ''
+    95: ''
+    96: ''
+    97: ''
+ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
   - 1  #   3 Venture through space! Zoom over to any non-venture, non-suit square you like!
@@ -341,4 +238,3 @@ ventureCards: #VENTURE CARD IN WHICH 1 APPEARS NEXT TO -, 0 DOES NOT APPEAR. WHE
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

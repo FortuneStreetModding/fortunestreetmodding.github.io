@@ -24,23 +24,24 @@ export interface VentureCard {
   sentiment: number;
 }
 
-export async function getBoards(source: any): Promise<YamlDict> {
+export function getYaml(filePath: string): {} {
   "use server";
-  const yamlDict: YamlDict = {};
+  const yamlContent = readFileSync(filePath, 'utf8');
+  const yamlData = parse(yamlContent);
+  return yamlData;
+}
 
-  const files = readdirSync("./_maps", { recursive: true, withFileTypes: true });
+export async function getYamlStr(filePath: string): Promise<string> {
+  "use server";
+  const yamlContent = readFileSync(filePath, 'utf8');
+  return yamlContent;
+}
 
-  files.forEach((file) => {
-    if (file.name.endsWith('.yaml') || file.name.endsWith('.yml')) {
-      const filePath = `./${file.parentPath}/${file.name}`;
-      const yamlContent = readFileSync(filePath, 'utf8');
-      const yamlData = parse(yamlContent);
-      const key = file.name.replace(/\.(yaml|yml)$/, '');
-      yamlDict[key] = yamlData;
-    }
-  });
-  return yamlDict;
-};
+export function getYamlStrSync(filePath: string): string {
+  "use server";
+  const yamlContent = readFileSync(filePath, 'utf8');
+  return yamlContent;
+}
 
 export function getBoardsSync(): YamlDict {
   "use server";

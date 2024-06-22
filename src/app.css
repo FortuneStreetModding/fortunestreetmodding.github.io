@@ -23,3 +23,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 :root {
   scroll-behavior: auto !important;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
