@@ -1,0 +1,122 @@
+---
+import Layout from '~/layouts/layout.astro';
+import "./editor.css"
+---
+<Layout title="Venture Cards">
+  <div class="row p-3" style="max-width: 600px">
+    <label for="preset" class="col-sm-2 col-form-label">Preset</label>
+    <div class="col-sm-10">
+      <select class="form-select" id="presetselect">
+        <option value="file:///simple.yaml">Simple</option>
+        <option value="file:///default.yaml" selected>Default</option>
+        <option value="file:///full.yaml">Full</option>
+      </select>
+    </div>
+  </div>
+  <div style="flex: 1;">
+    <div id="yaml-editor" style="width: 100%; height: 100%;"></div>
+  </div>
+  <div style="height: 150px; overflow-y:scroll; ">
+    <div id="problems" style="width: 100%; height: 100%;"></div>
+  </div>
+</Layout>
+<script>
+  import * as monaco from 'monaco-editor'
+  import { configureMonacoYaml } from 'monaco-yaml'
+  import YamlWorker from './editor.worker.js?worker'
+
+  window.MonacoEnvironment = {
+    getWorker(moduleId, label) {
+      switch (label) {
+        case 'yaml':
+          return new YamlWorker()
+        default:
+          throw new Error(`Unknown label ${label}`)
+      }
+    }
+  }
+
+  const response = await fetch('/schema/mapdescriptor.json');
+  const mapDescriptorSchema = await response.json();
+  configureMonacoYaml(monaco, {
+    schemas: [
+        {
+          uri: 'http://fortunestreetmodding.github.io/schema/mapdescriptor.json',
+          fileMatch: ['*'],
+          schema: mapDescriptorSchema,
+        }
+    ],
+  })
+
+  const yamlMinimalUri = monaco.Uri.parse('file:///simple.yaml');
+  let mininmalModel = monaco.editor.getModel(yamlMinimalUri);
+  if (!mininmalModel) {
+    const response = await fetch('/templates/Board_Template_simple.yaml');
+    const data = await response.text();
+    mininmalModel = monaco.editor.createModel(data, 'yaml', yamlMinimalUri);
+  }
+  const yamlDefaultUri = monaco.Uri.parse('file:///default.yaml');
+  let defaultModel = monaco.editor.getModel(yamlDefaultUri);
+  if (!defaultModel) {
+    const response = await fetch('/templates/Board_Template_default.yaml');
+    const data = await response.text();
+    defaultModel = monaco.editor.createModel(data, 'yaml', yamlDefaultUri);
+  }
+  const yamlFullUri = monaco.Uri.parse('file:///full.yaml');
+  let fullModel = monaco.editor.getModel(yamlFullUri);
+  if (!fullModel) {
+    const response = await fetch('/templates/Board_Template_full.yaml');
+    const data = await response.text();
+    fullModel = monaco.editor.createModel(data, 'yaml', yamlFullUri);
+  }
+
+  const editor = monaco.editor.create(document.getElementById('yaml-editor')!, {
+    automaticLayout: true,
+    model: defaultModel,
+    theme: "vs-dark",
+    tabSize: 2,
+    formatOnType: true
+  });
+
+  const problemHandler = ([resource]: any) => {
+    const problems = document.getElementById('problems')!
+    // @ts-ignore
+    const markers = monaco.editor.getModelMarkers({ resource })
+    while (problems.lastChild) {
+      problems.lastChild.remove()
+    }
+    for (const marker of markers) {
+      // marker.severity 1 : hint
+      if (marker.severity === 1) {
+        continue
+      }
+      const wrapper = document.createElement('div')
+      wrapper.setAttribute('role', 'button')
+      const codicon = document.createElement('div')
+      const text = document.createElement('div')
+      wrapper.classList.add('problem')
+      // marker.severity 4 : warning
+      codicon.classList.add(
+        'codicon',
+        marker.severity === 4 ? 'codicon-warning' : 'codicon-error'
+      )
+      text.classList.add('problem-text')
+      text.textContent = marker.message
+      wrapper.append(codicon, text)
+      wrapper.addEventListener('click', () => {
+        editor.setPosition({ lineNumber: marker.startLineNumber, column: marker.startColumn })
+        editor.focus()
+      })
+      problems.append(wrapper)
+    }
+  }
+  monaco.editor.onDidChangeMarkers(problemHandler);
+
+  const presetselect = document.getElementById('presetselect') as HTMLSelectElement;
+  presetselect.addEventListener('change', (event) => {
+    const uri = monaco.Uri.parse(presetselect.value);
+    editor.setModel(monaco.editor.getModel(uri));
+    problemHandler([uri])
+  })
+  configureMonacoYaml(monaco, {}); 
+</script>

@@ -10,6 +10,6 @@ This repository doubles as the way for users to submit new custom maps and backg
 2. Navigate to the location of the cloned repository and execute the following commands:
     - `bun install`
     - `bun run dev`
-3. Open a web browser and navigate to `http://localhost:3000`.
+3. Open a web browser and navigate to `http://localhost:4321`.
 
 ## [License](LICENSE)

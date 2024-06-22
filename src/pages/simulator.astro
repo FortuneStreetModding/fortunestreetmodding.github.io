@@ -1,0 +1,589 @@
+---
+import Layout from '~/layouts/layout.astro';
+import './simulator.css';
+---
+<script>
+  import * as t from "./simulator";
+  declare global { var simulator: typeof t; }
+  globalThis.simulator = t;
+  // run setup() function to init the simulator.js
+  simulator.setup()
+</script>
+<Layout title="District Simulator">
+  <section class="jumbotron text-center">
+    <div class="container">
+      <div class="d-flex flex-row-reverse bd-highlight">
+        <div class="alert alert-dark" aria-label="This only affects districts with 3 or less shops" data-balloon-pos="up" data-balloon-blunt>
+          <label for="tables-group" class="form-label">Use Multiplier Table from</label>
+          <div class="btn-group" role="group" id="tables-group" aria-label="Basic example">
+            <input type="radio" class="btn-check" name="gametype" id="gametype_csmm" value="csmm" autocomplete="off" onclick="simulator.set_csmm()" checked />
+            <label class="btn btn-outline-primary" for="gametype_csmm">CSMM</label>
+            <input type="radio" class="btn-check" name="gametype" id="gametype_vanilla" value="vanilla" autocomplete="off" onclick="simulator.set_vanilla()" />
+            <label class="btn btn-outline-primary" for="gametype_vanilla">Vanilla</label>
+          </div>
+        </div>
+      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop1_value" oninput="simulator.recalc()" placeholder="Value" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop2_value" oninput="simulator.recalc()" placeholder="Value" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop3_value" oninput="simulator.recalc()" placeholder="Value" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop4_value" oninput="simulator.recalc()" placeholder="Value" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop5_value" oninput="simulator.recalc()" placeholder="Value" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop6_value" oninput="simulator.recalc()" placeholder="Value" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop7_value" oninput="simulator.recalc()" placeholder="Value" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop8_value" oninput="simulator.recalc()" placeholder="Value" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop1_price" oninput="simulator.recalc()" placeholder="Price" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop2_price" oninput="simulator.recalc()" placeholder="Price" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop3_price" oninput="simulator.recalc()" placeholder="Price" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop4_price" oninput="simulator.recalc()" placeholder="Price" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop5_price" oninput="simulator.recalc()" placeholder="Price" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop6_price" oninput="simulator.recalc()" placeholder="Price" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop7_price" oninput="simulator.recalc()" placeholder="Price" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+            <td class="input-box">
+              <div class="input-group">
+                <input type="text" class="form-control" id="shop8_price" oninput="simulator.recalc()" placeholder="Price" /><span
+                  class="input-group-text alert-secondary">g</span
+                >
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="ownership">
+              <input type="radio" class="btn-check" name="btnradio0" id="btnradio0-0" autocomplete="off" onclick="simulator.set_owner(0, -1)" checked />
+              <label class="btn btn-outline-secondary" for="btnradio0-0">Unowned</label>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio0" id="btnradio0-1" autocomplete="off" onclick="simulator.set_owner(0, 0)" />
+                <label class="btn btn-outline-danger" for="btnradio0-1">1</label>
+                <input type="radio" class="btn-check" name="btnradio0" id="btnradio0-2" autocomplete="off" onclick="simulator.set_owner(0, 1)" />
+                <label class="btn btn-outline-success" for="btnradio0-2">2</label>
+                <input type="radio" class="btn-check" name="btnradio0" id="btnradio0-3" autocomplete="off" onclick="simulator.set_owner(0, 2)" />
+                <label class="btn btn-outline-primary" for="btnradio0-3">3</label>
+                <input type="radio" class="btn-check" name="btnradio0" id="btnradio0-4" autocomplete="off" onclick="simulator.set_owner(0, 3)" />
+                <label class="btn btn-outline-warning" for="btnradio0-4">4</label>
+              </div>
+            </td>
+            <td class="ownership">
+              <input type="radio" class="btn-check" name="btnradio1" id="btnradio1-0" autocomplete="off" onclick="simulator.set_owner(1, -1)" checked />
+              <label class="btn btn-outline-secondary" for="btnradio1-0">Unowned</label>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio1" id="btnradio1-1" autocomplete="off" onclick="simulator.set_owner(1, 0)" />
+                <label class="btn btn-outline-danger" for="btnradio1-1">1</label>
+                <input type="radio" class="btn-check" name="btnradio1" id="btnradio1-2" autocomplete="off" onclick="simulator.set_owner(1, 1)" />
+                <label class="btn btn-outline-success" for="btnradio1-2">2</label>
+                <input type="radio" class="btn-check" name="btnradio1" id="btnradio1-3" autocomplete="off" onclick="simulator.set_owner(1, 2)" />
+                <label class="btn btn-outline-primary" for="btnradio1-3">3</label>
+                <input type="radio" class="btn-check" name="btnradio1" id="btnradio1-4" autocomplete="off" onclick="simulator.set_owner(1, 3)" />
+                <label class="btn btn-outline-warning" for="btnradio1-4">4</label>
+              </div>
+            </td>
+            <td class="ownership">
+              <input type="radio" class="btn-check" name="btnradio2" id="btnradio2-0" autocomplete="off" onclick="simulator.set_owner(2, -1)" checked />
+              <label class="btn btn-outline-secondary" for="btnradio2-0">Unowned</label>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio2" id="btnradio2-1" autocomplete="off" onclick="simulator.set_owner(2, 0)" />
+                <label class="btn btn-outline-danger" for="btnradio2-1">1</label>
+                <input type="radio" class="btn-check" name="btnradio2" id="btnradio2-2" autocomplete="off" onclick="simulator.set_owner(2, 1)" />
+                <label class="btn btn-outline-success" for="btnradio2-2">2</label>
+                <input type="radio" class="btn-check" name="btnradio2" id="btnradio2-3" autocomplete="off" onclick="simulator.set_owner(2, 2)" />
+                <label class="btn btn-outline-primary" for="btnradio2-3">3</label>
+                <input type="radio" class="btn-check" name="btnradio2" id="btnradio2-4" autocomplete="off" onclick="simulator.set_owner(2, 3)" />
+                <label class="btn btn-outline-warning" for="btnradio2-4">4</label>
+              </div>
+            </td>
+            <td class="ownership">
+              <input type="radio" class="btn-check" name="btnradio3" id="btnradio3-0" autocomplete="off" onclick="simulator.set_owner(3, -1)" checked />
+              <label class="btn btn-outline-secondary" for="btnradio3-0">Unowned</label>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio3" id="btnradio3-1" autocomplete="off" onclick="simulator.set_owner(3, 0)" />
+                <label class="btn btn-outline-danger" for="btnradio3-1">1</label>
+                <input type="radio" class="btn-check" name="btnradio3" id="btnradio3-2" autocomplete="off" onclick="simulator.set_owner(3, 1)" />
+                <label class="btn btn-outline-success" for="btnradio3-2">2</label>
+                <input type="radio" class="btn-check" name="btnradio3" id="btnradio3-3" autocomplete="off" onclick="simulator.set_owner(3, 2)" />
+                <label class="btn btn-outline-primary" for="btnradio3-3">3</label>
+                <input type="radio" class="btn-check" name="btnradio3" id="btnradio3-4" autocomplete="off" onclick="simulator.set_owner(3, 3)" />
+                <label class="btn btn-outline-warning" for="btnradio3-4">4</label>
+              </div>
+            </td>
+            <td class="ownership">
+              <input type="radio" class="btn-check" name="btnradio4" id="btnradio4-0" autocomplete="off" onclick="simulator.set_owner(4, -1)" checked />
+              <label class="btn btn-outline-secondary" for="btnradio4-0">Unowned</label>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio4" id="btnradio4-1" autocomplete="off" onclick="simulator.set_owner(4, 0)" />
+                <label class="btn btn-outline-danger" for="btnradio4-1">1</label>
+                <input type="radio" class="btn-check" name="btnradio4" id="btnradio4-2" autocomplete="off" onclick="simulator.set_owner(4, 1)" />
+                <label class="btn btn-outline-success" for="btnradio4-2">2</label>
+                <input type="radio" class="btn-check" name="btnradio4" id="btnradio4-3" autocomplete="off" onclick="simulator.set_owner(4, 2)" />
+                <label class="btn btn-outline-primary" for="btnradio4-3">3</label>
+                <input type="radio" class="btn-check" name="btnradio4" id="btnradio4-4" autocomplete="off" onclick="simulator.set_owner(4, 3)" />
+                <label class="btn btn-outline-warning" for="btnradio4-4">4</label>
+              </div>
+            </td>
+            <td class="ownership">
+              <input type="radio" class="btn-check" name="btnradio5" id="btnradio5-0" autocomplete="off" onclick="simulator.set_owner(5, -1)" checked />
+              <label class="btn btn-outline-secondary" for="btnradio5-0">Unowned</label>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio5" id="btnradio5-1" autocomplete="off" onclick="simulator.set_owner(5, 0)" />
+                <label class="btn btn-outline-danger" for="btnradio5-1">1</label>
+                <input type="radio" class="btn-check" name="btnradio5" id="btnradio5-2" autocomplete="off" onclick="simulator.set_owner(5, 1)" />
+                <label class="btn btn-outline-success" for="btnradio5-2">2</label>
+                <input type="radio" class="btn-check" name="btnradio5" id="btnradio5-3" autocomplete="off" onclick="simulator.set_owner(5, 2)" />
+                <label class="btn btn-outline-primary" for="btnradio5-3">3</label>
+                <input type="radio" class="btn-check" name="btnradio5" id="btnradio5-4" autocomplete="off" onclick="simulator.set_owner(5, 3)" />
+                <label class="btn btn-outline-warning" for="btnradio5-4">4</label>
+              </div>
+            </td>
+            <td class="ownership">
+              <input type="radio" class="btn-check" name="btnradio6" id="btnradio6-0" autocomplete="off" onclick="simulator.set_owner(6, -1)" checked />
+              <label class="btn btn-outline-secondary" for="btnradio6-0">Unowned</label>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio6" id="btnradio6-1" autocomplete="off" onclick="simulator.set_owner(6, 0)" />
+                <label class="btn btn-outline-danger" for="btnradio6-1">1</label>
+                <input type="radio" class="btn-check" name="btnradio6" id="btnradio6-2" autocomplete="off" onclick="simulator.set_owner(6, 1)" />
+                <label class="btn btn-outline-success" for="btnradio6-2">2</label>
+                <input type="radio" class="btn-check" name="btnradio6" id="btnradio6-3" autocomplete="off" onclick="simulator.set_owner(6, 2)" />
+                <label class="btn btn-outline-primary" for="btnradio6-3">3</label>
+                <input type="radio" class="btn-check" name="btnradio6" id="btnradio6-4" autocomplete="off" onclick="simulator.set_owner(6, 3)" />
+                <label class="btn btn-outline-warning" for="btnradio6-4">4</label>
+              </div>
+            </td>
+            <td class="ownership">
+              <input type="radio" class="btn-check" name="btnradio7" id="btnradio7-0" autocomplete="off" onclick="simulator.set_owner(7, -1)" checked />
+              <label class="btn btn-outline-secondary" for="btnradio7-0">Unowned</label>
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio7" id="btnradio7-1" autocomplete="off" onclick="simulator.set_owner(7, 0)" />
+                <label class="btn btn-outline-danger" for="btnradio7-1">1</label>
+                <input type="radio" class="btn-check" name="btnradio7" id="btnradio7-2" autocomplete="off" onclick="simulator.set_owner(7, 1)" />
+                <label class="btn btn-outline-success" for="btnradio7-2">2</label>
+                <input type="radio" class="btn-check" name="btnradio7" id="btnradio7-3" autocomplete="off" onclick="simulator.set_owner(7, 2)" />
+                <label class="btn btn-outline-primary" for="btnradio7-3">3</label>
+                <input type="radio" class="btn-check" name="btnradio7" id="btnradio7-4" autocomplete="off" onclick="simulator.set_owner(7, 3)" />
+                <label class="btn btn-outline-warning" for="btnradio7-4">4</label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="info-box">
+              <div id="shop1_info" class="unowned">
+                <div class="card h-100">
+                  <div class="card-img"><img src="/assets/images/shop_1.png" id="shop1_info_img" class="unowned" alt="shop_1" /></div>
+                  <div class="card-img-overlay">
+                    <div class="i-value">
+                      Shop value <span id="shop1_info_value">280</span>g
+                    </div>
+                    <div class="i-price">
+                      Shop price <span id="shop1_info_price">49</span>g
+                    </div>
+                    <div class="i-maxcap">
+                      Max capital <span id="shop1_info_maxcap">0</span>g
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="info-box">
+              <div id="shop2_info" class="unowned">
+                <div class="card h-100">
+                  <div class="card-img"><img src="/assets/images/shop_1.png" id="shop2_info_img" class="unowned" alt="shop_1" /></div>
+                  <div class="card-img-overlay">
+                    <div class="i-value">
+                      Shop value <span id="shop2_info_value">240</span>g
+                    </div>
+                    <div class="i-price">
+                      Shop price <span id="shop2_info_price">41</span>g
+                    </div>
+                    <div class="i-maxcap">
+                      Max capital <span id="shop2_info_maxcap">0</span>g
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="info-box">
+              <div id="shop3_info" class="unowned">
+                <div class="card h-100">
+                  <div class="card-img"><img src="/assets/images/shop_1.png" id="shop3_info_img" class="unowned" alt="shop_1" /></div>
+                  <div class="card-img-overlay">
+                    <div class="i-value">
+                      Shop value <span id="shop3_info_value">200</span>g
+                    </div>
+                    <div class="i-price">
+                      Shop price <span id="shop3_info_price">35</span>g
+                    </div>
+                    <div class="i-maxcap">
+                      Max capital <span id="shop3_info_maxcap">0</span>g
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="info-box">
+              <div id="shop4_info" class="unowned">
+                <div class="card h-100">
+                  <div class="card-img"><img src="/assets/images/shop_2.png" id="shop4_info_img" class="unowned" alt="shop_2" /></div>
+                  <div class="card-img-overlay">
+                    <div class="i-value">
+                      Shop value <span id="shop4_info_value">290</span>g
+                    </div>
+                    <div class="i-price">
+                      Shop price <span id="shop4_info_price">50</span>g
+                    </div>
+                    <div class="i-maxcap">
+                      Max capital <span id="shop4_info_maxcap">0</span>g
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="info-box">
+              <div id="shop5_info" class="hidden">
+                <div class="card h-100">
+                  <div class="card-img"><img src="/assets/images/shop_5.png" id="shop5_info_img" alt="shop_5" /></div>
+                  <div class="card-img-overlay">
+                    <div class="i-value">
+                      Shop value <span id="shop5_info_value">210</span>g
+                    </div>
+                    <div class="i-price">
+                      Shop price <span id="shop5_info_price">36</span>g
+                    </div>
+                    <div class="i-maxcap">
+                      Max capital <span id="shop5_info_maxcap">0</span>g
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="info-box">
+              <div id="shop6_info" class="hidden">
+                <div class="card h-100">
+                  <div class="card-img"><img src="/assets/images/shop_6.png" id="shop6_info_img" alt="shop_6" /></div>
+                  <div class="card-img-overlay">
+                    <div class="i-value">
+                      Shop value <span id="shop6_info_value">180</span>g
+                    </div>
+                    <div class="i-price">
+                      Shop price <span id="shop6_info_price">26</span>g
+                    </div>
+                    <div class="i-maxcap">
+                      Max capital <span id="shop6_info_maxcap">0</span>g
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="info-box">
+              <div id="shop7_info" class="hidden">
+                <div class="card h-100">
+                  <div class="card-img"><img src="/assets/images/shop_7.png" id="shop7_info_img" alt="shop_7" /></div>
+                  <div class="card-img-overlay">
+                    <div class="i-value">
+                      Shop value <span id="shop7_info_value">100</span>g
+                    </div>
+                    <div class="i-price">
+                      Shop price <span id="shop7_info_price">10</span>g
+                    </div>
+                    <div class="i-maxcap">
+                      Max capital <span id="shop7_info_maxcap">0</span>g
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="info-box">
+              <div id="shop8_info" class="hidden">
+                <div class="card h-100">
+                  <div class="card-img"><img src="/assets/images/shop_1.png" id="shop8_info_img" alt="shop_1" /></div>
+                  <div class="card-img-overlay">
+                    <div class="i-value">
+                      Shop value <span id="shop8_info_value">100</span>g
+                    </div>
+                    <div class="i-price">
+                      Shop price <span id="shop8_info_price">10</span>g
+                    </div>
+                    <div class="i-maxcap">
+                      Max capital <span id="shop8_info_maxcap">0</span>g
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="invest-box">
+              <div id="shop1_bought" class="hidden">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="shop1_invest" maxlength={3} /><input
+                    class="btn btn-secondary"
+                    type="button"
+                    value="Invest"
+                    onclick="simulator.invest(0)"
+                  />
+                </div>
+              </div>
+            </td>
+            <td class="invest-box">
+              <div id="shop2_bought" class="hidden">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="shop2_invest" maxlength={3} /><input
+                    class="btn btn-secondary"
+                    type="button"
+                    value="Invest"
+                    onclick="simulator.invest(1)"
+                  />
+                </div>
+              </div>
+            </td>
+            <td class="invest-box">
+              <div id="shop3_bought" class="hidden">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="shop3_invest" maxlength={3} /><input
+                    class="btn btn-secondary"
+                    type="button"
+                    value="Invest"
+                    onclick="simulator.invest(2)"
+                  />
+                </div>
+              </div>
+            </td>
+            <td class="invest-box">
+              <div id="shop4_bought" class="hidden">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="shop4_invest" maxlength={3} /><input
+                    class="btn btn-secondary"
+                    type="button"
+                    value="Invest"
+                    onclick="simulator.invest(3)"
+                  />
+                </div>
+              </div>
+            </td>
+            <td class="invest-box">
+              <div id="shop5_bought" class="hidden">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="shop5_invest" maxlength={3} /><input
+                    class="btn btn-secondary"
+                    type="button"
+                    value="Invest"
+                    onclick="simulator.invest(4)"
+                  />
+                </div>
+              </div>
+            </td>
+            <td class="invest-box">
+              <div id="shop6_bought" class="hidden">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="shop6_invest" maxlength={3} /><input
+                    class="btn btn-secondary"
+                    type="button"
+                    value="Invest"
+                    onclick="simulator.invest(5)"
+                  />
+                </div>
+              </div>
+            </td>
+            <td class="invest-box">
+              <div id="shop7_bought" class="hidden">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="shop7_invest" maxlength={3} /><input
+                    class="btn btn-secondary"
+                    type="button"
+                    value="Invest"
+                    onclick="simulator.invest(6)"
+                  />
+                </div>
+              </div>
+            </td>
+            <td class="invest-box">
+              <div id="shop8_bought" class="hidden">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="shop8_invest" maxlength={3} /><input
+                    class="btn btn-secondary"
+                    type="button"
+                    value="Invest"
+                    onclick="simulator.invest(7)"
+                  />
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="stock-price alert alert-secondary">
+        Stock prices for the district are currently <span id="stocks">10</span>g.
+      </div><br />
+      <br />
+    </div>
+  </section>
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h3 class="jumbotron-heading">Random district creation</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td style={{ 'text-align': 'left' }}>
+              <div>
+                <label for="shop-values" class="form-label">Shop values:</label>
+                <div class="input-group" id="shop-values">
+                  <span class="input-group-text alert-secondary">min</span><input
+                    style={{ 'text-align': 'right', width: '100px' }}
+                    class="form-control"
+                    type="text"
+                    id="r-vmin"
+                    value={90}
+                    maxlength={4}
+                  /><span class="input-group-text alert-secondary">/</span><input
+                    class="form-control"
+                    style={{ width: '100px' }}
+                    type="text"
+                    id="r-vmax"
+                    value={550}
+                    maxlength={4}
+                  /><span class="input-group-text alert-secondary">max</span>
+                </div>
+              </div>
+              <div>
+                <label for="number-of-shops" class="form-label">Number of shops:</label>
+                <div class="input-group" id="number-of-shops">
+                  <span class="input-group-text alert-secondary">min</span><input
+                    style={{ 'text-align': 'right', width: '100px' }}
+                    class="form-control"
+                    type="text"
+                    id="r-smin"
+                    value={4}
+                    maxlength={1}
+                  /><span class="input-group-text alert-secondary">/</span><input
+                    class="form-control"
+                    style={{ width: '100px' }}
+                    type="text"
+                    id="r-smax"
+                    value={6}
+                    maxlength={1}
+                  /><span class="input-group-text alert-secondary">max</span>
+                </div>
+              </div>
+              <div>
+                <label for="target-stock-value" class="form-label">Target stock value:</label>
+                <div class="input-group" id="target-stock-value">
+                  <input class="form-control" style={{ 'text-align': 'right', width: '100px' }} type="text" id="r-target" value={10} maxlength={2} /><span
+                    class="input-group-text alert-secondary">g</span
+                  >
+                </div>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group-vertical" role="group" aria-label="Basic radio toggle button group">
+                <div>
+                  <label><input type="radio" class="form-check-input" name="pri" value={0} id="r-pnorm" checked /> Normal shop prices</label>
+                </div>
+                <div>
+                  <label><input type="radio" class="form-check-input" name="pri" value={-1} id="r-plow" /> Bias lower prices</label>
+                </div>
+                <div>
+                  <label><input type="radio" class="form-check-input" name="pri" value={1} id="r-phi" /> Bias higher prices</label>
+                </div>
+              </div>
+            </td>
+            <td>
+              <div>
+                <label><input type="checkbox" class="form-check-input" id="r-dupes" /> Allow duplicates</label>
+              </div><input type="button" class="btn btn-primary" value="Randomize" onclick="simulator.randomize()" />
+            </td>
+          </tr>
+        </tbody>
+      </table><span style={{ color: 'rgb(208, 0, 0)' }} id="r-error"></span>
+    </div>
+  </section>
+</Layout>
