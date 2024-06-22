@@ -60,6 +60,16 @@ var maxcap_table_csmm = [
     0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,0x1000,     0,     0,
     0x180, 0x200, 0x400, 0xA00, 0xC00, 0xE00,0x1000,0x1300,     0
 ];
+var maxcap_table = maxcap_table_csmm;
+var price_rank_table = [
+    [0, 1],
+    [50, 2],
+    [100, 3],
+    [300, 4],
+    [1000, 5],
+    [3000, 6],
+    [5000, 7],
+];
 var district = {};
 function get_table_entry(owner) {
     if (owner < 0) return district.numshops * 9;
