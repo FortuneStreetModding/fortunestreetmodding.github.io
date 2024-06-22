@@ -1,6 +1,7 @@
 import { RouteSectionProps } from "@solidjs/router";
 import { For, Show } from "solid-js";
 import { getVentureCardsSync, getVentureCardEffectsSync } from "~/lib/loadyamlfiles";
+import slug from "slug";
 import {
   check_cards,
   hide_all_effects,
@@ -84,8 +85,8 @@ export default function (props: RouteSectionProps) {
             <Show when={effect !== null}>
             <div class="form-check">
               {/* TODO: Fix these checkboxes not firing their onChange outputs */}
-              <input type="checkbox" class="form-check-input" checked id={effect} onChange={() => check_cards()}/>
-              <label class="form-check-label" for={effect}>{effect}</label>
+              <input type="checkbox" class="form-check-input" checked id={slug(effect!)} onChange={() => check_cards()}/>
+              <label class="form-check-label" for={slug(effect!)}>{effect}</label>
             </div>
             </Show>
             )}
@@ -96,7 +97,7 @@ export default function (props: RouteSectionProps) {
           <div class="row row-cols-2 g-2">
             <For each={cards}>
             {(card, index) => (
-            <div class="col" style="display: block;" id={"card" + (index() + 1).toString()} data-easy={card.defaultEasy} data-standard={card.defaultStandard} data-effect={card.effect} data-grade={card.grade} data-sentiment={card.sentiment}>
+            <div class="col" style="display: block;" id={"card" + (index() + 1).toString()} data-easy={card.defaultEasy} data-standard={card.defaultStandard} data-effect={slug(card.effect)} data-grade={card.grade} data-sentiment={card.sentiment}>
               <div class="card text-center">
                 <div class="row row-cols-2 g-2">
                   <div class="col-4">

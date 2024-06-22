@@ -1,50 +1,54 @@
-// TODO: Reassign effects and grades
-const effects = [
-    "Buy Suit Yourself",  // 2
-    "Buy stocks",  // 3
-    "Buy shop",  // 6 - Grades finalised
-    "Cameo adventure",  // 3 - Grades finalised
-    "Choose way to move",  // 2 - Grades finalised
-    "Expand one shop",  // 4
-    "Get commission",  // 2 - Grades finalised
-    "Get gold from 1st",  // 4
-    "Get gold from all",  // 3
-    "Get gold x level",  // 3
-    "Get gold x shops",  // 4
-    "Get stocks",  // 3
-    "Get suits",  // 9 - Consider re-assigning amongst "Buy Suit Yourself"
-    "Give gold to all",  // 2
-    "Give gold to last",  // 3
-    "Go to square",  // 7 - Grades finalised
-    "Income tax",  // 3
-    "Invest capital",  // 4 - Grades finalised
-    "Move forward",  // 3
-    "Other players movement",  // 3
-    "Play arcade games",  // 3 - Grades finalised
-    "Shop prices change",  // 3
-    "Random district shops drop",  // 2
-    "Random stock price change",  // 5 - Grades finalised
-    "Roll after shop price change",  // 4
-    "Roll and expand shops",  // 1
-    "Roll and get from bank",  // 2
-    "Roll and move forward",  // 4
-    "Roll random to close shops",  // 1
-    "Roll random to expand shops",  // 2
-    "Roll random to take or pay",  // 1
-    "Roll random to warp",  // 3
-    "Salary bonus",  // 2 - Grades finalised
-    "Scramble",  // 2
-    "Sell shop back",  // 7 - Grades finalised
-    "Sell stocks",  // 2
-    "Shops expand in random district",  // 4
-    "Stock rise",  // 1
-    "Stocks dividend",  // 2
-    "Your shops change value",  // 4
-];
+function get_effects() {
+    // TODO: Reassign effects and grades
+    let effects = [
+        "Buy Suit Yourself",  // 2
+        "Buy stocks",  // 3
+        "Buy shop",  // 6 - Grades finalised
+        "Cameo adventure",  // 3 - Grades finalised
+        "Choose way to move",  // 2 - Grades finalised
+        "Expand one shop",  // 4
+        "Get commission",  // 2 - Grades finalised
+        "Get gold from 1st",  // 4
+        "Get gold from all",  // 3
+        "Get gold x level",  // 3
+        "Get gold x shops",  // 4
+        "Get stocks",  // 3
+        "Get suits",  // 9 - Consider re-assigning amongst "Buy Suit Yourself"
+        "Give gold to all",  // 2
+        "Give gold to last",  // 3
+        "Go to square",  // 7 - Grades finalised
+        "Income tax",  // 3
+        "Invest capital",  // 4 - Grades finalised
+        "Move forward",  // 3
+        "Other players movement",  // 3
+        "Play arcade games",  // 3 - Grades finalised
+        "Shop prices change",  // 3
+        "Random district shops drop",  // 2
+        "Random stock price change",  // 5 - Grades finalised
+        "Roll after shop price change",  // 4
+        "Roll and expand shops",  // 1
+        "Roll and get from bank",  // 2
+        "Roll and move forward",  // 4
+        "Roll random to close shops",  // 1
+        "Roll random to expand shops",  // 2
+        "Roll random to take or pay",  // 1
+        "Roll random to warp",  // 3
+        "Salary bonus",  // 2 - Grades finalised
+        "Scramble",  // 2
+        "Sell shop back",  // 7 - Grades finalised
+        "Sell stocks",  // 2
+        "Shops expand in random district",  // 4
+        "Stock rise",  // 1
+        "Stocks dividend",  // 2
+        "Your shops change value",  // 4
+    ];
+    return effects.map((x) => x.toLowerCase().replaceAll(" ", "-"));
+}
 
 export function check_cards() {
     console.log("Checking cards")
     const difficulty = document.getElementById("difficulty");
+    const effects = get_effects();
     for (let i = 1; i <= 128; i++) {
         const card = document.getElementById("card" + i.toString());
         if (!card) continue;
@@ -87,6 +91,7 @@ export function check_cards() {
             }
         }
         // Check effect
+        console.log(cardEffect);
         for (let j = 0; j < effects.length; j++) {
             if (cardEffect === effects[j] && !document.getElementById(effects[j]).checked) {
                 card.style.display = "none";
@@ -98,6 +103,7 @@ export function check_cards() {
 
 export function hide_all_effects() {
     console.log("Hiding all effects")
+    const effects = get_effects();
     for (let i = 0; i < effects.length; i++) {
         document.getElementById(effects[i]).checked = false;
     }
@@ -106,6 +112,7 @@ export function hide_all_effects() {
 
 export function show_all_effects() {
     console.log("Showing all effects")
+    const effects = get_effects();
     for (let i = 0; i < effects.length; i++) {
         document.getElementById(effects[i]).checked = true;
     }
