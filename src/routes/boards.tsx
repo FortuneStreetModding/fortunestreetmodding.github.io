@@ -1,17 +1,16 @@
 import { RouteSectionProps } from '@solidjs/router';
-import { For, Match, Show, Switch } from 'solid-js';
-import { getBoardsSync } from '~/lib/loadyamlfiles';
+import { For, Match, Show, Switch, createResource } from 'solid-js';
+import { getBoardsList } from '~/lib/loadyamlfiles';
 import "./boards.css"
 
 export default function (props: RouteSectionProps) {
-  const boards = getBoardsSync();
-  const boardsList = Object.values(boards);
+  const [boardsList] = createResource(getBoardsList);
 
   return (
     <div class="album">
       <div class="container">
         <div class="row">
-          <For each={/*@once*/ boardsList}>
+          <For each={boardsList()}>
             {(board, boardIndex) => (
               <>
               <div class="col mb-4 mapCard">

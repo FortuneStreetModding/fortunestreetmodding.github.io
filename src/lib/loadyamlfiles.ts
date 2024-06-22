@@ -24,7 +24,7 @@ export interface VentureCard {
   sentiment: number;
 }
 
-export function getYaml(filePath: string): {} {
+export async function getYaml(filePath: string): Promise<{}> {
   "use server";
   const yamlContent = readFileSync(filePath, 'utf8');
   const yamlData = parse(yamlContent);
@@ -37,13 +37,7 @@ export async function getYamlStr(filePath: string): Promise<string> {
   return yamlContent;
 }
 
-export function getYamlStrSync(filePath: string): string {
-  "use server";
-  const yamlContent = readFileSync(filePath, 'utf8');
-  return yamlContent;
-}
-
-export function getBoardsSync(): YamlDict {
+export async function getBoardsDict(): Promise<YamlDict> {
   "use server";
   const yamlDict: YamlDict = {};
 
@@ -85,6 +79,13 @@ export function getBoardsSync(): YamlDict {
   });
   return yamlDict;
 };
+
+export async function getBoardsList(): Promise<MapDescriptorExtended[]> {
+  "use server";
+  const boardsDict = await getBoardsDict();
+  const boardsList = Object.values(boardsDict);
+  return boardsList;
+}
 
 export async function getVentureCards(): Promise<VentureCard[]> {
   "use server";
