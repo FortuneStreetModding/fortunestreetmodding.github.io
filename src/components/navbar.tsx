@@ -28,17 +28,15 @@ export default function Component() {
                 <li><a class="dropdown-item" classList={{ active: location.pathname === "/editor" }} href="/editor">Board Yaml Editor</a></li>
               </ul>
             </li>
-            <li class="nav-item">
+          </ul>
+          <ul class="d-flex navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
               <a class="nav-link" href="https://discord.gg/DE9Hn7T">Discord</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://github.com/FortuneStreetModding">Github</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">Search Maps</button>
-          </form>
         </div>
       </div>
     </nav>
