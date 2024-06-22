@@ -36,7 +36,10 @@ export default defineConfig({
         // https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site
         "/404.html",
       ],
-      crawlLinks: true
+      crawlLinks: true,
+      retry: 5,
+      retryDelay: 1000,
+      autoSubfolderIndex: false
     },
     hooks: {
       async compiled(nitro) {
