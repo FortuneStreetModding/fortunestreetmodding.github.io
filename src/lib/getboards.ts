@@ -3,21 +3,20 @@ import slug from 'slug';
 import { parse } from 'path';
 import { marked } from 'marked';
 import DOMPurify from 'isomorphic-dompurify';
-import ventureCardsYaml from "~/data/venturecards.yml";
-import type { VentureCard } from '~/lib/venturecard';
-const ventureCards = ventureCardsYaml as VentureCard[];
+import ventureCards from "~/data/venturecards.yml";
 
 interface MapDescriptorExtended extends MapDescriptor {
   path: string;
   slug: string;
   imageUrls: string[];
-  notesHtml: string | undefined;
+  notesHtml?: string | undefined;
   changelog?: {
     version: number | string;
     added?: string[];
     changed?: string[];
     removed?: string[];
   }[];
+  currentVersion?: string | number | undefined;
 }
 
 const boards = getBoards();
@@ -77,6 +76,8 @@ function getBoards(): MapDescriptorExtended[] {
           change.removed = [change.removed];
         }
       }
+      // set current version
+      board.currentVersion = board.changelog[0].version;
     }
 
     // set the default venture card list

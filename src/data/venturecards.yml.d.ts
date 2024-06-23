@@ -7,3 +7,5 @@ export interface VentureCard {
   grade: number;
   sentiment: number;
 }
+const content: VentureCard[];
+export default content;
