@@ -1,0 +1,33 @@
+---
+import type { MapDescriptorExtended } from '~/lib/getboards';
+interface Props {
+  board: MapDescriptorExtended;
+}
+const { board } = Astro.props;
+---
+{(Object.keys(board.name).length > 1 || Object.keys(board.desc).length > 1) && (
+  <>
+    <input class="btn-check en" type="radio" name={`lang-${board.slug}`} id={`lang-en-${board.slug}`} autocomplete="off" checked />
+    <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-en-${board.slug}`}>🇬🇧</label>
+    {(board.name.de || board.desc.de) && (
+      <input class="btn-check de" type="radio" name={`lang-${board.slug}`} id={`lang-de-${board.slug}`} autocomplete="off" />
+      <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-de-${board.slug}`}>🇩🇪</label>
+    )}
+    {(board.name.fr || board.desc.fr) && (
+      <input class="btn-check fr" type="radio" name={`lang-${board.slug}`} id={`lang-fr-${board.slug}`} autocomplete="off" />
+      <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-fr-${board.slug}`}>🇫🇷</label>
+    )}
+    {(board.name.it || board.desc.it) && (
+      <input class="btn-check it" type="radio" name={`lang-${board.slug}`} id={`lang-it-${board.slug}`} autocomplete="off" />
+      <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-it-${board.slug}`}>🇮🇹</label>
+    )}
+    {(board.name.es || board.desc.es) && (
+      <input class="btn-check es" type="radio" name={`lang-${board.slug}`} id={`lang-es-${board.slug}`} autocomplete="off" />
+      <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-es-${board.slug}`}>🇪🇸</label>
+    )}
+    {(board.name.jp || board.desc.jp) && (
+      <input class="btn-check jp" type="radio" name={`lang-${board.slug}`} id={`lang-jp-${board.slug}`} autocomplete="off" />
+      <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-jp-${board.slug}`}>🇯🇵</label>
+    )}
+  </>
+)}

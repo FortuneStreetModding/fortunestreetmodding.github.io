@@ -1,0 +1,17 @@
+---
+import type { MapDescriptorExtended } from '~/lib/getboards';
+interface Props {
+  board: MapDescriptorExtended;
+}
+const { board } = Astro.props;
+---
+<div class="row lang" style="width: 100%">
+  <p class:list={['card-title en', {'de': !board.name.de, 'fr': !board.name.fr, 'it': !board.name.it, 'es': !board.name.es, 'jp': !board.name.jp}]}>
+    { board.desc.en }
+  </p>
+  { board.desc.de && <p class="card-text de">{ board.desc.de }</p> }
+  { board.desc.fr && <p class="card-text fr">{ board.desc.fr }</p> }
+  { board.desc.it && <p class="card-text it">{ board.desc.it }</p> }
+  { board.desc.es && <p class="card-text es">{ board.desc.es }</p> }
+  { board.desc.jp && <p class="card-text jp">{ board.desc.jp }</p> }
+</div>

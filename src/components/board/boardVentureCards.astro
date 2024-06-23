@@ -1,0 +1,15 @@
+---
+import ventureCards from "~/data/venturecards.yml";
+import type { MapDescriptorExtended } from '~/lib/getboards';
+interface Props {
+  board: MapDescriptorExtended;
+}
+const { board } = Astro.props;
+---
+<div class="card-body">
+  <div class="row mx-0">
+    {ventureCards.map((ventureCard, index) => (
+      <div class:list={['col ventureCard card', {'bg-primary': board.ventureCards![index] == 1}]} aria-label={ventureCard.description} data-balloon-pos="up" data-balloon-blunt />
+    ))}
+  </div>
+</div>

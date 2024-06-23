@@ -6,7 +6,7 @@ import DOMPurify from 'isomorphic-dompurify';
 import ventureCards from "~/data/venturecards.yml";
 import backgrounds, { type Background } from "~/data/backgrounds.yml";
 
-type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' | 'frbFile1' | 'frbFile2' | 'frbFile3' | 'frbFile4' | 'frbFiles'> & {
+export type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' | 'frbFile1' | 'frbFile2' | 'frbFile3' | 'frbFile4' | 'frbFiles'> & {
   path: string;
   slug: string;
   imageUrls: string[];

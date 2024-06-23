@@ -1,8 +1,17 @@
 ---
 import Layout from '~/layouts/layout.astro';
 import boards from '~/lib/getboards';
-import ventureCards from "~/data/venturecards.yml";
 import "./boards.css"
+import BoardLanguageSelector from '~/components/board/boardLanguageSelector.astro';
+import BoardName from '~/components/board/boardName.astro';
+import BoardDescription from '~/components/board/boardDescription.astro';
+import BoardImage from '~/components/board/boardImage.astro';
+import BoardChangelog from '~/components/board/boardChangelog.astro';
+import BoardProperties from '~/components/board/boardProperties.astro';
+import BoardVentureCards from '~/components/board/boardVentureCards.astro';
+import BoardNotes from '~/components/board/boardNotes.astro';
+import BoardDownloadButton from '~/components/board/boardDownloadButton.astro';
+import BoardTags from '~/components/board/boardTags.astro';
 ---
 <script defer>
   document.querySelectorAll('a.map-state').forEach((mapState) => {
@@ -71,229 +80,34 @@ import "./boards.css"
           <div class={`col mb-4 mapCard b-${board.slug}`}>
             <div class="card h-100">
               <div class="relative-container">
-                {board.frbFiles.length > 1 && board.frbFiles.map((_frbFile, index) => (
-                  <>
-                    <input class={`btn-check state-${index}`} type="radio" name={`state-${board.slug}`} id={`state-${index}-${board.slug}`} autocomplete="off" checked={index==0}/>
-                    <label class={`btn btn-primary btn-state-tiny state-${index}`} for={`state-${index}-${board.slug}`}>{index+1}</label>
-                  </>
-                ))}
-                <a class="map-state" href={`?view=${board.slug}`} data-board={board.slug}>
-                  {board.frbFiles.map((_frbFile, index) => (
-                    <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
-                  ))}
-                </a>
-                <img class="card-img-top mapCard-image-background" src={`/images/backgrounds/${board.background}.webp`} loading="lazy" />
-                <div class="bottom-right-absolute">
-                  {board.authors?.map((author) => (
-                    <div class="badge bg-primary">{author.url ? (<a class="text-reset" href={ author.url }>{ author.name }</a>) : author.name}</div>
-                  ))}
-                </div>
+                <BoardImage board={board}/>
                 <div class="card-body">
-                  {(Object.keys(board.name).length > 1 || Object.keys(board.desc).length > 1) && (
-                    <>
-                      <input class="btn-check en" type="radio" name={`lang-${board.slug}`} id={`lang-en-${board.slug}`} autocomplete="off" checked />
-                      <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-en-${board.slug}`}>🇬🇧</label>
-                      {(board.name.de || board.desc.de) && (
-                        <input class="btn-check de" type="radio" name={`lang-${board.slug}`} id={`lang-de-${board.slug}`} autocomplete="off" />
-                        <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-de-${board.slug}`}>🇩🇪</label>
-                      )}
-                      {(board.name.fr || board.desc.fr) && (
-                        <input class="btn-check fr" type="radio" name={`lang-${board.slug}`} id={`lang-fr-${board.slug}`} autocomplete="off" />
-                        <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-fr-${board.slug}`}>🇫🇷</label>
-                      )}
-                      {(board.name.it || board.desc.it) && (
-                        <input class="btn-check it" type="radio" name={`lang-${board.slug}`} id={`lang-it-${board.slug}`} autocomplete="off" />
-                        <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-it-${board.slug}`}>🇮🇹</label>
-                      )}
-                      {(board.name.es || board.desc.es) && (
-                        <input class="btn-check es" type="radio" name={`lang-${board.slug}`} id={`lang-es-${board.slug}`} autocomplete="off" />
-                        <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-es-${board.slug}`}>🇪🇸</label>
-                      )}
-                      {(board.name.jp || board.desc.jp) && (
-                        <input class="btn-check jp" type="radio" name={`lang-${board.slug}`} id={`lang-jp-${board.slug}`} autocomplete="off" />
-                        <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-jp-${board.slug}`}>🇯🇵</label>
-                      )}
-                    </>
-                  )}
-                  <div class="row lang">
-                    <h4 class:list={['card-title en', {'de': !board.name.de, 'fr': !board.name.fr, 'it': !board.name.it, 'es': !board.name.es, 'jp': !board.name.jp}]}>
-                      { board.name.en }
-                    </h4>
-                    { board.name.de && <h4 class="card-title de">{ board.name.de }</h4> }
-                    { board.name.fr && <h4 class="card-title fr">{ board.name.fr }</h4> }
-                    { board.name.it && <h4 class="card-title it">{ board.name.it }</h4> }
-                    { board.name.es && <h4 class="card-title es">{ board.name.es }</h4> }
-                    { board.name.jp && <h4 class="card-title jp">{ board.name.jp }</h4> }
-                  </div>
-                  <div class="row lang" style="width: 100%">
-                    <p class:list={['card-title en', {'de': !board.name.de, 'fr': !board.name.fr, 'it': !board.name.it, 'es': !board.name.es, 'jp': !board.name.jp}]}>
-                      { board.desc.en }
-                    </p>
-                    { board.desc.de && <p class="card-text de">{ board.desc.de }</p> }
-                    { board.desc.fr && <p class="card-text fr">{ board.desc.fr }</p> }
-                    { board.desc.it && <p class="card-text it">{ board.desc.it }</p> }
-                    { board.desc.es && <p class="card-text es">{ board.desc.es }</p> }
-                    { board.desc.jp && <p class="card-text jp">{ board.desc.jp }</p> }
-                  </div>
+                  <BoardLanguageSelector board={board}/>
+                  <BoardName board={board}/>
+                  <BoardDescription board={board}/>
                 </div>
-                {board.notes && (
-                  <div class={`card-body mapInfo b-${board.slug}`} set:html={board.notesHtml}></div>  
-                )}
+                <BoardNotes board={board}/>
                 <div class={`card-body mapInfo b-${board.slug}`}>
                   <div class="row mb-4">
                     <div class="col">
-                      <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
-                          <div class="ms-2 me-auto">
-                            <div class="fw-bold">Rules</div>
-                            {board.ruleSet}
-                          </div>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
-                          <div class="ms-2 me-auto">
-                            <div class="fw-bold">Theme</div>
-                            {board.theme}
-                          </div>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
-                          <div class="ms-2 me-auto">
-                            <div class="fw-bold">Initial Cash</div>
-                            {board.initialCash}
-                          </div>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
-                          <div class="ms-2 me-auto">
-                            <div class="fw-bold">Target Amount</div>
-                            {board.targetAmount}
-                          </div>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
-                          <div class="ms-2 me-auto">
-                            <div class="fw-bold">Base Salary</div>
-                            {board.baseSalary}
-                          </div>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
-                          <div class="ms-2 me-auto">
-                            <div class="fw-bold">Salary Increment</div>
-                            {board.salaryIncrement}
-                          </div>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-start">
-                          <div class="ms-2 me-auto">
-                            <div class="fw-bold">Max Dice Roll</div>
-                            {board.maxDiceRoll}
-                          </div>
-                        </li>
-                      </ul>
+                      <BoardProperties board={board}/>
                     </div>
                     <div class="col mapCard">
                       <div class="card">
                         <div class="fw-bold card-header">Venture Cards</div>
-                        <div class="card-body">
-                          <div class="row mx-0">
-                            {ventureCards.map((ventureCard, index) => (
-                              <div class:list={['col ventureCard card', {'bg-primary': board.ventureCards![index] == 1}]} aria-label={ventureCard.description} data-balloon-pos="up" data-balloon-blunt />
-                            ))}
-                          </div>
-                        </div>
+                        <BoardVentureCards board={board}/>
                       </div>
                     </div>
                   </div>
-                  {board.changelog && (
-                    <details class="mb-4">
-                      <summary class="accordion-header accordion-button">Show Changelog</summary>
-                      <div class="accordion-body nav-tabs">
-                        {board.changelog.map((change) => (
-                          <>
-                          <div class="fw-bold nav-link border mt-2" style="display:inline-block">Version <span class="badge bg-secondary">{ change.version }</span></div>
-                          {change.added && (
-                            <div class="list-group-item d-flex justify-content-between align-items-start">
-                              <div class="ms-2 me-auto">
-                                <div class="fw-bold">Added</div>
-                                <ul class="list-group">
-                                  {change.added.map((added)=> (
-                                    <li>{ added }</li>
-                                  ))}
-                                </ul>
-                              </div>
-                            </div>
-                          )}
-                          {change.changed && (
-                            <div class="list-group-item d-flex justify-content-between align-items-start">
-                              <div class="ms-2 me-auto">
-                                <div class="fw-bold">Changed</div>
-                                <ul class="list-group">
-                                  {change.changed.map((changed)=> (
-                                    <li>{ changed }</li>
-                                  ))}
-                                </ul>
-                              </div>
-                            </div>
-                          )}
-                          {change.removed && (
-                            <div class="list-group-item d-flex justify-content-between align-items-start">
-                              <div class="ms-2 me-auto">
-                                <div class="fw-bold">Removed</div>
-                                <ul class="list-group">
-                                  {change.removed.map((removed)=> (
-                                    <li>{ removed }</li>
-                                  ))}
-                                </ul>
-                              </div>
-                            </div>
-                          )}
-                          </>
-                        ))}
-                      </div>
-                    </details>
-                  )}
+                  <BoardChangelog board={board} />
                 </div>
                 <div class="card-footer text-muted">
                   <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
                   <div>Download {board.currentVersion && <span class="badge bg-secondary">v{ board.currentVersion }</span>}</div>
-                  <div class="btn-group" role="group">
-                    <button class="btn btn-primary" onclick="">Map</button>
-                    {board.backgroundData.download && (
-                      <>
-                        {board.backgroundData.download.length == 1 ? (<a class="btn btn-primary" href="{{ background.download }}">Background</a>) : (
-                          <div class="btn-group" role="group">
-                            <button id="btnGroupBgDrop-{%- include renderMapSlugClass.liquid map=map -%}" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                              Background
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupBgDrop-{%- include renderMapSlugClass.liquid map=map -%}">
-                              {board.backgroundData.download.map((download) => (
-                                <li><a class="dropdown-item" href="{{ download }}">{new URL(download).hostname}</a></li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-                      </>
-                    )}
-                    {board.music?.download && (
-                      <>
-                        {board.music.download.length == 1 ? (<a class="btn btn-primary" href="{{ background.download }}">Music</a>) : (
-                          <div class="btn-group" role="group">
-                            <button id="btnGroupMusicDrop-{%- include renderMapSlugClass.liquid map=map -%}" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                              Music
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupMusicDrop-{%- include renderMapSlugClass.liquid map=map -%}">
-                              {board.music.download?.map((download) => (
-                                <li><a class="dropdown-item" href="{{ download }}">{new URL(download).hostname}</a></li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-                      </>
-                    )}
-                  </div>
+                  <BoardDownloadButton board={board} />
                 </div>
                 <div class="card-footer text-muted">
-                  {board.tags?.map((tag) => (
-                    <span class="badge rounded-pill bg-secondary px-1">{tag}</span>
-                  ))}
-                  {board.music && <span class="badge rounded-pill bg-secondary px-1">Custom Music</span>}
-                  {board.backgroundData.download && <span class="badge rounded-pill bg-secondary px-1">Custom Background</span>}
+                  <BoardTags board={board}/>
                   &nbsp;
                 </div>
               </div>

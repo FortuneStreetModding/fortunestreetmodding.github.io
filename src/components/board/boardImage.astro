@@ -1,0 +1,24 @@
+---
+import type { MapDescriptorExtended } from '~/lib/getboards';
+interface Props {
+  board: MapDescriptorExtended;
+}
+const { board } = Astro.props;
+---
+{board.frbFiles.length > 1 && board.frbFiles.map((_frbFile, index) => (
+<>
+    <input class={`btn-check state-${index}`} type="radio" name={`state-${board.slug}`} id={`state-${index}-${board.slug}`} autocomplete="off" checked={index==0}/>
+    <label class={`btn btn-primary btn-state-tiny state-${index}`} for={`state-${index}-${board.slug}`}>{index+1}</label>
+</>
+))}
+<a class="map-state" href={`?view=${board.slug}`} data-board={board.slug}>
+{board.frbFiles.map((_frbFile, index) => (
+    <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
+))}
+</a>
+<img class="card-img-top mapCard-image-background" src={`/images/backgrounds/${board.background}.webp`} loading="lazy" />
+<div class="bottom-right-absolute">
+{board.authors?.map((author) => (
+    <div class="badge bg-primary">{author.url ? (<a class="text-reset" href={ author.url }>{ author.name }</a>) : author.name}</div>
+))}
+</div>
