@@ -454,7 +454,7 @@ export interface MapDescriptor1 {
   /**
    * Tags which are associated with this map.
    */
-  tags?: unknown[];
+  tags?: string[];
 }
 /**
  * The name of the map
@@ -485,7 +485,7 @@ export interface Music {
   /**
    * List of download URLs.
    */
-  download?: null | string | unknown[];
+  download?: null | string | string[];
   /**
    * The looping map main background music.
    */

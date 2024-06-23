@@ -1,4 +1,4 @@
-import type { MapDescriptor } from '../data/mapdescriptor';
+import type { MapDescriptor, MapDescriptor1, Music } from '../data/mapdescriptor';
 import slug from 'slug';
 import { parse } from 'path';
 import { marked } from 'marked';
@@ -6,19 +6,22 @@ import DOMPurify from 'isomorphic-dompurify';
 import ventureCards from "~/data/venturecards.yml";
 import backgrounds, { type Background } from "~/data/backgrounds.yml";
 
-interface MapDescriptorExtended extends MapDescriptor {
+type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog'> & {
   path: string;
   slug: string;
   imageUrls: string[];
   backgroundData: Background;
-  notesHtml?: string | undefined;
+  notesHtml?: string;
   changelog?: {
     version: number | string;
     added?: string[];
     changed?: string[];
     removed?: string[];
   }[];
-  currentVersion?: string | number | undefined;
+  currentVersion?: string | number;
+  music?: Omit<MapDescriptor, 'music'> & {
+    download: string[] | null;
+  };
 }
 
 const boards = getBoards();
@@ -56,6 +59,9 @@ function getBoards(): MapDescriptorExtended[] {
     // set the slug name for the board
     board.slug = slug(parsedPath.name);
 
+    // set the background data from the backgrounds.yml
+    board.backgroundData = backgrounds.find((b) => b.background === board.background) as Background;
+
     // set the image urls for each frb file
     board.imageUrls = board.frbFiles!.map((frbFile: string) => `${parsedPath.dir}/${frbFile}.webp`);
 
@@ -80,6 +86,13 @@ function getBoards(): MapDescriptorExtended[] {
       }
       // set current version
       board.currentVersion = board.changelog[0].version;
+    }
+
+    // make sure music download is an array
+    if(board.musicDownload !== undefined) {
+      if(typeof board.musicDownload === 'string') {
+        board.musicDownload = [board.musicDownload];
+      }
     }
 
     // set the default venture card list
@@ -109,9 +122,6 @@ function getBoards(): MapDescriptorExtended[] {
       // @ts-ignore
       board.ventureCards = defaultVentureCards;
     }
-
-    // set the background data from the backgrounds.yml
-    board.backgroundData = backgrounds.find((b) => b.background === board.background) as Background;
 
     boards.push(board as MapDescriptorExtended);
   }

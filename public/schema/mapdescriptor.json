@@ -12,7 +12,7 @@
             "properties": {
                 "download": {
                     "description": "List of download URLs.",
-                    "anyOf": [{"type": "null"},{"type": "string"},{"type": "array"}]
+                    "anyOf": [{"type": "null"},{"type": "string"},{"type": "array", "items": { "type": "string" }}]
                 },
                 "map": {
                     "description": "The looping map main background music.",
@@ -721,7 +721,10 @@
         },
         "tags": {
             "description": "Tags which are associated with this map.",
-            "type": "array"
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
         }
     }
 }

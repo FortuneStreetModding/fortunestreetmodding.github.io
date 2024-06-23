@@ -194,6 +194,41 @@ import "./boards.css"
                 <div class="card-footer text-muted">
                   <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
                   <div>Download {board.currentVersion && <span class="badge bg-secondary">v{ board.currentVersion }</span>}</div>
+                  <div class="btn-group" role="group">
+                    <button class="btn btn-primary" onclick="">Map</button>
+                    {board.backgroundData.download && (
+                      <>
+                        {board.backgroundData.download.length == 1 ? (<a class="btn btn-primary" href="{{ background.download }}">Background</a>) : (
+                          <div class="btn-group" role="group">
+                            <button id="btnGroupBgDrop-{%- include renderMapSlugClass.liquid map=map -%}" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Background
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btnGroupBgDrop-{%- include renderMapSlugClass.liquid map=map -%}">
+                              {board.backgroundData.download.map((download) => (
+                                <li><a class="dropdown-item" href="{{ download }}">{new URL(download).hostname}</a></li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </>
+                    )}
+                    {board.music?.download && (
+                      <>
+                        {board.music.download.length == 1 ? (<a class="btn btn-primary" href="{{ background.download }}">Music</a>) : (
+                          <div class="btn-group" role="group">
+                            <button id="btnGroupMusicDrop-{%- include renderMapSlugClass.liquid map=map -%}" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Music
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="btnGroupMusicDrop-{%- include renderMapSlugClass.liquid map=map -%}">
+                              {board.music.download?.map((download) => (
+                                <li><a class="dropdown-item" href="{{ download }}">{new URL(download).hostname}</a></li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </>
+                    )}
+                  </div>
                 </div>
                 <div class="card-footer text-muted">
                   {board.tags?.map((tag) => (
