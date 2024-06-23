@@ -194,47 +194,15 @@ import "./boards.css"
                 <div class="card-footer text-muted">
                   <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
                   <div>Download {board.currentVersion && <span class="badge bg-secondary">v{ board.currentVersion }</span>}</div>
-                  {% if background.download or map.music.download -%}
-                  <div class="btn-group" role="group">
-                  {%- endif %}
-                  <button class="btn btn-primary" onclick="{%- include renderMapDownloadScript.liquid map=map -%}">Map</button>
-                  {%- if background.download -%}
-                    {% if background.download.first -%}
-                      <div class="btn-group" role="group">
-                        <button id="btnGroupBgDrop-{%- include renderMapSlugClass.liquid map=map -%}" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                          Background
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="btnGroupBgDrop-{%- include renderMapSlugClass.liquid map=map -%}">
-                          {% for download in background.download -%}
-                          <li><a class="dropdown-item" href="{{ download }}">{{ download | remove:'https://' | remove:'http://' | split:'/' | first }}</a></li>
-                          {% endfor -%}
-                        </ul>
-                      </div>
-                    {% else -%}
-                      <a class="btn btn-primary" href="{{ background.download }}">Background</a>
-                    {% endif -%}
-                  {%- endif %}
-                  {%- if map.music.download -%}
-                    {% if map.music.download.first -%}
-                      <div class="btn-group" role="group">
-                        <button id="btnGroupMusicDrop-{%- include renderMapSlugClass.liquid map=map -%}" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                          Music
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="btnGroupMusicDrop-{%- include renderMapSlugClass.liquid map=map -%}">
-                          {% for download in map.music.download -%}
-                          <li><a class="dropdown-item" href="{{ download }}">{{ download | remove:'https://' | remove:'http://' | split:'/' | first }}</a></li>
-                          {% endfor -%}
-                        </ul>
-                      </div>
-                    {% else -%}
-                      <a class="btn btn-primary" href="{{ map.music.download }}">Music</a>
-                    {%- endif %}
-                  {%- endif %}
-                  {% if background.download or map.music.download -%}
-                  </div>
-                  {%- endif %}
                 </div>
-                <div class="card-footer text-muted"></div>
+                <div class="card-footer text-muted">
+                  {board.tags?.map((tag) => (
+                    <span class="badge rounded-pill bg-secondary px-1">{tag}</span>
+                  ))}
+                  {board.music && <span class="badge rounded-pill bg-secondary px-1">Custom Music</span>}
+                  {board.backgroundData.download && <span class="badge rounded-pill bg-secondary px-1">Custom Background</span>}
+                  &nbsp;
+                </div>
               </div>
             </div>
           </div>

@@ -4,11 +4,13 @@ import { parse } from 'path';
 import { marked } from 'marked';
 import DOMPurify from 'isomorphic-dompurify';
 import ventureCards from "~/data/venturecards.yml";
+import backgrounds, { type Background } from "~/data/backgrounds.yml";
 
 interface MapDescriptorExtended extends MapDescriptor {
   path: string;
   slug: string;
   imageUrls: string[];
+  backgroundData: Background;
   notesHtml?: string | undefined;
   changelog?: {
     version: number | string;
@@ -107,6 +109,10 @@ function getBoards(): MapDescriptorExtended[] {
       // @ts-ignore
       board.ventureCards = defaultVentureCards;
     }
+
+    // set the background data from the backgrounds.yml
+    board.backgroundData = backgrounds.find((b) => b.background === board.background) as Background;
+
     boards.push(board as MapDescriptorExtended);
   }
   return boards;
