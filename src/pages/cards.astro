@@ -1,7 +1,7 @@
 ---
 import slug from 'slug';
 import Layout from '~/layouts/layout.astro';
-import cardsYaml from "../../_data/ventureCards.yml";
+import cardsYaml from "~/data/venturecards.yml";
 import type { VentureCard } from '~/lib/venturecard';
 const cards = cardsYaml as VentureCard[];
 const effects: string[] = [...new Set(cards.map(card => card.effect))].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
@@ -83,7 +83,7 @@ function sentiment_to_div_class(sentiment: number) {
           <div class="mb-3">
             <select class="form-select" id="types" onchange="cards.check_cards()">
               <option value="any">Any</option>
-              {types.forEach((type) => (
+              {types.map((type) => (
                 <option value={slug(type)}>{type}</option>
               ))}
             </select>
@@ -92,7 +92,7 @@ function sentiment_to_div_class(sentiment: number) {
           <div class="mb-3">
             <select class="form-select" id="effects" onchange="cards.check_cards()">
               <option value="any">Any</option>
-              {effects.forEach((effect) => (
+              {effects.map((effect) => (
                 <option value={slug(effect)}>{effect}</option>
               ))}
             </select>

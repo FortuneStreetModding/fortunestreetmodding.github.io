@@ -1,19 +1,34 @@
 import type { MapDescriptor } from './mapdescriptor';
 import slug from 'slug';
 import { parse } from 'path';
+import { marked } from 'marked';
+import DOMPurify from 'isomorphic-dompurify';
+import ventureCardsYaml from "~/data/venturecards.yml";
+import type { VentureCard } from '~/lib/venturecard';
+const ventureCards = ventureCardsYaml as VentureCard[];
 
 interface MapDescriptorExtended extends MapDescriptor {
   path: string;
   slug: string;
   imageUrls: string[];
+  notesHtml: string | undefined;
+  changelog?: {
+    version: number | string;
+    added?: string[];
+    changed?: string[];
+    removed?: string[];
+  }[];
 }
 
 const boards = getBoards();
 export default boards;
 
+
 function getBoards(): MapDescriptorExtended[] {
   const boardFiles: Record<string, MapDescriptor> = import.meta.glob('/_maps/*/*.{yml,yaml}', { eager: true });
   const boards: MapDescriptorExtended[] = [];
+  let defaultEasyVentureCards: number[] | undefined;
+  let defaultStandardVentureCards: number[] | undefined;
   for (const [path, boardConst] of Object.entries(boardFiles)) {
     const board = structuredClone(boardConst)
     // some post processing...
@@ -43,6 +58,54 @@ function getBoards(): MapDescriptorExtended[] {
     // set the image urls for each frb file
     board.imageUrls = board.frbFiles!.map((frbFile: string) => `${parsedPath.dir}/${frbFile}.webp`);
 
+    // render the notes
+    if (board.notes !== undefined) {
+      const html = marked.parse(board.notes, { async: false }) as string;
+      board.notesHtml = DOMPurify.sanitize(html);
+    }
+
+    // make sure changelog is an array
+    if(board.changelog !== undefined) {
+      for(const change of board.changelog) {
+        if(typeof change.added === 'string') {
+          change.added = [change.added];
+        }
+        if(typeof change.changed === 'string') {
+          change.changed = [change.changed];
+        }
+        if(typeof change.removed === 'string') {
+          change.removed = [change.removed];
+        }
+      }
+    }
+
+    // set the default venture card list
+    if(board.ventureCards === undefined) {
+      let defaultVentureCards: number[];
+      if(board.ruleSet == "Standard") {
+        if(defaultStandardVentureCards === undefined) {
+          defaultStandardVentureCards = new Array(128).fill(0);
+          for(let i = 0; i < 128; i++) {
+            if(ventureCards[i].defaultStandard) {
+              defaultStandardVentureCards[i] = 1;
+            }
+          }
+        }
+        defaultVentureCards = defaultStandardVentureCards;
+      } else {
+        if(defaultEasyVentureCards === undefined) {
+          defaultEasyVentureCards = new Array(128).fill(0);
+          for(let i = 0; i < 128; i++) {
+            if(ventureCards[i].defaultEasy) {
+              defaultEasyVentureCards[i] = 1;
+            }
+          }
+        }
+        defaultVentureCards = defaultEasyVentureCards;
+      }
+      // @ts-ignore
+      board.ventureCards = defaultVentureCards;
+    }
     boards.push(board as MapDescriptorExtended);
   }
   return boards;
