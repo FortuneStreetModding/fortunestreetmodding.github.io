@@ -24,7 +24,7 @@ import "./boards.css"
                     <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
                   ))}
                 </a>
-                <img class="card-img-top mapCard-image-background" src={`backgrounds/${board.background}.webp`} loading="lazy" />
+                <img class="card-img-top mapCard-image-background" src={`/images/backgrounds/${board.background}.webp`} loading="lazy" />
                 <div class="bottom-right-absolute">
                   {board.authors?.map((author, index) => (
                     <div class="badge bg-primary">{author.url ? (<a class="text-reset" href={ author.url }>{ author.name }</a>) : author.name}</div>
