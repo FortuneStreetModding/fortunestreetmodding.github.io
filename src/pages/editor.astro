@@ -26,7 +26,7 @@ import "./editor.css"
   import YamlWorker from './editor.worker.js?worker'
 
   window.MonacoEnvironment = {
-    getWorker(moduleId, label) {
+    getWorker(_moduleId, label) {
       switch (label) {
         case 'yaml':
           return new YamlWorker()
@@ -80,7 +80,6 @@ import "./editor.css"
 
   const problemHandler = ([resource]: any) => {
     const problems = document.getElementById('problems')!
-    // @ts-ignore
     const markers = monaco.editor.getModelMarkers({ resource })
     while (problems.lastChild) {
       problems.lastChild.remove()
@@ -113,7 +112,7 @@ import "./editor.css"
   monaco.editor.onDidChangeMarkers(problemHandler);
 
   const presetselect = document.getElementById('presetselect') as HTMLSelectElement;
-  presetselect.addEventListener('change', (event) => {
+  presetselect.addEventListener('change', () => {
     const uri = monaco.Uri.parse(presetselect.value);
     editor.setModel(monaco.editor.getModel(uri));
     problemHandler([uri])

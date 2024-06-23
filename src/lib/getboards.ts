@@ -1,4 +1,4 @@
-import type { MapDescriptor, MapDescriptor1, Music } from '../data/mapdescriptor';
+import type { MapDescriptor, MapDescriptor1 } from '../data/mapdescriptor';
 import slug from 'slug';
 import { parse } from 'path';
 import { marked } from 'marked';

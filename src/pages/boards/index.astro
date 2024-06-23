@@ -13,20 +13,20 @@ import "./boards.css"
           <div class="col mb-4 mapCard">
             <div class="card h-100">
               <div class="relative-container">
-                {board.frbFiles!.map((frbFile, index) => (
+                {board.frbFiles!.map((_frbFile, index) => (
                   <div>
                     <input class={`btn-check state-${index}`} type="radio" name={`state-${board.slug}`} id={`state-${index}-${board.slug}`} autocomplete="off" checked={index==0}/>
                     <label class={`btn btn-primary btn-state-tiny state-${index}`} for={`state-${index}-${board.slug}`}>{index+1}</label>
                   </div>
                 ))}
                 <a class="map-state" href={`/boards/${board.slug}`}>
-                  {board.frbFiles!.map((frbFile, index) => (
+                  {board.frbFiles!.map((_frbFile, index) => (
                     <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
                   ))}
                 </a>
                 <img class="card-img-top mapCard-image-background" src={`/images/backgrounds/${board.background}.webp`} loading="lazy" />
                 <div class="bottom-right-absolute">
-                  {board.authors?.map((author, index) => (
+                  {board.authors?.map((author) => (
                     <div class="badge bg-primary">{author.url ? (<a class="text-reset" href={ author.url }>{ author.name }</a>) : author.name}</div>
                   ))}
                 </div>
@@ -251,3 +251,59 @@ import "./boards.css"
     </div>
   </div>
 </Layout>
+<script>
+  var currentBoard = new URLSearchParams(window.location.search).get('view');
+  currentBoard = currentBoard ? currentBoard : '';
+
+  if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+  }
+
+  function showBoard(board: string) {
+    if(currentBoard != board) {
+      const url = new URL(window.location.href);
+      if(board)
+        url.searchParams.set('view', board);
+      else
+        url.searchParams.delete('view');
+      window.history.replaceState({"board": currentBoard}, '', window.location.href);
+      window.history.pushState({"board": board}, '', url);
+      if(currentBoard) {
+        document.getElementById("board-"+currentBoard)!.classList.remove("target");
+      }
+      if(board) {
+        document.getElementById("board-"+board)!.classList.add("target");
+      }
+      currentBoard = board;
+    }
+  }
+
+  window.onpopstate = function(event) {
+    let board;
+    if(event.state) {
+      board = event.state.board;
+    } else {
+      currentBoard = '';
+    }
+    if(currentBoard != '') {
+      document.getElementById("board-"+currentBoard)?.classList.remove("target");
+    }
+    if(board !== undefined) {
+      document.getElementById("board-"+board)?.classList.add("target");
+    }
+    currentBoard = board
+  }
+</script>
+<style>
+  .target ~.mapCard {
+    display:none;
+  }
+  a#30th-crystal-tower.target ~.30th-crystal-tower,a#30th-crystal-tower.target ~.30th-crystal-tower .mapInfo,
+  a#30th-dragonlords-castle.target ~.30th-dragonlords-castle,a#30th-dragonlords-castle.target ~.30th-dragonlords-castle .mapInfo
+  {
+    display:block;
+  }
+  .mapInfo {
+    display:none;
+  }
+</style>
