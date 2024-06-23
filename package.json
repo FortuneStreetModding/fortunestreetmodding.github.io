@@ -20,7 +20,6 @@
     "astro": "^4.11.0",
     "isomorphic-dompurify": "^2.12.0",
     "marked": "^13.0.0",
-    "monaco-editor": "^0.50.0",
     "monaco-yaml": "^5.2.0",
     "slug": "^9.1.0",
     "typescript": "^5.5.2"

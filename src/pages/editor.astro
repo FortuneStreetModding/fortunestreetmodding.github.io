@@ -23,7 +23,7 @@ import "./editor.css"
 <script>
   import * as monaco from 'monaco-editor'
   import { configureMonacoYaml } from 'monaco-yaml'
-  import YamlWorker from './editor.worker.js?worker'
+  import YamlWorker from '~/lib/editor.worker.js?worker'
 
   window.MonacoEnvironment = {
     getWorker(_moduleId, label) {
