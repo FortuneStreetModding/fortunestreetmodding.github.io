@@ -32,35 +32,35 @@ const board = boards.find(board => board.slug === slug);
           <div class="card h-100">
             <div class="relative-container">
               <BoardImage board={board}/>
-              <div class="card-body">
-                <BoardLanguageSelector board={board}/>
-                <BoardName board={board}/>
-                <BoardDescription board={board}/>
-              </div>
-              <BoardNotes board={board}/>
-              <div class={`card-body mapInfo b-${board.slug}`}>
-                <div class="row mb-4">
-                  <div class="col">
-                    <BoardProperties board={board}/>
-                  </div>
-                  <div class="col mapCard">
-                    <div class="card">
-                      <div class="fw-bold card-header">Venture Cards</div>
-                      <BoardVentureCards board={board}/>
-                    </div>
+            </div>
+            <div class="card-body">
+              <BoardLanguageSelector board={board}/>
+              <BoardName board={board}/>
+              <BoardDescription board={board}/>
+            </div>
+            <BoardNotes board={board}/>
+            <div class={`card-body mapInfo b-${board.slug}`}>
+              <div class="row mb-4">
+                <div class="col">
+                  <BoardProperties board={board}/>
+                </div>
+                <div class="col mapCard">
+                  <div class="card">
+                    <div class="fw-bold card-header">Venture Cards</div>
+                    <BoardVentureCards board={board}/>
                   </div>
                 </div>
-                <BoardChangelog board={board} />
               </div>
-              <div class="card-footer text-muted">
-                <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
-                <div>Download {board.currentVersion && <span class="badge bg-secondary">v{ board.currentVersion }</span>}</div>
-                <BoardDownloadButton board={board} />
-              </div>
-              <div class="card-footer text-muted">
-                <BoardTags board={board}/>
-                &nbsp;
-              </div>
+              <BoardChangelog board={board} />
+            </div>
+            <div class="card-footer text-muted">
+              <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
+              <div>Download {board.currentVersion && <span class="badge bg-secondary">v{ board.currentVersion }</span>}</div>
+              <BoardDownloadButton board={board} />
+            </div>
+            <div class="card-footer text-muted">
+              <BoardTags board={board}/>
+              &nbsp;
             </div>
           </div>
         </div>

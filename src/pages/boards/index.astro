@@ -23,20 +23,20 @@ import BoardTags from '~/components/board/boardTags.astro';
             <div class="card h-100">
               <div class="relative-container">
                 <BoardImage board={board}/>
-                <div class="card-body">
-                  <BoardLanguageSelector board={board}/>
-                  <BoardName board={board}/>
-                  <BoardDescription board={board}/>
-                </div>
-                <div class="card-footer text-muted">
-                  <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
-                  <div>Download {board.currentVersion && <span class="badge bg-secondary">v{ board.currentVersion }</span>}</div>
-                  <BoardDownloadButton board={board} />
-                </div>
-                <div class="card-footer text-muted">
-                  <BoardTags board={board}/>
-                  &nbsp;
-                </div>
+              </div>
+              <div class="card-body">
+                <BoardLanguageSelector board={board}/>
+                <BoardName board={board}/>
+                <BoardDescription board={board}/>
+              </div>
+              <div class="card-footer text-muted">
+                <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
+                <div>Download {board.currentVersion && <span class="badge bg-secondary">v{ board.currentVersion }</span>}</div>
+                <BoardDownloadButton board={board} />
+              </div>
+              <div class="card-footer text-muted">
+                <BoardTags board={board}/>
+                &nbsp;
               </div>
             </div>
           </div>
