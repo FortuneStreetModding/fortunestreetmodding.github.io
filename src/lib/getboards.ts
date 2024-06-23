@@ -6,11 +6,12 @@ import DOMPurify from 'isomorphic-dompurify';
 import ventureCards from "~/data/venturecards.yml";
 import backgrounds, { type Background } from "~/data/backgrounds.yml";
 
-type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog'> & {
+type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' | 'frbFile1' | 'frbFile2' | 'frbFile3' | 'frbFile4' | 'frbFiles'> & {
   path: string;
   slug: string;
   imageUrls: string[];
   backgroundData: Background;
+  frbFiles: string[];
   notesHtml?: string;
   changelog?: {
     version: number | string;
@@ -73,7 +74,8 @@ function getBoards(): MapDescriptorExtended[] {
 
     // make sure changelog is an array
     if(board.changelog !== undefined) {
-      for(const change of board.changelog) {
+      for(let i = 0; i < board.changelog.length; i++) {
+        let change = board.changelog[i];
         if(typeof change.added === 'string') {
           change.added = [change.added];
         }

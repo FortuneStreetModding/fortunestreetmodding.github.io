@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "prebuild": "rimraf dist",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
@@ -25,6 +26,7 @@
     "typescript": "^5.5.2"
   },
   "devDependencies": {
-    "json-schema-to-typescript": "^14.0.5"
+    "json-schema-to-typescript": "^14.0.5",
+    "rimraf": "^5.0.7"
   }
 }

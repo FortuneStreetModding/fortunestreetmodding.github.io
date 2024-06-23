@@ -4,23 +4,81 @@ import boards from '~/lib/getboards';
 import ventureCards from "~/data/venturecards.yml";
 import "./boards.css"
 ---
+<script defer>
+  document.querySelectorAll('a.map-state').forEach((mapState) => {
+    mapState.addEventListener('click', (event) => {
+      event.preventDefault();
+      showBoard(event.currentTarget.getAttribute('data-board'));
+      return false;
+    });
+  });
+</script>
+<script is:inline>
+  var currentBoard = new URLSearchParams(window.location.search).get('view');
+  currentBoard = currentBoard ? currentBoard : '';
+
+  if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+  }
+
+  function showBoard(board) {
+    if(currentBoard != board) {
+      const url = new URL(window.location.href);
+      if(board)
+        url.searchParams.set('view', board);
+      else
+        url.searchParams.delete('view');
+      window.history.replaceState({"board": currentBoard}, '', window.location.href);
+      window.history.pushState({"board": board}, '', url);
+      if(currentBoard) {
+        document.getElementById("b-"+currentBoard).classList.remove("target");
+      }
+      if(board) {
+        document.getElementById("b-"+board).classList.add("target");
+      }
+      currentBoard = board;
+    }
+  }
+
+  window.onpopstate = function(event) {
+    let board;
+    if(event.state) {
+      board = event.state.board;
+    } else {
+      currentBoard = '';
+    }
+    if(currentBoard != '') {
+      document.getElementById("board-"+currentBoard)?.classList.remove("target");
+    }
+    if(board !== undefined) {
+      document.getElementById("board-"+board)?.classList.add("target");
+    }
+    currentBoard = board
+  }
+</script>
 <Layout title="Boards">
   <div class="album">
     <div class="container">
       <div class="row">
+        {boards.map((board, boardIndex) => (<a id={`b-${board.slug}`} style="display: none"/>))}
+        <script is:inline>
+          if(currentMap) {
+            document.getElementById("b-"+currentMap).classList.add("target");
+          }
+        </script>
         {boards.map((board, boardIndex) => (
           <>
-          <div class="col mb-4 mapCard">
+          <div class={`col mb-4 mapCard b-${board.slug}`}>
             <div class="card h-100">
               <div class="relative-container">
-                {board.frbFiles!.map((_frbFile, index) => (
-                  <div>
+                {board.frbFiles.length > 1 && board.frbFiles.map((_frbFile, index) => (
+                  <>
                     <input class={`btn-check state-${index}`} type="radio" name={`state-${board.slug}`} id={`state-${index}-${board.slug}`} autocomplete="off" checked={index==0}/>
                     <label class={`btn btn-primary btn-state-tiny state-${index}`} for={`state-${index}-${board.slug}`}>{index+1}</label>
-                  </div>
+                  </>
                 ))}
-                <a class="map-state" href={`/boards/${board.slug}`}>
-                  {board.frbFiles!.map((_frbFile, index) => (
+                <a class="map-state" href={`?view=${board.slug}`} data-board={board.slug}>
+                  {board.frbFiles.map((_frbFile, index) => (
                     <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
                   ))}
                 </a>
@@ -58,7 +116,7 @@ import "./boards.css"
                     </>
                   )}
                   <div class="row lang">
-                    <h4 class:list={['card-title en', {'de': board.name.de, 'fr': board.name.fr, 'it': board.name.it, 'es': board.name.es, 'jp': board.name.jp}]}>
+                    <h4 class:list={['card-title en', {'de': !board.name.de, 'fr': !board.name.fr, 'it': !board.name.it, 'es': !board.name.es, 'jp': !board.name.jp}]}>
                       { board.name.en }
                     </h4>
                     { board.name.de && <h4 class="card-title de">{ board.name.de }</h4> }
@@ -68,7 +126,7 @@ import "./boards.css"
                     { board.name.jp && <h4 class="card-title jp">{ board.name.jp }</h4> }
                   </div>
                   <div class="row lang" style="width: 100%">
-                    <p class:list={['card-title en', {'de': board.name.de, 'fr': board.name.fr, 'it': board.name.it, 'es': board.name.es, 'jp': board.name.jp}]}>
+                    <p class:list={['card-title en', {'de': !board.name.de, 'fr': !board.name.fr, 'it': !board.name.it, 'es': !board.name.es, 'jp': !board.name.jp}]}>
                       { board.desc.en }
                     </p>
                     { board.desc.de && <p class="card-text de">{ board.desc.de }</p> }
@@ -79,9 +137,9 @@ import "./boards.css"
                   </div>
                 </div>
                 {board.notes && (
-                  <div class={`card-body mapInfo ${board.slug}`} set:html={board.notesHtml}></div>  
+                  <div class={`card-body mapInfo b-${board.slug}`} set:html={board.notesHtml}></div>  
                 )}
-                <div class={`card-body mapInfo ${board.slug}`}>
+                <div class={`card-body mapInfo b-${board.slug}`}>
                   <div class="row mb-4">
                     <div class="col">
                       <ul class="list-group">
@@ -155,7 +213,7 @@ import "./boards.css"
                                 <div class="fw-bold">Added</div>
                                 <ul class="list-group">
                                   {change.added.map((added)=> (
-                                    <li>{{ added }}</li>
+                                    <li>{ added }</li>
                                   ))}
                                 </ul>
                               </div>
@@ -167,7 +225,7 @@ import "./boards.css"
                                 <div class="fw-bold">Changed</div>
                                 <ul class="list-group">
                                   {change.changed.map((changed)=> (
-                                    <li>{{ changed }}</li>
+                                    <li>{ changed }</li>
                                   ))}
                                 </ul>
                               </div>
@@ -179,7 +237,7 @@ import "./boards.css"
                                 <div class="fw-bold">Removed</div>
                                 <ul class="list-group">
                                   {change.removed.map((removed)=> (
-                                    <li>{{ removed }}</li>
+                                    <li>{ removed }</li>
                                   ))}
                                 </ul>
                               </div>
@@ -251,55 +309,12 @@ import "./boards.css"
     </div>
   </div>
 </Layout>
-<script>
-  var currentBoard = new URLSearchParams(window.location.search).get('view');
-  currentBoard = currentBoard ? currentBoard : '';
-
-  if (history.scrollRestoration) {
-    history.scrollRestoration = 'manual';
-  }
-
-  function showBoard(board: string) {
-    if(currentBoard != board) {
-      const url = new URL(window.location.href);
-      if(board)
-        url.searchParams.set('view', board);
-      else
-        url.searchParams.delete('view');
-      window.history.replaceState({"board": currentBoard}, '', window.location.href);
-      window.history.pushState({"board": board}, '', url);
-      if(currentBoard) {
-        document.getElementById("board-"+currentBoard)!.classList.remove("target");
-      }
-      if(board) {
-        document.getElementById("board-"+board)!.classList.add("target");
-      }
-      currentBoard = board;
-    }
-  }
-
-  window.onpopstate = function(event) {
-    let board;
-    if(event.state) {
-      board = event.state.board;
-    } else {
-      currentBoard = '';
-    }
-    if(currentBoard != '') {
-      document.getElementById("board-"+currentBoard)?.classList.remove("target");
-    }
-    if(board !== undefined) {
-      document.getElementById("board-"+board)?.classList.add("target");
-    }
-    currentBoard = board
-  }
-</script>
-<style>
+<style is:global>
   .target ~.mapCard {
     display:none;
   }
-  a#30th-crystal-tower.target ~.30th-crystal-tower,a#30th-crystal-tower.target ~.30th-crystal-tower .mapInfo,
-  a#30th-dragonlords-castle.target ~.30th-dragonlords-castle,a#30th-dragonlords-castle.target ~.30th-dragonlords-castle .mapInfo
+  a#b-30th-crystal-tower.target ~.b-30th-crystal-tower,a#b-30th-crystal-tower.target ~.b-30th-crystal-tower .mapInfo,
+  a#b-30th-dragonlords-castle.target ~.b-30th-dragonlords-castle,a#b-30th-dragonlords-castle.target ~.b-30th-dragonlords-castle .mapInfo
   {
     display:block;
   }
