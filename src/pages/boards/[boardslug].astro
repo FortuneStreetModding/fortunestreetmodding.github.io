@@ -1,5 +1,16 @@
 ---
+import BoardChangelog from '~/components/board/boardChangelog.astro';
+import BoardDescription from '~/components/board/boardDescription.astro';
+import BoardDownloadButton from '~/components/board/boardDownloadButton.astro';
+import BoardImage from '~/components/board/boardImage.astro';
+import BoardLanguageSelector from '~/components/board/boardLanguageSelector.astro';
+import BoardName from '~/components/board/boardName.astro';
+import BoardNotes from '~/components/board/boardNotes.astro';
+import BoardProperties from '~/components/board/boardProperties.astro';
+import BoardTags from '~/components/board/boardTags.astro';
+import BoardVentureCards from '~/components/board/boardVentureCards.astro';
 import Layout from '~/layouts/layout.astro';
+import "./boards.css"
 import boards from '~/lib/getboards';
 export function getStaticPaths() {
   return boards.map(board => {
@@ -14,11 +25,48 @@ const { boardslug } = Astro.params;
 const board = boards.find(board => board.slug === boardslug);
 ---
 <Layout title={board? board.name.en : "Invalid Board"}>
-  <div class="album">
-    <div class="container">
-      <div class="row">
-        <div>User {board?.name.en}</div>
-      </div>
+  <div class="container">
+    <div class="row">
+      {board ? (
+        <div class={`col mb-4 mapCard b-${board.slug}`}>
+          <div class="card h-100">
+            <div class="relative-container">
+              <BoardImage board={board}/>
+              <div class="card-body">
+                <BoardLanguageSelector board={board}/>
+                <BoardName board={board}/>
+                <BoardDescription board={board}/>
+              </div>
+              <BoardNotes board={board}/>
+              <div class={`card-body mapInfo b-${board.slug}`}>
+                <div class="row mb-4">
+                  <div class="col">
+                    <BoardProperties board={board}/>
+                  </div>
+                  <div class="col mapCard">
+                    <div class="card">
+                      <div class="fw-bold card-header">Venture Cards</div>
+                      <BoardVentureCards board={board}/>
+                    </div>
+                  </div>
+                </div>
+                <BoardChangelog board={board} />
+              </div>
+              <div class="card-footer text-muted">
+                <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
+                <div>Download {board.currentVersion && <span class="badge bg-secondary">v{ board.currentVersion }</span>}</div>
+                <BoardDownloadButton board={board} />
+              </div>
+              <div class="card-footer text-muted">
+                <BoardTags board={board}/>
+                &nbsp;
+              </div>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <p>Invalid board</p>
+      )}
     </div>
   </div>
 </Layout>

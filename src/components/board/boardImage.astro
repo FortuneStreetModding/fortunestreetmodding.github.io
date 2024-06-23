@@ -11,7 +11,7 @@ const { board } = Astro.props;
     <label class={`btn btn-primary btn-state-tiny state-${index}`} for={`state-${index}-${board.slug}`}>{index+1}</label>
 </>
 ))}
-<a class="map-state" href={`?view=${board.slug}`} data-board={board.slug}>
+<a class="map-state" href={`/boards/${board.slug}`}>
 {board.frbFiles.map((_frbFile, index) => (
     <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
 ))}

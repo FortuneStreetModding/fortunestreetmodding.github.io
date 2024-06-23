@@ -13,68 +13,10 @@ import BoardNotes from '~/components/board/boardNotes.astro';
 import BoardDownloadButton from '~/components/board/boardDownloadButton.astro';
 import BoardTags from '~/components/board/boardTags.astro';
 ---
-<script defer>
-  document.querySelectorAll('a.map-state').forEach((mapState) => {
-    mapState.addEventListener('click', (event) => {
-      event.preventDefault();
-      showBoard(event.currentTarget.getAttribute('data-board'));
-      return false;
-    });
-  });
-</script>
-<script is:inline>
-  var currentBoard = new URLSearchParams(window.location.search).get('view');
-  currentBoard = currentBoard ? currentBoard : '';
-
-  if (history.scrollRestoration) {
-    history.scrollRestoration = 'manual';
-  }
-
-  function showBoard(board) {
-    if(currentBoard != board) {
-      const url = new URL(window.location.href);
-      if(board)
-        url.searchParams.set('view', board);
-      else
-        url.searchParams.delete('view');
-      window.history.replaceState({"board": currentBoard}, '', window.location.href);
-      window.history.pushState({"board": board}, '', url);
-      if(currentBoard) {
-        document.getElementById("b-"+currentBoard).classList.remove("target");
-      }
-      if(board) {
-        document.getElementById("b-"+board).classList.add("target");
-      }
-      currentBoard = board;
-    }
-  }
-
-  window.onpopstate = function(event) {
-    let board;
-    if(event.state) {
-      board = event.state.board;
-    } else {
-      currentBoard = '';
-    }
-    if(currentBoard != '') {
-      document.getElementById("board-"+currentBoard)?.classList.remove("target");
-    }
-    if(board !== undefined) {
-      document.getElementById("board-"+board)?.classList.add("target");
-    }
-    currentBoard = board
-  }
-</script>
 <Layout title="Boards">
   <div class="album">
     <div class="container">
       <div class="row">
-        {boards.map((board, boardIndex) => (<a id={`b-${board.slug}`} style="display: none"/>))}
-        <script is:inline>
-          if(currentMap) {
-            document.getElementById("b-"+currentMap).classList.add("target");
-          }
-        </script>
         {boards.map((board, boardIndex) => (
           <>
           <div class={`col mb-4 mapCard b-${board.slug}`}>
@@ -85,21 +27,6 @@ import BoardTags from '~/components/board/boardTags.astro';
                   <BoardLanguageSelector board={board}/>
                   <BoardName board={board}/>
                   <BoardDescription board={board}/>
-                </div>
-                <BoardNotes board={board}/>
-                <div class={`card-body mapInfo b-${board.slug}`}>
-                  <div class="row mb-4">
-                    <div class="col">
-                      <BoardProperties board={board}/>
-                    </div>
-                    <div class="col mapCard">
-                      <div class="card">
-                        <div class="fw-bold card-header">Venture Cards</div>
-                        <BoardVentureCards board={board}/>
-                      </div>
-                    </div>
-                  </div>
-                  <BoardChangelog board={board} />
                 </div>
                 <div class="card-footer text-muted">
                   <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
@@ -123,16 +50,3 @@ import BoardTags from '~/components/board/boardTags.astro';
     </div>
   </div>
 </Layout>
-<style is:global>
-  .target ~.mapCard {
-    display:none;
-  }
-  a#b-30th-crystal-tower.target ~.b-30th-crystal-tower,a#b-30th-crystal-tower.target ~.b-30th-crystal-tower .mapInfo,
-  a#b-30th-dragonlords-castle.target ~.b-30th-dragonlords-castle,a#b-30th-dragonlords-castle.target ~.b-30th-dragonlords-castle .mapInfo
-  {
-    display:block;
-  }
-  .mapInfo {
-    display:none;
-  }
-</style>
