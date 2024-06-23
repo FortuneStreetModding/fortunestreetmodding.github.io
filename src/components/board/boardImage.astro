@@ -5,20 +5,72 @@ interface Props {
 }
 const { board } = Astro.props;
 ---
+<style is:global>
+.mapCard-image-board {
+  width:100%;
+  height:400px;
+  object-fit:scale-down;
+  position:absolute;
+  filter: drop-shadow(0 0 6px #000b);
+  z-index: 2;
+  padding: 1rem;
+}
+.mapCard-image-background {
+  width:100%;
+  height:400px;
+  object-fit:cover;
+  position:relative;
+  filter: blur(1px) grayscale(50%) contrast(50%) opacity(65%);
+  z-index: 1;
+}
+.btn-state-tiny {
+  padding: 0.75rem 0.375rem;
+  line-height: 0;
+  border-width: 2px;
+  left: 16px;
+  z-index: 3;
+  filter: grayscale(1);
+}
+:checked+.btn-state-tiny {
+  filter: grayscale(0);
+}
+.btn-state-tiny.state-0 { top: 1.0rem; }
+.btn-state-tiny.state-1 { top: 2.7rem; }
+.btn-state-tiny.state-2 { top: 4.4rem; }
+.btn-state-tiny.state-3 { top: 6.1rem; }
+.state-0:checked ~ .map-state :not(.state-0) {
+  visibility: hidden
+}
+.state-1:checked ~ .map-state :not(.state-1) {
+  visibility: hidden
+}
+.state-2:checked ~ .map-state :not(.state-2) {
+  visibility: hidden
+}
+.state-3:checked ~ .map-state :not(.state-3) {
+  visibility: hidden
+}
+.btn-group-tiny {
+  display: flex;
+  flex-direction: column;
+  max-height: 250px;
+  flex-wrap: wrap;
+}
+</style>
+<div class="top-left-absolute btn-group-tiny">
 {board.frbFiles.length > 1 && board.frbFiles.map((_frbFile, index) => (
-<>
-    <input class={`btn-check state-${index}`} type="radio" name={`state-${board.slug}`} id={`state-${index}-${board.slug}`} autocomplete="off" checked={index==0}/>
-    <label class={`btn btn-primary btn-state-tiny state-${index}`} for={`state-${index}-${board.slug}`}>{index+1}</label>
-</>
+  <input class={`btn-check`} type="radio" name={`state-${board.slug}`} id={`state-${index}-${board.slug}`} autocomplete="off" checked={index==0}/>
+  <label class={`btn btn-primary btn-state-tiny`} for={`state-${index}-${board.slug}`}>{index+1}</label>
 ))}
+</div>
 <a class="map-state" href={`/boards/${board.slug}`}>
 {board.frbFiles.map((_frbFile, index) => (
-    <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
+  <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
 ))}
 </a>
 <img class="card-img-top mapCard-image-background" src={`/images/backgrounds/${board.background}.webp`} loading="lazy" />
 <div class="bottom-right-absolute">
-{board.authors?.map((author) => (
+  {board.authors?.map((author) => (
     <div class="badge bg-primary">{author.url ? (<a class="text-reset" href={ author.url }>{ author.name }</a>) : author.name}</div>
-))}
+  ))}
 </div>

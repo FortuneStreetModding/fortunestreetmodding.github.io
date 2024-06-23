@@ -5,6 +5,40 @@ interface Props {
 }
 const { board } = Astro.props;
 ---
+<style is:global>
+  .de:checked ~ .lang :not(.de) {
+    visibility: hidden
+  }
+  .en:checked ~ .lang :not(.en) {
+    visibility: hidden
+  }
+  .es:checked ~ .lang :not(.es) {
+    visibility: hidden
+  }
+  .fr:checked ~ .lang :not(.fr) {
+    visibility: hidden
+  }
+  .it:checked ~ .lang :not(.it) {
+    visibility: hidden
+  }
+  .jp:checked ~ .lang :not(.jp) {
+    visibility: hidden
+  }
+  .lang {
+    display: grid;
+    float: left;
+  }
+  .lang > * {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .btn-lang-tiny {
+    padding: 0.75rem 0.375rem;
+    line-height: 0;
+    float: right;
+    border: 0;
+  }
+</style>
 {(Object.keys(board.name).length > 1 || Object.keys(board.desc).length > 1) && (
   <>
     <input class="btn-check en" type="radio" name={`lang-${board.slug}`} id={`lang-en-${board.slug}`} autocomplete="off" checked />
@@ -31,3 +65,23 @@ const { board } = Astro.props;
     )}
   </>
 )}
+<div class="row lang">
+  <h4 class:list={['card-title en', {'de': !board.name.de, 'fr': !board.name.fr, 'it': !board.name.it, 'es': !board.name.es, 'jp': !board.name.jp}]}>
+    { board.name.en }
+  </h4>
+  { board.name.de && <h4 class="card-title de">{ board.name.de }</h4> }
+  { board.name.fr && <h4 class="card-title fr">{ board.name.fr }</h4> }
+  { board.name.it && <h4 class="card-title it">{ board.name.it }</h4> }
+  { board.name.es && <h4 class="card-title es">{ board.name.es }</h4> }
+  { board.name.jp && <h4 class="card-title jp">{ board.name.jp }</h4> }
+</div>
+<div class="row lang" style="width: 100%">
+  <p class:list={['card-title en', {'de': !board.name.de, 'fr': !board.name.fr, 'it': !board.name.it, 'es': !board.name.es, 'jp': !board.name.jp}]}>
+    { board.desc.en }
+  </p>
+  { board.desc.de && <p class="card-text de">{ board.desc.de }</p> }
+  { board.desc.fr && <p class="card-text fr">{ board.desc.fr }</p> }
+  { board.desc.it && <p class="card-text it">{ board.desc.it }</p> }
+  { board.desc.es && <p class="card-text es">{ board.desc.es }</p> }
+  { board.desc.jp && <p class="card-text jp">{ board.desc.jp }</p> }
+</div>

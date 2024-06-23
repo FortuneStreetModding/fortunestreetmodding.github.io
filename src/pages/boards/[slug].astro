@@ -1,10 +1,8 @@
 ---
 import BoardChangelog from '~/components/board/boardChangelog.astro';
-import BoardDescription from '~/components/board/boardDescription.astro';
 import BoardDownloadButton from '~/components/board/boardDownloadButton.astro';
 import BoardImage from '~/components/board/boardImage.astro';
-import BoardLanguageSelector from '~/components/board/boardLanguageSelector.astro';
-import BoardName from '~/components/board/boardName.astro';
+import BoardNameAndDescription from '~/components/board/boardNameAndDescription.astro';
 import BoardNotes from '~/components/board/boardNotes.astro';
 import BoardProperties from '~/components/board/boardProperties.astro';
 import BoardTags from '~/components/board/boardTags.astro';
@@ -34,9 +32,7 @@ const board = boards.find(board => board.slug === slug);
               <BoardImage board={board}/>
             </div>
             <div class="card-body">
-              <BoardLanguageSelector board={board}/>
-              <BoardName board={board}/>
-              <BoardDescription board={board}/>
+              <BoardNameAndDescription board={board}/>
             </div>
             <BoardNotes board={board}/>
             <div class={`card-body mapInfo b-${board.slug}`}>

@@ -2,9 +2,7 @@
 import Layout from '~/layouts/layout.astro';
 import boards from '~/lib/getboards';
 import "./boards.css"
-import BoardLanguageSelector from '~/components/board/boardLanguageSelector.astro';
-import BoardName from '~/components/board/boardName.astro';
-import BoardDescription from '~/components/board/boardDescription.astro';
+import BoardNameAndDescription from '~/components/board/boardNameAndDescription.astro';
 import BoardImage from '~/components/board/boardImage.astro';
 import BoardChangelog from '~/components/board/boardChangelog.astro';
 import BoardProperties from '~/components/board/boardProperties.astro';
@@ -25,9 +23,7 @@ import BoardTags from '~/components/board/boardTags.astro';
                 <BoardImage board={board}/>
               </div>
               <div class="card-body">
-                <BoardLanguageSelector board={board}/>
-                <BoardName board={board}/>
-                <BoardDescription board={board}/>
+                <BoardNameAndDescription board={board}/>
               </div>
               <div class="card-footer text-muted">
                 <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>

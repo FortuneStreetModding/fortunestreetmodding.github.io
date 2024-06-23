@@ -6,6 +6,19 @@ interface Props {
 }
 const { board } = Astro.props;
 ---
+<style is:global>
+  .ventureCard {
+    min-width:2.5rem;
+    max-width:2.5rem;
+    min-height:2.5rem;
+    max-height:2.5rem;
+    padding:0;
+    text-align:center;
+    vertical-align:middle;
+    justify-content:center;
+    align-items: center;
+  }
+</style>
 <div class="card-body">
   <div class="row mx-0">
     {ventureCards.map((ventureCard, index) => (
