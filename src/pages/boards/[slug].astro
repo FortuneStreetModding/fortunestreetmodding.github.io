@@ -16,13 +16,13 @@ export function getStaticPaths() {
   return boards.map(board => {
     return {
       params: {
-        boardslug: board.slug
+        slug: board.slug
       }
     }
   })
 }
-const { boardslug } = Astro.params;
-const board = boards.find(board => board.slug === boardslug);
+const { slug } = Astro.params;
+const board = boards.find(board => board.slug === slug);
 ---
 <Layout title={board? board.name.en : "Invalid Board"}>
   <div class="container">
