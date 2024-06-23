@@ -215,115 +215,7 @@ export interface MapDescriptor1 {
      */
     clearRank?: number;
   };
-  /**
-   * The custom background music and jingles.
-   */
-  music?: {
-    /**
-     * List of download URLs.
-     */
-    download?: null | string | unknown[];
-    /**
-     * The looping map main background music.
-     */
-    map?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The looping music played when a player is buying or selling stocks.
-     */
-    stock?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The looping music played when a player is picking a venture card.
-     */
-    ventureCards?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The looping music played when an auction is taking place.
-     */
-    auction?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The looping music played when a player reaches the target net worth.
-     */
-    targetMet?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The looping music played when a player wins the match.
-     */
-    win?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when a guest appears.
-     */
-    guestAppear?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when a guest leaves.
-     */
-    guestLeave?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when venture card #13 is picked.
-     */
-    badVentureCard?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when the shops of a player close.
-     */
-    takeAbreak?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when a Mii character gets promoted.
-     */
-    promotionMii?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when a character from Mario gets promoted.
-     */
-    promotionMario?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when a character from Dragon Quest gets promoted.
-     */
-    promotionDragonQuest?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when a shop is forcefully bought from another player.
-     */
-    forcedBuyout?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when a player owns all shops in a district.
-     */
-    domination?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when a player bankrupts.
-     */
-    bankruptcy?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The looping music played when the round the blocks mini game is being played.
-     */
-    roundTheBlocks?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when a player wins something during the round the blocks mini game.
-     */
-    roundTheBlocksWin?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when a player gets triple seven during the round the blocks mini game.
-     */
-    roundTheBlocks777?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The looping music played when the round the memory block mini game is being played.
-     */
-    memoryBlock?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The looping music played when the dart of gold mini game is being played.
-     */
-    dartOfGold?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The looping music played when the players are picking their racing slime.
-     */
-    slurpodromeSelect?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played at the start of the race.
-     */
-    slurpodromeStart?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The looping music played when the slimes are racing.
-     */
-    slurpodromeRace?: MusicFile | [MusicFile, ...MusicFile[]];
-    /**
-     * The jingle played when a slime reaches the finish line.
-     */
-    slurpodromeWin?: MusicFile | [MusicFile, ...MusicFile[]];
-  };
+  music?: Music;
   /**
    * The background music.
    */
@@ -585,6 +477,115 @@ export interface Localization1 {
   it?: string;
   es?: string;
   jp?: string;
+}
+/**
+ * The custom background music and jingles.
+ */
+export interface Music {
+  /**
+   * List of download URLs.
+   */
+  download?: null | string | unknown[];
+  /**
+   * The looping map main background music.
+   */
+  map?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The looping music played when a player is buying or selling stocks.
+   */
+  stock?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The looping music played when a player is picking a venture card.
+   */
+  ventureCards?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The looping music played when an auction is taking place.
+   */
+  auction?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The looping music played when a player reaches the target net worth.
+   */
+  targetMet?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The looping music played when a player wins the match.
+   */
+  win?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when a guest appears.
+   */
+  guestAppear?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when a guest leaves.
+   */
+  guestLeave?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when venture card #13 is picked.
+   */
+  badVentureCard?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when the shops of a player close.
+   */
+  takeAbreak?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when a Mii character gets promoted.
+   */
+  promotionMii?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when a character from Mario gets promoted.
+   */
+  promotionMario?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when a character from Dragon Quest gets promoted.
+   */
+  promotionDragonQuest?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when a shop is forcefully bought from another player.
+   */
+  forcedBuyout?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when a player owns all shops in a district.
+   */
+  domination?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when a player bankrupts.
+   */
+  bankruptcy?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The looping music played when the round the blocks mini game is being played.
+   */
+  roundTheBlocks?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when a player wins something during the round the blocks mini game.
+   */
+  roundTheBlocksWin?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when a player gets triple seven during the round the blocks mini game.
+   */
+  roundTheBlocks777?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The looping music played when the round the memory block mini game is being played.
+   */
+  memoryBlock?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The looping music played when the dart of gold mini game is being played.
+   */
+  dartOfGold?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The looping music played when the players are picking their racing slime.
+   */
+  slurpodromeSelect?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played at the start of the race.
+   */
+  slurpodromeStart?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The looping music played when the slimes are racing.
+   */
+  slurpodromeRace?: MusicFile | [MusicFile, ...MusicFile[]];
+  /**
+   * The jingle played when a slime reaches the finish line.
+   */
+  slurpodromeWin?: MusicFile | [MusicFile, ...MusicFile[]];
 }
 export interface Mutators {
   /**

@@ -6,6 +6,116 @@
     "type": "object",
     "additionalProperties": false,
     "definitions": {
+        "music": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "download": {
+                    "description": "List of download URLs.",
+                    "anyOf": [{"type": "null"},{"type": "string"},{"type": "array"}]
+                },
+                "map": {
+                    "description": "The looping map main background music.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "stock": {
+                    "description": "The looping music played when a player is buying or selling stocks.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "ventureCards": {
+                    "description": "The looping music played when a player is picking a venture card.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "auction": {
+                    "description": "The looping music played when an auction is taking place.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "targetMet": {
+                    "description": "The looping music played when a player reaches the target net worth.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "win": {
+                    "description": "The looping music played when a player wins the match.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "guestAppear": {
+                    "description": "The jingle played when a guest appears.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "guestLeave": {
+                    "description": "The jingle played when a guest leaves.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "badVentureCard": {
+                    "description": "The jingle played when venture card #13 is picked.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "takeAbreak": {
+                    "description": "The jingle played when the shops of a player close.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "promotionMii": {
+                    "description": "The jingle played when a Mii character gets promoted.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "promotionMario": {
+                    "description": "The jingle played when a character from Mario gets promoted.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "promotionDragonQuest": {
+                    "description": "The jingle played when a character from Dragon Quest gets promoted.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "forcedBuyout": {
+                    "description": "The jingle played when a shop is forcefully bought from another player.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "domination": {
+                    "description": "The jingle played when a player owns all shops in a district.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "bankruptcy": {
+                    "description": "The jingle played when a player bankrupts.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "roundTheBlocks": {
+                    "description": "The looping music played when the round the blocks mini game is being played.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "roundTheBlocksWin": {
+                    "description": "The jingle played when a player wins something during the round the blocks mini game.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "roundTheBlocks777": {
+                    "description": "The jingle played when a player gets triple seven during the round the blocks mini game.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "memoryBlock": {
+                    "description": "The looping music played when the round the memory block mini game is being played.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "dartOfGold": {
+                    "description": "The looping music played when the dart of gold mini game is being played.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "slurpodromeSelect": {
+                    "description": "The looping music played when the players are picking their racing slime.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "slurpodromeStart": {
+                    "description": "The jingle played at the start of the race.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "slurpodromeRace": {
+                    "description": "The looping music played when the slimes are racing.",
+                    "$ref": "#/definitions/musicFiles"
+                },
+                "slurpodromeWin": {
+                    "description": "The jingle played when a slime reaches the finish line.",
+                    "$ref": "#/definitions/musicFiles"
+                }
+            }
+        },
         "musicFile": {
             "anyOf": [
                 {"type": "null"},
@@ -382,114 +492,7 @@
         },
         "music": {
             "description": "The custom background music and jingles.",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "download": {
-                    "description": "List of download URLs.",
-                    "anyOf": [{"type": "null"},{"type": "string"},{"type": "array"}]
-                },
-                "map": {
-                    "description": "The looping map main background music.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "stock": {
-                    "description": "The looping music played when a player is buying or selling stocks.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "ventureCards": {
-                    "description": "The looping music played when a player is picking a venture card.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "auction": {
-                    "description": "The looping music played when an auction is taking place.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "targetMet": {
-                    "description": "The looping music played when a player reaches the target net worth.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "win": {
-                    "description": "The looping music played when a player wins the match.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "guestAppear": {
-                    "description": "The jingle played when a guest appears.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "guestLeave": {
-                    "description": "The jingle played when a guest leaves.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "badVentureCard": {
-                    "description": "The jingle played when venture card #13 is picked.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "takeAbreak": {
-                    "description": "The jingle played when the shops of a player close.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "promotionMii": {
-                    "description": "The jingle played when a Mii character gets promoted.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "promotionMario": {
-                    "description": "The jingle played when a character from Mario gets promoted.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "promotionDragonQuest": {
-                    "description": "The jingle played when a character from Dragon Quest gets promoted.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "forcedBuyout": {
-                    "description": "The jingle played when a shop is forcefully bought from another player.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "domination": {
-                    "description": "The jingle played when a player owns all shops in a district.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "bankruptcy": {
-                    "description": "The jingle played when a player bankrupts.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "roundTheBlocks": {
-                    "description": "The looping music played when the round the blocks mini game is being played.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "roundTheBlocksWin": {
-                    "description": "The jingle played when a player wins something during the round the blocks mini game.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "roundTheBlocks777": {
-                    "description": "The jingle played when a player gets triple seven during the round the blocks mini game.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "memoryBlock": {
-                    "description": "The looping music played when the round the memory block mini game is being played.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "dartOfGold": {
-                    "description": "The looping music played when the dart of gold mini game is being played.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "slurpodromeSelect": {
-                    "description": "The looping music played when the players are picking their racing slime.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "slurpodromeStart": {
-                    "description": "The jingle played at the start of the race.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "slurpodromeRace": {
-                    "description": "The looping music played when the slimes are racing.",
-                    "$ref": "#/definitions/musicFiles"
-                },
-                "slurpodromeWin": {
-                    "description": "The jingle played when a slime reaches the finish line.",
-                    "$ref": "#/definitions/musicFiles"
-                }
-            }
+            "$ref": "#/definitions/music"
         },
         "bgmId": {
             "description": "The background music.",
