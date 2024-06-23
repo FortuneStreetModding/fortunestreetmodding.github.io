@@ -148,7 +148,7 @@ function recalc_display() {
             let price = price_rank_table[j][0];
             let rank = price_rank_table[j][1];
             if (s.curprice >= price) {
-                s.tx_info_img.src = `/simulator/shop_${rank}.png`;
+                s.tx_info_img.src = `/images/simulator/shop_${rank}.png`;
             }
         }
 

@@ -110,7 +110,7 @@ function sentiment_to_div_class(sentiment: number) {
                   <div class="col-4">
                     <div class="card-body" style="padding-right: 0;">
                       <header><p>Card No. {index + 1}</p></header>
-                      <figure><img src={"/venturecards/venturecard_" + String(index + 1).padStart(3, '0') + ".webp"} alt={"Venture Card " + (index + 1).toString()} style="max-width: 100%; height: auto;"/></figure>
+                      <figure><img src={"/images/venturecards/venturecard_" + String(index + 1).padStart(3, '0') + ".webp"} alt={"Venture Card " + (index + 1).toString()} style="max-width: 100%; height: auto;"/></figure>
                       <footer><p><strong>
                         {card.grade === 0 && "D"}
                         {card.grade === 1 && "C"}
@@ -127,12 +127,10 @@ function sentiment_to_div_class(sentiment: number) {
                     <div class="card-body">
                       <p><strong>{card.description}</strong></p>
                       {card.descriptionExtra !== undefined && (<p><i>({card.descriptionExtra})</i></p>)}
-                      {card.defaultEasy || card.defaultStandard && (
+                      {(card.defaultEasy || card.defaultStandard) && (
                       <p>
-                        Default in: 
-                        {card.defaultEasy && "Easy"}
-                        {card.defaultEasy && card.defaultStandard && "/"}
-                        {card.defaultStandard && "Standard"}
+                        Default in:
+                        {card.defaultEasy && "Easy"}{card.defaultEasy && card.defaultStandard && "/"}{card.defaultStandard && "Standard"}
                       </p>
                       )}
                       <p><i>Effect: {card.effect}</i></p>

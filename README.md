@@ -6,10 +6,11 @@ This repository doubles as the way for users to submit new custom maps and backg
 
 ## Local installation
 
-1. Install [Bun](https://bun.sh/).
+1. Install the latest version of [Node.js](https://nodejs.org/en/download/prebuilt-installer).
 2. Navigate to the location of the cloned repository and execute the following commands:
-    - `bun install`
-    - `bun run dev`
+    - `npm update -g npm`
+    - `npm install`
+    - `npm run dev`
 3. Open a web browser and navigate to `http://localhost:4321`.
 
 ## [License](LICENSE)
