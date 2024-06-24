@@ -34,9 +34,12 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 3
+    changed:
       - swapped out one of the stockbrokers with a backstreet that leads to the center isle
   - version: 2
-      - Added a switch on the mainland
+    added:
+      - A switch on the mainland
+    changed:
       - adjusted the placement of the backstreets
       - changed the music
   - version: 1
