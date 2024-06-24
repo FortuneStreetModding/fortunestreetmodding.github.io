@@ -20,14 +20,17 @@ import Layout from '~/layouts/layout.astro';
               </ul>
               {background.download && (
                 <div class="card-footer">
-                  {background.download.length > 1 ? (
-                    <>
-                    {background.download.map((download, downloadIndex) => (
-                      <a href={ download } class="btn btn-primary">{downloadIndex}</a>
-                    ))}
-                    </>
-                  ) : (
-                    <a href={ background.download[0] } class="btn btn-primary">Download</a>
+                  {background.download.length == 1 ? (<a class="btn btn-primary" href={background.download[0]}>Download</a>) : (
+                    <div class="btn-group" role="group">
+                      <button id={`btnGroupBgDrop-${background.background}`} type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Download
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby={`btnGroupBgDrop-${background.background}`}>
+                        {background.download.map((downloadUrl) => (
+                          <li><a class="dropdown-item" href={ downloadUrl }>{new URL(downloadUrl).hostname}</a></li>
+                        ))}
+                      </ul>
+                    </div>
                   )}
                 </div>
               )}
