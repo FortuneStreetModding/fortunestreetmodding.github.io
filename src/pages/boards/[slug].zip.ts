@@ -1,6 +1,7 @@
 import boards from '~/lib/getboards';
-import * as path from 'path';
-import { ZipArchive } from "@shortercode/webzip";
+import JSZip from 'jszip';
+import fs from 'fs';
+import { vanillaMapIcons } from '~/lib/vanilla';
 
 export function getStaticPaths() {
   return boards.map(board => {
@@ -18,20 +19,42 @@ export async function GET({ params } : { params: any }) {
 
   if(board === undefined) { return new Response(null, { status: 404 }); }
 
-  const archive = new ZipArchive;
+  const zip = new JSZip();
 
-  await archive.set(`${board.path}/${board.yaml}`, board.yaml)
-  await archive.compress_entry(board.yaml)
-  for(const frbFile of board.frbFiles) {
-    await archive.set(`${board.path}/${frbFile}.frb`, `${frbFile}.frb`);
-    await archive.compress_entry(`${frbFile}.frb`)
+  // yaml file
+  let file = `.${board.path}/${board.yaml}`
+  if(!fs.existsSync(file)) {
+    throw new Error(`File not found: ${file}`);
   }
-  if(board.mapIcon) {
-    await archive.set(`${board.path}/${board.mapIcon}.png`, `${board.mapIcon}.png`);
-    await archive.compress_entry(`${board.mapIcon}.png`)
+  zip.file(board.yaml, fs.createReadStream(file));
+
+  // frb files
+  for(const frbName of board.frbFiles) {
+    file = `.${board.path}/${frbName}.frb`
+    if(!fs.existsSync(file)) {
+      throw new Error(`File not found: ${file}`);
+    }
+    zip.file(`${frbName}.frb`, fs.createReadStream(file));
   }
 
-  const blob = archive.to_blob();
+  // map icon file
+  if(board.mapIcon && !vanillaMapIcons.includes(board.mapIcon)) {
+    file = `.${board.path}/${board.mapIcon}.png`
+    if(fs.existsSync(file)) {
+      zip.file(`${board.mapIcon}.png`, fs.createReadStream(file));
+    } else {
+      console.warn(`File not found: ${file}`);
+    }
+  }
+
+  const buffer = zip.generateInternalStream({
+    type: "blob",
+    compression: "DEFLATE",
+    compressionOptions: {
+        level: 9
+    }
+  });
+  const blob = await buffer.accumulate();
   return new Response(blob, {
     headers: {
       'Content-Type': 'application/zip',

@@ -9,14 +9,14 @@ const { board } = Astro.props;
   <a class="btn btn-primary" href={`/boards/${board.slug}.zip`}>Board</a>
   {board.backgroundData.download && (
     <>
-      {board.backgroundData.download.length == 1 ? (<a class="btn btn-primary" href={`/boards/${board.slug}.zip`}>Background</a>) : (
+      {board.backgroundData.download.length == 1 ? (<a class="btn btn-primary" href={board.backgroundData.download[0]}>Background</a>) : (
         <div class="btn-group" role="group">
           <button id={`btnGroupBgDrop-${board.slug}`} type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Background
           </button>
           <ul class="dropdown-menu" aria-labelledby={`btnGroupBgDrop-${board.slug}`}>
-            {board.backgroundData.download.map((download) => (
-              <li><a class="dropdown-item" href="{{ download }}">{new URL(download).hostname}</a></li>
+            {board.backgroundData.download.map((downloadUrl) => (
+              <li><a class="dropdown-item" href={ downloadUrl }>{new URL(downloadUrl).hostname}</a></li>
             ))}
           </ul>
         </div>
@@ -25,14 +25,14 @@ const { board } = Astro.props;
   )}
   {board.music?.download && (
     <>
-      {board.music.download.length == 1 ? (<a class="btn btn-primary" href="{{ background.download }}">Music</a>) : (
+      {board.music.download.length == 1 ? (<a class="btn btn-primary" href={board.music.download[0]}>Music</a>) : (
         <div class="btn-group" role="group">
-          <button id="btnGroupMusicDrop-{%- include renderMapSlugClass.liquid map=map -%}" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <button id={`btnGroupMusicDrop-${board.slug}`} type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Music
           </button>
-          <ul class="dropdown-menu" aria-labelledby="btnGroupMusicDrop-{%- include renderMapSlugClass.liquid map=map -%}">
-            {board.music.download?.map((download) => (
-              <li><a class="dropdown-item" href="{{ download }}">{new URL(download).hostname}</a></li>
+          <ul class="dropdown-menu" aria-labelledby={`btnGroupMusicDrop-${board.slug}`}>
+            {board.music.download?.map((downloadUrl) => (
+              <li><a class="dropdown-item" href={ downloadUrl }>{new URL(downloadUrl).hostname}</a></li>
             ))}
           </ul>
         </div>
