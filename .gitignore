@@ -47,15 +47,6 @@ __pycache__
 ### Map Background and Music Download Metainformation ###
 *.cfg
 
-# solid-start
-
-dist
-.solid
-.output
-.vercel
-.netlify
-.vinxi
-
 # Environment
 .env
 .env*.local
