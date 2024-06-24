@@ -24,6 +24,7 @@
     "marked": "^13.0.0",
     "monaco-yaml": "^5.2.0",
     "slug": "^9.1.0",
+    "tabulator-tables": "^6.2.1",
     "typescript": "^5.5.2"
   },
   "devDependencies": {

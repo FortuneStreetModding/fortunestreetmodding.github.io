@@ -1,7 +1,7 @@
 ---
 import BoardsLayout from '~/layouts/boardsLayout.astro';
 import "./table.css";
-import boards, { type MapDescriptorExtended } from "~/lib/getboards";
+import boards from "~/lib/getboards";
 import fs from "fs";
 
 // We want to omit some properties to reduce the size of the json transferred
@@ -22,25 +22,27 @@ fs.writeFileSync('./boards.json', omitPropertiesFromArray(boards, [
   "ventureCards", "music", "notes", "notesHtml", "name", "desc", "changelog", "districtNames", "shopNames"
 ]), 'utf8');
 ---
-<script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.2.1/dist/js/tabulator.min.js"></script>
 <script>
-  const data = await fetch('./boards.json').then((response) => response.json());
+  import {Tabulator, FormatModule, SortModule, FilterModule, EditModule} from 'tabulator-tables';
 
-  let table = new Tabulator("#table", {
+  Tabulator.registerModule([FormatModule, SortModule, FilterModule, EditModule]);
+  const data = await fetch('./boards.json').then((response) => response.json());
+  
+  new Tabulator("#table", {
     columns: [
-      { title: "Name", field: "nameEn", headerFilter: true, sortable: true, formatter: function(cell, formatterParams){
+      { title: "Name", field: "nameEn", headerFilter: true, formatter: function(cell, _formatterParams){
         return "<a href='/boards/" + cell.getRow().getData().slug + "'>" + cell.getValue() + "</a>";
       }},
-      { title: "Rule Set", field: "ruleSet", headerFilter: true, sortable: true },
-      { title: "Theme", field: "theme", headerFilter: true, sortable: true },
-      { title: "Background", field: "backgroundData.name", headerFilter: true, sortable: true },
-      { title: "Initial Cash", field: "initialCash", headerFilter: true, sortable: true },
-      { title: "Target Amount", field: "targetAmount", headerFilter: true, sortable: true },
-      { title: "Dice Roll", field: "maxDiceRoll", headerFilter: true, sortable: true },
-      { title: "States", field: "frbFiles.length", headerFilter: true, sortable: true },
-      { title: "Tags", field: "tags", headerFilter: true, sortable: true },
-      { title: "Version", field: "currentVersion", headerFilter: true, sortable: true },
-      { title: "Authors", field: "authors", headerFilter: true, sortable: true, formatter: function(cell, formatterParams){
+      { title: "Rule Set", field: "ruleSet", headerFilter: true },
+      { title: "Theme", field: "theme", headerFilter: true },
+      { title: "Background", field: "backgroundData.name", headerFilter: true },
+      { title: "Initial Cash", field: "initialCash", headerFilter: true },
+      { title: "Target Amount", field: "targetAmount", headerFilter: true },
+      { title: "Dice Roll", field: "maxDiceRoll", headerFilter: true },
+      { title: "States", field: "frbFiles.length", headerFilter: true },
+      { title: "Tags", field: "tags", headerFilter: true },
+      { title: "Version", field: "currentVersion", headerFilter: true },
+      { title: "Authors", field: "authors", headerFilter: true, formatter: function(cell, _formatterParams){
         const authors = cell.getValue();
         let html = "";
         for (let i = 0; i < cell.getValue().length; i++) {
@@ -61,7 +63,7 @@ fs.writeFileSync('./boards.json', omitPropertiesFromArray(boards, [
     data: data
   });
 
-  document.getElementById("loading").style.display = "none";
+  document.getElementById("loading")!.style.display = "none";
 </script>
 <BoardsLayout title="Boards">
   <div id="loading" style="display: flex; justify-content:center; align-items:center; height: 100%">
