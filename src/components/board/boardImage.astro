@@ -34,9 +34,10 @@ const { board, link, imageHeight } = Astro.props;
   white-space: nowrap;
   z-index: 3;
   background-color: var(--bs-secondary-bg);
+  text-shadow: -1px 0px 1px #000000, 1px 0px 1px #000000, 0px 1px 1px #000000, 0px -1px 1px #000000;
 }
 .btn-state-tiny.btn-primary {
-  background-color: var(--bs-secondary-bg);
+  background-color: rgba(var(--bs-secondary-bg-rgb), 0.5);
   border-color: var(--bs-secondary-border-subtle);
 }
 .btn-state-tiny.btn-primary
