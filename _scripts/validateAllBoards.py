@@ -236,24 +236,44 @@ def main(argv : list):
                     strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} exists with a different case.')
                 if not filePath.exists() or not filePath.is_file():
                     strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} does not exist')
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile1"]}.webp')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} does not exist')
             if "frbFile2" in yamlContent:
                 filePath = Path(yamlMap.parent, f'{yamlContent["frbFile2"]}.frb')
                 if file_exists_with_different_case(filePath):
                     strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} exists with a different case.')
                 if not filePath.exists() or not filePath.is_file():
                     strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} does not exist')
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile2"]}.webp')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} does not exist')
             if "frbFile3" in yamlContent:
                 filePath = Path(yamlMap.parent, f'{yamlContent["frbFile3"]}.frb')
                 if file_exists_with_different_case(filePath):
                     strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} exists with a different case.')
                 if not filePath.exists() or not filePath.is_file():
                     strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} does not exist')
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile3"]}.webp')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} does not exist')
             if "frbFile4" in yamlContent:
                 filePath = Path(yamlMap.parent, f'{yamlContent["frbFile4"]}.frb')
                 if file_exists_with_different_case(filePath):
                     strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} exists with a different case.')
                 if not filePath.exists() or not filePath.is_file():
                     strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} does not exist')
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile4"]}.webp')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} does not exist')
             if "frbFiles" in yamlContent:
                 for frbFile in yamlContent["frbFiles"]:
                     filePath = Path(yamlMap.parent, f'{frbFile}.frb')
@@ -261,6 +281,11 @@ def main(argv : list):
                         strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} exists with a different case.')
                     if not filePath.exists() or not filePath.is_file():
                         strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} does not exist')
+                    filePath = Path(yamlMap.parent, f'{frbFile}.webp')
+                    if file_exists_with_different_case(filePath):
+                        strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} exists with a different case.')
+                    if not filePath.exists() or not filePath.is_file():
+                        strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} does not exist')
 
             frbFile1 = yamlMap.parent / Path(f'{yamlContent["frbFiles"][0] if "frbFiles" in yamlContent else yamlContent["frbFile1"]}.frb')
             with open(frbFile1, "rb") as stream:
