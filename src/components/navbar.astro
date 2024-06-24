@@ -1,0 +1,54 @@
+---
+const currentPagePath = Astro.url.pathname;
+---
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="/favicon.ico" alt="Fortune Street Modding" width="24" height="24" class="d-inline-block align-text-top" /> Fortune Street Modding</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" class:list={{ active: currentPagePath === '/' }} href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class:list={{ active: currentPagePath === '/boards' }} href="/boards">Boards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" class:list={{ active: currentPagePath === '/backgrounds' }} href="/backgrounds">Backgrounds</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Tools </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" class:list={{ active: currentPagePath === '/calculator' }} href="/calculator">Address Calculator</a></li>
+            <li><a class="dropdown-item" class:list={{ active: currentPagePath === '/simulator' }} href="/simulator">District Simulator</a></li>
+            <li><a class="dropdown-item" class:list={{ active: currentPagePath === '/cards' }} href="/cards">Venture Cards</a></li>
+            <li><a class="dropdown-item" class:list={{ active: currentPagePath === '/editor' }} href="/editor">Board Yaml Editor</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="d-flex navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCYe4nHqb0HcWZ0pnoDP0Ijw">Youtube Channel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://discord.gg/DE9Hn7T">Discord</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/FortuneStreetModding">Github</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

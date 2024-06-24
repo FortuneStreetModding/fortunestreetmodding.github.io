@@ -1,4 +1,3 @@
----
 name: 
   en: Suits Map
   de: Farbenkarte
@@ -42,4 +41,3 @@ changelog:
 authors:
   - name: Deflaktor
     url: https://github.com/Deflaktor
-...

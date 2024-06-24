@@ -1,0 +1,44 @@
+---
+import BoardsLayout from '~/layouts/boardsLayout.astro';
+import boards from '~/lib/getboards';
+import "./boards/boards.css"
+import BoardNameAndDescription from '~/components/board/boardNameAndDescription.astro';
+import BoardImage from '~/components/board/boardImage.astro';
+import BoardDownloadButton from '~/components/board/boardDownloadButton.astro';
+import BoardTags from '~/components/board/boardTags.astro';
+---
+<BoardsLayout title="Boards">
+  <div class="album">
+    <div class="container">
+      <div class="row">
+        {boards.map((board, boardIndex) => (
+          <>
+          <div class={`col mb-4 mapCard b-${board.slug}`}>
+            <div class="card h-100">
+              <div class="relative-container">
+                <BoardImage board={board}/>
+              </div>
+              <div class="card-body">
+                <BoardNameAndDescription board={board}/>
+              </div>
+              <div class="card-footer text-muted">
+                <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
+                <div>Download {board.currentVersion && <span class="badge bg-secondary">v{ board.currentVersion }</span>}</div>
+                <BoardDownloadButton board={board} />
+              </div>
+              <div class="card-footer text-muted">
+                <BoardTags board={board}/>
+                &nbsp;
+              </div>
+            </div>
+          </div>
+          {boardIndex > 0 && boardIndex % 3 == 2 && (<div class="w-100"></div>)}
+          </>
+        ))}
+        {boards.length > 0 && boards.length % 3 == 0 && (<div class="w-100"></div>)}
+        {boards.length > 0 && boards.length % 3 == 1 && (<div class="col mapCard"></div><div class="col mapCard"></div>)}
+        {boards.length > 0 && boards.length % 3 == 2 && (<div class="col mapCard"></div>)}
+      </div>
+    </div>
+  </div>
+</BoardsLayout>

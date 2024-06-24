@@ -1,4 +1,3 @@
----
 name:
   en: Sound Test Board
 desc:
@@ -282,4 +281,3 @@ shopNames:
     98: Vacant plot
 tags:
   - test
-...

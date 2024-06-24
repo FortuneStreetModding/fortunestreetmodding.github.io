@@ -1,6 +1,12 @@
 {
     "yaml.schemas": {
-        "https://raw.githubusercontent.com/FortuneStreetModding/fortunestreetmodding.github.io/main/schema/mapdescriptor.json": ["/_maps/**/*.yaml"],
+        "public/schema/mapdescriptor.json": [
+            "/_maps/**/*.yaml"
+        ],
+        "https://json.schemastore.org/github-workflow.json": [
+            "/.github/workflows/*.yml"
+        ]
     },
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "npm.packageManager": "bun"
 }

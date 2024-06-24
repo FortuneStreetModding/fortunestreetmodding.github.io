@@ -1,4 +1,3 @@
----
 name:
   en: Bakerman
 desc:
@@ -158,4 +157,3 @@ changelog:
 authors:
   - name: widardd
     url: https://github.com/widardd
-...

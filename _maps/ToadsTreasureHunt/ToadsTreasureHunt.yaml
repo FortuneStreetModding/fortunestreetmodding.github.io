@@ -1,4 +1,3 @@
----
 name:
   en: Toad's Treasure Hunt
 desc:
@@ -44,6 +43,7 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 2
+    changed:
       - Map size has been reduced to 59 squares
       - Districts that used to have 5 properties now have 4
       - Removed districts 8,9, and 10
@@ -199,4 +199,3 @@ ventureCards:
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...
