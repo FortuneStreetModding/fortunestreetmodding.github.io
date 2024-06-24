@@ -7,6 +7,5 @@
             "/.github/workflows/*.yml"
         ]
     },
-    "cmake.configureOnOpen": false,
-    "npm.packageManager": "bun"
+    "cmake.configureOnOpen": false
 }

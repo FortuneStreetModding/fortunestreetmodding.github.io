@@ -4,7 +4,7 @@
       {
         "label": "Run Dev Server",
         "type": "shell",
-        "command": "bun",
+        "command": "npm",
         "args": ["run", "dev"],
         "group": {
           "kind": "build",
