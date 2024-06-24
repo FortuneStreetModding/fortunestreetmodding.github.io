@@ -1,4 +1,3 @@
----
 name: 
   en: King of the Hill
   de: König des Hügels
@@ -39,4 +38,3 @@ changelog:
 authors:
   - name: Deflaktor
     url: https://github.com/Deflaktor
-...

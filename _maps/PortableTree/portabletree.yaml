@@ -1,4 +1,3 @@
----
 name:
   en: Yggdrasil (Portable)
 desc:
@@ -203,4 +202,3 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 tags:
   - Portable
-...

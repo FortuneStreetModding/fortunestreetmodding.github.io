@@ -1,4 +1,3 @@
----
 name:
   en: Fortunapolis
 desc:
@@ -37,10 +36,11 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
-  - version: 1
-    added: 
-      - Initial Release
+  - version: 3
+    changed:
+      - Adjusted the locations of the magmalice squares to try and increase player traffic along the four corners of the board
   - version: 2
+    changed:
       - Changed the location of the switch at the bottom left side
       - Added a rotating suit to the left middle of the map and an 83 misadventure warp event
       - Altered some rewards in the center of the board 
@@ -48,8 +48,9 @@ changelog:
       - Swapped the move +2 events in the jail with a cannon and a 96 event
       - Exchanged a few venture cards and raised the target to help balance the gameplay
       - Moved the location of the switch to raise the chance of going to jail
-  - version: 3
-      - Adjusted the locations of the magmalice squares to try and increase player traffic along the four corners of the board
+  - version: 1
+    added: 
+      - Initial Release
 authors:
   - name: phellen007
 ventureCards:
@@ -181,4 +182,3 @@ ventureCards:
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

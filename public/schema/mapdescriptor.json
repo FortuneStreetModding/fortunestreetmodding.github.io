@@ -649,7 +649,7 @@
                 "additionalProperties": false,
                 "properties": {
                     "version": {
-                        "type": ["string", "integer"],
+                        "type": ["string", "integer", "number"],
                         "minLength": 1,
                         "maxLength": 20,
                         "minimum": 0,
