@@ -3,24 +3,25 @@ import type { MapDescriptorExtended } from '~/lib/getboards';
 interface Props {
   board: MapDescriptorExtended;
   link: boolean;
+  imageHeight: string;
 }
-const { board, link } = Astro.props;
+const { board, link, imageHeight } = Astro.props;
 ---
-<style is:global>
+<style is:global define:vars={{imageHeight}}>
 .mapCard-image-board {
-  width:100%;
-  height:400px;
-  object-fit:scale-down;
-  position:absolute;
+  width: 100%;
+  height: var(--imageHeight);
+  object-fit: scale-down;
+  position: absolute;
   filter: drop-shadow(0 0 6px #000b);
   z-index: 2;
   padding: 1rem;
 }
 .mapCard-image-background {
-  width:100%;
-  height:400px;
-  object-fit:cover;
-  position:relative;
+  width: 100%;
+  height: var(--imageHeight);
+  object-fit: cover;
+  position: relative;
   filter: blur(1px) grayscale(50%) contrast(50%) opacity(65%);
   z-index: 1;
 }
@@ -32,10 +33,16 @@ const { board, link } = Astro.props;
   width: 2rem;
   white-space: nowrap;
   z-index: 3;
-  filter: grayscale(1);
+  background-color: var(--bs-secondary-bg);
 }
+.btn-state-tiny.btn-primary {
+  background-color: var(--bs-secondary-bg);
+  border-color: var(--bs-secondary-border-subtle);
+}
+.btn-state-tiny.btn-primary
 :checked+.btn-state-tiny {
-  filter: grayscale(0);
+  background-color: var(--bs-primary-bg);
+  border-color: var(--bs-primary-border-subtle);
 }
  .btn-state-tiny.state-0 { left: 1rem; top: calc(1.0rem +  0*1.7rem); }
  .btn-state-tiny.state-1 { left: 1rem; top: calc(1.0rem +  1*1.7rem); }
