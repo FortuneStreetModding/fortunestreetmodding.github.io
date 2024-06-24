@@ -27,7 +27,7 @@ frbFiles:
   - FRB_FILENAME_FOR_STATE_5 # CAN REMOVE UNUSED STATES
   - FRB_FILENAME_FOR_STATE_6 # CAN REMOVE UNUSED STATES
 background: bg001
-mapIcon: p_bg_001
+mapIcon: p_bg_001           # you can add your own map icon. It needs to be in the same directory and be a png file. Dimensions need to be 79x78.
 looping:
   mode: Vertical
   radius: 26                # The radius of the loop. The bigger this value the farther apart from each other are the squares. Should be somewhere around 26-28.
