@@ -10,6 +10,7 @@ export type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' |
   nameEn: string;
   descEn: string;
   path: string;
+  yaml: string;
   slug: string;
   imageUrls: string[];
   backgroundData: Background;
@@ -29,7 +30,6 @@ export type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' |
 
 const boards = getBoards();
 export default boards;
-
 
 function getBoards(): MapDescriptorExtended[] {
   const boardFiles: Record<string, MapDescriptor> = import.meta.glob('/_maps/*/*.{yml,yaml}', { eager: true });
@@ -67,6 +67,9 @@ function getBoards(): MapDescriptorExtended[] {
 
     // set the directory path for the board
     board.path = parsedPath.dir;
+
+    // set the name of the yaml file
+    board.yaml = parsedPath.base;
 
     // set the slug name for the board
     board.slug = slug(parsedPath.name);

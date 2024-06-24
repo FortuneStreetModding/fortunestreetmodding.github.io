@@ -6,15 +6,15 @@ interface Props {
 const { board } = Astro.props;
 ---
 <div class="btn-group" role="group">
-  <button class="btn btn-primary" onclick="">Map</button>
+  <a class="btn btn-primary" href={`/boards/${board.slug}.zip`}>Board</a>
   {board.backgroundData.download && (
     <>
-      {board.backgroundData.download.length == 1 ? (<a class="btn btn-primary" href="{{ background.download }}">Background</a>) : (
+      {board.backgroundData.download.length == 1 ? (<a class="btn btn-primary" href={`/boards/${board.slug}.zip`}>Background</a>) : (
         <div class="btn-group" role="group">
-          <button id="btnGroupBgDrop-{%- include renderMapSlugClass.liquid map=map -%}" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <button id={`btnGroupBgDrop-${board.slug}`} type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             Background
           </button>
-          <ul class="dropdown-menu" aria-labelledby="btnGroupBgDrop-{%- include renderMapSlugClass.liquid map=map -%}">
+          <ul class="dropdown-menu" aria-labelledby={`btnGroupBgDrop-${board.slug}`}>
             {board.backgroundData.download.map((download) => (
               <li><a class="dropdown-item" href="{{ download }}">{new URL(download).hostname}</a></li>
             ))}
