@@ -3,10 +3,11 @@ interface Props {
   title: string;
 }
 const { title } = Astro.props;
+import { getPathnameWithoutExtension } from '~/lib/utils';
 import Layout from './layout.astro';
 import './layout.css';
 import boards from "~/lib/getboards";
-const currentPagePath = Astro.url.pathname;
+const currentPagePath = getPathnameWithoutExtension(Astro.url);
 ---
 <Layout title={title}>
   <section class="jumbotron text-center">
