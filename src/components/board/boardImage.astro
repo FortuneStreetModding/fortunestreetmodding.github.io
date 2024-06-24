@@ -2,8 +2,9 @@
 import type { MapDescriptorExtended } from '~/lib/getboards';
 interface Props {
   board: MapDescriptorExtended;
+  link: boolean;
 }
-const { board } = Astro.props;
+const { board, link } = Astro.props;
 ---
 <style is:global>
 .mapCard-image-board {
@@ -142,11 +143,19 @@ const { board } = Astro.props;
   <input class={`btn-check state-${index}`} type="radio" name={`state-${board.slug}`} id={`state-${index}-${board.slug}`} autocomplete="off" checked={index==0}/>
   <label class={`btn btn-primary btn-state-tiny state-${index}`} for={`state-${index}-${board.slug}`}>{index+1}</label>
 ))}
-<a class="map-state" href={`/boards/${board.slug}`}>
-{board.frbFiles.map((_frbFile, index) => (
-  <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
-))}
-</a>
+{ link ? (
+  <a class="map-state" href={`/boards/${board.slug}`}>
+  {board.frbFiles.map((_frbFile, index) => (
+    <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
+  ))}
+  </a>
+) : (
+  <span class="map-state">
+  {board.frbFiles.map((_frbFile, index) => (
+    <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
+  ))}
+  </span>
+)}
 <img class="card-img-top mapCard-image-background" src={`/images/backgrounds/${board.background}.webp`} loading="lazy" />
 <div class="bottom-right-absolute">
   {board.authors?.map((author) => (

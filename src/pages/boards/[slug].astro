@@ -29,7 +29,7 @@ const board = boards.find(board => board.slug === slug);
         <div class={`col mb-4 mapCard b-${board.slug}`}>
           <div class="card h-100">
             <div class="relative-container">
-              <BoardImage board={board}/>
+              <BoardImage board={board} link={false}/>
             </div>
             <div class="card-body">
               <BoardNameAndDescription board={board}/>
