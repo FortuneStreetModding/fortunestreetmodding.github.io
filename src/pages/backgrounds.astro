@@ -1,0 +1,40 @@
+---
+import backgrounds, { type Background } from "~/data/backgrounds.yml";
+import Layout from '~/layouts/layout.astro';
+---
+<Layout title="Backgrounds">
+  <div class="album">
+    <div class="container">
+      <div class="row">
+        {backgrounds.map((background, backgroundIndex) => (
+          <div class="col-md-4 mb-5">
+            <div class="card h-100">
+              <img class="card-img-top" src={`/images/backgrounds/${background.background}.webp`} style="object-fit: fill;" />
+              <div class="card-body">
+                <h4 class="card-title">{ background.background }</h4>
+                <p class="card-text">{ background.name }</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">{ background.bgm }</li>
+                {background.mapIcon && <li class="list-group-item">{ background.mapIcon }</li>}
+              </ul>
+              {background.download && (
+                <div class="card-footer">
+                  {background.download.length > 1 ? (
+                    <>
+                    {background.download.map((download, downloadIndex) => (
+                      <a href={ download } class="btn btn-primary">{downloadIndex}</a>
+                    ))}
+                    </>
+                  ) : (
+                    <a href={ background.download[0] } class="btn btn-primary">Download</a>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>
