@@ -78,7 +78,7 @@ function getBoards(): MapDescriptorExtended[] {
     board.backgroundData = backgrounds.find((b) => b.background === board.background) as Background;
 
     // set the image urls for each frb file
-    board.imageUrls = board.frbFiles!.map((frbFile: string) => `boards/${board.slug}/${frbFile}.webp`);
+    board.imageUrls = board.frbFiles!.map((frbFile: string) => `/boards/${board.slug}/${frbFile}.webp`);
 
     // render the notes
     if (board.notes !== undefined) {
