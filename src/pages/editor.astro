@@ -3,14 +3,21 @@ import Layout from '~/layouts/layout.astro';
 import "./editor.css"
 ---
 <Layout title="Venture Cards">
-  <div class="row p-3" style="max-width: 600px">
-    <label for="preset" class="col-sm-2 col-form-label">Preset</label>
-    <div class="col-sm-10">
-      <select class="form-select" id="presetselect">
-        <option value="file:///simple.yaml">Simple</option>
-        <option value="file:///default.yaml" selected>Default</option>
-        <option value="file:///full.yaml">Full</option>
-      </select>
+  <div class="container-fluid">
+    <div class="row p-2 px-6">
+      <div class="col-auto">
+        <label for="preset" class="col-sm-2 col-form-label">Preset</label>
+      </div>
+      <div class="col-auto">
+        <select class="form-select" id="presetselect">
+          <option value="file:///simple.yaml">Simple</option>
+          <option value="file:///default.yaml" selected>Default</option>
+          <option value="file:///full.yaml">Full</option>
+        </select>
+      </div>
+      <div class="col-auto">
+        <button id="exportbutton" class="btn btn-primary" id="loadpreset">Export Yaml</button>
+      </div>
     </div>
   </div>
   <div style="flex: 1;">
@@ -117,5 +124,32 @@ import "./editor.css"
     editor.setModel(monaco.editor.getModel(uri));
     problemHandler([uri])
   })
+
+  const exportbutton = document.getElementById('exportbutton') as HTMLButtonElement;
+  exportbutton.addEventListener('click', () => {
+    const uri = editor.getModel()?.uri;
+    if (!uri) return;
+    const content = editor.getValue();
+    
+    // Convert the content string to a Blob object
+    const blob = new Blob([content], { type: 'text/yaml' });
+
+    // Create an <a> element and set its attributes
+    const a = document.createElement('a');
+    a.style.display = 'none';
+    a.href = URL.createObjectURL(blob);
+    a.download = `board.yaml`;
+
+    // Append the <a> element to the DOM and click on it to trigger the download
+    document.body.appendChild(a);
+    a.click();
+
+    // Remove the <a> element from the DOM
+    document.body.removeChild(a);
+
+    // Clean up the Blob object
+    setTimeout(() => URL.revokeObjectURL(a.href), 1500);
+  })
+
   configureMonacoYaml(monaco, {}); 
 </script>
