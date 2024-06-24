@@ -1,6 +1,6 @@
 {
     "yaml.schemas": {
-        "https://raw.githubusercontent.com/FortuneStreetModding/fortunestreetmodding.github.io/main/schema/mapdescriptor.json": [
+        "public/schema/mapdescriptor.json": [
             "/_maps/**/*.yaml"
         ],
         "https://json.schemastore.org/github-workflow.json": [

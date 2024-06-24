@@ -7,6 +7,8 @@ import ventureCards from "~/data/venturecards.yml";
 import backgrounds, { type Background } from "~/data/backgrounds.yml";
 
 export type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' | 'frbFile1' | 'frbFile2' | 'frbFile3' | 'frbFile4' | 'frbFiles'> & {
+  nameEn: string;
+  descEn: string;
   path: string;
   slug: string;
   imageUrls: string[];
@@ -36,6 +38,7 @@ function getBoards(): MapDescriptorExtended[] {
   let defaultStandardVentureCards: number[] | undefined;
   for (const [path, boardConst] of Object.entries(boardFiles)) {
     const board = structuredClone(boardConst)
+    board.default = undefined
     // some post processing...
 
     // merge frbFile1,2,3,4 into frbFiles
@@ -51,8 +54,16 @@ function getBoards(): MapDescriptorExtended[] {
         frbFiles.push(board.frbFile4);
       }
       board.frbFiles = [board.frbFile1!, ...frbFiles];
+      board.frbFile1 = undefined;
+      board.frbFile2 = undefined;
+      board.frbFile3 = undefined;
+      board.frbFile4 = undefined;
     }
     const parsedPath = parse(path)
+
+    // set the name and desc for the board
+    board.nameEn = board.name.en;
+    board.descEn = board.desc.en
 
     // set the directory path for the board
     board.path = parsedPath.dir;
@@ -125,7 +136,7 @@ function getBoards(): MapDescriptorExtended[] {
       board.ventureCards = defaultVentureCards;
     }
 
-    boards.push(board as MapDescriptorExtended);
+    boards.push(board as unknown as MapDescriptorExtended);
   }
   return boards;
 };

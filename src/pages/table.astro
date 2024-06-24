@@ -1,0 +1,75 @@
+---
+import BoardsLayout from '~/layouts/boardsLayout.astro';
+import "./table.css";
+import boards, { type MapDescriptorExtended } from "~/lib/getboards";
+import fs from "fs";
+
+// We want to omit some properties to reduce the size of the json transferred
+function omitPropertiesFromArray<T>(arr: T[], propertiesToOmit: (keyof T)[]): string {
+    return JSON.stringify(arr, function(key, value) {
+        // The top-level properties of the objects will have an empty string as the parent key
+        if (this === arr || this instanceof Array) {
+            // If the key is in the list of properties to omit, return undefined to omit it
+            if (propertiesToOmit.includes(key as keyof T)) {
+                return undefined;
+            }
+        }
+        return value;
+    });
+}
+
+fs.writeFileSync('./boards.json', omitPropertiesFromArray(boards, [
+  "ventureCards", "music", "notes", "notesHtml", "name", "desc", "changelog", "districtNames", "shopNames"
+]), 'utf8');
+---
+<script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.2.1/dist/js/tabulator.min.js"></script>
+<script>
+  const data = await fetch('./boards.json').then((response) => response.json());
+
+  let table = new Tabulator("#table", {
+    columns: [
+      { title: "Name", field: "nameEn", headerFilter: true, sortable: true, formatter: function(cell, formatterParams){
+        return "<a href='/boards/" + cell.getRow().getData().slug + "'>" + cell.getValue() + "</a>";
+      }},
+      { title: "Rule Set", field: "ruleSet", headerFilter: true, sortable: true },
+      { title: "Theme", field: "theme", headerFilter: true, sortable: true },
+      { title: "Background", field: "backgroundData.name", headerFilter: true, sortable: true },
+      { title: "Initial Cash", field: "initialCash", headerFilter: true, sortable: true },
+      { title: "Target Amount", field: "targetAmount", headerFilter: true, sortable: true },
+      { title: "Dice Roll", field: "maxDiceRoll", headerFilter: true, sortable: true },
+      { title: "States", field: "frbFiles.length", headerFilter: true, sortable: true },
+      { title: "Tags", field: "tags", headerFilter: true, sortable: true },
+      { title: "Version", field: "currentVersion", headerFilter: true, sortable: true },
+      { title: "Authors", field: "authors", headerFilter: true, sortable: true, formatter: function(cell, formatterParams){
+        const authors = cell.getValue();
+        let html = "";
+        for (let i = 0; i < cell.getValue().length; i++) {
+          const name = authors[i].name;
+          const url = authors[i].url;
+          if (url) {
+            html += "<a href='" + url + "'>" + name + "</a>"
+          } else {
+            html += name
+          }
+          if(i<cell.getValue().length-1) {
+            html += ", ";
+          }
+        }
+        return html;
+      }}
+    ],
+    data: data
+  });
+
+  document.getElementById("loading").style.display = "none";
+</script>
+<BoardsLayout title="Boards">
+  <div id="loading" style="display: flex; justify-content:center; align-items:center; height: 100%">
+    <div class="spinner-border" style="width: 10rem; height: 10rem;" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <div class="album mx-3" style="display: flex; justify-content: center;">
+    <div id="table"></div>
+  </div>
+</BoardsLayout>

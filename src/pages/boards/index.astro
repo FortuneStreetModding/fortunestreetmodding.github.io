@@ -1,17 +1,13 @@
 ---
-import Layout from '~/layouts/layout.astro';
+import BoardsLayout from '~/layouts/boardsLayout.astro';
 import boards from '~/lib/getboards';
 import "./boards.css"
 import BoardNameAndDescription from '~/components/board/boardNameAndDescription.astro';
 import BoardImage from '~/components/board/boardImage.astro';
-import BoardChangelog from '~/components/board/boardChangelog.astro';
-import BoardProperties from '~/components/board/boardProperties.astro';
-import BoardVentureCards from '~/components/board/boardVentureCards.astro';
-import BoardNotes from '~/components/board/boardNotes.astro';
 import BoardDownloadButton from '~/components/board/boardDownloadButton.astro';
 import BoardTags from '~/components/board/boardTags.astro';
 ---
-<Layout title="Boards">
+<BoardsLayout title="Boards">
   <div class="album">
     <div class="container">
       <div class="row">
@@ -45,4 +41,4 @@ import BoardTags from '~/components/board/boardTags.astro';
       </div>
     </div>
   </div>
-</Layout>
+</BoardsLayout>

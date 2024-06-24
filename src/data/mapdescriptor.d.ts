@@ -435,7 +435,7 @@ export interface MapDescriptor1 {
    * The change log logs the different addition, removals and changes made for this map.
    */
   changelog?: {
-    version: number | string;
+    version: string | number;
     added?: string[] | string;
     changed?: string[] | string;
     removed?: string[] | string;
