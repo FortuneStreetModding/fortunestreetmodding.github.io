@@ -17,7 +17,7 @@ frbFiles:
 - suits1
 - suits2
 - suits3
-background: bg103fixed
+background: bg901fixed
 mapIcon: suitsmap
 music:
   download:
@@ -30,9 +30,9 @@ music:
   - PPBC_supermariorpg_MAP05
 tourMode:
   bankruptcyLimit: 1
-  opponent1: Stella
-  opponent2: Yangus
-  opponent3: Carver
+  opponent1: Yoshi
+  opponent2: Toad
+  opponent3: Daisy
   clearRank: 1
 changelog:
   - version: 6
