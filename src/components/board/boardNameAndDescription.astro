@@ -24,15 +24,15 @@ const { board } = Astro.props;
   .jp:checked ~ .lang :not(.jp) {
     visibility: hidden
   }
-  .lang {
+  .row.lang {
     display: grid;
     float: left;
   }
-  .lang > * {
+  .row.lang > * {
     grid-row: 1;
     grid-column: 1;
   }
-  .btn-lang-tiny {
+  .btn.btn-lang-tiny {
     padding: 0.75rem 0.375rem;
     line-height: 0;
     float: right;

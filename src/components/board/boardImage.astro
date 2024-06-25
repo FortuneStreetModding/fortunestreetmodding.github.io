@@ -25,20 +25,17 @@ const { board, link, imageHeight } = Astro.props;
   filter: blur(1px) grayscale(50%) contrast(50%) opacity(65%);
   z-index: 1;
 }
-.btn-state-tiny {
+.btn-state-tiny.btn-primary {
   position: absolute;
   line-height: 0;
   border-width: 2px;
   width: 2rem;
   white-space: nowrap;
   z-index: 3;
-  background-color: var(--bs-secondary-bg);
   text-shadow: -1px 0px 1px #000000, 1px 0px 1px #000000, 0px 1px 1px #000000, 0px -1px 1px #000000;
-}
-.btn-state-tiny.btn-primary {
   background-color: rgba(var(--bs-secondary-bg-rgb), 0.5);
   border-color: var(--bs-secondary-border-subtle);
-  padding: 0px 6px;
+  padding: 12px 6px;
 }
 .btn-state-tiny.btn-primary
 :checked+.btn-state-tiny {
