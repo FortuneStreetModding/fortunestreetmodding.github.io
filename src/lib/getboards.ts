@@ -5,6 +5,8 @@ import { marked } from 'marked';
 import DOMPurify from 'isomorphic-dompurify';
 import ventureCards from "~/data/venturecards.yml";
 import backgrounds, { type Background } from "~/data/backgrounds.yml";
+import { execSync } from 'child_process';
+import { getRandomDate } from './utils';
 
 export type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' | 'frbFile1' | 'frbFile2' | 'frbFile3' | 'frbFile4' | 'frbFiles'> & {
   nameEn: string;
@@ -15,6 +17,8 @@ export type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' |
   imageUrls: string[];
   backgroundData: Background;
   frbFiles: string[];
+  uploadDate: number;
+  lastUpdated: number;
   notesHtml?: string;
   changelog?: {
     version: number | string;
@@ -135,11 +139,37 @@ function getBoards(): MapDescriptorExtended[] {
         }
         defaultVentureCards = defaultEasyVentureCards;
       }
-      // @ts-ignore
-      board.ventureCards = defaultVentureCards;
+      board.ventureCards = defaultVentureCards as any;
     }
 
-    boards.push(board as unknown as MapDescriptorExtended);
+    // find out the board upload date and last updated date
+    if(import.meta.env.DEV) {
+      // it takes way too long in dev mode to calculate, so we just set it to 0
+      board.lastUpdated = getRandomDate().getTime();
+      board.uploadDate = getRandomDate().getTime();
+    } else {
+      // get upload date
+      try {
+        const command = `git log --follow --format=%at -- ".${path}"`
+        const output = execSync(command, { encoding: 'utf-8' });
+        const dates = output.trim().split('\n');
+        board.uploadDate = +dates[dates.length - 1];
+      } catch (error) {
+        console.error('Error:', error);
+      }
+      // get last updated date
+      try {
+        const frbPaths = board.frbFiles!.map((frbFile: string) => `"./_maps/${board.slug}/${frbFile}.frb"`);
+        const command = `git log --max-count=1 --format=%at -- ".${path}" ${frbPaths.join(' ')}`
+        const output = execSync(command, { encoding: 'utf-8' });
+        const dates = output.trim().split('\n');
+        board.lastUpdated = +dates[0];
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+
+    boards.push(board as any);
   }
   return boards;
 };

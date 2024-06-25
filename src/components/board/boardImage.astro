@@ -1,5 +1,7 @@
 ---
+
 import type { MapDescriptorExtended } from '~/lib/getboards';
+import { daysAgo, humanReadableDate, isoDate } from '~/lib/utils';
 interface Props {
   board: MapDescriptorExtended;
   link: boolean;
@@ -7,10 +9,9 @@ interface Props {
 }
 const { board, link, imageHeight } = Astro.props;
 ---
-<style is:global define:vars={{imageHeight}}>
+<style is:global>
 .mapCard-image-board {
   width: 100%;
-  height: var(--imageHeight);
   object-fit: scale-down;
   position: absolute;
   filter: drop-shadow(0 0 6px #000b);
@@ -19,7 +20,6 @@ const { board, link, imageHeight } = Astro.props;
 }
 .mapCard-image-background {
   width: 100%;
-  height: var(--imageHeight);
   object-fit: cover;
   position: relative;
   filter: blur(1px) grayscale(50%) contrast(50%) opacity(65%);
@@ -27,7 +27,6 @@ const { board, link, imageHeight } = Astro.props;
 }
 .btn-state-tiny {
   position: absolute;
-  padding: 12px 0px;
   line-height: 0;
   border-width: 2px;
   width: 2rem;
@@ -39,6 +38,7 @@ const { board, link, imageHeight } = Astro.props;
 .btn-state-tiny.btn-primary {
   background-color: rgba(var(--bs-secondary-bg-rgb), 0.5);
   border-color: var(--bs-secondary-border-subtle);
+  padding: 0.75rem 0.375rem;
 }
 .btn-state-tiny.btn-primary
 :checked+.btn-state-tiny {
@@ -154,19 +154,32 @@ const { board, link, imageHeight } = Astro.props;
 { link ? (
   <a class="map-state" href={`/boards/${board.slug}`}>
   {board.frbFiles.map((_frbFile, index) => (
-    <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
+    <img class={`card-img-top mapCard-image-board state-${index}`} style={`height: ${imageHeight}`} src={board.imageUrls[index]} loading="lazy" />
   ))}
   </a>
 ) : (
   <span class="map-state">
   {board.frbFiles.map((_frbFile, index) => (
-    <img class={`card-img-top mapCard-image-board state-${index}`} src={board.imageUrls[index]} loading="lazy" />
+    <img class={`card-img-top mapCard-image-board state-${index}`} style={`height: ${imageHeight}`} src={board.imageUrls[index]} loading="lazy" />
   ))}
   </span>
 )}
-<img class="card-img-top mapCard-image-background" src={`/images/backgrounds/${board.background}.webp`} loading="lazy" />
+<img class="card-img-top mapCard-image-background" style={`height: ${imageHeight}`} src={`/images/backgrounds/${board.background}.webp`} loading="lazy" />
+{ daysAgo(new Date(board.uploadDate)) < 30 && (
+  <div class="top-right-absolute">
+    <div class="badge bg-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title={`Uploaded: ${(isoDate(new Date(board.uploadDate)))}`}>New</div>
+  </div>
+)}
+<div class="bottom-left-absolute">
+  <div class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title={(isoDate(new Date(board.lastUpdated)))}>Updated: {humanReadableDate(new Date(board.lastUpdated))}</div>
+</div>
 <div class="bottom-right-absolute">
   {board.authors?.map((author) => (
     <div class="badge bg-primary">{author.url ? (<a class="text-reset" href={ author.url }>{ author.name }</a>) : author.name}</div>
   ))}
 </div>
+<script>
+  import { Tooltip } from "bootstrap";
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new Tooltip(tooltipTriggerEl))
+</script>

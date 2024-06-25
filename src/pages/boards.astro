@@ -11,7 +11,7 @@ import BoardTags from '~/components/board/boardTags.astro';
   <div class="album">
     <div class="container">
       <div class="row">
-        {boards.map((board, boardIndex) => (
+        {boards.sort((a, b) => b.lastUpdated - a.lastUpdated).map((board, boardIndex) => (
           <>
           <div class={`col mb-4 mapCard b-${board.slug}`}>
             <div class="card h-100">
