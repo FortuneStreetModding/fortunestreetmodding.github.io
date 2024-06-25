@@ -34,13 +34,16 @@ const currentPagePath = getPathnameWithoutExtension(Astro.url);
           <a class="nav-link" class:list={{ active: currentPagePath === '/backgrounds' }} href="/backgrounds">Backgrounds</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Tools </a>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" class:list={{ active: currentPagePath === '/calculator' }} href="/calculator">Address Calculator</a></li>
             <li><a class="dropdown-item" class:list={{ active: currentPagePath === '/simulator' }} href="/simulator">District Simulator</a></li>
             <li><a class="dropdown-item" class:list={{ active: currentPagePath === '/cards' }} href="/cards">Venture Cards</a></li>
             <li><a class="dropdown-item" class:list={{ active: currentPagePath === '/editor' }} href="/editor">Board Yaml Editor</a></li>
           </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/wiki">Wiki</a>
         </li>
       </ul>
       <ul class="d-flex navbar-nav mb-2 mb-lg-0">
