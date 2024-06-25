@@ -1,5 +1,6 @@
 ---
 import type { MapDescriptorExtended } from '~/lib/getboards';
+import { isoDate } from '~/lib/utils';
 interface Props {
   board: MapDescriptorExtended;
 }
@@ -8,44 +9,56 @@ const { board } = Astro.props;
 <ul class="list-group">
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
-      <div class="fw-bold">Rules</div>
+      <div class="fw-bold small">Rules</div>
       {board.ruleSet}
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
-      <div class="fw-bold">Theme</div>
+      <div class="fw-bold small">Theme</div>
       {board.theme}
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
-      <div class="fw-bold">Initial Cash</div>
+      <div class="fw-bold small">Initial Cash</div>
       {board.initialCash}
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
-      <div class="fw-bold">Target Amount</div>
+      <div class="fw-bold small">Target Amount</div>
       {board.targetAmount}
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
-      <div class="fw-bold">Base Salary</div>
+      <div class="fw-bold small">Base Salary</div>
       {board.baseSalary}
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
-      <div class="fw-bold">Salary Increment</div>
+      <div class="fw-bold small">Salary Increment</div>
       {board.salaryIncrement}
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
-      <div class="fw-bold">Max Dice Roll</div>
+      <div class="fw-bold small">Max Dice Roll</div>
       {board.maxDiceRoll}
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold small">Last Updated</div>
+      {isoDate(new Date(board.lastUpdated))}
+    </div>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-start">
+    <div class="ms-2 me-auto">
+      <div class="fw-bold small">Uploaded</div>
+      {isoDate(new Date(board.uploadDate))}
     </div>
   </li>
 </ul>
