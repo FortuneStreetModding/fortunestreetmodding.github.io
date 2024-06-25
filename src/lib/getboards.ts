@@ -144,7 +144,7 @@ function getBoards(): MapDescriptorExtended[] {
 
     // find out the board upload date and last updated date
     if(import.meta.env.DEV) {
-      // it takes way too long in dev mode to calculate, so we just set it to 0
+      // it takes way too long in dev mode to calculate, so we just set it to a random date
       board.lastUpdated = getRandomDate().getTime();
       board.uploadDate = getRandomDate().getTime();
     } else {
@@ -153,7 +153,7 @@ function getBoards(): MapDescriptorExtended[] {
         const command = `git log --follow --format=%at -- ".${path}"`
         const output = execSync(command, { encoding: 'utf-8' });
         const dates = output.trim().split('\n');
-        board.uploadDate = +dates[dates.length - 1];
+        board.uploadDate = (+dates[dates.length - 1])*1000;
       } catch (error) {
         console.error('Error:', error);
       }
@@ -163,7 +163,7 @@ function getBoards(): MapDescriptorExtended[] {
         const command = `git log --max-count=1 --format=%at -- ".${path}" ${frbPaths.join(' ')}`
         const output = execSync(command, { encoding: 'utf-8' });
         const dates = output.trim().split('\n');
-        board.lastUpdated = +dates[0];
+        board.lastUpdated = (+dates[0])*1000;
       } catch (error) {
         console.error('Error:', error);
       }
