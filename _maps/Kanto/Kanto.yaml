@@ -1,4 +1,3 @@
----
 name:
   en: The Kanto Region
 desc:
@@ -192,4 +191,3 @@ notes: |
   - Because of this, the default (most efficient) promotion loop without getting any rotating suits would be Spade <-> Heart <-> Club <-> Diamond (Pewter <-> Vermillion <-> Celadon <-> Cinnabar). Of course, getting the rotating suits can change this loop. For example, if you get to the rotating suits first, you can get your first promotion by going from Indigo -> Pewter -> Bill's House -> Indigo, Cinnabar -> Route 13 -> Vermillion -> Pewter, or Pewter -> Bill's House -> Celadon ->  Cinnabar, to name a few options.
   - The shop values and prices were based on Haunted Manor from Itadaki Street Gorgeous King, with a few changes.
   - The venture card set was taken from Alefgard (Wii).
-...

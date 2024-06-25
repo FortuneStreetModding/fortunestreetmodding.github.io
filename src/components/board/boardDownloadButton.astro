@@ -1,0 +1,42 @@
+---
+import type { MapDescriptorExtended } from '~/lib/getboards';
+interface Props {
+  board: MapDescriptorExtended;
+}
+const { board } = Astro.props;
+---
+<div class="btn-group" role="group">
+  <a class="btn btn-primary" href={`/boards/${board.slug}.zip`}>Board</a>
+  {board.backgroundData.download && (
+    <>
+      {board.backgroundData.download.length == 1 ? (<a class="btn btn-primary" href={board.backgroundData.download[0]}>Background</a>) : (
+        <div class="btn-group" role="group">
+          <button id={`btnGroupBgDrop-${board.slug}`} type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Background
+          </button>
+          <ul class="dropdown-menu" aria-labelledby={`btnGroupBgDrop-${board.slug}`}>
+            {board.backgroundData.download.map((downloadUrl) => (
+              <li><a class="dropdown-item" href={ downloadUrl }>{new URL(downloadUrl).hostname}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </>
+  )}
+  {board.music?.download && (
+    <>
+      {board.music.download.length == 1 ? (<a class="btn btn-primary" href={board.music.download[0]}>Music</a>) : (
+        <div class="btn-group" role="group">
+          <button id={`btnGroupMusicDrop-${board.slug}`} type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Music
+          </button>
+          <ul class="dropdown-menu" aria-labelledby={`btnGroupMusicDrop-${board.slug}`}>
+            {board.music.download?.map((downloadUrl) => (
+              <li><a class="dropdown-item" href={ downloadUrl }>{new URL(downloadUrl).hostname}</a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </>
+  )}
+</div>

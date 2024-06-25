@@ -1,0 +1,182 @@
+---
+
+import type { MapDescriptorExtended } from '~/lib/getboards';
+import { daysAgo, humanReadableDate, isoDate } from '~/lib/utils';
+interface Props {
+  board: MapDescriptorExtended;
+  link: boolean;
+  imageHeight: string;
+}
+const { board, link, imageHeight } = Astro.props;
+---
+<style is:global>
+.mapCard-image-board {
+  width: 100%;
+  object-fit: scale-down;
+  position: absolute;
+  filter: drop-shadow(0 0 6px #000b);
+  z-index: 2;
+  padding: 1rem;
+}
+.mapCard-image-background {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  filter: blur(1px) grayscale(50%) contrast(50%) opacity(65%);
+  z-index: 1;
+}
+.btn-state-tiny.btn-primary {
+  position: absolute;
+  line-height: 0;
+  border-width: 2px;
+  width: 2rem;
+  white-space: nowrap;
+  z-index: 3;
+  text-shadow: -1px 0px 1px #000000, 1px 0px 1px #000000, 0px 1px 1px #000000, 0px -1px 1px #000000;
+  background-color: rgba(var(--bs-secondary-bg-rgb), 0.5);
+  border-color: var(--bs-secondary-border-subtle);
+  padding: 12px 6px;
+}
+.btn-state-tiny.btn-primary
+:checked+.btn-state-tiny {
+  background-color: var(--bs-primary-bg);
+  border-color: var(--bs-primary-border-subtle);
+}
+ .btn-state-tiny.state-0 { left: 1rem; top: calc(1.0rem +  0*1.7rem); }
+ .btn-state-tiny.state-1 { left: 1rem; top: calc(1.0rem +  1*1.7rem); }
+ .btn-state-tiny.state-2 { left: 1rem; top: calc(1.0rem +  2*1.7rem); }
+ .btn-state-tiny.state-3 { left: 1rem; top: calc(1.0rem +  3*1.7rem); }
+ .btn-state-tiny.state-4 { left: 1rem; top: calc(1.0rem +  4*1.7rem); }
+ .btn-state-tiny.state-5 { left: 1rem; top: calc(1.0rem +  5*1.7rem); }
+ .btn-state-tiny.state-6 { left: 1rem; top: calc(1.0rem +  6*1.7rem); }
+ .btn-state-tiny.state-7 { left: 1rem; top: calc(1.0rem +  7*1.7rem); }
+ .btn-state-tiny.state-8 { left: 1rem; top: calc(1.0rem +  8*1.7rem); }
+ .btn-state-tiny.state-9 { left: 1rem; top: calc(1.0rem +  9*1.7rem); }
+.btn-state-tiny.state-10 { left: 3rem; top: calc(1.0rem + 0*1.7rem); }
+.btn-state-tiny.state-11 { left: 3rem; top: calc(1.0rem + 1*1.7rem); }
+.btn-state-tiny.state-12 { left: 3rem; top: calc(1.0rem + 2*1.7rem); }
+.btn-state-tiny.state-13 { left: 3rem; top: calc(1.0rem + 3*1.7rem); }
+.btn-state-tiny.state-14 { left: 3rem; top: calc(1.0rem + 4*1.7rem); }
+.btn-state-tiny.state-15 { left: 3rem; top: calc(1.0rem + 5*1.7rem); }
+.btn-state-tiny.state-16 { left: 3rem; top: calc(1.0rem + 6*1.7rem); }
+.btn-state-tiny.state-17 { left: 3rem; top: calc(1.0rem + 7*1.7rem); }
+.btn-state-tiny.state-18 { left: 3rem; top: calc(1.0rem + 8*1.7rem); }
+.btn-state-tiny.state-19 { left: 3rem; top: calc(1.0rem + 9*1.7rem); }
+.btn-state-tiny.state-20 { left: 5rem; top: calc(1.0rem + 0*1.7rem); }
+.btn-state-tiny.state-21 { left: 5rem; top: calc(1.0rem + 1*1.7rem); }
+.btn-state-tiny.state-22 { left: 5rem; top: calc(1.0rem + 2*1.7rem); }
+.btn-state-tiny.state-23 { left: 5rem; top: calc(1.0rem + 3*1.7rem); }
+.btn-state-tiny.state-24 { left: 5rem; top: calc(1.0rem + 4*1.7rem); }
+.btn-state-tiny.state-25 { left: 5rem; top: calc(1.0rem + 5*1.7rem); }
+.btn-state-tiny.state-26 { left: 5rem; top: calc(1.0rem + 6*1.7rem); }
+.btn-state-tiny.state-27 { left: 5rem; top: calc(1.0rem + 7*1.7rem); }
+.btn-state-tiny.state-28 { left: 5rem; top: calc(1.0rem + 8*1.7rem); }
+.btn-state-tiny.state-29 { left: 5rem; top: calc(1.0rem + 9*1.7rem); }
+.btn-state-tiny.state-30 { left: 7rem; top: calc(1.0rem + 0*1.7rem); }
+.btn-state-tiny.state-31 { left: 7rem; top: calc(1.0rem + 1*1.7rem); }
+.btn-state-tiny.state-32 { left: 7rem; top: calc(1.0rem + 2*1.7rem); }
+.btn-state-tiny.state-33 { left: 7rem; top: calc(1.0rem + 3*1.7rem); }
+.btn-state-tiny.state-34 { left: 7rem; top: calc(1.0rem + 4*1.7rem); }
+.btn-state-tiny.state-35 { left: 7rem; top: calc(1.0rem + 5*1.7rem); }
+.btn-state-tiny.state-36 { left: 7rem; top: calc(1.0rem + 6*1.7rem); }
+.btn-state-tiny.state-37 { left: 7rem; top: calc(1.0rem + 7*1.7rem); }
+.btn-state-tiny.state-38 { left: 7rem; top: calc(1.0rem + 8*1.7rem); }
+.btn-state-tiny.state-39 { left: 7rem; top: calc(1.0rem + 9*1.7rem); }
+.btn-state-tiny.state-40 { left: 9rem; top: calc(1.0rem + 0*1.7rem); }
+.btn-state-tiny.state-41 { left: 9rem; top: calc(1.0rem + 1*1.7rem); }
+.btn-state-tiny.state-42 { left: 9rem; top: calc(1.0rem + 2*1.7rem); }
+.btn-state-tiny.state-43 { left: 9rem; top: calc(1.0rem + 3*1.7rem); }
+.btn-state-tiny.state-44 { left: 9rem; top: calc(1.0rem + 4*1.7rem); }
+.btn-state-tiny.state-45 { left: 9rem; top: calc(1.0rem + 5*1.7rem); }
+.btn-state-tiny.state-46 { left: 9rem; top: calc(1.0rem + 6*1.7rem); }
+.btn-state-tiny.state-47 { left: 9rem; top: calc(1.0rem + 7*1.7rem); }
+.btn-state-tiny.state-48 { left: 9rem; top: calc(1.0rem + 8*1.7rem); }
+.btn-state-tiny.state-49 { left: 9rem; top: calc(1.0rem + 9*1.7rem); }
+
+ .state-0:checked ~ .map-state  :not(.state-0) { visibility: hidden }
+ .state-1:checked ~ .map-state  :not(.state-1) { visibility: hidden }
+ .state-2:checked ~ .map-state  :not(.state-2) { visibility: hidden }
+ .state-3:checked ~ .map-state  :not(.state-3) { visibility: hidden }
+ .state-4:checked ~ .map-state  :not(.state-4) { visibility: hidden }
+ .state-5:checked ~ .map-state  :not(.state-5) { visibility: hidden }
+ .state-6:checked ~ .map-state  :not(.state-6) { visibility: hidden }
+ .state-7:checked ~ .map-state  :not(.state-7) { visibility: hidden }
+ .state-8:checked ~ .map-state  :not(.state-8) { visibility: hidden }
+ .state-9:checked ~ .map-state  :not(.state-9) { visibility: hidden }
+.state-10:checked ~ .map-state :not(.state-10) { visibility: hidden }
+.state-11:checked ~ .map-state :not(.state-11) { visibility: hidden }
+.state-12:checked ~ .map-state :not(.state-12) { visibility: hidden }
+.state-13:checked ~ .map-state :not(.state-13) { visibility: hidden }
+.state-14:checked ~ .map-state :not(.state-14) { visibility: hidden }
+.state-15:checked ~ .map-state :not(.state-15) { visibility: hidden }
+.state-16:checked ~ .map-state :not(.state-16) { visibility: hidden }
+.state-17:checked ~ .map-state :not(.state-17) { visibility: hidden }
+.state-18:checked ~ .map-state :not(.state-18) { visibility: hidden }
+.state-19:checked ~ .map-state :not(.state-19) { visibility: hidden }
+.state-20:checked ~ .map-state :not(.state-20) { visibility: hidden }
+.state-21:checked ~ .map-state :not(.state-21) { visibility: hidden }
+.state-22:checked ~ .map-state :not(.state-22) { visibility: hidden }
+.state-23:checked ~ .map-state :not(.state-23) { visibility: hidden }
+.state-24:checked ~ .map-state :not(.state-24) { visibility: hidden }
+.state-25:checked ~ .map-state :not(.state-25) { visibility: hidden }
+.state-26:checked ~ .map-state :not(.state-26) { visibility: hidden }
+.state-27:checked ~ .map-state :not(.state-27) { visibility: hidden }
+.state-28:checked ~ .map-state :not(.state-28) { visibility: hidden }
+.state-29:checked ~ .map-state :not(.state-29) { visibility: hidden }
+.state-30:checked ~ .map-state :not(.state-30) { visibility: hidden }
+.state-31:checked ~ .map-state :not(.state-31) { visibility: hidden }
+.state-32:checked ~ .map-state :not(.state-32) { visibility: hidden }
+.state-33:checked ~ .map-state :not(.state-33) { visibility: hidden }
+.state-34:checked ~ .map-state :not(.state-34) { visibility: hidden }
+.state-35:checked ~ .map-state :not(.state-35) { visibility: hidden }
+.state-36:checked ~ .map-state :not(.state-36) { visibility: hidden }
+.state-37:checked ~ .map-state :not(.state-37) { visibility: hidden }
+.state-38:checked ~ .map-state :not(.state-38) { visibility: hidden }
+.state-39:checked ~ .map-state :not(.state-39) { visibility: hidden }
+.state-40:checked ~ .map-state :not(.state-40) { visibility: hidden }
+.state-41:checked ~ .map-state :not(.state-41) { visibility: hidden }
+.state-42:checked ~ .map-state :not(.state-42) { visibility: hidden }
+.state-43:checked ~ .map-state :not(.state-43) { visibility: hidden }
+.state-44:checked ~ .map-state :not(.state-44) { visibility: hidden }
+.state-45:checked ~ .map-state :not(.state-45) { visibility: hidden }
+.state-46:checked ~ .map-state :not(.state-46) { visibility: hidden }
+.state-47:checked ~ .map-state :not(.state-47) { visibility: hidden }
+.state-48:checked ~ .map-state :not(.state-48) { visibility: hidden }
+.state-49:checked ~ .map-state :not(.state-49) { visibility: hidden }
+</style>
+{board.frbFiles.length > 1 && board.frbFiles.map((_frbFile, index) => (
+  <input class={`btn-check state-${index}`} type="radio" name={`state-${board.slug}`} id={`state-${index}-${board.slug}`} autocomplete="off" checked={index==0}/>
+  <label class={`btn btn-primary btn-state-tiny state-${index}`} for={`state-${index}-${board.slug}`}>{index+1}</label>
+))}
+{ link ? (
+  <a class="map-state" href={`/boards/${board.slug}`}>
+  {board.frbFiles.map((_frbFile, index) => (
+    <img class={`card-img-top mapCard-image-board state-${index}`} style={`height: ${imageHeight}`} src={board.imageUrls[index]} loading="lazy" />
+  ))}
+  </a>
+) : (
+  <span class="map-state">
+  {board.frbFiles.map((_frbFile, index) => (
+    <img class={`card-img-top mapCard-image-board state-${index}`} style={`height: ${imageHeight}`} src={board.imageUrls[index]} loading="lazy" />
+  ))}
+  </span>
+)}
+<img class="card-img-top mapCard-image-background" style={`height: ${imageHeight}`} src={`/images/backgrounds/${board.background}.webp`} loading="lazy" />
+{ daysAgo(new Date(board.uploadDate)) < 30 && (
+  <div class="top-right-absolute">
+    <div class="badge bg-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title={`Uploaded: ${(isoDate(new Date(board.uploadDate)))}`}>New</div>
+  </div>
+)}
+<div class="bottom-left-absolute">
+  <div class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title={(isoDate(new Date(board.lastUpdated)))}>Updated: {humanReadableDate(new Date(board.lastUpdated))}</div>
+</div>
+<div class="bottom-right-absolute">
+  {board.authors?.map((author) => (
+    <div class="badge bg-primary">{author.url ? (<a class="text-reset" href={ author.url }>{ author.name }</a>) : author.name}</div>
+  ))}
+</div>
+<script>
+  import { Tooltip } from "bootstrap";
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const _tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new Tooltip(tooltipTriggerEl))
+</script>

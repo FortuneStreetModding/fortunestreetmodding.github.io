@@ -34,7 +34,7 @@ jobs:
                 resource_directory="_modpacks/resources/$resource_name"
                 echo "$resource_directory"
                 mkdir -p $d/$modpack_id
-                cp "_data/backgrounds.yml" $d/$modpack_id/backgrounds.yml
+                cp "src/data/backgrounds.yml" $d/$modpack_id/backgrounds.yml
                 cp -r $resource_directory/. $d/$modpack_id/
                 cp $d/manifest.json $build_dir/$modpack_id.json
                 cp $d/modlist.txt $d/mapList.yaml $d/manifest.json $d/$modpack_id/

@@ -3,3 +3,4 @@ colorama
 jsonschema
 pyyaml
 bytechomp
+requests

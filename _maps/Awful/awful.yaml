@@ -1,4 +1,3 @@
----
 name:  
   en: Awful  
 desc: 
@@ -18,7 +17,7 @@ tourMode:
   opponent2: Slime
   opponent3: Platypunk
   clearRank: 3
-mapIcon: Awful
+mapIcon: awful
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -154,4 +153,3 @@ changelog:
       - Initial Release
 authors:
   - name: Hyonk Tea
-...

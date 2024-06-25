@@ -1,4 +1,3 @@
----
 name:
   en: Azure Nebula (Streamer Friendly)
 desc:
@@ -160,4 +159,3 @@ authors:
     url: https://github.com/Deflaktor
 notes: |
   This version has music removed to prevent copyright strikes for content creators.
-...

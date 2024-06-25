@@ -1,4 +1,3 @@
----
 name:
   en: Cid's Tower
 desc:
@@ -163,4 +162,3 @@ notes: |
   - This was ported to Fortune Street Wii by Azurillkirby.
   - The corner intersections only let you go up/down or left/right, and the switches swap which way you can go. The flaoting spaces in the corners show which way the intersections will currently let you go.
   - The venture card set is taken from Colossus (DS).
-...

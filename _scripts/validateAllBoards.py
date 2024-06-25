@@ -35,6 +35,24 @@ def inplace_change(file, attribute, value):
             else:
                 f.write(line)
 
+def remove_lines(file):
+    with open(file,'r',encoding="utf8") as f:
+        lines = f.readlines()
+    with open(file, 'w',encoding="utf8") as f:
+        for line in lines:
+            if not line.strip().startswith("---") and not line.strip().startswith("..."):
+                f.write(line)
+
+def has_lines(file):
+    with open(file,'r',encoding="utf8") as f:
+        lines = f.readlines()
+    for line in lines:
+        if line.strip().startswith("---"):
+            return True
+        if line.strip().startswith("..."):
+            return True
+    return False
+
 @dataclass
 class FileMetadata:
     file_size : int
@@ -92,6 +110,46 @@ def get_file_metadata(url : str) -> FileMetadata:
     finally:
         sess.close()
 
+def file_exists_with_different_case(file_path: Path):
+    for f in file_path.parent.glob("*"):
+        if f.name.lower() == file_path.name.lower() and f.name != file_path.name:
+            return True
+    return False
+
+bgmVolumeSensitiveHash:dict[str, MusicFileMetadata] = {}
+bgmVolumeInsensitiveHash:dict[str, MusicFileMetadata] = {}
+def run_music_uniqueness_validation(brstmPath: Path, rootPath: Path):
+    strErrors = []
+
+    if file_exists_with_different_case(brstmPath):
+        strErrors.append(f'The music file {brstmPath.relative_to(rootPath).as_posix()} exists with a different case')
+        return strErrors
+    if not brstmPath.exists() or not brstmPath.is_file():
+        strErrors.append(f'The music file {brstmPath.relative_to(rootPath).as_posix()} does not exist')
+        return strErrors
+
+    brstmPathWithoutVolume = Path(brstmPath.stem).with_suffix('').as_posix()
+    brstmFileSize = os.path.getsize(brstmPath)
+    sha256 = sha256sum(brstmPath)
+
+    if brstmPathWithoutVolume in bgmVolumeInsensitiveHash:
+        musicFileMetadata = bgmVolumeInsensitiveHash[brstmPathWithoutVolume]
+        if musicFileMetadata.file_hash != sha256:
+            strErrors.append(f'The music file {brstmPath.relative_to(rootPath).as_posix()} has different content from the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()}')
+        elif Path(brstmPath.stem).suffix != Path(musicFileMetadata.music).suffix:
+            strErrors.append(f'The music file {brstmPath.relative_to(rootPath).as_posix()} has the same content as the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()} but a different volume')
+    else:
+        bgmVolumeInsensitiveHash[brstmPathWithoutVolume] = MusicFileMetadata(brstmFileSize, sha256, brstmPath, brstmPath.stem)
+
+    if brstmPath.stem in bgmVolumeSensitiveHash:
+        musicFileMetadata = bgmVolumeSensitiveHash[brstmPath.stem]
+        if musicFileMetadata.file_hash != sha256:
+            strErrors.append(f'The music file {brstmPath.relative_to(rootPath).as_posix()} has different content from the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()}')
+    else:
+        bgmVolumeSensitiveHash[brstmPath.stem] = MusicFileMetadata(brstmFileSize, sha256, brstmPath, brstmPath.stem)
+
+    return strErrors
+
 def main(argv : list):
     colorama.init()
 
@@ -109,17 +167,16 @@ def main(argv : list):
     download_validation = not args.skip_download_validation
     music_uniqueness_validation = not args.skip_music_uniqueness_validation
 
-    with open("../schema/mapdescriptor.json", "r", encoding='utf8') as stream:
+    with open("../public/schema/mapdescriptor.json", "r", encoding='utf8') as stream:
         yamlSchema = yaml.safe_load(stream)
 
     yamlMaps = list(Path().glob('../_maps/*/*.yaml'))
     errorCount = 0
     fixedCount = 0
-    bgmVolumeSensitiveHash:dict[str, MusicFileMetadata] = {}
-    bgmVolumeInsensitiveHash:dict[str, MusicFileMetadata] = {}
 
-    allErrors = []
+    allErrors = {}
     for yamlMap in yamlMaps:
+        myErrors = []
         name = yamlMap.parent.name
         strErrors = []
         print(f'{name:24} Naming Convention Check...', end = '')
@@ -133,10 +190,11 @@ def main(argv : list):
             cprint(f'ERROR:', 'red')
             print("\n".join(strErrors))
             errorCount += len(strErrors)
-            allErrors += strErrors
+            myErrors += strErrors
         else:
             cprint(f'OK', 'green')
 
+        
         with open(yamlMap, "r", encoding='utf8') as stream:
             try:
                 print(f'{"":24} YAML Validation...', end = '')
@@ -146,22 +204,89 @@ def main(argv : list):
             except yaml.YAMLError as exc:
                 errorCount += 1
                 cprint(f'ERROR:', 'red')
-                allErrors.append(exc)
+                myErrors.append(exc)
                 print(exc)
             except jsonschema.ValidationError as err:
                 errorCount += 1
                 cprint(f'ERROR:', 'red')
-                allErrors.append(err.message)
+                myErrors.append(err.message)
                 print(err.message)
-        with open(yamlMap, "r", encoding='utf8') as stream:
-            if not stream.readline().strip() == "---":
-                errorCount += 1
-                cprint(f'{name:24} ERROR:', 'red')
-                errMsg = "YAML file first line must be ---"
-                allErrors.append(errMsg)
-                print(errMsg)
+        
+        if has_lines(yamlMap):
+            errorCount += 1
+            cprint(f'{name:24} ERROR:', 'red')
+            errMsg = "YAML files shall no longer contain the line '---' or '...'"
+            myErrors.append(errMsg)
+            print(errMsg)
+            if autorepair:
+                remove_lines(yamlMap)
+                strErrors.append(f'Removed line from {yamlMap}')
+
         if yamlContent:
             print(f'{" ":24} Consistency Check...', end = '')
+            strErrors = []
+            # check casing
+            if "mapIcon" in yamlContent:
+                filePath = Path(yamlMap.parent, f'{yamlContent["mapIcon"]}.png')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The map icon file {colored(yamlContent["mapIcon"], "yellow")} exists with a different case.')
+            if "frbFile1" in yamlContent:
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile1"]}.frb')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} does not exist')
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile1"]}.webp')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} does not exist')
+            if "frbFile2" in yamlContent:
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile2"]}.frb')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} does not exist')
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile2"]}.webp')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} does not exist')
+            if "frbFile3" in yamlContent:
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile3"]}.frb')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} does not exist')
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile3"]}.webp')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} does not exist')
+            if "frbFile4" in yamlContent:
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile4"]}.frb')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} does not exist')
+                filePath = Path(yamlMap.parent, f'{yamlContent["frbFile4"]}.webp')
+                if file_exists_with_different_case(filePath):
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} exists with a different case.')
+                if not filePath.exists() or not filePath.is_file():
+                    strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} does not exist')
+            if "frbFiles" in yamlContent:
+                for frbFile in yamlContent["frbFiles"]:
+                    filePath = Path(yamlMap.parent, f'{frbFile}.frb')
+                    if file_exists_with_different_case(filePath):
+                        strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} exists with a different case.')
+                    if not filePath.exists() or not filePath.is_file():
+                        strErrors.append(f'The frb file {colored(filePath.stem, "yellow")} does not exist')
+                    filePath = Path(yamlMap.parent, f'{frbFile}.webp')
+                    if file_exists_with_different_case(filePath):
+                        strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} exists with a different case.')
+                    if not filePath.exists() or not filePath.is_file():
+                        strErrors.append(f'The webp file {colored(filePath.stem, "yellow")} does not exist')
+
             frbFile1 = yamlMap.parent / Path(f'{yamlContent["frbFiles"][0] if "frbFiles" in yamlContent else yamlContent["frbFile1"]}.frb')
             with open(frbFile1, "rb") as stream:
                 stream.seek(0x20)
@@ -175,7 +300,6 @@ def main(argv : list):
                 squareCount = struct.unpack(">H", stream.read(2))[0]
             errorMsg = f'The value of {colored("{attribute}", "blue")} is {colored("{yamlValue}", "yellow")} in the yaml file but {colored("{frbValue}", "yellow")} in the frb file.'
             fixedMsg = f'{colored("Auto-Repair", "green")}: The value of {colored("{attribute}", "blue")} in the yaml file had been corrected to {colored("{frbValue}", "yellow")}.'
-            strErrors = []
             if initialCash != yamlContent["initialCash"]:
                 strErrors.append(errorMsg.format(frbValue=initialCash, yamlValue=yamlContent["initialCash"], attribute="initialCash"))
                 if autorepair:
@@ -213,6 +337,7 @@ def main(argv : list):
             else:
                 if loopingMode != "none":
                     strErrors.append(errorMsg.format(frbValue=loopingMode, yamlValue="none", attribute="looping mode"))
+            
             if "ventureCards" in yamlContent:
                 activeVentureCards = 0
                 for ventureCard in yamlContent["ventureCards"]:
@@ -220,11 +345,12 @@ def main(argv : list):
                         activeVentureCards+=1
                 if activeVentureCards != 64:
                     strErrors.append(f'There are {colored(str(activeVentureCards), "yellow")} venture cards activated. It should be 64.')
+            
             if len(strErrors) > 0:
                 cprint(f'ERROR:', 'red')
                 print("\n".join(strErrors))
                 errorCount += len(strErrors)
-                allErrors += strErrors
+                myErrors += strErrors
             else:
                 cprint(f'OK', 'green')
         if download_validation and yamlContent and "music" in yamlContent and "download" in yamlContent["music"]:
@@ -261,7 +387,7 @@ def main(argv : list):
                 cprint(f'ERROR:', 'red')
                 print("\n".join(strErrors))
                 errorCount += len(strErrors)
-                allErrors += strErrors
+                myErrors += strErrors
             else:
                 cprint(f'OK', 'green')
         if music_uniqueness_validation and yamlContent and "music" in yamlContent:
@@ -274,40 +400,24 @@ def main(argv : list):
                 if not music:
                     continue
 
-                mapsFolder = yamlMap.parent.parent
-
-                musicFilePath = yamlMap.parent / Path(f'{music}.brstm')
-                if not musicFilePath.exists() or not musicFilePath.is_file():
-                    strErrors.append(f'The music file {musicFilePath.relative_to(mapsFolder).as_posix()} does not exist')
-                    continue
-
-                musicWithoutVolume = Path(music).with_suffix('').as_posix()
-                musicFileSize = os.path.getsize(musicFilePath)
-                sha256 = sha256sum(musicFilePath)
-
-                if musicWithoutVolume in bgmVolumeInsensitiveHash:
-                    musicFileMetadata = bgmVolumeInsensitiveHash[musicWithoutVolume]
-                    if musicFileMetadata.file_hash != sha256:
-                        strErrors.append(f'The music file {musicFilePath.relative_to(mapsFolder).as_posix()} has different content from the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()}')
-                    elif Path(music).suffix != Path(musicFileMetadata.music).suffix:
-                        strErrors.append(f'The music file {musicFilePath.relative_to(mapsFolder).as_posix()} has the same content as the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()} but a different volume')
+                if type(music) == str:
+                    mapsFolder = yamlMap.parent.parent
+                    musicFilePath = yamlMap.parent / Path(f'{music}.brstm')
+                    run_music_uniqueness_validation(musicFilePath, mapsFolder)
                 else:
-                    bgmVolumeInsensitiveHash[musicWithoutVolume] = MusicFileMetadata(musicFileSize, sha256, musicFilePath, music)
-                
-                if music in bgmVolumeSensitiveHash:
-                    musicFileMetadata = bgmVolumeSensitiveHash[music]
-                    if musicFileMetadata.file_hash != sha256:
-                        strErrors.append(f'The music file {musicFilePath.relative_to(mapsFolder).as_posix()} has different content from the music file {musicFileMetadata.file_path.relative_to(mapsFolder).as_posix()}')
-                else:
-                    bgmVolumeSensitiveHash[music] = MusicFileMetadata(musicFileSize, sha256, musicFilePath, music)
+                    for i in range(len(music)):
+                        mapsFolder = yamlMap.parent.parent
+                        musicFilePath = yamlMap.parent / Path(f'{music[i]}.brstm')
+                        run_music_uniqueness_validation(musicFilePath, mapsFolder)
+
             if len(strErrors) > 0:
                 cprint(f'ERROR:', 'red')
                 print("\n".join(strErrors))
                 errorCount += len(strErrors)
-                allErrors += strErrors
+                myErrors += strErrors
             else:
                 cprint(f'OK', 'green')
-                
+        
         if update_dates:
             # get upload date
             commitDatesOut = check_output(['git', 'log', '--follow', '--format=%aD', yamlMap.as_posix()], encoding="utf8")
@@ -322,13 +432,19 @@ def main(argv : list):
             print(f'{" ":24} Upload Date:      {uploadDate.date().isoformat()}')
             print(f'{" ":24} Last Update Date: {lastUpdateDate.date().isoformat()}')
         print()
+        allErrors[yamlMap] = myErrors
 
     print("Board Validation complete")
     if errorCount == 0:
         cprint(f'No issues found', "green")
     else:
         print(f'Found {colored(str(errorCount), "red")} issue(s):')
-        print("\n".join(allErrors))
+        print()
+        for yamlMap, errors in allErrors.items():
+            if len(errors) > 0:
+                print(f'{yamlMap.as_posix()} - {colored(str(len(errors)), "red")} issue(s):')
+                print("\n".join(errors))
+                print()
         if fixedCount > 0:
             if fixedCount < errorCount:
                 print(f'{colored(str(fixedCount), "green")} issue(s) auto-repaired. Remaining issue(s): {colored(str(errorCount - fixedCount), "red")}')

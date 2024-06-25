@@ -1,0 +1,43 @@
+---
+import backgrounds from "~/data/backgrounds.yml";
+import Layout from '~/layouts/layout.astro';
+---
+<Layout title="Backgrounds">
+  <div class="album">
+    <div class="container">
+      <div class="row">
+        {backgrounds.map((background) => (
+          <div class="col-md-4 mb-5">
+            <div class="card h-100">
+              <img class="card-img-top" src={`/images/backgrounds/${background.background}.webp`} style="object-fit: fill;" />
+              <div class="card-body">
+                <h4 class="card-title">{ background.background }</h4>
+                <p class="card-text">{ background.name }</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">{ background.bgm }</li>
+                {background.mapIcon && <li class="list-group-item">{ background.mapIcon }</li>}
+              </ul>
+              {background.download && (
+                <div class="card-footer">
+                  {background.download.length == 1 ? (<a class="btn btn-primary" href={background.download[0]}>Download</a>) : (
+                    <div class="btn-group" role="group">
+                      <button id={`btnGroupBgDrop-${background.background}`} type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Download
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby={`btnGroupBgDrop-${background.background}`}>
+                        {background.download.map((downloadUrl) => (
+                          <li><a class="dropdown-item" href={ downloadUrl }>{new URL(downloadUrl).hostname}</a></li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>

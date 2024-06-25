@@ -1,0 +1,12 @@
+---
+import type { MapDescriptorExtended } from '~/lib/getboards';
+interface Props {
+  board: MapDescriptorExtended;
+}
+const { board } = Astro.props;
+---
+{board.tags?.map((tag) => (
+  <span class="badge rounded-pill bg-secondary px-1">{tag}</span>
+))}
+{board.music && <span class="badge rounded-pill bg-secondary px-1">Custom Music</span>}
+{board.backgroundData.download && <span class="badge rounded-pill bg-secondary px-1">Custom Background</span>}
