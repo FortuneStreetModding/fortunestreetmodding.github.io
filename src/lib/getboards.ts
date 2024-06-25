@@ -160,17 +160,10 @@ function getBoards(): MapDescriptorExtended[] {
       // get last updated date
       try {
         const frbPaths = board.frbFiles!.map((frbFile: string) => `"./_maps/${board.slug}/${frbFile}.frb"`);
-        const command = `git log --format=%at-%s -- ".${path}" ${frbPaths.join(' ')}`
+        const command = `git log --format=%at-%H-%s --fixed-strings --grep='[skip]' --grep='Merge' --invert-grep --max-count=1 -- ".${path}" ${frbPaths.join(' ')}`
         const output = execSync(command, { encoding: 'utf-8' });
         const dates = output.trim().split('\n');
-        for(const dateMessage of dates) {
-          const [date, message] = dateMessage.split('-', 2);
-          if(message.includes('[skip]')) {
-            continue;
-          }
-          board.lastUpdated = (+date)*1000;
-          break;
-        }
+        board.lastUpdated = (+dates[0])*1000;
       } catch (error) {
         console.error('Error:', error);
       }
