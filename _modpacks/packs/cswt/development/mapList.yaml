@@ -72,6 +72,12 @@ backgrounds: backgrounds.yml
     princesspeachsbirthdaycake.zip:
       urls:
       - https://nikkums.io/cswt/Maps/princesspeachsbirthdaycake.zip
+    arrowhead.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/arrowhead.zip
+    suits.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/suits.zip
       practiceBoard: true
 1:
   0:

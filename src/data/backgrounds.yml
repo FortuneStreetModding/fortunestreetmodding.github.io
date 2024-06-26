@@ -174,7 +174,7 @@
     domination: MP1_Monopoly.60
     bankruptcy: MP1_WinMinigame5.60
 - background: quietstreet
-  name: Quiet Street
+  name: Quiet Street (2D)
   download:
   - https://nikkums.io/cswt/Backgrounds/QuietStreet.background.zip
   - https://drive.google.com/u/2/uc?id=19KZM73qwLzVow7yGi71KKgNxeFPY5hUv&export=download&confirm=1
@@ -203,7 +203,7 @@
   music:
     map: 20_BGM_MAP_YOSHI
 - background: quad
-  name: Quad
+  name: Quad (2D)
   download:
   - https://nikkums.io/cswt/Backgrounds/Quad.background.zip
   - https://drive.google.com/u/2/uc?id=1ohZl_ILLw6k6qVxmtPimaMzTyApGs4L0&export=download&confirm=1
@@ -241,7 +241,7 @@
     slurpodromeStart: A_UminekoRaceStart
     slurpodromeWin: A_UminekoPromotion
 - background: disboard
-  name: Disboard
+  name: Disboard (2D)
   download:
   - https://nikkums.io/cswt/Backgrounds/disboard.background.zip
   mapIcon: disboard
@@ -508,7 +508,7 @@
   - https://drive.google.com/u/2/uc?id=1Idz96QrLZbPlvRXiAUg5zFnQvmuIWLhx&export=download
   mapIcon: bg006fixed
 - background: rayman
-  name: rayman
+  name: Rayman (2D)
   download:
   - https://nikkums.io/cswt/Backgrounds/rayman.background.zip
   mapIcon: rayman
@@ -645,7 +645,7 @@
     slurpodromeRace: slurRace_grid.65
     slurpodromeWin: RTB777_SlurWin_grid.80
 - background: NLA
-  name: NLA
+  name: New Los Angeles (2D)
   download:
   - https://nikkums.io/cswt/Backgrounds/NLA.background.zip
   mapIcon: nla
@@ -675,7 +675,7 @@
     slurpodromeRace: uncontrollable.50
     slurpodromeWin: X-fanfare.80
 - background: bethlehem
-  name: bethlehem
+  name: Star of Bethlehem (2D)
   download:
   - https://nikkums.io/cswt/Backgrounds/bethlehem.background.zip
   mapIcon: bethlehem
@@ -687,7 +687,7 @@
     targetMet: hitthetech.50
     win: railgunt.50
 - background: academycity
-  name: academycity
+  name: Acedemy City (2D)
   download:
   - https://nikkums.io/cswt/Backgrounds/academycity.background.zip
   mapIcon: academy
@@ -751,7 +751,7 @@
     slurpodromeRace: slurRace_grid.65
     slurpodromeWin: RTB777_SlurWin_grid.80
 - background: Colony9
-  name: Colony9
+  name: Colony9 (2D)
   download:
   - https://nikkums.io/cswt/Backgrounds/Colony9.background.zip
   mapIcon: colony9icon
@@ -1084,3 +1084,32 @@
     slurpodromeStart: starcarnival_SRPSTART
     slurpodromeRace: starcarnival_SRPRACE
     slurpodromeWin: starcarnival_SRPWIN
+- background: arrowhead
+  name: Arrowhead (2D)
+  download:
+  - https://nikkums.io/cswt/Backgrounds/arrowhead.background.zip
+  mapIcon: arrowhead
+  music:
+    map: mp3_goodluck
+    stock: mp3_rulesmap
+    ventureCards: mp3_beginminigame
+    auction: mp3_commenceattack
+    targetMet: mp3_stardustbattle
+    win: mp3_adventure_ends
+    guestAppear: mp3_newrecord
+    guestLeave: mp3_draw
+    badVentureCard: mp3_gameguy_youlost
+    takeAbreak: mp3_miss
+    promotionMii: mp3_star
+    promotionMario: mp3_star
+    promotionDragonQuest: mp3_star
+    bankruptcy: mp3_gameguy_youlost
+    roundTheBlocks: a_mp3_gameguyminigame
+    roundTheBlocksWin: mp3_onewinner
+    roundTheBlocks777: mp3_gameguy_youwon
+    memoryBlock: a_mp3_gameguyminigame
+    dartOfGold: a_mp3_gameguyminigame
+    slurpodromeSelect: a_mp3_gameguyminigame
+    slurpodromeStart: mp3_racestart
+    slurpodromeRace: mp3_letsgetamoveon
+    slurpodromeWin: mp3_onewinner

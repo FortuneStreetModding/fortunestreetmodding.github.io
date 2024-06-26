@@ -440,9 +440,6 @@ backgrounds: backgrounds.yml
     Bethlehem.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Bethlehem.zip
-    SuitsMap.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SuitsMap.zip
     superbowserstrackway.zip:
       urls:
       - https://nikkums.io/cswt/Maps/superbowserstrackway.zip
