@@ -4,8 +4,8 @@ export function check_cards() {
         const card = document.getElementById("card" + i.toString());
         if (!card) continue;
         card.style.display = "block";
-        const cardEasy = card.getAttribute("data-easy") === "true";
-        const cardStandard = card.getAttribute("data-standard") === "true";
+        const cardEasy = card.hasAttribute("data-easy");
+        const cardStandard = card.hasAttribute("data-standard");
         const cardSentiment = parseInt(card.getAttribute("data-sentiment"));
         const cardGrade = parseInt(card.getAttribute("data-grade"));
         const cardType = card.getAttribute("data-type");
