@@ -116,6 +116,9 @@ backgrounds: backgrounds.yml
     IS3Rainforest.zip:
       urls:
       - https://nikkums.io/cswt/Maps/IS3Rainforest.zip
+    is3_sushitrain.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/is3_sushitrain.zip
     IS3Moonlight.zip:
       urls:
       - https://nikkums.io/cswt/Maps/IS3Moonlight.zip
