@@ -1,3 +1,8 @@
+
+.tabulator-row.tabulator-row-odd {
+  background-color: var(--bs-tertiary-bg);
+}
+
 .tabulator {
     position: relative;
     font-size: 14px;
