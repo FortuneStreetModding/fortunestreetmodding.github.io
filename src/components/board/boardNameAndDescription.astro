@@ -76,7 +76,7 @@ const { board } = Astro.props;
   { board.name.jp && <h4 class="card-title jp">{ board.name.jp }</h4> }
 </div>
 <div class="row lang" style="width: 100%">
-  <p class:list={['card-title en', {'de': !board.name.de, 'fr': !board.name.fr, 'it': !board.name.it, 'es': !board.name.es, 'jp': !board.name.jp}]}>
+  <p class:list={['card-title en', {'de': !board.desc.de, 'fr': !board.desc.fr, 'it': !board.desc.it, 'es': !board.desc.es, 'jp': !board.desc.jp}]}>
     { board.desc.en }
   </p>
   { board.desc.de && <p class="card-text de">{ board.desc.de }</p> }
