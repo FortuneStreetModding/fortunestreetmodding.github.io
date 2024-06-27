@@ -104,7 +104,7 @@ function sentiment_to_div_class(sentiment: number) {
           </div>
           <div class="row row-cols-2 g-2">
             {cards.map((card, index) => (
-            <div class="col" style={"display: block; opacity: " + (card.defaultStandard ? "1" : "0.625") + ";"} id={"card" + (index + 1).toString()} data-easy={card.defaultEasy} data-standard={card.defaultStandard} data-type={slug(card.description.split("!")[0])} data-effect={slug(card.effect)} data-grade={card.grade} data-sentiment={card.sentiment}>
+            <div class="col" style={"display: block; opacity: " + (card.defaultStandard ? "1" : "0.625") + ";"} id={"card" + (index + 1).toString()} data-description={card.description} data-easy={card.defaultEasy} data-standard={card.defaultStandard} data-type={slug(card.description.split("!")[0])} data-effect={slug(card.effect)} data-grade={card.grade} data-sentiment={card.sentiment}>
               <div class={sentiment_to_div_class(card.sentiment)} style="height: 100%;">
                 <div class="row row-cols-2 g-2">
                   <div class="col-4">

@@ -116,6 +116,8 @@ export function generate_yaml() {
     if (check_selected_cards()) {
         let yaml_str = "ventureCards:";
         for (let i = 1; i <= 128; i++) {
+            const card = document.getElementById("card" + i.toString());
+            const description = card.getAttribute("data-description")
             let yaml_selected = "0";
             if (document.getElementById("card" + i.toString() + "selected").checked) {
                 yaml_selected = "1";
@@ -128,7 +130,7 @@ export function generate_yaml() {
                     i_str = " " + i_str;
                 }
             }
-            yaml_str = yaml_str + "\n  - " + yaml_selected + "  # " + i_str;
+            yaml_str = yaml_str + "\n  - " + yaml_selected + "  # " + i_str + " " + description;
         }
         document.getElementById("generatedYaml").textContent = yaml_str;
         document.getElementById("yaml").style.display = "block";
