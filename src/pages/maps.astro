@@ -1,0 +1,48 @@
+---
+import Layout from '~/layouts/layout.astro';
+---
+<script>
+  // Function to get URL parameters
+  const getUrlParams = () => {
+    const params: Record<string, string> = {};
+    const queryString = window.location.search.substring(1);
+    const pairs = queryString.split('&');
+
+    for (const pair of pairs) {
+      const [key, value] = pair.split('=');
+      if (key && value) {
+        params[decodeURIComponent(key)] = decodeURIComponent(value);
+      }
+    }
+    return params;
+  };
+
+  // Function to redirect based on the 'view' URL parameter
+  function redirectToTarget() {
+      const params = getUrlParams();
+      if (params.view) {
+          // Construct the new URL using the 'view' parameter
+          const targetUrl = '/boards/' + encodeURIComponent(params.view);
+          // Redirect to the target URL
+          window.location.href = targetUrl;
+      } else {
+          console.error('View parameter is missing.');
+      }
+  }
+  const params = getUrlParams();
+  const element = document.getElementById('redirect-link') as HTMLAnchorElement;
+  if (params.view) {
+    element.href = '/boards/' + encodeURIComponent(params.view);
+  } else {
+    element.innerText = 'View parameter is missing.';
+  }
+  // Run the redirect function when the page loads
+  window.onload = redirectToTarget;
+</script>
+<Layout title="Maps">
+  <section class="jumbotron">
+    <div class="container">
+      <p>If you are not redirected automatically, <a id="redirect-link" href="#">click here</a>.</p>
+    </div>
+  </section>
+</Layout>
