@@ -150,7 +150,7 @@ function getBoards(): MapDescriptorExtended[] {
     } else {
       // get upload date
       try {
-        const command = `git log --follow --format=%at -- ".${path}"`
+        const command = `git log --follow --find-renames=0.9 --format=%at -- ".${path}"`
         const output = execSync(command, { encoding: 'utf-8' });
         const dates = output.trim().split('\n');
         board.uploadDate = (+dates[dates.length - 1])*1000;
