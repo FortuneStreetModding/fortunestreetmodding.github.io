@@ -75,9 +75,9 @@ backgrounds: backgrounds.yml
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
-    suits.zip:
+    SuitsMap.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/suits.zip
+      - https://nikkums.io/cswt/Maps/SuitsMap.zip
       practiceBoard: true
 1:
   0:
