@@ -50,7 +50,7 @@ const board = boards.find(board => board.slug === slug);
               <BoardChangelog board={board} />
             </div>
             <div class="card-footer text-muted">
-              <a class="" style="float:right" href="{%- include renderMapRepoUrl.liquid map=map -%}">View in Repository</a>
+              <a style="float:right" href={`https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/tree/main${board.path}`}>View in Repository</a>
               <div>Download {board.currentVersion && <span class="badge bg-secondary">v{ board.currentVersion }</span>}</div>
               <BoardDownloadButton board={board} />
             </div>
