@@ -16,7 +16,7 @@ frbFiles:
   - FRB_FILENAME_FOR_STATE_4 # CAN REMOVE UNUSED STATES
   - FRB_FILENAME_FOR_STATE_5 # CAN REMOVE UNUSED STATES
   - FRB_FILENAME_FOR_STATE_6 # CAN REMOVE UNUSED STATES
-background: bg001
+background: bg001       # take a look at https://fortunestreetmodding.github.io/backgrounds for available backgrounds
 bgmId: BGM_MAP_ALEFGARD # bgmId can be used if not using custom music
 tourMode:
   bankruptcyLimit: 1
