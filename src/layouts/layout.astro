@@ -21,8 +21,8 @@ import Navbar from '~/components/navbar.astro';
     <title>Fortune Street Modding - {title}</title>
   </head>
   <body>
-    <Navbar />
     <main role="main">
+      <Navbar />
       {heading && <h1 class="text-center">{heading}</h1>}
       <slot />
     </main>
