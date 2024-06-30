@@ -160,11 +160,11 @@ const { activeVentureCards = [], disabled = true, onchange = '' } = Astro.props;
 {ventureCards.map((ventureCard, index) => (
   <>
     {disabled? (
-      <div id={`ventureCard-${index+1}`} class:list={[`ventureCard card ventureCard-${index+1}`, {'active': activeVentureCards? activeVentureCards![index] == 1 : false}]} data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title={`<b>#${index + 1}</b><br/>${ventureCard.description}`}/>
+      <div id={`ventureCard-${index+1}`} class:list={[`ventureCard card ventureCard-${index+1}`, {'active': activeVentureCards? activeVentureCards![index] == 1 : false}]} data-bs-animation="false" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title={`<b>#${index + 1}</b><br/>${ventureCard.description}`}/>
     ) : (
       <span id={`ventureCard-${index+1}`}>
         <input type="checkbox" class="btn-check" id={`ventureCardInput-${index+1}`} autocomplete="off" onchange={onchange}/>
-        <label for={`ventureCardInput-${index+1}`} class:list={[`btn ventureCard card ventureCard-${index+1}`, {'active': activeVentureCards? activeVentureCards![index] == 1 : false}]} data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title={`<b>#${index + 1}</b><br/>${ventureCard.description}`}/>
+        <label for={`ventureCardInput-${index+1}`} class:list={[`btn ventureCard card ventureCard-${index+1}`, {'active': activeVentureCards? activeVentureCards![index] == 1 : false}]} data-bs-animation="false" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title={`<b>#${index + 1}</b><br/>${ventureCard.description}`}/>
       </span>
     )}
   </>
