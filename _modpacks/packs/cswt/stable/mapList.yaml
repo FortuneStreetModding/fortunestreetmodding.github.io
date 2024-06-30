@@ -430,7 +430,7 @@ backgrounds: backgrounds.yml
       - https://nikkums.io/cswt/Maps/SkyTower.zip
     Spirograph.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/SkyTower.zip
+      - https://nikkums.io/cswt/Maps/Spirograph.zip
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
