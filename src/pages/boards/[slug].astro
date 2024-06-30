@@ -43,7 +43,11 @@ const board = boards.find(board => board.slug === slug);
                 <div class="col mapCard">
                   <div class="card">
                     <div class="fw-bold card-header">Venture Cards</div>
-                    <BoardVentureCards board={board}/>
+                    <div class="card-body">
+                      <div class="grid" style="--grid-column-count: 8; --grid-layout-gap: 0px; --grid-item--min-width: 2.5rem; --grid-item--max-width: 2.5rem">
+                        <BoardVentureCards activeVentureCards={board.ventureCards}/>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -1,20 +1,23 @@
 ---
 import ventureCards from "~/data/venturecards.yml";
-import type { MapDescriptorExtended } from '~/lib/getboards';
 interface Props {
-  board: MapDescriptorExtended;
+  activeVentureCards?: number[];
+  disabled?: boolean;
+  onchange?: string;
 }
-const { board } = Astro.props;
+const { activeVentureCards = [], disabled = true, onchange = '' } = Astro.props;
 ---
 <style is:global>
+  .btn-check:checked + .card.ventureCard {
+    filter: grayscale(0%) brightness(100%) contrast(100%) blur(0) !important;
+  }
   .card.ventureCard.active {
-    filter: grayscale(0%) brightness(100%) contrast(100%) blur(0);
+    filter: grayscale(0%) brightness(100%) contrast(100%) blur(0) !important;
   }
   .card.ventureCard {
     min-width:2.5rem;
-    max-width:2.5rem;
     min-height:2.5rem;
-    max-height:2.5rem;
+    aspect-ratio: 1 / 1;
     padding:0;
     text-align:center;
     vertical-align:middle;
@@ -22,144 +25,150 @@ const { board } = Astro.props;
     align-items: center;
     background-size: contain;
     background-repeat: no-repeat;
-    filter: grayscale(100%) brightness(75%) contrast(50%) blur(1px);
+    filter: grayscale(100%) brightness(75%) contrast(50%) blur(1px) !important;
+    opacity: 1 !important;
   }
-  .event-1 { background-image: url(/images/eventsquares/eventsquare_001.png); }
-  .event-2 { background-image: url(/images/eventsquares/eventsquare_002.png); }
-  .event-3 { background-image: url(/images/eventsquares/eventsquare_003.png); }
-  .event-4 { background-image: url(/images/eventsquares/eventsquare_004.png); }
-  .event-5 { background-image: url(/images/eventsquares/eventsquare_005.png); }
-  .event-6 { background-image: url(/images/eventsquares/eventsquare_006.png); }
-  .event-7 { background-image: url(/images/eventsquares/eventsquare_007.png); }
-  .event-8 { background-image: url(/images/eventsquares/eventsquare_008.png); }
-  .event-9 { background-image: url(/images/eventsquares/eventsquare_009.png); }
-  .event-10 { background-image: url(/images/eventsquares/eventsquare_010.png); }
-  .event-11 { background-image: url(/images/eventsquares/eventsquare_011.png); }
-  .event-12 { background-image: url(/images/eventsquares/eventsquare_012.png); }
-  .event-13 { background-image: url(/images/eventsquares/eventsquare_013.png); }
-  .event-14 { background-image: url(/images/eventsquares/eventsquare_014.png); }
-  .event-15 { background-image: url(/images/eventsquares/eventsquare_015.png); }
-  .event-16 { background-image: url(/images/eventsquares/eventsquare_016.png); }
-  .event-17 { background-image: url(/images/eventsquares/eventsquare_017.png); }
-  .event-18 { background-image: url(/images/eventsquares/eventsquare_018.png); }
-  .event-19 { background-image: url(/images/eventsquares/eventsquare_019.png); }
-  .event-20 { background-image: url(/images/eventsquares/eventsquare_020.png); }
-  .event-21 { background-image: url(/images/eventsquares/eventsquare_021.png); }
-  .event-22 { background-image: url(/images/eventsquares/eventsquare_022.png); }
-  .event-23 { background-image: url(/images/eventsquares/eventsquare_023.png); }
-  .event-24 { background-image: url(/images/eventsquares/eventsquare_024.png); }
-  .event-25 { background-image: url(/images/eventsquares/eventsquare_025.png); }
-  .event-26 { background-image: url(/images/eventsquares/eventsquare_026.png); }
-  .event-27 { background-image: url(/images/eventsquares/eventsquare_027.png); }
-  .event-28 { background-image: url(/images/eventsquares/eventsquare_028.png); }
-  .event-29 { background-image: url(/images/eventsquares/eventsquare_029.png); }
-  .event-30 { background-image: url(/images/eventsquares/eventsquare_030.png); }
-  .event-31 { background-image: url(/images/eventsquares/eventsquare_031.png); }
-  .event-32 { background-image: url(/images/eventsquares/eventsquare_032.png); }
-  .event-33 { background-image: url(/images/eventsquares/eventsquare_033.png); }
-  .event-34 { background-image: url(/images/eventsquares/eventsquare_034.png); }
-  .event-35 { background-image: url(/images/eventsquares/eventsquare_035.png); }
-  .event-36 { background-image: url(/images/eventsquares/eventsquare_036.png); }
-  .event-37 { background-image: url(/images/eventsquares/eventsquare_037.png); }
-  .event-38 { background-image: url(/images/eventsquares/eventsquare_038.png); }
-  .event-39 { background-image: url(/images/eventsquares/eventsquare_039.png); }
-  .event-40 { background-image: url(/images/eventsquares/eventsquare_040.png); }
-  .event-41 { background-image: url(/images/eventsquares/eventsquare_041.png); }
-  .event-42 { background-image: url(/images/eventsquares/eventsquare_042.png); }
-  .event-43 { background-image: url(/images/eventsquares/eventsquare_043.png); }
-  .event-44 { background-image: url(/images/eventsquares/eventsquare_044.png); }
-  .event-45 { background-image: url(/images/eventsquares/eventsquare_045.png); }
-  .event-46 { background-image: url(/images/eventsquares/eventsquare_046.png); }
-  .event-47 { background-image: url(/images/eventsquares/eventsquare_047.png); }
-  .event-48 { background-image: url(/images/eventsquares/eventsquare_048.png); }
-  .event-49 { background-image: url(/images/eventsquares/eventsquare_049.png); }
-  .event-50 { background-image: url(/images/eventsquares/eventsquare_050.png); }
-  .event-51 { background-image: url(/images/eventsquares/eventsquare_051.png); }
-  .event-52 { background-image: url(/images/eventsquares/eventsquare_052.png); }
-  .event-53 { background-image: url(/images/eventsquares/eventsquare_053.png); }
-  .event-54 { background-image: url(/images/eventsquares/eventsquare_054.png); }
-  .event-55 { background-image: url(/images/eventsquares/eventsquare_055.png); }
-  .event-56 { background-image: url(/images/eventsquares/eventsquare_056.png); }
-  .event-57 { background-image: url(/images/eventsquares/eventsquare_057.png); }
-  .event-58 { background-image: url(/images/eventsquares/eventsquare_058.png); }
-  .event-59 { background-image: url(/images/eventsquares/eventsquare_059.png); }
-  .event-60 { background-image: url(/images/eventsquares/eventsquare_060.png); }
-  .event-61 { background-image: url(/images/eventsquares/eventsquare_061.png); }
-  .event-62 { background-image: url(/images/eventsquares/eventsquare_062.png); }
-  .event-63 { background-image: url(/images/eventsquares/eventsquare_063.png); }
-  .event-64 { background-image: url(/images/eventsquares/eventsquare_064.png); }
-  .event-65 { background-image: url(/images/eventsquares/eventsquare_065.png); }
-  .event-66 { background-image: url(/images/eventsquares/eventsquare_066.png); }
-  .event-67 { background-image: url(/images/eventsquares/eventsquare_067.png); }
-  .event-68 { background-image: url(/images/eventsquares/eventsquare_068.png); }
-  .event-69 { background-image: url(/images/eventsquares/eventsquare_069.png); }
-  .event-70 { background-image: url(/images/eventsquares/eventsquare_070.png); }
-  .event-71 { background-image: url(/images/eventsquares/eventsquare_071.png); }
-  .event-72 { background-image: url(/images/eventsquares/eventsquare_072.png); }
-  .event-73 { background-image: url(/images/eventsquares/eventsquare_073.png); }
-  .event-74 { background-image: url(/images/eventsquares/eventsquare_074.png); }
-  .event-75 { background-image: url(/images/eventsquares/eventsquare_075.png); }
-  .event-76 { background-image: url(/images/eventsquares/eventsquare_076.png); }
-  .event-77 { background-image: url(/images/eventsquares/eventsquare_077.png); }
-  .event-78 { background-image: url(/images/eventsquares/eventsquare_078.png); }
-  .event-79 { background-image: url(/images/eventsquares/eventsquare_079.png); }
-  .event-80 { background-image: url(/images/eventsquares/eventsquare_080.png); }
-  .event-81 { background-image: url(/images/eventsquares/eventsquare_081.png); }
-  .event-82 { background-image: url(/images/eventsquares/eventsquare_082.png); }
-  .event-83 { background-image: url(/images/eventsquares/eventsquare_083.png); }
-  .event-84 { background-image: url(/images/eventsquares/eventsquare_084.png); }
-  .event-85 { background-image: url(/images/eventsquares/eventsquare_085.png); }
-  .event-86 { background-image: url(/images/eventsquares/eventsquare_086.png); }
-  .event-87 { background-image: url(/images/eventsquares/eventsquare_087.png); }
-  .event-88 { background-image: url(/images/eventsquares/eventsquare_088.png); }
-  .event-89 { background-image: url(/images/eventsquares/eventsquare_089.png); }
-  .event-90 { background-image: url(/images/eventsquares/eventsquare_090.png); }
-  .event-91 { background-image: url(/images/eventsquares/eventsquare_091.png); }
-  .event-92 { background-image: url(/images/eventsquares/eventsquare_092.png); }
-  .event-93 { background-image: url(/images/eventsquares/eventsquare_093.png); }
-  .event-94 { background-image: url(/images/eventsquares/eventsquare_094.png); }
-  .event-95 { background-image: url(/images/eventsquares/eventsquare_095.png); }
-  .event-96 { background-image: url(/images/eventsquares/eventsquare_096.png); }
-  .event-97 { background-image: url(/images/eventsquares/eventsquare_097.png); }
-  .event-98 { background-image: url(/images/eventsquares/eventsquare_098.png); }
-  .event-99 { background-image: url(/images/eventsquares/eventsquare_099.png); }
-  .event-100 { background-image: url(/images/eventsquares/eventsquare_100.png); }
-  .event-101 { background-image: url(/images/eventsquares/eventsquare_101.png); }
-  .event-102 { background-image: url(/images/eventsquares/eventsquare_102.png); }
-  .event-103 { background-image: url(/images/eventsquares/eventsquare_103.png); }
-  .event-104 { background-image: url(/images/eventsquares/eventsquare_104.png); }
-  .event-105 { background-image: url(/images/eventsquares/eventsquare_105.png); }
-  .event-106 { background-image: url(/images/eventsquares/eventsquare_106.png); }
-  .event-107 { background-image: url(/images/eventsquares/eventsquare_107.png); }
-  .event-108 { background-image: url(/images/eventsquares/eventsquare_108.png); }
-  .event-109 { background-image: url(/images/eventsquares/eventsquare_109.png); }
-  .event-110 { background-image: url(/images/eventsquares/eventsquare_110.png); }
-  .event-111 { background-image: url(/images/eventsquares/eventsquare_111.png); }
-  .event-112 { background-image: url(/images/eventsquares/eventsquare_112.png); }
-  .event-113 { background-image: url(/images/eventsquares/eventsquare_113.png); }
-  .event-114 { background-image: url(/images/eventsquares/eventsquare_114.png); }
-  .event-115 { background-image: url(/images/eventsquares/eventsquare_115.png); }
-  .event-116 { background-image: url(/images/eventsquares/eventsquare_116.png); }
-  .event-117 { background-image: url(/images/eventsquares/eventsquare_117.png); }
-  .event-118 { background-image: url(/images/eventsquares/eventsquare_118.png); }
-  .event-119 { background-image: url(/images/eventsquares/eventsquare_119.png); }
-  .event-120 { background-image: url(/images/eventsquares/eventsquare_120.png); }
-  .event-121 { background-image: url(/images/eventsquares/eventsquare_121.png); }
-  .event-122 { background-image: url(/images/eventsquares/eventsquare_122.png); }
-  .event-123 { background-image: url(/images/eventsquares/eventsquare_123.png); }
-  .event-124 { background-image: url(/images/eventsquares/eventsquare_124.png); }
-  .event-125 { background-image: url(/images/eventsquares/eventsquare_125.png); }
-  .event-126 { background-image: url(/images/eventsquares/eventsquare_126.png); }
-  .event-127 { background-image: url(/images/eventsquares/eventsquare_127.png); }
-  .event-128 { background-image: url(/images/eventsquares/eventsquare_128.png); }
+  .ventureCard.ventureCard-1 { background-image: url(/images/eventsquares/eventsquare_001.png); }
+  .ventureCard.ventureCard-2 { background-image: url(/images/eventsquares/eventsquare_002.png); }
+  .ventureCard.ventureCard-3 { background-image: url(/images/eventsquares/eventsquare_003.png); }
+  .ventureCard.ventureCard-4 { background-image: url(/images/eventsquares/eventsquare_004.png); }
+  .ventureCard.ventureCard-5 { background-image: url(/images/eventsquares/eventsquare_005.png); }
+  .ventureCard.ventureCard-6 { background-image: url(/images/eventsquares/eventsquare_006.png); }
+  .ventureCard.ventureCard-7 { background-image: url(/images/eventsquares/eventsquare_007.png); }
+  .ventureCard.ventureCard-8 { background-image: url(/images/eventsquares/eventsquare_008.png); }
+  .ventureCard.ventureCard-9 { background-image: url(/images/eventsquares/eventsquare_009.png); }
+  .ventureCard.ventureCard-10 { background-image: url(/images/eventsquares/eventsquare_010.png); }
+  .ventureCard.ventureCard-11 { background-image: url(/images/eventsquares/eventsquare_011.png); }
+  .ventureCard.ventureCard-12 { background-image: url(/images/eventsquares/eventsquare_012.png); }
+  .ventureCard.ventureCard-13 { background-image: url(/images/eventsquares/eventsquare_013.png); }
+  .ventureCard.ventureCard-14 { background-image: url(/images/eventsquares/eventsquare_014.png); }
+  .ventureCard.ventureCard-15 { background-image: url(/images/eventsquares/eventsquare_015.png); }
+  .ventureCard.ventureCard-16 { background-image: url(/images/eventsquares/eventsquare_016.png); }
+  .ventureCard.ventureCard-17 { background-image: url(/images/eventsquares/eventsquare_017.png); }
+  .ventureCard.ventureCard-18 { background-image: url(/images/eventsquares/eventsquare_018.png); }
+  .ventureCard.ventureCard-19 { background-image: url(/images/eventsquares/eventsquare_019.png); }
+  .ventureCard.ventureCard-20 { background-image: url(/images/eventsquares/eventsquare_020.png); }
+  .ventureCard.ventureCard-21 { background-image: url(/images/eventsquares/eventsquare_021.png); }
+  .ventureCard.ventureCard-22 { background-image: url(/images/eventsquares/eventsquare_022.png); }
+  .ventureCard.ventureCard-23 { background-image: url(/images/eventsquares/eventsquare_023.png); }
+  .ventureCard.ventureCard-24 { background-image: url(/images/eventsquares/eventsquare_024.png); }
+  .ventureCard.ventureCard-25 { background-image: url(/images/eventsquares/eventsquare_025.png); }
+  .ventureCard.ventureCard-26 { background-image: url(/images/eventsquares/eventsquare_026.png); }
+  .ventureCard.ventureCard-27 { background-image: url(/images/eventsquares/eventsquare_027.png); }
+  .ventureCard.ventureCard-28 { background-image: url(/images/eventsquares/eventsquare_028.png); }
+  .ventureCard.ventureCard-29 { background-image: url(/images/eventsquares/eventsquare_029.png); }
+  .ventureCard.ventureCard-30 { background-image: url(/images/eventsquares/eventsquare_030.png); }
+  .ventureCard.ventureCard-31 { background-image: url(/images/eventsquares/eventsquare_031.png); }
+  .ventureCard.ventureCard-32 { background-image: url(/images/eventsquares/eventsquare_032.png); }
+  .ventureCard.ventureCard-33 { background-image: url(/images/eventsquares/eventsquare_033.png); }
+  .ventureCard.ventureCard-34 { background-image: url(/images/eventsquares/eventsquare_034.png); }
+  .ventureCard.ventureCard-35 { background-image: url(/images/eventsquares/eventsquare_035.png); }
+  .ventureCard.ventureCard-36 { background-image: url(/images/eventsquares/eventsquare_036.png); }
+  .ventureCard.ventureCard-37 { background-image: url(/images/eventsquares/eventsquare_037.png); }
+  .ventureCard.ventureCard-38 { background-image: url(/images/eventsquares/eventsquare_038.png); }
+  .ventureCard.ventureCard-39 { background-image: url(/images/eventsquares/eventsquare_039.png); }
+  .ventureCard.ventureCard-40 { background-image: url(/images/eventsquares/eventsquare_040.png); }
+  .ventureCard.ventureCard-41 { background-image: url(/images/eventsquares/eventsquare_041.png); }
+  .ventureCard.ventureCard-42 { background-image: url(/images/eventsquares/eventsquare_042.png); }
+  .ventureCard.ventureCard-43 { background-image: url(/images/eventsquares/eventsquare_043.png); }
+  .ventureCard.ventureCard-44 { background-image: url(/images/eventsquares/eventsquare_044.png); }
+  .ventureCard.ventureCard-45 { background-image: url(/images/eventsquares/eventsquare_045.png); }
+  .ventureCard.ventureCard-46 { background-image: url(/images/eventsquares/eventsquare_046.png); }
+  .ventureCard.ventureCard-47 { background-image: url(/images/eventsquares/eventsquare_047.png); }
+  .ventureCard.ventureCard-48 { background-image: url(/images/eventsquares/eventsquare_048.png); }
+  .ventureCard.ventureCard-49 { background-image: url(/images/eventsquares/eventsquare_049.png); }
+  .ventureCard.ventureCard-50 { background-image: url(/images/eventsquares/eventsquare_050.png); }
+  .ventureCard.ventureCard-51 { background-image: url(/images/eventsquares/eventsquare_051.png); }
+  .ventureCard.ventureCard-52 { background-image: url(/images/eventsquares/eventsquare_052.png); }
+  .ventureCard.ventureCard-53 { background-image: url(/images/eventsquares/eventsquare_053.png); }
+  .ventureCard.ventureCard-54 { background-image: url(/images/eventsquares/eventsquare_054.png); }
+  .ventureCard.ventureCard-55 { background-image: url(/images/eventsquares/eventsquare_055.png); }
+  .ventureCard.ventureCard-56 { background-image: url(/images/eventsquares/eventsquare_056.png); }
+  .ventureCard.ventureCard-57 { background-image: url(/images/eventsquares/eventsquare_057.png); }
+  .ventureCard.ventureCard-58 { background-image: url(/images/eventsquares/eventsquare_058.png); }
+  .ventureCard.ventureCard-59 { background-image: url(/images/eventsquares/eventsquare_059.png); }
+  .ventureCard.ventureCard-60 { background-image: url(/images/eventsquares/eventsquare_060.png); }
+  .ventureCard.ventureCard-61 { background-image: url(/images/eventsquares/eventsquare_061.png); }
+  .ventureCard.ventureCard-62 { background-image: url(/images/eventsquares/eventsquare_062.png); }
+  .ventureCard.ventureCard-63 { background-image: url(/images/eventsquares/eventsquare_063.png); }
+  .ventureCard.ventureCard-64 { background-image: url(/images/eventsquares/eventsquare_064.png); }
+  .ventureCard.ventureCard-65 { background-image: url(/images/eventsquares/eventsquare_065.png); }
+  .ventureCard.ventureCard-66 { background-image: url(/images/eventsquares/eventsquare_066.png); }
+  .ventureCard.ventureCard-67 { background-image: url(/images/eventsquares/eventsquare_067.png); }
+  .ventureCard.ventureCard-68 { background-image: url(/images/eventsquares/eventsquare_068.png); }
+  .ventureCard.ventureCard-69 { background-image: url(/images/eventsquares/eventsquare_069.png); }
+  .ventureCard.ventureCard-70 { background-image: url(/images/eventsquares/eventsquare_070.png); }
+  .ventureCard.ventureCard-71 { background-image: url(/images/eventsquares/eventsquare_071.png); }
+  .ventureCard.ventureCard-72 { background-image: url(/images/eventsquares/eventsquare_072.png); }
+  .ventureCard.ventureCard-73 { background-image: url(/images/eventsquares/eventsquare_073.png); }
+  .ventureCard.ventureCard-74 { background-image: url(/images/eventsquares/eventsquare_074.png); }
+  .ventureCard.ventureCard-75 { background-image: url(/images/eventsquares/eventsquare_075.png); }
+  .ventureCard.ventureCard-76 { background-image: url(/images/eventsquares/eventsquare_076.png); }
+  .ventureCard.ventureCard-77 { background-image: url(/images/eventsquares/eventsquare_077.png); }
+  .ventureCard.ventureCard-78 { background-image: url(/images/eventsquares/eventsquare_078.png); }
+  .ventureCard.ventureCard-79 { background-image: url(/images/eventsquares/eventsquare_079.png); }
+  .ventureCard.ventureCard-80 { background-image: url(/images/eventsquares/eventsquare_080.png); }
+  .ventureCard.ventureCard-81 { background-image: url(/images/eventsquares/eventsquare_081.png); }
+  .ventureCard.ventureCard-82 { background-image: url(/images/eventsquares/eventsquare_082.png); }
+  .ventureCard.ventureCard-83 { background-image: url(/images/eventsquares/eventsquare_083.png); }
+  .ventureCard.ventureCard-84 { background-image: url(/images/eventsquares/eventsquare_084.png); }
+  .ventureCard.ventureCard-85 { background-image: url(/images/eventsquares/eventsquare_085.png); }
+  .ventureCard.ventureCard-86 { background-image: url(/images/eventsquares/eventsquare_086.png); }
+  .ventureCard.ventureCard-87 { background-image: url(/images/eventsquares/eventsquare_087.png); }
+  .ventureCard.ventureCard-88 { background-image: url(/images/eventsquares/eventsquare_088.png); }
+  .ventureCard.ventureCard-89 { background-image: url(/images/eventsquares/eventsquare_089.png); }
+  .ventureCard.ventureCard-90 { background-image: url(/images/eventsquares/eventsquare_090.png); }
+  .ventureCard.ventureCard-91 { background-image: url(/images/eventsquares/eventsquare_091.png); }
+  .ventureCard.ventureCard-92 { background-image: url(/images/eventsquares/eventsquare_092.png); }
+  .ventureCard.ventureCard-93 { background-image: url(/images/eventsquares/eventsquare_093.png); }
+  .ventureCard.ventureCard-94 { background-image: url(/images/eventsquares/eventsquare_094.png); }
+  .ventureCard.ventureCard-95 { background-image: url(/images/eventsquares/eventsquare_095.png); }
+  .ventureCard.ventureCard-96 { background-image: url(/images/eventsquares/eventsquare_096.png); }
+  .ventureCard.ventureCard-97 { background-image: url(/images/eventsquares/eventsquare_097.png); }
+  .ventureCard.ventureCard-98 { background-image: url(/images/eventsquares/eventsquare_098.png); }
+  .ventureCard.ventureCard-99 { background-image: url(/images/eventsquares/eventsquare_099.png); }
+  .ventureCard.ventureCard-100 { background-image: url(/images/eventsquares/eventsquare_100.png); }
+  .ventureCard.ventureCard-101 { background-image: url(/images/eventsquares/eventsquare_101.png); }
+  .ventureCard.ventureCard-102 { background-image: url(/images/eventsquares/eventsquare_102.png); }
+  .ventureCard.ventureCard-103 { background-image: url(/images/eventsquares/eventsquare_103.png); }
+  .ventureCard.ventureCard-104 { background-image: url(/images/eventsquares/eventsquare_104.png); }
+  .ventureCard.ventureCard-105 { background-image: url(/images/eventsquares/eventsquare_105.png); }
+  .ventureCard.ventureCard-106 { background-image: url(/images/eventsquares/eventsquare_106.png); }
+  .ventureCard.ventureCard-107 { background-image: url(/images/eventsquares/eventsquare_107.png); }
+  .ventureCard.ventureCard-108 { background-image: url(/images/eventsquares/eventsquare_108.png); }
+  .ventureCard.ventureCard-109 { background-image: url(/images/eventsquares/eventsquare_109.png); }
+  .ventureCard.ventureCard-110 { background-image: url(/images/eventsquares/eventsquare_110.png); }
+  .ventureCard.ventureCard-111 { background-image: url(/images/eventsquares/eventsquare_111.png); }
+  .ventureCard.ventureCard-112 { background-image: url(/images/eventsquares/eventsquare_112.png); }
+  .ventureCard.ventureCard-113 { background-image: url(/images/eventsquares/eventsquare_113.png); }
+  .ventureCard.ventureCard-114 { background-image: url(/images/eventsquares/eventsquare_114.png); }
+  .ventureCard.ventureCard-115 { background-image: url(/images/eventsquares/eventsquare_115.png); }
+  .ventureCard.ventureCard-116 { background-image: url(/images/eventsquares/eventsquare_116.png); }
+  .ventureCard.ventureCard-117 { background-image: url(/images/eventsquares/eventsquare_117.png); }
+  .ventureCard.ventureCard-118 { background-image: url(/images/eventsquares/eventsquare_118.png); }
+  .ventureCard.ventureCard-119 { background-image: url(/images/eventsquares/eventsquare_119.png); }
+  .ventureCard.ventureCard-120 { background-image: url(/images/eventsquares/eventsquare_120.png); }
+  .ventureCard.ventureCard-121 { background-image: url(/images/eventsquares/eventsquare_121.png); }
+  .ventureCard.ventureCard-122 { background-image: url(/images/eventsquares/eventsquare_122.png); }
+  .ventureCard.ventureCard-123 { background-image: url(/images/eventsquares/eventsquare_123.png); }
+  .ventureCard.ventureCard-124 { background-image: url(/images/eventsquares/eventsquare_124.png); }
+  .ventureCard.ventureCard-125 { background-image: url(/images/eventsquares/eventsquare_125.png); }
+  .ventureCard.ventureCard-126 { background-image: url(/images/eventsquares/eventsquare_126.png); }
+  .ventureCard.ventureCard-127 { background-image: url(/images/eventsquares/eventsquare_127.png); }
+  .ventureCard.ventureCard-128 { background-image: url(/images/eventsquares/eventsquare_128.png); }
 </style>
-<div class="card-body">
-  <div class="row mx-0">
-    {ventureCards.map((ventureCard, index) => (
-      <div class:list={[`col ventureCard card event-${index+1}`, {'active': board.ventureCards![index] == 1}]} data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title={`<b>#${index + 1}</b><br/>${ventureCard.description}`}/>
-    ))}
-  </div>
-</div>
+{ventureCards.map((ventureCard, index) => (
+  <>
+    {disabled? (
+      <div id={`ventureCard-${index+1}`} class:list={[`ventureCard card ventureCard-${index+1}`, {'active': activeVentureCards? activeVentureCards![index] == 1 : false}]} data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title={`<b>#${index + 1}</b><br/>${ventureCard.description}`}/>
+    ) : (
+      <span id={`ventureCard-${index+1}`}>
+        <input type="checkbox" class="btn-check" id={`ventureCardInput-${index+1}`} autocomplete="off" onchange={onchange}/>
+        <label for={`ventureCardInput-${index+1}`} class:list={[`btn ventureCard card ventureCard-${index+1}`, {'active': activeVentureCards? activeVentureCards![index] == 1 : false}]} data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title={`<b>#${index + 1}</b><br/>${ventureCard.description}`}/>
+      </span>
+    )}
+  </>
+))}
 <script>
   import { Tooltip } from "bootstrap";
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')

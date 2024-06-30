@@ -2,8 +2,10 @@ export function check_cards() {
     const difficulty = document.getElementById("difficulty");
     for (let i = 1; i <= 128; i++) {
         const card = document.getElementById("card" + i.toString());
+        const smallCard = document.getElementById("ventureCard-" + i.toString());
         if (!card) continue;
         card.style.display = "block";
+        smallCard.style.visibility = "visible";
         const cardEasy = card.hasAttribute("data-easy");
         const cardStandard = card.hasAttribute("data-standard");
         const cardSentiment = parseInt(card.getAttribute("data-sentiment"));
@@ -13,43 +15,53 @@ export function check_cards() {
         // Check difficulty
         if (difficulty.value === "both" && (!cardEasy || !cardStandard)) {
             card.style.display = "none";
+            smallCard.style.visibility = "hidden";
             continue;
         } else if (difficulty.value === "easy" && !cardEasy) {
             card.style.display = "none";
+            smallCard.style.visibility = "hidden";
             continue;
         } else if (difficulty.value === "standard" && !cardStandard) {
             card.style.display = "none";
+            smallCard.style.visibility = "hidden";
             continue;
         } else if (difficulty.value === "neither" && (cardEasy || cardStandard)) {
             card.style.display = "none";
+            smallCard.style.visibility = "hidden";
             continue;
         }
         // Check sentiment
         if (!document.getElementById("sentimentPositive").checked && cardSentiment === 1) {
             card.style.display = "none";
+            smallCard.style.visibility = "hidden";
             continue;
         } else if (!document.getElementById("sentimentNeutral").checked && cardSentiment === 0) {
             card.style.display = "none";
+            smallCard.style.visibility = "hidden";
             continue;
         } else if (!document.getElementById("sentimentNegative").checked && cardSentiment === -1) {
             card.style.display = "none";
+            smallCard.style.visibility = "hidden";
             continue;
         }
         // Check grade
         for (let j = 0; j <= 4; j++) {
             if (!document.getElementById("grade" + j.toString()).checked && cardGrade === j) {
                 card.style.display = "none";
+                smallCard.style.visibility = "hidden";
                 break;
             }
         }
         // Check type
         if (document.getElementById("types").value !== "any" && cardType !== document.getElementById("types").value) {
             card.style.display = "none";
+            smallCard.style.visibility = "hidden";
             continue;
         }
         // Check effect
         if (document.getElementById("effects").value !== "any" && cardEffect !== document.getElementById("effects").value) {
             card.style.display = "none";
+            smallCard.style.visibility = "hidden";
             continue;
         }
     }
@@ -70,20 +82,51 @@ export function reset_filters() {
 
 export function reset_selected_cards() {
     for (let i = 1; i <= 128; i++) {
-        document.getElementById("card" + i.toString() + "selected").checked = document.getElementById("card" + i.toString()).getAttribute("data-standard") === "true";
+        const isStandard = document.getElementById("card" + i.toString()).hasAttribute("data-standard")
+        document.getElementById("card" + i.toString() + "selected").checked = isStandard;
+        document.getElementById(`ventureCardInput-${i}`).checked = isStandard;
     }
     check_selected_cards();
+}
+
+export function display_bigCards() {
+    for (let i = 1; i <= 128; i++) {
+        const bigCard = document.getElementById(`card${i}selected`)
+        const smallCard = document.getElementById(`ventureCardInput-${i}`)
+        bigCard.checked = smallCard.checked
+    }
+    document.getElementById('ventureCardsSmall').style.display = "none"
+    document.getElementById('ventureCardsBig').style.display = ""
+}
+
+export function display_smallCards() {
+    for (let i = 1; i <= 128; i++) {
+        const bigCard = document.getElementById(`card${i}selected`)
+        const smallCard = document.getElementById(`ventureCardInput-${i}`)
+        smallCard.checked = bigCard.checked
+    }
+    document.getElementById('ventureCardsSmall').style.display = ""
+    document.getElementById('ventureCardsBig').style.display = "none"
 }
 
 export function check_selected_cards() {
     document.getElementById("yaml").style.display = "none";
     let chosenCards = 0;
-    for (let i = 1; i <= 128; i++) {
-        if (document.getElementById("card" + i.toString() + "selected").checked) {
-            chosenCards++;
-            document.getElementById("card" + i.toString()).style.opacity = 1;
-        } else {
-            document.getElementById("card" + i.toString()).style.opacity = 0.625;
+    const bigCards = document.getElementById("cardsDisplayBig").checked;
+    if (bigCards) {
+        for (let i = 1; i <= 128; i++) {
+            if (document.getElementById("card" + i.toString() + "selected").checked) {
+                chosenCards++;
+                document.getElementById("card" + i.toString()).style.opacity = 1;
+            } else {
+                document.getElementById("card" + i.toString()).style.opacity = 0.625;
+            }
+        }
+    } else {
+        for (let i = 1; i <= 128; i++) {
+            if (document.getElementById(`ventureCardInput-${i}`).checked) {
+                chosenCards++;
+            }
         }
     }
     document.getElementById("cardsSelected").textContent = chosenCards.toString() + " cards selected";
@@ -98,15 +141,18 @@ export function check_selected_cards() {
 export function select_all_cards(select = true) {
     for (let i = 1; i <= 128; i++) {
         document.getElementById("card" + i.toString() + "selected").checked = select;
+        document.getElementById(`ventureCardInput-${i}`).checked = select;
     }
     check_selected_cards();
 }
 
 export function select_visible_cards(select = true) {
     for (let i = 1; i <= 128; i++) {
-        console.log(i, document.getElementById("card" + i.toString()).style.display);
         if (document.getElementById("card" + i.toString()).style.display === "block") {
             document.getElementById("card" + i.toString() + "selected").checked = select;
+        }
+        if (document.getElementById(`ventureCard-${i}`).style.visibility !== "hidden") {
+            document.getElementById(`ventureCardInput-${i}`).checked = select;
         }
     }
     check_selected_cards();

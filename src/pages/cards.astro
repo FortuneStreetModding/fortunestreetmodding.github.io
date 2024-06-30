@@ -2,6 +2,7 @@
 import slug from 'slug';
 import Layout from '~/layouts/layout.astro';
 import cards from "~/data/venturecards.yml";
+import BoardVentureCards from '~/components/board/boardVentureCards.astro';
 const effects: string[] = [...new Set(cards.map(card => card.effect))].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 const types: string[] = [...new Set(cards.map(card => card.description.split("!")[0]))].sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
 
@@ -50,16 +51,16 @@ function sentiment_to_div_class(sentiment: number) {
           <h2>Grade</h2>
           <div class="mb-3">
             <p>Card grades are assigned by the Fortune Street modding community based on their power among cards with similar effects.</p>
-            <input type="checkbox" class="btn-check-outlined" id="grade0" autocomplete="off" checked onchange="cards.check_cards()"/>
-            <label class="btn btn-primary" for="grade0">D</label>
-            <input type="checkbox" class="btn-check-outlined" id="grade1" autocomplete="off" checked onchange="cards.check_cards()"/>
-            <label class="btn btn-primary" for="grade1">C</label>
-            <input type="checkbox" class="btn-check-outlined" id="grade2" autocomplete="off" checked onchange="cards.check_cards()"/>
-            <label class="btn btn-primary" for="grade2">B</label>
-            <input type="checkbox" class="btn-check-outlined" id="grade3" autocomplete="off" checked onchange="cards.check_cards()"/>
-            <label class="btn btn-primary" for="grade3">A</label>
-            <input type="checkbox" class="btn-check-outlined" id="grade4" autocomplete="off" checked onchange="cards.check_cards()"/>
-            <label class="btn btn-primary" for="grade4">S</label>
+            <input type="checkbox" class="btn-check" id="grade0" autocomplete="off" checked onchange="cards.check_cards()"/>
+            <label class="btn btn-outline-primary" for="grade0">D</label>
+            <input type="checkbox" class="btn-check" id="grade1" autocomplete="off" checked onchange="cards.check_cards()"/>
+            <label class="btn btn-outline-primary" for="grade1">C</label>
+            <input type="checkbox" class="btn-check" id="grade2" autocomplete="off" checked onchange="cards.check_cards()"/>
+            <label class="btn btn-outline-primary" for="grade2">B</label>
+            <input type="checkbox" class="btn-check" id="grade3" autocomplete="off" checked onchange="cards.check_cards()"/>
+            <label class="btn btn-outline-primary" for="grade3">A</label>
+            <input type="checkbox" class="btn-check" id="grade4" autocomplete="off" checked onchange="cards.check_cards()"/>
+            <label class="btn btn-outline-primary" for="grade4">S</label>
           </div>
           <h2>Sentiment</h2>
           <div class="mb-3">
@@ -96,12 +97,30 @@ function sentiment_to_div_class(sentiment: number) {
           </div>
         </div>
         <div class="col-9">
-          <div class="row">
-            <div class="mb-3">
-              <label class="form-label" id="cardsSelected">64 cards selected</label> <button class="btn btn-primary" id="generateYaml" onclick="cards.generate_yaml()">Generate YAML (requires 64)</button>
+          <div class="row row-cols-2 g-2">
+            <div class="col mb-3">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <input type="radio" class="btn-check" name="cardsDisplay" id="cardsDisplayBig" autocomplete="off" checked onchange="cards.display_bigCards()">
+                  <label class="nav-link btn btn-outline-primary" for="cardsDisplayBig">Big Cards</label>
+                </li>
+                <li class="nav-item">
+                  <input type="radio" class="btn-check" name="cardsDisplay" id="cardsDisplaySmall" autocomplete="off" onchange="cards.display_smallCards()">
+                  <label class="nav-link btn btn-outline-primary" for="cardsDisplaySmall">Small Cards</label>
+                </li>
+              </ul>
+            </div>
+            <div class="col mb-3 text-end">
+              <label class="form-label" id="cardsSelected">64 cards selected</label>
+              <button class="btn btn-primary" id="generateYaml" onclick="cards.generate_yaml()">Generate YAML (requires 64)</button>
             </div>
           </div>
-          <div class="row row-cols-2 g-2">
+          <div class="row g-2" id="ventureCardsSmall" style="display: none;">
+            <div class="grid" style="--grid-column-count: 15; --grid-layout-gap: 0px; --grid-item--min-width: 4rem;">
+              <BoardVentureCards disabled={false} onchange="cards.check_selected_cards()"/>
+            </div>
+          </div>
+          <div class="row row-cols-2 g-2" id="ventureCardsBig">
             {cards.map((card, index) => (
             <div class="col" style={"display: block; opacity: " + (card.defaultStandard ? "1" : "0.625") + ";"} id={"card" + (index + 1).toString()} data-description={card.description} data-easy={card.defaultEasy} data-standard={card.defaultStandard} data-type={slug(card.description.split("!")[0])} data-effect={slug(card.effect)} data-grade={card.grade} data-sentiment={card.sentiment}>
               <div class={sentiment_to_div_class(card.sentiment)} style="height: 100%;">

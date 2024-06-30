@@ -8,7 +8,7 @@ import backgrounds, { type Background } from "~/data/backgrounds.yml";
 import { execSync } from 'child_process';
 import { getRandomDate } from './utils';
 
-export type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' | 'frbFile1' | 'frbFile2' | 'frbFile3' | 'frbFile4' | 'frbFiles'> & {
+export type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' | 'frbFile1' | 'frbFile2' | 'frbFile3' | 'frbFile4' | 'frbFiles' | 'ventureCards'> & {
   nameEn: string;
   descEn: string;
   path: string;
@@ -19,6 +19,7 @@ export type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' |
   frbFiles: string[];
   uploadDate: number;
   lastUpdated: number;
+  ventureCards: number[];
   notesHtml?: string;
   changelog?: {
     version: number | string;
