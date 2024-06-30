@@ -156,8 +156,12 @@ const { board } = Astro.props;
 <div class="card-body">
   <div class="row mx-0">
     {ventureCards.map((ventureCard, index) => (
-      // TODO: fix tooltip popup
-      <div class:list={[`col ventureCard card event-${index+1}`, {'active': board.ventureCards![index] == 1}]} aria-label={ventureCard.description} data-balloon-pos="up" data-balloon-blunt />
+      <div class:list={[`col ventureCard card event-${index+1}`, {'active': board.ventureCards![index] == 1}]} data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" data-bs-title={`<b>#${index + 1}</b><br/>${ventureCard.description}`}/>
     ))}
   </div>
 </div>
+<script>
+  import { Tooltip } from "bootstrap";
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const _tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new Tooltip(tooltipTriggerEl))
+</script>
