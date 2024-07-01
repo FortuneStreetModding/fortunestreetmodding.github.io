@@ -1,5 +1,5 @@
 name:
-  en: Princess Peach's Birthday Cake
+  en: Peach's Birthday Cake
 desc:
   en: Princess Peach has baked a delicious, triple layer, castle sized cake for everyone to enjoy at her birthday party. Despite it's formidable stature, slices are disappearing quickly. Get one before it's all gone. Vacant plots included. 
 ruleSet: Standard
@@ -10,80 +10,89 @@ baseSalary: 180
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFiles:
-- peachsbirthdaycake_FRB00
-- peachsbirthdaycake_FRB01
-- peachsbirthdaycake_FRB02
-- peachsbirthdaycake_FRB03
-- peachsbirthdaycake_FRB04
-- peachsbirthdaycake_FRB05
-- peachsbirthdaycake_FRB06
-- peachsbirthdaycake_FRB07
-- peachsbirthdaycake_FRB08
-- peachsbirthdaycake_FRB09
-- peachsbirthdaycake_FRB10
-- peachsbirthdaycake_FRB11
-- peachsbirthdaycake_FRB12
-- peachsbirthdaycake_FRB13
-- peachsbirthdaycake_FRB14
-- peachsbirthdaycake_FRB15
+- mpss_ppbc_FRB00
+- mpss_ppbc_FRB01
+- mpss_ppbc_FRB02
+- mpss_ppbc_FRB03
+- mpss_ppbc_FRB04
+- mpss_ppbc_FRB05
+- mpss_ppbc_FRB06
+- mpss_ppbc_FRB07
+- mpss_ppbc_FRB08
+- mpss_ppbc_FRB09
+- mpss_ppbc_FRB10
+- mpss_ppbc_FRB11
+- mpss_ppbc_FRB12
+- mpss_ppbc_FRB13
+- mpss_ppbc_FRB14
+- mpss_ppbc_FRB15
 tourMode:
   bankruptcyLimit: 1
   opponent1: Peach
   opponent2: Toad
   opponent3: Mario
   clearRank: 1
-background: starcarnival_d
-mapIcon: peachbc
+background: mpss_ppbc
+mapIcon: impss_ppbc
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/princesspeachsbirthdaycake.music.zip
   map:
-   - PPBC_marioparty1_MAP01
-   - PPBC_mariopartysuper_MAP02
-   - PPBC_papermario_MAP03
-   - PPBC_papermario_MAP04
-   - PPBC_supermariorpg_MAP05
-   - PPBC_supermariorpg_MAP06
-   - PPBC_supermariorpg_MAP07
-   - PPBC_mariosupersluggers_MAP08
-   - PPBC_mariopartyisland_MAP09
-   - PPBC_supermario3d_MAP010
-   - PPBC_supermario3d_MAP011
-   - PPBC_mariopartytop100_MAP012
-   - PPBC_itadakistreet_MAP013
-   - PPBC_itadakistreet_MAP014
-   - PPBC_banjokazooie_MAP015
-   - PPBC_supermario3d_MAP016 
-  stock: PPBC_spyroherostail_STOCK
-  ventureCards: PPBC_banjokazooie_VENT
-  auction: PPBC_supermbros3_AUC
-  targetMet: PPBC_supermario3d_TARGET
-  win: PPBC_supermario3d_WIN
-  guestAppear:
-  guestLeave:
-  badVentureCard:
-  takeAbreak: PPBC_supermario64_BREAK
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
-  forcedBuyout: PPBC_supermarioodyssey_FORCEDBUY
-  domination: PPBC_supermariodyssey_DOM
+   - mpss_ppbc_MAP01
+   - mpss_ppbc_MAP02
+   - mpss_ppbc_MAP03
+   - mpss_ppbc_MAP04
+   - mpss_ppbc_MAP05
+   - mpss_ppbc_MAP06
+   - mpss_ppbc_MAP07
+   - mpss_ppbc_MAP08
+   - mpss_ppbc_MAP09
+   - mpss_ppbc_MAP10
+   - mpss_ppbc_MAP11
+   - mpss_ppbc_MAP12
+   - mpss_ppbc_MAP13
+   - mpss_ppbc_MAP14
+   - mpss_ppbc_MAP15
+   - mpss_ppbc_MAP16 
+  stock: mpss_STOCK
+  ventureCards: mpss_VEN
+  auction: mpss_AUC
+  targetMet: sm3dw_FINAL
+  win: mpss_WIN
+  guestAppear: 
+  guestLeave: mpss_GUESTL
+  badVentureCard: mpss_VEN_BAD
+  takeAbreak: mpss_TAB
+  promotionMii: mpss_ppbc_PROMO
+  promotionMario: mpss_ppbc_PROMO
+  promotionDragonQuest: mpss_ppbc_PROMO
+  forcedBuyout: smodyssey_BYO
+  domination: mpss_DOM
   bankruptcy:
-  roundTheBlocks: A_PPBC_fireemblemawakening_ROUND
-  roundTheBlocksWin: 
+  roundTheBlocks: A_mpss_ROB
+  roundTheBlocksWin: mpss_ROB_WIN
   roundTheBlocks777: 
-  memoryBlock: A_PPBC_mariovsdk2_MEMORY
-  dartOfGold: A_PPBC_princesspeachshowtime_DART
-  slurpodromeSelect: A_PPBC_princesspeachshowtime_SLURPSELECT
-  slurpodromeStart: A_PPBC_supermarioodyssey_SLURPSTART
-  slurpodromeRace: A_PPBC_mariopartysuper_SLURP
-  slurpodromeWin: 
+  memoryBlock: A_mpss_MEM
+  dartOfGold: A_mpss_DOG
+  slurpodromeSelect: A_mpss_SRP
+  slurpodromeStart: mpss_SRP_START
+  slurpodromeRace: mpss_SRP_RACE
+  slurpodromeWin: mpss_SRP_WIN
 changelog:
   - version: 1
     added:
       - Initial release
+  - version: 2
+    added:
+      - A custom background has been added, Peach's Birthday Cake from Mario Party Superstars
+      - New turnlot images
+      - Changed board icon
+    changed:
+      - Internal name of the board has been changed to mpss_ppbc
+      - Board has been renamed from "Princess Peach's Birthday Cake" to "Peach's Birthday Cake"
+      - Some music tracks have been changed
+      - Remaining music tracks had their sample rate reduced to 32000 to reduce filesize
 authors:
   - name: phellen007
+  - name: McKrak
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
