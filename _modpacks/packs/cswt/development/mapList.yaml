@@ -69,15 +69,18 @@ backgrounds: backgrounds.yml
     MonopolyUS.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MonopolyUS.zip
-    princesspeachsbirthdaycake.zip:
+    mpss_ppbc.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/princesspeachsbirthdaycake.zip
+      - https://nikkums.io/cswt/Maps/mpss_ppbc.zip
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
     SuitsMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SuitsMap.zip
+    is3_sushitrain.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/is3_sushitrain.zip
       practiceBoard: true
 1:
   0:
