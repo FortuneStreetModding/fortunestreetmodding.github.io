@@ -23,19 +23,12 @@ backgrounds: backgrounds.yml
     MoguMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MoguMap.zip
-    CastawayBayCSide.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
     luigismansion.zip:
       urls:
       - https://nikkums.io/cswt/Maps/luigismansion.zip
-    mkwii_funkystadium.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/mkwii_funkystadium.zip
     KBHH.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KBHH.zip
-  2:
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
@@ -45,6 +38,7 @@ backgrounds: backgrounds.yml
     TheClockTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClockTower.zip
+  2:
     theloopsduplidoe.zip:
       urls:
       - https://nikkums.io/cswt/Maps/theloopsduplidoe.zip
