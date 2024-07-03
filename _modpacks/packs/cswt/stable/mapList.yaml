@@ -282,6 +282,9 @@ backgrounds: backgrounds.yml
     Reactor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Reactor.zip
+    CastawayBayCSide.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
     CastleTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastleTown.zip
@@ -294,11 +297,11 @@ backgrounds: backgrounds.yml
     Colony9.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony9.zip
+  2:
     DeathStarfish.zip:
       practiceBoard: true
       urls:
       - https://nikkums.io/cswt/Maps/DeathStarfish.zip
-  2:
     Disboard.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Disboard.zip
@@ -428,9 +431,6 @@ backgrounds: backgrounds.yml
     SkyTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SkyTower.zip
-    Spirograph.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Spirograph.zip
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
