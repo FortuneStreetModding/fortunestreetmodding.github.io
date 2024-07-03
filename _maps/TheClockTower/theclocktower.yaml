@@ -1,3 +1,4 @@
+---
 name:
   en: The Clock Tower
 desc:
@@ -8,7 +9,7 @@ initialCash: 2500
 targetAmount: 20000
 baseSalary: 500
 salaryIncrement: 350
-maxDiceRoll: 7
+maxDiceRoll: 8
 frbFile1: theclocktower_FRB1
 frbFile2: theclocktower_FRB2
 frbFile3: theclocktower_FRB3
@@ -171,3 +172,4 @@ ventureCards:
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+...
