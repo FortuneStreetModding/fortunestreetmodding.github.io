@@ -32,9 +32,6 @@ backgrounds: backgrounds.yml
     mkwii_funkystadium.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mkwii_funkystadium.zip
-    CastawayBayCSide.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
     KBHH.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KBHH.zip
