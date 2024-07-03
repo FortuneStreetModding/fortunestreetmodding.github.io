@@ -1,0 +1,30 @@
+---
+interface Props {
+  title: string;
+  heading?: string;
+}
+const { title, heading } = Astro.props;
+import './layout.css';
+import './bootstrap.scss'
+import Navbar from '~/components/navbar.astro';
+---
+
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="black" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" href="/favicon.ico" />
+    <title>Fortune Street Modding - {title}</title>
+  </head>
+  <body>
+    <main role="main">
+      <Navbar />
+      {heading && <h1 class="text-center">{heading}</h1>}
+      <slot />
+    </main>
+  </body>
+</html>

@@ -1,4 +1,3 @@
----
 name:
   en: Colossus (DS)
 desc:
@@ -13,21 +12,16 @@ maxDiceRoll: 7
 frbFile1: ds-colossus
 frbFile2: ds-colossus
 background: bg103
-switchRotationOriginPoints:
-  - x: -288
-    y: -32
-  - x: 288
-    y: -32
 tourMode:
   bankruptcyLimit: 1
   opponent1: Alena
   opponent2: Kiryl
-  opponent3: Peach
-  clearRank: 1
+  opponent3: Platypunk
+  clearRank: 2
 music:
   download: 
     - https://nikkums.io/cswt/BGM/DSColossus.music.zip
-    - https://drive.google.com/u/2/uc?id=1l0Kyl6wDlHRN9yT09cTXzF7bK555IDQK&export=download
+    - https://drive.google.com/uc?export=download&id=1TokY-BjjoUTUxGGDVNTQ6cNJoYltMLXK&confirm=1
   map: BGM_MAP_MAJINZOU_ISDS.60
   stock: BGM_STOCK_ISDS.60
   ventureCards: BGM_CHANCE_ISDS.65
@@ -44,7 +38,19 @@ music:
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
   bankruptcy: ME_BANKRUPT_ISDS.60
+  memoryBlock: A_BGM_MEMORY_DS.75
+  dartOfGold: A_BGM_DART_DS.60
+  roundTheBlocks: A_BGM_ROUND_DQ_DS.50
+  roundTheBlocksWin: ME_ARCADEWIN_DQ_DS.60
+  roundTheBlocks777: ME_ARCADE777_DQ_DS.60
+  slurpodromeRace: BGM_RACE_DS.75
+  slurpodromeSelect: A_BGM_RACESELECT_DS.75
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_DQ_DS.60
 changelog:
+  - version: 5
+    added:
+      - Arcade Music
   - version: 4
     changed:
       - Replaced Venture Card 87
@@ -54,6 +60,9 @@ changelog:
   - version: 2
     changed:
       - Updated yaml for CSWT
+  - version: 1
+    added: 
+      - Initial Release
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 0  #   2 Venture on! Roll the die again and move forward.
@@ -193,4 +202,3 @@ notes: |
     - These five cards changed effects between versions, and were swapped with other cards to attempt to fairly compensate for them.
 tags:
   - DS
-...

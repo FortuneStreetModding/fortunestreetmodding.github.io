@@ -1,0 +1,72 @@
+---
+import BoardChangelog from '~/components/board/boardChangelog.astro';
+import BoardDownloadButton from '~/components/board/boardDownloadButton.astro';
+import BoardImage from '~/components/board/boardImage.astro';
+import BoardNameAndDescription from '~/components/board/boardNameAndDescription.astro';
+import BoardNotes from '~/components/board/boardNotes.astro';
+import BoardProperties from '~/components/board/boardProperties.astro';
+import BoardTags from '~/components/board/boardTags.astro';
+import BoardVentureCards from '~/components/board/boardVentureCards.astro';
+import Layout from '~/layouts/layout.astro';
+import "./boards.css"
+import boards from '~/lib/getboards';
+export function getStaticPaths() {
+  return boards.map(board => {
+    return {
+      params: {
+        slug: board.slug
+      }
+    }
+  })
+}
+const { slug } = Astro.params;
+const board = boards.find(board => board.slug === slug);
+---
+<Layout title={board? board.name.en : "Invalid Board"}>
+  <div class="container">
+    <div class="row">
+      {board ? (
+        <div class={`col mb-4 mapCard b-${board.slug}`}>
+          <div class="card h-100">
+            <div class="relative-container">
+              <BoardImage board={board} link={false} imageHeight="600px"/>
+            </div>
+            <div class="card-body">
+              <BoardNameAndDescription board={board}/>
+            </div>
+            <BoardNotes board={board}/>
+            <div class={`card-body mapInfo b-${board.slug}`}>
+              <div class="row mb-4">
+                <div class="col">
+                  <BoardProperties board={board}/>
+                </div>
+                <div class="col mapCard">
+                  <div class="card">
+                    <div class="fw-bold card-header">Venture Cards</div>
+                    <div class="card-body">
+                      <div class="grid" style="--grid-column-count: 8; --grid-layout-gap: 0px; --grid-item--min-width: 2.5rem; --grid-item--max-width: 2.5rem">
+                        <BoardVentureCards activeVentureCards={board.ventureCards}/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <BoardChangelog board={board} />
+            </div>
+            <div class="card-footer text-muted">
+              <a style="float:right" href={`https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/tree/main${board.path}`}>View in Repository</a>
+              <div>Download {board.currentVersion && <span class="badge bg-secondary">v{ board.currentVersion }</span>}</div>
+              <BoardDownloadButton board={board} />
+            </div>
+            <div class="card-footer text-muted">
+              <BoardTags board={board}/>
+              &nbsp;
+            </div>
+          </div>
+        </div>
+      ) : (
+        <p>Invalid board</p>
+      )}
+    </div>
+  </div>
+</Layout>

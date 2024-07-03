@@ -1,0 +1,65 @@
+name: Build and upload modpacks
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read    # This is required for actions/checkout
+
+jobs:
+  BuildModpacks:
+    if: github.repository == 'FortuneStreetModding/fortunestreetmodding.github.io'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone the repo
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.ASSUME_ROLE_ARN }}
+          role-session-name: ModpackBuildingRoleSession
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Build all modpacks
+        run: |
+            mkdir -p _modpacks/build
+            build_dir=$(pwd)/_modpacks/build
+            for d in _modpacks/packs/*/* ; do
+                modpack_id=$(jq -r "keys[0]" $d/manifest.json)
+                resource_name=$(jq -r ".$modpack_id.resources" $d/manifest.json)
+                resource_directory="_modpacks/resources/$resource_name"
+                echo "$resource_directory"
+                mkdir -p $d/$modpack_id
+                cp "src/data/backgrounds.yml" $d/$modpack_id/backgrounds.yml
+                cp -r $resource_directory/. $d/$modpack_id/
+                cp $d/manifest.json $build_dir/$modpack_id.json
+                cp $d/modlist.txt $d/mapList.yaml $d/manifest.json $d/$modpack_id/
+                if [[ -d $d/other_files ]] ; then
+                    cp -r $d/other_files/. $d/$modpack_id/
+                fi
+                cd $d/$modpack_id && zip -r $build_dir/$modpack_id.zip .
+                cd -
+            done
+      - name: Combine manifests
+        run: |
+            build_dir=$(pwd)/_modpacks/build
+            mkdir -p $build_dir
+            json_files=()
+            for d in $build_dir/*.json ; do
+                json_files+=($d)
+            done
+
+            jq -s . "${json_files[@]}" > $build_dir/packs.json
+
+      - name: Upload modpacks to S3
+        run: aws s3 cp ./_modpacks/build/ s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Modpacks/ --recursive --exclude "*" --include "*.zip" --include "packs.json"
+
+      - name: Temporarily also upload CSWT-main to old location
+        run: aws s3 cp ./_modpacks/build/cswt.zip s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Builds/cswtpycsmm-dev.zip
+
+      - name: Create CloudFront invalidation for modpack
+        run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Modpacks/* /cswt/Builds/*

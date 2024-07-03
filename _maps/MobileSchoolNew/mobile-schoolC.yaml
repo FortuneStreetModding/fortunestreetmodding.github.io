@@ -1,4 +1,3 @@
----
 name:
   en: School (Mobile)
 desc:
@@ -8,37 +7,46 @@ theme: Mario
 initialCash: 1800
 targetAmount: 20000
 baseSalary: 300
-salaryIncrement: 250
+salaryIncrement: 200
 maxDiceRoll: 8
 frbFile1: mobile-schoolC
 background: bg004
 mapIcon: school
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/School.music.zip
-    - https://drive.google.com/u/2/uc?id=1C8C4IfjL1svERxfpzGCIWsUEzTpcGsCI&export=download&confirm=1
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/MobileSchoolNew.music.zip
+    - https://drive.google.com/uc?export=download&id=16wfXvjh_gWffD-1U8gCefSahyJxs5mgr&confirm=1
   map: BGM_MAP_SCHOOL.60
-  stock: BGM_STOCK_SMART.60
-  ventureCards: BGM_CHANCECARD_SMART.70
-  auction: BGM_AUCTION_SMART.60
-  targetMet: BGM_GOALPROP_SMART.60
-  win: BGM_WINNER_SMART.60
+  stock: BGM_STOCK_MOBILE.80
+  ventureCards: BGM_CHANCECARD_MOBILE.60
+  auction: BGM_AUCTION_MOBILE.50
+  targetMet: BGM_GOALPROP_MOBILE.100
+  win: BGM_WINNER_MOBILE.120
   guestAppear:
   guestLeave:
-  badVentureCard:
-  takeAbreak: ME_HOLIDAY_SMART.60
-  promotionMii: ME_LEVELUP_SMART.60
-  promotionMario: ME_LEVELUP_SMART.60
-  promotionDragonQuest: ME_LEVELUP_SMART.60
-  forcedBuyout: ME_5_BUY_SMART.60
-  domination: ME_MONOPOLY_SMART.60
-  bankruptcy: ME_BANKRUPT_SMART.60
+  badVentureCard: ME_CURSE_MOBILE.50
+  takeAbreak: ME_HOLIDAY_MOBILE.110
+  promotionMii: ME_LEVELUP_MOBILE.70
+  promotionMario: ME_LEVELUP_MOBILE.70
+  promotionDragonQuest: ME_LEVELUP_MOBILE.70
+  forcedBuyout: ME_5_BUY_MOBILE.65
+  domination: ME_MONOPOLY_MOBILE.45
+  bankruptcy: ME_BANKRUPT_MOBILE.130
+  memoryBlock: A_BGM_ARCADE_MOBILE.120
+  dartOfGold: A_BGM_ARCADE_MOBILE.120
+  roundTheBlocks: A_BGM_ARCADE_MOBILE.120
+  roundTheBlocksWin: ME_ARCADEWIN_MOBILE.100
+  roundTheBlocks777: ME_ARCADE777_MOBILE.80
+  slurpodromeRace:
+  slurpodromeSelect: A_BGM_ARCADE_MOBILE.120
+  slurpodromeStart:
+  slurpodromeWin: ME_ARCADE777_MOBILE.80
 tourMode:
   bankruptcyLimit: 1
-  opponent1: Wario
-  opponent2: DonkeyKong
-  opponent3: DiddyKong
-  clearRank: 3
+  opponent1: Peach
+  opponent2: Patty
+  opponent3: Alena
+  clearRank: 2
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -169,15 +177,23 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    added:
+      - Bad Venture Card Music
+      - Arcade Music
+    changed:
+      - Changed so that District A can't be avoided when going through the bank.
+      - Changed the salary increment from 250 to 200
+      - Change all music to Itadaki Street Mobile music except Map music
   - version: 1
+    added:
+      - Initial Release
 authors:
+  - name: Enne-san
   - name: Azurillkirby
-  - name: Neazi
 notes: |
   - This map was originally from Itadaki Street Mobile.
   - Very little is known about this map, or Itadaki Street Mobile in general. This map was produced using only a photo of the mini-map and a small slice at the top of the board, with information gleaned solely from two screenshots and a blog post by Hammer describing his impressions of playing the school board.
   - It is closer to the official board than the academy board created by Azrillkirby. The main difference is that you can now circle around the bank indefinitely.
-
 tags:
   - Mobile
-...

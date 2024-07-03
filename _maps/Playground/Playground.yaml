@@ -1,4 +1,3 @@
----
 name:
   en: Playground
 desc:
@@ -22,6 +21,9 @@ authors:
   - name: Giftshaven
     url: https://github.com/Giftshaven
 changelog:
+  - version: 3
+    changed:
+      - 2 vacant plots changed to properties with an initial value of 190
   - version: 2
     changed:
       - Removed venture card 115, replaced with 46
@@ -157,4 +159,3 @@ ventureCards:
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

@@ -1,18 +1,18 @@
----
 name:
   en: Yoshi
 desc:
   en: It's him!
 ruleSet: Standard
 theme: Mario
-initialCash: 2500
+initialCash: 3000
 targetAmount: 25000
-baseSalary: 300
+baseSalary: 500
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: yoshi
 mapIcon: bg001
 background: bg001_clean
+bgmId: "BGM_MAP_YOSHI"
 tourMode:
   bankruptcyLimit: 1
   opponent1: Mario
@@ -149,9 +149,21 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    changed:
+      - Music Fixed
+      - Various changes to board layout and shop prices, including removing backstreets from egg
+  - version: 2
+    changed:
+      - Board layout overhaul by Crimson Hat and Sophilautia with Ozzy's blessing
+      - Initial cash changed from 2500 to 3000
+      - Base salary changed from 300 to 500
   - version: 1
     added: 
       - Initial Release
 authors:
   - name: Ozzy Mandice
-...
+  - name: Crimson Hat
+    url: https://github.com/CrimsonHat1997
+  - name: Sophilautia
+    url: https://twitter.com/Sophilautia

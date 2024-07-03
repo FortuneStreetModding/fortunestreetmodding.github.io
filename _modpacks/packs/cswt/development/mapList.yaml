@@ -1,0 +1,125 @@
+backgrounds: backgrounds.yml
+0:
+  0:
+    Ennesan36.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan36.zip
+    Ennesan31C.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan31C.zip
+    Ennesan32A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan32A.zip
+    Ennesan32B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan32B.zip
+    Ennesan33.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan33.zip
+    Ennesan34.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan34.zip
+  1:
+    MoguMap.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MoguMap.zip
+    CastawayBayCSide.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
+    luigismansion.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/luigismansion.zip
+    mkwii_funkystadium.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/mkwii_funkystadium.zip
+    CastawayBayCSide.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
+    KBHH.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/KBHH.zip
+  2:
+    slimeguyspaydayexpress.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
+    Ennesan29.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan29.zip
+    TheClockTower.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TheClockTower.zip
+    theloopsduplidoe.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/theloopsduplidoe.zip
+    landorstonksduplidoe.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/landorstonksduplidoe.zip
+    mirroredambitionduplidoe.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/mirroredambitionduplidoe.zip
+    battleborbsduplidoe.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/battleborbsduplidoe.zip
+    tightropeduplidoe.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/tightropeduplidoe.zip
+    MonopolyUK.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MonopolyUK.zip
+    MonopolyUS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MonopolyUS.zip
+    mpss_ppbc.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/mpss_ppbc.zip
+    arrowhead.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/arrowhead.zip
+    SuitsMap.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/SuitsMap.zip
+    is3_sushitrain.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/is3_sushitrain.zip
+      practiceBoard: true
+1:
+  0:
+    Ennesan30A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
+    Ennesan30B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30B.zip
+    Ennesan20.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan20.zip
+    lighthouseisland.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/lighthouseisland.zip
+    Ennesan15.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan15.zip
+    Ennesan17.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan17.zip
+  1:
+    FortuneGateFG1.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
+    TheClock.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TheClock.zip
+    TurtleFortress.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TurtleFortress.zip
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+  2:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+      practiceBoard: true

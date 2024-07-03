@@ -1,4 +1,3 @@
----
 name:
   en: New Los Angeles
 desc:
@@ -11,28 +10,34 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: nla
-background: bg009alt
+background: NLA
 mapIcon: nla
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/NLA.music.zip
-    - https://drive.google.com/u/2/uc?export=download&confirm=_qXD&id=1OXHTRdU_zaFyJQ2MTWM895k0pzJZdUWx
-  map: nla.50
+  map: NLAMedley.43
   stock: bladehome.50
   ventureCards: briefing.50
   auction: wirfliegen.60
   targetMet: thekeywevelost.50
-  win: yourvoice.50
-  guestAppear:
-  guestLeave:
-  badVentureCard:
-  takeAbreak: X-Encoutner.50
-  promotionMii: X-Levelup.80
-  promotionMario: X-Levelup.80
-  promotionDragonQuest: X-Levelup.80
-  forcedBuyout:
-  domination:
-  bankruptcy:
+  win: bymyside.60
+  guestAppear: A_X-event.80
+  guestLeave: A_X-fanfare.80
+  badVentureCard: X-Encounter.50
+  takeAbreak: X-Encounter.50
+  promotionMii: A_X-Levelup.80
+  promotionMario: A_X-Levelup.80
+  promotionDragonQuest: A_X-Levelup.80
+  forcedBuyout: X-buyout.50
+  domination: A_X-Levelup.80
+  bankruptcy: X-bankruptcy.80
+  roundTheBlocksWin: A_X-Levelup.80
+  roundTheBlocks777: A_X-fanfare.80
+  roundTheBlocks: A_comical
+  memoryBlock: A_comical
+  dartOfGold: A_comical
+  slurpodromeSelect: A_comical
+  slurpodromeStart: A_X-event.80
+  slurpodromeRace: A_uncontrollable
+  slurpodromeWin: A_X-fanfare.80
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -40,7 +45,69 @@ tourMode:
   opponent2: Waluigi
   opponent3: Luigi
   clearRank: 2
+districtNames:
+  en:
+  - S. Admin.
+  - N. Resid.
+  - S. Resid.
+  - Highway A
+  - Highway B
+  - Test Hangar
+  - Highway C
+  - N. Indust.
+  - Commerc. A
+  - Commerc. B 
+  - N. Admin
+  - Manon Ship
+shopNames:
+  en:
+    10: Government Building
+    11: Ishmael Hills
+    15: Army Pizza
+    16: BLADE Hangar
+    17: Highway
+    18: Outfitters Test Hangar
+    19: Mim Maintenance Center
+    20: Cathedral
+    22: BLADE Barracks
+    24: Isyqua
+    26: Diet Building
+    27: Cargo Transport
+    30: Water Purification Plant
+    31: BLADE Tower
+    32: Sports Complex
+    35: Skell Maintenance
+    37: Waste Management Facility
+    38: Professor B's Laboratory
+    39: Deliverance Park
+    40: Barista Court
+    41: Warehouse
+    42: Sarah's Market
+    47: Repenta Diner
+    50: Rosemoss Restaurant
+    51: Integrated Production Plant
+    54: Nopon Bazaar
 changelog:
+  - version: 7
+    changed:
+      - Shop prices reduced in S. Admin, S Resid, N Resid and Manon Ship
+  - version: 6
+    changed:
+      - Changed map music to a 25 minute medley
+      - Fixed arcade music
+  - version: 5
+    added:
+      - District Names
+      - Shop Names
+      - Custom 2D Background
+      - New music
+    changed:
+      - Shop prices
+      - New Industrial District in North-West corner
+      - New icon
+  - version: 4
+    changed:
+      - Changed background to grid_blue2
   - version: 3
     added:
       - Promotion and takeAbreak MEs
@@ -182,4 +249,3 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

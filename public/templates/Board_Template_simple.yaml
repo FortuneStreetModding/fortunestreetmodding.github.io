@@ -1,0 +1,33 @@
+name:
+  en: BOARD NAME
+desc:
+  en: YOUR BOARD DESCRIPTION HERE. (_______________________________________________________________________THIS IS THE LENGTH LIMIT_____________________________________________________)
+ruleSet: Standard # OR Easy
+theme: Mario # OR DragonQuest
+initialCash: 1000
+targetAmount: 10000
+baseSalary: 100
+salaryIncrement: 50
+maxDiceRoll: 6 # should be between 4 and 9. A 9 is only working fine in boards without doors. With 7 or 8 make sure that players cannot go through multiple doors in a single dice roll.
+frbFiles:
+  - FRB_FILENAME_FOR_STATE_1
+  - FRB_FILENAME_FOR_STATE_2 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_3 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_4 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_5 # CAN REMOVE UNUSED STATES
+  - FRB_FILENAME_FOR_STATE_6 # CAN REMOVE UNUSED STATES
+background: bg001       # take a look at https://fortunestreetmodding.github.io/backgrounds for available backgrounds
+bgmId: BGM_MAP_ALEFGARD # bgmId can be used if not using custom music
+tourMode:
+  bankruptcyLimit: 1
+  opponent1: Yoshi
+  opponent2: Birdo
+  opponent3: Toad
+  clearRank: 2
+changelog:
+  - version: 1
+    added:
+      - Initial Release
+authors:
+  - name: YOUR NAME
+    url: YOUR URL IF DESIRED

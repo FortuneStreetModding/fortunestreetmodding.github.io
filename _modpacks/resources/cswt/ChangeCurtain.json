@@ -1,0 +1,34 @@
+[
+{
+	"from": "common/common_curtain.cmpres",
+	"to": "files/common/common_curtain.cmpres"
+},
+{
+	"from": "common_langDE/common_curtain_DE.cmpres",
+	"to": "files/common/langDE/common_curtain_DE.cmpres"
+},
+{
+	"from": "common_langEN/common_curtain_EN.cmpres",
+	"to": "files/common/langEN/common_curtain_EN.cmpres"
+},
+{
+	"from": "common_langES/common_curtain_ES.cmpres",
+	"to": "files/common/langES/common_curtain_ES.cmpres"
+},
+{
+	"from": "common_langFR/common_curtain_FR.cmpres",
+	"to": "files/common/langFR/common_curtain_FR.cmpres"
+},
+{
+	"from": "common_langIT/common_curtain_IT.cmpres",
+	"to": "files/common/langIT/common_curtain_IT.cmpres"
+},
+{
+	"from": "common_langUK/common_curtain_UK.cmpres",
+	"to": "files/common/langUK/common_curtain_UK.cmpres"
+},
+{
+	"from": "game/game_result.brres",
+	"to": "files/game/game_result.brres"
+}
+]

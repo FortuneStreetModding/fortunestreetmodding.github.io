@@ -1,4 +1,3 @@
----
 name:
   en: Academy City
 desc:
@@ -7,11 +6,11 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 2911
 targetAmount: 24666
-baseSalary: 300
+baseSalary: 500
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: academycity
-background: bg009alt
+background: academycity
 mapIcon: academy
 districtNames:
   en:
@@ -27,26 +26,77 @@ districtNames:
   - District 6
   - District 23
   - District 10
+shopNames:
+  en:
+    1: Windowless Building
+    2: Kamijou's Dorm
+    3: A Certain Highschool
+    4: A Certain Middle-High School
+    5: Refrigerated Warehouse
+    6: Bee Hoon Street
+    7: Amusement Park
+    8: Secret Residences
+    9: 3rd Resource Recycling
+    10: Virus Isolation Center
+    11: Misawa Cram School
+    12: Kirigaoka Girls' Academy
+    13: Anti-Skill Chemical Analysis
+    14: Mass Driver
+    16: Taiyaki Stall
+    17: Hula Hoop
+    18: Dianoid
+    31: Anti-Skill Station
+    52: Judgement Branch Office
+    53: Sakugawa Middle School
+    60: Switchyard
+    63: Beauty Salon School
+    64: Conference Center
+    66: Shinshikimi Middle School
+    67: DNA Map Analysis Laboratory
+    69: L.S.S. Headquarters
+    70: School Garden
+    71: Underground Shopping Center
+    73: Botanical Ethanol Fuel Plant
+    74: Secret Garden Mimosa
+    75: Celestaquarium 
+    76: Heaven Canceller's Hospital
+    77: Topaz Gym
+    78: Takasaki University
+    79: East Connection Terminal
+    80: Elementary Particle Lab
+    81: Spa Resort Serene Springs
+    82: Experimental Airport
+    83: District 23 Terminal Station
+    84: International Airport
+    85: Nagatenjouki Academy
+    86: Adult Correctional Facility
+    87: Special Ability Institute
+    88: Reformatory
+    89: Vanishing Tunnel
+    90: Atmospheric Research Lab
+    91: Exterior
+    92: Learning Core
+    93: Asunaro Park
+    94: Observatory
+    95: Geothermal Power Station
+    96: Academy City Courthouse
+    97: Board of Directors Office
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/AcademyCity.music.zip
-    - https://drive.google.com/u/2/uc?id=1bHTkHE1ufrsF8vDXjWAHU18DBoOcG5Js&export=download&confirm=1
-  map: yochou.50
-  stock: quietploy.50
-  ventureCards: judgementnokatsudou.50
-  auction: madness.50
-  targetMet: BreakThrough.50
-  win: railgunt.50
-  guestAppear:
-  guestLeave:
-  badVentureCard:
-  takeAbreak:
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
-  forcedBuyout:
-  domination:
-  bankruptcy:
+  map: AcademyCityMedley.43
+  stock: quietploy
+  ventureCards: judgementnokatsudou
+  auction: madness
+  targetMet: BreakThrough
+  win: railgunt
+  memoryBlock: FunnyDays.40
+  dartOfGold: FunnyDays.40
+  roundTheBlocks: FunnyDays.40
+  roundTheBlocksWin: 
+  roundTheBlocks777: 
+  slurpodromeSelect: FunnyDays.40
+  slurpodromeRace: CrossSpeedShort
+  slurpodromeStart: 
+  slurpodromeWin: 
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -55,12 +105,34 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 9
+    added:
+      - Arcade music
+  - version: 8
+    changed:
+      - Changed map music to 25 minute medley
+      - Intro cam fixed
+  - version: 7
+    added:
+      - Added custom 2D background
+  - version: 6
+    changed:
+      - Changed background to grid_blue2
+  - version: 5
+    changed:
+      - Removed venture card 101
+  - version: 4
+    changed:
+      - Added shop names
+  - version: 3
+    changed:
+      - Base salary from 300 to 500
   - version: 2
     added:
       - More spaces spaces on outer wall
     changed:
       - Replaced bottom take-a-break square with boon square
-      - Changed initial cash from from 2261 to 2911.
+      - Changed initial cash from from 2261 to 2911
   - version: 1
     added: 
       - Initial Release
@@ -168,7 +240,7 @@ ventureCards:
   - 0  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
   - 0  #  99 Freebie! What's inside...?
   - 1  # 100 Freebie! Take a Suit Yourself card!
-  - 1  # 101 Special bonus! Your shops all grow by 21%!
+  - 0  # 101 Special bonus! Your shops all grow by 21%!
   - 0  # 102 Moneymaking venture! Roll the die and get 33 times the number shown in gold coins from all other players!
   - 0  # 103 Misadventure! The values of all your shops drop by 25%!
   - 0  # 104 Misadventure! You give everyone 80G each!
@@ -195,5 +267,4 @@ ventureCards:
   - 1  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
-  - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...
+  - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!

@@ -1,4 +1,3 @@
----
 name:
   en: Zapata's Geoglyph (GK)
 desc:
@@ -16,7 +15,7 @@ mapIcon: geoglyph
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Geoglyph.music.zip
-    - https://drive.google.com/u/0/uc?id=1DRsx-8R5i__UCsJEJHeJWYftarQXsTwZ&export=download
+    - https://drive.google.com/uc?export=download&id=1hQJvsfVEV1_g3J346uapkOi__rTQqP49&confirm=1
   map: BGM_MAP_GEOGLYPH.80
   stock: BGM_STOCK_GK.70
   ventureCards: BGM_CHANCE_GK.80
@@ -33,6 +32,15 @@ music:
   forcedBuyout: ME_5_BUY_GK.70
   domination:
   bankruptcy: ME_BANKRUPT_GK.70
+  memoryBlock: A_BGM_ARCADE_GK.100
+  dartOfGold: A_BGM_ARCADE_GK.100
+  roundTheBlocks: A_BGM_ARCADE_GK.100
+  roundTheBlocksWin: ME_ARCADEWIN_GK.100
+  roundTheBlocks777: ME_ARCADE777_GK.50
+  slurpodromeRace: 
+  slurpodromeSelect: A_BGM_ARCADE_GK.100
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_GK.50
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1500
@@ -127,7 +135,7 @@ ventureCards:
   - 1  # Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  # Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 0  # Moneymaking venture! Take 100G from all other players!
-  - 1  # Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  # Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 1  # Misadventure! All other players swap places!
   - 1  # Freebie! All players take a Suit Yourself card!
   - 1  # Price hike venture! All shop prices go up by 30% until your next turn.
@@ -155,14 +163,14 @@ ventureCards:
   - 0  # Special bonus! You receive 100 times the number of shops you own in gold coins!
   - 0  # Moneymaking venture! Roll the die and get the number shown x your level x 20G from the bank!
   - 0  # Moneymaking venture! Take your level times 40G from all other players!
-  - 1  # Misadventure! All other players can only move forward 7 on their next turn.
-  - 0  # Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
+  - 0  # Misadventure! All other players can only move forward 7 on their next turn.
+  - 1  # Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
   - 1  # Adventurous turning point! Everyone gets to choose which way to move on their next go.
   - 0  # Lucky venture! You get a really big commission until your next turn!
   - 0  # Misadventure! You give 20% of your ready cash to the player in last place!
   - 0  # Misadventure! You drop your wallet and lose 20% of your ready cash!
   - 0  # Capital venture! You can invest up to 400G of the bank's money in your shops.
-  - 0  # Moneymaking venture! The winning player must pay you 20% of their ready cash!
+  - 1  # Moneymaking venture! The winning player must pay you 20% of their ready cash!
   - 0  # Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 0  # Suit venture! Buy a Suit Yourself card for 50G.
   - 0  # Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
@@ -170,6 +178,23 @@ ventureCards:
   - 0  # Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 7
+    added:
+      - Arcade Music
+  - version: 6
+    changed:
+      - Corrected the initial price of the property to the correct value
+  - version: 5
+    changed:
+      - Reverted to DragonQuest theme
+  - version: 4
+    changed:
+      - Replaced ventures 87 and 115 with other ventures to avoid rare softlock
+  - version: 3
+    changed:
+      - Fixed positioning of board
+      - Fixed rare softlock with doors
+      - Theme changed to Mario to fix softlock
   - version: 2
     changed:
       - Icon & updated yaml for CSWT
@@ -183,4 +208,3 @@ authors:
       url: https://twitter.com/mask1n
 tags:
   - GK
-...

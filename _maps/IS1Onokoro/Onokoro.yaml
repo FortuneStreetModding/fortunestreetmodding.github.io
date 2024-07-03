@@ -1,8 +1,7 @@
----
 name:
   en: Onokoro Island (IS1)
 desc:
-  en: Ported from Itadaki Street 1. Originally designed for 3 players & poorly optimised for Fortune Street Wii. Play at own risk!
+  en: Ported from Itadaki Street 1. Originally designed for 3 players & poorly optimised for 4, recommend playing with the 3 player or 2 player gecko code!
 music:
   download: 
     - https://nikkums.io/cswt/BGM/OnokoroIsland.music.zip
@@ -177,4 +176,3 @@ authors:
       url: https://twitter.com/sophilautia
 tags:
   - IS1
-...

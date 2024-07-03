@@ -1,4 +1,3 @@
----
 name:
   en: Wario's Battle Canyon
 desc:
@@ -25,7 +24,7 @@ music:
   stock: MP1_OptionHouse.50
   ventureCards: MP1_MiniGame.60
   auction: MP1_ChanceTime.55
-  targetMet: Hurry Up.60
+  targetMet: HurryUp.60
   win: MP1_Ending.60
   guestAppear: MP1_OJAMA_COME.60
   guestLeave: MP1_OJAMA_BYE.60
@@ -176,4 +175,3 @@ changelog:
 authors:
   - name: Sophilautia
     url: https://twitter.com/Sophilautia
-...

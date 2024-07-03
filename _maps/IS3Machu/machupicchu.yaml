@@ -1,8 +1,7 @@
----
 name:
   en: Machu Picchu (IS3)
 desc:
-  en: Ported from Itadaki Street 3. Gameplay differs slightly from original. Use the switch to sequentially unlock the four corners of the board.
+  en: Ported from Itadaki Street 3. Gameplay differs slightly from original. Use the switch to sequentially unlock the four corners of the board. Please don't use B-Button selecting while playing! Recommended for human players.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -10,32 +9,46 @@ targetAmount: 25000
 baseSalary: 250
 salaryIncrement: 200
 maxDiceRoll: 7
-frbFile1: MachuPicchu0
-frbFile2: MachuPicchu1
-frbFile3: MachuPicchu2
-frbFile4: MachuPicchu3
-background: bg106
+frbFiles:
+- MachuPicchu0
+- MachuPicchu1
+- MachuPicchu2
+- MachuPicchu3
+- MachuPicchu3
+- MachuPicchu3
+- MachuPicchu4
+- MachuPicchu3
+background: bg106fixed
 mapIcon: machu
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/MachuPicchu.music.zip
-    - https://drive.google.com/u/2/uc?id=1vJi34sdJZOg8ySTBi3T0gLUwkbvjY9VS&export=download
+  download:
+    - https://nikkums.io/cswt/BGM/IS3Machu.music.zip
+    - https://drive.google.com/uc?export=download&id=1M2luz0-Wze_ZzVmdi4LVJ-byYnQocsQ4&confirm=1
   map: BGM_MAP_MACHU.65
   stock: BGM_STOCK_IS3.65
   ventureCards: BGM_VENTURE_IS3.65
   auction: BGM_AUCTION_IS3.75
   targetMet:
   win: BGM_WINNER_IS3.75
-  guestAppear:
-  guestLeave:
-  badVentureCard:
-  takeAbreak:
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
-  forcedBuyout:
-  domination:
-  bankruptcy:
+  guestAppear: ME_OJAMA_COME_IS3.75
+  guestLeave: ME_OJAMA_COME_IS3.75
+  badVentureCard: ME_CURSE_IS3.100
+  takeAbreak: ME_HOLIDAY_IS3.90
+  promotionMii: ME_LEVELUP_IS3.90
+  promotionMario: ME_LEVELUP_IS3.90
+  promotionDragonQuest: ME_LEVELUP_IS3.90
+  forcedBuyout: ME_5BUY_IS3.75
+  domination: ME_MONOPOLY_IS3.150
+  bankruptcy: ME_BANKRUPT_IS3.100
+  memoryBlock: A_BGM_ARCADE_IS3.65
+  dartOfGold: A_BGM_ARCADE_IS3.65
+  roundTheBlocks: A_BGM_ARCADE_IS3.65
+  roundTheBlocksWin: ME_ARCADEWIN_IS3.75
+  roundTheBlocks777: ME_ARCADE777_IS3.90
+  slurpodromeRace:
+  slurpodromeSelect: A_BGM_ARCADE_IS3.65
+  slurpodromeStart:
+  slurpodromeWin: ME_ARCADE777_IS3.90
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -44,8 +57,30 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 5
+    added:
+      - Promotion Music
+      - Bad Venture Curd Music
+      - Take a Break Music
+      - Promotion Music
+      - ForvedBuyout Music
+      - Domination Music
+      - Bankrupty Music
+      - Arcade Music
+  - version: 4
+    added:
+      - State 5 to 8 (Exactly the same as state 4)
+    changed:
+      - Changed so that pressing the switch after state 4 does not return to the first state.
+  - version: 3
+    changed:
+      - Added failsafe pathing in case of rare softlock
+      - Updated description
+  - version: 2
+    changed:
+      - Changed background to bg106fixed
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia
@@ -179,4 +214,3 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

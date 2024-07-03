@@ -1,4 +1,3 @@
----
 name:
   en: Dream World (IS2)
 desc:
@@ -16,13 +15,13 @@ mapIcon: DreamWorld
 music:
   download: 
     - https://nikkums.io/cswt/BGM/DreamWorld.music.zip
-    - https://drive.google.com/u/0/uc?id=1oM-3XrzuN18nQFOVf7SQQWdJvoaHiQ0E&export=download
+    - https://drive.google.com/uc?export=download&id=16wbRnfAVz3R8LeWq-6wWHpWvxUFyyD4h&confirm=1
   map: BGM_MAP_DREAMWORLD_IS2R.60
-  stock: BGM_STOCK_IS2.60
-  ventureCards: BGM_CHANCECARD_IS2.58
-  auction: BGM_AUCTION_IS2.70
+  stock: BGM_STOCK_IS2R.60
+  ventureCards: BGM_CHANCECARD_IS2R.60
+  auction: BGM_AUCTION_IS2R.60
   targetMet:
-  win: BGM_WINNER_IS2.60
+  win: BGM_WINNER_IS2R.60
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_IS2.58
@@ -33,6 +32,15 @@ music:
   forcedBuyout: ME_5BUY_IS2.58
   domination:
   bankruptcy: ME_BANKRUPTCY_IS2.60
+  memoryBlock: A_BGM_ARCADE_IS2.75
+  dartOfGold: A_BGM_ARCADE_IS2.75
+  roundTheBlocks: A_BGM_ARCADE_IS2.75
+  roundTheBlocksWin: ME_ARCADEWIN_IS2.75
+  roundTheBlocks777: ME_ARCADE777_IS2.75
+  slurpodromeRace: 
+  slurpodromeSelect: A_BGM_ARCADE_IS2.75
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_IS2.75
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2500
@@ -41,6 +49,14 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 5
+    added:
+      - Arcade Music
+    changed:
+      - Fixed unassigned shops in ShopModel.
+  - version: 4
+    changed:
+      - Corrected the initial price for shops in square numbers 1, 18, and 33 to the correct value.
   - version: 3
     changed: Replaced map music with IS2 Remastered music & updated icon
     added: 
@@ -186,4 +202,3 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 tags:
   - IS2
-...

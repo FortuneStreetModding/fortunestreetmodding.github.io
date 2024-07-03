@@ -1,14 +1,13 @@
----
 name:
   en: The Kanto Region
 desc:
   en: The Kanto Region, where the Pokémon series all began.
 ruleSet: Standard
 theme: Mario
-initialCash: 2000
+initialCash: 2500
 targetAmount: 25000
-baseSalary: 300
-salaryIncrement: 200
+baseSalary: 400
+salaryIncrement: 300
 maxDiceRoll: 7
 frbFile1: Kanto
 background: bg107
@@ -16,8 +15,23 @@ mapIcon: Kanto
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Kanto.music.zip
-    - https://drive.google.com/u/0/uc?id=1u-mG-JIxlYrgI7LmVMnm0IjEcMhJutqd&export=download
+    - https://drive.google.com/u/2/uc?id=1sXVAUINjvFl3T4ZxgBuWmTOtYrzTlhK2&export=download
   map: BGM_MAP_KANTO.55
+  stock: PXYPokecenter
+  ventureCards: PXYMysteryGift
+  auction: PKFloats
+  targetMet: TheBattleAtTheSummit
+  win: PXYHallOfFame
+  guestAppear: PXYBasicClothes
+  guestLeave: PXYElegantClothes
+  badVentureCard: PXYPokeFlute
+  takeAbreak: PXYPokeFlute
+  promotionMii: PXYTM
+  promotionMario: PXYTM
+  promotionDragonQuest: PXYTM
+  forcedBuyout: PXYGymBadge
+  domination: PXYKeyItem
+  bankruptcy: 
 tourMode:
   bankruptcyLimit: 1
   opponent1: Dragonlord
@@ -156,6 +170,17 @@ ventureCards:
 authors:
   - name: Azurillkirby
 changelog:
+  - version: 4
+    changed:
+      - Fixed an issue where some stores in District K would not be displayed when viewing boards in Board Views.
+  - version: 3
+    changed:
+      - Salary increment changed from 250 to 300
+  - version: 2
+    changed:
+      - Initial cash changed from 2000 to 2500
+      - Base salary changed from 300 to 400
+      - Salary increment changed from 200 to 250
   - version: 1
     added: 
       - Initial Release
@@ -166,4 +191,3 @@ notes: |
   - Because of this, the default (most efficient) promotion loop without getting any rotating suits would be Spade <-> Heart <-> Club <-> Diamond (Pewter <-> Vermillion <-> Celadon <-> Cinnabar). Of course, getting the rotating suits can change this loop. For example, if you get to the rotating suits first, you can get your first promotion by going from Indigo -> Pewter -> Bill's House -> Indigo, Cinnabar -> Route 13 -> Vermillion -> Pewter, or Pewter -> Bill's House -> Celadon ->  Cinnabar, to name a few options.
   - The shop values and prices were based on Haunted Manor from Itadaki Street Gorgeous King, with a few changes.
   - The venture card set was taken from Alefgard (Wii).
-...

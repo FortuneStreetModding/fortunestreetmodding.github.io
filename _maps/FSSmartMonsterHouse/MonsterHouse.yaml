@@ -1,4 +1,3 @@
----
 name:
   en: Monster House (Smart)
   jp: モンスターハウス
@@ -13,7 +12,7 @@ baseSalary: 300
 salaryIncrement: 300
 maxDiceRoll: 8
 frbFile1: monster
-background: bg102
+background: bg102alt
 mapIcon: monster
 tourMode:
   bankruptcyLimit: 1
@@ -22,10 +21,10 @@ tourMode:
   opponent2: Dragonlord
   opponent3: Bowser
   clearRank: 1
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/MonsterHouse.music.zip
-    - https://drive.google.com/u/2/uc?id=1i2WUw344_JMOEXxBsAliK8lpVTq8UulF&export=download
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/FSSmartMonsterHouse.music.zip
+    - https://drive.google.com/uc?export=download&id=1BN5KMPeeZR6GT5Jh-in_-yqnmo0ojz4p&confirm=1
   map: BGM_MAP_MONSTER.60
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70
@@ -34,7 +33,7 @@ music:
   win: BGM_WINNER_SMART.60
   guestAppear:
   guestLeave:
-  badVentureCard:
+  badVentureCard: ME_CURSE_SMART.70
   takeAbreak: ME_HOLIDAY_SMART.60
   promotionMii: ME_LEVELUP_SMART.60
   promotionMario: ME_LEVELUP_SMART.60
@@ -42,6 +41,38 @@ music:
   forcedBuyout: ME_5_BUY_SMART.60
   domination: ME_MONOPOLY_SMART.60
   bankruptcy: ME_BANKRUPT_SMART.60
+  memoryBlock: A_ARCADE_SMART.100
+  dartOfGold: A_ARCADE_SMART.100
+  roundTheBlocks: A_ARCADE_SMART.100
+  roundTheBlocksWin: ME_ARCADEWIN_SMART.60
+  roundTheBlocks777: ME_ARCADE777_SMART.60
+  slurpodromeRace:
+  slurpodromeSelect: A_ARCADE_SMART.100
+  slurpodromeStart:
+  slurpodromeWin: ME_ARCADE777_SMART.60
+changelog:
+  - version: 4
+    added:
+      - Bad Venture Music
+      - Arcade Music
+  - version: 3
+    changed:
+      - Changed background to bg102alt
+  - version: 2
+    added:
+      - Icon & FS Smart BGM
+    changed:
+      - Updated yaml for CSWT
+  - version: 1
+    added:
+      - Initial Release. Venture card set derived from Robbin' Hood Ruins.
+authors:
+  - name: ZaSpai
+    url: https://github.com/ZaSpai
+notes: |
+  - Includes an alternative map BGM: Mad Monster Mansion from Banjo Kazooie (Smash ver)
+tags:
+  - Smart
 ventureCards:
   - 0  # Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  # Venture on! Roll the die again and move forward.
@@ -171,20 +202,3 @@ ventureCards:
   - 0  # Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-changelog:
-  - version: 2
-    added:
-      - Icon & FS Smart BGM
-    changed:
-      - Updated yaml for CSWT
-  - version: 1
-    added:
-      - Initial Release. Venture card set derived from Robbin' Hood Ruins.
-authors:
-  - name: ZaSpai
-    url: https://github.com/ZaSpai
-notes: |
-  - Includes an alternative map BGM: Mad Monster Mansion from Banjo Kazooie (Smash ver)
-tags:
-  - Smart
-...

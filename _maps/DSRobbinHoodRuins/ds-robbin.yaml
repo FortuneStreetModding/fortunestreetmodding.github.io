@@ -1,4 +1,3 @@
----
 name:
   en: Robbin' Hood Ruins (DS)
 desc:
@@ -12,17 +11,18 @@ salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: ds-robbin0
 frbFile2: ds-robbin1
-background: bg106
+background: bg106fixed
+mapIcon: bg106fixed
 tourMode:
   bankruptcyLimit: 1
-  opponent1: Yangus
-  opponent2: Angelo
-  opponent3: Jessica
-  clearRank: 2
+  opponent1: Angelo
+  opponent2: Yoshi
+  opponent3: Bianca
+  clearRank: 1
 music:
   download: 
-    - https://nikkums.io/cswt/BGM/DSRobbin.music.zip
-    - https://drive.google.com/u/2/uc?id=1xiPa2C_EIjQ89ZjUMT_XA0Y3nD8ZGq44&export=download
+    - https://nikkums.io/cswt/BGM/DSRobbinHoodRuins.music.zip
+    - https://drive.google.com/uc?export=download&id=1tS8vqUSSPUh-qR7Bv-6TwHUfC-bTseQl&confirm=1
   map: BGM_MAP_KANDATA_ISDS.60
   stock: BGM_STOCK_ISDS.60
   ventureCards: BGM_CHANCE_ISDS.65
@@ -39,6 +39,15 @@ music:
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
   bankruptcy: ME_BANKRUPT_ISDS.60
+  memoryBlock: A_BGM_MEMORY_DS.75
+  dartOfGold: A_BGM_DART_DS.60
+  roundTheBlocks: A_BGM_ROUND_DQ_DS.50
+  roundTheBlocksWin: ME_ARCADEWIN_DQ_DS.60
+  roundTheBlocks777: ME_ARCADE777_DQ_DS.60
+  slurpodromeRace: BGM_RACE_DS.75
+  slurpodromeSelect: A_BGM_RACESELECT_DS.75
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_DQ_DS.60
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -169,6 +178,14 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 6
+    added:
+      - Arcade Music
+    changed:
+      - Change background to bg106fixed
+  - version: 5
+    changed:
+      - Fixed board crash or softlock when pressing switches in games built with CSMM 5.0.0 or later
   - version: 4
     added:
       - DS BGM
@@ -191,4 +208,3 @@ notes: |
     - These four cards changed effects between versions, and were swapped with other cards to attempt to fairly compensate for them.
 tags:
   - DS
-...

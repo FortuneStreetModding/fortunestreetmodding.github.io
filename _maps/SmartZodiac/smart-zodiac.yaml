@@ -1,4 +1,3 @@
----
 name:
   en: Zodiac (Smart)
 desc:
@@ -11,13 +10,12 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 8
 frbFile1: smart-zodiac
-frbFile2: smart-zodiac
 background: bg009alt
 mapIcon: zodiac
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/Zodiac.music.zip
-    - https://drive.google.com/u/2/uc?id=12iu-GCW1oMjAJ0deemtZIWOyB8mCPJtX&export=download
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/SmartZodiac.music.zip
+    - https://drive.google.com/uc?export=download&id=10R_7lsliQA4sgUMUiccdbVz_UsvOyrAM&confirm=1
   map: BGM_MAP_ZODIAC.90
   stock: BGM_STOCK_SMART.60
   ventureCards: BGM_CHANCECARD_SMART.70
@@ -26,7 +24,7 @@ music:
   win: BGM_WINNER_SMART.60
   guestAppear:
   guestLeave:
-  badVentureCard:
+  badVentureCard: ME_CURSE_SMART.70
   takeAbreak: ME_HOLIDAY_SMART.60
   promotionMii: ME_LEVELUP_SMART.60
   promotionMario: ME_LEVELUP_SMART.60
@@ -34,6 +32,15 @@ music:
   forcedBuyout: ME_5_BUY_SMART.60
   domination: ME_MONOPOLY_SMART.60
   bankruptcy: ME_BANKRUPT_SMART.60
+  memoryBlock: A_ARCADE_SMART.100
+  dartOfGold: A_ARCADE_SMART.100
+  roundTheBlocks: A_ARCADE_SMART.100
+  roundTheBlocksWin: ME_ARCADEWIN_SMART.60
+  roundTheBlocks777: ME_ARCADE777_SMART.60
+  slurpodromeRace:
+  slurpodromeSelect: A_ARCADE_SMART.100
+  slurpodromeStart:
+  slurpodromeWin: ME_ARCADE777_SMART.60
 tourMode:
   bankruptcyLimit: 1
   opponent1: Alena
@@ -170,6 +177,13 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 5
+    added:
+      - Bad Venture Music
+      - Arcade Music
+  - version: 4
+    changed:
+      - Corrected the initial price for square number 54 to the correct value.
   - version: 3
     changed:
       - Changed background to the new bg009alt
@@ -178,7 +192,7 @@ changelog:
     changed:
       - Replaced card 77 with 79.
   - version: 1
-    added: 
+    added:
       - Initial Release
 tags:
   - Smart
@@ -188,4 +202,3 @@ notes: |
   - This map was originally from Fortune Street Smart.
   - The venture card set has been taken from Mt. Magmageddon.
   - This map has 12 built-in vacant lots, so playing on the "None" setting for vacant lots is recommended.
-...

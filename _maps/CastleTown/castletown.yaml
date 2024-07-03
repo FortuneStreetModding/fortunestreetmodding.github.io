@@ -1,4 +1,3 @@
----
 name:
   en: Castle Town
 desc:
@@ -16,7 +15,7 @@ mapIcon: castletown
 music:
   download: 
     - https://nikkums.io/cswt/BGM/CastleTown.music.zip
-    - https://drive.google.com/u/2/uc?export=download&confirm=Do0k&id=15Y0LljkgsiwiMDRWQYsVmQ2BCIv0t42q
+    - https://drive.google.com/u/2/uc?id=1-mTQ_CSiVbjiIQfoKiL0ZiXxYbOo7MN4&export=download&confirm=1
   map: castletown.70
   stock: overpricedshop.50
   ventureCards: fyerscannon.60
@@ -40,7 +39,16 @@ tourMode:
   opponent2: Waluigi
   opponent3: Luigi
   clearRank: 2
+shopNames:
+  en:
+    1: Malo Mart
 changelog:
+  - version: 4
+    changed: 
+      - Shop name update
+  - version: 3
+    changed:
+      - Removed cannon area for stability
   - version: 2
     changed:
       - Replaced Venture Card 87
@@ -48,7 +56,7 @@ changelog:
     added: 
       - Initial Release
 authors:
-  - name: MalkSticks
+  - name: Sienna
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -178,6 +186,3 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-tags:
-  - Special
-...

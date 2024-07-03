@@ -1,0 +1,29 @@
+#problems {
+  border-top: 1px solid var(--bs-tertiary-bg);
+  flex: 0 0 20vh;
+  color: var(--bs-emphasis-color);
+  overflow-y: scroll;
+}
+
+.problem {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  padding: 0.25rem;
+}
+
+.problem:hover {
+  background-color: var(--bs-tertiary-bg);
+}
+
+.problem-text {
+  margin-left: 0.5rem;
+}
+
+.problem .codicon-warning {
+  color: var( --bs-warning);
+}
+
+.problem .codicon-error {
+  color: var(--bs-danger);
+}

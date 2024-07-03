@@ -1,12 +1,11 @@
----
 name:
   en: Delfino Plaza Redux
 desc:
-  en: An edited version of the easy mode variant of Delfino Plaza
+  en: An edited version of the easy mode variant of Delfino Plaza.
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
-targetAmount: 20000
+targetAmount: 25000
 baseSalary: 750
 salaryIncrement: 200
 maxDiceRoll: 6
@@ -18,6 +17,24 @@ tourMode:
   opponent2: Waluigi
   opponent3: Luigi
   clearRank: 2
+music:
+  download: 
+    - https://nikkums.io/cswt/BGM/DelfinoRedux.music.zip
+    - https://drive.google.com/u/0/uc?id=1T-fSwkmvlv3h6-y4Vu8_XzTe5NWE4KIy&export=download&confirm=1
+  map: nokibay.70
+  targetMet: corona.80
+  promotionMario: shineget.70
+  promotionDragonQuest: shineget.70
+  promotionMii: shineget.70
+  takeAbreak: sleepymario.80
+  bankruptcy: SunshineGameover.90
+  auction: skysecret.80
+  ventureCards: delfinoventure.80
+  badVentureCard: bowserjr.90
+  win: staffroll.70
+  forcedBuyout: delfinoBuyout.80
+  domination: Delfinodomination.80
+  stock: delfinostocks.80
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -148,6 +165,14 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    changed:
+      - Target amount changed from 20000 to 25000
+  - version: 2
+    changed:
+      - Minor adjustments
+    added:
+      - Music
   - version: 1
     changed:
       - Initial Release
@@ -157,4 +182,3 @@ notes: |
   Added to repo by Deflaktor
 tags:
   - Redux
-...

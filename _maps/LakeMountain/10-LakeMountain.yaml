@@ -1,4 +1,3 @@
----
 name:
   en: Lake Mountain (IS2)
 desc:
@@ -16,8 +15,8 @@ mapIcon: lakemt
 music:
   download: 
     - https://nikkums.io/cswt/BGM/LakeMountain.music.zip
-    - https://drive.google.com/u/0/uc?export=download&confirm=cO8f&id=1vC3PUwsdmG278b-RNtt_k8-mvhdHb5zX
-  map: BGM_MAP_LAKEMT.IS2R.60
+    - https://drive.google.com/uc?export=download&id=16RW4td93St-4DM59ZL4LLp-1x133wo3y&confirm=1
+  map: BGM_MAP_LAKEMT_IS2R.60
   stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60
   auction: BGM_AUCTION_IS2R.60
@@ -33,6 +32,15 @@ music:
   forcedBuyout: ME_5BUY_IS2.58
   domination:
   bankruptcy: ME_BANKRUPTCY_IS2.60
+  memoryBlock: A_BGM_ARCADE_IS2.75
+  dartOfGold: A_BGM_ARCADE_IS2.75
+  roundTheBlocks: A_BGM_ARCADE_IS2.75
+  roundTheBlocksWin: ME_ARCADEWIN_IS2.75
+  roundTheBlocks777: ME_ARCADE777_IS2.75
+  slurpodromeRace: 
+  slurpodromeSelect: A_BGM_ARCADE_IS2.75
+  slurpodromeStart: 
+  slurpodromeWin: ME_ARCADE777_IS2.75
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2500
@@ -41,6 +49,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 5
+    added:
+      - Arcade Music
   - version: 4
     changed:
       - Updated yaml & icon for CSWT
@@ -205,4 +216,3 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 tags:
   - IS2
-...

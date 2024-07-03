@@ -1,4 +1,3 @@
----
 name:
   en: Skyscraper (IS2)
 desc:
@@ -11,12 +10,12 @@ baseSalary: 250
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: is2-skyscraper
-background: bg009alt
+background: grid_blue2
 mapIcon: skyscraper
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Skyscraper.music.zip
-    - https://drive.google.com/u/0/uc?export=download&confirm=RHBs&id=1mdpnqqsMKmCbyi9QcAJcl7H_sbsDgYUy
+  download:
+    - https://nikkums.io/cswt/BGM/IS2Skyscraper.music.zip
+    - https://drive.google.com/uc?export=download&id=18maOCpxeGTP7ZjsetNRuwqiiXBoKnj3g&confirm=1
   map: BGM_MAP_SKYSCRAPER_IS2R.60
   stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60
@@ -33,12 +32,40 @@ music:
   forcedBuyout: ME_5BUY_IS2.58
   domination:
   bankruptcy: ME_BANKRUPTCY_IS2.60
+  memoryBlock: A_BGM_ARCADE_IS2.75
+  dartOfGold: A_BGM_ARCADE_IS2.75
+  roundTheBlocks: A_BGM_ARCADE_IS2.75
+  roundTheBlocksWin: ME_ARCADEWIN_IS2.75
+  roundTheBlocks777: ME_ARCADE777_IS2.75
+  slurpodromeRace:
+  slurpodromeSelect: A_BGM_ARCADE_IS2.75
+  slurpodromeStart:
+  slurpodromeWin: ME_ARCADE777_IS2.75
 tourMode:
   bankruptcyLimit: 1
   opponent1: Wario
   opponent2: DonkeyKong
   opponent3: DiddyKong
   clearRank: 3
+changelog:
+  - version: 4
+    added:
+      - Arcade Music
+  - version: 3
+    changed:
+      - Changed background to grid_blue2
+  - version: 2
+    changed:
+      - Changed background to bg009alt
+      - Changed theme to Mario to add doors to map
+  - version: 1
+authors:
+  - name: Azurillkirby
+notes: |
+  - This map was originally from Itadaki Street 2.
+  - The venture card set has been taken from Mario Circuit.
+tags:
+  - IS2
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -168,17 +195,3 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-changelog:
-  - version: 2
-    changed:
-      - Changed background to bg009alt
-      - Changed theme to Mario to add doors to map
-  - version: 1
-authors:
-  - name: Azurillkirby
-notes: |
-  - This map was originally from Itadaki Street 2.
-  - The venture card set has been taken from Mario Circuit.
-tags:
-  - IS2
-...

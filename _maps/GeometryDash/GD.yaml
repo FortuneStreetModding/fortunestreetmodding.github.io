@@ -1,4 +1,3 @@
----
 name:
   en: Geometry Dash
 desc:
@@ -11,7 +10,7 @@ baseSalary: 200
 salaryIncrement: 200
 maxDiceRoll: 6
 frbFile1: GD
-background: bg009alt
+background: grid_blue2
 tourMode:
   bankruptcyLimit: 3
   opponent1: Platypunk
@@ -43,6 +42,9 @@ authors:
   - name: Skylighter
     url: https://www.youtube.com/channel/UCRu6DfosZnWrHFk6v7VGnmQ
 changelog:
+  - version: 2
+    changed:
+      - Changed background to grid_blue2
   - version: 1
     added: 
       - Initial Release
@@ -175,4 +177,3 @@ ventureCards:
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 1  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

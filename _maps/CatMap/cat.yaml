@@ -1,4 +1,3 @@
----
 name:
   en: Cat Map
   de: Katzenkarte
@@ -7,24 +6,121 @@ desc:
   de: Die unteren Schnurrhaare können nur mit dem Ballon erreicht werden, aber falls man schafft kann der türkise Bezirk sehr teuer werden. Diese Karte ist darauf ausgelegt ohne zusätzliche freie Grundstücke gespielt zu werden.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2240
+initialCash: 2400
 targetAmount: 32000
-baseSalary: 320
-salaryIncrement: 240
+baseSalary: 240
+salaryIncrement: 320
 maxDiceRoll: 8
 frbFile1: cat
+background: catmap-bg
+mapIcon: catcat
+music:
+  map: cats-at-play.50  # Fire Emblem: Radiant Dawn - Cats At Play
+  # stock: # 13_BGM_STOCK.brstm, when buying stock
+  # ventureCards: # 12_BGM_CHANCECARD.brstm; when choosing venture card
+  # auction: # 14_BGM_AUCTION.brstm, when shop is for auction
+  targetMet: cat-rave.50 # 38_BGM_GOALPROP_M.brstm / 39_BGM_GOALPROP_D.brstm; Meow Mix Song - Ashworth [[Dvj Komanche video Remix]]
+  # win: # 10_BGM_WINNER_M.brstm / 11_BGM_WINNER_D.brstm depending on board, music on the results screen
+  # above are LOOPING.
+  #########################################
+  # below are NON LOOPING.
+  guestAppear: cat-guest-arrive.75 # 08_ME_OJAMA_COME.brstm, when heal slime, goody bag, or lakitu appear;; samples are ozzy mandice Fortune Street Custom Board Extras tutorial; DDR Start Button; 1969年- @ Wet Willies
+  guestLeave: cat-guest-goodbye.75 # 09_ME_OJAMA_BYE.brstm, when those guys leave; Meow~<3 meow mix commercial exit, bohemian rhapsody
+  badVentureCard: cat-curse.50 # 06_ME_CURSE.brstm, sample from "VERY angry cat!! FUNNY!" https://www.youtube.com/watch?v=sCexB6qID_A
+  takeAbreak: cat-sleepy.50 # 03_ME_HOLIDAY.brstm, "Bravely Default - Falling Asleep..." + sample of my cat snoring
+  # promotionMii: # not found in original game, they typically get Mario or DQ level up theme based on the board they're in
+  # promotionMario: #04_ME_LEVELUP_M.brstm, used when a mario character levels up.
+  # promotionDragonQuest: # 05_ME_LEVELUP_D.brstm, used when a dragon quest character levels up.
+  # forcedBuyout: # 10_ME_5_BUY.brstm, lol
+  # domination: # 07_ME_MONOPOLY.brstm, complete an entire district
+  # bankruptcy: # 11_ME_BANKRUPTCY.brstm, when a player's assets go negative
 tourMode:
-  bankruptcyLimit: 1
-  opponent1: Mario
-  opponent2: Daisy
-  opponent3: DiddyKong
+  bankruptcyLimit: 3
+  opponent1: Toad
+  opponent2: Angelo
+  opponent3: Slime
   clearRank: 2
-background: bg002
+districtNames:
+  en:
+    - District A # Red District, A
+    - District B # Cyan District, B
+    - District C # Gold District, C
+    - District D # Lime-Green District, D
+    - District E # Blue District, E
+    - District F # Pink District, F
+    - District G # Purple District, G
+    - District H # Yellow District, H
+    - District Eye # Green District, The Eye-lands, I
+    - District J # Lilac District, J
+shopNames:
+  en:
+    # Red District, A
+    38: Cat dentist
+    36: Cat lawyer
+    7: Cat aerobics studio
+    20: Cat-ropractor
+    
+    # Pink District, F
+    12: Patisserie La Soleil
+    17: Ice-cream shop
+    39: Sushi restaurant
+    16: Salami shop
+    
+    # Cyan District, B
+    8: Abandoned theatre
+    5: Marketing office
+    68: Satanic temple
+    80: Fish market
+    9: Illegal pharmacy
+    10: Last human settlement
+    
+    # Gold District, C
+    35: Human store
+    13: The Mouse Hole
+    15: Cat photographer
+    11: Cat fashion boutique
+    
+    # Lime-Green District, D
+    23: Chicken farm
+    14: Liver farm
+    28: Fishery
+    19: Catnip farm
+    
+    # Purple District, G
+    34: Taxidermy studio
+    27: Cat furniture
+    26: Fruit stall # Remains Fruit stall
+    18: Fountains and Bowls
+    
+    # Yellow District, H
+    37: Cat groomer
+    29: Litterbox supplies
+    42: Veterinarian
+    33: Scratching post shop
+    
+    # The Eye-lands, I
+    6: Cat toy shop
+    90: Fortune Street Hacker Club
+    43: Cat fruit stall
+    44: Internet cat-fé
+    
+    # Blue district, E
+    24: Hot Chicken restaurant
+    32: Rat & Mouse restaurant
+    31: Feline Fancy
+    22: Pizza restaurant
+    
+    # Lilac district, J
+    21: Cat mechanic
+    25: Cat casino
+    30: Bug hunting range
+    62: Heating pad store
+
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
-  - 1  #   2 Venture on! Roll the die again and move forward.
+  - 0  #   2 Venture on! Roll the die again and move forward.
   - 1  #   3 Venture through space! Zoom over to any non-venture, non-suit square you like!
-  - 0  #   4 Moneymaking venture! Roll the die and get 40 times the number shown in gold coins from the player in 1st place!
+  - 1  #   4 Moneymaking venture! Roll the die and get 40 times the number shown in gold coins from the player in 1st place!
   - 1  #   5 Venture through space! Zoom over to any shop or vacant plot!
   - 1  #   6 Venture through space! Zoom over to any venture or suit square!
   - 1  #   7 Special bonus! Your shops all grow by 7%!
@@ -35,7 +131,7 @@ ventureCards:
   - 1  #  12 Capital venture! You can invest capital in any of your shops.
   - 1  #  13 Misadventure! The values of all your shops drop by 13%!
   - 0  #  14 Misadventure! You give everyone 30G each!
-  - 1  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
+  - 0  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
   - 0  #  16 Random venture! Shops expand in three districts picked at random!
   - 1  #  17 Special bonus! You receive half of your salary!
   - 0  #  18 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value.
@@ -45,29 +141,29 @@ ventureCards:
   - 1  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
   - 1  #  23 Revaluation venture! You can expand any one of your shops by 50%.
   - 0  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
-  - 1  #  25 Misadventure! Your shop prices halve until your next turn!
-  - 1  #  26 Lucky venture! You get a big commission until your next turn!
+  - 0  #  25 Misadventure! Your shop prices halve until your next turn!
+  - 0  #  26 Lucky venture! You get a big commission until your next turn!
   - 1  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
-  - 0  #  28 Cameo adventure! A goodybag appears!
-  - 1  #  29 Freebie! Take a Heart!
+  - 1  #  28 Cameo adventure! A goodybag appears!
+  - 0  #  29 Freebie! Take a Heart!
   - 1  #  30 Venture on! All shops charge a 100G flat rate! Now roll the die and move again.
   - 1  #  31 Random venture! Shops expand by 10% in a district picked at random!
   - 0  #  32 Random venture! Shops expand by 20% in a district picked at random!
-  - 0  #  33 Cashback venture! You can sell a shop back to the bank for three times its shop value.
+  - 1  #  33 Cashback venture! You can sell a shop back to the bank for three times its shop value.
   - 1  #  34 Dicey adventure! Roll 1/3/5 and your shops close for the day. Roll 2/4/6 and everyone else's shops close.
   - 0  #  35 Stock venture! You can sell stocks you own at 35% above the market value.
-  - 0  #  36 Capital venture! You can pay 100G for the chance to invest in your shops.
+  - 1  #  36 Capital venture! You can pay 100G for the chance to invest in your shops.
   - 0  #  37 Random venture! Shops expand by 30% in a district picked at random!
-  - 0  #  38 Stock venture! You can buy stocks in a district of your choice at 10% above the market value.
+  - 1  #  38 Stock venture! You can buy stocks in a district of your choice at 10% above the market value.
   - 0  #  39 Suit venture! Buy a Suit Yourself card for 100G.
   - 0  #  40 Misadventure! You give away 10% of your ready cash to the player in last place!
-  - 0  #  41 Misadventure! Stock prices fall by 10% in a district picked at random!
+  - 1  #  41 Misadventure! Stock prices fall by 10% in a district picked at random!
   - 0  #  42 Misadventure! Stock prices fall by 20% in a district picked at random!
   - 1  #  43 Misadventure! You pay an assets tax of two gold coins per unit of stock that you own!
-  - 1  #  44 Misadventure! Roll the die and pay 44 times the number in gold coins to the player in last place!
-  - 1  #  45 Dicey adventure! Roll 1/3/5 to warp to a take-a-break square. Roll 2/4/6 to warp to the arcade.
-  - 1  #  46 Misadventure! You drop your wallet and lose 10% of your ready cash!
-  - 0  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
+  - 0  #  44 Misadventure! Roll the die and pay 44 times the number in gold coins to the player in last place!
+  - 0  #  45 Dicey adventure! Roll 1/3/5 to warp to a take-a-break square. Roll 2/4/6 to warp to the arcade.
+  - 0  #  46 Misadventure! You drop your wallet and lose 10% of your ready cash!
+  - 1  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
   - 0  #  48 Misadventure! All shops in a district picked at random fall in value by 10%!
   - 0  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
   - 1  #  50 Venture on! Move forward the same number of squares again.
@@ -80,76 +176,98 @@ ventureCards:
   - 1  #  57 Venture through space! Zoom to any square you like.
   - 0  #  58 Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!
   - 1  #  59 Stock venture! You can buy stocks in a district of your choice at 10% below the market value.
-  - 1  #  60 Random venture! Stock prices increase by 10% in a district picked at random!
+  - 0  #  60 Random venture! Stock prices increase by 10% in a district picked at random!
   - 1  #  61 Special bonus! You receive a 10% dividend on your stocks!
   - 0  #  62 Special bonus! You receive a 20% dividend on your stocks!
   - 1  #  63 Random venture! Stock prices increase by 20% in a district picked at random!
   - 0  #  64 Random venture! Stock prices increase by 30% in a district picked at random!
   - 1  #  65 Forced buyout! You can buy a vacant plot or shop for five times its value, whether someone else owns it or not.
   - 0  #  66 Special bonus! You receive 10 of the most valuable stocks!
-  - 1  #  67 Stock venture! You can buy stocks in a district of your choice.
-  - 1  #  68 Special arcade adventure! You're invited to play Memory Block!
+  - 0  #  67 Stock venture! You can buy stocks in a district of your choice.
+  - 0  #  68 Special arcade adventure! You're invited to play Memory Block!
   - 0  #  69 Stock venture! You can sell stocks you own at 20% above the market value.
-  - 1  #  70 Special bonus! You get a sudden promotion and receive a salary! (You lose any suits you have.)
-  - 0  #  71 Capital venture! You can invest up to 200G of the bank's money in your shops.
+  - 0  #  70 Special bonus! You get a sudden promotion and receive a salary! (You lose any suits you have.)
+  - 1  #  71 Capital venture! You can invest up to 200G of the bank's money in your shops.
   - 1  #  72 Dicey adventure! Roll 1/3/5 to take 20 times the number of your shops in gold coins. Roll 2/4/6 to pay the same.
-  - 1  #  73 Property venture! You can buy any unowned shop or vacant plot.
-  - 1  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
-  - 0  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
-  - 1  #  76 Special arcade adventure! You're invited to play Round the Blocks!
+  - 0  #  73 Property venture! You can buy any unowned shop or vacant plot.
+  - 0  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
+  - 1  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
+  - 0  #  76 Special arcade adventure! You're invited to play Round the Blocks!
   - 1  #  77 Freebie! Take five of each district's stocks.
   - 0  #  78 Property venture! You can buy any unowned shop or vacant plot for 200G more than its value.
   - 1  #  79 Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not.
   - 1  #  80 Freebie! Take a Spade!
-  - 1  #  81 Misadventure! All other players can only move forward 1 on their next turn.
+  - 0  #  81 Misadventure! All other players can only move forward 1 on their next turn.
   - 1  #  82 Freebie! Take a Club!
   - 1  #  83 Dicey adventure! Roll 1/3/5 and warp to a random location. Roll 2/4/6 and everyone else warps.
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
-  - 1  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
-  - 1  #  86 Moneymaking venture! Take 100G from all other players!
-  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
+  - 0  #  86 Moneymaking venture! Take 100G from all other players!
+  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 0  #  88 Misadventure! All other players swap places!
-  - 1  #  89 Freebie! All players take a Suit Yourself card!
+  - 0  #  89 Freebie! All players take a Suit Yourself card!
   - 0  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
-  - 0  #  91 Cameo adventure! A healslime appears!
+  - 1  #  91 Cameo adventure! A healslime appears!
   - 1  #  92 Cameo adventure! Lakitu appears!
   - 0  #  93 Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%.
-  - 1  #  94 Freebie! Take a Diamond!
-  - 0  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
+  - 0  #  94 Freebie! Take a Diamond!
+  - 1  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
   - 1  #  96 Misadventure! All players scramble to another player's location!
-  - 1  #  97 Stock rise venture! Increase stock value by 20% in a district of your choice.
-  - 0  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
-  - 0  #  99 Freebie! What's inside...?
+  - 0  #  97 Stock rise venture! Increase stock value by 20% in a district of your choice.
+  - 1  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
+  - 1  #  99 Freebie! What's inside...?
   - 1  # 100 Freebie! Take a Suit Yourself card!
   - 0  # 101 Special bonus! Your shops all grow by 21%!
   - 0  # 102 Moneymaking venture! Roll the die and get 33 times the number shown in gold coins from all other players!
   - 0  # 103 Misadventure! The values of all your shops drop by 25%!
   - 0  # 104 Misadventure! You give everyone 80G each!
-  - 0  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
+  - 1  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
   - 0  # 106 Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)
   - 0  # 107 Revaluation venture! You can expand any one of your shops by 30%.
-  - 0  # 108 Cashback venture! You can sell a shop back to the bank for four times its shop value.
+  - 1  # 108 Cashback venture! You can sell a shop back to the bank for four times its shop value.
   - 0  # 109 Revaluation venture! You can expand any one of your shops by 75%.
   - 0  # 110 Special bonus! You receive 77 times the number of shops you own in gold coins from the bank!
-  - 0  # 111 Cashback venture! You can sell a shop back to the bank for 500G more than its shop value.
+  - 1  # 111 Cashback venture! You can sell a shop back to the bank for 500G more than its shop value.
   - 0  # 112 Special bonus! You receive 100 times the number of shops you own in gold coins!
   - 0  # 113 Moneymaking venture! Roll the die and get the number shown x your level x 20G from the bank!
-  - 0  # 114 Moneymaking venture! Take your level times 40G from all other players!
-  - 0  # 115 Misadventure! All other players can only move forward 7 on their next turn.
-  - 0  # 116 Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
+  - 1  # 114 Moneymaking venture! Take your level times 40G from all other players!
+  - 1  # 115 Misadventure! All other players can only move forward 7 on their next turn.
+  - 1  # 116 Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
   - 1  # 117 Adventurous turning point! Everyone gets to choose which way to move on their next go.
   - 0  # 118 Lucky venture! You get a really big commission until your next turn!
-  - 0  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
+  - 1  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
   - 0  # 120 Misadventure! You drop your wallet and lose 20% of your ready cash!
   - 0  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
   - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
   - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
-  - 1  # 124 Suit venture! Buy a Suit Yourself card for 50G.
+  - 0  # 124 Suit venture! Buy a Suit Yourself card for 50G.
   - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
-  - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+  - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2022.09.16
+    added:
+      - Two "Roll 1/3/5 to warp to a take-a-break square. Roll 2/4/6 to warp to the arcade." squares, one on each possible loop. This venture card was considered when initially placing the Arcade and Take-a-break squares in the original 2017 design of Cat Map, and with new advanced technology, we can make this venture card a real mechanic of the board, forcing players to leave their comfortable loops, if they are unfortunate enough to warp to their non-preferred side.
+      - All shops now cater to cats. (Shops named)
+      - Cat music and sound effects. Not all are replaced at the moment. Fortune Street's sound design is hard to beat.
+      - Cat 3D Background. They are waiting for Yoshi to hatch.
+      - Cat icon with picture of my Seal Point Himalayan cat, "Baby". (Technically this was added 2022.08.28)
+    changed:
+      - Cat Map is now 2 squares wider. The result is cute.
+      - Entire map re-created from blank slate in order to make shop IDs more consecutive. This will reduce camera flinging during venture cards that affect multiple properties.
+      - Blue and Lilac distracts have been buffed with one additional shop each, but shop values nerfed to compensate.
+      - Pink District has been consolidated into the Mouth in order to make it wider, shop values nerfed to compensate.
+      - Vacant plots have been replaced 1 shop on each ear for a total of 4 total vacant plots on the board.
+      - Shop values on the ears have been nerfed.
+      - Arcade square moved from cat's right ear to middle of map.
+      - Cannon removed, replaced with extra Roll On square, towards the middle.
+      - Extra Clover at top of map and Extra Spade at bottom of map, in order to balance direction choice when warping to Arcade/Take-a-break.
+      - Boom squares on both top and bottom half of board. The bottom Boom square replaces a Venture square that existed before.
+      - Venture Card table has been entirely re-evaluated. Full changelog is available in git history, but most notably, Cameo Adventures have been enabled and Arcade Ventures have been disabled. Cameos are fun, and Slurpodrome must not be prevented by inferior minigames.
+      - Starting Cash has been raised from 2240 to 2400, since there are now more shops on the map and 2240 was a strange number. It originally was unintentionally inherited from the base game board overwritten.
+    removed:
+      - Crashing bug can no longer be triggered. Previously if someone chose to pass through both whisker doors in the same roll (rolling 8 from one of the exposed cyan shops), then say NO I DO NOT WISH TO STOP, the game would crash. It is no longer possible to travel the entire mouth to pass through 2 doors, since the design of the mouth is now 9 tiles long.
   - version: 2021.02.05
     added:
       - Venture card table
@@ -163,7 +281,9 @@ changelog:
   - version: 2017.05.31
     added: 
       - 2017 is the last time I worked on this. It may still benefit from some balancing changes, but overall a great map that has been thoroughly tested with friends. :-)
+  - version: 2015.10.20
+    added:
+      - Board was first in development. Available for download at http://www.mediafire.com/download/oxkfk08fpnpp7u4/cat.frb but it crashes. Ozzy Mandice suggested removing the one-way doors on the bottom whiskers to get it to work. https://www.youtube.com/watch?v=YP_UwD8d_ow
 authors:
   - name: Logg
     url: https://github.com/Hubcapp
-...

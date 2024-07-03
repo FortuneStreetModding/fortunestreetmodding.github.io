@@ -1,4 +1,3 @@
----
 name:
   en: Freeway (IS2)
 desc:
@@ -8,15 +7,15 @@ theme: Mario
 initialCash: 2000
 targetAmount: 20000
 baseSalary: 300
-salaryIncrement: 100 
+salaryIncrement: 100
 maxDiceRoll: 7
 frbFile1: is2-freeway
 background: bg002
 mapIcon: freeway
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Freeway.music.zip
-    - https://drive.google.com/u/0/uc?id=10mA1GUne2X24hEfIXDWQdJ9I5kpiHjMA&export=download
+  download:
+    - https://nikkums.io/cswt/BGM/IS2Freeway.music.zip
+    - https://drive.google.com/uc?export=download&id=1SDRuwEyB27O3vYsOS3G44DINbhcB_Ubb&confirm=1
   map: BGM_MAP_FREEWAY_IS2R.60
   stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60
@@ -33,6 +32,15 @@ music:
   forcedBuyout: ME_5BUY_IS2.58
   domination:
   bankruptcy: ME_BANKRUPTCY_IS2.60
+  memoryBlock: A_BGM_ARCADE_IS2.75
+  dartOfGold: A_BGM_ARCADE_IS2.75
+  roundTheBlocks: A_BGM_ARCADE_IS2.75
+  roundTheBlocksWin: ME_ARCADEWIN_IS2.75
+  roundTheBlocks777: ME_ARCADE777_IS2.75
+  slurpodromeRace:
+  slurpodromeSelect: A_BGM_ARCADE_IS2.75
+  slurpodromeStart:
+  slurpodromeWin: ME_ARCADE777_IS2.75
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -169,10 +177,15 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    added:
+      - Arcade Music
   - version: 2
     changed:
       - Replaced Venture Card 87
   - version: 1
+    added:
+      - Initial Release
 authors:
   - name: Azurillkirby
 notes: |
@@ -180,4 +193,3 @@ notes: |
   - The venture card set has been taken from Yoshi's Island (DS).
 tags:
   - IS2
-...
