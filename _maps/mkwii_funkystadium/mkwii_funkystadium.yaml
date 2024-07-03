@@ -13,11 +13,7 @@ frbFile1: mkwii_funkystadium1
 background: mkwii_funkystadium
 mapIcon: imkwii_funky
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/mkwii_funkystadium.music.zip
-    - https://drive.google.com/uc?export=download&id=18ZCnkZDcfSIZGe8efNVsJTkWLpBZxPQW&confirm=1
-  map: 
-  - mkwii_funkystadium_MAP
+  map: mkwii_funkystadium_MAP
   stock: mkwii_STOCK
   ventureCards: mkwii_VEN
   auction: mkwii_AUC
