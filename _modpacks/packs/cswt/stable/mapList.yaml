@@ -305,9 +305,6 @@ backgrounds: backgrounds.yml
     Disboard.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Disboard.zip
-    Downhill.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Downhill.zip
     DungeonLobby.zip:
       urls:
       - https://nikkums.io/cswt/Maps/DungeonLobby.zip
@@ -362,9 +359,9 @@ backgrounds: backgrounds.yml
     FortuneGateFG1.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
-    Freighter.zip:
+    mkwii_funkystadium.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Freighter.zip
+      - https://nikkums.io/cswt/Maps/mkwii_funkystadium.zip
     GalDaValIsland.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GalDaValIsland.zip
@@ -377,15 +374,9 @@ backgrounds: backgrounds.yml
     GoodybagLair.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GoodybagLair.zip
-    Heliodor.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Heliodor.zip
     HighRise.zip:
       urls:
       - https://nikkums.io/cswt/Maps/HighRise.zip
-    IleDeFrance.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/IleDeFrance.zip
     InsideOut.zip:
       urls:
       - https://nikkums.io/cswt/Maps/InsideOut.zip
@@ -452,9 +443,6 @@ backgrounds: backgrounds.yml
     TurtleFortress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TurtleFortress.zip
-    UAHigh.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/UAHigh.zip
     Unatco.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Unatco.zip
