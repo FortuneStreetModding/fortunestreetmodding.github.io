@@ -39,6 +39,11 @@ authors:
   - name: phellen007
   - name: RyanDCB
 changelog:
+  - version: 2
+    changed:
+      - Reduced board size by 8 squares and adjusted the shape of the board
+      - Connected the one way doors to alley ends, raised the max roll to 8
+      - Altered the backstreet destinations
   - version: 1
     added:
       - Initial release
