@@ -421,17 +421,6 @@ export interface MapDescriptor1 {
     jp?: ShopNames;
   };
   /**
-   * The uppercase custom shop names for this map.
-   */
-  capitalShopNames?: {
-    en?: ShopNames;
-    de?: ShopNames;
-    fr?: ShopNames;
-    it?: ShopNames;
-    es?: ShopNames;
-    jp?: ShopNames;
-  };
-  /**
    * The change log logs the different addition, removals and changes made for this map.
    */
   changelog?: {

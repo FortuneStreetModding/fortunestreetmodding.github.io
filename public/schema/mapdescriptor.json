@@ -592,32 +592,7 @@
             }
         },
         "shopNames": {
-            "description": "The (preferably) lowercase custom shop names for this map.",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "en": {
-                    "$ref": "#/definitions/shopNames"
-                },
-                "de": {
-                    "$ref": "#/definitions/shopNames"
-                },
-                "fr": {
-                    "$ref": "#/definitions/shopNames"
-                },
-                "it": {
-                    "$ref": "#/definitions/shopNames"
-                },
-                "es": {
-                    "$ref": "#/definitions/shopNames"
-                },
-                "jp": {
-                    "$ref": "#/definitions/shopNames"
-                }
-            }
-        },
-        "capitalShopNames": {
-            "description": "The uppercase custom shop names for this map.",
+            "description": "The custom shop names for this map.",
             "type": "object",
             "additionalProperties": false,
             "properties": {
