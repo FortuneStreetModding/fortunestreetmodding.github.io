@@ -394,7 +394,7 @@
   grade: 3
   sentiment: 1
 - # 54
-  defaultEasy: false
+  defaultEasy: true
   defaultStandard: true
   description: "Venture through space! Pay 100G to zoom straight to the bank!"
   effect: "Warp to bank"
@@ -628,7 +628,7 @@
   grade: 2
   sentiment: 1
 - # 87
-  defaultEasy: true
+  defaultEasy: false
   defaultStandard: false
   description: "Venture on! Roll the special all-7s-and-8s die and move forward again."
   effect: "Roll, move"
@@ -831,7 +831,7 @@
   grade: 3
   sentiment: 1
 - # 115
-  defaultEasy: true
+  defaultEasy: false
   defaultStandard: false
   description: "Misadventure! All other players can only move forward 7 on their next turn."
   effect: "Control others' movement"
@@ -853,7 +853,7 @@
   grade: 2
   sentiment: 0
 - # 118
-  defaultEasy: false
+  defaultEasy: true
   defaultStandard: false
   description: "Lucky venture! You get a really big commission until your next turn!"
   # TODO: Add descriptionExtra
