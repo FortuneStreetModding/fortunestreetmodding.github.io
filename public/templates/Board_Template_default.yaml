@@ -25,32 +25,38 @@ music:
 # As an example, extract 1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy from 
 # https://drive.google.com/file/d/1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy/view?usp=sharing
 # Paste in the XXX part of the google link
-# The 5 lines that contain this \"#\" should be crossed out after the \"#\".
-  map: mapMusic.50 # the part after the dot is the volume 0-100
-  stock: CAN_DELETE_THIS_ENTIRE_SECTION_IF_UNNEEDED
-  ventureCards: 
-  auction: 
-  targetMet: 
-  win: 
-  guestAppear:
-  guestLeave:
-  badVentureCard:
-  takeAbreak:
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
-  forcedBuyout:
-  domination:
-  bankruptcy:
-  roundTheBlocks: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
-  roundTheBlocksWin: 
-  roundTheBlocks777: 
-  memoryBlock: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
-  dartOfGold: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
-  slurpodromeSelect: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade
-  slurpodromeStart: 
-  slurpodromeRace: 
-  slurpodromeWin: 
+# The 5 lines that contain this "#" should be crossed out after the "#".
+  map:
+  - map_state1.50 # looping. the part after the dot is the volume 0-100. If unspecified, it will default to 50 volume
+  - map_state2.50 # CAN REMOVE UNUSED STATES
+  - map_state3.50 # CAN REMOVE UNUSED STATES
+  - map_state4.50 # CAN REMOVE UNUSED STATES
+  - map_state5.50 # CAN REMOVE UNUSED STATES
+  - map_state6.50 # CAN REMOVE UNUSED STATES
+  stock: CAN_DELETE_THIS_ENTIRE_SECTION_IF_UNNEEDED # looping
+  ventureCards: # looping
+  auction: # looping
+  targetMet: # looping
+  win: # looping
+  guestAppear: # non-looping - 5-6 seconds
+  guestLeave: # non-looping - 5 seconds
+  badVentureCard: #non-looping - 4 seconds
+  takeAbreak: # non-looping - 4 seconds
+  promotionMii: # non-looping - 4 seconds
+  promotionMario: # non-looping - 4 seconds
+  promotionDragonQuest: # non-looping - 4 seconds
+  forcedBuyout: # non-looping - 3-6 seconds
+  domination: # non-looping - 1-5 seconds
+  bankruptcy: # non-looping - 3-7 seconds
+  roundTheBlocks: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade # looping
+  roundTheBlocksWin: # non-looping - 4-5 seconds
+  roundTheBlocks777: # non-looping - 7-9 seconds
+  memoryBlock: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade # looping
+  dartOfGold: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade # looping
+  slurpodromeSelect: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade # looping
+  slurpodromeStart: # non-looping - 2-4 seconds
+  slurpodromeRace: # looping
+  slurpodromeWin: # non-looping - 7-9 seconds
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
