@@ -349,7 +349,7 @@
   description: "Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits."
   descriptionExtra: "You do not get extra gold for any suits you already have."
   effect: "Roll to get suits"
-  grade: 3
+  grade: 2
   sentiment: 0
 - # 48
   defaultEasy: false
