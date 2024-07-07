@@ -152,6 +152,10 @@ ventureCards:
 authors:
   - name: オーリオ
   - name: Azurillkirby
+changelog:
+  - version: 1
+    added: 
+      - Initial Release
 notes: |
   - This map was originally designed by オーリオ (Orio), with a full design posted to their blog. http://nanbuchocobo.blog.fc2.com/blog-entry-12.html?sp
   - This was ported to Fortune Street Wii by Azurillkirby.
