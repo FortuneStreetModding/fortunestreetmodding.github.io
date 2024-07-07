@@ -149,7 +149,7 @@ ventureCards:
   - 1  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
-  - version 4:
+  - version: 4
     changed:
       - Venture card 87 changed to venture card 127
   - version: 3
