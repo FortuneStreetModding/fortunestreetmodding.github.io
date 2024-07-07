@@ -58,7 +58,7 @@ ventureCards:
   - 1  # Venture through space! Zoom over to any venture or suit square!
   - 1  # Special bonus! Your shops all grow by 7%!
   - 1  # Venture on! Everyone's shop prices increase by 30%! Now roll the die and move again.
-  - 0  # Venture on! Everyone's shops close for the day! Now roll the die and move again.
+  - 1  # Venture on! Everyone's shops close for the day! Now roll the die and move again.
   - 1  # Venture on! Everyone's shop prices cut in half! Now roll the die and move again.
   - 1  # Moneymaking venture! Roll the die and get 11 times the number shown in gold coins from all other players!
   - 0  # Capital venture! You can invest capital in any of your shops.
@@ -164,7 +164,7 @@ ventureCards:
   - 0  # Special bonus! You receive 100 times the number of shops you own in gold coins!
   - 0  # Moneymaking venture! Roll the die and get the number shown x your level x 20G from the bank!
   - 0  # Moneymaking venture! Take your level times 40G from all other players!
-  - 1  # Misadventure! All other players can only move forward 7 on their next turn.
+  - 0  # Misadventure! All other players can only move forward 7 on their next turn.
   - 0  # Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
   - 1  # Adventurous turning point! Everyone gets to choose which way to move on their next go.
   - 0  # Lucky venture! You get a really big commission until your next turn!
@@ -181,6 +181,9 @@ ventureCards:
 authors:
   - name: mask1n
 changelog:
+  - version: 4
+    changed:
+      - Venture card 115 replaced with Venture card 9
   - version: 3
     added:
       - Bad Venture Music
