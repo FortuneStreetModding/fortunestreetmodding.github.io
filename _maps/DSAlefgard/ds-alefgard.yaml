@@ -11,7 +11,6 @@ salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: ds-alefgard
 background: bg107
-mapIcon: p_bg_107
 music:
   download: 
     - https://nikkums.io/cswt/BGM/DSAlefgard.music.zip

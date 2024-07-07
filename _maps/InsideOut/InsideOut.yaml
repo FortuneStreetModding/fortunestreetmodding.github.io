@@ -15,7 +15,7 @@ frbFile1: insideOut0
 frbFile2: insideOut1
 background: bg901fixed
 bgmId: "BGM_CASINO_BLOCK"
-mapIcon: bg901fixed
+mapIcon: p_bg_901
 tourMode:
   bankruptcyLimit: 3
   opponent1: Alena
