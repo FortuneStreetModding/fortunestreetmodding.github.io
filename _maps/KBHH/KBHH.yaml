@@ -4,11 +4,11 @@ desc:
   en: A haunted, shapeshifting labyrinth of King Boo's own design, meant to hide his treasure from the living. The passageway in contains a message...Trespassers beware! It waits for you behind door 3, then 2, then 1, now the haunt has just begun
 ruleSet: Standard
 theme: Mario
-initialCash: 2500
-targetAmount: 28000
-baseSalary: 300
+initialCash: 2400
+targetAmount: 25000
+baseSalary: 250
 salaryIncrement: 200
-maxDiceRoll: 6
+maxDiceRoll: 7
 frbFiles:
 - KBHH1a
 - KBHH1b
@@ -144,6 +144,14 @@ tourMode:
   opponent3: Alena
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - repurposed a backstreet square to be a stockbroker that's only accessable by going through doors not connected to the bank isle
+      - Included a gold backstreet that shifts locations with each frb and takes players to the bank island
+      - lowered the total path count for each frb
+      - swapped out event card 92 with 119 and lowered the target to 25k, start cash to 2400, base salary to 250
+      - gave each door it's own color and the doors now shift outward with each board stateB and board stateC formation, helping players to know which door was already used in a previous state
+      - swapped a venture card square with the switch, now players can travel to the bank by landing on the switch on the mainland
   - version: 1
     added: 
       - Initial Release
@@ -205,7 +213,7 @@ ventureCards:
   - 1  #  50 Venture on! Move forward the same number of squares again.
   - 1  #  51 Venture on! Move forward 1 square more.
   - 0  #  52 Venture on! Move forward another 2 squares.
-  - 0  #  53 Venture through space! Zoom over to the bank!
+  - 1  #  53 Venture through space! Zoom over to the bank!
   - 0  #  54 Venture through space! Pay 100G to zoom straight to the bank!
   - 1  #  55 Venture on! Roll the die again and move forward (with an invitation to browse thrown in!).
   - 0  #  56 Venture on! Roll the die again and move forward (with a half-price special offer thrown in!).
@@ -244,13 +252,13 @@ ventureCards:
   - 0  #  89 Freebie! All players take a Suit Yourself card!
   - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
   - 0  #  91 Cameo adventure! A healslime appears!
-  - 1  #  92 Cameo adventure! Lakitu appears!
+  - 0  #  92 Cameo adventure! Lakitu appears!
   - 0  #  93 Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 0  #  94 Freebie! Take a Diamond!
   - 0  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
   - 1  #  96 Misadventure! All players scramble to another player's location!
   - 0  #  97 Stock rise venture! Increase stock value by 20% in a district of your choice.
-  - 1  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
+  - 0  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
   - 0  #  99 Freebie! What's inside...?
   - 0  # 100 Freebie! Take a Suit Yourself card!
   - 0  # 101 Special bonus! Your shops all grow by 21%!
@@ -271,7 +279,7 @@ ventureCards:
   - 0  # 116 Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
   - 0  # 117 Adventurous turning point! Everyone gets to choose which way to move on their next go.
   - 0  # 118 Lucky venture! You get a really big commission until your next turn!
-  - 0  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
+  - 1  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
   - 0  # 120 Misadventure! You drop your wallet and lose 20% of your ready cash!
   - 0  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
   - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
