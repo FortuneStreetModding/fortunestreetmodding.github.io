@@ -8,7 +8,7 @@ initialCash: 2000
 targetAmount: 20000
 baseSalary: 180
 salaryIncrement: 150
-maxDiceRoll: 7
+maxDiceRoll: 9
 frbFiles:
 - mpss_ppbc_FRB00
 - mpss_ppbc_FRB01
@@ -90,6 +90,11 @@ changelog:
       - Board has been renamed from "Princess Peach's Birthday Cake" to "Peach's Birthday Cake"
       - Some music tracks have been changed
       - Remaining music tracks had their sample rate reduced to 32000 to reduce filesize
+  - version: 3
+    changed:
+      - Max dice roll now 9
+      - Altered the placement of the suits in a few of the later board states 12-15
+      - The properties in the inner circle now connects to districts in the center circle and the two outer sides
 authors:
   - name: phellen007
   - name: McKrak
