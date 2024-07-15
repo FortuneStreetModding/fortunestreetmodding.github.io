@@ -1,6 +1,5 @@
 ---
 import type { MapDescriptorExtended } from '~/lib/getboards';
-import { isoDate } from '~/lib/utils';
 interface Props {
   board: MapDescriptorExtended;
 }
@@ -52,13 +51,19 @@ const { board } = Astro.props;
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
       <div class="fw-bold small">Last Updated</div>
-      {isoDate(new Date(board.lastUpdated))}
+      <script is:inline define:vars={{ lastUpdated: board.lastUpdated }}>document.write(humanReadableDate(new Date(+lastUpdated)));</script>
+      <span class="text-secondary small px-2">
+        <script is:inline define:vars={{ lastUpdated: board.lastUpdated }}>document.write(isoDate(new Date(+lastUpdated)));</script>
+      </span>
     </div>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-start">
     <div class="ms-2 me-auto">
       <div class="fw-bold small">Uploaded</div>
-      {isoDate(new Date(board.uploadDate))}
+      <script is:inline define:vars={{ uploadDate: board.uploadDate }}>document.write(humanReadableDate(new Date(+uploadDate)));</script>
+      <span class="text-secondary small px-2">
+        <script is:inline define:vars={{ uploadDate: board.uploadDate }}>document.write(isoDate(new Date(+uploadDate)));</script>
+      </span>
     </div>
   </li>
 </ul>
