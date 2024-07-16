@@ -22,7 +22,7 @@ import Layout from '~/layouts/layout.astro';
       const params = getUrlParams();
       if (params.view) {
           // Construct the new URL using the 'view' parameter
-          const targetUrl = '/boards/' + encodeURIComponent(params.view);
+          const targetUrl = '/boards/' + encodeURIComponent(params.view.toLowerCase());
           // Redirect to the target URL
           window.location.href = targetUrl;
       } else {
@@ -32,7 +32,7 @@ import Layout from '~/layouts/layout.astro';
   const params = getUrlParams();
   const element = document.getElementById('redirect-link') as HTMLAnchorElement;
   if (params.view) {
-    element.href = '/boards/' + encodeURIComponent(params.view);
+    element.href = '/boards/' + encodeURIComponent(params.view.toLowerCase());
   } else {
     element.innerText = 'View parameter is missing.';
   }

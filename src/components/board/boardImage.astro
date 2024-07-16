@@ -1,7 +1,6 @@
 ---
 
 import type { MapDescriptorExtended } from '~/lib/getboards';
-import { daysAgo, humanReadableDate, isoDate } from '~/lib/utils';
 interface Props {
   board: MapDescriptorExtended;
   link: boolean;
@@ -162,13 +161,15 @@ const { board, link, imageHeight } = Astro.props;
   </span>
 )}
 <img class="card-img-top mapCard-image-background" style={`height: ${imageHeight}`} src={`/images/backgrounds/${board.background}.webp`} loading="lazy" />
-{ daysAgo(new Date(board.uploadDate)) < 30 && (
+{ Date.now() - board.uploadDate < 30 * 24 * 60 * 60 * 1000 && (
   <div class="top-right-absolute">
-    <div class="badge bg-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title={`Uploaded: ${(isoDate(new Date(board.uploadDate)))}`}>New</div>
+    <div class="badge bg-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-date={board.uploadDate} data-titletemplate={"Uploaded: [date]"}>New</div>
   </div>
 )}
 <div class="bottom-left-absolute">
-  <div class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title={(isoDate(new Date(board.lastUpdated)))}>Updated: {humanReadableDate(new Date(board.lastUpdated))}</div>
+  <div class="badge bg-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-date={board.lastUpdated} data-titletemplate={"[date]"}>
+    Updated: <script define:vars={{ lastUpdated: board.lastUpdated }}>document.write(humanReadableDate(new Date(+lastUpdated)));</script>
+  </div>
 </div>
 <div class="bottom-right-absolute">
   {board.authors?.map((author) => (
@@ -176,6 +177,11 @@ const { board, link, imageHeight } = Astro.props;
   ))}
 </div>
 <script>
+  document.querySelectorAll('[data-titletemplate]').forEach((element) => {
+    const el = element as HTMLElement;
+    el.dataset.bsTitle = el.dataset.titletemplate?.replace("[date]", isoDate(new Date(+el.dataset.date!)));
+  })
+
   import { Tooltip } from "bootstrap";
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const _tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new Tooltip(tooltipTriggerEl))
