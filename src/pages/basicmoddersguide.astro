@@ -21,12 +21,14 @@ import Layout from '~/layouts/layout.astro';
 "> Download Fortune Avenue for macOS</a>
         <a href="https://github.com/emukidid/cleanrip/releases/tag/2.2.0" class="btn btn-primary my-2" download="CleanRip-v2.2.0.zip
 "> Download CleanRip for Homebrew Channel</a>
+        <a href="https://wii.hacks.guide/cios" class="btn btn-primary my-2">(MUST BE DONE IN ORDER, CIOS FIRST)cIOS</a>
+        <a href="https://wii.hacks.guide/wii-loaders#usb-loader-gx" class="btn btn-primary my-2">(MUST BE DONE IN ORDER, CIOS FIRST)USB Loader GX</a>
           </p>
           <p></p>
         </div>
       </div>
       <div class="card mx-auto" style="max-width:50rem">
-        <div class="card-header">Step 1</div> 
+        <div class="card-header">Step 1 (Ripping)</div> 
         <div class="card-body">
           <p class="card-text">
     In order to rip a Wii disc, a storage device with more than 4.38 GiB of free space is recommended. However, by dividing the disc into chunks, an SD card or USB with even a single gibibyte of free space is sufficient.
@@ -41,7 +43,7 @@ CleanRip will split the ripped disc file with more than 4 GiB in file size regar
         </div>
       </div>
       <div class="card mx-auto" style="max-width:50rem">
-        <div class="card-header">Step 2</div>
+        <div class="card-header">Step 2 (Board Making)</div>
         <div class="card-body">
           <p class="card-text">
             Open Fortune Avenue. Press Control/Command-N. Now, to add tiles (Unless you
@@ -67,6 +69,24 @@ CleanRip will split the ripped disc file with more than 4 GiB in file size regar
             until you have a folder for each board. Choose a board you want to replace and replace its .frb with the one you got from Fortune Avenue, and open
             the board's .yaml in this site's .yaml editor, and refer to the .yaml guide below to make a .yaml for your board, then save it so the original board 
             is replaced almost completely by your files.
+          </p> 
+          <p class="card-text">
+          <a href="https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/wiki/CSMM-User-Manual#understanding-the-yaml-file" class="btn btn-primary my-2"> .yaml Guide </a>
+          </p>
+          <p></p>
+        </div>
+    </div>
+      <div class="card mx-auto" style="max-width:50rem">
+        <div class="card-header">Step 4 (CSMM)</div>
+        <div class="card-body">
+          <p class="card-text">
+            Open CSMM, and press Control/Command-I, then import your .iso. Then choose a board and import the .yaml file in that board's folder (whether custom
+            or vanilla). Once you are done, Click Tools → Save map list (*.csv). A save prompt will appear, allowing you to save the instructions for importing 
+            your maps as a .csv table. Next time you make a mod with CSMM, instead of importing each board one at a time, you can just click Tools → Load map 
+            list (*.csv), locate the .csv you just made, and all the boards will be imported automatically. Now click File - Export to ISO/WFBS and when saving, 
+            change the file extension from .iso to .wfbs. Make a folder in the USB you jailbroke the Wii with named "wfbs" and add ANOTHER folder inside it named "Fortune Street [ST7E01]"
+            and add the .wbfs from CSMM into that folder, plug it back into your Wii, open the Homebrew Channel, then USB Loader GX, and finally find your Fortune Street in USB Loader...
+            grand drumroll...... RUN IT! Go ahead and play it, you have put so much work into this thing, so play it!
           </p> 
           <p class="card-text">
           <a href="https://github.com/FortuneStreetModding/fortunestreetmodding.github.io/wiki/CSMM-User-Manual#understanding-the-yaml-file" class="btn btn-primary my-2"> .yaml Guide </a>
