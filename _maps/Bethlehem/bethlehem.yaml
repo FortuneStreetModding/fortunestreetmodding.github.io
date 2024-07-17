@@ -1,4 +1,3 @@
----
 name:
   en: Star of Bethlehem
 desc:
@@ -11,7 +10,7 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: bethlehem
-background: bg009alt
+background: bethlehem
 mapIcon: bethlehem
 districtNames:
   en:
@@ -23,25 +22,21 @@ districtNames:
   - Seville
   - Milan
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Bethlehem.music.zip
-    - https://drive.google.com/u/2/uc?id=1y3foqfgCT5yNdUic90ypmlVTgsOYGSw-&export=download&confirm=1
-  map: MagicAndWeapons.50
-  stock: CrossExamination.50
-  ventureCards: todayatschool.50
-  auction: madness.50
-  targetMet: hitthetech.50
-  win: railgunt.50
-  guestAppear:
-  guestLeave:
-  badVentureCard:
-  takeAbreak:
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
-  forcedBuyout:
-  domination:
-  bankruptcy:
+  map: BethlehemMedley.43
+  stock: CrossExamination
+  ventureCards: ModernWeapons.40
+  auction: madness
+  targetMet: hitthetech
+  win: railgunt
+  memoryBlock: A_todayatschool.40
+  dartOfGold: A_todayatschool.40
+  roundTheBlocks: A_todayatschool.40
+  roundTheBlocksWin: 
+  roundTheBlocks777: 
+  slurpodromeSelect: A_todayatschool.40
+  slurpodromeRace: A_PanicShort
+  slurpodromeStart: 
+  slurpodromeWin: 
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -50,6 +45,24 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 6
+    added:
+      - One more square in Milan district, moved Vacant Plot there
+    changed:
+      - Original Milan Vacant Plot changed to Venture Square
+      - Lower event square changed to event 72
+  - version: 5
+    added:
+      - Arcade music
+  - version: 4
+    changed:
+      - Changed map music to 20 minute medley
+      - Intro cam fixed
+  - version: 3
+    added:
+      - Custom 2D background
+    changed:
+      - Venture Card Music
   - version: 1
     added: 
       - Initial Release
@@ -185,4 +198,3 @@ ventureCards:
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

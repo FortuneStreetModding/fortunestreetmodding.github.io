@@ -1,4 +1,3 @@
----
 name:
   en: Enne-san Board 02-A
 desc:
@@ -14,7 +13,7 @@ frbFile1: Ennesan02A
 background: grid_violet
 mapIcon: Enne02A
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan02A.music.zip
     - https://drive.google.com/u/0/uc?id=1h6s5Wvjc2PoccB2h2gu1RtRDxNs1ChUD&export=download
   map: Map_Ennesan2A.45
@@ -59,7 +58,7 @@ changelog:
     added:
       - Music additions
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san
@@ -292,4 +291,3 @@ shopNames:
     96: Initial Value 960
     97: Initial Value 970
     98: Vacant plot
-...

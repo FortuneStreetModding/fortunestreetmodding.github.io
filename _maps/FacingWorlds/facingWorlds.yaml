@@ -1,9 +1,8 @@
----
 name:
   en: Facing Worlds
 desc:
-  en: In this map you need to go to each side to gather all 4 suits. Taking the warp is a good shortcut, if you are lucky enough to land on it. The Event Squares are an alternative though they are also risky since you can end up helping your opponents instead. (Note that this board can crash on console)
-  de: Auf dieser Karte muss man zu jeder Seite gehen um alle 4 Farben zu sammeln. Wenn du Glück hast, kannst du mithilfe von einem Warp schnell auf die andere Seite kommen. Die Ereignisfelder sind eine riskante Alternative, da sie anstatt dir zu helfen, auch deinen Gegnern helfen kann.
+  en: On this board you need to go to each side to gather all 4 suits. (Note that this board can crash on console)
+  de: Man muss auf beide Seiten gelangen um alle 4 Farben zu sammeln. (Diese Karte kann auf der Konsole abstürzen)
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
@@ -167,6 +166,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 9
+    changed:
+      - shortened description
   - version: 8
     changed:
       - fixed pathing regression
@@ -235,4 +237,3 @@ notes: |
     - [AeoN - UT Victory Theme Concept 2](https://soundcloud.com/deshaadman/ut-victory-theme-concept-2)
   - Domination
     - [Necto Ulin - City Intro UT99 Remix](https://soundcloud.com/usekator/necto-ulin-city-intro-ut99-remix)
-...

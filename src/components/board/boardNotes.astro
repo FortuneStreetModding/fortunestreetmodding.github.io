@@ -1,0 +1,10 @@
+---
+import type { MapDescriptorExtended } from '~/lib/getboards';
+interface Props {
+  board: MapDescriptorExtended;
+}
+const { board } = Astro.props;
+---
+{board.notes && (
+  <div class={`card-body mapInfo b-${board.slug}`} set:html={board.notesHtml}></div>  
+)}

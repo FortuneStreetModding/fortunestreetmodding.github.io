@@ -1,4 +1,3 @@
----
 name:
   en: Enne-san Board 15
 desc:
@@ -6,33 +5,34 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1600
-targetAmount: 16000
-baseSalary: 300
-salaryIncrement: 100
+targetAmount: 15000
+baseSalary: 325
+salaryIncrement: 125
 maxDiceRoll: 6
 frbFile1: Ennesan15
 background: grid_bluegreen
 mapIcon: Enne15
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan15.music.zip
-    - https://drive.google.com/u/0/uc?id=1r7oUNgWPLsdUW6bXuZTfLJti9_y1rxRf&export=download
-  map: Map_Ennesan15.50
-  stock: Stock_Ennesan15.70
+    - https://drive.google.com/u/0/uc?id=1O4gXKIyJFS-YwsFMmZHj9umwAT4rvlOC&export=download
+  map: Ennesan15_Map.45
+  stock: Stock_grid.70
   ventureCards: Venture_Ennesan11.45
-  auction:
+  auction: Auction_grid.55
   targetMet: Targetmet_Ennesan15.40
-  win: Win_Ennesan5.40
+  win: Ennesan10_Win.40
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak: ME_HOLIDAY_ISDS.60
-  promotionMii: mp6star
-  promotionMario: mp6star
-  promotionDragonQuest: classchange.75
+  takeAbreak: takeAbreak_grid.45
+  promotionMii: Promotion_grid.40
+  promotionMario: Promotion_grid.40
+  promotionDragonQuest: Promotion_grid.40
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
-  bankruptcy: Bankrupt_Ennesan.40
+  bankruptcy: Bankrupt_grid.40
+  memoryBlock: Arcade_grid.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1600
@@ -41,8 +41,24 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Changed the effect of the event square under the bank, where you can earn diamonds, to buy yourself card for 100G.
+      - Shop values in some shops changed.
+  - version: 4
+    changed:
+      - Reduced shop value and initial shop price for District H.
+      - Changed some music
+  - version: 3
+    changed:
+      - Reduce target amount from 16000 to 15000
+  - version: 2
+    changed:
+      - Changed shop values for some shops
+      - Increased base salary from 300 to 325
+      - Increased salary increment from 100 to 125
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san
@@ -271,8 +287,4 @@ shopNames:
     92: Initial Value 920
     93: Initial Value 930
     94: Initial Value 940
-    95: Initial Value 1650
-    96: Initial Value 1800
-    97: Initial Value 2000
     98: Vacant plot
-...

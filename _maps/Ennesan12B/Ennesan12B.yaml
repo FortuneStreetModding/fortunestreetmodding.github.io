@@ -1,4 +1,3 @@
----
 name:
   en: Enne-san Board 12-B
 desc:
@@ -17,7 +16,7 @@ frbFile4: Ennesan12B_4
 background: grid_bluegreen
 mapIcon: Enne12B
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan12B.music.zip
     - https://drive.google.com/u/2/uc?id=1yVIuvjyZ86A4S0DWgx1oY62F5wjT7ZXO&export=download
   map: Map_Ennesan12B.35
@@ -44,6 +43,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 7
+    changed:
+      - Changed so that one large triangle cannot be looped when in state 3.
+      - Fixed Path bug with large triangle above at state 3.
   - version: 6
     changed:
       - Fixed soft lock issue
@@ -69,7 +72,7 @@ changelog:
     changed:
       - Changed background to grid_bluegreen
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san
@@ -302,4 +305,3 @@ shopNames:
     96: Initial Value 960
     97: Initial Value 970
     98: Vacant plot
-...

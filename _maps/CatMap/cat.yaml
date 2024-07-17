@@ -1,4 +1,3 @@
----
 name:
   en: Cat Map
   de: Katzenkarte
@@ -269,7 +268,7 @@ changelog:
       - Starting Cash has been raised from 2240 to 2400, since there are now more shops on the map and 2240 was a strange number. It originally was unintentionally inherited from the base game board overwritten.
     removed:
       - Crashing bug can no longer be triggered. Previously if someone chose to pass through both whisker doors in the same roll (rolling 8 from one of the exposed cyan shops), then say NO I DO NOT WISH TO STOP, the game would crash. It is no longer possible to travel the entire mouth to pass through 2 doors, since the design of the mouth is now 9 tiles long.
-  - version: 2021.02.05 (AKA "OG Cat Map")
+  - version: 2021.02.05
     added:
       - Venture card table
     removed: 
@@ -288,4 +287,3 @@ changelog:
 authors:
   - name: Logg
     url: https://github.com/Hubcapp
-...

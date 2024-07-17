@@ -1,4 +1,3 @@
----
 name:
   en: Hotel
 desc:
@@ -22,9 +21,10 @@ tourMode:
 mutators:
   rollShopPriceMultiplier:
     maxRoll: 6
-  shopPriceMultiplier:
+  shopPrice:
     numerator: 2
     denominator: 7
+    affectShopRank: true
 districtNames:
   en:
     - President
@@ -36,7 +36,8 @@ districtNames:
     - Royal
     - L'Etoile
 notes: |
-  - https://sketchfab.com/3d-models/cybercity-2099-v2-3b61335c2a004a9ea31c8dab59471222
+  Based on the [1993 version of Hotel](http://www.hotelboardgame.joomlafree.it/index.php/editions/boardgames/1993-eu)
+  ![Board Image.](board.jpg)
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -167,10 +168,13 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    changed: 
+      - Rebalanced some shop values
+      - Changed the event square to a buy suit-yourself card
   - version: 1
     added: 
       - Initial Release
 authors:
   - name: Deflaktor
     url: https://github.com/Deflaktor
-...

@@ -1,4 +1,3 @@
----
 name:
   en: Freeway Remix
 desc:
@@ -8,14 +7,14 @@ theme: Mario
 initialCash: 3000
 targetAmount: 20000
 baseSalary: 300
-salaryIncrement: 100 
+salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: is2-freeway-remix
 background: bg002
 mapIcon: freeway
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/Freeway.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/IS2FreewayRemix.music.zip
     - https://drive.google.com/u/0/uc?id=10mA1GUne2X24hEfIXDWQdJ9I5kpiHjMA&export=download
   map: BGM_MAP_FREEWAY_IS2R.60
   stock: BGM_STOCK_IS2R.60
@@ -169,6 +168,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 5
+    changed:
+      - Increased salary increment from 100 to 200
   - version: 4
     changed:
       - Increased starting cash from 2000 to 3000
@@ -187,4 +189,3 @@ notes: |
   - The venture card set has been taken from Yoshi's Island (DS).
 tags:
   - Redux
-...

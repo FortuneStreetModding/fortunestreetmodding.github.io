@@ -1,0 +1,87 @@
+---
+import type { MapDescriptorExtended } from '~/lib/getboards';
+interface Props {
+  board: MapDescriptorExtended;
+}
+const { board } = Astro.props;
+---
+<style is:global>
+  .de:checked ~ .lang :not(.de) {
+    visibility: hidden
+  }
+  .en:checked ~ .lang :not(.en) {
+    visibility: hidden
+  }
+  .es:checked ~ .lang :not(.es) {
+    visibility: hidden
+  }
+  .fr:checked ~ .lang :not(.fr) {
+    visibility: hidden
+  }
+  .it:checked ~ .lang :not(.it) {
+    visibility: hidden
+  }
+  .jp:checked ~ .lang :not(.jp) {
+    visibility: hidden
+  }
+  .row.lang {
+    display: grid;
+    float: left;
+  }
+  .row.lang > * {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .btn.btn-lang-tiny {
+    padding: 0.75rem 0.375rem;
+    line-height: 0;
+    float: right;
+    border: 0;
+  }
+</style>
+{(Object.keys(board.name).length > 1 || Object.keys(board.desc).length > 1) && (
+  <>
+    <input class="btn-check en" type="radio" name={`lang-${board.slug}`} id={`lang-en-${board.slug}`} autocomplete="off" checked />
+    <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-en-${board.slug}`}>🇬🇧</label>
+    {(board.name.de || board.desc.de) && (
+      <input class="btn-check de" type="radio" name={`lang-${board.slug}`} id={`lang-de-${board.slug}`} autocomplete="off" />
+      <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-de-${board.slug}`}>🇩🇪</label>
+    )}
+    {(board.name.fr || board.desc.fr) && (
+      <input class="btn-check fr" type="radio" name={`lang-${board.slug}`} id={`lang-fr-${board.slug}`} autocomplete="off" />
+      <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-fr-${board.slug}`}>🇫🇷</label>
+    )}
+    {(board.name.it || board.desc.it) && (
+      <input class="btn-check it" type="radio" name={`lang-${board.slug}`} id={`lang-it-${board.slug}`} autocomplete="off" />
+      <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-it-${board.slug}`}>🇮🇹</label>
+    )}
+    {(board.name.es || board.desc.es) && (
+      <input class="btn-check es" type="radio" name={`lang-${board.slug}`} id={`lang-es-${board.slug}`} autocomplete="off" />
+      <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-es-${board.slug}`}>🇪🇸</label>
+    )}
+    {(board.name.jp || board.desc.jp) && (
+      <input class="btn-check jp" type="radio" name={`lang-${board.slug}`} id={`lang-jp-${board.slug}`} autocomplete="off" />
+      <label class="btn btn-outline-primary btn-lang-tiny" for={`lang-jp-${board.slug}`}>🇯🇵</label>
+    )}
+  </>
+)}
+<div class="row lang">
+  <h4 class:list={['card-title en', {'de': !board.name.de, 'fr': !board.name.fr, 'it': !board.name.it, 'es': !board.name.es, 'jp': !board.name.jp}]}>
+    { board.name.en }
+  </h4>
+  { board.name.de && <h4 class="card-title de">{ board.name.de }</h4> }
+  { board.name.fr && <h4 class="card-title fr">{ board.name.fr }</h4> }
+  { board.name.it && <h4 class="card-title it">{ board.name.it }</h4> }
+  { board.name.es && <h4 class="card-title es">{ board.name.es }</h4> }
+  { board.name.jp && <h4 class="card-title jp">{ board.name.jp }</h4> }
+</div>
+<div class="row lang" style="width: 100%">
+  <p class:list={['card-title en', {'de': !board.desc.de, 'fr': !board.desc.fr, 'it': !board.desc.it, 'es': !board.desc.es, 'jp': !board.desc.jp}]}>
+    { board.desc.en }
+  </p>
+  { board.desc.de && <p class="card-text de">{ board.desc.de }</p> }
+  { board.desc.fr && <p class="card-text fr">{ board.desc.fr }</p> }
+  { board.desc.it && <p class="card-text it">{ board.desc.it }</p> }
+  { board.desc.es && <p class="card-text es">{ board.desc.es }</p> }
+  { board.desc.jp && <p class="card-text jp">{ board.desc.jp }</p> }
+</div>

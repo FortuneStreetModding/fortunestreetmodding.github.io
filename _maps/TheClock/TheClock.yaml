@@ -1,4 +1,3 @@
----
 name:
   en: The Clock
 desc:
@@ -28,6 +27,9 @@ tourMode:
 authors:
   - name: RyanDCB2
 changelog:
+  - version: 2
+    changed:
+      - Change the two vacant plots on the bridge to regular properties and adjust their shop values to be appropriate
   - version: 1
     added:
       - Initial release
@@ -160,4 +162,3 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

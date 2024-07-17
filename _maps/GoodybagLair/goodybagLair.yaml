@@ -1,4 +1,3 @@
----
 name:
   en: Goodybag Lair
   de: Klunkerbeutelstätte
@@ -150,6 +149,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    changed:
+      - Rebalanced shop values accross the board
   - version: 2
     added:
       - Venture card table
@@ -161,4 +163,3 @@ changelog:
 authors:
   - name: Deflaktor
     url: https://github.com/Deflaktor
-...

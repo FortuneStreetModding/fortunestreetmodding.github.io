@@ -1,4 +1,3 @@
----
 name:
   en: Shell Isle (IS2)
 desc:
@@ -14,9 +13,9 @@ frbFile1: 2-01-kaigara
 background: bg105
 mapIcon: shell
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/ShellIsle.music.zip
-    - https://drive.google.com/u/0/uc?export=download&confirm=4Rai&id=1FChNFZhNab_c0stbTeWEVyVqjwpM6SMc
+  download:
+    - https://nikkums.io/cswt/BGM/ShellIsland.music.zip
+    - https://drive.google.com/uc?export=download&id=18yiuuVOujsqFJnqhHjFQRIEw_Ly90hGE&confirm=1
   map: BGM_MAP_SHELLISLE_IS2R.60
   stock: BGM_STOCK_IS2R.60
   ventureCards: BGM_CHANCECARD_IS2R.60
@@ -33,6 +32,15 @@ music:
   forcedBuyout: ME_5BUY_IS2.58
   domination:
   bankruptcy: ME_BANKRUPTCY_IS2.60
+  memoryBlock: A_BGM_ARCADE_IS2.75
+  dartOfGold: A_BGM_ARCADE_IS2.75
+  roundTheBlocks: A_BGM_ARCADE_IS2.75
+  roundTheBlocksWin: ME_ARCADEWIN_IS2.75
+  roundTheBlocks777: ME_ARCADE777_IS2.75
+  slurpodromeRace:
+  slurpodromeSelect: A_BGM_ARCADE_IS2.75
+  slurpodromeStart:
+  slurpodromeWin: ME_ARCADE777_IS2.75
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -41,6 +49,9 @@ tourMode:
   opponent3: Carver
   clearRank: 2
 changelog:
+  - version: 6
+    added:
+      - Arcade Music
   - version: 5
     changed:
       - Corrected initial price for square numbers 1 and 20 to the correct value.
@@ -53,7 +64,7 @@ changelog:
     changed:
       - Fixed bankruptcy music
   - version: 2
-    changed: 
+    changed:
       - Ported over to new .yaml file format.
     added:
       - Stock music
@@ -64,9 +75,9 @@ changelog:
       - Take a Break ME
       - Promotion ME
       - Forced Buyout ME
-      - Bankruptcy ME      
+      - Bankruptcy ME
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia
@@ -202,4 +213,3 @@ ventureCards:
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 tags:
   - IS2
-...

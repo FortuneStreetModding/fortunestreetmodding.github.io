@@ -1,4 +1,3 @@
----
 name:
   en: Gladius Towers
 desc:
@@ -13,11 +12,6 @@ maxDiceRoll: 7
 frbFile1: GlaTow
 background: bg102
 mapIcon: gladiusicon
-music:
-  download:
-    - https://nikkums.io/cswt/BGM/Gladius.music.zip
-    - https://drive.google.com/u/2/uc?id=1NdaSmpXu4MKC3tnl75DxU5Lt1FA3EcW0&export=download
-  map: gladiustheme
 tourMode:
   bankruptcyLimit: 1
   opponent1: Toad
@@ -25,6 +19,12 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 5
+    removed:
+      - Custom music (due to bad loop)
+  - version: 4
+    changed:
+      - Square 74 changed from venture square to change-of-suit square
   - version: 3
     changed:
       - Board structure to prevent easy looping and suits
@@ -168,4 +168,3 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

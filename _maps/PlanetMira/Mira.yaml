@@ -1,4 +1,3 @@
----
 name:
   en: Planet Mira
 desc:
@@ -15,24 +14,32 @@ background: bg009alt
 mapIcon: mira
 music:
   download: 
-    - https://nikkums.io/cswt/BGM/Mira.music.zip
-    - https://drive.google.com/u/2/uc?export=download&confirm=vUc-&id=1gHzNzj6WGEMVqfX28ApI7Y2OOqu57aps
-  map: noctilum_day.50
+    - https://nikkums.io/cswt/BGM/PlanetMira.music.zip
+  map: MiraMedley.40
   stock: bladehome.50
   ventureCards: briefing.50
   auction: wirfliegen.60
-  targetMet: no_ex01.50
+  targetMet: raTEoREkiSImeAra1.50
   win: yourvoice.50
-  guestAppear:
-  guestLeave:
-  badVentureCard: 
-  takeAbreak: X-Encoutner.50
-  promotionMii: X-Levelup.80
-  promotionMario: X-Levelup.80
-  promotionDragonQuest: X-Levelup.80
-  forcedBuyout:
-  domination:
-  bankruptcy:
+  guestAppear: A_X-event.80
+  guestLeave: A_X-fanfare.80
+  badVentureCard: X-Encounter.50
+  takeAbreak: X-Encounter.50
+  promotionMii: A_X-Levelup.80
+  promotionMario: A_X-Levelup.80
+  promotionDragonQuest: A_X-Levelup.80
+  forcedBuyout: X-buyout.50
+  domination: A_X-Levelup.80
+  bankruptcy: X-bankruptcy.80
+  roundTheBlocksWin: A_X-Levelup.80
+  roundTheBlocks777: A_X-fanfare.80
+  roundTheBlocks: A_comical
+  memoryBlock: A_comical
+  dartOfGold: A_comical
+  slurpodromeSelect: A_comical
+  slurpodromeStart: A_X-event.80
+  slurpodromeRace: A_uncontrollable
+  slurpodromeWin: A_X-fanfare.80
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -41,6 +48,12 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Changed map music to a 25 minute medley
+      - Fixed arcade music
+    added:
+      - Arcade music (with A_ prefix)
   - version: 4
     changed:
       - Theme reverted to DragonQuest
@@ -199,4 +212,3 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

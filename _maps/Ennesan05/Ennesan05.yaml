@@ -1,4 +1,3 @@
----
 name:
   en: Enne-san Board 05
 desc:
@@ -14,7 +13,7 @@ frbFile1: Ennesan05
 background: grid_bluegreen
 mapIcon: Enne05
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan05.music.zip
     - https://drive.google.com/u/0/uc?id=1uHXhCTn8EoeQet2lDZLUB2Xo72iSSNkC&export=download&confirm=1
   map: Map_Ennesan5.80
@@ -86,7 +85,7 @@ changelog:
       - Target amount was reduced from 30,000 to 28,000.
       - Salary increment increased from 150 to 200.
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san
@@ -319,4 +318,3 @@ shopNames:
     96: Initial Value 960
     97: Initial Value 970
     98: Vacant plot
-...

@@ -1,4 +1,3 @@
----
 name:
   en: Crystal Tower (Portable)
 desc:
@@ -14,8 +13,8 @@ frbFile1: crystalp
 background: bg008alt
 mapIcon: crystalp
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/CrystalTower.music.zip
+  download:
+    - https://nikkums.io/cswt/BGM/PortableCrystal.music.zip
     - https://drive.google.com/u/2/uc?id=1ksd8iWEeJKp2h4mAwMSOavHOFrJh7nea&export=download
   map: BGM_MAP_CRYSTAL_PORTABLE.55
   stock: BGM_STOCK_SPECIAL.60
@@ -42,7 +41,7 @@ tourMode:
   clearRank: 1
 changelog:
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Sophilautia
@@ -178,4 +177,3 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 tags:
   - Portable
-...

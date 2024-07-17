@@ -1,51 +1,90 @@
----
 name:
   en: Enne-san Board 16
 desc:
-  en: When the switch is pressed, the warp destination of the green pipe changes to an island corresponding to an event square where you can get a specific Suit.
+  en: When the switch is pressed, the warp destination of the green pipe changes to an island corresponding to an event square where you can get a specific Suit. Please don't use B-Button selecting while playing! Recommended for human players.
 ruleSet: Standard
 theme: Mario
-initialCash: 2500
+initialCash: 3600
 targetAmount: 25000
-baseSalary: 450
-salaryIncrement: 200
-maxDiceRoll: 4
-frbFile1: Ennesan16_1
-frbFile2: Ennesan16_2
-frbFile3: Ennesan16_3
-frbFile4: Ennesan16_4
+baseSalary: 600
+salaryIncrement: 150
+maxDiceRoll: 5
+frbFiles:
+- Ennesan16_1
+- Ennesan16_2
+- Ennesan16_3
+- Ennesan16_4
+- Ennesan16_5
+- Ennesan16_6
 background: grid_violet
 mapIcon: Enne16
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan16.music.zip
-    - https://drive.google.com/u/0/uc?id=113UDma_hf-ohIcP0Qm6F6ooKe910Xhoz&export=download
-  map: Map_Ennesan16.35
-  stock: Stock_Ennesan15.70
+    - https://drive.google.com/u/0/uc?id=1GBTwLLo8QwbX8qC7tdeD4CwvSJv3FUhL&export=download
+  map: Ennesan16_Map.35
+  stock: Stock_grid.70
   ventureCards: Venture_Ennesan11.45
-  auction:
-  targetMet: Targetmet_Ennesan8.45
-  win: Win_Ennesan16.40
+  auction: Auction_grid.55
+  targetMet: Targetmet_Ennesan16.40
+  win: Ennesan1_Win.45
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak: ME_HOLIDAY_ISDS.60
-  promotionMii: mp6star
-  promotionMario: mp6star
-  promotionDragonQuest: classchange.75
+  takeAbreak: takeAbreak_grid.45
+  promotionMii: Promotion_grid.40
+  promotionMario: Promotion_grid.40
+  promotionDragonQuest: Promotion_grid.40
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
-  bankruptcy: Bankrupt_Ennesan.40
+  bankruptcy: Bankrupt_grid.40
+  roundTheBlocks: Arcade_grid.60
+  roundTheBlocksWin: Promotion_grid.40
+  roundTheBlocks777: RTB777_SlurWin_grid.80
+  memoryBlock: Arcade_grid.60
+  dartOfGold: Arcade_grid.60
+  slurpodromeSelect: Arcade_slurS_grid.75
+  slurpodromeStart: A_X-event.80
+  slurpodromeRace: slurRace_grid.65
+  slurpodromeWin: RTB777_SlurWin_grid.80
 tourMode:
   bankruptcyLimit: 1
-  initialCash: 2500
   opponent1: Yoshi
   opponent2: Alena
   opponent3: Bianca
   clearRank: 2
+mutators:
+  rollShopPriceMultiplier:
+    maxRoll: 5
+  shopPrice:
+    numerator: 1
+    denominator: 4
+    affectShopRank: true
 changelog:
+  - version: 3
+    added:
+      - Board state 6
+  - version: 2
+    added:
+      - Arcade Music
+      - mutator
+    changed:
+      - Board states increased from 4 to 5.
+      - Vacant plots have been changed into an event square.
+      - The location of the Take a Break square has been changed from overlapping the corner of the island to adjacent to the corner of the island.
+      - Districts A, B, C, and D changed from 5 shops to 4 shops.
+      - After District E, 1 shops district now constitutes a district with 4 shops.
+      - The total number of districts has been reduced from 12 to 6.
+      - Changed shop prices at some shops.
+      - maxDiceRoll increased from 4 to 5.
+      - Changed the effect of some event squares
+      - Initial cash increased from 2500 to 3600
+      - Base salary increased from 450 to 600
+      - Salary increment reduced from 200 to 150
+      - Changed some music
+      - Changed mapIcon
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san
@@ -228,7 +267,7 @@ shopNames:
     46: Initial Value 460
     47: Initial Value 470
     50: Initial Value 500
-    71: Initial Value 710
+    60: Initial Value 600
+    70: Initial Value 700
     97: Initial Value 990
     98: Vacant plot
-...

@@ -2,3 +2,5 @@ termcolor
 colorama
 jsonschema
 pyyaml
+bytechomp
+requests

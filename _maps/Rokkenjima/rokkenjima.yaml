@@ -1,8 +1,7 @@
----
 name:
   en: Rokkenjima
 desc:
-  en: Welcome to Rokkenjima, island of the Ushiromiya Family and domain of the Golden Witch Beatrice. Seek the Golden Land and claim dominion over the witch's gold before the hands of the clock reach midnight. Based on the location from Umineko When They Cry.
+  en: Welcome to Rokkenjima. Seek the Golden Land and claim dominion over the witch's gold before the hands of the clock reach midnight. Based on the location from Umineko When They Cry. Please don't use B-Button selecting while playing! Recommended for human players.
 ruleSet: Standard
 theme: Mario
 initialCash: 3500
@@ -14,7 +13,7 @@ frbFile1: rokkenjima0
 frbFile2: rokkenjima1
 frbFile3: rokkenjima2
 frbFile4: rokkenjima3
-background: rokkenjima
+background: bg102
 mapIcon: rokkenjima
 districtNames:
   en:
@@ -31,22 +30,33 @@ districtNames:
   - Mansion 4
   - Kinzo Study
 music:
-  map: endlessnine.40
+  download: 
+    - https://nikkums.io/cswt/BGM/Rokkenjima.music.zip
+  map: UminekoMedley.40
   stock: deadangle.50
   ventureCards: blackliliana.50
   auction: dreadofthegrave.50
-  targetMet: Worldenddominator.40
-  win: tsubasa.50
-  guestAppear:
+  targetMet: lastendconductor.40
+  win: HappinessOfMarionette
+  guestAppear: 
   guestLeave:
-  badVentureCard:
+  badVentureCard: ahaha.50
   takeAbreak: ahaha.50
-  promotionMii:
-  promotionMario:
-  promotionDragonQuest:
+  promotionMii: A_UminekoPromotion
+  promotionMario: A_UminekoPromotion
+  promotionDragonQuest: A_UminekoPromotion
   forcedBuyout: clash.50
   domination: horror.50
   bankruptcy: candles.50
+  memoryBlock: A_StuffedDoll
+  dartOfGold: A_MonochromeClock
+  roundTheBlocks: A_MonochromeClock
+  roundTheBlocksWin: A_UminekoPromotion
+  roundTheBlocks777: A_Happiness
+  slurpodromeRace: A_TsubasaPinomix
+  slurpodromeSelect: A_MonochromeClock
+  slurpodromeStart: A_UminekoRaceStart
+  slurpodromeWin: A_UminekoPromotion
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -55,6 +65,10 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 3
+    added:
+      - Custom 3D background
+      - New music (including 25 minute medley)
   - version: 2
     changed:
       - Inital cash changed from 3000 to 3500
@@ -193,4 +207,3 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-...

@@ -1,0 +1,55 @@
+---
+import type { MapDescriptorExtended } from '~/lib/getboards';
+interface Props {
+  board: MapDescriptorExtended;
+}
+const { board } = Astro.props;
+---
+{board.changelog && (
+  <details class="mb-4">
+    <summary class="accordion-header accordion-button">Show Changelog</summary>
+    <div class="accordion-body nav-tabs">
+      {board.changelog.map((change) => (
+        <>
+        <div class="fw-bold nav-link border mt-2" style="display:inline-block">Version <span class="badge bg-secondary">{ change.version }</span></div>
+        {change.added && (
+          <div class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Added</div>
+              <ul class="list-group">
+                {change.added.map((added)=> (
+                  <li>{ added }</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+        {change.changed && (
+          <div class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Changed</div>
+              <ul class="list-group">
+                {change.changed.map((changed)=> (
+                  <li>{ changed }</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+        {change.removed && (
+          <div class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">Removed</div>
+              <ul class="list-group">
+                {change.removed.map((removed)=> (
+                  <li>{ removed }</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+        </>
+      ))}
+    </div>
+  </details>
+)}

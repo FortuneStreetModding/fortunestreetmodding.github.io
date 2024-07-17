@@ -1,4 +1,3 @@
----
 name:
   en: Dragonlord's Castle (30th)
 desc:
@@ -13,10 +12,10 @@ maxDiceRoll: 6
 frbFile1: 30th-dragonlords-castle
 background: bg007
 mapIcon: dragonlord
-music: 
-  download: 
-    - https://nikkums.io/cswt/BGM/Dragonlord.music.zip
-    - https://drive.google.com/u/0/uc?export=download&confirm=BeFt&id=1IC_B7vPLTwKgBfU2vP89Rsiys_g2PhJ6
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/30thDragonlordsCastle.music.zip
+    - https://drive.google.com/uc?export=download&id=1ZMpcXj2AhXPSa2lJ9S0M98hT44p3Yfcw&confirm=1
   map: BGM_MAP_DRAGONLORD.65
   stock: BGM_STOCK_30TH.60
   ventureCards: BGM_CHANCECARD_30TH.70
@@ -33,15 +32,30 @@ music:
   forcedBuyout: ME_5_BUY_30TH.60
   domination: ME_MONOPOLY_30TH.55
   bankruptcy:
+  memoryBlock: A_BGM_MEMORY_30th.100
+  dartOfGold: A_BGM_DART_30th.100
+  roundTheBlocks: A_BGM_ROUND_30th.120
+  roundTheBlocksWin: ME_ARCADEWIN_30th.135
+  roundTheBlocks777: ME_ARCADE777_30th.100
+  slurpodromeRace: BGM_RACE_30th.105
+  slurpodromeSelect: A_BGM_ROUND_30th.120
+  slurpodromeStart:
+  slurpodromeWin: ME_ARCADE777_30th.100
 changelog:
+  - version: 3
+    added:
+      - Arcade Music
   - version: 2
-    removed: Venture card 85 to bring total to 64
+    removed:
+      - Venture card 85 to bring total to 64
   - version: 1
+    added:
+      - Initial Release
 tourMode:
   bankruptcyLimit: 1
-  opponent1: Platypunk
-  opponent2: Carver
-  opponent3: Alena
+  opponent1: Patty
+  opponent2: Alena
+  opponent3: Stella
   clearRank: 2
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
@@ -179,5 +193,4 @@ notes: |
   - The venture card set has been taken from Mario Circuit.
 tags:
  - 30th
-...
 

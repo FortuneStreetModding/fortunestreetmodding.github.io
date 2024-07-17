@@ -1,4 +1,3 @@
----
 name:
   en: Colossus (Wii Easy)
 desc:
@@ -25,6 +24,9 @@ tourMode:
   opponent3: Peach
   clearRank: 1
 changelog:
+  - version: 3
+    changed:
+      - Fixed board crash or softlock when pressing switches in games built with CSMM 5.0.0 or later
   - version: 2
     changed:
       - Corrected incorrectly assigned districts and added districts F and G
@@ -163,4 +165,3 @@ tags:
   - FSWii
 notes: |
   Original easy board from Fortune Street Wii, changed to standard mode.
-...

@@ -1,4 +1,3 @@
----
 name:
   en: Enne-san Board 02-B
 desc:
@@ -14,7 +13,7 @@ frbFile1: Ennesan02B
 background: grid_blue
 mapIcon: Enne02B
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan02B.music.zip
     - https://drive.google.com/u/0/uc?id=13aJ0ZL42lnA6oChgKCuo8ZCqoRqXq2AG&export=download
   map: Map_Ennesan2B.45
@@ -60,7 +59,7 @@ changelog:
       - Changed some venture cards
       - Changed to prevent warp to spade and heart suits
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san
@@ -293,4 +292,3 @@ shopNames:
     96: Initial Value 960
     97: Initial Value 970
     98: Vacant plot
-...

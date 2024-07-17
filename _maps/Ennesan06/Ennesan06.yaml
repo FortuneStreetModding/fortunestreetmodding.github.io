@@ -1,4 +1,3 @@
----
 name:
   en: Enne-san Board 06
 desc:
@@ -14,25 +13,26 @@ frbFile1: Ennesan06
 background: grid_lightblue
 mapIcon: Enne06
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan06.music.zip
-    - https://drive.google.com/u/0/uc?id=1OMfzr8ClSdBeY9II6Dck0W2HkM1i4FZM&export=download
-  map: Map_Ennesan6.40
-  stock: Stock_Ennesan.35
+    - https://drive.google.com/u/0/uc?id=1_nTN_RbDuHvWEFAb2xOi0i9uAptNoC2y&export=download
+  map: Ennesan6_Map.40
+  stock: Stock_grid.70
   ventureCards: Venture_Ennesan.45
-  auction:
+  auction: Auction_grid.55
   targetMet: Targetmet_Ennesan4.40
-  win: Win_Ennesan4.40
+  win: Ennesan4_Win.40
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak:
-  promotionMii: mp6star
-  promotionMario: mp6star
-  promotionDragonQuest: classchange.75
+  takeAbreak: takeAbreak_grid.45
+  promotionMii: Promotion_grid.40
+  promotionMario: Promotion_grid.40
+  promotionDragonQuest: Promotion_grid.40
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
-  bankruptcy: Bankrupt_Ennesan.40
+  bankruptcy: Bankrupt_grid.40
+  memoryBlock: Arcade_grid.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1800
@@ -41,6 +41,16 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 9
+    changed:
+      - When passing through the event square way, where shop values increase or decrease, one can now proceed toward the outside of the board in addition to proceeding to the bank.
+      - Changed the effect of the event square adjacent to the spade suit from 106 to 100 venture cards.
+  - version: 8
+    changed:
+      - Changed some music
+  - version: 7
+    changed:
+      - Change stock music
   - version: 6
     changed:
       - Changed the effect of Event Square 39 to Venture Card 106
@@ -72,7 +82,7 @@ changelog:
     added:
       - Background Music
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san
@@ -305,4 +315,3 @@ shopNames:
     96: Initial Value 960
     97: Initial Value 970
     98: Vacant plot
-...
