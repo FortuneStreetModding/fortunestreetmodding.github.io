@@ -18,8 +18,8 @@ mapIcon: clock
 music:
   download:
   - https://nikkums.io/cswt/BGM/theclocktower.music.zip
-  - https://drive.google.com/uc?export=download&id=1trIfps-ygAigBv7FeF4dCpnq56sIuuN3&confirm=1
-  map: clockMAP
+  - https://drive.google.com/uc?export=download&id=1FSkhkDIO02vYEIxIx0uyUHTQWX99g6R8
+  map: slimeguyspaydayexpressMAP.50
   ventureCards: clocktower_AHIT_VENT
   targetMet: clocktower_MH2_TARGET
   stock: clocktower_SMO_STOCK
