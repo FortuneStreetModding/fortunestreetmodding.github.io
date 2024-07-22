@@ -28,7 +28,7 @@ music:
   auction: clocktower_GSTD_AUCT
 switchRotationOriginPoints:
   - x: 0
-    y: 0
+    y: -112
 tourMode:
   bankruptcyLimit: 1
   opponent1: Peach
