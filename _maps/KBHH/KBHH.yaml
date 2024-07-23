@@ -144,6 +144,11 @@ tourMode:
   opponent3: Alena
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - adjusted prices in district 7
+      - moved the switch on the mainland towards the center of the board for 12 of the frbs
+      - centalized the location of the gold pipe in a few of the board states
   - version: 2
     changed:
       - repurposed a backstreet square to be a stockbroker that's only accessable by going through doors not connected to the bank isle
