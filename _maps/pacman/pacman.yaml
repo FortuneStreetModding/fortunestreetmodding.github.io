@@ -7,14 +7,16 @@ theme: Mario
 initialCash: 2000
 targetAmount: 20000
 baseSalary: 200
-salaryIncrement: 100
+salaryIncrement: 200
 maxDiceRoll: 6
 frbFiles:
   - pacman
 background: grid_blue
 mapIcon: pacman
 music:
-  download: https://drive.google.com/uc?export=download&id=1OB2X3Yomd7VbXg-F3oRQTltqwknMZJGP&confirm=1
+  download: # GOOGLE DRIVE DIRECT LINK TO ZIP CONTAINING MUSIC, CAN DELETE THIS TEXT WHILE TESTING
+    - https://nikkums.io/cswt/BGM/pacman.music.zip
+    - https://drive.google.com/uc?export=download&id=1OB2X3Yomd7VbXg-F3oRQTltqwknMZJGP&confirm=1
   map:
   - clubmix.50
   stock: # CAN_DELETE_THIS_ENTIRE_SECTION_IF_UNNEEDED # looping
