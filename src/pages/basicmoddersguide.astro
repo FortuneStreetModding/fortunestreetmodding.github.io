@@ -38,6 +38,17 @@ import Layout from '~/layouts/layout.astro';
           </p>
           <p class="card-text">
 CleanRip will split the ripped disc file with more than 4 GiB in file size regardless to fit the FAT, FAT16, or FAT32 file systems. These file systems have a max file size of 4 GiB. To remedy this, it is recommended to rip discs to a USB external NTFS formatted storage device (as Wii cannot read NTFS formatted SD cards). The NTFS file system has a theoretical max file size of 16 EiB (Exabyte), or 16,777,216 GiB.
+Joining Split Files
+
+A disc image in split parts will need to be joined before dolphin can read it. A simple command from command prompt and terminal can do it! Use the example command for your system. Use the "cd" command to change directory to the file's location. The example command assumes CleanRip's "GAMEID.part#.iso" filename nomenclature, and creates "GAMEID.iso". The part files can be deleted after the joined file is created.
+
+Windows
+cd <directory>
+copy /b GAMEID.part?.iso GAMEID.iso
+
+Linux / macOS / Android
+cd <directory>
+cat GAMEID.part*.iso > GAMEID.iso
           </p>
           <p></p>
         </div>
