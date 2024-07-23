@@ -21,12 +21,12 @@ mapIcon: suitsmap
 music:
   download:
     - https://nikkums.io/cswt/BGM/suitsmap.music.zip
-    - https://drive.google.com/uc?id=1vfatO-pVL3ipqtp4XMYPr2WNbo6ntG4S&export=download
+    - https://drive.google.com/uc?export=download&id=1rPO_GFipjKZ-zPWkXGta2k2ZgWvtQUmN
   map: 
-  - PPBC_supermario3d_MAP016
-  - PPBC_mariopartytop100_MAP012
-  - PPBC_papermario_MAP04
-  - PPBC_supermariorpg_MAP05
+  - mpss_ppbc_MAP16
+  - mpss_ppbc_MAP03
+  - mpss_ppbc_MAP04
+  - mpss_ppbc_MAP05
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -34,6 +34,9 @@ tourMode:
   opponent3: Daisy
   clearRank: 1
 changelog:
+  - version: 7
+    changed:
+      - Changed the music link, and the tracks for the map music
   - version: 6
     changed:
       - Added 12 new squares to create more routs, new districts, event squares, rotating suit, and a backstreet
