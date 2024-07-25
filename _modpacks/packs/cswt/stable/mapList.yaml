@@ -386,12 +386,12 @@ backgrounds: backgrounds.yml
     KingOfTheHill.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KingOfTheHill.zip
-    luigismansion.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/luigismansion.zip
     KoopaTycoonTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KoopaTycoonTown.zip
+    luigismansion.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/luigismansion.zip
     mp9_magmine.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mp9_magmine.zip
