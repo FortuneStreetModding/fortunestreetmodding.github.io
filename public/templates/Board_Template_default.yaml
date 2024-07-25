@@ -38,25 +38,25 @@ music:
   auction: # looping
   targetMet: # looping
   win: # looping
-  guestAppear: # non-looping - 5-6 seconds
-  guestLeave: # non-looping - 5 seconds
-  badVentureCard: #non-looping - 4 seconds
-  takeAbreak: # non-looping - 4 seconds
-  promotionMii: # non-looping - 4 seconds
-  promotionMario: # non-looping - 4 seconds
-  promotionDragonQuest: # non-looping - 4 seconds
-  forcedBuyout: # non-looping - 3-6 seconds
-  domination: # non-looping - 1-5 seconds
-  bankruptcy: # non-looping - 3-7 seconds
+  guestAppear: # non-looping: 5-6 seconds
+  guestLeave: # non-looping: 5 seconds
+  badVentureCard: #non-looping: 4 seconds
+  takeAbreak: # non-looping: 4 seconds
+  promotionMii: # non-looping: 4 seconds
+  promotionMario: # non-looping: 4 seconds
+  promotionDragonQuest: # non-looping: 4 seconds
+  forcedBuyout: # non-looping: 3-6 seconds
+  domination: # non-looping: 1-5 seconds
+  bankruptcy: # non-looping: 3-7 seconds
   roundTheBlocks: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade # looping
-  roundTheBlocksWin: # non-looping - 4-5 seconds
-  roundTheBlocks777: # non-looping - 7-9 seconds
+  roundTheBlocksWin: # non-looping: 4-5 seconds
+  roundTheBlocks777: # non-looping: 7-9 seconds
   memoryBlock: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade # looping
   dartOfGold: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade # looping
   slurpodromeSelect: THE_FILE_NAME_MUST_BE_PREFIXED_WITH_A_OR_Arcade # looping
-  slurpodromeStart: # non-looping - 2-4 seconds
+  slurpodromeStart: # non-looping: 2-4 seconds
   slurpodromeRace: # looping
-  slurpodromeWin: # non-looping - 7-9 seconds
+  slurpodromeWin: # non-looping: 7-9 seconds
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
