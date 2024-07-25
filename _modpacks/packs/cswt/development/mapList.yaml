@@ -72,6 +72,9 @@ backgrounds: backgrounds.yml
     is3_sushitrain.zip:
       urls:
       - https://nikkums.io/cswt/Maps/is3_sushitrain.zip
+    pacman.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/pacman.zip    
       practiceBoard: true
 1:
   0:
