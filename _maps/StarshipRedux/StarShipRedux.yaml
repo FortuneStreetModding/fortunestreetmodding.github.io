@@ -1,17 +1,7 @@
 name:
   en: Starship Mario Redux
-  de: Raumschiff Mario
-  fr: Vaisseau Mario
-  it: Astronave Mario
-  jp: 星船マリオ
-  es: Astronave Mario
 desc:
-  en: "Starship Mario Redux: I hated the original version of this board, so i made a better one - FatCat67."
-  de: "Raumschiff Mario: Dieses Raumschiff sieht aus wie Mario, der darin gerne durch die Galaxie düst."
-  fr: "Vaisseau Mario\xa0: un vaisseau spatial aux traits de Mario. Ce dernier aime parcourir la galaxie à son bord."
-  it: "Astronave Mario: Mario usa questa nave spaziale con le sue sembianze per spostarsi da un punto all'altro della galassia."
-  jp: 星船マリオ：　マリオの形をした星の船。　マリオを乗せて銀河中を飛びまわる。
-  es: "Astronave Mario: una nave espacial con la forma de Mario, en la que el susodicho recorre la galaxia."
+  en: I hated the original version of this board, so i made a better one
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
@@ -34,7 +24,9 @@ tourMode:
   opponent3: Yoshi
   clearRank: 3
 music:
-  download: https://drive.google.com/uc?export=download&id=1C24uC2iPDPojTfbJA8iO0LtuTjp17k_I
+  download: # GOOGLE DRIVE DIRECT LINK TO ZIP CONTAINING MUSIC, CAN DELETE THIS TEXT WHILE TESTING
+    - https://nikkums.io/cswt/BGM/StarshipRedux.music.zip
+    - https://drive.google.com/uc?export=download&id=1C24uC2iPDPojTfbJA8iO0LtuTjp17k_I
   map: StarshipRedux.110
   targetMet: StarshipGoal.110
   promotionMario: StarshipPromo.100
@@ -49,7 +41,6 @@ music:
   auction: StarshipAuction.70
   stock: StarshipStocks.110
   ventureCards: StarshipVenture.80
-
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
