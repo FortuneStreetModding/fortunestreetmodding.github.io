@@ -96,20 +96,6 @@
     forcedBuyout: facingWorlds_forcedBuyout_victoryConcept2.80
     domination: facingWorlds_domination_introCity.90
     bankruptcy:
-- background: MidgarT
-  mapIcon: midgar
-  name: Midgar Transit
-  download:
-  - https://drive.google.com/uc?export=download&id=1ybfzaoInb5bTzJG5NzG4Z5X5w55S3PmG
-  music:
-    map: J-E-N-O-V-A.70
-    targetMet: Advent_One-Winged_Angel.70
-    promotionMario: fanfare.80
-    promotionDragonQuest: fanfare.80
-    promotionMii: fanfare.80
-    auction: MidgarTAuction.70
-    ventureCards: MidgarTVenture.70
-    stock: MidgarTStock.70
 - background: forestFairies
   name: Forest of Fairies
   download:
