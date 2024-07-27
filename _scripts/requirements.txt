@@ -4,3 +4,4 @@ jsonschema
 pyyaml
 bytechomp
 requests
+dolphin-memory-engine
