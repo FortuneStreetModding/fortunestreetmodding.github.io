@@ -4,11 +4,11 @@ desc:
   en: Welcome to the Star Carnival! Hop on the Carnival Caboose that moves around the board. After 4 switch presses, the direction of the caboose reverses, and the night parade begins!
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2800
+initialCash: 2700
 targetAmount: 20000
 baseSalary: 250
 salaryIncrement: 250
-maxDiceRoll: 6
+maxDiceRoll: 7
 frbFiles:
 - starcarnival1
 - starcarnival2
@@ -64,6 +64,12 @@ tourMode:
   opponent3: Waluigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - adjusted location of the stockbroker and the arcade
+      - made one of the arcades a take a break square
+      - initial cash lowered to 2700
+      - max dice roll increased from 6 to 7
   - version: 1
     added: 
       - Initial Release
