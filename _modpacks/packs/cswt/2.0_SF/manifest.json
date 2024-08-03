@@ -1,12 +1,12 @@
 {
-    "cswt":
+    "cswt_sf":
     {
-        "name":"Custom Street World Tour",
-        "description":"An overhaul modpack containing over 100 new boards",
-        "version":"1.5",
+        "name":"Custom Street World Tour (Streamer Friendly)",
+        "description":"A special version of CSWT with all licensed music removed.",
+        "version":"2.0",
         "entity":"modpack",
         "type":"primary",
-        "release_date":"2024/02/11",
+        "last_updated":"2024/07/25",
         "resources":"cswt"
     }
 }
