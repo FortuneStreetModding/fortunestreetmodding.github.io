@@ -57,6 +57,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Changed venture card 87 to 80
   - version: 2
     changed:
       - Changed to correct background name
@@ -145,14 +148,14 @@ ventureCards:
   - 0  #  77 Freebie! Take five of each district's stocks.
   - 0  #  78 Property venture! You can buy any unowned shop or vacant plot for 200G more than its value.
   - 1  #  79 Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not.
-  - 0  #  80 Freebie! Take a Spade!
+  - 1  #  80 Freebie! Take a Spade!
   - 1  #  81 Misadventure! All other players can only move forward 1 on their next turn.
   - 0  #  82 Freebie! Take a Club!
   - 0  #  83 Dicey adventure! Roll 1/3/5 and warp to a random location. Roll 2/4/6 and everyone else warps.
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 0  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 0  #  88 Misadventure! All other players swap places!
   - 0  #  89 Freebie! All players take a Suit Yourself card!
   - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
