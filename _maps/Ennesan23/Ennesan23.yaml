@@ -65,6 +65,9 @@ mutators:
     denominator: 3
     affectShopRank: true
 changelog:
+  - version: 3
+    changed:
+      - Changed venture card 87 to 22
   - version: 2
     changed:
       - Decreased base salary from 350 to 300
@@ -97,7 +100,7 @@ ventureCards:
   - 1  #  19 Price hike venture! Your shop prices go up by 30% until your next turn.
   - 1  #  20 Revaluation venture! You can expand any one of your shops by 20%.
   - 1  #  21 Random venture! You receive 20 stocks in a district picked at random!
-  - 0  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
+  - 1  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
   - 0  #  23 Revaluation venture! You can expand any one of your shops by 50%.
   - 1  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
   - 1  #  25 Misadventure! Your shop prices halve until your next turn!
@@ -162,7 +165,7 @@ ventureCards:
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 0  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 0  #  88 Misadventure! All other players swap places!
   - 0  #  89 Freebie! All players take a Suit Yourself card!
   - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
