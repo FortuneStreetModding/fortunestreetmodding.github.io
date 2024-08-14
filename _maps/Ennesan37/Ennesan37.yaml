@@ -6,7 +6,7 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 5000
-targetAmount: 40000
+targetAmount: 30000
 baseSalary: 1500
 salaryIncrement: 750
 maxDiceRoll: 7
