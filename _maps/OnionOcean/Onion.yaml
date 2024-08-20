@@ -7,11 +7,6 @@ name:
   es: Onion Ocean
 desc:
   en: Underwater adventures with aquatic life native to Planet Popstar! Hold your breath in case there's danger!
-  de: The star go-karting attraction! The track is quite small, so be careful about how tight you take your turns! [Skylighter, Cylvanis]
-  fr: The star go-karting attraction! The track is quite small, so be careful about how tight you take your turns! [Skylighter, Cylvanis]
-  it: The star go-karting attraction! The track is quite small, so be careful about how tight you take your turns! [Skylighter, Cylvanis]
-  jp: The star go-karting attraction! The track is quite small, so be careful about how tight you take your turns! [Skylighter, Cylvanis]
-  es: The star go-karting attraction! The track is quite small, so be careful about how tight you take your turns! [Skylighter, Cylvanis]
 ruleSet: Standard
 theme: Mario
 initialCash: 1700
