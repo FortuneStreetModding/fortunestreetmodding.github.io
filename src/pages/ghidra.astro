@@ -1,0 +1,250 @@
+---
+import Layout from '~/layouts/layout.astro';
+const isDev = import.meta.env.DEV;
+---
+
+<Layout title="Home" heading="Ghidra Decompilation">
+  <div class="container mt-4">
+    <div class="mb-4">
+      This page allows you to download the current efforts on decompiling the Boom Street <mark>main.dol</mark> file using the Ghidra decompilation project. You
+      need the original <mark>sys/main.dol</mark> and <mark>files/main.sel</mark> files in order to generate the Ghidra Zip File.
+    </div>
+
+    <div class="mb-4 requirements">
+      <h2 class="section-title">Requirements</h2>
+      <ul>
+        <li>
+          Following files from original vanilla extracted Boom Street (ST7P01) game folder:
+          <ul>
+            <li>sys/main.dol</li>
+            <li>files/main.sel</li>
+          </ul>
+        </li>
+        <li>Ghidra 11.1.2 or newer</li>
+        <li><a href="https://github.com/Cuyler36/Ghidra-GameCube-Loader" target="_blank">Ghidra GameCube Loader</a> extension</li>
+      </ul>
+    </div>
+
+    <div class="mb-4">
+      <h2 class="section-title">Download Ghidra Zip File</h2>
+      <form id="downloadForm">
+        <div class="mb-3">
+          <label for="mainDol" class="form-label">Input sys/main.dol file:</label>
+          <input
+            class="form-control"
+            type="file"
+            id="mainDol"
+            accept=".dol"
+            data-checksum="91951bb24deb9dc56bb8feba328a633cbf03271d4f1bf0b58bc4b5160482f1db"
+            required
+          />
+          <div class="invalid-feedback">Please select a valid `sys/main.dol` file.</div>
+        </div>
+        <div class="mb-3">
+          <label for="mainSel" class="form-label">Input files/main.sel file:</label>
+          <input
+            class="form-control"
+            type="file"
+            id="mainSel"
+            accept=".sel"
+            data-checksum="625a43ec3c59494ae5d37391083e65951dbfa6815c9f361ffe554416de2f08e7"
+            required
+          />
+          <div class="invalid-feedback">Please select a valid `files/main.sel` file.</div>
+        </div>
+        <button type="submit" id="btnDownload" class="btn btn-primary">
+          <span class="spinner-border spinner-border-sm" id="loading" style="display: none;" role="status" aria-hidden="true"></span>
+          Download main.gzf
+        </button>
+      </form>
+      <div class="mt-4">
+        <p>Once downloaded, you can import the file into Ghidra.</p>
+      </div>
+    </div>
+
+    <div class="mb-4" style={isDev ? '' : 'display: none;'}>
+      <h2 class="section-title">Create Ghidra Zip One-Time Pad File (.gzf.otp)</h2>
+      <p>This section is for development purposes only.</p>
+      <form id="createForm">
+        <div class="mb-3">
+          <label for="mainDolCreate" class="form-label">Input sys/main.dol file:</label>
+          <input
+            class="form-control"
+            type="file"
+            id="mainDolCreate"
+            accept=".dol"
+            data-checksum="91951bb24deb9dc56bb8feba328a633cbf03271d4f1bf0b58bc4b5160482f1db"
+            required
+          />
+          <div class="invalid-feedback">Please select a valid `sys/main.dol` file.</div>
+        </div>
+        <div class="mb-3">
+          <label for="mainSelCreate" class="form-label">Input files/main.sel file:</label>
+          <input
+            class="form-control"
+            type="file"
+            id="mainSelCreate"
+            accept=".sel"
+            data-checksum="625a43ec3c59494ae5d37391083e65951dbfa6815c9f361ffe554416de2f08e7"
+            required
+          />
+          <div class="invalid-feedback">Please select a valid `files/main.sel` file.</div>
+        </div>
+        <div class="mb-3" style={isDev ? '' : 'display: none;'}>
+          <label for="mainGzfCreate" class="form-label">Input main.gzf file:</label>
+          <input class="form-control" type="file" id="mainGzfCreate" accept=".gzf" required />
+        </div>
+        <button type="submit" id="btnCreate" class="btn btn-primary">
+          <span class="spinner-border spinner-border-sm" id="loadingCreate" style="display: none;" role="status" aria-hidden="true"></span>
+          Create main.gzf.otp
+        </button>
+      </form>
+      <div class="mt-4">
+        <p>Once created, the generated main.gzf.otp file can then be uploaded to <a href="https://github.com/FortuneStreetModding/ghidra-boom-street">GitHub</a></p>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  import { decryptWithKey } from '~/lib/otp';
+import { readFileAsArrayBuffer, computeSHA256, arrayBufferToHex, concatenateKey, encryptWithKey, download } from '~/lib/otp';
+
+  // Download .gzf
+  const mainDolInput = document.getElementById('mainDol') as HTMLInputElement;
+  const mainSelInput = document.getElementById('mainSel') as HTMLInputElement;
+  const buttonDownloadInput = document.getElementById('btnDownload') as HTMLButtonElement;
+  const loadingInput = document.getElementById('loading') as HTMLSpanElement;
+  // Create .gzf.otp
+  const mainDolCreateInput = document.getElementById('mainDolCreate') as HTMLInputElement;
+  const mainSelCreateInput = document.getElementById('mainSelCreate') as HTMLInputElement;
+  const mainGzfCreateInput = document.getElementById('mainGzfCreate') as HTMLInputElement;
+  const loadingCreateInput = document.getElementById('loadingCreate') as HTMLSpanElement;
+  const buttonCreateInput = document.getElementById('btnCreate') as HTMLButtonElement;
+
+  mainDolInput.addEventListener('change', function () {
+    validateFileInput(this as HTMLInputElement);
+  });
+
+  mainSelInput.addEventListener('change', function () {
+    validateFileInput(this as HTMLInputElement);
+  });
+
+  mainDolCreateInput.addEventListener('change', function () {
+    validateFileInput(this as HTMLInputElement);
+  });
+
+  mainSelCreateInput.addEventListener('change', function () {
+    validateFileInput(this as HTMLInputElement);
+  });
+
+  async function validateFileInput(input: HTMLInputElement) {
+    const file = input.files![0];
+    const fileType = input.accept.split(',').map(type => type.replace('.', ''));
+    let isValid = file && fileType.includes(file.name.split('.').pop()!);
+
+    if (isValid) {
+      const expectedChecksum = input.dataset.checksum!;
+      const actualChecksum = arrayBufferToHex(await computeSHA256(await readFileAsArrayBuffer(file)));
+      isValid = expectedChecksum === actualChecksum;
+    }
+
+    if (isValid) {
+      input.classList.remove('is-invalid');
+      input.classList.add('is-valid');
+    } else {
+      input.classList.remove('is-valid');
+      input.classList.add('is-invalid');
+    }
+    return isValid;
+  }
+
+  document.getElementById('downloadForm')!.addEventListener('submit', async function (event) {
+    event.preventDefault();
+    loadingInput.style.display = 'inline-block';
+    buttonDownloadInput.disabled = true;
+    try {
+
+      if (!(await validateFileInput(mainDolInput)) && (await validateFileInput(mainSelInput))) {
+        return;
+      }
+
+      const mainDolFile = mainDolInput.files![0];
+      const mainSelFile = mainSelInput.files![0];
+      const dolContent = await readFileAsArrayBuffer(mainDolFile);
+      const selContent = await readFileAsArrayBuffer(mainSelFile);
+      const gzfOtpContent = await download("/ghidra-boom-street/main.gzf.otp");
+
+      const key = concatenateKey(new Uint8Array(dolContent), new Uint8Array(selContent));
+      const gzfContent = decryptWithKey(gzfOtpContent, key);
+
+      // Convert the content string to a Blob object
+      const blob = new Blob([gzfContent], { type: 'application/octet-stream' });
+
+      // Create an <a> element and set its attributes
+      const a = document.createElement('a');
+      a.style.display = 'none';
+      a.href = URL.createObjectURL(blob);
+      a.download = `boom-street.gzf`;
+
+      // Append the <a> element to the DOM and click on it to trigger the download
+      document.body.appendChild(a);
+      a.click();
+
+      // Remove the <a> element from the DOM
+      document.body.removeChild(a);
+
+      // Clean up the Blob object
+      setTimeout(() => URL.revokeObjectURL(a.href), 1500);
+
+    } finally {
+      loadingInput.style.display = 'none';
+      buttonDownloadInput.disabled = false;
+    }
+  });
+
+  document.getElementById('createForm')!.addEventListener('submit', async function (event) {
+    event.preventDefault();
+    loadingCreateInput.style.display = 'inline-block';
+    buttonCreateInput.disabled = true;
+    try {
+
+      if (!(await validateFileInput(mainDolCreateInput)) && (await validateFileInput(mainSelCreateInput))) {
+        return;
+      }
+
+      const mainDolFile = mainDolCreateInput.files![0];
+      const mainSelFile = mainSelCreateInput.files![0];
+      const mainGzfFile = mainGzfCreateInput.files![0];
+      const dolContent = await readFileAsArrayBuffer(mainDolFile);
+      const selContent = await readFileAsArrayBuffer(mainSelFile);
+      const gzfContent = await readFileAsArrayBuffer(mainGzfFile);
+
+      const key = concatenateKey(new Uint8Array(dolContent), new Uint8Array(selContent));
+      const gzfOtpContent = encryptWithKey(gzfContent, key);
+
+      // Convert the content to a Blob object
+      const blob = new Blob([gzfOtpContent], { type: 'application/octet-stream' });
+
+      // Create an <a> element and set its attributes
+      const a = document.createElement('a');
+      a.style.display = 'none';
+      a.href = URL.createObjectURL(blob);
+      a.download = `main.gzf.otp`;
+
+      // Append the <a> element to the DOM and click on it to trigger the download
+      document.body.appendChild(a);
+      a.click();
+
+      // Remove the <a> element from the DOM
+      document.body.removeChild(a);
+
+      // Clean up the Blob object
+      setTimeout(() => URL.revokeObjectURL(a.href), 1500);
+
+    } finally {
+      loadingCreateInput.style.display = 'none';
+      buttonCreateInput.disabled = false;
+    }
+  });
+</script>
