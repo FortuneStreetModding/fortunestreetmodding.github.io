@@ -70,7 +70,7 @@ music:
   promotionMario: starcarnival_PROMO
   promotionDragonQuest: starcarnival_PROMO
   forcedBuyout: smbw_js_BUYOUT
-  domination: mh3o3_js_DOM
+  domination: ssb_js_DOM
   bankruptcy: starcarnival_LOSE
   roundTheBlocks: A_starcarnival_ROB
   roundTheBlocksWin: starcarnival_ROBWIN
