@@ -26,31 +26,20 @@ backgrounds: backgrounds.yml
     luigismansion.zip:
       urls:
       - https://nikkums.io/cswt/Maps/luigismansion.zip
-    KBHH.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/KBHH.zip
-    slimeguyspaydayexpress.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
     Ennesan29.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan29.zip
-    TheClockTower.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/TheClockTower.zip
-  2:
     theloopsduplidoe.zip:
       urls:
       - https://nikkums.io/cswt/Maps/theloopsduplidoe.zip
-    landorstonksduplidoe.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/landorstonksduplidoe.zip
     mirroredambitionduplidoe.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mirroredambitionduplidoe.zip
     battleborbsduplidoe.zip:
       urls:
       - https://nikkums.io/cswt/Maps/battleborbsduplidoe.zip
+
+  2:
     tightropeduplidoe.zip:
       urls:
       - https://nikkums.io/cswt/Maps/tightropeduplidoe.zip
@@ -60,9 +49,6 @@ backgrounds: backgrounds.yml
     MonopolyUS.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MonopolyUS.zip
-    mpss_ppbc.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/mpss_ppbc.zip
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
@@ -72,9 +58,6 @@ backgrounds: backgrounds.yml
     is3_sushitrain.zip:
       urls:
       - https://nikkums.io/cswt/Maps/is3_sushitrain.zip
-    pacman.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/pacman.zip    
       practiceBoard: true
 1:
   0:
@@ -87,19 +70,16 @@ backgrounds: backgrounds.yml
     Ennesan20.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan20.zip
-    lighthouseisland.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/lighthouseisland.zip
     Ennesan15.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan15.zip
     Ennesan17.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan17.zip
-  1:
     FortuneGateFG1.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
+  1:
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
