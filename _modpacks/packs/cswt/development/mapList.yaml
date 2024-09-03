@@ -13,33 +13,38 @@ backgrounds: backgrounds.yml
     Ennesan32B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan32B.zip
+    Ennesan29.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan29.zip
     Ennesan33.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan33.zip
+  1:
     Ennesan34.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan34.zip
-  1:
+    Ennesan37.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan37.zip
+    Ennesan38.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan38.zip
     MoguMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MoguMap.zip
     luigismansion.zip:
       urls:
       - https://nikkums.io/cswt/Maps/luigismansion.zip
-    Ennesan29.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan29.zip
     theloopsduplidoe.zip:
       urls:
       - https://nikkums.io/cswt/Maps/theloopsduplidoe.zip
+  2:
     mirroredambitionduplidoe.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mirroredambitionduplidoe.zip
     battleborbsduplidoe.zip:
       urls:
       - https://nikkums.io/cswt/Maps/battleborbsduplidoe.zip
-
-  2:
     tightropeduplidoe.zip:
       urls:
       - https://nikkums.io/cswt/Maps/tightropeduplidoe.zip
