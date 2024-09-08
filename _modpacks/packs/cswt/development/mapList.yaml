@@ -1,29 +1,25 @@
 backgrounds: backgrounds.yml
 0:
   0:
-    Ennesan36.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan36.zip
-    Ennesan31C.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan31C.zip
-    Ennesan32B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan32B.zip
-    Ennesan29.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan29.zip
     Ennesan34.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan34.zip
+    Ennesan36.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan36.zip
     Ennesan37.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan37.zip
-
-  1:
     Ennesan38.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan38.zip
+    Ennesan39A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan39A.zip
+    Ennesan39B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan39B.zip
+  1:
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
@@ -31,33 +27,45 @@ backgrounds: backgrounds.yml
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
+    placeholder.zip:
   2:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
       practiceBoard: true
 1:
   0:
-    Ennesan30A.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
-    Ennesan20.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan20.zip
     Ennesan15.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan15.zip
     Ennesan17.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan17.zip
+    Ennesan20.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan20.zip
+    Ennesan29.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan29.zip
+    Ennesan30A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
+    Ennesan31C.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan31C.zip
+  1:
+    Ennesan32B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan32B.zip
     FortuneGateFG1.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
-  1:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
