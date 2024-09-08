@@ -350,6 +350,15 @@ backgrounds: backgrounds.yml
     Ennesan29.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan29.zip
+    Ennesan30B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30B.zip
+    Ennesan32A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan32A.zip
+    Ennesan33.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan33.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
@@ -458,6 +467,9 @@ backgrounds: backgrounds.yml
     starcarnival.zip:
       urls:
       - https://nikkums.io/cswt/Maps/starcarnival.zip
+    SuitsMap.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/SuitsMap.zip
     Bethlehem.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Bethlehem.zip
