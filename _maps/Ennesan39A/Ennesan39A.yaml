@@ -107,6 +107,9 @@ frbFiles:
 background: grid_rainbow
 mapIcon: Enne39A
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/Ennesan39A.music.zip
+    - https://drive.google.com/uc?export=download&id=1x9YkBEY9SODqy7xPvVmeL6lMDjiQl30P&confirm=1
   map: 
   - Ennesan39_Map_1.50
   - Ennesan39_Map_1.50
