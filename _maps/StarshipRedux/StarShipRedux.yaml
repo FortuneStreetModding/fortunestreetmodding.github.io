@@ -26,7 +26,7 @@ tourMode:
 music:
   download: # GOOGLE DRIVE DIRECT LINK TO ZIP CONTAINING MUSIC, CAN DELETE THIS TEXT WHILE TESTING
     - https://nikkums.io/cswt/BGM/StarshipRedux.music.zip
-    - https://drive.google.com/uc?export=download&id=1C24uC2iPDPojTfbJA8iO0LtuTjp17k_I
+    - https://drive.google.com/uc?export=download&id=1jWO0hIgTWbNsIh_aatju-eGQvvKXX2oO
   map: StarshipRedux.110
   targetMet: StarshipGoal.110
   promotionMario: StarshipPromo.100
