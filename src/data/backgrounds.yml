@@ -1159,3 +1159,9 @@
     slurpodromeStart: mpss_SRP_START
     slurpodromeRace: mpss_SRP_RACE
     slurpodromeWin: mpss_SRP_WIN
+- background: bg109alt
+  name: bg109alt
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg109alt.background.zip
+  - https://drive.google.com/uc?export=download&id=1XaLrNqEii-nXiunwKXkFBqNsEtzic-ET&confirm=1
+  mapIcon: bg109alt
