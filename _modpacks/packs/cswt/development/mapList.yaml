@@ -1,6 +1,12 @@
 backgrounds: backgrounds.yml
 0:
   0:
+    Ennesan30A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
+    Ennesan32B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan32B.zip
     Ennesan37.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan37.zip
@@ -10,25 +16,25 @@ backgrounds: backgrounds.yml
     Ennesan39A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan39A.zip
+    Ennesan40.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan40.zip
+  1:
+    Ennesan42A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan42A.zip
+    Ennesan42B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan42B.zip
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
-    Ennesan30A.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
-    Ennesan32B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan32B.zip
-  1:
     FortuneGateFG1.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
     TheClock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClock.zip
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
     placeholder.zip:
   2:
     placeholder.zip:
