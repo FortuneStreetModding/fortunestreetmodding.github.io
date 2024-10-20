@@ -9,6 +9,7 @@ targetAmount: 20000
 baseSalary: 600
 salaryIncrement: 100
 maxDiceRoll: 6
+mapIcon: bg008alt
 frbFiles:
   - StarshipRedux
 background: bg008
@@ -40,6 +41,13 @@ music:
   auction: StarshipAuction.70
   stock: StarshipStocks.110
   ventureCards: StarshipVenture.80
+changelog:
+  - version: 1
+    added:
+      - Initial Release
+authors:
+  - name: FatCat32
+    url: 
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
