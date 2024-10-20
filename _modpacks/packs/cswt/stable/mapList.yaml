@@ -353,12 +353,24 @@ backgrounds: backgrounds.yml
     Ennesan30B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan30B.zip
+    Ennesan31A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan31A.zip
     Ennesan32A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan32A.zip
     Ennesan33.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan33.zip
+    Ennesan34.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan34.zip
+    Ennesan36.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan36.zip
+    Ennesan39B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan39B.zip
     Ennesan41.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan41.zip  
