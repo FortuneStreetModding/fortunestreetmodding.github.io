@@ -49,6 +49,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Fix misalignment of coordinates on upper side of center circle
   - version: 5
     added:
       - Arcade Music

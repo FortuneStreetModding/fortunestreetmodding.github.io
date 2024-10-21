@@ -48,6 +48,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - District C and District D initial shop values were lowered across the board
   - version: 2
     changed:
       - theme and shape is the same, the rest of the board is entirely different
