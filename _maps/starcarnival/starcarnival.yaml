@@ -64,6 +64,9 @@ tourMode:
   opponent3: Waluigi
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Fixed crash when moving with magmalice in board state 5
   - version: 2
     changed:
       - adjusted location of the stockbroker and the arcade
