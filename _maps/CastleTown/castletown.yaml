@@ -4,7 +4,7 @@ desc:
   en: Inspired by the town from The Legend of Zelda Twilight Princess. Market prices are a little wild, so be careful! And watch out for that pesky anarcho-capitalist baby, Malo! (Board can have occasional stuttering, especially on Wii hardware)
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 1800
+initialCash: 2000
 targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 200
@@ -43,6 +43,13 @@ shopNames:
   en:
     1: Malo Mart
 changelog:
+  - version: 5
+    changed:
+      - Remove upper and lower Backstreets
+      - Change upper Backstreet to Venture Square
+      - Lower Backstreet changed to Event Square where you can get yourself card.
+      - Change Venture Square to Change of Suits at the four corners of the large rectangle.
+      - Initial cash increase from 1800 to 2000
   - version: 4
     changed: 
       - Shop name update
