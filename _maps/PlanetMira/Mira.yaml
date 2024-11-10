@@ -48,6 +48,12 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Various shop price changes
+      - Square in middle of Primordia N changed to Stockbroker
+    added:
+      - Unique shop names based on locations from Xenoblade X
   - version: 5
     changed:
       - Changed map music to a 25 minute medley
@@ -69,7 +75,7 @@ changelog:
       - Initial Release
 authors:
   - name: Sophilautia
-    url: https://twitter.com/Sophilautia
+    url: https://sophilautia.carrd.co/
 districtNames:
   en:
   - Primordia S
@@ -83,6 +89,48 @@ districtNames:
   - Sylvalum E
   - Cauldros W
   - Cauldros E
+shopNames:
+  en:
+    10: East Gate Plain
+    11: Stickstone Rise
+    13: West Gate Plain
+    15: Dead Man's Gulch
+    16: North Janpath Plain
+    17: Oblivia Ingress
+    18: Lake Ciel
+    19: Badr Basin
+    20: Decapotamon
+    21: Central Ibra Ravine
+    22: Everwhelm Falls
+    23: Shivering Sands
+    24: Lake Basel
+    25: North Coast
+    27: Biahno Lake
+    28: Divine Roost South
+    29: Rustpool Banks
+    30: Yawning Giant
+    31: Northpointe Cove
+    32: Cleansing Spring
+    33: Cauldros Threshold
+    34: Mount M'gando
+    35: Weeping Whitewood
+    36: Scholes Battlegrounds
+    37: Elephant's Trunk
+    38: White Phosphor Lake
+    39: Biahno Hills
+    40: Scabland Fortress
+    41: Dragonbone Promontory
+    42: Drongo Caravan
+    43: Divine Roost East
+    46: South Coast
+    47: Anvil Sandplain
+    50: M'gando Gorge
+    51: Serpentine Pass
+    52: Divine Roost West
+    53: Delusians North Summit
+    75: Ruined City of O'rrh Sim
+    80: Sunset Falls
+    90: Divine Roost North
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
