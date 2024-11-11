@@ -13,7 +13,7 @@ desc:
   jp: Wii Uには素晴らしいゲームがたくさんありました。 その eShop は 2023 年 3 月 27 日についにオフラインになり、10 年以上の寿命を迎えました。
   es: La Wii U tenía una plétora de juegos maravillosos. Su eShop finalmente se desconectó el 27 de marzo de 2023, lo que le dio una vida útil de más de 10 años.
 ruleSet: Standard
-theme: Mario
+theme: DragonQuest
 initialCash: 2000
 targetAmount: 20000
 baseSalary: 350
