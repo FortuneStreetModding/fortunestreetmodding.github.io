@@ -50,6 +50,9 @@ tourMode:
   opponent3: Toad
   clearRank: 1
 changelog:
+  - version: 3
+    changed:
+      - Reworked WiiU into being a larger board with many Magmalices.
   - version: 2
     changed:
       - Reduced loading time when landing in an arcade
