@@ -10,11 +10,9 @@ baseSalary: 300
 salaryIncrement: 250
 maxDiceRoll: 8
 frbFile1: Mira
-background: bg009alt
+background: mira
 mapIcon: mira
 music:
-  download: 
-    - https://nikkums.io/cswt/BGM/PlanetMira.music.zip
   map: MiraMedley.40
   stock: bladehome.50
   ventureCards: briefing.50
@@ -48,6 +46,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 6
+    added:
+      - Unique 3D Background of Planet Mira
   - version: 6
     changed:
       - Various shop price changes

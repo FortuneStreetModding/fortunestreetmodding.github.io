@@ -1165,3 +1165,8 @@
   - https://nikkums.io/cswt/Backgrounds/bg109alt.background.zip
   - https://drive.google.com/uc?export=download&id=1XaLrNqEii-nXiunwKXkFBqNsEtzic-ET&confirm=1
   mapIcon: bg109alt
+- background: mira
+  name: Plant Mira
+  download:
+  - https://nikkums.io/cswt/Backgrounds/mira.background.zip
+  mapIcon: mira
