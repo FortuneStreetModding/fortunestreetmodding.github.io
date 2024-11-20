@@ -11,7 +11,7 @@ salaryIncrement: 200
 maxDiceRoll: 6
 frbFile1: is30-rabbitland
 bgmId: BGM_MAP_PEACH
-background: bg003
+background: bg101
 mapIcon: bunny
 music: 
   download: 
@@ -181,6 +181,9 @@ ventureCards:
 authors:
   - name: mask1n
 changelog:
+  - version: 5
+    changed:
+      - Background changed to Castle Trodain for accuracy
   - version: 4
     changed:
       - Venture card 115 replaced with Venture card 9
