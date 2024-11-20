@@ -10,7 +10,7 @@ baseSalary: 500
 salaryIncrement: 200
 maxDiceRoll: 8
 frbFile1: palamecia
-background: bg008alt
+background: bg109alt
 mapIcon: palamecia
 music:
   download: 
@@ -48,6 +48,9 @@ tourMode:
   opponent3: Peach
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Changed background to bg109alt
   - version: 3
     added:
       - Arcade music
