@@ -10,7 +10,7 @@ baseSalary: 300
 salaryIncrement: 100
 maxDiceRoll: 6
 frbFile1: CandyLand
-background: bg901
+background: mpss_ppbc
 mapIcon: CandyLand
 music:
   download:
@@ -49,6 +49,9 @@ tourMode:
   opponent3: Birdo
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Changed background to Princess Peach's Birthday Cake
   - version: 3
     added:
       - Promotion Music

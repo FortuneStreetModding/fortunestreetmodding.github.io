@@ -13,7 +13,7 @@ frbFile1: portabletree
 frbFile2: portabletree
 frbFile3: portabletree
 frbFile4: portabletree
-background: bg109
+background: bg109alt
 mapIcon: portabletree
 music:
   download:
@@ -52,6 +52,9 @@ tourMode:
   opponent3: Platypunk
   clearRank: 1
 changelog:
+  - version: 5
+    changed:
+      - Changed background to bg109alt
   - version: 4
     added:
       - Guest Leave Music
