@@ -32,9 +32,9 @@ backgrounds: backgrounds.yml
     FortuneGateFG1.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
-    TheClock.zip:
+    StarshipRedux.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/TheClock.zip
+      - https://nikkums.io/cswt/Maps/StarshipRedux.zip
     placeholder.zip:
   2:
     placeholder.zip:
