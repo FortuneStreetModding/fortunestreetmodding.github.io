@@ -4,37 +4,27 @@ backgrounds: backgrounds.yml
     Ennesan30A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan30A.zip
-    Ennesan32B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan32B.zip
-    Ennesan37.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan37.zip
-    Ennesan38.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan38.zip
-    Ennesan39A.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan39A.zip
-    Ennesan40.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan40.zip
-  1:
     Ennesan42A.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan42A.zip
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan42A.zip
     Ennesan42B.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan42B.zip
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan42B.zip
     arrowhead.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/arrowhead.zip
+        urls:
+        - https://nikkums.io/cswt/Maps/arrowhead.zip
     FortuneGateFG1.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
+        urls:
+        - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
     StarshipRedux.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/StarshipRedux.zip
+        urls:
+        - https://nikkums.io/cswt/Maps/StarshipRedux.zip
+  1:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
   2:
     placeholder.zip:
@@ -52,7 +42,6 @@ backgrounds: backgrounds.yml
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
-
   1:
     placeholder.zip:
     placeholder.zip:
@@ -60,7 +49,6 @@ backgrounds: backgrounds.yml
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
-
   2:
     placeholder.zip:
     placeholder.zip:
