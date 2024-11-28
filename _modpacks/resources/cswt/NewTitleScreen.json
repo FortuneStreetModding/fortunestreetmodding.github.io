@@ -1,23 +1,23 @@
 [
     {
         "from": "game/game_sequence.cmpres",
-        "to": "files/game/langDE/game_sequence.cmpres"
+        "to": "files/game/langDE/game_sequence_DE.cmpres"
     },
     {
         "from": "game/game_sequence.cmpres",
-        "to": "files/game/langEN/game_sequence.cmpres"
+        "to": "files/game/langEN/game_sequence_EN.cmpres"
     },
     {
         "from": "game/game_sequence.cmpres",
-        "to": "files/game/langES/game_sequence.cmpres"
+        "to": "files/game/langES/game_sequence_ES.cmpres"
     },
     {
         "from": "game/game_sequence.cmpres",
-        "to": "files/game/langFR/game_sequence.cmpres"
+        "to": "files/game/langFR/game_sequence_FR.cmpres"
     },
     {
         "from": "game/game_sequence.cmpres",
-        "to": "files/game/langIT/game_sequence.cmpres"
+        "to": "files/game/langIT/game_sequence_IT.cmpres"
     },
     {
         "from": "game/game_sequence.cmpres",
