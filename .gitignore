@@ -37,6 +37,7 @@ _site/
 *.arc
 !_modpacks/resources/*/*/*.arc
 *.scene
+!_modpacks/resources/*/*/*.scene
 
 ### Binary Files ###
 *.zip

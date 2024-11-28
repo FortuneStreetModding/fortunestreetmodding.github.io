@@ -1,0 +1,2579 @@
+Root:
+  __Type: Root
+  Resource:
+    __Type: Resource
+  SetupFlag:
+    __Type: SetupFlag
+    UseShadow: 1
+    UseMirror: 0
+    UseBloom: 1
+    UseDof: 0
+    UseDof2: 1
+    UseBoolean: 0
+  FogSetting:
+    __Type: FogSetting
+    FogNum: 0
+    FogType: 5
+    ZStart: 0
+    ZEnd: 10000
+    Color:
+      __Type: Color
+      R: 150
+      G: 180
+      B: 255
+  BloomSetting:
+    __Type: BloomSetting
+    ProcType: 2
+    Border: 100
+    AddShift: 2
+    SoftShiftX: 6.45
+    SoftShiftY: 6.40
+    Color:
+      __Type: RGBA
+      R: 200
+      G: 200
+      B: 250
+      A: 25
+    SoftKN: 4
+  Dof2Setting:
+    __Type: Dof2Setting
+    Enable: 1
+    Fnum: 1.800000
+    FocalLength: 16
+    S: 0.033000
+    Blend: 1
+    FrontBlurMax: 0.000000
+    Front: 16
+    BackBlurMax: 0.45
+    Back: 16
+  LightSetting:
+    __Type: LightSetting
+    Light:
+      __Type: Light2
+      LightNum: 0
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 255
+        G: 255
+        B: 255
+      Dir:
+        __Type: Vector
+        X: 0.484965
+        Y: -0.468927
+        Z: -0.738184
+    Light:
+      __Type: Light2
+      LightNum: 1
+      Enable: 1
+      IsSpecular: 1
+      Color:
+        __Type: Color
+        R: 255
+        G: 207
+        B: 146
+      Dir:
+        __Type: Vector
+        X: 0.790107
+        Y: -0.447351
+        Z: -0.419055
+    Light:
+      __Type: Light2
+      LightNum: 2
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 75
+        G: 125
+        B: 150
+      Dir:
+        __Type: Vector
+        X: 0.02
+        Y: 0.11
+        Z: 0.99
+    Light:
+      __Type: Light2
+      LightNum: 3
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 80
+        G: 100
+        B: 120
+      Dir:
+        __Type: Vector
+        X: -0.979609
+        Y: 0.109805
+        Z: 0.168253
+    Light:
+      __Type: Light2
+      LightNum: 4
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 240
+        G: 248
+        B: 250
+      Dir:
+        __Type: Vector
+        X: 0.02
+        Y: -0.75
+        Z: -0.65
+    Light:
+      __Type: Light2
+      LightNum: 5
+      Enable: 1
+      IsSpecular: 1
+      Color:
+        __Type: Color
+        R: 176
+        G: 185
+        B: 200
+      Dir:
+        __Type: Vector
+        X: 0.02
+        Y: -0.75
+        Z: -0.64
+    Light:
+      __Type: Light2
+      LightNum: 6
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 160
+        G: 150
+        B: 160
+      Dir:
+        __Type: Vector
+        X: -0.6
+        Y: 0.2
+        Z: 0.7
+    Light:
+      __Type: Light2
+      LightNum: 7
+      Enable: 1
+      IsSpecular: 1
+      Color:
+        __Type: Color
+        R: 255
+        G: 255
+        B: 255
+      Dir:
+        __Type: Vector
+        X: -0.3
+        Y: -0.8
+        Z: -0.5
+    AmbLight:
+      __Type: AmbLight2
+      LightNum: 0
+      Color:
+        __Type: Color
+        R: 150
+        G: 200
+        B: 255
+    AmbLight:
+      __Type: AmbLight2
+      LightNum: 1
+      Color:
+        __Type: Color
+        R: 110
+        G: 110
+        B: 110
+  TLItemRoot:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    TLMover:
+      __Type: TLMover
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Trans:
+        __Type: Vector
+        X: -15
+        Y: -50
+        Z: 0
+      Rot:
+        __Type: Vector
+        X: 0
+        Y: 0
+        Z: 0
+      Scale:
+        __Type: Vector
+        X: 1
+        Y: 1
+        Z: 1
+    bg801_bg001.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg001.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_bg002.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg002.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_bg003.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg003.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_bg004.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg004.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_bg005.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg005.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg801_bg005.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_bg005.rcha
+    bg801_bg006.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg006.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg801_bg006.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_bg006.rcha
+    bg801_bg007.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg007.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_bg008.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg008.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_bg101.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg101.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_bg102.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg102.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg801_bg102.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_bg102.rcha
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -200
+          Y: 0
+          Z: 50
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 123
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .2
+          Y: .2
+          Z: .2
+    bg801_bg103.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg103.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg801_bg103.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_bg103.rcha
+    bg801_bg104.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg104.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg801_bg104.rtsa:
+        __Type: TLRtsa
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_bg104.rtsa
+    bg801_bg105.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg105.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg801_bg105.rtsa:
+        __Type: TLRtsa
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_bg105.rtsa
+    bg801_bg106.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg106.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_bg107.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg107.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_bg108.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg108.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_bg201.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg201.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg801_bg201.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_bg201.rcha
+    bg801_bg202.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg202.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg801_bg202.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_bg202.rcha
+    bg801_bg203.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg203.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg801_bg203.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_bg203.rcha
+    bg801_grass01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_grass01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_lamp01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_lamp01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_medal01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_medal01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_pier01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_pier01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_sand01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_sand01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_smario01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_smario01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_standa01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_standa01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_standb01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_standb01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_tent01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_tent01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_wall01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_wall01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+  bg201_close:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+  bg201_open:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    Effect_null_02.rmdl:
+      __Type: TLModel
+      StartTime: 0
+      EndTime: 510
+      Filename: Effect_null_02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      xe_op001_00.remt:
+        __Type: TLEffEmitter
+        StartTime: 0
+        EndTime: 360
+        LoopType: ENDLESS
+        Filename: xe_op001_00.remt
+        BrefName: Itasuto_Effects
+        ParentNode: xe_op001_00_01
+        FollowParent: 1
+        ParentRotate: 0
+        LinkAnimFrame: -1
+      xe_op001_00.remt:
+        __Type: TLEffEmitter
+        StartTime: 30
+        EndTime: 300
+        LoopType: ENDLESS
+        Filename: xe_op001_00.remt
+        BrefName: Itasuto_Effects
+        ParentNode: xe_op001_00_02
+        FollowParent: 1
+        ParentRotate: 0
+        LinkAnimFrame: -1
+      xe_op001_00.remt:
+        __Type: TLEffEmitter
+        StartTime: 60
+        EndTime: 360
+        LoopType: ENDLESS
+        Filename: xe_op001_00.remt
+        BrefName: Itasuto_Effects
+        ParentNode: xe_op001_00_03
+        FollowParent: 1
+        ParentRotate: 0
+        LinkAnimFrame: -1
+      xe_op001_00.remt:
+        __Type: TLEffEmitter
+        StartTime: 90
+        EndTime: 360
+        LoopType: ENDLESS
+        Filename: xe_op001_00.remt
+        BrefName: Itasuto_Effects
+        ParentNode: xe_op001_00_04
+        FollowParent: 1
+        ParentRotate: 0
+        LinkAnimFrame: -1
+      xe_op001_00.remt:
+        __Type: TLEffEmitter
+        StartTime: 120
+        EndTime: 360
+        LoopType: ENDLESS
+        Filename: xe_op001_00.remt
+        BrefName: Itasuto_Effects
+        ParentNode: xe_op001_00_03
+        FollowParent: 1
+        ParentRotate: 0
+        LinkAnimFrame: -1
+      xe_op001_00.remt:
+        __Type: TLEffEmitter
+        StartTime: 140
+        EndTime: 360
+        LoopType: ENDLESS
+        Filename: xe_op001_00.remt
+        BrefName: Itasuto_Effects
+        ParentNode: xe_op001_00_02
+        FollowParent: 1
+        ParentRotate: 0
+        LinkAnimFrame: -1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 0
+          Y: 200
+          Z: 0
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: 1
+          Y: 1
+          Z: 1
+    sound.sound:
+      __Type: TLSound
+      StartTime: 0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      SoundName: ME_OP_FIREWORKS
+  ALPHA:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    bg801_sky01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_sky01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg801_sky03.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_sky03.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 120
+      BufferOption: 0
+    bg801_sky02.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_sky02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 120
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -250
+          Y: 100
+          Z: -50
+        Rot:
+          __Type: Vector
+          X: 16.875
+          Y: 22.5
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1
+          Y: 1
+          Z: 1
+    bg801_sea01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_sea01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 80
+      BufferOption: 0
+      bg801_sea01.rtsa:
+        __Type: TLRtsa
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_sea01.rtsa
+    bg801_wave01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_wave01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 90
+      BufferOption: 0
+      bg801_wave01.rcla:
+        __Type: TLRcla
+        StartTime: 0.0
+        EndTime: 1.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_wave01.rcla
+      bg801_wave01.rtsa:
+        __Type: TLRtsa
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_wave01.rtsa
+    bg801_bg009.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg009.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 255
+      BufferOption: 0
+    bg801_bg109.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_bg109.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 255
+      BufferOption: 0
+      bg801_bg109.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_bg109.rcha
+      bg801_bg109.rtsa:
+        __Type: TLRtsa
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg801_bg109.rtsa
+  OBJECT:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    bg801_loc_tree01.rmdl:
+      __Type: TLLocatorObj
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_loc_tree01.rmdl
+      EntryDraw: 1
+      AnimFrameMode: 1
+      bg801_tree01.rmdl:
+        __Type: TLModel
+        StartTime: 0.0
+        EndTime: 30.0
+        Filename: bg801_tree01.rmdl
+        EntryDraw: 1
+        EntryShadow: 0
+        EntryMirror: 0
+        EntryBooleanSrc: 0
+        EntryBooleanDst: 0
+        EntryAlphaObj: 0
+        Priority: 0
+        BufferOption: 0
+        bg801_tree01.rcha:
+          __Type: TLCharaAnim
+          StartTime: 0.0
+          EndTime: 30.0
+          LoopType: ENDLESS
+          AnimSpeed: 1.000000
+          AnimStartFrame: 0.000000
+          Filename: bg801_tree01.rcha
+    bg801_loc_tree02.rmdl:
+      __Type: TLLocatorObj
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_loc_tree02.rmdl
+      EntryDraw: 1
+      AnimFrameMode: 1
+      bg801_tree02.rmdl:
+        __Type: TLModel
+        StartTime: 0.0
+        EndTime: 30.0
+        Filename: bg801_tree02.rmdl
+        EntryDraw: 1
+        EntryShadow: 0
+        EntryMirror: 0
+        EntryBooleanSrc: 0
+        EntryBooleanDst: 0
+        EntryAlphaObj: 0
+        Priority: 0
+        BufferOption: 0
+        bg801_tree02.rcha:
+          __Type: TLCharaAnim
+          StartTime: 0.0
+          EndTime: 30.0
+          LoopType: ENDLESS
+          AnimSpeed: 1.000000
+          AnimStartFrame: 0.000000
+          Filename: bg801_tree02.rcha
+    bg801_loc_tree03.rmdl:
+      __Type: TLLocatorObj
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_loc_tree03.rmdl
+      EntryDraw: 1
+      AnimFrameMode: 1
+      bg801_tree03.rmdl:
+        __Type: TLModel
+        StartTime: 0.0
+        EndTime: 30.0
+        Filename: bg801_tree03.rmdl
+        EntryDraw: 1
+        EntryShadow: 0
+        EntryMirror: 0
+        EntryBooleanSrc: 0
+        EntryBooleanDst: 0
+        EntryAlphaObj: 0
+        Priority: 0
+        BufferOption: 0
+        bg801_tree03.rcha:
+          __Type: TLCharaAnim
+          StartTime: 0.0
+          EndTime: 30.0
+          LoopType: ENDLESS
+          AnimSpeed: 1.000000
+          AnimStartFrame: 0.000000
+          Filename: bg801_tree03.rcha
+    bg801_loc_tree001.rmdl:
+      __Type: TLLocatorObj
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_loc_tree001.rmdl
+      EntryDraw: 1
+      AnimFrameMode: 1
+      bg801_tree001.rmdl:
+        __Type: TLModel
+        StartTime: 0.0
+        EndTime: 30.0
+        Filename: bg801_tree001.rmdl
+        EntryDraw: 1
+        EntryShadow: 0
+        EntryMirror: 0
+        EntryBooleanSrc: 0
+        EntryBooleanDst: 0
+        EntryAlphaObj: 0
+        Priority: 0
+        BufferOption: 0
+        bg801_tree001.rcha:
+          __Type: TLCharaAnim
+          StartTime: 0.0
+          EndTime: 30.0
+          LoopType: ENDLESS
+          AnimSpeed: 1.000000
+          AnimStartFrame: 0.000000
+          Filename: bg801_tree001.rcha
+    bg801_loc_tree002.rmdl:
+      __Type: TLLocatorObj
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_loc_tree002.rmdl
+      EntryDraw: 1
+      AnimFrameMode: 1
+      bg801_tree002.rmdl:
+        __Type: TLModel
+        StartTime: 0.0
+        EndTime: 30.0
+        Filename: bg801_tree002.rmdl
+        EntryDraw: 1
+        EntryShadow: 0
+        EntryMirror: 0
+        EntryBooleanSrc: 0
+        EntryBooleanDst: 0
+        EntryAlphaObj: 0
+        Priority: 0
+        BufferOption: 0
+        bg801_tree002.rcha:
+          __Type: TLCharaAnim
+          StartTime: 0.0
+          EndTime: 30.0
+          LoopType: ENDLESS
+          AnimSpeed: 1.000000
+          AnimStartFrame: 0.000000
+          Filename: bg801_tree002.rcha
+    bg801_loc_tree003.rmdl:
+      __Type: TLLocatorObj
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_loc_tree003.rmdl
+      EntryDraw: 1
+      AnimFrameMode: 1
+      bg801_tree003.rmdl:
+        __Type: TLModel
+        StartTime: 0.0
+        EndTime: 30.0
+        Filename: bg801_tree003.rmdl
+        EntryDraw: 1
+        EntryShadow: 0
+        EntryMirror: 0
+        EntryBooleanSrc: 0
+        EntryBooleanDst: 0
+        EntryAlphaObj: 0
+        Priority: 0
+        BufferOption: 0
+        bg801_tree003.rcha:
+          __Type: TLCharaAnim
+          StartTime: 0.0
+          EndTime: 30.0
+          LoopType: ENDLESS
+          AnimSpeed: 1.000000
+          AnimStartFrame: 0.000000
+          Filename: bg801_tree003.rcha
+    bg801_loc_tree105.rmdl:
+      __Type: TLLocatorObj
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_loc_tree105.rmdl
+      EntryDraw: 1
+      AnimFrameMode: 1
+      bg801_tree105.rmdl:
+        __Type: TLModel
+        StartTime: 0.0
+        EndTime: 30.0
+        Filename: bg801_tree105.rmdl
+        EntryDraw: 1
+        EntryShadow: 0
+        EntryMirror: 0
+        EntryBooleanSrc: 0
+        EntryBooleanDst: 0
+        EntryAlphaObj: 0
+        Priority: 0
+        BufferOption: 0
+        bg801_tree105.rcha:
+          __Type: TLCharaAnim
+          StartTime: 0.0
+          EndTime: 30.0
+          LoopType: ENDLESS
+          AnimSpeed: 1.000000
+          AnimStartFrame: 0.000000
+          Filename: bg801_tree105.rcha
+  mii_set01:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0
+    EndTime: 510
+    LoopType: ENDLESS
+    op_mii_01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 0
+        Gender: 0
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 30
+          Y: 11.5
+          Z: 45.851
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 0.58
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      100.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 520
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: 100.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0.0
+        EndTime: 0.0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 123
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 30
+          Y: 11.5
+          Z: 45.851
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 0.58
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_02.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 0
+        Gender: 1
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 0
+          Y: 11.5
+          Z: 45.851
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -0.58
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      102.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 520
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 86
+        Filename: 102.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 10.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 0
+          Y: 11.5
+          Z: 45.851
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -0.58
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 1
+        Gender: 0
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -10.396
+          Y: 11.5
+          Z: 46
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -1.015
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      100.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 542
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 34
+        Filename: 100.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 2.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -10.396
+          Y: 11.5
+          Z: 46
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -1.015
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_02.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 1
+        Gender: 1
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 39.396
+          Y: 11.5
+          Z: 46
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 1.015
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      102.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 532
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0
+        Filename: 102.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 3.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 39.396
+          Y: 11.5
+          Z: 46
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 1.015
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 2
+        Gender: 0
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 35
+          Y: 11.5
+          Z: 65
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 1.45
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      100.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 530
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 42
+        Filename: 100.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 4.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 35
+          Y: 11.5
+          Z: 65
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 1.45
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_02.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 2
+        Gender: 1
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -5
+          Y: 11.5
+          Z: 65
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -1.45
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      102.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 520
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 146
+        Filename: 102.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 7.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -5
+          Y: 11.5
+          Z: 65
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -1.45
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 3
+        Gender: 0
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -4.187
+          Y: 11.5
+          Z: 57.602
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -0.798
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      100.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 515
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 185
+        Filename: 100.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 8.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -4.187
+          Y: 11.5
+          Z: 57.602
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -0.798
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_02.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 3
+        Gender: 1
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 34.187
+          Y: 11.5
+          Z: 57.602
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 0.798
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      102.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 520
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 59
+        Filename: 102.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 7.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 34.187
+          Y: 11.5
+          Z: 57.602
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 0.798
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_02.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 4
+        Gender: 1
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 44.642
+          Y: 11.5
+          Z: 62.45
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 1.233
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      102.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 540
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 11
+        Filename: 102.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 8.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 44.642
+          Y: 11.5
+          Z: 62.45
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 1.233
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 4
+        Gender: 0
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -14.642
+          Y: 11.5
+          Z: 62.45
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -1.233
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      100.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 520
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 142
+        Filename: 100.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 9.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -14.642
+          Y: 11.5
+          Z: 62.45
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -1.233
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_02.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 5
+        Gender: 1
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 25
+          Y: 11.5
+          Z: 30
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 0.435
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      102.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 535
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 110
+        Filename: 102.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 11.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 25
+          Y: 11.5
+          Z: 30
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 0.435
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_02.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 6
+        Gender: 1
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 5
+          Y: 11.5
+          Z: 30
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -0.435
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      102.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 520
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 158
+        Filename: 102.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0.0
+        EndTime: 0.0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 6.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 5
+          Y: 11.5
+          Z: 30
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -0.435
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 5
+        Gender: 0
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -1.233
+          Y: 11.5
+          Z: 77.739
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -0.218
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      100.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 540
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 75
+        Filename: 100.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 1.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -1.233
+          Y: 11.5
+          Z: 77.739
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: -0.218
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+    op_mii_01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: op_mii_01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0x734F
+      TLMiiHead:
+        __Type: TLMiiHead
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        ParentNode: HeadAttach
+        MiiID: 6
+        Gender: 0
+        ExpID: 0
+        Trans:
+          __Type: Vector
+          X: 0.0
+          Y: -0.3
+          Z: 0.0
+        Scale: 0.1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 31.233
+          Y: 11.5
+          Z: 77.739
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 0.218
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+      100.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0
+        EndTime: 520
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 99
+        Filename: 100.rcha
+      op_mii_01.rtpa:
+        __Type: TLRtpa
+        StartTime: 0
+        EndTime: 0
+        LoopType: ENDLESS
+        AnimSpeed: 0
+        AnimStartFrame: 2.000000
+        Filename: op_mii_01.rtpa
+    bg801_miishadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg801_miishadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 31.233
+          Y: 11.5
+          Z: 77.739
+        Rot:
+          __Type: Vector
+          X: 0
+          Y: 0.218
+          Z: 0
+        Scale:
+          __Type: Vector
+          X: .3
+          Y: .3
+          Z: .3
+
+
+
+
+  TLItemRoot:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    bg801_cam_bg801.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: bg801_cam_bg801.rsca
+    bg801_cam_bg201.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: bg801_cam_bg201.rsca
+    bg801_cam_bg202.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: bg801_cam_bg202.rsca
+    bg801_cam_bg203.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: bg801_cam_bg203.rsca
+    bg801_cam_bg204.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: bg801_cam_bg204.rsca
+    bg801_cam_bg205.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: bg801_cam_bg205.rsca
+    bg801_cam_bg206.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: bg801_cam_bg206.rsca
+    bg801_cam_bg207.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: bg801_cam_bg207.rsca
