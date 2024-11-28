@@ -109,7 +109,7 @@ class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycs
 		pycsmm.ArcFileInterface.__init__(self)
 		pycsmm.UiMessageInterface.__init__(self)
 	def modId(self):
-		return "cswtpycsmm"
+		return "cstppycsmm"
 	def saveFiles(self, root, gameInstance, modList):
 		mapper = gameInstance.addressMapper()
 		with open(os.path.join(root, 'sys/main.dol'), 'rb+') as mainDol:
