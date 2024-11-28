@@ -18,7 +18,7 @@ music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan30A.music.zip
     - https://drive.google.com/u/2/uc?id=1XVz5z51xM5ErdEBGWuPXrvEHR5YB9x92&export=download
-  map: 
+  map:
   - Ennesan30_Map.40
   stock: Stock_grid.70
   ventureCards: Venture_Ennesan11.45
@@ -51,7 +51,7 @@ changelog:
       - Changed the effect of the event square for Square ID 76 from 13 to 43 venture cards.
       - Backstreet warp destination changed to central change of suit at a location with many powerful event squares.
   - version: 1
-    added: 
+    added:
       - Initial Release
 authors:
   - name: Enne-san
