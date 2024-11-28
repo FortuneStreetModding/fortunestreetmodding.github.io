@@ -1,3 +1,4 @@
+---
 name:
   en: Enne-san Board 24
 desc:
@@ -18,13 +19,13 @@ frbFiles:
 - Ennesan24_4
 - Ennesan24_7
 - Ennesan24_7
-background: mp9_magmine
+background: BGmagmine
 mapIcon: Enne24
 music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan24.music.zip
     - https://drive.google.com/u/2/uc?id=1LEgLGYEEJfSfc-J4KHZ7_5aIDFUng2xo&export=download
-  map:
+  map: 
   - Ennesan24_1_Map.50
   - Ennesan24_1_Map.50
   - Ennesan24_1_Map.50
@@ -57,6 +58,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Reduce Districts F, I, and K from 4 to 3 shops.
+      - The area that was a shop before the district was reduced to an event square where you can warp to a shop of your choice.
   - version: 3
     changed:
       - Changed venture card 87 to 80
@@ -64,7 +69,7 @@ changelog:
     changed:
       - Changed to correct background name
   - version: 1
-    added:
+    added: 
       - Initial Release
 authors:
   - name: Enne-san
@@ -297,3 +302,4 @@ shopNames:
     96: Initial Value 960
     97: Initial Value 970
     98: Vacant plot
+...
