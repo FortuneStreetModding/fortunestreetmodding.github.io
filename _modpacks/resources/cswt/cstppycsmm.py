@@ -90,13 +90,13 @@ def replUiMessages(msgDict, toReplaceWith):
 		msgDict[k] = v
 
 def replTitleImages(locale, arcDir, modpackDir):
-	gameSeqTitleAll = os.path.join(modpackDir, 'cswtpycsmm/game_sequence_title_ALL.arc')
+	gameSeqTitleAll = os.path.join(modpackDir, 'cstppycsmm/game_sequence_title_ALL.arc')
 	for dirEntry in os.scandir(gameSeqTitleAll):
 		tplPath = os.path.join(arcDir, 'arc/timg', os.path.splitext(dirEntry.name)[0] + '.tpl')
 		#print(tplPath, file=sys.stderr)
 		pycsmm.convertPngToTpl(dirEntry.path, tplPath)
 	if locale == 'de':
-		gameSeqTitleDe = os.path.join(modpackDir, 'cswtpycsmm/game_sequence_title_DE.arc')
+		gameSeqTitleDe = os.path.join(modpackDir, 'cstppycsmm/game_sequence_title_DE.arc')
 		for dirEntry in os.scandir(gameSeqTitleDe):
 			tplPath = os.path.join(arcDir, 'arc/timg', os.path.splitext(dirEntry.name)[0] + '.tpl')
 			#print(tplPath, file=sys.stderr)
