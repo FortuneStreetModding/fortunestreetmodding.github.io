@@ -32,7 +32,7 @@ music:
   promotionMario: StarshipPromo.100
   promotionDragonQuest: StarshipPromo.100
   promotionMii: StarshipPromo.100
-  takeAbreak: Starshipbreak.120
+  takeAbreak: StarshipBreak.120
   bankruptcy: StarshipBankrupt.70
   badVentureCard: Starship13.70
   win: StarshipWin.100
