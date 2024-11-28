@@ -2,7 +2,7 @@
 name:
   en: Famicom
 desc:
-  en: "Famicom: A familiar logo becomes a wild goose chase for the bank!"
+  en: A familiar logo becomes a wild goose chase for the bank!
 ruleSet: Standard
 theme: Mario
 initialCash: 2200
@@ -34,6 +34,10 @@ music:
   auction: FamicomStock.79 
   ventureCards: FamicomVenture.77
   win: FamicomWin.75
+changelog:
+  - version: 1
+    added:
+      - Initial Release
 authors:
   - name: Giftshaven
     url: https://github.com/Giftshaven
