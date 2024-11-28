@@ -58,8 +58,5 @@ jobs:
       - name: Upload modpacks to S3
         run: aws s3 cp ./_modpacks/build/ s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Modpacks/ --recursive --exclude "*" --include "*.zip" --include "packs.json"
 
-      - name: Temporarily also upload CSWT-main to old location
-        run: aws s3 cp ./_modpacks/build/cswt.zip s3://${{ secrets.S3_BUCKET_NAME }}/cswt/Builds/cswtpycsmm-dev.zip
-
       - name: Create CloudFront invalidation for modpack
         run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths /cswt/Modpacks/* /cswt/Builds/*
