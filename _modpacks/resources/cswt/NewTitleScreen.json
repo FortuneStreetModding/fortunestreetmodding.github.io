@@ -1,0 +1,34 @@
+[
+    {
+        "from": "game/game_sequence.cmpres",
+        "to": "files/game/langDE/game_sequence.cmpres"
+    },
+    {
+        "from": "game/game_sequence.cmpres",
+        "to": "files/game/langEN/game_sequence.cmpres"
+    },
+    {
+        "from": "game/game_sequence.cmpres",
+        "to": "files/game/langES/game_sequence.cmpres"
+    },
+    {
+        "from": "game/game_sequence.cmpres",
+        "to": "files/game/langFR/game_sequence.cmpres"
+    },
+    {
+        "from": "game/game_sequence.cmpres",
+        "to": "files/game/langIT/game_sequence.cmpres"
+    },
+    {
+        "from": "game/game_sequence.cmpres",
+        "to": "files/game/game_sequence.cmpres"
+    },
+    {
+        "from": "scene/bg801.scene",
+        "to": "files/scene/bg801.scene"
+    },
+    {
+        "from": "scene/op001.scene",
+        "to": "files/scene/op001.scene"
+    }
+]
