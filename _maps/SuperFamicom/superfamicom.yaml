@@ -1,5 +1,11 @@
+<<<<<<< HEAD:_maps/SuperFamicom/superfamicom.yaml
 name:
   en: Super Famicom
+=======
+---
+name:
+  en: Famicom
+>>>>>>> 9d02bd87 (Fixed description formatting and added changelog):_maps/Famicom/famicom.yaml
 desc:
   en: A familiar logo becomes a wild goose chase for the bank!
 ruleSet: Standard
@@ -9,6 +15,7 @@ targetAmount: 25000
 baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 8
+<<<<<<< HEAD:_maps/SuperFamicom/superfamicom.yaml
 frbFiles:
  - superfamicom0
  - superfamicom1
@@ -16,12 +23,22 @@ frbFiles:
  - superfamicom3
 background: bg006fixed
 mapIcon: superfamicom
+=======
+frbFiles: 
+ - famicom0
+ - famicom1
+ - famicom2
+ - famicom3
+background: bg006fixed
+mapIcon: Famicomicon
+>>>>>>> 9d02bd87 (Fixed description formatting and added changelog):_maps/Famicom/famicom.yaml
 tourMode:
   bankruptcyLimit: 1
   opponent1: Mario
   opponent2: Bowser
   opponent3: DonkeyKong
   clearRank: 2
+<<<<<<< HEAD:_maps/SuperFamicom/superfamicom.yaml
 music:
   download:
     - https://nikkums.io/cswt/BGM/SuperFamicom.music.zip
@@ -34,6 +51,19 @@ music:
   auction: SuperFamicomStock.79
   ventureCards: SuperFamicomVenture.77
   win: SuperFamicomWin.75
+=======
+music: 
+  download: https://drive.google.com/uc?export=download&id=1dyAGe8faJ5EDThWuL1r8pVHA-h15yoZU&confirm=1
+  map: FamicomBoard.72
+  targetMet: FamicomTargetMet.72
+  promotionMario: FamicomPromotion.80
+  promotionDragonQuest: FamicomPromotion.80
+  promotionMii: FamicomPromotion.80
+  stock: FamicomAuction.79
+  auction: FamicomStock.79 
+  ventureCards: FamicomVenture.77
+  win: FamicomWin.75
+>>>>>>> 9d02bd87 (Fixed description formatting and added changelog):_maps/Famicom/famicom.yaml
 changelog:
   - version: 1
     added:
@@ -170,3 +200,7 @@ ventureCards:
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+<<<<<<< HEAD:_maps/SuperFamicom/superfamicom.yaml
+=======
+...
+>>>>>>> 9d02bd87 (Fixed description formatting and added changelog):_maps/Famicom/famicom.yaml
