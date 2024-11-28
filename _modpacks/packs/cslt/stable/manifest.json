@@ -1,0 +1,12 @@
+{
+    "cslt":
+    {
+        "name":"Custom Street Legacy Tour",
+        "description":"An overhaul modpack containing over 100 boards from previous games in the Itadaki Street series!",
+        "version":"1.0",
+        "entity":"modpack",
+        "type":"primary",
+        "last_updated":"2024/11/28",
+        "resources":"cslt"
+    }
+}
