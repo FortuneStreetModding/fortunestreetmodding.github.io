@@ -43,6 +43,13 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Change Districts A, B, C, and D from 6 to 5 shops.
+      - Decrease in the number of shops changed to suits where before it was a shop.
+      - Add a change of suit in the middle of the road where there is an event square where you can get yourself card.
+      - Changed the effect of the event square for Square ID 76 from 13 to 43 venture cards.
+      - Backstreet warp destination changed to central change of suit at a location with many powerful event squares.
   - version: 1
     added:
       - Initial Release

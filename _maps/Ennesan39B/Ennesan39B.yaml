@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Event square with Venture Card 13 effect changed to Venture Card 43 effect.
   - version: 1
     added: 
       - Initial Release
