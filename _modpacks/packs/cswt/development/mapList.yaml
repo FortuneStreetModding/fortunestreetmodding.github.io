@@ -1,9 +1,6 @@
 backgrounds: backgrounds.yml
 0:
   0:
-    Ennesan30A.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
     Ennesan42A.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan42A.zip
@@ -19,6 +16,9 @@ backgrounds: backgrounds.yml
     StarshipRedux.zip:
         urls:
         - https://nikkums.io/cswt/Maps/StarshipRedux.zip
+    Famicom.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Famicom.zip
   1:
     placeholder.zip:
     placeholder.zip:
