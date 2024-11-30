@@ -294,13 +294,16 @@ backgrounds: backgrounds.yml
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
+    TheClock.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TheClock.zip
     TheClockTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClockTower.zip
+  2:
     Cogito.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Cogito.zip
-  2:
     Colony9.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony9.zip
