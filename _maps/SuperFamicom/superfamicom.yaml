@@ -9,30 +9,31 @@ targetAmount: 25000
 baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 8
-frbFiles: 
- - famicom0
- - famicom1
- - famicom2
- - famicom3
+frbFiles:
+ - superfamicom0
+ - superfamicom1
+ - superfamicom2
+ - superfamicom3
 background: bg006fixed
-mapIcon: Famicomicon
+mapIcon: superfamicom
 tourMode:
   bankruptcyLimit: 1
   opponent1: Mario
   opponent2: Bowser
   opponent3: DonkeyKong
   clearRank: 2
-music: 
-  download: https://nikkums.io/cswt/BGM/Famicom.music.zip
-  map: FamicomBoard.72
-  targetMet: FamicomTargetMet.72
-  promotionMario: FamicomPromotion.80
-  promotionDragonQuest: FamicomPromotion.80
-  promotionMii: FamicomPromotion.80
-  stock: FamicomAuction.79
-  auction: FamicomStock.79 
-  ventureCards: FamicomVenture.77
-  win: FamicomWin.75
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/SuperFamicom.music.zip
+  map: SuperFamicomBoard.72
+  targetMet: SuperFamicomTargetMet.72
+  promotionMario: SuperFamicomPromotion.80
+  promotionDragonQuest: SuperFamicomPromotion.80
+  promotionMii: SuperFamicomPromotion.80
+  stock: SuperFamicomAuction.79
+  auction: SuperFamicomStock.79
+  ventureCards: SuperFamicomVenture.77
+  win: SuperFamicomWin.75
 changelog:
   - version: 1
     added:
@@ -169,4 +170,3 @@ ventureCards:
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-  
