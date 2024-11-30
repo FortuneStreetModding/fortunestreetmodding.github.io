@@ -1,6 +1,9 @@
 backgrounds: backgrounds.yml
 0:
   0:
+    Ennesan39B.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan39B.zip
     Ennesan42A.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan42A.zip
@@ -10,9 +13,6 @@ backgrounds: backgrounds.yml
     arrowhead.zip:
         urls:
         - https://nikkums.io/cswt/Maps/arrowhead.zip
-    FortuneGateFG1.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
     StarshipRedux.zip:
         urls:
         - https://nikkums.io/cswt/Maps/StarshipRedux.zip
@@ -36,8 +36,9 @@ backgrounds: backgrounds.yml
       practiceBoard: true
 1:
   0:
-    placeholder.zip:
-    placeholder.zip:
+    Ennesan30A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
