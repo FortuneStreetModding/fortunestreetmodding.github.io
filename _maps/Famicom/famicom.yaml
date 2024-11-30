@@ -9,7 +9,7 @@ targetAmount: 25000
 baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 8
-frbFiles: 
+frbFiles:
  - famicom0
  - famicom1
  - famicom2
@@ -22,15 +22,16 @@ tourMode:
   opponent2: Bowser
   opponent3: DonkeyKong
   clearRank: 2
-music: 
-  download: https://nikkums.io/cswt/BGM/Famicom.music.zip
+music:
+  download:
+    - https://nikkums.io/cswt/BGM/Famicom.music.zip
   map: FamicomBoard.72
   targetMet: FamicomTargetMet.72
   promotionMario: FamicomPromotion.80
   promotionDragonQuest: FamicomPromotion.80
   promotionMii: FamicomPromotion.80
   stock: FamicomAuction.79
-  auction: FamicomStock.79 
+  auction: FamicomStock.79
   ventureCards: FamicomVenture.77
   win: FamicomWin.75
 changelog:
@@ -169,4 +170,3 @@ ventureCards:
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-  
