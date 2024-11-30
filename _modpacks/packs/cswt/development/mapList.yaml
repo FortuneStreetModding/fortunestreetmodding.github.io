@@ -16,9 +16,9 @@ backgrounds: backgrounds.yml
     StarshipRedux.zip:
         urls:
         - https://nikkums.io/cswt/Maps/StarshipRedux.zip
-    Famicom.zip:
+    SuperFamicom.zip:
         urls:
-        - https://nikkums.io/cswt/Maps/Famicom.zip
+        - https://nikkums.io/cswt/Maps/SuperFamicom.zip
   1:
     placeholder.zip:
     placeholder.zip:
