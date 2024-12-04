@@ -11,7 +11,7 @@ backgrounds: backgrounds.yml
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan42B.zip
     Ennesan43.zip:
-        urls:p
+        urls:
         - https://nikkums.io/cswt/Maps/Ennesan43.zip
     Ennesan44.zip:
         urls:
