@@ -46,9 +46,6 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
-  - version: 8
-    changed:
-      - Removed anti-clockwise path through Divine Roost for crash prevention
   - version: 7
     added:
       - Unique 3D Background of Planet Mira
