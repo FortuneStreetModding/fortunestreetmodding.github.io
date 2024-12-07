@@ -155,6 +155,9 @@ class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycs
 			mainDol.write(b'\x38\x60\x00\x01')
 			mainDol.seek(mapper.boomToFileAddress(0x8020f91c))
 			mainDol.write(b'\x38\x60\x00\x01')
+			# fix shop loop bug
+			mainDol.seek(mapper.boomToFileAddress(0x8008f538))
+			mainDol.write(b'\x60\x00\x00\x00')
 
 	def saveUiMessages(self):
 		return {f'files/localize/ui_message.{k}.csv':
