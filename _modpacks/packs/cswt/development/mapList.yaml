@@ -20,7 +20,9 @@ backgrounds: backgrounds.yml
         urls:
         - https://nikkums.io/cswt/Maps/StarshipRedux.zip
   1:
-    placeholder.zip:
+    Tutorial1.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Tutorial1.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
