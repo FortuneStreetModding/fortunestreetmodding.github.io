@@ -4,28 +4,24 @@ backgrounds: backgrounds.yml
     Ennesan39B.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan39B.zip
-    Ennesan42A.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan42A.zip
     Ennesan42B.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan42B.zip
     Ennesan43.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan43.zip
-    Ennesan44.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan44.zip
     Ennesan45.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan45.zip
-  1:
     arrowhead.zip:
         urls:
         - https://nikkums.io/cswt/Maps/arrowhead.zip
     StarshipRedux.zip:
         urls:
         - https://nikkums.io/cswt/Maps/StarshipRedux.zip
+  1:
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
