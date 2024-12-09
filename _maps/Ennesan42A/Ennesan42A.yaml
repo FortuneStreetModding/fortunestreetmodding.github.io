@@ -44,6 +44,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Event square with Venture Card 106 effect changed to Venture Card 99 effect.
+      - Changed Venture Card 13 to 124.
   - version: 1
     added: 
       - Initial Release
@@ -62,7 +66,7 @@ ventureCards:
   - 1  #  10 Venture on! Everyone's shop prices cut in half! Now roll the die and move again.
   - 1  #  11 Moneymaking venture! Roll the die and get 11 times the number shown in gold coins from all other players!
   - 0  #  12 Capital venture! You can invest capital in any of your shops.
-  - 1  #  13 Misadventure! The values of all your shops drop by 13%!
+  - 0  #  13 Misadventure! The values of all your shops drop by 13%!
   - 1  #  14 Misadventure! You give everyone 30G each!
   - 1  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
   - 1  #  16 Random venture! Shops expand in three districts picked at random!
@@ -173,7 +177,7 @@ ventureCards:
   - 1  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
   - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
   - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
-  - 0  # 124 Suit venture! Buy a Suit Yourself card for 50G.
+  - 1  # 124 Suit venture! Buy a Suit Yourself card for 50G.
   - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
