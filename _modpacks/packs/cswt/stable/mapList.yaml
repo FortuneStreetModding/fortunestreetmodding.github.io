@@ -282,9 +282,6 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/birdosbigtop.zip
   1:
-    Reactor.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Reactor.zip
     CastawayBayCSide.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
@@ -300,10 +297,10 @@ backgrounds: backgrounds.yml
     TheClockTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClockTower.zip
-  2:
     Cogito.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Cogito.zip
+      - https://nikkums.io/cswt/Maps/Cogito.zip  
+  2:
     Colony9.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony9.zip
