@@ -34,12 +34,6 @@ frbFiles:
 - KBHH8a
 - KBHH8b
 - KBHH8c
-- KBHH9a
-- KBHH9b
-- KBHH9c
-- KBHH10a
-- KBHH10b
-- KBHH10c
 - KBHH11a
 - KBHH11b
 - KBHH11c
@@ -55,9 +49,9 @@ frbFiles:
 - KBHH15a
 - KBHH15b
 - KBHH15c
-- KBHH16a
-- KBHH16b
-- KBHH16c
+- KBHH10a
+- KBHH10b
+- KBHH10c
 background: KBHH
 mapIcon: iconKBHH
 music:
@@ -144,6 +138,9 @@ tourMode:
   opponent3: Alena
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - deleted the board states that contained too much board stutter. 
   - version: 3
     changed:
       - adjusted prices in district 7
