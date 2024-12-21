@@ -1,11 +1,11 @@
 name:
   en: Enne-san Board 45
 desc:
-  en: It'll be a very long game. A very special board with characteristics and gimmicks that are far removed from normal boards. The randomness of the board state is very high. 
+  en: No vacant plots should be. It'll be a very long game. A very special board with characteristics and gimmicks that are far removed from normal boards. The randomness of the board state is very high. 
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500
-targetAmount: 100000
+targetAmount: 75000
 baseSalary: 300
 salaryIncrement: 250
 maxDiceRoll: 6
@@ -236,6 +236,12 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Event squares that force everyone to assemble within the loop section of a switch are no longer included.
+      - The bank in front of the suit was removed, bringing the number of banks from 3 to 2.
+      - Changed the effect of some event squares.
+      - Decreased the target amount from 100,000 to 75,000.
   - version: 1
     added:
       - Initial Release
