@@ -4,14 +4,12 @@ name:
   fr: Le B.A-BA de la Fortune
   it: Le Basi della Fortuna
   es: Los Fundamentos de la Fortuna
-  jp: いただきの基本
 desc:
   en: Learn how to get rich on this simple and beginner-friendly yet eventful board!
   de: Auf diesem einfachen und anfängerfreundlichen aber ereignisreichen Brett erfährst du, wie du reich wirst!
   fr: Apprends à devenir riche grâce à ce plateau simple et adapté aux débutants mais rempli d'évènements !
   it: impara come diventare ricco su questa bacheca semplice, adatta anche ai principianti, ma ricca di eventi!
   es: ¡Aprenda cómo hacerse rico en este tablero simple, apto para principiantes y lleno de acontecimientos!
-  jp: シンプルで初心者にも優しく、それでいてイベント満載のこのボードで、金持ちになる方法を学びましょう!
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000

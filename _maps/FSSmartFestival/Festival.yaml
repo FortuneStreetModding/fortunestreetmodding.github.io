@@ -1,9 +1,7 @@
 name:
   en: Festival (Mobile)
-  jp: お祭り
 desc:
   en: Originally from Itadaki Street Mobile. Local streets are alive with colour and sound in this cultural celebration.
-  jp: お祭り：　色と音に満ちた通りで、地元の文化の活気あるお祝い。
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
