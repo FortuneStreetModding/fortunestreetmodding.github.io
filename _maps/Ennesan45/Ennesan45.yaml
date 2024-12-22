@@ -5,9 +5,9 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2500
-targetAmount: 75000
-baseSalary: 300
-salaryIncrement: 250
+targetAmount: 70000
+baseSalary: 450
+salaryIncrement: 150
 maxDiceRoll: 6
 frbFiles:
 - Ennesan45_1
@@ -240,8 +240,11 @@ changelog:
     changed:
       - Event squares that force everyone to assemble within the loop section of a switch are no longer included.
       - The bank in front of the suit was removed, bringing the number of banks from 3 to 2.
+      - Corrected a path misconfiguration that existed in the board state based on Enne-san Board 23.
       - Changed the effect of some event squares.
-      - Decreased the target amount from 100,000 to 75,000.
+      - Decreased the target amount from 100,000 to 70,000.
+      - Base salary increased from 300 to 450.
+      - Salary increments decreased from 250 to 150.
   - version: 1
     added:
       - Initial Release
