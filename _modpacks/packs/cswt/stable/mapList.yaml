@@ -488,9 +488,6 @@ backgrounds: backgrounds.yml
     TurtleFortress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TurtleFortress.zip
-    Unatco.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Unatco.zip
     VennDiagram.zip:
       urls:
       - https://nikkums.io/cswt/Maps/VennDiagram.zip
