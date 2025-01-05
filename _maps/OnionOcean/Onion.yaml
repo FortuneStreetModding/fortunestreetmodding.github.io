@@ -33,7 +33,6 @@ music:
   promotionMario: SeaPromo
   promotionDragonQuest: SeaPromo
   domination: SeaDom
-  forcedBuyout: 
 tourMode:
   bankruptcyLimit: 1
   opponent1: Peach
