@@ -1173,7 +1173,7 @@
 - background: OnionOcean
   name: Onion Ocean
   download:
-  - https://nikkums.io/cswt/Backgrounds/onionocean.zip
+  - https://nikkums.io/cswt/Backgrounds/onionocean.background.zip
   mapIcon: OnionOC
   music:
     map: SeaTemple
