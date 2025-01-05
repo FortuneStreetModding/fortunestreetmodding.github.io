@@ -1159,3 +1159,70 @@
     slurpodromeStart: mpss_SRP_START
     slurpodromeRace: mpss_SRP_RACE
     slurpodromeWin: mpss_SRP_WIN
+- background: mpss_ppbc
+  name: Peach's Birthday Cake
+  download:
+  - https://nikkums.io/cswt/Backgrounds/mpss_ppbc.background.zip
+  - https://drive.google.com/uc?export=download&id=1_VFbW3Z9Gp92PkeVZOAzA0cwxseH-0Vx&confirm=1
+  mapIcon: impss_ppbc
+  music:
+    map:
+     - mpss_ppbc_MAP01
+     - mpss_ppbc_MAP02
+     - mpss_ppbc_MAP03
+     - mpss_ppbc_MAP04
+     - mpss_ppbc_MAP05
+     - mpss_ppbc_MAP06
+     - mpss_ppbc_MAP07
+     - mpss_ppbc_MAP08
+     - mpss_ppbc_MAP09
+     - mpss_ppbc_MAP10
+     - mpss_ppbc_MAP11
+     - mpss_ppbc_MAP12
+     - mpss_ppbc_MAP13
+     - mpss_ppbc_MAP14
+     - mpss_ppbc_MAP15
+     - mpss_ppbc_MAP16 
+    stock: mpss_STOCK
+    ventureCards: mpss_VEN
+    auction: mpss_AUC
+    targetMet: sm3dw_FINAL
+    win: mpss_WIN
+    guestLeave: mpss_GUESTL
+    badVentureCard: mpss_VEN_BAD
+    takeAbreak: mpss_TAB
+    promotionMii: mpss_ppbc_PROMO
+    promotionMario: mpss_ppbc_PROMO
+    promotionDragonQuest: mpss_ppbc_PROMO
+    forcedBuyout: smodyssey_BYO
+    domination: mpss_DOM
+    bankruptcy: mpss_VEN_BAD
+    roundTheBlocks: A_mpss_ROB
+    roundTheBlocksWin: mpss_ROB_WIN
+    memoryBlock: A_mpss_MEM
+    dartOfGold: A_mpss_DOG
+    slurpodromeSelect: A_mpss_SRP
+    slurpodromeStart: mpss_SRP_START
+    slurpodromeRace: mpss_SRP_RACE
+    slurpodromeWin: mpss_SRP_WIN
+- background: onionocean
+  name: Onion Ocean
+  download:
+  - https://nikkums.io/cswt/Backgrounds/onionocean.zip
+  mapIcon: OnionOC
+  music:
+    map: SeaTemple
+    stock: SeaStocks
+    ventureCards: SeaVenture
+    auction: SeaAuction
+    targetMet: SeaFinale
+    roundTheBlocks: SeaROB
+    win: SeaWin
+    guestAppear: SeaGuestArrive
+    guestLeave: SeaGuestGoodbye
+    badVentureCard: SeaTemFail
+    takeAbreak: SeaSleepy
+    promotionMii: SeaPromo
+    promotionMario: SeaPromo
+    promotionDragonQuest: SeaPromo
+    domination: SeaDom

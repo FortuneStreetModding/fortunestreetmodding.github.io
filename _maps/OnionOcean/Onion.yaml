@@ -19,9 +19,6 @@ frbFiles:
 background: OnionOcean
 mapIcon: OnionOC
 music:
-  download:
-  - https://nikkums.io/cswt/BGM/onionocean.music.zip
-  - https://drive.google.com/uc?export=download&id=1W1SQUC-cVRH8iKemDUUAlhS5BDwyNSxQ&confirm=1
   map: SeaTemple
   stock: SeaStocks
   ventureCards: SeaVenture
@@ -61,7 +58,7 @@ ventureCards:
   - 1  #   8 Venture on! Everyone's shop prices increase by 30%! Now roll the die and move again.
   - 1  #   9 Venture on! Everyone's shops close for the day! Now roll the die and move again.
   - 1  #  10 Venture on! Everyone's shop prices cut in half! Now roll the die and move again.
-  - 0  #  11 Moneymaking venture! Roll the die and get 11 times the number shown in gold coins from all other players!
+  - 1  #  11 Moneymaking venture! Roll the die and get 11 times the number shown in gold coins from all other players!
   - 0  #  12 Capital venture! You can invest capital in any of your shops.
   - 1  #  13 Misadventure! The values of all your shops drop by 13%!
   - 0  #  14 Misadventure! You give everyone 30G each!
@@ -70,7 +67,7 @@ ventureCards:
   - 1  #  17 Special bonus! You receive half of your salary!
   - 1  #  18 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value.
   - 1  #  19 Price hike venture! Your shop prices go up by 30% until your next turn.
-  - 0  #  20 Revaluation venture! You can expand any one of your shops by 20%.
+  - 1  #  20 Revaluation venture! You can expand any one of your shops by 20%.
   - 0  #  21 Random venture! You receive 20 stocks in a district picked at random!
   - 1  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
   - 0  #  23 Revaluation venture! You can expand any one of your shops by 50%.
@@ -153,7 +150,7 @@ ventureCards:
   - 1  # 100 Freebie! Take a Suit Yourself card!
   - 0  # 101 Special bonus! Your shops all grow by 21%!
   - 0  # 102 Moneymaking venture! Roll the die and get 33 times the number shown in gold coins from all other players!
-  - 1  # 103 Misadventure! The values of all your shops drop by 25%!
+  - 0  # 103 Misadventure! The values of all your shops drop by 25%!
   - 0  # 104 Misadventure! You give everyone 80G each!
   - 0  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
   - 1  # 106 Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)
