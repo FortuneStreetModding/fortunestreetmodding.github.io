@@ -8,7 +8,7 @@ initialCash: 3000
 targetAmount: 30000
 baseSalary: 400
 salaryIncrement: 200
-maxDiceRoll: 8
+maxDiceRoll: 7
 frbFiles:
 - Ennesan21A
 background: grid_lightblue2
@@ -43,6 +43,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed maxDiceRoll from 8 to 7
   - version: 1
     added:
       - Initial Release

@@ -6,7 +6,6 @@ import DOMPurify from 'isomorphic-dompurify';
 import ventureCards from "~/data/venturecards.yml";
 import backgrounds, { type Background } from "~/data/backgrounds.yml";
 import { execSync } from 'child_process';
-import { getRandomDate } from './utils';
 
 export type MapDescriptorExtended = Omit<MapDescriptor1, 'music' | 'changelog' | 'frbFile1' | 'frbFile2' | 'frbFile3' | 'frbFile4' | 'frbFiles' | 'ventureCards'> & {
   nameEn: string;
@@ -174,3 +173,20 @@ function getBoards(): MapDescriptorExtended[] {
   }
   return boards;
 };
+
+function getRandomDate() {
+  // Get today's date
+  const today = new Date();
+
+  // Calculate 1 year ago from today
+  const oneYearAgo = new Date();
+  oneYearAgo.setFullYear(today.getFullYear() - 1);
+
+  // Get a random number of milliseconds between oneYearAgo and today
+  const randomMilliseconds = Math.floor(Math.random() * (today.getTime() - oneYearAgo.getTime())) + oneYearAgo.getTime();
+
+  // Create a new Date object using the random milliseconds
+  const randomDate = new Date(randomMilliseconds);
+
+  return randomDate;
+}

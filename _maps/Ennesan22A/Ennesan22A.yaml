@@ -14,7 +14,7 @@ frbFiles:
 background: grid_yellow
 mapIcon: Enne22A
 music:
-  download:
+  download: 
     - https://nikkums.io/cswt/BGM/Ennesan22A.music.zip
     - https://drive.google.com/u/0/uc?id=1zRo-4ydscDq05eimuiakqFEFpHer4t4A&export=download
   map:
@@ -44,9 +44,9 @@ tourMode:
 changelog:
   - version: 3
     changed:
-      - Corrected an error in setting the initial shop value for some shops.
-      - Changed the effect of some event squares
-      - Changed venture card 46 to 124
+      - Decrease District C and District H from 5 to 4 shops.
+      - Change upper and lower aisles and outer intersections to directional event squares.
+      - Adjustment of shop prices in some shops.
   - version: 2
     changed:
       - Changed shop values for some shops
@@ -103,7 +103,7 @@ ventureCards:
   - 1  #  43 Misadventure! You pay an assets tax of two gold coins per unit of stock that you own!
   - 1  #  44 Misadventure! Roll the die and pay 44 times the number in gold coins to the player in last place!
   - 0  #  45 Dicey adventure! Roll 1/3/5 to warp to a take-a-break square. Roll 2/4/6 to warp to the arcade.
-  - 0  #  46 Misadventure! You drop your wallet and lose 10% of your ready cash!
+  - 1  #  46 Misadventure! You drop your wallet and lose 10% of your ready cash!
   - 0  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
   - 1  #  48 Misadventure! All shops in a district picked at random fall in value by 10%!
   - 0  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
@@ -181,7 +181,7 @@ ventureCards:
   - 0  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
   - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
   - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
-  - 1  # 124 Suit venture! Buy a Suit Yourself card for 50G.
+  - 0  # 124 Suit venture! Buy a Suit Yourself card for 50G.
   - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!

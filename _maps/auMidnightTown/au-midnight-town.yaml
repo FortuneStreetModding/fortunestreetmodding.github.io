@@ -10,7 +10,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: au-midnight-town
-background: grid_blue2
+background: starcarnival_n
 mapIcon: midnight
 music:
   download:
@@ -48,6 +48,9 @@ tourMode:
   opponent3: Waluigi
   clearRank: 2
 changelog:
+  - version: 8
+    changed:
+      - Changed background to starcarnival_n
   - version: 7
     added:
       - Bad Venture Music

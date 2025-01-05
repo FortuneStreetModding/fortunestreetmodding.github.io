@@ -11,7 +11,7 @@ salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: SPWorldTree0
 frbFile2: SPWorldTree1
-background: bg008alt
+background: bg109alt
 mapIcon: spworldtree
 music:
   download:
@@ -50,6 +50,9 @@ tourMode:
   opponent3: Slime
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Changed background to bg109alt
   - version: 3
     added:
       - Guest Leave Music

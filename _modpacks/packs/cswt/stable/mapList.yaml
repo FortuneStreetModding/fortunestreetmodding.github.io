@@ -116,6 +116,9 @@ backgrounds: backgrounds.yml
     IS3Rainforest.zip:
       urls:
       - https://nikkums.io/cswt/Maps/IS3Rainforest.zip
+    is3_sushitrain.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/is3_sushitrain.zip
     IS3Moonlight.zip:
       urls:
       - https://nikkums.io/cswt/Maps/IS3Moonlight.zip
@@ -279,9 +282,6 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/birdosbigtop.zip
   1:
-    Reactor.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Reactor.zip
     CastawayBayCSide.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
@@ -291,13 +291,19 @@ backgrounds: backgrounds.yml
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
+    TheClock.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TheClock.zip
+    TheClockTower.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TheClockTower.zip
     Cogito.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Cogito.zip
+      - https://nikkums.io/cswt/Maps/Cogito.zip  
+  2:
     Colony9.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony9.zip
-  2:
     DeathStarfish.zip:
       practiceBoard: true
       urls:
@@ -323,9 +329,6 @@ backgrounds: backgrounds.yml
     Ennesan15.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan15.zip
-    Ennesan17.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan17.zip
     Ennesan18.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan18.zip
@@ -344,6 +347,21 @@ backgrounds: backgrounds.yml
     Ennesan29.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan29.zip
+    Ennesan30B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30B.zip
+    Ennesan39B.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan39B.zip
+    Ennesan41.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan41.zip  
+    Ennesan42A.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan42A.zip
+    Ennesan44.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan44.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
@@ -380,18 +398,30 @@ backgrounds: backgrounds.yml
     InsideOut.zip:
       urls:
       - https://nikkums.io/cswt/Maps/InsideOut.zip
+    JuniorStreet.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/JuniorStreet.zip
     Kanto.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Kanto.zip
+    KBHH.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/KBHH.zip
     KingOfTheHill.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KingOfTheHill.zip
-    luigismansion.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/luigismansion.zip
     KoopaTycoonTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KoopaTycoonTown.zip
+    landorstonksduplidoe.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/landorstonksduplidoe.zip
+    lighthouseisland.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/lighthouseisland.zip
+    luigismansion.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/luigismansion.zip
     mp9_magmine.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mp9_magmine.zip
@@ -401,6 +431,9 @@ backgrounds: backgrounds.yml
     NLA.zip:
       urls:
       - https://nikkums.io/cswt/Maps/NLA.zip
+    pacman.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/pacman.zip  
     Palamecia.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Palamecia.zip
@@ -410,6 +443,12 @@ backgrounds: backgrounds.yml
     Playground.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Playground.zip
+    POWBlock.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/POWBlock.zip
+    mpss_ppbc.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/mpss_ppbc.zip
     Quad.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Quad.zip
@@ -422,12 +461,18 @@ backgrounds: backgrounds.yml
     SkyTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SkyTower.zip
+    slimeguyspaydayexpress.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
     starcarnival.zip:
       urls:
       - https://nikkums.io/cswt/Maps/starcarnival.zip
+    SuitsMap.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/SuitsMap.zip
     Bethlehem.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Bethlehem.zip

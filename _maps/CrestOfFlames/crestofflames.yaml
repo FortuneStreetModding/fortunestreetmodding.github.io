@@ -1,9 +1,7 @@
 name:
   en: Crest of Flames
-  jp: 炎の紋章
 desc:
   en: The Crest of the Goddess who governs the world of Fódlan. A long and perilous journey to collect the four suits awaits - beware of being sent off course by backstreet and warp spaces, and make sure to buy stocks wisely whenever you visit the banks.
-  jp: フォドラを司る女神の紋章。
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000

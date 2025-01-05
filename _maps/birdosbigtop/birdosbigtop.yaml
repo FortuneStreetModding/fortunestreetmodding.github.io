@@ -5,10 +5,10 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2200
-targetAmount: 25000
+targetAmount: 22000
 baseSalary: 300
 salaryIncrement: 200
-maxDiceRoll: 6
+maxDiceRoll: 7
 frbFiles:
 - birdosbigtop1
 background: starcarnival_n
@@ -50,6 +50,14 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Target amount lowered to 22k
+  - version: 2
+    changed:
+      - District A has one vacant plot instead of two
+      - The 2 districts near the bank now contain 6 properties and a vacant plot has been given to each
+      - Max dice roll increased from 6 to 7
   - version: 1
     added: 
       - Initial Release

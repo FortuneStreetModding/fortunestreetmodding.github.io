@@ -1,12 +1,12 @@
 {
-    "cswt_test":
+    "cstp":
     {
-        "name":"Custom Street World Tour (Test Version)",
-        "description":"A version of CSWT containing only new boards that need testing",
+        "name":"Custom Street Tester's Pack",
+        "description":"A version of CSWT containing only new boards that need testing.",
         "version":"1.0",
         "entity":"modpack",
         "type":"primary",
-        "release_date":"2024/02/11",
+        "last_updated":"2024/11/28",
         "resources":"cswt"
     }
 }

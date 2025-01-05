@@ -1,0 +1,4 @@
+[submodule "public/ghidra-boom-street"]
+	path = public/ghidra-boom-street
+	url = ../ghidra-boom-street.git
+	branch = main

@@ -1,17 +1,7 @@
 name:
   en: The Chum Bucket
-  de: The Chum Bucket
-  fr: The Chum Bucket
-  it: The Chum Bucket
-  jp: The Chum Bucket
-  es: The Chum Bucket
 desc:
   en: A downtrodden restaurant located in the town of Bikini Bottom, and the main rival of the world-famous Krusty Krab.
-  de: A downtrodden restaurant located in the town of Bikini Bottom, and the main rival of the world-famous Krusty Krab.
-  fr: A downtrodden restaurant located in the town of Bikini Bottom, and the main rival of the world-famous Krusty Krab.
-  it: A downtrodden restaurant located in the town of Bikini Bottom, and the main rival of the world-famous Krusty Krab.
-  jp: A downtrodden restaurant located in the town of Bikini Bottom, and the main rival of the world-famous Krusty Krab.
-  es: A downtrodden restaurant located in the town of Bikini Bottom, and the main rival of the world-famous Krusty Krab.
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
