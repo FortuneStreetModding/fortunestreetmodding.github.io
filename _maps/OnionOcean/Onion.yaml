@@ -17,22 +17,6 @@ maxDiceRoll: 7
 frbFile1: Onion
 background: OnionOcean
 mapIcon: OnionOC
-music:
-  map: SeaTemple
-  stock: SeaStocks
-  ventureCards: SeaVenture
-  auction: SeaAuction
-  targetMet: SeaFinale
-  roundTheBlocks: SeaROB
-  win: SeaWin
-  guestAppear: SeaGuestArrive
-  guestLeave: SeaGuestGoodbye
-  badVentureCard: SeaTemFail
-  takeAbreak: SeaSleepy
-  promotionMii: SeaPromo
-  promotionMario: SeaPromo
-  promotionDragonQuest: SeaPromo
-  domination: SeaDom
 tourMode:
   bankruptcyLimit: 1
   opponent1: Peach
