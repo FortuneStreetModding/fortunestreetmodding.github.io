@@ -52,6 +52,9 @@ tourMode:
   opponent3: Platypunk
   clearRank: 1
 changelog:
+  - version: 6
+    changed:
+      - Fix to prevent looping through the bank only in the left or right half of the board
   - version: 5
     changed:
       - Changed background to bg109alt

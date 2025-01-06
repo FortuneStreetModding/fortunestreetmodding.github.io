@@ -4,9 +4,6 @@ backgrounds: backgrounds.yml
     Ennesan39B.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan39B.zip
-    Ennesan42B.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan42B.zip
     Ennesan43.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan43.zip
@@ -19,18 +16,25 @@ backgrounds: backgrounds.yml
     arrowhead.zip:
         urls:
         - https://nikkums.io/cswt/Maps/arrowhead.zip
-  1:
     StarshipRedux.zip:
         urls:
         - https://nikkums.io/cswt/Maps/StarshipRedux.zip
+  1:
     Tutorial1.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Tutorial1.zip
     OnionOcean.zip:
         urls:
         - https://nikkums.io/cswt/Maps/OnionOcean.zip
-    placeholder.zip:
-    placeholder.zip:
+    Ennesan48.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan48.zip
+    Ennesan49.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan49.zip
+    Quadrants.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Quadrants.zip
     placeholder.zip:
   2:
     placeholder.zip:
@@ -45,8 +49,12 @@ backgrounds: backgrounds.yml
     Ennesan30A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan30A.zip
-    placeholder.zip:
-    placeholder.zip:
+    Ennesan20.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan20.zip
+    WiiU.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/WiiU.zip
     placeholder.zip:
     placeholder.zip:
   1:
