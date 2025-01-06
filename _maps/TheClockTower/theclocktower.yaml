@@ -40,6 +40,7 @@ authors:
   - name: RyanDCB
 changelog:
   - version: 3
+    changed:
       - Fixed softlock caused by getting stuck on Cannon from Venture Card 83
   - version: 2
     changed:
