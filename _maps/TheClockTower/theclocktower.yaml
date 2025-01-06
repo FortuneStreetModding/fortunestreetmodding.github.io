@@ -40,7 +40,7 @@ authors:
   - name: RyanDCB
 changelog:
   - version: 3
-      - Fixed softlock caused by getting stuck on Cannon from Venture Card 83 - You can now leave the cannon after being warped there.
+      - Fixed softlock caused by getting stuck on Cannon from Venture Card 83
   - version: 2
     changed:
       - Reduced board size by 8 squares and adjusted the shape of the board
