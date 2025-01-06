@@ -56,11 +56,6 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
-  - version: 2
-    changed:
-      - Music has been completely changed
-      - swapped some squares and redid the top of the lighthouse, players can now loop around and go back down to the green door
-      - opened up the ability to walk passed the heart suit instead of players being forced to walk through the pink door
   - version: 1
     added: 
       - Initial Release
