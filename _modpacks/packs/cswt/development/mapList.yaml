@@ -35,7 +35,9 @@ backgrounds: backgrounds.yml
     returntolighthouseisland.zip:
         urls:
         - https://nikkums.io/cswt/Maps/returntolighthouseisland.zip
-    placeholder.zip:
+    yoshicloud.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/yoshicloud.zip
   2:
     placeholder.zip:
     placeholder.zip:
