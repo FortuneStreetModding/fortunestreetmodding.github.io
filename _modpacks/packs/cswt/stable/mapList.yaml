@@ -455,6 +455,9 @@ backgrounds: backgrounds.yml
     RainbowRoadWii.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RainbowRoadWii.zip
+    returntolighthouseisland.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/returntolighthouseisland.zip
     Shibuya.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Shibuya.zip

@@ -32,12 +32,10 @@ backgrounds: backgrounds.yml
     Quadrants.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Quadrants.zip
-    returntolighthouseisland.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/returntolighthouseisland.zip
     yoshicloud.zip:
         urls:
         - https://nikkums.io/cswt/Maps/yoshicloud.zip
+    placeholder.zip:
   2:
     placeholder.zip:
     placeholder.zip:
