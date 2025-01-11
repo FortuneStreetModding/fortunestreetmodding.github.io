@@ -1,3 +1,4 @@
-+cstppycsmm
++better_battery_indicator
++cstp
 +ChangeCurtain
 +NewTitleScreen

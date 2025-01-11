@@ -1,0 +1,30 @@
+[
+	{
+		"from": "common/common_dialog.cmparc",
+		"to": "files/common/common_dialog.cmparc"
+	},
+	{
+		"from": "common/common_dialog.cmparc",
+		"to": "files/common/langDE/common_dialog_DE.cmparc"
+	},
+	{
+		"from": "common/common_dialog.cmparc",
+		"to": "files/common/langEN/common_dialog_EN.cmparc"
+	},
+	{
+		"from": "common/common_dialog.cmparc",
+		"to": "files/common/langES/common_dialog_ES.cmparc"
+	},
+	{
+		"from": "common/common_dialog.cmparc",
+		"to": "files/common/langFR/common_dialog_FR.cmparc"
+	},
+	{
+		"from": "common/common_dialog.cmparc",
+		"to": "files/common/langIT/common_dialog_IT.cmparc"
+	},
+	{
+		"from": "common/common_dialog.cmparc",
+		"to": "files/common/langUK/common_dialog_UK.cmparc"
+	}
+]

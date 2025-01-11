@@ -1,3 +1,4 @@
-+cswtpycsmm
++better_battery_indicator
++cswt
 +ChangeCurtain
 +NewTitleScreen
