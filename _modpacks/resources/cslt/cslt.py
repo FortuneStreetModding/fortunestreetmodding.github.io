@@ -49,10 +49,10 @@ class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycs
 			'uk': 'files/game/langUK/game_sequence_title_UK.arc',
 		}
 
-	return {
-		arcFile:
-		lambda root, gameInstance, modList, arcDir, locale=locale, modpackDir=self.modpackDir(): replTitleImages(locale, arcDir, modpackDir)
-		for locale, arcFile in localeToTitleArcFile.items()
-	}
+		return {
+			arcFile:
+			lambda root, gameInstance, modList, arcDir, locale=locale, modpackDir=self.modpackDir(): replTitleImages(locale, arcDir, modpackDir)
+			for locale, arcFile in localeToTitleArcFile.items()
+		}
 
 mod = Mod()
