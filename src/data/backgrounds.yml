@@ -1191,3 +1191,9 @@
     promotionMario: SeaPromo
     promotionDragonQuest: SeaPromo
     domination: SeaDom
+- background: giantbeanstalk
+  download:
+  - https://drive.google.com/uc?export=download&id=1D5CwXqKz57Qjo2WlA9xxrsB0FYkzFVVm&confirm=1
+  mapIcon: igiantbeansta
+  bgm:  BGM_MAP_STARSHIP
+  name: Giant Beanstalk
