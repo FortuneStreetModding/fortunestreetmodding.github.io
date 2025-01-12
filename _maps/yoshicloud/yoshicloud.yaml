@@ -15,7 +15,7 @@ looping:
   radius: 20
   horizontalPadding: .98
   verticalSquareCount: 12
-background: bg001
+background: giantbeanstalk
 mapIcon: yocloud
 music:
   download:
@@ -45,8 +45,15 @@ changelog:
   - version: 1
     added: 
       - Initial Release
+  - version: 2
+    added: 
+      - Added a new background to the map.
+    changed:
+      - Changed the frb origin point to align with the Yoshi lift.
+      - Changed Yoshi lift square position to the right of the bank.
 authors:
   - name: phellen007
+  - name: McKrak
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
