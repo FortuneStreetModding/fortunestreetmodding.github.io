@@ -15,8 +15,8 @@ looping:
   radius: 28
   horizontalPadding: .95
   verticalSquareCount: 17
-background: bg008alt
-mapIcon: gbs
+background: giantbeanstalk
+mapIcon: igiantbeansta
 music:
   download:
   - https://nikkums.io/cswt/BGM/GiantBeanstalk.music.zip
@@ -40,6 +40,10 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 3
+    added:
+      - Unique background has been added for this map.
+      - Slightly changed board positioning.
   - version: 2
     changed:
       - Shrunk the map by 12 squares turning all 4 property districts into 3 property districts
@@ -53,6 +57,7 @@ changelog:
       - Initial Release
 authors:
   - name: phellen007
+  - name: McKrak
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
