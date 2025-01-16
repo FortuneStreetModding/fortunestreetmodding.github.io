@@ -6,7 +6,7 @@ ruleSet: Standard
 theme: Mario
 initialCash: 2000
 targetAmount: 22000
-baseSalary: 265
+baseSalary: 275
 salaryIncrement: 200
 maxDiceRoll: 6
 frbFile1: yoshicloud
@@ -43,19 +43,19 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
-  - version: 1
-    added: 
-      - Initial Release
+  - verson: 3
+    changed:
+      - Adjusted some property, district, starting cash, salary, and increment values.
+      - Added a switch state that disconnects the yoshi lift, should make the properties near the bank a little stronger.
   - version: 2
     added: 
       - Added a new background to the map.
     changed:
       - Changed the frb origin point to align with the Yoshi lift.
       - Changed Yoshi lift square position to the right of the bank.
-  - verson: 3
-    changed:
-      - Adjusted some property, district, starting cash, salary, and increment values.
-      - Added a switch state that disconnects the yoshi lift, should make the properties near the bank a little stronger.
+  - version: 1
+    added: 
+      - Initial Release
 authors:
   - name: phellen007
   - name: McKrak
