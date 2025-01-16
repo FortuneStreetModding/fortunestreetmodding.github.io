@@ -7,7 +7,7 @@ theme: DragonQuest
 initialCash: 2400
 targetAmount: 20000
 baseSalary: 360
-salaryIncrement: 225
+salaryIncrement: 250
 maxDiceRoll: 6
 frbFiles:
  - returnlighthouse
@@ -56,6 +56,15 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - replaced the backstreet with an event square that changes with the switch states
+      - changed where the doors connect in the boat formation
+      - swapped out one of the cannons for an event square that changes with the switch states
+      - removed one square by the bank, moved the bank location so it's at a 3 way junction
+      - took away 2 rotating suits and placed two roll ons
+      - changed out a few venture cards
+      - magmalices no longer function in frb1 lighthouse form, moved their locations in frb2 and frb3 boat form
   - version: 1
     added: 
       - Initial Release
@@ -110,7 +119,7 @@ ventureCards:
   - 1  #  46 Misadventure! You drop your wallet and lose 10% of your ready cash!
   - 0  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
   - 1  #  48 Misadventure! All shops in a district picked at random fall in value by 10%!
-  - 1  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
+  - 0  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
   - 1  #  50 Venture on! Move forward the same number of squares again.
   - 1  #  51 Venture on! Move forward 1 square more.
   - 0  #  52 Venture on! Move forward another 2 squares.
@@ -120,7 +129,7 @@ ventureCards:
   - 1  #  56 Venture on! Roll the die again and move forward (with a half-price special offer thrown in!).
   - 0  #  57 Venture through space! Zoom to any square you like.
   - 0  #  58 Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!
-  - 0  #  59 Stock venture! You can buy stocks in a district of your choice at 10% below the market value.
+  - 1  #  59 Stock venture! You can buy stocks in a district of your choice at 10% below the market value.
   - 1  #  60 Random venture! Stock prices increase by 10% in a district picked at random!
   - 1  #  61 Special bonus! You receive a 10% dividend on your stocks!
   - 0  #  62 Special bonus! You receive a 20% dividend on your stocks!
