@@ -43,7 +43,7 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
-  - verson: 3
+  - version: 3
     changed:
       - Adjusted some property, district, starting cash, salary, and increment values.
       - Added a switch state that disconnects the yoshi lift, should make the properties near the bank a little stronger.
