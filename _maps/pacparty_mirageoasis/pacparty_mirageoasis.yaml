@@ -17,9 +17,6 @@ frbFiles:
 background: pacparty_mirageoasis
 mapIcon: pacparty_p804
 music:
-  download:
-  - https://nikkums.io/cswt/BGM/pacparty_mirageoasis.music.zip
-  - https://drive.google.com/uc?export=download&id=1-2xRxWElzVN-tJ6GQWlc6HcfQ2gMnoxQ&confirm=1
   map: 
   - pacparty_mirageoasis_MAP_0
   - pacparty_mirageoasis_MAP_1
