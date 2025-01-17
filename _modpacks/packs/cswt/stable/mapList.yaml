@@ -422,9 +422,6 @@ backgrounds: backgrounds.yml
     KoopaTycoonTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KoopaTycoonTown.zip
-    landorstonksduplidoe.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/landorstonksduplidoe.zip
     luigismansion.zip:
       urls:
       - https://nikkums.io/cswt/Maps/luigismansion.zip
