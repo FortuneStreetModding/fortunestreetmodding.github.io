@@ -377,9 +377,6 @@ backgrounds: backgrounds.yml
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
-    Fillmore.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Fillmore.zip
     fortunapolis.zip:
       urls:
       - https://nikkums.io/cswt/Maps/fortunapolis.zip

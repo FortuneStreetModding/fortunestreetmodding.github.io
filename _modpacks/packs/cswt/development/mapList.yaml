@@ -52,7 +52,9 @@ backgrounds: backgrounds.yml
     giantbeanstalk.zip:
       urls:
       - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
-    placeholder.zip:
+    Fillmore.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Fillmore.zip
     placeholder.zip:
   1:
     placeholder.zip:
