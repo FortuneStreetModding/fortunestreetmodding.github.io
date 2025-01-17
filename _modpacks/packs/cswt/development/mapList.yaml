@@ -7,34 +7,28 @@ backgrounds: backgrounds.yml
     Ennesan43.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan43.zip
-    Ennesan45.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan45.zip
-    Ennesan48.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan48.zip
     Ennesan49.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan49.zip
     arrowhead.zip:
         urls:
         - https://nikkums.io/cswt/Maps/arrowhead.zip
-  1:
-    StarshipRedux.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/StarshipRedux.zip
     Tutorial1.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Tutorial1.zip
     OnionOcean.zip:
         urls:
         - https://nikkums.io/cswt/Maps/OnionOcean.zip
-    Quadrants.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Quadrants.zip
+  1:
     yoshicloud.zip:
         urls:
         - https://nikkums.io/cswt/Maps/yoshicloud.zip
+    pacparty_mirageoasis.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/pacparty_mirageoasis.zip
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
   2:
     placeholder.zip:
@@ -55,7 +49,9 @@ backgrounds: backgrounds.yml
     WiiU.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WiiU.zip
-    placeholder.zip:
+    giantbeanstalk.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
     placeholder.zip:
     placeholder.zip:
   1:

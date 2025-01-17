@@ -362,9 +362,15 @@ backgrounds: backgrounds.yml
     Ennesan44.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan44.zip
+    Ennesan45.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan45.zip
     Ennesan46B.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan46B.zip
+    Ennesan48.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan48.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
@@ -452,6 +458,9 @@ backgrounds: backgrounds.yml
     Quad.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Quad.zip
+    Quadrants.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Quadrants.zip    
     RainbowRoadWii.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RainbowRoadWii.zip

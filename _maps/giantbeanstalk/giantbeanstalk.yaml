@@ -18,8 +18,7 @@ looping:
 background: giantbeanstalk
 mapIcon: igiantbeansta
 music:
-  map: 
-  - Beanstalk.50
+  map: Beanstalk.50
   stock: BeanstalkStock.50 
   ventureCards: BeanstalkVenture.50
   auction: BeanstalkAuction.50
