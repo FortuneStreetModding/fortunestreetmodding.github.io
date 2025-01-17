@@ -392,9 +392,6 @@ backgrounds: backgrounds.yml
     GalDaValIsland.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GalDaValIsland.zip
-    GeometryDash.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/GeometryDash.zip
     giantbeanstalk.zip:
       urls:
       - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
