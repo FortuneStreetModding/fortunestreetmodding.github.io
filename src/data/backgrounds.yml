@@ -1193,7 +1193,11 @@
     domination: SeaDom
 - background: giantbeanstalk
   download:
-  - https://drive.google.com/uc?export=download&id=1D5CwXqKz57Qjo2WlA9xxrsB0FYkzFVVm&confirm=1
+  - https://nikkums.io/cswt/Backgrounds/giantbeanstalk.background.zip
   mapIcon: igiantbeansta
-  bgm:  BGM_MAP_STARSHIP
   name: Giant Beanstalk
+- background: pacparty_mirageoasis
+  download:
+  - https://nikkums.io/cswt/Backgrounds/pacparty_mirageoasis.background.zip
+  mapIcon: pacparty_p804
+  name: Mirage Oasis
