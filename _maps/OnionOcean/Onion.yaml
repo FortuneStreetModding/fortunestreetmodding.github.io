@@ -19,6 +19,9 @@ tourMode:
   opponent3: Slime
   clearRank: 3
 changelog:
+  - version: 3
+    changed:
+      - Adjusted shapes of some junctions to allow for easier player input.
   - version: 2
     changed:
       - Change Square ID 33 from vacant plot to property.
