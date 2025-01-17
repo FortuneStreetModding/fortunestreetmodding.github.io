@@ -1197,3 +1197,9 @@
   mapIcon: igiantbeansta
   bgm:  BGM_MAP_STARSHIP
   name: Giant Beanstalk
+- background: pacparty_mirageoasis
+  download:
+  - https://drive.google.com/uc?export=download&id=1USbMgCrRZDX54S5aJLntJLKRTQOjP-fO&confirm=1
+  mapIcon: pacparty_p804
+  bgm:  BGM_MAP_KANDATA
+  name: Mirage Oasis
