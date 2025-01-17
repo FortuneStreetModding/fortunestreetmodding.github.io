@@ -47,7 +47,7 @@ changelog:
       - Replaced one of the backstreets by the bank with a roll on
       - The other backstreet has been moved to be connected just below the bank, no longer blocking players path on return trips to the bank
       - Target raised to 22k
-      - path limit added, players now have to turn down towards the bank when crossing the top of the map
+      - Path limit added, players now have to turn down towards the bank when crossing the top of the map
   - version: 2
     changed:
       - Map size has been reduced to 59 squares
