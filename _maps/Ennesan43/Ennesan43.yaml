@@ -10,11 +10,11 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFiles:
-- Ennesan43_1
-- Ennesan43_2
-- Ennesan43_3
+- E43_1
+- E43_2
+- E43_3
 background: grid_green
-mapIcon: Enne43
+mapIcon: E43i
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan43.music.zip
@@ -46,6 +46,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Rename frb file and mapicon file
   - version: 1
     added:
       - Initial Release
