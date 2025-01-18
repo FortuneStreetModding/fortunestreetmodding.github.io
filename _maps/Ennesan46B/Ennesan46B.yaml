@@ -15,7 +15,7 @@ frbFiles:
 - E46B_3
 - E46B_4
 background: grid_rainbow
-mapIcon: Enne46B
+mapIcon: E46Bi
 districtNames:
   en:
   - Room 1-A
