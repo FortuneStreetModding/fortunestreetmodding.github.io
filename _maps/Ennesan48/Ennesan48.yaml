@@ -10,9 +10,9 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 6
 frbFiles:
-- Ennesan48
+- E48
 background: grid_green
-mapIcon: Enne48
+mapIcon: E48i
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan48.music.zip
@@ -52,6 +52,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Rename frb file and mapicon file
   - version: 1
     added:
       - Initial Release
