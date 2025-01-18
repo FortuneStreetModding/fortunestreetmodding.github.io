@@ -10,9 +10,9 @@ baseSalary: 0
 salaryIncrement: 0
 maxDiceRoll: 7
 frbFiles:
-- Ennesan22A
+- E22A
 background: grid_yellow
-mapIcon: Enne22A
+mapIcon: E22Ai
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan22A.music.zip
@@ -42,6 +42,11 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Suits disappeared and instead an event square was established that increased store prices.
+      - The event square where the Yourself card can be earned has been replaced by an event square where all suits can be earned.
+      - Rename frb file and mapicon file
   - version: 3
     changed:
       - Decrease District C and District H from 5 to 4 shops.
