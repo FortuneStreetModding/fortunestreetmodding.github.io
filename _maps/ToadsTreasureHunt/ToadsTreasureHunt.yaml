@@ -1,7 +1,7 @@
 name:
   en: Toad's Treasure Hunt
 desc:
-  en: Treasure has gone missing from the vault at the MKNB, Mushroom Kingdom National Bank. Captain Toad and his ragtag crew of treasure hunters have been tasked with recovering the gold. Naturally a competition has formed within the group to see who will be the one to bring back the most treasure.
+  en: Treasure has gone missing from the vault at the MKNB, Mushroom Kingdom National Bank. Captain Toad and his ragtag crew of treasure hunters have been tasked with its recovery. Naturally a competition has formed within the group to see who will be the one to bring back the most gold.
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
@@ -9,10 +9,10 @@ targetAmount: 22000
 baseSalary: 400
 salaryIncrement: 200
 maxDiceRoll: 6
-frbFile1: ToadsTreasureHunt
-frbFile2: ToadsTreasureHuntS
-frbFile3: ToadsTreasureHuntS2
-frbFile4: ToadsTreasureHuntS3
+frbFile1: TTH
+frbFile2: TTH2
+frbFile3: TTH3
+frbFile4: TTH4
 background: bg003fixed
 mapIcon: ToadsTreasure
 music:
