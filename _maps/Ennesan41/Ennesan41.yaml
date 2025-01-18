@@ -5,14 +5,14 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 6000
-targetAmount: 22000
+targetAmount: 20000
 baseSalary: 0
 salaryIncrement: 0
 maxDiceRoll: 6
 frbFiles:
-- Ennesan41
+- E41
 background: grid_rainbow
-mapIcon: Enne41
+mapIcon: E41i
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan41.music.zip
@@ -43,6 +43,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Target amount reduced from 22,000 to 20,000.
+      - Rename frb file and mapicon file
   - version: 1
     added:
       - Initial Release
