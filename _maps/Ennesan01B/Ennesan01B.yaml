@@ -5,13 +5,13 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1700
-targetAmount: 18000
+targetAmount: 15000
 baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
-frbFile1: Ennesan01B
+frbFile1: E1B
 background: grid_blue
-mapIcon: Enne01B
+mapIcon: E1Bi
 music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan01B.music.zip
@@ -41,6 +41,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 9
+    changed:
+      - Target amount reduced from 18,000 to 15,000.
+      - Rename frb file and mapicon file
   - version: 8
     changed:
       - Base salary decreased from 350 to 300
