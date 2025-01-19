@@ -357,17 +357,20 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan41.zip  
     Ennesan42A.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan42A.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan42A.zip
     Ennesan44.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan44.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan44.zip
+    Ennesan45.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan45.zip  
     Ennesan46B.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan46B.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan46B.zip
     Ennesan48.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan48.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan48.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
@@ -453,8 +456,8 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/RainbowRoadWii.zip
     returntolighthouseisland.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/returntolighthouseisland.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/returntolighthouseisland.zip
     Shibuya.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Shibuya.zip
