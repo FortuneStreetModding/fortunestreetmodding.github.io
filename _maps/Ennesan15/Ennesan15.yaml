@@ -9,9 +9,9 @@ targetAmount: 15000
 baseSalary: 325
 salaryIncrement: 125
 maxDiceRoll: 6
-frbFile1: Ennesan15
+frbFile1: E15
 background: grid_bluegreen
-mapIcon: Enne15
+mapIcon: E15i
 music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan15.music.zip
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 7
+    changed:
+      - Rename frb file and mapicon file
   - version: 6
     changed:
       - Changed venture card 87 to 124

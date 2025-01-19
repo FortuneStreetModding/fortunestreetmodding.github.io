@@ -10,12 +10,12 @@ baseSalary: 450
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFiles:
-- Ennesan42A_1
-- Ennesan42A_2
-- Ennesan42A_3
-- Ennesan42A_4
+- E42A_1
+- E42A_2
+- E42A_3
+- E42A_4
 background: grid_red
-mapIcon: Enne42A
+mapIcon: E42Ai
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan42A.music.zip
@@ -44,6 +44,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Rename frb file and mapicon file
   - version: 2
     changed:
       - Event square with Venture Card 106 effect changed to Venture Card 99 effect.

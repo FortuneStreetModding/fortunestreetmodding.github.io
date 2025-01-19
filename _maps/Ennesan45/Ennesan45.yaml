@@ -10,99 +10,59 @@ baseSalary: 450
 salaryIncrement: 150
 maxDiceRoll: 6
 frbFiles:
-- Ennesan45_1
-- Ennesan45_2
-- Ennesan45_3
-- Ennesan45_4
-- Ennesan45_5
-- Ennesan45_6
-- Ennesan45_7
-- Ennesan45_8
-- Ennesan45_9
-- Ennesan45_10
-- Ennesan45_11
-- Ennesan45_12
-- Ennesan45_13
-- Ennesan45_14
-- Ennesan45_15
-- Ennesan45_16
-- Ennesan45_17
-- Ennesan45_18
-- Ennesan45_19
-- Ennesan45_20
-- Ennesan45_21
-- Ennesan45_22
-- Ennesan45_23
-- Ennesan45_24
-- Ennesan45_25
-- Ennesan45_26
-- Ennesan45_27
-- Ennesan45_28
-- Ennesan45_29
-- Ennesan45_30
-- Ennesan45_31
-- Ennesan45_32
-- Ennesan45_33
-- Ennesan45_34
-- Ennesan45_35
-- Ennesan45_36
-- Ennesan45_37
-- Ennesan45_38
-- Ennesan45_39
-- Ennesan45_40
-- Ennesan45_41
-- Ennesan45_42
-- Ennesan45_43
-- Ennesan45_44
-- Ennesan45_45
-- Ennesan45_46
-- Ennesan45_47
-- Ennesan45_48
-- Ennesan45_49
-- Ennesan45_50
-- Ennesan45_51
-- Ennesan45_52
-- Ennesan45_53
-- Ennesan45_54
-- Ennesan45_55
-- Ennesan45_56
-- Ennesan45_57
-- Ennesan45_58
-- Ennesan45_59
-- Ennesan45_60
-- Ennesan45_61
-- Ennesan45_62
-- Ennesan45_63
-- Ennesan45_64
-- Ennesan45_65
-- Ennesan45_66
-- Ennesan45_67
-- Ennesan45_68
-- Ennesan45_69
-- Ennesan45_70
-- Ennesan45_71
-- Ennesan45_72
-- Ennesan45_73
-- Ennesan45_74
-- Ennesan45_75
-- Ennesan45_76
-- Ennesan45_77
-- Ennesan45_78
-- Ennesan45_79
-- Ennesan45_80
-- Ennesan45_81
-- Ennesan45_82
-- Ennesan45_83
-- Ennesan45_84
-- Ennesan45_85
-- Ennesan45_86
-- Ennesan45_87
-- Ennesan45_88
-- Ennesan45_89
-- Ennesan45_90
-- Ennesan45_91
+- E45_1
+- E45_2
+- E45_3
+- E45_4
+- E45_5
+- E45_6
+- E45_7
+- E45_8
+- E45_9
+- E45_10
+- E45_11
+- E45_12
+- E45_13
+- E45_14
+- E45_15
+- E45_16
+- E45_17
+- E45_18
+- E45_19
+- E45_20
+- E45_21
+- E45_22
+- E45_23
+- E45_24
+- E45_25
+- E45_26
+- E45_27
+- E45_28
+- E45_29
+- E45_30
+- E45_31
+- E45_32
+- E45_33
+- E45_34
+- E45_35
+- E45_36
+- E45_37
+- E45_38
+- E45_39
+- E45_40
+- E45_41
+- E45_42
+- E45_43
+- E45_44
+- E45_45
+- E45_46
+- E45_47
+- E45_48
+- E45_49
+- E45_50
+- E45_51
 background: grid_rainbow
-mapIcon: Enne45
+mapIcon: E45i
 districtNames:
   en:
   - Ennesan 01
@@ -121,46 +81,6 @@ music:
     - https://drive.google.com/uc?export=download&id=1kneJyF8oweG0f6g-rdje2nBTaKA-nf2e&confirm=1
   map:
   - Ennesan45_Map_1.55
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
-  - Ennesan45_Map_2.45
   - Ennesan45_Map_2.45
   - Ennesan45_Map_2.45
   - Ennesan45_Map_2.45
@@ -236,6 +156,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Reduced board state from 91 to 51
+      - Rename frb file and mapicon file
   - version: 2
     changed:
       - Event squares that force everyone to assemble within the loop section of a switch are no longer included.

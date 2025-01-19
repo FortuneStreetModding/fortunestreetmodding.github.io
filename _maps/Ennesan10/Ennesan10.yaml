@@ -9,9 +9,9 @@ targetAmount: 25000
 baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
-frbFile1: Ennesan10
+frbFile1: E10
 background: grid_yellow
-mapIcon: Enne10
+mapIcon: E10i
 music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan10.music.zip
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Jessica
   clearRank: 1
 changelog:
+  - version: 10
+    changed:
+      - Rename frb file and mapicon file
   - version: 9
     changed:
       - First move changed to warp to any shop of your choice.

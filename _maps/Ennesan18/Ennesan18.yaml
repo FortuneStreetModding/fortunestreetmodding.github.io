@@ -9,9 +9,9 @@ targetAmount: 15000
 baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 6
-frbFile1: Ennesan18
+frbFile1: E18
 background: grid_red2
-mapIcon: Enne18
+mapIcon: E18i
 music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan18.music.zip
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Rename frb file and mapicon file
   - version: 2
     changed:
       - Changed some music

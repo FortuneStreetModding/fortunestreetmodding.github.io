@@ -10,17 +10,17 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFiles:
-- Ennesan23_1
-- Ennesan23_2
-- Ennesan23_3
-- Ennesan23_4
-- Ennesan23_5
-- Ennesan23_6
-- Ennesan23_7
-- Ennesan23_8
-- Ennesan23_9
+- E23_1
+- E23_2
+- E23_3
+- E23_4
+- E23_5
+- E23_6
+- E23_7
+- E23_8
+- E23_9
 background: grid_lightblue2
-mapIcon: Enne23
+mapIcon: E23i
 music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan23.music.zip
@@ -65,6 +65,9 @@ mutators:
     denominator: 3
     affectShopRank: true
 changelog:
+  - version: 4
+    changed:
+      - Rename frb file and mapicon file
   - version: 3
     changed:
       - Changed venture card 87 to 22
