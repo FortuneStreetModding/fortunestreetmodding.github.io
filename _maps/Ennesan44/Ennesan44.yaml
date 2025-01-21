@@ -10,31 +10,31 @@ baseSalary: 444
 salaryIncrement: 244
 maxDiceRoll: 7
 frbFiles:
-- Ennesan44_1
-- Ennesan44_2
-- Ennesan44_3
-- Ennesan44_4
-- Ennesan44_5
-- Ennesan44_6
-- Ennesan44_7
-- Ennesan44_8
-- Ennesan44_9
-- Ennesan44_10
-- Ennesan44_11
-- Ennesan44_12
-- Ennesan44_12
-- Ennesan44_12
-- Ennesan44_12
-- Ennesan44_12
-- Ennesan44_12
-- Ennesan44_12
-- Ennesan44_12
-- Ennesan44_12
-- Ennesan44_12
-- Ennesan44_12
-- Ennesan44_23
+- E44_1
+- E44_2
+- E44_3
+- E44_4
+- E44_5
+- E44_6
+- E44_7
+- E44_8
+- E44_9
+- E44_10
+- E44_11
+- E44_12
+- E44_12
+- E44_12
+- E44_12
+- E44_12
+- E44_12
+- E44_12
+- E44_12
+- E44_12
+- E44_12
+- E44_12
+- E44_23
 background: grid_gray
-mapIcon: Enne44
+mapIcon: E44i
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan44.music.zip
@@ -88,6 +88,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Rename frb file and mapicon file
   - version: 1
     added:
       - Initial Release

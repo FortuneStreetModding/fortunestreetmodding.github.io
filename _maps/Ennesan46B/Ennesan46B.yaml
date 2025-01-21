@@ -10,12 +10,12 @@ baseSalary: 300
 salaryIncrement: 100
 maxDiceRoll: 6
 frbFiles:
-- Ennesan46B_1
-- Ennesan46B_2
-- Ennesan46B_3
-- Ennesan46B_4
+- E46B_1
+- E46B_2
+- E46B_3
+- E46B_4
 background: grid_rainbow
-mapIcon: Enne46B
+mapIcon: E46Bi
 districtNames:
   en:
   - Room 1-A
@@ -57,6 +57,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Rename frb file and mapicon file
   - version: 1
     added:
       - Initial Release

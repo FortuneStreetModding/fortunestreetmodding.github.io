@@ -10,41 +10,41 @@ baseSalary: 400
 salaryIncrement: 100
 maxDiceRoll: 6
 frbFiles:
-- Ennesan20_1
-- Ennesan20_2
-- Ennesan20_3
-- Ennesan20_4
-- Ennesan20_5
-- Ennesan20_6
-- Ennesan20_7
-- Ennesan20_8
-- Ennesan20_9
-- Ennesan20_10
-- Ennesan20_11
-- Ennesan20_12
-- Ennesan20_13
-- Ennesan20_14
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_15
-- Ennesan20_29
+- E20_1
+- E20_2
+- E20_3
+- E20_4
+- E20_5
+- E20_6
+- E20_7
+- E20_8
+- E20_9
+- E20_10
+- E20_11
+- E20_12
+- E20_13
+- E20_14
+- E20_15
+- E20_15
+- E20_15
+- E20_15
+- E20_15
+- E20_15
+- E20_15
+- E20_15
+- E20_15
+- E20_15
+- E20_15
+- E20_15
+- E20_15
+- E20_15
+- E20_29
 background: grid_gray
-mapIcon: Enne20
+mapIcon: E20i
 music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan20.music.zip
-    - https://drive.google.com/uc?export=download&id=1yX5GZdPoxNJi4MQtZpQOHI4wiluhrldd&confirm=1
+    - https://drive.google.com/u/0/uc?id=1xksonm57-8iNyw88K5cYE6BQfi50Z_HB&export=download
   map:
   - Ennesan20_1_Map.65
   - Map_Ennesan20_2.65
@@ -128,6 +128,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 8
+    changed:
+      - Rename frb file and mapicon file
   - version: 7
     changed:
       - Changed the number of switches that need to be pressed to be able to go to the upper right island from 7 to 11 times.

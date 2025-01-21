@@ -10,9 +10,9 @@ baseSalary: 500
 salaryIncrement: 300
 maxDiceRoll: 7
 frbFiles:
-- Ennesan39B
+- E39B
 background: grid_yellow
-mapIcon: Enne39B
+mapIcon: E39Bi
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan39B.music.zip
@@ -41,6 +41,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Rename frb file and mapicon file
   - version: 2
     changed:
       - Event square with Venture Card 13 effect changed to Venture Card 43 effect.

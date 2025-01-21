@@ -10,9 +10,9 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFiles:
-- Ennesan49
+- E49
 background: grid_yellow
-mapIcon: Enne49
+mapIcon: E49i
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan49.music.zip
@@ -52,6 +52,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Rename frb file and mapicon file
   - version: 1
     added:
       - Initial Release

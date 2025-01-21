@@ -10,10 +10,10 @@ baseSalary: 400
 salaryIncrement: 175
 maxDiceRoll: 7
 frbFiles:
-- Ennesan30A_1
-- Ennesan30A_2
+- E30A_1
+- E30A_2
 background: grid_rainbow
-mapIcon: Enne30A
+mapIcon: E30Ai
 music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan30A.music.zip
@@ -43,6 +43,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Rename frb file and mapicon file
   - version: 2
     changed:
       - Change Districts A, B, C, and D from 6 to 5 shops.

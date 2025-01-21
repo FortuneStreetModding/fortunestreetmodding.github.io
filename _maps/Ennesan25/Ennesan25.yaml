@@ -10,22 +10,22 @@ baseSalary: 250
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFiles:
-- Ennesan25_1
-- Ennesan25_2
-- Ennesan25_3
-- Ennesan25_4
-- Ennesan25_5
-- Ennesan25_6
-- Ennesan25_7
-- Ennesan25_8
-- Ennesan25_9
-- Ennesan25_10
-- Ennesan25_11
-- Ennesan25_12
-- Ennesan25_13
-- Ennesan25_14
+- E25_1
+- E25_2
+- E25_3
+- E25_4
+- E25_5
+- E25_6
+- E25_7
+- E25_8
+- E25_9
+- E25_10
+- E25_11
+- E25_12
+- E25_13
+- E25_14
 background: grid_blue
-mapIcon: Enne25
+mapIcon: E25i
 music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan25.music.zip
@@ -73,6 +73,9 @@ mutators:
     denominator: 1
     constant: 10
 changelog:
+  - version: 2
+    changed:
+      - Rename frb file and mapicon file
   - version: 1
     added: 
       - Initial Release
