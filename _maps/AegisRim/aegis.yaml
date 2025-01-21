@@ -13,7 +13,7 @@ frbFile1: aegis0
 frbFile2: aegis1
 frbFile3: aegis2
 frbFile4: aegis3
-background: grid_blue2
+background: grid_bluegreen
 mapIcon: aegis
 districtNames:
   en:
