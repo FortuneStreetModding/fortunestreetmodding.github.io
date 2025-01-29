@@ -1,22 +1,17 @@
 name:
   en: Lost Canyon
 desc:
-  en: Two cliffs connected by a wooden bridge. You can jump off to the island near the bank district.
+  en: Two cliffs connected by a wooden bridge.
 ruleSet: Standard 
 theme: DragonQuest
-initialCash: 1500
-targetAmount: 15000
-baseSalary: 250
+initialCash: 1800
+targetAmount: 18000
+baseSalary: 200
 salaryIncrement: 250
-maxDiceRoll: 6
+maxDiceRoll: 7
 frbFile1: LostCanyon
 background: bg106
 mapIcon: canyonicon
-music:
-  download:
-    - https://nikkums.io/cswt/BGM/LostCanyon.music.zip
-    - https://drive.google.com/u/2/uc?id=1cPLFylubb4Sy6L7AqPnfJChkBZF-tWfo&export=download
-  map: canyonmusic
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi

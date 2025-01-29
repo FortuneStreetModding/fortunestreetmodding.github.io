@@ -1,22 +1,17 @@
 name:
   en: Colony 4
 desc:
-  en: From Xenoblade 3. A colony that has a war vehicle.
+  en: "The colony led by Silvercoat Ethel. Boasts many experienced soldiers and exceptional esprit de corps."
 ruleSet: Standard 
 theme: DragonQuest
 initialCash: 1800
 targetAmount: 20000
-baseSalary: 250
+baseSalary: 200
 salaryIncrement: 250
-maxDiceRoll: 8
+maxDiceRoll: 7
 frbFile1: C4
-background: bg105
+background: bg103
 mapIcon: colonyficon
-music:
-  download:
-    - https://nikkums.io/cswt/BGM/Colony4.music.zip
-    - https://drive.google.com/u/2/uc?id=198bRaD55lx_0Huq2qNYEVjS8qQ_LCJtH&export=download
-  map: colonyfsong
 tourMode:
   bankruptcyLimit: 1
   opponent1: Kiryl
