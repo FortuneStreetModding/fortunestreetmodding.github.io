@@ -1,31 +1,26 @@
 name:
   en: The Agency
 desc:
-  en: From Fortnite (CH2S2). The agency where Midas and his minions reside.
+  en: The famous agency from Fortnite, where players used to infiltrate Midas's agency. Try to open the vault and get all the suits!
 ruleSet: Standard 
 theme: DragonQuest
-initialCash: 1800
-targetAmount: 18000
-baseSalary: 250
-salaryIncrement: 250
-maxDiceRoll: 8
-frbFile1: AG1
-frbFile2: AG2
-background: bg105
+initialCash: 2000
+targetAmount: 20000
+baseSalary: 300
+salaryIncrement: 200
+maxDiceRoll: 7
+frbFile1: agency1
+frbFile2: agency2
+background: bg108
 mapIcon: agencyicon
-music:
-  download:
-    - https://nikkums.io/cswt/BGM/Agency.music.zip
-    - https://drive.google.com/u/2/uc?id=1UcbJgQ4HftWQSTfipZYd6JxMbijv4vmE&export=download
-  map: agency
 tourMode:
   bankruptcyLimit: 1
-  opponent1: Kiryl
-  opponent2: Bowser
-  opponent3: Patty
+  opponent1: Yangus
+  opponent2: Wario
+  opponent3: Jessica
   clearRank: 2
 changelog:
-  - version: 1
+  - version: 2
     added: 
       - Initial Release
 authors:
