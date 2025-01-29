@@ -4,15 +4,15 @@ desc:
   en: From Dark Cloud 2. A temple from the far future, where the moon stone resides.
 ruleSet: Standard 
 theme: DragonQuest
-initialCash: 1500
+initialCash: 1800
 targetAmount: 20000
 baseSalary: 300
-salaryIncrement: 300
-maxDiceRoll: 8
-frbFile1: ST
-background: bg105
+salaryIncrement: 250
+maxDiceRoll: 7
+frbFile1: Starlight
+background: bg102
 mapIcon: starlighticon
-bgmId: "BGM_MAP_SLABACCA"
+bgmId: "BGM_MAP_GHOSTSHIP"
 tourMode:
   bankruptcyLimit: 1
   opponent1: Toad
