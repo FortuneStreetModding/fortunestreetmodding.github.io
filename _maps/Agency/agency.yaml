@@ -11,7 +11,7 @@ salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: AG1
 frbFile2: AG2
-background: bg108
+background: bg108fixed
 mapIcon: agencyicon
 tourMode:
   bankruptcyLimit: 1

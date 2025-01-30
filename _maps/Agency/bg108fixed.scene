@@ -1,0 +1,1151 @@
+Root:
+  __Type: Root
+  Resource:
+    __Type: Resource
+  SetupFlag:
+    __Type: SetupFlag
+    UseShadow: 1
+    UseMirror: 0
+    UseBloom: 0
+    UseDof: 0
+    UseDof2: 1
+    UseBoolean: 0
+  FogSetting:
+    __Type: FogSetting
+    FogNum: 0
+    FogType: 5
+    ZStart: 500.000000
+    ZEnd: 10000
+    Color:
+      __Type: Color
+      R: 180
+      G: 200
+      B: 255
+  BloomSetting:
+    __Type: BloomSetting
+    ProcType: 1
+    Border: 250
+    AddShift: 2
+    SoftShiftX: 6.45
+    SoftShiftY: 6.40
+    Color:
+      __Type: RGBA
+      R: 106
+      G: 158
+      B: 208
+      A: 35
+    SoftKN: 4
+  Dof2Setting:
+    __Type: Dof2Setting
+    Enable: 1
+    Fnum: 2.8
+    FocalLength: 40
+    S: 0.033
+    Blend: 1
+    FrontBlurMax: 0.000000
+    Front: 6
+    BackBlurMax: 0.75
+    Back: 6
+  LightSetting:
+    __Type: LightSetting
+    Light:
+      __Type: Light2
+      LightNum: 0
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 255
+        G: 250
+        B: 245
+      Dir:
+        __Type: Vector
+        X: 0.511655
+        Y: -0.813791
+        Z: -0.275597
+    Light:
+      __Type: Light2
+      LightNum: 1
+      Enable: 1
+      IsSpecular: 1
+      Color:
+        __Type: Color
+        R: 180
+        G: 150
+        B: 120
+      Dir:
+        __Type: Vector
+        X: 0.545356
+        Y: -0.804924
+        Z: -0.233848
+    Light:
+      __Type: Light2
+      LightNum: 2
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 90
+        G: 120
+        B: 150
+      Dir:
+        __Type: Vector
+        X: 0.545356
+        Y: -0.6662752
+        Z: -0.079028
+    Light:
+      __Type: Light2
+      LightNum: 3
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 30
+        G: 40
+        B: 50
+      Dir:
+        __Type: Vector
+        X: -0.858059
+        Y: 0.109805
+        Z: -0.501675
+    Light:
+      __Type: Light2
+      LightNum: 4
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 240
+        G: 248
+        B: 250
+      Dir:
+        __Type: Vector
+        X: 0.02
+        Y: -0.75
+        Z: -0.65
+    Light:
+      __Type: Light2
+      LightNum: 5
+      Enable: 1
+      IsSpecular: 1
+      Color:
+        __Type: Color
+        R: 176
+        G: 185
+        B: 200
+      Dir:
+        __Type: Vector
+        X: 0.02
+        Y: -0.75
+        Z: -0.64
+    Light:
+      __Type: Light2
+      LightNum: 6
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 160
+        G: 150
+        B: 160
+      Dir:
+        __Type: Vector
+        X: -0.6
+        Y: 0.2
+        Z: 0.7
+    Light:
+      __Type: Light2
+      LightNum: 7
+      Enable: 1
+      IsSpecular: 1
+      Color:
+        __Type: Color
+        R: 255
+        G: 255
+        B: 255
+      Dir:
+        __Type: Vector
+        X: -0.3
+        Y: -0.8
+        Z: -0.5
+    AmbLight:
+      __Type: AmbLight2
+      LightNum: 0
+      Color:
+        __Type: Color
+        R: 100
+        G: 150
+        B: 200
+    AmbLight:
+      __Type: AmbLight2
+      LightNum: 1
+      Color:
+        __Type: Color
+        R: 110
+        G: 110
+        B: 110
+  TLItemRoot:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    TLMover:
+      __Type: TLMover
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Trans:
+        __Type: Vector
+        X: 0
+        Y: -50
+        Z: -200
+      Rot:
+        __Type: Vector
+        X: 0.0
+        Y: 0.0
+        Z: 0.0
+      Scale:
+        __Type: Vector
+        X: 1.0
+        Y: 1.0
+        Z: 1.0
+    bg108_all01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_all01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_all02.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_all02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_carpet01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_carpet01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_fire01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_fire01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg108_fire01.rcla:
+        __Type: TLRcla
+        StartTime: 0.0
+        EndTime: 1.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg108_fire01.rcla
+    bg108_floor01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_floor01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_ground01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_ground01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_glow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_glow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg108_glow01.rtsa:
+        __Type: TLRtsa
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg108_glow01.rtsa
+      bg108_glow01.rcla:
+        __Type: TLRcla
+        StartTime: 0.0
+        EndTime: 1.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg108_glow01.rcla
+    bg108_gold01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_gold01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_plant01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_plant01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_shadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_shadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_sky01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_sky01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_under01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_under01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_window01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_window01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_water01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_water01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      bg108_water01.rtsa:
+        __Type: TLRtsa
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: bg108_water01.rtsa
+    bg108_cshadow01.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_cshadow01.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+    bg108_sky02.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_sky02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+  LV1Only:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    mb_dq_mmc.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: mb_dq_mmc.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 75.683
+          Y: -49.29
+          Z: 127.082
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+      mb_dq_mmc_02.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: mb_dq_mmc_02.rcha
+  LV1:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    xf_dm000_00.remt:
+      __Type: TLEffEmitter
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: xf_dm000_00.remt
+      BrefName: Itasuto_Effects
+      ParentNode:
+      FollowParent: 0
+      ParentRotate: 0
+      LinkAnimFrame: -1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -14.21
+          Y: -58.876
+          Z: 111.842
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    xf_dm000_00.remt:
+      __Type: TLEffEmitter
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: xf_dm000_00.remt
+      BrefName: Itasuto_Effects
+      ParentNode:
+      FollowParent: 0
+      ParentRotate: 0
+      LinkAnimFrame: -1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 14.033
+          Y: -58.876
+          Z: 111.842
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    xf_dm000_00.remt:
+      __Type: TLEffEmitter
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: xf_dm000_00.remt
+      BrefName: Itasuto_Effects
+      ParentNode:
+      FollowParent: 0
+      ParentRotate: 0
+      LinkAnimFrame: -1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 9.167
+          Y: -50.31
+          Z: 87.134
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    xf_dm000_00.remt:
+      __Type: TLEffEmitter
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: xf_dm000_00.remt
+      BrefName: Itasuto_Effects
+      ParentNode:
+      FollowParent: 0
+      ParentRotate: 0
+      LinkAnimFrame: -1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -8.133
+          Y: -50.31
+          Z: 87.134
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    xf_dm000_00.remt:
+      __Type: TLEffEmitter
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: xf_dm000_00.remt
+      BrefName: Itasuto_Effects
+      ParentNode:
+      FollowParent: 0
+      ParentRotate: 0
+      LinkAnimFrame: -1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -30.89
+          Y: -67.234
+          Z: 259.831
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    xf_dm000_00.remt:
+      __Type: TLEffEmitter
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: xf_dm000_00.remt
+      BrefName: Itasuto_Effects
+      ParentNode:
+      FollowParent: 0
+      ParentRotate: 0
+      LinkAnimFrame: -1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -30.89
+          Y: -67.234
+          Z: 300.92
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    xf_dm000_00.remt:
+      __Type: TLEffEmitter
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: xf_dm000_00.remt
+      BrefName: Itasuto_Effects
+      ParentNode:
+      FollowParent: 0
+      ParentRotate: 0
+      LinkAnimFrame: -1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -30.89
+          Y: -67.234
+          Z: 342.008
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    xf_dm000_00.remt:
+      __Type: TLEffEmitter
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: xf_dm000_00.remt
+      BrefName: Itasuto_Effects
+      ParentNode:
+      FollowParent: 0
+      ParentRotate: 0
+      LinkAnimFrame: -1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 30.89
+          Y: -67.234
+          Z: 259.831
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    xf_dm000_00.remt:
+      __Type: TLEffEmitter
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: xf_dm000_00.remt
+      BrefName: Itasuto_Effects
+      ParentNode:
+      FollowParent: 0
+      ParentRotate: 0
+      LinkAnimFrame: -1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 30.89
+          Y: -67.234
+          Z: 300.92
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    xf_dm000_00.remt:
+      __Type: TLEffEmitter
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: xf_dm000_00.remt
+      BrefName: Itasuto_Effects
+      ParentNode:
+      FollowParent: 0
+      ParentRotate: 0
+      LinkAnimFrame: -1
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 30.89
+          Y: -67.234
+          Z: 342.008
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    bg108_loc_tree01.rmdl:
+      __Type: TLLocatorObj
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_loc_tree01.rmdl
+      AnimFrameMode: 0
+      bg108_tree01.rmdl:
+        __Type: TLModel
+        StartTime: 0.0
+        EndTime: 30.0
+        Filename: bg108_tree01.rmdl
+        EntryDraw: 1
+        EntryShadow: 0
+        EntryMirror: 0
+        EntryBooleanSrc: 0
+        EntryBooleanDst: 0
+        EntryAlphaObj: 0
+        Priority: 0
+        BufferOption: 0
+        bg108_tree01.rcha:
+          __Type: TLCharaAnim
+          StartTime: 0.0
+          EndTime: 30.0
+          LoopType: ENDLESS
+          AnimSpeed: 1.000000
+          AnimStartFrame: 0.000000
+          Filename: bg108_tree01.rcha
+  LV2:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    mb_dq_slb.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: mb_dq_slb.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: -62.535
+          Y: -49.29
+          Z: 137.184
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+      mb_dq_slb_01.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.1
+        AnimStartFrame: 30
+        Filename: mb_dq_slb_01.rcha
+    mb_dq_drk.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: mb_dq_drk.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 0
+          Y: -60
+          Z: 208.471
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+      mb_dq_drk_01.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: mb_dq_drk_01.rcha
+    bg108_cshadow02.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_cshadow02.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+  LV2Only:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    mb_dq_mmc.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: mb_dq_mmc.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 75.683
+          Y: -49.29
+          Z: 127.082
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+      mb_dq_mmc_02.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: mb_dq_mmc_02.rcha
+  LV3:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    mb_dq_mmc.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: mb_dq_mmc.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      mb_dq_mmc_01.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: mb_dq_mmc_01.rcha
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 75.683
+          Y: -49.29
+          Z: 127.082
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+    mb_dq_slg.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: mb_dq_slg.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+      TLMover:
+        __Type: TLMover
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        Trans:
+          __Type: Vector
+          X: 0
+          Y: -60
+          Z: 34.525
+        Rot:
+          __Type: Vector
+          X: 0.0
+          Y: 0.0
+          Z: 0.0
+        Scale:
+          __Type: Vector
+          X: 1.0
+          Y: 1.0
+          Z: 1.0
+      mb_dq_slb_02.rcha:
+        __Type: TLCharaAnim
+        StartTime: 0.0
+        EndTime: 30.0
+        LoopType: ENDLESS
+        AnimSpeed: 1.000000
+        AnimStartFrame: 0.000000
+        Filename: mb_dq_slb_02.rcha
+    bg108_cshadow03.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: bg108_cshadow03.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      Priority: 0
+      BufferOption: 0
+  V_MOVE1:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 150
+    LoopType: ONE
+    cam_switch01.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: fixed_point_cam_switch01.rsca
+  V_MOVE2:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 150
+    LoopType: ONE
+    cam_switch01.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: fixed_point_cam_switch01.rsca
+  V_MOVE3:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 150
+    LoopType: ONE
+    cam_switch01.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: fixed_point_cam_switch01.rsca
+  V_MOVE4:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 150
+    LoopType: ONE
+    cam_switch01.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: fixed_point_cam_switch01.rsca
+  V_INTRO1:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    bg108_cam_intro01.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: bg108_cam_intro01.rsca
