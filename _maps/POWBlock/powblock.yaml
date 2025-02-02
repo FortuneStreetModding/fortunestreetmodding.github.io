@@ -42,6 +42,11 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Edited a few event squares
+      - The four vacant plots have been changed to properties instead
+      - Venture card 111 replaced with 24
   - version: 2
     changed:
       - Swapped out the stockbroker for a rotating suit square
@@ -79,7 +84,7 @@ ventureCards:
   - 1  #  21 Random venture! You receive 20 stocks in a district picked at random!
   - 1  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
   - 1  #  23 Revaluation venture! You can expand any one of your shops by 50%.
-  - 0  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
+  - 1  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
   - 1  #  25 Misadventure! Your shop prices halve until your next turn!
   - 1  #  26 Lucky venture! You get a big commission until your next turn!
   - 1  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
@@ -166,7 +171,7 @@ ventureCards:
   - 0  # 108 Cashback venture! You can sell a shop back to the bank for four times its shop value.
   - 0  # 109 Revaluation venture! You can expand any one of your shops by 75%.
   - 0  # 110 Special bonus! You receive 77 times the number of shops you own in gold coins from the bank!
-  - 1  # 111 Cashback venture! You can sell a shop back to the bank for 500G more than its shop value.
+  - 0  # 111 Cashback venture! You can sell a shop back to the bank for 500G more than its shop value.
   - 0  # 112 Special bonus! You receive 100 times the number of shops you own in gold coins!
   - 0  # 113 Moneymaking venture! Roll the die and get the number shown x your level x 20G from the bank!
   - 0  # 114 Moneymaking venture! Take your level times 40G from all other players!
