@@ -19,6 +19,9 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Remade Board
   - version: 2
     changed:
       - When you go through the Change of Suit under Diamond Suit, you can't go down.
