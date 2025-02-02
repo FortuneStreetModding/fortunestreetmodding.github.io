@@ -55,18 +55,38 @@ backgrounds: backgrounds.yml
     Fillmore.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Fillmore.zip
-    placeholder.zip:
+    EternaCity.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/EternaCity.zip
   1:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
+    Agency.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Agency.zip
+    Colony4.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Colony4.zip
+    Sandsea.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Sandsea.zip
+    Gladius.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Gladius.zip
+    Heliodor.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Heliodor.zip
+    LostCanyon.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/LostCanyon.zip
   2:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
+    MaktarResort.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MaktarResort.zip
+    RoamerEncampment.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
+    StarlightTemple.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/StarlightTemple.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
