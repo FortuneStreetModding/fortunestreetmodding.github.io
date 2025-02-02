@@ -1,7 +1,7 @@
 name:
   en: Colony 4
 desc:
-  en: "The colony led by Silvercoat Ethel. Boasts many experienced soldiers and exceptional esprit de corps."
+  en: The colony led by Silvercoat Ethel. Boasts many experienced soldiers and exceptional esprit de corps.
 ruleSet: Standard 
 theme: DragonQuest
 initialCash: 1800
@@ -24,20 +24,6 @@ changelog:
       - Initial Release
 authors:
   - name: Anonymous
-districtNames:
-  en:
-    - District A
-    - District B
-    - District C
-    - District D
-    - District E
-    - District F
-    - District G
-    - District H
-    - District I
-    - District J
-    - District K
-    - District L 
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
