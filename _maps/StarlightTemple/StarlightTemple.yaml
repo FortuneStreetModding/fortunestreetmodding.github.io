@@ -20,6 +20,9 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Remade Board
   - version: 2
     removed:
       - Custom music (due to bad loop)
