@@ -1,22 +1,17 @@
 name:
   en: Eterna City
 desc:
-  en: From Pokemon Diamond and Pearl. An ancient city located in the Sinnoh Region.
+  en: A city with ancient history from the Sinnoh Region Team Galactic used to cause trouble in this city until certain hero stoped them.
 ruleSet: Standard 
 theme: DragonQuest
-initialCash: 2000
-targetAmount: 20000
-baseSalary: 350
-salaryIncrement: 350
+initialCash: 2300
+targetAmount: 23000
+baseSalary: 300
+salaryIncrement: 250
 maxDiceRoll: 8
 frbFile1: Eterna
-background: bg105
+background: bg005
 mapIcon: eternaicon
-music:
-  download:
-    - https://nikkums.io/cswt/BGM/EternaCity.music.zip
-    - https://drive.google.com/u/2/uc?id=15B2PDMX6_poDqzB8looFoPoO9CK54ZkW&export=download
-  map: eternatheme
 tourMode:
   bankruptcyLimit: 1
   opponent1: Toad
@@ -24,6 +19,9 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Remade Board
   - version: 2
     changed:
       - When you go through the Change of Suit under Diamond Suit, you can't go down.

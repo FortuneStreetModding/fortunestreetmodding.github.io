@@ -1,16 +1,16 @@
 name:
   en: Gladius Towers
 desc:
-  en: from Rogue Galaxy. Two twin acient towers located in Planet Zerard. 
+  en: Two twin ancient towers from Planet Zerard, their ancient architecture stands out in such a technologically advanced city. 
 ruleSet: Standard 
 theme: DragonQuest
-initialCash: 2000
+initialCash: 1800
 targetAmount: 20000
-baseSalary: 350
-salaryIncrement: 350
+baseSalary: 250
+salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: GlaTow
-background: bg102
+background: bg108
 mapIcon: gladiusicon
 tourMode:
   bankruptcyLimit: 1
@@ -19,6 +19,9 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Remade Board
   - version: 5
     removed:
       - Custom music (due to bad loop)

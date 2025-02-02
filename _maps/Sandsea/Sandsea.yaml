@@ -1,22 +1,17 @@
 name:
   en: Ogir Yensa Sandsea
 desc:
-  en: from Final Fantasy XII. A dangerous sandsea located in Ivalice. 
+  en: From Final Fantasy XII. A dangerous sandsea located in Ivalice. 
 ruleSet: Standard 
 theme: DragonQuest
-initialCash: 2500
+initialCash: 2000
 targetAmount: 20000
-baseSalary: 400
-salaryIncrement: 350
-maxDiceRoll: 8
-frbFile1: Sanse
+baseSalary: 300
+salaryIncrement: 250
+maxDiceRoll: 7
+frbFile1: Sandsea
 background: bg104
 mapIcon: Sandseaicon
-music:
-  download:
-    - https://nikkums.io/cswt/BGM/Sandsea.music.zip
-    - https://drive.google.com/u/2/uc?id=15m24dsG2yy9CuUDPLt79FCBI9jbFrha0&export=download
-  map: sandsea
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -24,6 +19,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Remade Board
   - version: 2
     changed:
       - Board Structure
@@ -120,8 +118,8 @@ ventureCards:
   - 0  #  83 Dicey adventure! Roll 1/3/5 and warp to a random location. Roll 2/4/6 and everyone else warps.
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
-  - 0  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 1  #  86 Moneymaking venture! Take 100G from all other players!
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 1  #  88 Misadventure! All other players swap places!
   - 0  #  89 Freebie! All players take a Suit Yourself card!
   - 0  #  90 Price hike venture! All shop prices go up by 30% until your next turn.

@@ -1,22 +1,17 @@
 name:
   en: Colony 4
 desc:
-  en: From Xenoblade 3. A colony that has a war vehicle.
+  en: The colony led by Silvercoat Ethel. Boasts many experienced soldiers and exceptional esprit de corps.
 ruleSet: Standard 
 theme: DragonQuest
 initialCash: 1800
 targetAmount: 20000
-baseSalary: 250
+baseSalary: 200
 salaryIncrement: 250
-maxDiceRoll: 8
+maxDiceRoll: 7
 frbFile1: C4
-background: bg105
+background: bg103
 mapIcon: colonyficon
-music:
-  download:
-    - https://nikkums.io/cswt/BGM/Colony4.music.zip
-    - https://drive.google.com/u/2/uc?id=198bRaD55lx_0Huq2qNYEVjS8qQ_LCJtH&export=download
-  map: colonyfsong
 tourMode:
   bankruptcyLimit: 1
   opponent1: Kiryl
@@ -24,25 +19,14 @@ tourMode:
   opponent3: Patty
   clearRank: 2
 changelog:
-  - version: 1
+  - version: 2
     added: 
+      - Remade Board
+  - version: 1
+    added:
       - Initial Release
 authors:
   - name: Anonymous
-districtNames:
-  en:
-    - District A
-    - District B
-    - District C
-    - District D
-    - District E
-    - District F
-    - District G
-    - District H
-    - District I
-    - District J
-    - District K
-    - District L 
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
