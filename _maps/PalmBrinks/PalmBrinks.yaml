@@ -20,6 +20,9 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Remade Board
   - version: 3
     changed:
       - Squares adjusted for better balance
