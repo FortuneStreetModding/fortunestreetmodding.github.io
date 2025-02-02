@@ -42,9 +42,9 @@ frbFiles:
 background: grid_gray
 mapIcon: E20i
 music:
-  download:
+  download: 
     - https://nikkums.io/cswt/BGM/Ennesan20.music.zip
-    - https://drive.google.com/u/0/uc?id=1xksonm57-8iNyw88K5cYE6BQfi50Z_HB&export=download
+    - https://drive.google.com/uc?export=download&id=18nX-7P3OCfxRh3RWDvYkrf73ByMCAlfi&confirm=1
   map:
   - Ennesan20_1_Map.65
   - Map_Ennesan20_2.65
@@ -93,21 +93,21 @@ music:
   - Map_Ennesan20_9.55
   - Map_Ennesan20_9.55
   - Map_Ennesan20_9.55
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
-  - Targetmet_Ennesan20.50
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
+  - Targetmet_Ennesan20.60
   win: Ennesan17_Win.45
   guestAppear:
   guestLeave:
@@ -128,6 +128,13 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 9
+    changed:
+      - 2 event squares added
+      - Partial change in board structure
+      - Adjust shop values in Districts F, I and J
+      - Changed the effect of some event squares
+      - Changed music when target amount is reached when board state 15 or later.
   - version: 8
     changed:
       - Rename frb file and mapicon file
