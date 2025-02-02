@@ -20,9 +20,12 @@ tourMode:
   opponent3: Jessica
   clearRank: 2
 changelog:
-  - version: 2
+  - version: 1
     added: 
-      - Remade board
+      - Initial Release
+  - version: 2 
+    added:
+      - Remade Board
 authors:
   - name: Anonymous
 districtNames:
