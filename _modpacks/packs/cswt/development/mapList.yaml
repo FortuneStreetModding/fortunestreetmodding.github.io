@@ -62,9 +62,6 @@ backgrounds: backgrounds.yml
     Agency.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Agency.zip
-    Colony4.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Colony4.zip
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
