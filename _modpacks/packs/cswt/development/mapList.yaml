@@ -10,6 +10,9 @@ backgrounds: backgrounds.yml
     Ennesan49.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan49.zip
+    Ennesan50.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan50.zip
     arrowhead.zip:
         urls:
         - https://nikkums.io/cswt/Maps/arrowhead.zip
@@ -55,10 +58,13 @@ backgrounds: backgrounds.yml
     Fillmore.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Fillmore.zip
+    POWBlock.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/POWBlock.zip
+  1:
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
-  1:
     Agency.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Agency.zip
