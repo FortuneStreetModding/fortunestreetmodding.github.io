@@ -22,6 +22,9 @@ changelog:
   - version: 1
     added: 
       - Initial Release
+  - version: 2
+    added:
+      - Remade Board
 authors:
   - name: Anonymous
 ventureCards:
