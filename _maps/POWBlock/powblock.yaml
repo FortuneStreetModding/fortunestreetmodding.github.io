@@ -46,6 +46,7 @@ changelog:
     changed:
       - Edited a few event squares
       - The four vacant plots have been changed to properties instead
+      - Venture card 111 replaced with 24
   - version: 2
     changed:
       - Swapped out the stockbroker for a rotating suit square
