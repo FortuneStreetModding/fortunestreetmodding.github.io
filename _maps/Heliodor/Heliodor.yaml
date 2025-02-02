@@ -1,22 +1,17 @@
 name:
   en: Heliodor
 desc:
-  en: from Dragon Quest XI. The Kingdom of Heliodor, where the King Carnelian resides. 
+  en: The glorious kingdom of Heliodor ruled by King Carnelian and his most loyal guards, Jasper and Hendrick. 
 ruleSet: Standard 
 theme: DragonQuest
 initialCash: 1800
 targetAmount: 18000
 baseSalary: 250
-salaryIncrement: 300
+salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: Hel
 background: bg101
 mapIcon: heliodoricon
-music:
-  download:
-    - https://nikkums.io/cswt/BGM/Heliodor.music.zip
-    - https://drive.google.com/u/2/uc?id=17fsy1nuAmTn_IU0O9I1JuhydpKfFA6ex&export=download
-  map: Heliodortheme
 tourMode:
   bankruptcyLimit: 1
   opponent1: Peach
@@ -24,6 +19,9 @@ tourMode:
   opponent3: Kiryl
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Remade Board
   - version: 2
     changed:
       - Board Structure

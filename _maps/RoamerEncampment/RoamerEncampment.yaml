@@ -4,19 +4,14 @@ desc:
   en: A encampment of roaming warriors. They're choosen by the goddess to restore the world.
 ruleSet: Standard 
 theme: DragonQuest
-initialCash: 2000
-targetAmount: 22000
-baseSalary: 300
-salaryIncrement: 300
-maxDiceRoll: 8
+initialCash: 1800
+targetAmount: 18000
+baseSalary: 200
+salaryIncrement: 250
+maxDiceRoll: 7
 frbFile1: Roamer
 background: bg105
 mapIcon: roamericon
-music:
-  download:
-    - https://nikkums.io/cswt/BGM/RoamerEncampment.music.zip
-    - https://drive.google.com/u/2/uc?id=1Q-_8Mrbp8ANjYnkPp3zTH9UDvHXHFhqf&export=download
-  map: roamertheme
 tourMode:
   bankruptcyLimit: 1
   opponent1: Alena
@@ -24,6 +19,9 @@ tourMode:
   opponent3: Daisy
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Remade Board
   - version: 1
     added: 
       - Initial Release

@@ -1,22 +1,17 @@
 name:
   en: Maktar Resort
 desc:
-  en: From Ratchet & Clank Going Commando. A space resort with a battle arena.
+  en: A space station from the Bogon Galaxy owned by Megacorp. The battle arena in the dome is the main atraction.
 ruleSet: Standard 
 theme: DragonQuest
-initialCash: 1500
-targetAmount: 18000
+initialCash: 2300
+targetAmount: 23000
 baseSalary: 300
-salaryIncrement: 300
-maxDiceRoll: 7
+salaryIncrement: 250
+maxDiceRoll: 8
 frbFile1: MR
-background: bg105
+background: bg104
 mapIcon: maktaricon
-music:
-  download:
-    - https://nikkums.io/cswt/BGM/MaktarResort.music.zip
-    - https://drive.google.com/u/2/uc?id=1xB-n0Cl_jcENTxB7Zcz1u2-3amdQ468w&export=download
-  map: maktar
 tourMode:
   bankruptcyLimit: 1
   opponent1: Kiryl
@@ -24,6 +19,9 @@ tourMode:
   opponent3: Patty
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Remade Board
   - version: 1
     added: 
       - Initial Release
