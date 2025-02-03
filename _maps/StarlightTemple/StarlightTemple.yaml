@@ -20,6 +20,9 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Backstreet/Warp locations fixed
   - version: 3
     changed:
       - Remade Board
