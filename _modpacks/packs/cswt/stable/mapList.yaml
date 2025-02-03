@@ -288,9 +288,6 @@ backgrounds: backgrounds.yml
     CatMap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CatMap.zip
-    TheClock.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/TheClock.zip
     TheClockTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheClockTower.zip
@@ -300,20 +297,17 @@ backgrounds: backgrounds.yml
     Colony9.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony9.zip
-  2:
     DeathStarfish.zip:
       practiceBoard: true
       urls:
       - https://nikkums.io/cswt/Maps/DeathStarfish.zip
+  2:
     Disboard.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Disboard.zip
     DungeonLobby.zip:
       urls:
       - https://nikkums.io/cswt/Maps/DungeonLobby.zip
-    EdenCenter.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/EdenCenter.zip
     Ennesan01B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan01B.zip
@@ -440,9 +434,6 @@ backgrounds: backgrounds.yml
     mpss_ppbc.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mpss_ppbc.zip
-    Quad.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Quad.zip
     Quadrants.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Quadrants.zip    
