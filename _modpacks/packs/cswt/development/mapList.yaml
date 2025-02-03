@@ -92,7 +92,7 @@ backgrounds: backgrounds.yml
       - https://nikkums.io/cswt/Maps/StarlightTemple.zip
     Colony4.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Colony4
+      - https://nikkums.io/cswt/Maps/Colony4.zip
     placeholder.zip:
     placeholder.zip:
       practiceBoard: true
