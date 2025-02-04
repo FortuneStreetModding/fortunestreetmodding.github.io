@@ -13,6 +13,8 @@ frbFile1: rayman
 background: rayman
 mapIcon: rayman
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/rayman.music.zip
   map: RaymanMap.70
   targetMet: RaymanNetgoal.70
   promotionMario: RaymanPromote.70

@@ -82,6 +82,8 @@ shopNames:
     96: Academy City Courthouse
     97: Board of Directors Office
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/academycity.music.zip
   map: AcademyCityMedley.43
   stock: quietploy
   ventureCards: judgementnokatsudou

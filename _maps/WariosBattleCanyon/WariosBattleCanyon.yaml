@@ -20,6 +20,8 @@ tourMode:
 background: battlecanyon
 mapIcon: battlecanyon
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/battlecanyon.music.zip
   map: BGM_MAP_BATTLECANYON.65
   stock: MP1_OptionHouse.50
   ventureCards: MP1_MiniGame.60

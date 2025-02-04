@@ -14,6 +14,8 @@ frbFiles:
   - arrowhead
 background: arrowhead
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/arrowhead.music.zip
   map: mp3_goodluck
   stock: mp3_rulesmap
   ventureCards: mp3_beginminigame
