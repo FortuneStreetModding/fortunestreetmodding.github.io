@@ -10,7 +10,7 @@ baseSalary: 400
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: is2-underwater-metropolis
-background: bg008alt
+background: OnionOcean
 mapIcon: underwater
 music:
   download:

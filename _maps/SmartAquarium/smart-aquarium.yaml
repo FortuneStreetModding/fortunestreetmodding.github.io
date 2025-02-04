@@ -10,7 +10,7 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: smart-aquarium
-background: bg008alt
+background: OnionOcean
 mapIcon: aquarium
 music:
   download:
