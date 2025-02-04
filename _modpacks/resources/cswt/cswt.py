@@ -10,6 +10,8 @@ UI_MSGS_ALL = {
 	4295: "Custom Boards",
 	4309: "Main Menu (Official Boards)",
 	4311: "Main Menu (Custom Boards)",
+	4313: "UNSUPPORTED. Use at own risk!",
+	4314: "UNSUPPORTED. Use at own risk!",
 	4316: "Tutorial: Learn the rules of the game whilst playing on a special practice board.",
 	4317: "Tutorial: Learn the rules of the game whilst playing on a special practice board.",
 	4319: "Start the tutorial?",
