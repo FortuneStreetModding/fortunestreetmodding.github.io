@@ -469,7 +469,7 @@
   name: bg004fixed
   download:
   - https://nikkums.io/cswt/Backgrounds/bg004fixed.background.zip
-  - https://drive.google.com/u/2/uc?id=13LYhZuv2Z7zBxRZ1JMcSTLvEJhH5gwCq&export=download
+  - https://drive.google.com/u/2/uc?id=12Yg8YyQYYbp5ry7iH0Qx6zWCiUv5l1ls&export=download
   mapIcon: bg105fixed
 - background: bg105fixed
   name: bg105fixed
@@ -505,7 +505,7 @@
   name: bg006fixed
   download:
   - https://nikkums.io/cswt/Backgrounds/bg006fixed.background.zip
-  - https://drive.google.com/u/2/uc?id=1BtXYiyTaz5C1gyX81uQ0gLbnqtpTDA6Z&export=download
+  - https://drive.google.com/u/2/uc?id=1Idz96QrLZbPlvRXiAUg5zFnQvmuIWLhx&export=download
   mapIcon: bg006fixed
 - background: rayman
   name: Rayman (2D)
@@ -644,68 +644,36 @@
     slurpodromeStart: A_X-event.80
     slurpodromeRace: slurRace_grid.65
     slurpodromeWin: RTB777_SlurWin_grid.80
-- background: NLA2D
-  name: New Los Angeles (2D)
-  download:
-  - https://nikkums.io/cswt/Backgrounds/NLA2D.background.zip
-  mapIcon: nla
-  music:
-    map: NLAMedley.43
-    stock: bladehome.50
-    ventureCards: briefing.50
-    auction: wirfliegen.60
-    targetMet: thekeywevelost.50
-    win: bymyside.60
-    guestAppear: A_X-event.80
-    guestLeave: A_X-fanfare.80
-    badVentureCard: X-Encounter.50
-    takeAbreak: X-Encounter.50
-    promotionMii: A_X-Levelup.80
-    promotionMario: A_X-Levelup.80
-    promotionDragonQuest: A_X-Levelup.80
-    forcedBuyout: X-buyout.50
-    domination: A_X-Levelup.80
-    bankruptcy: X-bankruptcy.80
-    roundTheBlocksWin: A_X-Levelup.80
-    roundTheBlocks777: A_X-fanfare.80
-    roundTheBlocks: A_comical
-    memoryBlock: A_comical
-    dartOfGold: A_comical
-    slurpodromeSelect: A_comical
-    slurpodromeStart: A_X-event.80
-    slurpodromeRace: A_uncontrollable
-    slurpodromeWin: A_X-fanfare.80
 - background: NLA
-  name: New Los Angeles
+  name: New Los Angeles (2D)
   download:
   - https://nikkums.io/cswt/Backgrounds/NLA.background.zip
   mapIcon: nla
   music:
-    map: NLAMedley.43
+    map: nla.50
     stock: bladehome.50
     ventureCards: briefing.50
     auction: wirfliegen.60
     targetMet: thekeywevelost.50
     win: bymyside.60
-    guestAppear: A_X-event.80
-    guestLeave: A_X-fanfare.80
+    guestAppear: X-event.80
+    guestLeave: X-fanfare.80
     badVentureCard: X-Encounter.50
     takeAbreak: X-Encounter.50
-    promotionMii: A_X-Levelup.80
-    promotionMario: A_X-Levelup.80
-    promotionDragonQuest: A_X-Levelup.80
+    promotionMii: X-Levelup.80
+    promotionMario: X-Levelup.80
+    promotionDragonQuest: X-Levelup.80
     forcedBuyout: X-buyout.50
-    domination: A_X-Levelup.80
+    domination: X-Levelup.80
     bankruptcy: X-bankruptcy.80
-    roundTheBlocksWin: A_X-Levelup.80
-    roundTheBlocks777: A_X-fanfare.80
-    roundTheBlocks: A_comical
-    memoryBlock: A_comical
-    dartOfGold: A_comical
-    slurpodromeSelect: A_comical
-    slurpodromeStart: A_X-event.80
-    slurpodromeRace: A_uncontrollable
-    slurpodromeWin: A_X-fanfare.80
+    roundTheBlocksWin: X-Levelup.80
+    roundTheBlocks777: X-fanfare.80
+    memoryBlock: comical.50
+    dartOfGold: comical.50
+    slurpodromeSelect: comical.50
+    slurpodromeStart: X-event.80
+    slurpodromeRace: uncontrollable.50
+    slurpodromeWin: X-fanfare.80
 - background: bethlehem
   name: Star of Bethlehem (2D)
   download:
@@ -1225,11 +1193,18 @@
     domination: SeaDom
 - background: giantbeanstalk
   download:
-  - https://nikkums.io/cswt/Backgrounds/giantbeanstalk.background.zip
+  - https://drive.google.com/uc?export=download&id=1D5CwXqKz57Qjo2WlA9xxrsB0FYkzFVVm&confirm=1
   mapIcon: igiantbeansta
+  bgm:  BGM_MAP_STARSHIP
   name: Giant Beanstalk
 - background: pacparty_mirageoasis
   download:
-  - https://nikkums.io/cswt/Backgrounds/pacparty_mirageoasis.background.zip
+  - https://drive.google.com/uc?export=download&id=1USbMgCrRZDX54S5aJLntJLKRTQOjP-fO&confirm=1
   mapIcon: pacparty_p804
+  bgm:  BGM_MAP_KANDATA
   name: Mirage Oasis
+- background: bg109altSE
+  download:
+  - https://drive.google.com/uc?export=download&id=1F6vYYjoDSVD6LcHZqaY9kFDGCyUUHbCZ
+  mapIcon: paydayexpress
+  name: bg109altSE
