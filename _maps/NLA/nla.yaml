@@ -10,9 +10,11 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 8
 frbFile1: nla
-background: NLA
+background: NLA2D
 mapIcon: nla
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/NLA.music.zip
   map: NLAMedley.43
   stock: bladehome.50
   ventureCards: briefing.50
@@ -88,9 +90,6 @@ shopNames:
     51: Integrated Production Plant
     54: Nopon Bazaar
 changelog:
-  - version: 8
-    added:
-      - 3D Background
   - version: 7
     changed:
       - Shop prices reduced in S. Admin, S Resid, N Resid and Manon Ship

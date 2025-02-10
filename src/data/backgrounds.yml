@@ -644,6 +644,37 @@
     slurpodromeStart: A_X-event.80
     slurpodromeRace: slurRace_grid.65
     slurpodromeWin: RTB777_SlurWin_grid.80
+- background: NLA2D
+  name: New Los Angeles (2D)
+  download:
+  - https://nikkums.io/cswt/Backgrounds/NLA2D.background.zip
+  mapIcon: nla
+  music:
+    map: NLAMedley.43
+    stock: bladehome.50
+    ventureCards: briefing.50
+    auction: wirfliegen.60
+    targetMet: thekeywevelost.50
+    win: bymyside.60
+    guestAppear: A_X-event.80
+    guestLeave: A_X-fanfare.80
+    badVentureCard: X-Encounter.50
+    takeAbreak: X-Encounter.50
+    promotionMii: A_X-Levelup.80
+    promotionMario: A_X-Levelup.80
+    promotionDragonQuest: A_X-Levelup.80
+    forcedBuyout: X-buyout.50
+    domination: A_X-Levelup.80
+    bankruptcy: X-bankruptcy.80
+    roundTheBlocksWin: A_X-Levelup.80
+    roundTheBlocks777: A_X-fanfare.80
+    roundTheBlocks: A_comical
+    memoryBlock: A_comical
+    dartOfGold: A_comical
+    slurpodromeSelect: A_comical
+    slurpodromeStart: A_X-event.80
+    slurpodromeRace: A_uncontrollable
+    slurpodromeWin: A_X-fanfare.80
 - background: NLA
   name: New Los Angeles
   download:
