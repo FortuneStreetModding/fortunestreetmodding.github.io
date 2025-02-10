@@ -7,7 +7,7 @@ UI_MSGS_ALL = {
 	4292: "Custom Boards: Boards which were created by the Custom Street Modding Community",
 	4293: "Unused. Do not click.",
 	4294: "Custom Boards",
-	4295: "Unused",
+	4295: "Do Not Click",
 	4309: "Main Menu",
 	4311: "Unused",
 	4313: "UNSUPPORTED. Use at own risk!",
