@@ -4,7 +4,7 @@ desc:
   en: All aboard the Mushroom Kingdom's high speed, non-stop & squishy railway system. One ticket takes you straight to your next payday destination! Well...that is as long as none of the passengers step on the switches...
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2500
+initialCash: 2400
 targetAmount: 20000
 baseSalary: 350
 salaryIncrement: 250
