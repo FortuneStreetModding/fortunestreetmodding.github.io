@@ -26,9 +26,6 @@ backgrounds: backgrounds.yml
     pacparty_mirageoasis.zip:
         urls:
         - https://nikkums.io/cswt/Maps/pacparty_mirageoasis.zip
-    slimeguyspaydayexpress.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
@@ -73,22 +70,18 @@ backgrounds: backgrounds.yml
     Heliodor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Heliodor.zip
-    LostCanyon.zip:
+    PalmBrinks.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/LostCanyon.zip
-    MaktarResort.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/MaktarResort.zip
-  2:
+      - https://nikkums.io/cswt/Maps/PalmBrinks.zip
     RoamerEncampment.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
-    StarlightTemple.zip:
+  2:
+    slimeguyspaydayexpress.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/StarlightTemple.zip
-    Colony4.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Colony4.zip
+      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
