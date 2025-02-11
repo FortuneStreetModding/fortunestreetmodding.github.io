@@ -1,7 +1,7 @@
 name:
-  en: Sky Tower
+  en: Waddle Dee
 desc:
-  en: An impossibly tall tower in the Nutty Noon area of Planet Popstar. This great tower touches the very edge of space. Kirby once fought A climatic battle with the mighty Grand Doomer at the very top.
+  en: It's shaped like a friend!
 ruleSet: Standard
 theme: Mario
 initialCash: 2000
@@ -14,7 +14,7 @@ frbFile2: waddle
 frbFile3: waddle
 frbFile4: waddle
 background: bg109
-mapIcon: skytower
+mapIcon: waddledee
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -190,6 +190,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 4
+    changed:
+      - Rebranded to Waddle Dee. No other changes.
   - version: 3
     changed:
       - Updated most venture cards.
