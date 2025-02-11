@@ -1233,3 +1233,8 @@
   - https://nikkums.io/cswt/Backgrounds/pacparty_mirageoasis.background.zip
   mapIcon: pacparty_p804
   name: Mirage Oasis
+- background: bg109altSE
+  download:
+  - https://drive.google.com/uc?export=download&id=1F6vYYjoDSVD6LcHZqaY9kFDGCyUUHbCZ
+  mapIcon: paydayexpress
+  name: bg109altSE
