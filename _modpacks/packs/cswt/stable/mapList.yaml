@@ -191,9 +191,6 @@ backgrounds: backgrounds.yml
     SkyTower.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SkyTower.zip
-    slimeguyspaydayexpress.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
