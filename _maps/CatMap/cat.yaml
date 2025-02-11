@@ -15,6 +15,8 @@ frbFile1: cat
 background: catmap-bg
 mapIcon: catcat
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/catmap-bg.music.zip
   map: cats-at-play.50  # Fire Emblem: Radiant Dawn - Cats At Play
   # stock: # 13_BGM_STOCK.brstm, when buying stock
   # ventureCards: # 12_BGM_CHANCECARD.brstm; when choosing venture card

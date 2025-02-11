@@ -255,16 +255,8 @@
 - background: catmap-bg
   name: Cats
   download:
-  - https://nikkums.io/cswt/Backgrounds/catmap-assets.zip
-  - https://logg.biz/fs/catmap-assets.zip
+  - https://nikkums.io/cswt/Backgrounds/catmap-bg.background.zip
   mapIcon: catcat
-  music:
-      map: cats-at-play.50
-      targetMet: cat-rave.50
-      guestAppear: cat-guest-arrive.75
-      guestLeave: cat-guest-goodbye.75
-      badVentureCard: cat-curse.50
-      takeAbreak: cat-sleepy.50
 - background: psoJungle
   name: psoJungle
   download:

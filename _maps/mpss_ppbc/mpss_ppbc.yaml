@@ -35,6 +35,8 @@ tourMode:
 background: mpss_ppbc
 mapIcon: impss_ppbc
 music:
+  download:
+  - https://nikkums.io/cswt/BGM/mpss_ppbc.music.zip
   map:
    - mpss_ppbc_MAP01
    - mpss_ppbc_MAP02

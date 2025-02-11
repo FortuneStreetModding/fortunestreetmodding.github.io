@@ -13,6 +13,8 @@ frbFile1: colony9
 background: Colony9
 mapIcon: colony9icon
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/Colony9.music.zip
   map: CNMap.60
   stock: CNStock.70
   ventureCards: CNCard.60

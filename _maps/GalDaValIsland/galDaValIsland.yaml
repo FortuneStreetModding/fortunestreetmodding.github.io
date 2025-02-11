@@ -23,6 +23,8 @@ tourMode:
 background: psoJungle
 mapIcon: psoJungle
 music:
+  download:
+  - https://nikkums.io/cswt/BGM/psoJungle.music.zip
   map: 
   - psoJungle_map_lushLoad.50
   - psoJungle_map_forestCage.50

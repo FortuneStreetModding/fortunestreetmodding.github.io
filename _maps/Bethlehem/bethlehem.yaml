@@ -22,6 +22,8 @@ districtNames:
   - Seville
   - Milan
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/bethlehem.music.zip
   map: BethlehemMedley.43
   stock: CrossExamination
   ventureCards: ModernWeapons.40

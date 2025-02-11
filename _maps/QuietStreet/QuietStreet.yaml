@@ -19,6 +19,8 @@ tourMode:
   opponent3: Kiryl
   clearRank: 3
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/QuietStreet.music.zip
   map: jazztheme.90
   targetMet: primalone.85
 changelog:

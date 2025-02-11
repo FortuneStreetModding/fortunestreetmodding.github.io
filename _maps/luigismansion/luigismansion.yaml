@@ -18,6 +18,8 @@ frbFile4: luigismansion4
 background: LuigisMansion
 mapIcon: Mansionicone
 music:
+  download:
+  - https://nikkums.io/cswt/BGM/LuigisMansion.music.zip
   map: maintheme
   stock: professorstock
   ventureCards: shyguyventure.100

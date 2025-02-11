@@ -29,6 +29,8 @@ districtNames:
   - Valar Sth
   - Avant Heim
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/disboard.music.zip
   map: NoGameNoLifeMedley.40
   stock: CriminalConnection.40
   ventureCards: Choisies.40

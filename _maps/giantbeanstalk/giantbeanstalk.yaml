@@ -18,6 +18,8 @@ looping:
 background: giantbeanstalk
 mapIcon: igiantbeansta
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/giantbeanstalk.music.zip
   map: Beanstalk.50
   stock: BeanstalkStock.50 
   ventureCards: BeanstalkVenture.50

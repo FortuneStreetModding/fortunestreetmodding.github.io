@@ -20,6 +20,8 @@ tourMode:
 background: facingWorlds
 mapIcon: facingWorlds
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/facingWorlds.music.zip
   map: facingWorlds_map_forgoneRejuvenation.65
   stock: facingWorlds_stock_killWillyforegone.80
   ventureCards: facingWorlds_ventureCards_crxForeDest.80
