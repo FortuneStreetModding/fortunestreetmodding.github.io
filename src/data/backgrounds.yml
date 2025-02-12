@@ -636,7 +636,7 @@
     slurpodromeStart: A_X-event.80
     slurpodromeRace: slurRace_grid.65
     slurpodromeWin: RTB777_SlurWin_grid.80
-- background: NLA2D
+- background: nla2d
   name: New Los Angeles (2D)
   download:
   - https://nikkums.io/cswt/Backgrounds/NLA2D.background.zip
