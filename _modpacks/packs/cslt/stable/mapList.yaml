@@ -4,60 +4,60 @@ backgrounds: backgrounds.yml
   0:
     CastleTrodainE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/CastleTrodain.zip
+      - https://nikkums.io/cswt/Maps/CastleTrodainE.zip
     ObservatoryE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Observatory.zip
+      - https://nikkums.io/cswt/Maps/ObservatoryE.zip
     GhostShipE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/GhostShip.zip
+      - https://nikkums.io/cswt/Maps/GhostShipE.zip
     SlimeniaE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Slimenia.zip
+      - https://nikkums.io/cswt/Maps/SlimeniaE.zip
     MtMagmageddonE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/MtMagmageddon.zip
+      - https://nikkums.io/cswt/Maps/MtMagmageddonE.zip
     RobbinHoodRuinsE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/RobbinHoodRuins.zip
+      - https://nikkums.io/cswt/Maps/RobbinHoodRuinsE.zip
   1:
     MarioStadiumE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/MarioStadium.zip
+      - https://nikkums.io/cswt/Maps/MarioStadiumE.zip
     StarshipMarioE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/StarshipMario.zip
+      - https://nikkums.io/cswt/Maps/StarshipMarioE.zip
     MarioCircuitE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/MarioCircuit.zip
+      - https://nikkums.io/cswt/Maps/MarioCircuitE.zip
     YoshiIslandE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/YoshiIsland.zip
+      - https://nikkums.io/cswt/Maps/YoshiIslandE.zip
     DelfinoPlazaE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/DelfinoPlaza.zip
+      - https://nikkums.io/cswt/Maps/DelfinoPlazaE.zip
     PeachCastleE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/PeachCastle.zip
+      - https://nikkums.io/cswt/Maps/PeachCastleE.zip
   2:
     AlefgardE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Alefgard.zip
+      - https://nikkums.io/cswt/Maps/AlefgardE.zip
     SuperMarioBrosE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/SuperMarioBros.zip
+      - https://nikkums.io/cswt/Maps/SuperMarioBrosE.zip
     BowserCastleE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/BowserCastle.zip
+      - https://nikkums.io/cswt/Maps/BowserCastleE.zip
     GoodEggGalaxyE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/GoodEggGalaxy.zip
+      - https://nikkums.io/cswt/Maps/GoodEggGalaxyE.zip
     ColossusE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/Colossus.zip
+      - https://nikkums.io/cswt/Maps/ColossusE.zip
     AlltradesAbbeyE.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/AlltradesAbbey.zip
+      - https://nikkums.io/cswt/Maps/AlltradesAbbeyE.zip
 1:
   #practiceBoard: DeathStarfish
   0:
