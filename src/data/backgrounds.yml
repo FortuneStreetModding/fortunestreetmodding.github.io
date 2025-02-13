@@ -46,6 +46,10 @@
   mapIcon: p_bg_103
   bgm:  BGM_MAP_MAJINZOU
   name: Colossus
+- background: bg103_e
+  mapIcon: p_bg_103
+  bgm:  BGM_MAP_MAJINZOU
+  name: Colossus Easy
 - background: bg104
   mapIcon: p_bg_104
   bgm:  BGM_MAP_SINOKAZAN
