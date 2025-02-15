@@ -55,7 +55,6 @@ music:
   slurpodromeStart: 
   slurpodromeRace: GoSentinelsGo
   slurpodromeWin: ARIsoleucineWin
-
 tourMode:
   bankruptcyLimit: 1
   initialCash: 2000
@@ -86,7 +85,7 @@ changelog:
       - Initial Release
 authors:
   - name: Sophilautia
-    url: https://twitter.com/Sophilautia
+    url: https://sophilautia.carrd.co/
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
