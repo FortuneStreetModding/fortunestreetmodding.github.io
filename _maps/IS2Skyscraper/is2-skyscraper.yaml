@@ -10,7 +10,7 @@ baseSalary: 250
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: is2-skyscraper
-background: grid_blue2
+background: n64Skyscraper
 mapIcon: skyscraper
 music:
   download:
@@ -48,6 +48,9 @@ tourMode:
   opponent3: DiddyKong
   clearRank: 3
 changelog:
+  - version: 5
+    changed:
+      - Changed background to n64Skyscraper
   - version: 4
     added:
       - Arcade Music
@@ -59,6 +62,8 @@ changelog:
       - Changed background to bg009alt
       - Changed theme to Mario to add doors to map
   - version: 1
+    added: 
+      - Initial Release
 authors:
   - name: Azurillkirby
 notes: |
