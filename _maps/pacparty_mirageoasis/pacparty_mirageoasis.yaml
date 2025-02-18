@@ -1,11 +1,11 @@
 name:
   en: Mirage Oasis
 desc:
-  en: Homeland of Patra, Pac-Man and her fared against the ghostly duo of Blinky and Pinky for Mr. Cookie's recipe. But it's more than just baking recipes this place is known for...
+  en: Discovered deep within a sandy dune, legend has it this mysterious hourglass can rotate on its own, changing the shape and flow of the sands contained within. 
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 1650
-targetAmount: 20000
+initialCash: 2000
+targetAmount: 25000
 baseSalary: 250
 salaryIncrement: 150
 maxDiceRoll: 7
@@ -14,39 +14,48 @@ frbFiles:
 - pacparty_mirageoasis_1
 - pacparty_mirageoasis_2
 - pacparty_mirageoasis_3
+- pacparty_mirageoasis_4
+- pacparty_mirageoasis_5
+- pacparty_mirageoasis_6
+- pacparty_mirageoasis_7
 background: pacparty_mirageoasis
 mapIcon: pacparty_p804
 music:
   download:
-  - https://nikkums.io/cswt/BGM/pacparty_mirageoasis.music.zip
+  - https://nikkums.io/cswt/BGM/PACPARTY_mirageoasis.music.zip
+  - https://drive.google.com/uc?export=download&id=1R79V97CYAhyw9CPVoDjSHv9bpKxbGhdM
   map: 
-  - pacparty_mirageoasis_MAP_0
-  - pacparty_mirageoasis_MAP_1
-  - pacparty_mirageoasis_MAP_2
-  - pacparty_mirageoasis_MAP_3
-  stock: pacparty_STOCK
-  ventureCards: pacparty_VEN
-  auction: pacparty_mirageoasis_AUC
-  targetMet: pacparty_mirageoasis_FINAL
-  win: pacparty_WIN
-  guestAppear: pacparty_mirageoasis_GUESTA
+  - PACPARTY_mirageoasis_MAP_0
+  - PACPARTY_mirageoasis_MAP_1
+  - PACPARTY_mirageoasis_MAP_2
+  - PACPARTY_mirageoasis_MAP_3
+  - smg2_mo_MAP01
+  - sm3dl_mo_MAP02
+  - smbw_mo_MAP00
+  - smbw_mo_MAP03
+  stock: pmcs_hg_STOCK
+  ventureCards: slimeguyspaydayexpressVENTURE.50
+  auction: PACPARTY_mirageoasis_AUC
+  targetMet: smo_mo_TARGET
+  win: PACPARTY_WIN
+  guestAppear: PACPARTY_mirageoasis_GUESTA
   guestLeave:
-  badVentureCard: pacparty_VEN_BAD
-  takeAbreak: pacparty_TAB
-  promotionMii: pacparty_PROMO
-  promotionMario: pacparty_PROMO
-  promotionDragonQuest: pacparty_PROMO
+  badVentureCard: PACPARTY_VEN_BAD
+  takeAbreak: PACPARTY_TAB
+  promotionMii: PACPARTY_PROMO
+  promotionMario: PACPARTY_PROMO
+  promotionDragonQuest: PACPARTY_PROMO
   forcedBuyout:
-  domination: pacparty_DOM
+  domination: PACPARTY_DOM
   bankruptcy:
-  roundTheBlocks: A_pacparty_RTB
-  roundTheBlocksWin: pacparty_RTB_WIN
+  roundTheBlocks: A_PACPARTY_RTB
+  roundTheBlocksWin: PACPARTY_RTB_WIN
   roundTheBlocks777: 
-  memoryBlock: A_pacparty_MEM
-  dartOfGold: A_pacparty_DOG
-  slurpodromeSelect: A_pacparty_SRP
-  slurpodromeStart: pacparty_SRP_START
-  slurpodromeRace: pacparty_SRP_RACE
+  memoryBlock: A_PACPARTY_MEM
+  dartOfGold: A_PACPARTY_DOG
+  slurpodromeSelect: A_PACPARTY_SRP
+  slurpodromeStart: PACPARTY_SRP_START
+  slurpodromeRace: PACPARTY_SRP_RACE
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -54,6 +63,14 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - 4 more frbs included for a total of 8
+      - new music included
+      - target raised to 25k
+      - starting cash raised to 2k
+      - swapped out various venture cards
+      - Added a sound effect to the switch presses
   - version: 1
     added: 
       - Initial Release     
