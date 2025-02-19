@@ -13,6 +13,8 @@ frbFile1: Onion
 background: OnionOcean
 mapIcon: OnionOC
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/OnionOcean.music.zip
   map: SeaTemple
   stock: SeaStocks
   ventureCards: SeaVenture
