@@ -13,7 +13,7 @@ frbFile1: SpaceCafe0
 frbFile2: SpaceCafe1
 frbFile3: SpaceCafe2
 frbFile4: SpaceCafe3
-background: grid_violet
+background: facingWorlds
 mapIcon: spacecafe
 music:
   download:
@@ -52,6 +52,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Changed background to facingWorlds
   - version: 4
     added:
       - Promotion Music
@@ -203,3 +206,5 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+tags:
+  - IS3
