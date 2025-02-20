@@ -9,8 +9,8 @@ targetAmount: 15000
 baseSalary: 200
 salaryIncrement: 150
 maxDiceRoll: 6
-frbFile1: train0
-frbFile2: train1
+frbFile1: train0E
+frbFile2: train1E
 background: bg102alt
 mapIcon: train
 music:

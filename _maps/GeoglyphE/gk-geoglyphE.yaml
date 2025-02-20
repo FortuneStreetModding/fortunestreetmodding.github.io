@@ -182,7 +182,9 @@ changelog:
     added:
       - Initial Release
 authors:
-    - name: mask1n
+  - name: mask1n
       url: https://twitter.com/mask1n
+  - name: Sophilautia
+    url: https://sophilautia.carrd.co/
 tags:
   - GK

@@ -65,11 +65,11 @@ authors:
     url: https://sophilautia.carrd.co/
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
-  - 0  #   2 Venture on! Roll the die again and move forward.
-  - 1  #   3 Venture through space! Zoom over to any non-venture, non-suit square you like!
+  - 1  #   2 Venture on! Roll the die again and move forward.
+  - 0  #   3 Venture through space! Zoom over to any non-venture, non-suit square you like!
   - 1  #   4 Moneymaking venture! Roll the die and get 40 times the number shown in gold coins from the player in 1st place!
-  - 1  #   5 Venture through space! Zoom over to any shop or vacant plot!
-  - 0  #   6 Venture through space! Zoom over to any venture or suit square!
+  - 0  #   5 Venture through space! Zoom over to any shop or vacant plot!
+  - 1  #   6 Venture through space! Zoom over to any venture or suit square!
   - 0  #   7 Special bonus! Your shops all grow by 7%!
   - 0  #   8 Venture on! Everyone's shop prices increase by 30%! Now roll the die and move again.
   - 1  #   9 Venture on! Everyone's shops close for the day! Now roll the die and move again.
@@ -116,11 +116,11 @@ ventureCards:
   - 1  #  50 Venture on! Move forward the same number of squares again.
   - 0  #  51 Venture on! Move forward 1 square more.
   - 0  #  52 Venture on! Move forward another 2 squares.
-  - 0  #  53 Venture through space! Zoom over to the bank!
+  - 1  #  53 Venture through space! Zoom over to the bank!
   - 1  #  54 Venture through space! Pay 100G to zoom straight to the bank!
   - 1  #  55 Venture on! Roll the die again and move forward (with an invitation to browse thrown in!).
   - 1  #  56 Venture on! Roll the die again and move forward (with a half-price special offer thrown in!).
-  - 1  #  57 Venture through space! Zoom to any square you like.
+  - 0  #  57 Venture through space! Zoom to any square you like.
   - 0  #  58 Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!
   - 0  #  59 Stock venture! You can buy stocks in a district of your choice at 10% below the market value.
   - 0  #  60 Random venture! Stock prices increase by 10% in a district picked at random!
@@ -195,4 +195,4 @@ ventureCards:
 tags:
   - IS3
 notes: |
-  Venture cards taken from Colossus Easy.
+  Venture cards taken from Colossus Easy, with the exceptions of 3, 5 and 57.

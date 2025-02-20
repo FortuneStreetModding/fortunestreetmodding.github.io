@@ -178,6 +178,8 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 authors:
   - name: Azurillkirby
+  - name: Sophilautia
+    url: https://sophilautia.carrd.co/
 changelog:
   - version: 1
     added:

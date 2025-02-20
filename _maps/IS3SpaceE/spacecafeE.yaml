@@ -108,7 +108,7 @@ ventureCards:
   - 0  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
   - 0  #  48 Misadventure! All shops in a district picked at random fall in value by 10%!
   - 0  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
-  - 0  #  50 Venture on! Move forward the same number of squares again.
+  - 1  #  50 Venture on! Move forward the same number of squares again.
   - 0  #  51 Venture on! Move forward 1 square more.
   - 0  #  52 Venture on! Move forward another 2 squares.
   - 0  #  53 Venture through space! Zoom over to the bank!
@@ -145,7 +145,7 @@ ventureCards:
   - 0  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 1  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 1  #  86 Moneymaking venture! Take 100G from all other players!
-  - 1  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
+  - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 1  #  88 Misadventure! All other players swap places!
   - 1  #  89 Freebie! All players take a Suit Yourself card!
   - 0  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
@@ -190,4 +190,4 @@ ventureCards:
 tags:
   - IS3
 notes: |
-  Venture cards taken from The Observatory Easy.
+  Venture cards taken from The Observatory Easy, with the exception of 87.
