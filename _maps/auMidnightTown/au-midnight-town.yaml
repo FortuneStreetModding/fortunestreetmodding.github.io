@@ -10,7 +10,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: au-midnight-town
-background: starcarnival_n
+background: n64SkyscraperNoSkyscraper
 mapIcon: midnight
 music:
   download:
@@ -48,6 +48,9 @@ tourMode:
   opponent3: Waluigi
   clearRank: 2
 changelog:
+  - version: 9
+    changed:
+      - Changed background to n64SkyscraperNoSkyscraper
   - version: 8
     changed:
       - Changed background to starcarnival_n
