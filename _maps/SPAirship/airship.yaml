@@ -10,7 +10,7 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 6
 frbFile1: airship
-background: bg107
+background: bg109alt
 mapIcon: airship
 music:
   download:
@@ -49,6 +49,9 @@ tourMode:
   opponent3: Mario
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Changed background to bg109alt
   - version: 2
     added:
       - Guest Leave Music
