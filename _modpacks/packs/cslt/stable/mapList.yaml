@@ -271,6 +271,54 @@ backgrounds: backgrounds.yml
     DSAlefgard.zip:
       urls:
       - https://nikkums.io/cswt/Maps/DSAlefgard.zip
+    CastleTrodainEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/CastleTrodainEtS.zip
+    GhostShipEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/GhostShipEtS.zip
+    SlimeniaEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/SlimeniaEtS.zip
+    MtMagmageddonEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MtMagmageddonEtS.zip
+    RobbinHoodRuinsEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/RobbinHoodRuinsEtS.zip
+    MarioStadiumEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MarioStadiumEtS.zip
+    StarshipMarioEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/StarshipMarioEtS.zip
+    YoshiIslandEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/YoshiIslandEtS.zip
+    DelfinoPlazaEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/DelfinoPlazaEtS.zip
+    PeachCastleEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/PeachCastleEtS.zip
+    AlefgardEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/AlefgardEtS.zip
+    SuperMarioBrosEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/SuperMarioBrosEtS.zip
+    BowserCastleEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/BowserCastleEtS.zip
+    GoodEggGalaxyEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/GoodEggGalaxyEtS.zip
+    ColossusEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/ColossusEtS.zip
+    AlltradesAbbeyEtS.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/AlltradesAbbeyEtS.zip
     FSSmartSilkRoad.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FSSmartSilkRoad.zip
