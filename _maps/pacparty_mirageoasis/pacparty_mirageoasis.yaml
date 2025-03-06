@@ -10,14 +10,26 @@ baseSalary: 250
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFiles:
-- pacparty_mirageoasis_0
-- pacparty_mirageoasis_1
-- pacparty_mirageoasis_2
+- pacparty_mirageoasis_0_10
+- pacparty_mirageoasis_1_11
+- pacparty_mirageoasis_2_12
 - pacparty_mirageoasis_3
 - pacparty_mirageoasis_4
-- pacparty_mirageoasis_5
-- pacparty_mirageoasis_6
-- pacparty_mirageoasis_7
+- pacparty_mirageoasis_5_15
+- pacparty_mirageoasis_6_16
+- pacparty_mirageoasis_7_17
+- pacparty_mirageoasis_8
+- pacparty_mirageoasis_9
+- pacparty_mirageoasis_0_10
+- pacparty_mirageoasis_1_11
+- pacparty_mirageoasis_2_12
+- pacparty_mirageoasis_13
+- pacparty_mirageoasis_14
+- pacparty_mirageoasis_5_15
+- pacparty_mirageoasis_6_16
+- pacparty_mirageoasis_7_17
+- pacparty_mirageoasis_18
+- pacparty_mirageoasis_19
 background: pacparty_mirageoasis
 mapIcon: pacparty_p804
 music:
@@ -27,12 +39,24 @@ music:
   map: 
   - PACPARTY_mirageoasis_MAP_0
   - PACPARTY_mirageoasis_MAP_1
-  - PACPARTY_mirageoasis_MAP_2
-  - PACPARTY_mirageoasis_MAP_3
   - smg2_mo_MAP01
   - sm3dl_mo_MAP02
+  - smbw_mo_MAP03
+  - PACPARTY_mirageoasis_MAP_2
+  - PACPARTY_mirageoasis_MAP_3
+  - smbw_mo_MAP00
+  - sm3dl_mo_MAP02
+  - smbw_mo_MAP03
+  - PACPARTY_mirageoasis_MAP_0
+  - PACPARTY_mirageoasis_MAP_1
+  - smg2_mo_MAP01
+  - sm3dl_mo_MAP02
+  - smbw_mo_MAP03
+  - PACPARTY_mirageoasis_MAP_2
+  - PACPARTY_mirageoasis_MAP_3
   - smbw_mo_MAP00
   - smbw_mo_MAP03
+  - smg2_mo_MAP01
   stock: pmcs_hg_STOCK
   ventureCards: slimeguyspaydayexpressVENTURE.50
   auction: PACPARTY_mirageoasis_AUC
@@ -63,6 +87,12 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Added 6 more frbs for a total of 14
+      - 20 board states total
+      - Altered some of the previous board states to make them more interesting
+      - Updated the scene to support more board states
   - version: 2
     changed:
       - 4 more frbs included for a total of 8
