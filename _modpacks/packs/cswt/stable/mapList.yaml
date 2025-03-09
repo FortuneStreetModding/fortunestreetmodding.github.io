@@ -20,6 +20,9 @@ backgrounds: backgrounds.yml
     birdosbigtop.zip:
       urls:
       - https://nikkums.io/cswt/Maps/birdosbigtop.zip
+    bowsersgalaxyreactor.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/bowsersgalaxyreactor.zip
     CastawayBayCSide.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
@@ -72,10 +75,10 @@ backgrounds: backgrounds.yml
     Ennesan25.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan25.zip
+  1:
     Ennesan29.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan29.zip
-  1:
     Ennesan30B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan30B.zip
@@ -145,10 +148,10 @@ backgrounds: backgrounds.yml
     KoopaTycoonTown.zip:
       urls:
       - https://nikkums.io/cswt/Maps/KoopaTycoonTown.zip
+  2:
     luigismansion.zip:
       urls:
       - https://nikkums.io/cswt/Maps/luigismansion.zip
-  2:
     mp9_magmine.zip:
       urls:
       - https://nikkums.io/cswt/Maps/mp9_magmine.zip

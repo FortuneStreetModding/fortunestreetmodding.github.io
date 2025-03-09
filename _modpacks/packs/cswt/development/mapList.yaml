@@ -1,9 +1,6 @@
 backgrounds: backgrounds.yml
 0:
   0:
-    Ennesan39B.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan39B.zip
     Ennesan43.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan43.zip
@@ -19,13 +16,15 @@ backgrounds: backgrounds.yml
     Tutorial1.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Tutorial1.zip
-  1:
     OnionOcean.zip:
         urls:
         - https://nikkums.io/cswt/Maps/OnionOcean.zip
+  1:
     pacparty_mirageoasis.zip:
         urls:
         - https://nikkums.io/cswt/Maps/pacparty_mirageoasis.zip
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
@@ -80,9 +79,7 @@ backgrounds: backgrounds.yml
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
-    bowsersgalaxyreactor.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/bowsersgalaxyreactor.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
