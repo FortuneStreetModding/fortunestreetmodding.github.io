@@ -26,6 +26,13 @@ tourMode:
   opponent2: Waluigi
   opponent3: BowserJr
   clearRank: 1
+changelog:
+  - version: 1
+    added:
+      - Initial Release
+authors:
+  - name: A Sickly Silver Moon
+    url: https://github.com/SicklySilverMoon/
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
@@ -157,10 +164,10 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 districtNames:
   en:
-    - Crimson Roads
+    - Crimson Court
     - Cerulean Streets
     - Pitstop Pathway
-    - The Underground Underpass
+    - Underground Underpass
     - Winners Way
     - Prawn Passage
     - Castle Crossroad
