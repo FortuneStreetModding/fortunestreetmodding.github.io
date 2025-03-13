@@ -1194,3 +1194,13 @@
   - https://nikkums.io/cswt/Backgrounds/bg109altSE.background.zip
   mapIcon: paydayexpress
   name: bg109altSE
+- background: YHtWtG
+  name: You Have to Win the Game (Towers)
+  download:
+  - https://nikkums.io/cswt/Backgrounds/YHtWtG.background.zip
+  mapIcon: YHtWtG
+  music:
+    map: YHtWtG_Kicks.50
+    targetMet: YHtWtG_Moves.50
+    bankruptcy: YHtWtG_Lose.50
+    win: YHtWtG_Win.50 #its non looping on purpose don't worry
