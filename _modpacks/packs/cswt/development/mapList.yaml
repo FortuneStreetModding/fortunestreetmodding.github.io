@@ -23,7 +23,9 @@ backgrounds: backgrounds.yml
     pacparty_mirageoasis.zip:
         urls:
         - https://nikkums.io/cswt/Maps/pacparty_mirageoasis.zip
-    placeholder.zip:
+    YHtWtG.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/YHtWtG.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
@@ -38,12 +40,12 @@ backgrounds: backgrounds.yml
       practiceBoard: true
 1:
   0:
-    Ennesan30A.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
     Ennesan20.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan20.zip
+    Ennesan30A.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan30A.zip
     WiiU.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WiiU.zip
@@ -79,7 +81,9 @@ backgrounds: backgrounds.yml
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
-    placeholder.zip:
+    ToadsTreasureHunt.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/ToadsTreasureHunt.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
