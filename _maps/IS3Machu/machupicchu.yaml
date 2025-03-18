@@ -16,7 +16,7 @@ frbFiles:
 - MachuPicchu3
 - MachuPicchu3
 - MachuPicchu3
-- MachuPicchu4
+- MachuPicchu3
 - MachuPicchu3
 background: bg106fixed
 mapIcon: machu
@@ -57,6 +57,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 6
+    removed:
+      - MachuPicchu4.frb (not sure why this was there?)
   - version: 5
     added:
       - Promotion Music
@@ -65,7 +68,7 @@ changelog:
       - Promotion Music
       - ForvedBuyout Music
       - Domination Music
-      - Bankrupty Music
+      - Bankruptcy Music
       - Arcade Music
   - version: 4
     added:

@@ -10,9 +10,6 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: portabletreeE
-frbFile2: portabletreeE
-frbFile3: portabletreeE
-frbFile4: portabletreeE
 background: bg109alt
 mapIcon: portabletree
 music:

@@ -10,9 +10,6 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: gk-floating-continent
-frbFile2: gk-floating-continent
-frbFile3: gk-floating-continent
-frbFile4: gk-floating-continent
 background: bg109
 mapIcon: Floating
 music:

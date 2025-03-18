@@ -10,7 +10,6 @@ baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFile1: ds-colossus
-frbFile2: ds-colossus
 background: bg103
 tourMode:
   bankruptcyLimit: 1

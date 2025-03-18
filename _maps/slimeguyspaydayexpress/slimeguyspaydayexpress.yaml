@@ -42,6 +42,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 4
+    removed:
+      - Cameo venture cards
   - version: 3
     changed:
       - Districts 8 and 9 by the bank now consist of 5 properties each.
@@ -87,7 +90,7 @@ ventureCards:
   - 1  #  25 Misadventure! Your shop prices halve until your next turn!
   - 1  #  26 Lucky venture! You get a big commission until your next turn!
   - 1  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
-  - 1  #  28 Cameo adventure! A goodybag appears!
+  - 0  #  28 Cameo adventure! A goodybag appears!
   - 0  #  29 Freebie! Take a Heart!
   - 0  #  30 Venture on! All shops charge a 100G flat rate! Now roll the die and move again.
   - 1  #  31 Random venture! Shops expand by 10% in a district picked at random!
@@ -95,9 +98,9 @@ ventureCards:
   - 1  #  33 Cashback venture! You can sell a shop back to the bank for three times its shop value.
   - 1  #  34 Dicey adventure! Roll 1/3/5 and your shops close for the day. Roll 2/4/6 and everyone else's shops close.
   - 1  #  35 Stock venture! You can sell stocks you own at 35% above the market value.
-  - 0  #  36 Capital venture! You can pay 100G for the chance to invest in your shops.
+  - 1  #  36 Capital venture! You can pay 100G for the chance to invest in your shops.
   - 0  #  37 Random venture! Shops expand by 30% in a district picked at random!
-  - 0  #  38 Stock venture! You can buy stocks in a district of your choice at 10% above the market value.
+  - 1  #  38 Stock venture! You can buy stocks in a district of your choice at 10% above the market value.
   - 0  #  39 Suit venture! Buy a Suit Yourself card for 100G.
   - 1  #  40 Misadventure! You give away 10% of your ready cash to the player in last place!
   - 1  #  41 Misadventure! Stock prices fall by 10% in a district picked at random!
@@ -151,7 +154,7 @@ ventureCards:
   - 1  #  89 Freebie! All players take a Suit Yourself card!
   - 0  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
   - 0  #  91 Cameo adventure! A healslime appears!
-  - 1  #  92 Cameo adventure! Lakitu appears!
+  - 0  #  92 Cameo adventure! Lakitu appears!
   - 1  #  93 Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 0  #  94 Freebie! Take a Diamond!
   - 1  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
