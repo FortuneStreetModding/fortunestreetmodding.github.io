@@ -13,9 +13,9 @@ frbFile1: BalatroBoard
 background: balatro
 mapIcon: bal_btd6_0
 music:
-   download: https://nikkums.io/cswt/BGM/BalatroBoard.music.zip
-   map: 
-   - Balatro.75
+  download:
+    - https://nikkums.io/cswt/BGM/BalatroBoard.music.zip
+  map: Balatro.75
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
