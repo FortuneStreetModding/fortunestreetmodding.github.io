@@ -13,7 +13,7 @@ frbFile1: BalatroBoard
 background: balatro
 mapIcon: bal_btd6_0
 music:
-   downlaod: https://drive.usercontent.google.com/u/0/uc?id=18Tw2K_x8zE09Cyab8f7vK6bYfeA1oPvc&export=download
+   download: https://nikkums.io/cswt/BGM/BalatroBoard.music.zip
    map: 
    - Balatro.75
 tourMode:
@@ -28,7 +28,6 @@ changelog:
       - Initial Release
 authors:
   - name: Bandite
-    url:
 ventureCards: #VENTURE CARD IN WHICH 1 APPEARS NEXT TO -, 0 DOES NOT APPEAR. WHEN CHANGING THE VENTURE CARD THAT APPEARS, THE NUMBER OF 1S SHOULD BE 64
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go.
   - 1  #   2 Venture on! Roll the die again and move forward.
