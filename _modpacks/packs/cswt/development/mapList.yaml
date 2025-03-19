@@ -26,7 +26,9 @@ backgrounds: backgrounds.yml
     YHtWtG.zip:
         urls:
         - https://nikkums.io/cswt/Maps/YHtWtG.zip
-    placeholder.zip:
+    BalatroBoard.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/BalatroBoard.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
