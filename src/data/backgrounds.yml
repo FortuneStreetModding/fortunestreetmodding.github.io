@@ -1204,3 +1204,10 @@
     targetMet: YHtWtG_Moves.50
     bankruptcy: YHtWtG_Lose.50
     win: YHtWtG_Win.50 #its non looping on purpose don't worry
+- background: balatro
+  name: Balatro (2D)
+  download:
+  - https://nikkums.io/cswt/Backgrounds/BalatroBoard.background.zip
+  mapIcon: bal_btd6_0
+  music:
+    map: Balatro.75
