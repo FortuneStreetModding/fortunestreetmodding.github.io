@@ -44,7 +44,7 @@ mapIcon: E50i
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Ennesan50.music.zip
-    - https://drive.google.com/uc?export=download&id=1hrxs1p2MC2ReCVdbJ9nB2e-dcOqlhqYx&confirm=1
+    - https://drive.google.com/uc?export=download&id=19wKA17SWTtFmbUsnj8nPEdxTcRyhuqaW&confirm=1
   map:
   - Ennesan50_Map_1.60
   - Ennesan50_Map_1.60
@@ -68,20 +68,20 @@ music:
   - Ennesan50_Map_20.50
   - Ennesan50_Map_21.50
   - Ennesan50_Map_22.55
-  - Ennesan50_Map_22.55
+  - Ennesan50_Map_23.60
   - Ennesan50_Map_24.55
   - Ennesan50_Map_25.50
   - Ennesan50_Map_26.60
   - Targetmet_Ennesan46.55
   - Ennesan50_Map_28.60
-  - Ennesan50_Map_29.50
+  - Ennesan50_Map_29.55
   stock: Stock_Ennesan45.50
   ventureCards:
   - Venture_Ennesan50.55
   auction: Auction_grid.55
   targetMet:
   - Targetmet_Ennesan20.60
-  win: Ennesan45_Win.45
+  win: Ennesan50_Win.55
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
@@ -100,6 +100,14 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Significant changes to Board State 29.
+      - Changed from 2 to 4 switches
+      - Changed the effect of some event squares
+      - Slight changes to the board structure of some board states
+      - Changed mapBGM for board state 23 and result screen BGM
+      - Fixed a bug where pressing certain switches would return to the previous board state.
   - version: 1
     added:
       - Initial Release

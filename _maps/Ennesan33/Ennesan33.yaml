@@ -10,14 +10,14 @@ baseSalary: 300
 salaryIncrement: 125
 maxDiceRoll: 6
 frbFiles:
-- Ennesan33
+- E33
 background: grid_lightblue2
-mapIcon: Enne33
+mapIcon: E33i
 music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan33.music.zip
     - https://drive.google.com/uc?export=download&id=1hX9gveLJpyWHwQHGxmtJozPEpJBcrOU6&confirm=1
-  map:
+  map: 
   - Ennesan33_Map.60
   stock: Stock_grid.70
   ventureCards: Arcade_slurS_grid.75
@@ -42,6 +42,13 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Districts A, D, and G reduced from 5 to 4 shops
+      - 3 additional event squares
+      - Remove one square in front of the door
+      - Shop values in some shops changed.
+      - Rename frb file and mapicon file
   - version: 1
     added: 
       - Initial Release

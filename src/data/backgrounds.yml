@@ -1211,3 +1211,33 @@
   mapIcon: bal_btd6_0
   music:
     map: Balatro.75
+- background: bg001fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg001fixed.background.zip
+  mapIcon: bg001fixed
+  name: bg001fixed
+- background: bg002fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg002fixed.background.zip
+  mapIcon: bg002fixed
+  name: bg002fixed
+- background: bg005fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg005fixed.background.zip
+  mapIcon: bg005fixed
+  name: bg005fixed
+- background: bg007fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg007fixed.background.zip
+  mapIcon: bg007fixed
+  name: bg007fixed
+- background: bg101fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg101fixed.background.zip
+  mapIcon: bg101fixed
+  name: bg101fixed
+- background: bg102fixed
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bg102fixed.background.zip
+  mapIcon: bg102fixed
+  name: bg102fixed

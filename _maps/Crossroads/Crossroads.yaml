@@ -11,10 +11,11 @@ salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: crossroads-00
 frbFile2: crossroads-01
-background: bg001
+background: bg001fixed
 switchRotationOriginPoints:
   - x: -96
     y: 256
+bgmId: "BGM_MAP_YOSHI"
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -25,6 +26,9 @@ authors:
   - name: Giftshaven
     url: https://github.com/Giftshaven
 changelog:
+  - version: 5
+    changed:
+      - Changed background from bg001 to bg001fixed.
   - version: 4
     changed:
       - Unfixed pathing 'errors'
