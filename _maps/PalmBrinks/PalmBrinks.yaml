@@ -11,8 +11,9 @@ salaryIncrement: 250
 maxDiceRoll: 7
 frbFile1: PB1
 frbFile2: PB2
-background: bg005
+background: bg005fixed
 mapIcon: palmicon
+bgmId: "BGM_MAP_DOLPIC"
 tourMode:
   bankruptcyLimit: 1
   opponent1: Toad
@@ -20,6 +21,9 @@ tourMode:
   opponent3: Dragonlord
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Changed background from bg005 to bg005fixed.
   - version: 4
     changed:
       - Remade Board
