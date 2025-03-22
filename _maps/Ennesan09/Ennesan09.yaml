@@ -14,15 +14,15 @@ frbFile1: E09
 background: grid_orange
 mapIcon: E09i
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Ennesan09.music.zip
-    - https://drive.google.com/2/uc?id=1IM6opb3JDD-HWZ3tgeZtfsmsZNAZyOzQ&export=download
+    - https://drive.google.com/uc?export=download&id=1Ry-pOzp-ry9AmIdTS1jxYffXmNFXAwOU&confirm=1
   map: Map_Ennesan9.80
   stock: Stock_grid.70
   ventureCards: Venture_Ennesan.45
   auction: Auction_grid.55
   targetMet: Targetmet_Ennesan4.40
-  win: Win_Ennesan4.40
+  win: Ennesan4_Win.40
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
