@@ -1,7 +1,7 @@
 name:
   en: Enne-san Board 07
 desc:
-  en: The effect of the event square changes as the switches are pressed. The effects change in the following order moving system, good effects, bad effects, and strong effects, both good and bad.
+  en: The effect of the event square changes as the switches are pressed. The effects change in the following order moving system, good effects, dicy adventure, bad effects, and strong effects, both good and bad.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
@@ -9,12 +9,14 @@ targetAmount: 20000
 baseSalary: 400
 salaryIncrement: 100
 maxDiceRoll: 6
-frbFile1: Ennesan07_1
-frbFile2: Ennesan07_2
-frbFile3: Ennesan07_3
-frbFile4: Ennesan07_4
+frbFiles:
+- E07_1
+- E07_2
+- E07_3
+- E07_4
+- E07_5
 background: grid_violet
-mapIcon: Enne07
+mapIcon: E07i
 music:
   download:
     - https://nikkums.io/cswt/BGM/Ennesan07.music.zip
@@ -44,6 +46,17 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 9
+    changed:
+      - Add board states with many event squares in the dicy adventure lineage
+      - Change of Suit changed to Event Square.
+      - Partially changed the structure of the underside of the board
+      - 2 additional event squares
+      - Changed the effect of some event squares
+      - Changed shop values at some shops
+      - Fixed a bug that caused a soft lock when a switch was pressed 4 times in a row
+      - Change venture card 122 to 100
+      - Rename file
   - version: 8
     changed:
       - Changed some music
@@ -184,7 +197,7 @@ ventureCards:
   - 0  #  97 Stock rise venture! Increase stock value by 20% in a district of your choice.
   - 0  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
   - 0  #  99 Freebie! What's inside...?
-  - 0  # 100 Freebie! Take a Suit Yourself card!
+  - 1  # 100 Freebie! Take a Suit Yourself card!
   - 0  # 101 Special bonus! Your shops all grow by 21%!
   - 0  # 102 Moneymaking venture! Roll the die and get 33 times the number shown in gold coins from all other players!
   - 0  # 103 Misadventure! The values of all your shops drop by 25%!
@@ -206,7 +219,7 @@ ventureCards:
   - 1  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
   - 0  # 120 Misadventure! You drop your wallet and lose 20% of your ready cash!
   - 1  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
-  - 1  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
+  - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
   - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 1  # 124 Suit venture! Buy a Suit Yourself card for 50G.
   - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
