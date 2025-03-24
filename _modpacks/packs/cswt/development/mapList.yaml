@@ -10,16 +10,19 @@ backgrounds: backgrounds.yml
     Ennesan50.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan50.zip
+    Ennesan51.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan51.zip
     arrowhead.zip:
         urls:
         - https://nikkums.io/cswt/Maps/arrowhead.zip
     Tutorial1.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Tutorial1.zip
+  1:
     OnionOcean.zip:
         urls:
         - https://nikkums.io/cswt/Maps/OnionOcean.zip
-  1:
     pacparty_mirageoasis.zip:
         urls:
         - https://nikkums.io/cswt/Maps/pacparty_mirageoasis.zip
@@ -29,8 +32,9 @@ backgrounds: backgrounds.yml
     BalatroBoard.zip:
         urls:
         - https://nikkums.io/cswt/Maps/BalatroBoard.zip
-    placeholder.zip:
-    placeholder.zip:
+    Blackmarket.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Blackmarket.zip
     placeholder.zip:
   2:
     placeholder.zip:
@@ -42,15 +46,25 @@ backgrounds: backgrounds.yml
       practiceBoard: true
 1:
   0:
+    Ennesan07.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan07.zip
+    Ennesan09.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan09.zip
     Ennesan20.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan20.zip
     Ennesan30A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan30A.zip
+    Ennesan33.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan33.zip
     WiiU.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WiiU.zip
+  1:
     giantbeanstalk.zip:
       urls:
       - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
@@ -60,7 +74,6 @@ backgrounds: backgrounds.yml
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
-  1:
     Agency.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Agency.zip
@@ -70,6 +83,7 @@ backgrounds: backgrounds.yml
     Gladius.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Gladius.zip
+  2:
     Heliodor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Heliodor.zip
@@ -79,15 +93,11 @@ backgrounds: backgrounds.yml
     RoamerEncampment.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
-  2:
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
     ToadsTreasureHunt.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsTreasureHunt.zip
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
     placeholder.zip:
       practiceBoard: true
