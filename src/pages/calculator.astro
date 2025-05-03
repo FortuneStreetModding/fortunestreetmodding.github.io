@@ -3,7 +3,7 @@ import Layout from '~/layouts/layout.astro';
 ---
 <script>
   import { bsvirt_to_bsfile, bsvirt_to_fsvirt, bsvirt_to_isvirt, fsvirt_to_fsfile, isvirt_to_isfile } from '~/lib/addressconverter';
-  
+
   let fsvirt: number | null;
   let bsvirt: number | null;
   let isvirt: number | null;
@@ -39,12 +39,14 @@ import Layout from '~/layouts/layout.astro';
       case fsvirt_input:
         fsvirt = address;
         bsvirt = setAddress(bsvirt_input, bsvirt_to_fsvirt.inverseMap(fsvirt));
-        isvirt = setAddress(isvirt_input, bsvirt_to_isvirt.map(bsvirt));
-        if (bsvirt !== null || isvirt !== null) {
+        if(bsvirt !== null){
+          isvirt = setAddress(isvirt_input, bsvirt_to_isvirt.map(bsvirt));
           target.classList.add('is-valid');
           setAddress(fsfile_input, fsvirt_to_fsfile.map(fsvirt));
           setAddress(bsfile_input, bsvirt_to_bsfile.map(bsvirt));
-          setAddress(isfile_input, isvirt_to_isfile.map(isvirt));
+          if(isvirt !== null){
+            setAddress(isfile_input, isvirt_to_isfile.map(isvirt));
+          }
         } else {
           target.classList.add('is-invalid');
         }
@@ -53,11 +55,13 @@ import Layout from '~/layouts/layout.astro';
         bsvirt = address;
         fsvirt = setAddress(fsvirt_input, bsvirt_to_fsvirt.map(bsvirt));
         isvirt = setAddress(isvirt_input, bsvirt_to_isvirt.map(bsvirt));
-        if (fsvirt !== null || isvirt !== null) {
+        if (fsvirt !== null) {
           target.classList.add('is-valid');
           setAddress(fsfile_input, fsvirt_to_fsfile.map(fsvirt));
           setAddress(bsfile_input, bsvirt_to_bsfile.map(bsvirt));
-          setAddress(isfile_input, isvirt_to_isfile.map(isvirt));
+          if(isvirt !== null){
+            setAddress(isfile_input, isvirt_to_isfile.map(isvirt));
+          }
         } else {
           target.classList.add('is-invalid');
         }
@@ -65,26 +69,30 @@ import Layout from '~/layouts/layout.astro';
       case isvirt_input:
         isvirt = address;
         bsvirt = setAddress(bsvirt_input, bsvirt_to_isvirt.inverseMap(isvirt));
-        fsvirt = setAddress(fsvirt_input, bsvirt_to_fsvirt.map(bsvirt));
-        if (bsvirt !== null || fsvirt !== null) {
+        if(bsvirt !== null){
+          fsvirt = setAddress(fsvirt_input, bsvirt_to_fsvirt.map(bsvirt));
           target.classList.add('is-valid');
-          setAddress(fsfile_input, fsvirt_to_fsfile.map(fsvirt));
           setAddress(bsfile_input, bsvirt_to_bsfile.map(bsvirt));
           setAddress(isfile_input, isvirt_to_isfile.map(isvirt));
+          if(fsvirt !== null){
+            setAddress(fsfile_input, fsvirt_to_fsfile.map(fsvirt));
+          }
         } else {
           target.classList.add('is-invalid');
         }
-        break;        
+        break;
       case fsfile_input:
         fsfile = address;
         fsvirt = setAddress(fsvirt_input, fsvirt_to_fsfile.inverseMap(fsfile));
         if (fsvirt !== null) {
           target.classList.add('is-valid');
           bsvirt = setAddress(bsvirt_input, bsvirt_to_fsvirt.inverseMap(fsvirt));
-          isvirt = setAddress(isvirt_input, bsvirt_to_isvirt.map(bsvirt))
-          if (bsvirt !== null || isvirt !== null) {
+          if (bsvirt !== null) {
             setAddress(bsfile_input, bsvirt_to_bsfile.map(bsvirt));
-            setAddress(isfile_input, isvirt_to_isfile.map(isvirt));
+            isvirt = setAddress(isvirt_input, bsvirt_to_isvirt.map(bsvirt))
+            if (isvirt !== null) {
+              setAddress(isfile_input, isvirt_to_isfile.map(isvirt));
+            }
           }
         } else {
           target.classList.add('is-invalid');
@@ -97,8 +105,10 @@ import Layout from '~/layouts/layout.astro';
           target.classList.add('is-valid');
           fsvirt = setAddress(fsvirt_input, bsvirt_to_fsvirt.map(bsvirt));
           isvirt = setAddress(isvirt_input, bsvirt_to_isvirt.map(bsvirt));
-          if (fsvirt !== null || isvirt !== null) {
+          if (fsvirt !== null) {
             setAddress(fsfile_input, fsvirt_to_fsfile.map(fsvirt));
+          }
+          if(isvirt !== null) {
             setAddress(isfile_input, isvirt_to_isfile.map(isvirt));
           }
         } else {
@@ -111,10 +121,12 @@ import Layout from '~/layouts/layout.astro';
         if (isvirt !== null) {
           target.classList.add('is-valid');
           bsvirt = setAddress(bsvirt_input, bsvirt_to_isvirt.inverseMap(isvirt));
-          fsvirt = setAddress(fsvirt_input, bsvirt_to_fsvirt.map(bsvirt));
-          if (bsvirt !== null || fsvirt !== null) {
+          if (bsvirt !== null) {
+            fsvirt = setAddress(fsvirt_input, bsvirt_to_fsvirt.map(bsvirt));
             setAddress(bsfile_input, bsvirt_to_bsfile.map(bsvirt));
-            setAddress(fsfile_input, fsvirt_to_fsfile.map(fsvirt));
+            if(fsvirt !== null){
+              setAddress(fsfile_input, fsvirt_to_fsfile.map(fsvirt));
+            }
           }
         } else {
           target.classList.add('is-invalid');
