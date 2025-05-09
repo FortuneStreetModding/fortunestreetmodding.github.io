@@ -165,6 +165,9 @@ class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycs
 			# 1.5x speedup
 			mainDol.seek(mapper.boomToFileAddress(0x80818fa8))
 			mainDol.write(b'\x3F\xB0\x03\x47')
+			# change auction timer to account for speedup
+			mainDol.seek(mapper.boomToFileAddress(0x80815730))
+			mainDol.write((7).to_bytes(4,'big'))
 			# Memory Block: Always Small Blocks
 			mainDol.seek(mapper.boomToFileAddress(0x800eec88))
 			mainDol.write(b'\x3B\xC0\x00\x00')
@@ -182,6 +185,16 @@ class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycs
 			# Fix AI 98-Stock Exploit (makes AI tank your stocks even if you have 98 or fewer)
 			mainDol.seek(mapper.boomToFileAddress(0x800A3C10))
 			mainDol.write(b'\x2C\x00\x00\x01')
+			# Skip Splash Screens
+			for dolAddr in (0x10D40, 0x10D44): #0x800159A0, 0x800159A4
+				mainDol.seek(dolAddr)
+				mainDol.write(b'\x60\x00\x00\x00')
+			mainDol.seek(0x13220) #0x80017E80
+			mainDol.write(b'\x39\xc0\x00\x01')
+			mainDol.seek(0x13224) #0x80017E84
+			mainDol.write(b'\x91\xdf\x00\x10')
+			mainDol.seek(mapper.boomToFileAddress(0x801e9a18))
+			mainDol.write(b'\x40\x82\x00\x10')
 
 	def saveUiMessages(self):
 		return {f'files/localize/ui_message.{k}.csv':
