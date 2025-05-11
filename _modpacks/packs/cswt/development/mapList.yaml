@@ -10,25 +10,35 @@ backgrounds: backgrounds.yml
     Ennesan50.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan50.zip
-    Ennesan51.zip:
+    Ennesan52A.zip:
         urls:
-        - https://nikkums.io/cswt/Maps/Ennesan51.zip
+        - https://nikkums.io/cswt/Maps/Ennesan52A.zip
+    Ennesan52B.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan52B.zip
+    NarrowingandBrawl.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/NarrowingandBrawl.zip
+  1:
+    Ennesan52C.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan52C.zip
+    NarrowingandWidening.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/NarrowingandWidening.zip
     arrowhead.zip:
         urls:
         - https://nikkums.io/cswt/Maps/arrowhead.zip
     Tutorial1.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Tutorial1.zip
-  1:
     OnionOcean.zip:
         urls:
         - https://nikkums.io/cswt/Maps/OnionOcean.zip
-    pacparty_mirageoasis.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/pacparty_mirageoasis.zip
     YHtWtG.zip:
         urls:
         - https://nikkums.io/cswt/Maps/YHtWtG.zip
+  2:
     BalatroBoard.zip:
         urls:
         - https://nikkums.io/cswt/Maps/BalatroBoard.zip
@@ -36,19 +46,12 @@ backgrounds: backgrounds.yml
         urls:
         - https://nikkums.io/cswt/Maps/Blackmarket.zip
     placeholder.zip:
-  2:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
       practiceBoard: true
 1:
   0:
-    Ennesan07.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan07.zip
     Ennesan09.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan09.zip
@@ -58,19 +61,16 @@ backgrounds: backgrounds.yml
     Ennesan30A.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan30A.zip
-    Ennesan33.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan33.zip
     WiiU.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WiiU.zip
-  1:
     giantbeanstalk.zip:
       urls:
       - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
     POWBlock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/POWBlock.zip
+  1:
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
@@ -83,13 +83,13 @@ backgrounds: backgrounds.yml
     Gladius.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Gladius.zip
-  2:
     Heliodor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Heliodor.zip
     PalmBrinks.zip:
       urls:
       - https://nikkums.io/cswt/Maps/PalmBrinks.zip
+  2:
     RoamerEncampment.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
@@ -99,5 +99,7 @@ backgrounds: backgrounds.yml
     ToadsTreasureHunt.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsTreasureHunt.zip
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
       practiceBoard: true
