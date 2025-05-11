@@ -1,0 +1,259 @@
+Root:
+  __Type: Root
+  Resource:
+    __Type: Resource
+  SetupFlag:
+    __Type: SetupFlag
+    UseShadow: 1
+    UseMirror: 0
+    UseBloom: 0
+    UseDof: 0
+    UseDof2: 1
+    UseBoolean: 0
+    UseCameraLink: 1
+  FogSetting:
+    __Type: FogSetting
+    FogType: 5
+    ZStart: 500.000000
+    ZEnd: 1750
+    Color:
+      __Type: Color
+      R: 200
+      G: 230
+      B: 255
+  BloomSetting:
+    __Type: BloomSetting
+    ProcType: 1
+    Border: 250
+    AddShift: 2
+    SoftShiftX: 6.45
+    SoftShiftY: 6.40
+    Color:
+      __Type: RGBA
+      R: 106
+      G: 158
+      B: 208
+      A: 35
+    SoftKN: 4
+  Dof2Setting:
+    __Type: Dof2Setting
+    Fnum: 2.8
+    FocalLength: 37
+    S: 0.033
+    Blend: 1
+    FrontBlurMax: 0.000000
+    Front: 6
+    BackBlurMax: 0.75
+    Back: 6
+  LightSetting:
+    __Type: LightSetting
+    Light:
+      __Type: Light2
+      LightNum: 0
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 255
+        G: 255
+        B: 255
+      Dir:
+        __Type: Vector
+        X: -0.637201
+        Y: -0.599193
+        Z: -0.484708
+    Light:
+      __Type: Light2
+      LightNum: 1
+      Enable: 1
+      IsSpecular: 1
+      Color:
+        __Type: Color
+        R: 200
+        G: 200
+        B: 200
+      Dir:
+        __Type: Vector
+        X: -0.606764
+        Y: -0.718563
+        Z: -0.339859
+    Light:
+      __Type: Light2
+      LightNum: 2
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 125
+        G: 125
+        B: 125
+      Dir:
+        __Type: Vector
+        X: 0.514888
+        Y: 0.660623
+        Z: 0.546322
+    Light:
+      __Type: Light2
+      LightNum: 3
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 50
+        G: 50
+        B: 50
+      Dir:
+        __Type: Vector
+        X: 0.973816
+        Y: 0.057910
+        Z: 0.219837
+    Light:
+      __Type: Light2
+      LightNum: 4
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 240
+        G: 248
+        B: 250
+      Dir:
+        __Type: Vector
+        X: 0.02
+        Y: -0.75
+        Z: -0.65
+    Light:
+      __Type: Light2
+      LightNum: 5
+      Enable: 1
+      IsSpecular: 1
+      Color:
+        __Type: Color
+        R: 176
+        G: 185
+        B: 200
+      Dir:
+        __Type: Vector
+        X: 0.02
+        Y: -0.75
+        Z: -0.64
+    Light:
+      __Type: Light2
+      LightNum: 6
+      Enable: 1
+      IsSpecular: 0
+      Color:
+        __Type: Color
+        R: 160
+        G: 150
+        B: 160
+      Dir:
+        __Type: Vector
+        X: -0.6
+        Y: 0.2
+        Z: 0.7
+    Light:
+      __Type: Light2
+      LightNum: 7
+      Enable: 1
+      IsSpecular: 1
+      Color:
+        __Type: Color
+        R: 255
+        G: 255
+        B: 255
+      Dir:
+        __Type: Vector
+        X: -0.3
+        Y: -0.8
+        Z: -0.5
+    AmbLight:
+      __Type: AmbLight2
+      LightNum: 0
+      Color:
+        __Type: Color
+        R: 160
+        G: 200
+        B: 250
+    AmbLight:
+      __Type: AmbLight2
+      LightNum: 1
+      Color:
+        __Type: Color
+        R: 120
+        G: 120
+        B: 120
+  TLItemRoot:
+    __Type: TLItemRoot
+    PlayType: AUTO
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    TLMover:
+      __Type: TLMover
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Trans:
+        __Type: Vector
+        X: 0
+        Y: 0
+        Z: -70
+      Rot:
+        __Type: Vector
+        X: 0.0
+        Y: 0.0
+        Z: 0.0
+      Scale:
+        __Type: Vector
+        X: 1.0
+        Y: 1.0
+        Z: 1.0
+    twodbg.rmdl:
+      __Type: TLModel
+      StartTime: 0.0
+      EndTime: 30.0
+      Filename: twodbg.rmdl
+      EntryDraw: 1
+      EntryShadow: 0
+      EntryMirror: 0
+      EntryBooleanSrc: 0
+      EntryBooleanDst: 0
+      EntryAlphaObj: 0
+      BufferOption: 0
+  V_MOVE1:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 150
+    LoopType: ONE
+    cam_switch01.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: cam_switch01.rsca
+  V_MOVE2:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 150
+    LoopType: ONE
+    cam_switch01.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: cam_switch01.rsca
+  V_INTRO1:
+    __Type: TLItemRoot
+    PlayType: STOP
+    StartTime: 0.0
+    EndTime: 30.0
+    LoopType: ENDLESS
+    cam_intro01.rsca:
+      __Type: TLCameraAnim
+      StartTime: 0.0
+      EndTime: 30.0
+      LoopType: ENDLESS
+      Filename: cam_intro01.rsca
