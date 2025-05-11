@@ -1,30 +1,62 @@
 name:
-  en: Black Market
+  en: Enne-san Board 52-B
 desc:
-  en: Enne-san Board 51. The event square, which is activated by the use of money, must be used effectively. All shops inside have a 1.33x normal correction to shop prices.
+  en: -Narrowing and Brawl- As the switch is pressed, the size of the passable board changes. It gradually narrows and eventually the circle on the right becomes the battlefield. It is not possible to pass through squares that are 0.5 squares apart from the junction.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 1600
-targetAmount: 25000
-baseSalary: 450
+initialCash: 2200
+targetAmount: 22000
+baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
 frbFiles:
-- E51
+- E52B_1
+- E52B_2
+- E52B_3
+- E52B_4
+- E52B_5
+- E52B_6
+- E52B_7
+- E52B_8
+- E52B_9
+- E52B_9
+- E52B_9
+- E52B_9
+- E52B_9
+- E52B_9
+- E52B_9
+- E52B_9
+- E52B_17
 background: grid_gray
-mapIcon: E51BL
+mapIcon: E52Bi
 music:
   download:
-    - https://nikkums.io/cswt/BGM/Blackmarket.music.zip
-    - https://drive.google.com/uc?export=download&id=1lJoXDujiTr0O49FM62xtYkEq46w1RgRU&confirm=1
+    - https://nikkums.io/cswt/BGM/Ennesan52B.music.zip
+    - https://drive.google.com/uc?export=download&id=1qm12DdttJDjNHWfadIQRlw_6w6UREXtB&confirm=1
   map:
-  - Ennesan51_Map.60
+  - Ennesan52_Map_1.55
+  - Ennesan52_Map_1.55
+  - Ennesan52_Map_1.55
+  - Ennesan52_Map_4.55
+  - Ennesan52_Map_4.55
+  - Ennesan52_Map_6.55
+  - Ennesan52_Map_6.55
+  - Ennesan50_Map_28.60
+  - Ennesan52_Map_9.50
+  - Ennesan52_Map_9.50
+  - Ennesan52_Map_9.50
+  - Ennesan52_Map_9.50
+  - Ennesan52_Map_9.50
+  - Ennesan52_Map_9.50
+  - Ennesan52_Map_9.50
+  - Ennesan52_Map_9.50
+  - Ennesan52_Map_9.50
   stock: Stock_Ennesan45.50
   ventureCards:
-  - Venture_Ennesan51.65
+  - Venture_Ennesan45.50
   auction: Auction_grid.55
   targetMet:
-  - Targetmet_Ennesan51.65
+  - Targetmet_Ennesan52.55
   win: Ennesan45_Win.45
   guestAppear:
   guestLeave:
@@ -44,11 +76,6 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
-  - version: 2
-    changed:
-      - Changed venture card 74 to 89.
-    added:
-      - Memory Block BGM
   - version: 1
     added:
       - Initial Release
@@ -78,7 +105,7 @@ ventureCards:
   - 1  #  21 Random venture! You receive 20 stocks in a district picked at random!
   - 0  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
   - 0  #  23 Revaluation venture! You can expand any one of your shops by 50%.
-  - 1  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
+  - 0  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
   - 1  #  25 Misadventure! Your shop prices halve until your next turn!
   - 1  #  26 Lucky venture! You get a big commission until your next turn!
   - 1  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
@@ -91,7 +118,7 @@ ventureCards:
   - 1  #  34 Dicey adventure! Roll 1/3/5 and your shops close for the day. Roll 2/4/6 and everyone else's shops close.
   - 0  #  35 Stock venture! You can sell stocks you own at 35% above the market value.
   - 1  #  36 Capital venture! You can pay 100G for the chance to invest in your shops.
-  - 0  #  37 Random venture! Shops expand by 30% in a district picked at random!
+  - 1  #  37 Random venture! Shops expand by 30% in a district picked at random!
   - 1  #  38 Stock venture! You can buy stocks in a district of your choice at 10% above the market value.
   - 1  #  39 Suit venture! Buy a Suit Yourself card for 100G.
   - 1  #  40 Misadventure! You give away 10% of your ready cash to the player in last place!
@@ -112,7 +139,7 @@ ventureCards:
   - 1  #  55 Venture on! Roll the die again and move forward (with an invitation to browse thrown in!).
   - 1  #  56 Venture on! Roll the die again and move forward (with a half-price special offer thrown in!).
   - 0  #  57 Venture through space! Zoom to any square you like.
-  - 1  #  58 Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!
+  - 0  #  58 Venture through space! Pay 100G to zoom to any non-venture, non-suit square you like!
   - 0  #  59 Stock venture! You can buy stocks in a district of your choice at 10% below the market value.
   - 1  #  60 Random venture! Stock prices increase by 10% in a district picked at random!
   - 1  #  61 Special bonus! You receive a 10% dividend on your stocks!
@@ -127,7 +154,7 @@ ventureCards:
   - 0  #  70 Special bonus! You get a sudden promotion and receive a salary! (You lose any suits you have.)
   - 1  #  71 Capital venture! You can invest up to 200G of the bank's money in your shops.
   - 1  #  72 Dicey adventure! Roll 1/3/5 to take 20 times the number of your shops in gold coins. Roll 2/4/6 to pay the same.
-  - 0  #  73 Property venture! You can buy any unowned shop or vacant plot.
+  - 1  #  73 Property venture! You can buy any unowned shop or vacant plot.
   - 0  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
   - 1  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
   - 0  #  76 Special arcade adventure! You're invited to play Round the Blocks!
