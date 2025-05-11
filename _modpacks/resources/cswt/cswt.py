@@ -4,12 +4,12 @@ import tempfile
 import sys
 
 UI_MSGS_ALL = {
-	4292: "Custom Boards: Boards which were created by the Custom Street Modding Community",
-	4293: "Unused. Do not click.",
-	4294: "Custom Boards",
-	4295: "Do Not Click",
-	4309: "Main Menu",
-	4311: "Unused",
+	4292: "Unused. Do not click. We're hoping to get rid of this menu option soon!",
+	4293: "Custom Boards: Boards which were created by the Custom Street Modding Community",
+	4294: "Do Not Click",
+	4295: "Custom Boards",
+	4309: "Unused",
+	4311: "Main Menu",
 	4313: "UNSUPPORTED. Use at own risk!",
 	4314: "UNSUPPORTED. Use at own risk!",
 	4316: "Tutorial: Learn the rules of the game whilst playing on a special practice board.",
@@ -18,14 +18,14 @@ UI_MSGS_ALL = {
 	4320: "Start the tutorial?",
 	4381: "You've completed all available tours!",
 	4382: "You've completed all available tours!",
-	4446: "Tour Mode",
-	4447: "Unused",
-	4476: "Free Play",
-	4477: "Unused",
-	4812: "Custom Boards",
-	4813: "Unused",
-	4945: "Custom Boards",
-	4946: "Unused",
+	4446: "Unused",
+	4447: "Tour Mode",
+	4476: "Unused",
+	4477: "Free Play",
+	4812: "Unused",
+	4813: "Custom Boards",
+	4945: "Unused",
+	4946: "Custom Boards",
 }
 
 UI_MSGS = {

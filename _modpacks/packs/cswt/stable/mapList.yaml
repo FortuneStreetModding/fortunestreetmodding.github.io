@@ -1,5 +1,27 @@
 backgrounds: backgrounds.yml
 0:
+  0:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+  1:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+  2:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+1:
   #practiceBoard: DeathStarfish
   0:
     AegisRim.zip:
@@ -245,25 +267,3 @@ backgrounds: backgrounds.yml
     yoshicloud.zip:
       urls:
       - https://nikkums.io/cswt/Maps/yoshicloud.zip
-1:
-  0:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-  1:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-  2:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
-    placeholder.zip:
