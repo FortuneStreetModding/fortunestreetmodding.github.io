@@ -1,5 +1,5 @@
 name:
-  en: Enne-san Board 52
+  en: Enne-san Board 52-A
 desc:
   en: As the switch is pressed, the size of the passable board changes. It gradually narrows and eventually the circle on the right becomes the battlefield. There is no passage 0.5 squares away from the junction.
 ruleSet: Standard
@@ -30,6 +30,9 @@ frbFiles:
 background: grid_gray
 mapIcon: E52Ai
 music:
+  download:
+    - https://nikkums.io/cswt/BGM/Ennesan52A.music.zip
+    - https://drive.google.com/uc?export=download&id=1flW2-lVP1rHVqd_0sKUIBMSMFNiLFjKR&confirm=1
   map:
   - Ennesan52_Map_1.55
   - Ennesan52_Map_1.55
