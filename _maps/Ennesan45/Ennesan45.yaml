@@ -156,6 +156,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Add 1 backstreet and decrease 1 switch
   - version: 3
     changed:
       - Reduced board state from 91 to 51
