@@ -6,14 +6,14 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
 targetAmount: 15000
-baseSalary: 500
+baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: BalatroBoard
 background: balatro
 mapIcon: bal_btd6_0
 music:
-   download: https://nikkums.io/cswt/BGM/BalatroBoard.music.zip
+   downlaod: https://drive.usercontent.google.com/u/0/uc?id=18Tw2K_x8zE09Cyab8f7vK6bYfeA1oPvc&export=download
    map: 
    - Balatro.75
 tourMode:
@@ -23,11 +23,12 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
-  - version: 1
+  - version: 1.2
     added:
-      - Initial Release
+      - Fixed board balance and added events to the bottom of the board, as well as added 5 vacent plots
 authors:
   - name: Bandite
+    url:
 ventureCards: #VENTURE CARD IN WHICH 1 APPEARS NEXT TO -, 0 DOES NOT APPEAR. WHEN CHANGING THE VENTURE CARD THAT APPEARS, THE NUMBER OF 1S SHOULD BE 64
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go.
   - 1  #   2 Venture on! Roll the die again and move forward.
