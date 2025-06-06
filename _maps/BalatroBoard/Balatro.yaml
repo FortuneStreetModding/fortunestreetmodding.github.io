@@ -13,9 +13,11 @@ frbFile1: BalatroBoard
 background: balatro
 mapIcon: bal_btd6_0
 music:
-   downlaod: https://drive.usercontent.google.com/u/0/uc?id=18Tw2K_x8zE09Cyab8f7vK6bYfeA1oPvc&export=download
-   map: 
-   - Balatro.75
+  download: 
+    - https://nikkums.io/cswt/BGM/BalatroBoard.music.zip
+    - https://drive.google.com/uc?export=download&id=18Tw2K_x8zE09Cyab8f7vK6bYfeA1oPvc&confirm=1
+  map: 
+  - Balatro.75
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -23,12 +25,14 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
-  - version: 1.2
+  - version: 2
     added:
       - Fixed board balance and added events to the bottom of the board, as well as added 5 vacent plots
+  - version: 1
+    added:
+      - Initial Release
 authors:
   - name: Bandite
-    url:
 ventureCards: #VENTURE CARD IN WHICH 1 APPEARS NEXT TO -, 0 DOES NOT APPEAR. WHEN CHANGING THE VENTURE CARD THAT APPEARS, THE NUMBER OF 1S SHOULD BE 64
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go.
   - 1  #   2 Venture on! Roll the die again and move forward.
