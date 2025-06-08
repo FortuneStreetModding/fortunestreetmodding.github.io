@@ -156,6 +156,11 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - The following changes were made in board states (board states 3, 13, 23, 33, and 43) based on Enne-san Board 06.
+      - Changed so that when you can change direction at square ID 79, you can move downward (shops with initial value of 430 in district A).
+      - Changed to proceed to the red door when moving from Square ID 48 to 68.
   - version: 4
     changed:
       - Add 1 backstreet and decrease 1 switch
