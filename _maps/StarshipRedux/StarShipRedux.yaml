@@ -1,14 +1,14 @@
 name:
   en: Starship Mario Redux
 desc:
-  en: I hated the original version of this board, so i made a better one
+  en: I hated the original version of this board, so I made a better one.
 ruleSet: Standard
 theme: Mario
 initialCash: 2500
 targetAmount: 20000
 baseSalary: 600
 salaryIncrement: 100
-maxDiceRoll: 6
+maxDiceRoll: 7
 mapIcon: bg008alt
 frbFiles:
   - StarshipRedux
@@ -25,8 +25,9 @@ tourMode:
   opponent3: Yoshi
   clearRank: 3
 music:
-  download: # GOOGLE DRIVE DIRECT LINK TO ZIP CONTAINING MUSIC, CAN DELETE THIS TEXT WHILE TESTING
+  download: 
     - https://nikkums.io/cswt/BGM/StarshipRedux.music.zip
+    - https://drive.google.com/uc?export=download&id=195CKgvULuOSCH9b9plpAJ1CDWGo-A5EZ&confirm=1
   map: StarshipRedux.110
   targetMet: StarshipGoal.110
   promotionMario: StarshipPromo.100
@@ -42,6 +43,11 @@ music:
   stock: StarshipStocks.110
   ventureCards: StarshipVenture.80
 changelog:
+  - version: 2
+    added:
+      - Google Drive download link for StarshipRedux.music.zip
+    changed:
+      - Change max diceroll from 6 to 7
   - version: 1
     added:
       - Initial Release
