@@ -8,7 +8,7 @@ initialCash: 2500
 targetAmount: 20000
 baseSalary: 600
 salaryIncrement: 100
-maxDiceRoll: 8
+maxDiceRoll: 7
 mapIcon: bg008alt
 frbFiles:
   - StarshipRedux
@@ -25,8 +25,9 @@ tourMode:
   opponent3: Yoshi
   clearRank: 3
 music:
-  download:
+  download: 
     - https://nikkums.io/cswt/BGM/StarshipRedux.music.zip
+    - https://drive.google.com/uc?export=download&id=195CKgvULuOSCH9b9plpAJ1CDWGo-A5EZ&confirm=1
   map: StarshipRedux.110
   targetMet: StarshipGoal.110
   promotionMario: StarshipPromo.100
@@ -43,8 +44,10 @@ music:
   ventureCards: StarshipVenture.80
 changelog:
   - version: 2
+    added:
+      - Google Drive download link for StarshipRedux.music.zip
     changed:
-      - Change max diceroll from 6 to 8
+      - Change max diceroll from 6 to 7
   - version: 1
     added:
       - Initial Release
