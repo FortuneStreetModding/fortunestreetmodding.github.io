@@ -28,6 +28,7 @@ changelog:
   - version: 2
     added:
       - Fixed board balance and added events to the bottom of the board, as well as added 5 vacent plots
+      - Base salary changed from 500 to 300
   - version: 1
     added:
       - Initial Release
