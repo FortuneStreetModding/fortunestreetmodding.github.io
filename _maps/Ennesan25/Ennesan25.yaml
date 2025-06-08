@@ -73,6 +73,9 @@ mutators:
     denominator: 1
     constant: 10
 changelog:
+  - version: 3
+    changed:
+      - Changed the effect of the event square adjacent to the bank on the lower side of Board State 13 from Venture Card 51 to 52.
   - version: 2
     changed:
       - Rename frb file and mapicon file

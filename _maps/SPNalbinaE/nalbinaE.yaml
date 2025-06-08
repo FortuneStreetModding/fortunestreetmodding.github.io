@@ -10,9 +10,6 @@ baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 8
 frbFile1: nalbina
-frbFile2: nalbina
-frbFile3: nalbina
-frbFile4: nalbina
 background: bg109
 mapIcon: nalbina
 music:

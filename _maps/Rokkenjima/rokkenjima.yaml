@@ -13,7 +13,7 @@ frbFile1: rokkenjima0
 frbFile2: rokkenjima1
 frbFile3: rokkenjima2
 frbFile4: rokkenjima3
-background: bg102
+background: bg102fixed
 mapIcon: rokkenjima
 districtNames:
   en:
@@ -65,6 +65,9 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Changed background from bg102 to bg102fixed.
   - version: 3
     added:
       - Custom 3D background

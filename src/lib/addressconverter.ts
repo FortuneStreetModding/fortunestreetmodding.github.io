@@ -73,3 +73,28 @@ export const bsvirt_to_fsvirt = new AddressSectionMapper([
   { off_beg: 0x8044ec00, off_end: 0x804ac804, delta: 0x1a0 },
   { off_beg: 0x804ac880, off_end: 0x8081f013, delta: 0x200 },
 ]);
+
+// Boom Street Virtual to Itadaki Street Wii Virtual
+export const bsvirt_to_isvirt = new AddressSectionMapper([
+  { off_beg: 0x80000100, off_end: 0x8007a283, delta: 0x0 },
+  { off_beg: 0x8007a2f4, off_end: 0x80268717, delta: 0x94 },
+  { off_beg: 0x8026871f, off_end: 0x8040d97b, delta: 0x90 },
+  { off_beg: 0x8040d97f, off_end: 0x80410278, delta: 0x80 },
+  { off_beg: 0x80410578, off_end: 0x8044ebe3, delta: 0x2a8 },
+  { off_beg: 0x8044ebff, off_end: 0x804ac804, delta: 0x2c0 },
+  { off_beg: 0x804ac880, off_end: 0x8081f013, delta: 0x300 },
+]);
+
+// Itadaki Street Wii Virtual to Itadaki Street Wii File
+export const isvirt_to_isfile = new AddressSectionMapper([
+  { off_beg: 0x80004000, off_end: 0x80006720, delta: 0x80003f00 },
+  { off_beg: 0x80006720, off_end: 0x80006c80, delta: 0x7fbfda80 },
+  { off_beg: 0x80006c80, off_end: 0x80007480, delta: 0x7fbfda80 },
+  { off_beg: 0x80007480, off_end: 0x8040d900, delta: 0x80004c60 },
+  { off_beg: 0x8040d900, off_end: 0x8040de40, delta: 0x80003f00 },
+  { off_beg: 0x8040de40, off_end: 0x8040de60, delta: 0x80003f00 },
+  { off_beg: 0x8040de80, off_end: 0x8044e940, delta: 0x80003f20 },
+  { off_beg: 0x8044e940, off_end: 0x804ac560, delta: 0x80003f20 },
+  { off_beg: 0x80814980, off_end: 0x808170c0, delta: 0x8036c340 },
+  { off_beg: 0x80818ca0, off_end: 0x8081ece0, delta: 0x8036df20 },
+]);
