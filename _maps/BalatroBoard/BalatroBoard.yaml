@@ -6,16 +6,18 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 1500
 targetAmount: 15000
-baseSalary: 500
+baseSalary: 300
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFile1: BalatroBoard
 background: balatro
 mapIcon: bal_btd6_0
 music:
-  download:
+  download: 
     - https://nikkums.io/cswt/BGM/BalatroBoard.music.zip
-  map: Balatro.75
+    - https://drive.google.com/uc?export=download&id=18Tw2K_x8zE09Cyab8f7vK6bYfeA1oPvc&confirm=1
+  map: 
+  - Balatro.75
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -23,6 +25,10 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+    added:
+      - Fixed board balance and added events to the bottom of the board, as well as added 5 vacent plots
+      - Base salary changed from 500 to 300
   - version: 1
     added:
       - Initial Release
