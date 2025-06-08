@@ -86,6 +86,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Add a switch next to the blue door at Board State 8.
   - version: 1
     added:
       - Initial Release
