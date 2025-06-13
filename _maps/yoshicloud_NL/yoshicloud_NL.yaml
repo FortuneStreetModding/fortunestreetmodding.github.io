@@ -15,8 +15,8 @@ background: bg001_YC
 mapIcon: yocloud
 music:
   download:
-  - https://nikkums.io/cswt/BGM/yoshicloud.music.zip
-  - https://drive.google.com/uc?export=download&id=1359PEcggM9xov5ljvTd9tlS2RlOQC2kg
+  - https://nikkums.io/cswt/BGM/yoshicloud_NL.music.zip
+  - https://drive.google.com/uc?export=download&id=1zLcjh767W2EnQkCgFnv1kQECydjJEUrH
   map: 
   - yoshicloud_MAP.50
   stock: BeanstalkStock.50 
