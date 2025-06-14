@@ -14,9 +14,9 @@ frbFile2: yoshicloud_NL02
 background: bg001_YC
 mapIcon: yocloud
 music:
-  download:
-  - https://nikkums.io/cswt/BGM/yoshicloud_NL.music.zip
-  - https://drive.google.com/uc?export=download&id=1zLcjh767W2EnQkCgFnv1kQECydjJEUrH
+  download: 
+    - https://nikkums.io/cswt/BGM/yoshicloud_NL.music.zip
+    - https://drive.google.com/uc?export=download&id=1zLcjh767W2EnQkCgFnv1kQECydjJEUrH
   map: 
   - yoshicloud_MAP.50
   stock: BeanstalkStock.50 
