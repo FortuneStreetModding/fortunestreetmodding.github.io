@@ -13,24 +13,6 @@ frbFile1: yoshicloud_NL01
 frbFile2: yoshicloud_NL02
 background: bg001_YC
 mapIcon: yocloud
-music:
-  download: 
-    - https://nikkums.io/cswt/BGM/yoshicloud_NL.music.zip
-    - https://drive.google.com/uc?export=download&id=1zLcjh767W2EnQkCgFnv1kQECydjJEUrH
-  map: 
-  - yoshicloud_MAP.50
-  stock: BeanstalkStock.50 
-  ventureCards: yoshicloud_VENT.50
-  auction: yoshicloud_AUC.50
-  targetMet: yoshicloud_TARGET.50
-  win: yoshicloud_WIN.50
-  roundTheBlocks: A_yoshicloud_RTB.50
-  roundTheBlocksWin: yoshicloud_RTBW.50
-  roundTheBlocks777: 
-  memoryBlock: A_yoshicloud_MB.50
-  dartOfGold: A_yoshicloud_DOG.50
-  slurpodromeSelect: A_yoshicloud_SLURP.50
-  domination: yoshicloud_DOM
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
