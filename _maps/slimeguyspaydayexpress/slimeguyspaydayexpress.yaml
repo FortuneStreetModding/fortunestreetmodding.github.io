@@ -10,7 +10,7 @@ baseSalary: 350
 salaryIncrement: 250
 maxDiceRoll: 6
 frbFile1: SGPE01s
-frbFile2: SGPE02s
+frbFile2: SGPE03s
 frbFile3: SGPE03s
 frbFile4: SGPE04s
 background: bg109altSE
@@ -42,6 +42,11 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Repurposed some squares in order to include the train station
+      - Rearranged the districts to be split again
+      - Added two doors at the train station that lead to either the bank or the rear train car
   - version: 3
     changed:
       - Districts 8 and 9 by the bank now consist of 5 properties each.
@@ -165,7 +170,7 @@ ventureCards:
   - 0  # 103 Misadventure! The values of all your shops drop by 25%!
   - 0  # 104 Misadventure! You give everyone 80G each!
   - 0  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
-  - 0  # 106 Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)
+  - 1  # 106 Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)
   - 0  # 107 Revaluation venture! You can expand any one of your shops by 30%.
   - 0  # 108 Cashback venture! You can sell a shop back to the bank for four times its shop value.
   - 0  # 109 Revaluation venture! You can expand any one of your shops by 75%.
@@ -184,7 +189,7 @@ ventureCards:
   - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
   - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 0  # 124 Suit venture! Buy a Suit Yourself card for 50G.
-  - 1  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
+  - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
