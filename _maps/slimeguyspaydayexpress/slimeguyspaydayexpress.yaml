@@ -47,6 +47,7 @@ changelog:
       - Repurposed some squares in order to include the train station
       - Rearranged the districts to be split again
       - Added two doors at the train station that lead to either the bank or the rear train car
+      - Changed Venture Card 125 to 106
   - version: 3
     changed:
       - Districts 8 and 9 by the bank now consist of 5 properties each.
