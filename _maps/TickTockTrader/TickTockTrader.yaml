@@ -28,6 +28,7 @@ changelog:
       - Made travel easier around map
       - light district changes
       - added more freedom
+      - Increased maxDiceRoll from 6 to 7
   - version: 1
     added: 
       - Initial Release
