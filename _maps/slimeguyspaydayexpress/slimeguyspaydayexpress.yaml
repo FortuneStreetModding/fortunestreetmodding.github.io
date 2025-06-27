@@ -10,7 +10,7 @@ baseSalary: 350
 salaryIncrement: 250
 maxDiceRoll: 6
 frbFile1: SGPE01s
-frbFile2: SGPE03s
+frbFile2: SGPE02s
 frbFile3: SGPE03s
 frbFile4: SGPE04s
 background: bg109altSE
