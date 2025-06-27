@@ -189,9 +189,6 @@ backgrounds: backgrounds.yml
     MidgarTransit.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MidgarTransit.zip
-    pacparty_mirageoasis.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/pacparty_mirageoasis.zip
     NLA.zip:
       urls:
       - https://nikkums.io/cswt/Maps/NLA.zip
