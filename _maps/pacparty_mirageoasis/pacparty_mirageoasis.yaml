@@ -90,6 +90,8 @@ changelog:
   - version: 4
     changed:
       - Included a little island with 2 vacant plots and a door
+      - Base salary increased from 250 to 275
+      - Salary increment increased from 150 to 175
   - version: 3
     changed:
       - Added 6 more frbs for a total of 14
