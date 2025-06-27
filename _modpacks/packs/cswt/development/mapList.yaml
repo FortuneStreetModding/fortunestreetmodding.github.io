@@ -99,7 +99,9 @@ backgrounds: backgrounds.yml
     ToadsTreasureHunt.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsTreasureHunt.zip
-    placeholder.zip:
+    pacparty_mirageoasis.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/pacparty_mirageoasis.zip
     placeholder.zip:
     placeholder.zip:
       practiceBoard: true
