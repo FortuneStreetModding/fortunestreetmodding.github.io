@@ -6,8 +6,8 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
 targetAmount: 25000
-baseSalary: 250
-salaryIncrement: 150
+baseSalary: 275
+salaryIncrement: 175
 maxDiceRoll: 7
 frbFiles:
 - pacparty_mirageoasis_0_10
@@ -35,6 +35,7 @@ mapIcon: pacparty_p804
 music:
   download:
   - https://nikkums.io/cswt/BGM/pacparty_mirageoasis.music.zip
+  - https://drive.google.com/uc?export=download&id=1g3BuRo9WEzj4QhEZlgl9zjfZd0DKzXxB
   map: 
   - PACPARTY_mirageoasis_MAP_0
   - PACPARTY_mirageoasis_MAP_1
@@ -86,6 +87,11 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Included a little island with 2 vacant plots and a door
+      - Base salary increased from 250 to 275
+      - Salary increment increased from 150 to 175
   - version: 3
     changed:
       - Added 6 more frbs for a total of 14
