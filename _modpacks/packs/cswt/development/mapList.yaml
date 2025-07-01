@@ -1,6 +1,9 @@
 backgrounds: backgrounds.yml
 0:
   0:
+    tetrisfs.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/tetrisfs.zip
     Ennesan43.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan43.zip
