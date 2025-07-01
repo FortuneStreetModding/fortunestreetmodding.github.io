@@ -1246,3 +1246,8 @@
   - https://nikkums.io/cswt/Backgrounds/bg001_YC.background.zip
   mapIcon: bg001_YC
   name: bg001_YC
+- background: beach
+  download:
+  - https://nikkums.io/cswt/Backgrounds/beach.background.zip
+  mapIcon: beach
+  name: beach
