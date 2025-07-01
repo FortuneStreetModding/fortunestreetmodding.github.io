@@ -1,4 +1,3 @@
----
 name:
   en: Tetris FS
 desc:
@@ -37,9 +36,9 @@ mapIcon: Tetris
 music:
   download:
   - https://nikkums.io/cswt/BGM/tetrisfs.music.zip
-  - https://drive.google.com/uc?export=download&id=1dOgUmiYay16-EFkh09KrCWB_7w1vqCv7
+  - https://drive.google.com/uc?export=download&id=1ybrsBZ4eGSj3C46IhKaqcbm0FxvO5wI5
   map: 
-  - tetris_MAP01.50
+  - tetris_MAP01.40
   - tetris_MAP04
   - tetris_MAP03
   - tetris_MAP03
@@ -50,7 +49,7 @@ music:
   - mpss_ppbc_MAP07
   - mpss_ppbc_MAP12
   - tetris_MAP10
-  - tetris_MAP01.50
+  - tetris_MAP01.40
   - tetris_MAP03
   - tetris_MAP03
   - mpss_ppbc_MAP12
@@ -225,58 +224,3 @@ ventureCards:
   - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 1  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-shopNames:
-  en:
-    1: Initial Value 10
-    2: Initial Value 20
-    3: Initial Value 30
-    4: Initial Value 40
-    5: Initial Value 50
-    6: Initial Value 60
-    7: Initial Value 70
-    8: Initial Value 80
-    9: Initial Value 90
-    10: Initial Value 100
-    11: Initial Value 110
-    12: Initial Value 120
-    13: Initial Value 130
-    14: Initial Value 140
-    15: Initial Value 150
-    16: Initial Value 160
-    17: Initial Value 170
-    18: Initial Value 180
-    19: Initial Value 190
-    20: Initial Value 200
-    21: Initial Value 210
-    22: Initial Value 220
-    23: Initial Value 230
-    24: Initial Value 240
-    25: Initial Value 250
-    26: Initial Value 260
-    27: Initial Value 270
-    28: Initial Value 280
-    29: Initial Value 290
-    30: Initial Value 300
-    31: Initial Value 310
-    32: Initial Value 320
-    33: Initial Value 330
-    34: Initial Value 340
-    35: Initial Value 350
-    36: Initial Value 360
-    37: Initial Value 370
-    38: Initial Value 380
-    39: Initial Value 390
-    40: Initial Value 400
-    41: Initial Value 410
-    42: Initial Value 420
-    43: Initial Value 430
-    44: Initial Value 440
-    45: Initial Value 450
-    46: Initial Value 460
-    47: Initial Value 470
-    50: Initial Value 500
-    60: Initial Value 600
-    70: Initial Value 700
-    97: Initial Value 990
-    98: Vacant plot
-...
