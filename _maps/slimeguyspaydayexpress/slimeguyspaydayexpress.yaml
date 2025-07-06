@@ -42,6 +42,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Fixed a path error in board state 1
   - version: 4
     changed:
       - Repurposed some squares in order to include the train station
