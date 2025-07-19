@@ -90,6 +90,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed: 
+      - One way exit is now always attached to the switches
+      - Green doors are now changed to be blue
   - version: 1
     added: 
       - Initial Release
