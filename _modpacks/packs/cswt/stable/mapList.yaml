@@ -243,9 +243,15 @@ backgrounds: backgrounds.yml
     superbowserstrackway.zip:
       urls:
       - https://nikkums.io/cswt/Maps/superbowserstrackway.zip
+    tetrisfs.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/tetrisfs.zip
     ToadsHouse.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsHouse.zip
+    ToadsTreasureHunt.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/ToadsTreasureHunt.zip
     TurtleFortress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TurtleFortress.zip
