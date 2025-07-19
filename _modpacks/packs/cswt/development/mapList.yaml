@@ -1,9 +1,6 @@
 backgrounds: backgrounds.yml
 0:
   0:
-    tetrisfs.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/tetrisfs.zip
     Ennesan43.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan43.zip
@@ -67,16 +64,13 @@ backgrounds: backgrounds.yml
     WiiU.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WiiU.zip
-    giantbeanstalk.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
     POWBlock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/POWBlock.zip
-  1:
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
+  1:
     Agency.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Agency.zip
@@ -92,19 +86,16 @@ backgrounds: backgrounds.yml
     PalmBrinks.zip:
       urls:
       - https://nikkums.io/cswt/Maps/PalmBrinks.zip
-  2:
     RoamerEncampment.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
+  2:
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
-    ToadsTreasureHunt.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/ToadsTreasureHunt.zip
-    pacparty_mirageoasis.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/pacparty_mirageoasis.zip
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
       practiceBoard: true
