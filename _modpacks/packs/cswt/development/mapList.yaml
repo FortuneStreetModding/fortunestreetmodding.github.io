@@ -52,6 +52,9 @@ backgrounds: backgrounds.yml
       practiceBoard: true
 1:
   0:
+    CastawayBayCSide.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
     Ennesan09.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan09.zip
@@ -67,10 +70,10 @@ backgrounds: backgrounds.yml
     POWBlock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/POWBlock.zip
+  1:
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
-  1:
     Agency.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Agency.zip
@@ -86,14 +89,13 @@ backgrounds: backgrounds.yml
     PalmBrinks.zip:
       urls:
       - https://nikkums.io/cswt/Maps/PalmBrinks.zip
+  2:
     RoamerEncampment.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
-  2:
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
-    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
