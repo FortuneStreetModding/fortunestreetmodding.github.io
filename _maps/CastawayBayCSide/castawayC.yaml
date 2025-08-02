@@ -9,8 +9,8 @@ targetAmount: 16000
 baseSalary: 300
 salaryIncrement: 300
 maxDiceRoll: 8
-frbFile1: castawayC1_final_alt
-frbFile2: castawayC2_final_alt
+frbFile1: castaway1C
+frbFile2: castaway2C
 background: bg001_YC
 mapIcon: castC
 switchRotationOriginPoints:
