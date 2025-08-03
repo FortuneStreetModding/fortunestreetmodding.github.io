@@ -4,10 +4,10 @@ desc:
   en: Defy your fate on the Sanctum airship of Final Fantasy XIII!
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 3000
+initialCash: 5000
 targetAmount: 25000
-baseSalary: 500
-salaryIncrement: 200
+baseSalary: 750
+salaryIncrement: 250
 maxDiceRoll: 8
 frbFile1: palamecia
 background: bg109alt
