@@ -48,6 +48,12 @@ tourMode:
   opponent3: Peach
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Reduced shop prices in districts A, B and J.
+      - Increased initial cash from 3000 to 5000.
+      - Increased base salary from 500 to 750.
+      - Increased salary increment from 200 to 250.
   - version: 4
     changed:
       - Changed background to bg109alt
