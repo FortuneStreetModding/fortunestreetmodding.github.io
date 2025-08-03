@@ -11,6 +11,8 @@ salaryIncrement: 300
 maxDiceRoll: 8
 frbFile1: castaway1C
 frbFile2: castaway2C
+frbFile3: castaway3C
+frbFile4: castaway4C
 background: bg001_YC
 mapIcon: castC
 switchRotationOriginPoints:
@@ -19,7 +21,7 @@ switchRotationOriginPoints:
 music:
   download: 
     - https://nikkums.io/cswt/BGM/Castaway.music.zip
-    - https://drive.google.com/u/2/uc?id=11eyg1BUAG24gq-ZbxG_ERXbuCmSUmHW6&export=download
+    - https://drive.google.com/u/2/uc?id=1CeJQVjErBG6P2qw995wjpuIl9zYKJnzd&export=download
   map: castawaybay
   stock: mp6options
   ventureCards: mp6amusing
@@ -46,6 +48,7 @@ tourMode:
 changelog:
   - version: 3
     changed:
+      - Included two more board states
       - Reversed the direction of the map and icon
       - Swapped backgrounds to one that supports a Yoshi lift
       - Added a Yoshi lift into the board
