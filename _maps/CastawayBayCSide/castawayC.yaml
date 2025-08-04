@@ -46,9 +46,12 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
-  - version: 3
+  - version: 4
     changed:
       - Included two more board states
+      - Changed the location of the square and vacant plot adjacent to the lift's starting point.
+  - version: 3
+    changed:
       - Reversed the direction of the map and icon
       - Swapped backgrounds to one that supports a Yoshi lift
       - Added a Yoshi lift into the board
