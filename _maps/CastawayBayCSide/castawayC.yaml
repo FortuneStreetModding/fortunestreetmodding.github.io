@@ -11,6 +11,8 @@ salaryIncrement: 300
 maxDiceRoll: 8
 frbFile1: castaway1C
 frbFile2: castaway2C
+frbFile3: castaway3C
+frbFile4: castaway4C
 background: bg001_YC
 mapIcon: castC
 switchRotationOriginPoints:
@@ -44,6 +46,10 @@ tourMode:
   opponent3: Luigi
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Included two more board states
+      - Changed the location of the square and vacant plot adjacent to the lift's starting point.
   - version: 3
     changed:
       - Reversed the direction of the map and icon
