@@ -119,7 +119,7 @@ def replCharacterIcons(arcDir, modpackDir):
 	for dirEntry in os.scandir(charaDirAll):
 		tplPath = os.path.join(arcDir, 'arc/timg', os.path.splitext(dirEntry.name)[0] + '.tpl')
 		#print(tplPath, file=sys.stderr)
-		pycsmm.convertPngToTpl(dirEntry.path, tplPath, "CMPR")
+		pycsmm.convertPngToTpl(dirEntry.path, tplPath, "CI8")
 
 
 def replCharacterDartIcons(locale, brresDir, modpackDir):
