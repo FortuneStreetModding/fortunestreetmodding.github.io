@@ -45,7 +45,9 @@ backgrounds: backgrounds.yml
     Blackmarket.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Blackmarket.zip
-    placeholder.zip:
+    Amida.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Amida.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
