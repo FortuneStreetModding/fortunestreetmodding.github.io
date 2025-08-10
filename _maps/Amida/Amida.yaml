@@ -7,7 +7,6 @@ desc:
   de: 'Amida-Kuji: Ein Lotto Japanischer Herkunft. Beim Kreuzen einer Brücke muss diese überquert werden, bevor es wieder hinab geht. Achte auf die Schalter, die alles durchmischen!'
   fr: "Amida : Une tombola d'origine japonaise. En rencontrant un pont, il doit être traversé avant de pouvoir redescendre. Les imterrupteurs mélangent tout, donc fais attention !"
 ruleSet: Standard
-ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000
 targetAmount: 15000
@@ -19,7 +18,7 @@ frbFiles:
   - Amida2
   - Amida3
   - Amida4
-background: bg007
+background: bg007fixed
 bgmId: BGM_MAP_KOOPA
 mapIcon: Amida
 tourMode:
