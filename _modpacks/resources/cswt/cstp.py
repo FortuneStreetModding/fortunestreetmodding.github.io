@@ -128,7 +128,7 @@ def replCharacterDartIcons(locale, brresDir, modpackDir):
 
 MODID = __name__
 
-class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycsmm.UiMessageInterface):
+class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycsmm.BrresFileInterface, pycsmm.UiMessageInterface):
 	def __init__(self):
 		pycsmm.CSMMMod.__init__(self)
 		pycsmm.GeneralInterface.__init__(self)
