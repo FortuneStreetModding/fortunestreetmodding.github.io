@@ -1,0 +1,30 @@
+[
+	{
+		"from": "game/mg_race.cmparc",
+		"to": "files/game/mg_race.cmparc"
+	},
+	{
+		"from": "game/langDE/mg_race_DE.cmparc",
+		"to": "files/game/langDE/mg_race_DE.cmparc"
+	},
+	{
+		"from": "game/langEN/mg_race_EN.cmparc",
+		"to": "files/game/langEN/mg_race_EN.cmparc"
+	},
+	{
+		"from": "game/langES/mg_race_ES.cmparc",
+		"to": "files/game/langES/mg_race_ES.cmparc"
+	},
+	{
+		"from": "game/langFR/mg_race_FR.cmparc",
+		"to": "files/game/langFR/mg_race_FR.cmparc"
+	},
+	{
+		"from": "game/langIT/mg_race_IT.cmparc",
+		"to": "files/game/langIT/mg_race_IT.cmparc"
+	},
+	{
+		"from": "game/langUK/mg_race_UK.cmparc",
+		"to": "files/game/langUK/mg_race_UK.cmparc"
+	}
+]
