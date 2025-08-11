@@ -3,3 +3,4 @@
 +ChangeCurtain
 +NewTitleScreen
 +SlurpodromeSquareFrame
++revampedColors
