@@ -32,6 +32,7 @@ _site/
 ### cmpres and brstm ###
 *.brstm
 *.cmpres
+!_modpacks/resources/*/*/*.cmpres
 !_modpacks/resources/*/*/*/*.cmpres
 # exclude arc files but allow them for modpacks
 *.arc

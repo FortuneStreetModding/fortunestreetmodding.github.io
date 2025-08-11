@@ -110,7 +110,6 @@ def replTitleImages(locale, arcDir, modpackDir):
 
 
 def replCharacterIcons(arcDir, modpackDir):
-	#arcFileDir = arcDir.split("/", 4)[-1]
 	arcFileDir = Path(*Path(arcDir).parts[Path(arcDir).parts.index('game'):])
 	arcFileDirStr = str(arcFileDir)
 
@@ -123,7 +122,7 @@ def replCharacterIcons(arcDir, modpackDir):
 
 
 def replCharacterDartIcons(locale, brresDir, modpackDir):
-	gameCharacterIconDarts = os.path.join(modpackDir, 'game/mg_darts.brres')
+	gameCharacterIconDarts = os.path.join(modpackDir, 'game/mg_darts.brres/icons')
 	for dirEntry in os.scandir(gameCharacterIconDarts):
 		texPath = os.path.join(brresDir, 'Textures(NW4R)', os.path.splitext(dirEntry.name)[0])
 		pycsmm.convertPngToTex(dirEntry.path, texPath)

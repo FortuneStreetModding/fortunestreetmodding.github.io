@@ -1,0 +1,30 @@
+[
+    {
+        "from": "game/game_board.cmpres",
+        "to": "files/game/game_board.cmpres"
+    },
+    {
+        "from": "game/langEN/game_board_EN.cmpres",
+        "to": "files/game/langEN/game_board_EN.cmpres"
+    },
+    {
+        "from": "game/langUK/game_board_UK.cmpres",
+        "to": "files/game/langUK/game_board_UK.cmpres"
+    },
+    {
+        "from": "game/langIT/game_board_IT.cmpres",
+        "to": "files/game/langIT/game_board_IT.cmpres"
+    },
+    {
+        "from": "game/langDE/game_board_DE.cmpres",
+        "to": "files/game/langDE/game_board_DE.cmpres"
+    },
+    {
+        "from": "game/langES/game_board_ES.cmpres",
+        "to": "files/game/langES/game_board_ES.cmpres"
+    },
+    {
+        "from": "game/langFR/game_board_FR.cmpres",
+        "to": "files/game/langFR/game_board_FR.cmpres"
+    }
+]

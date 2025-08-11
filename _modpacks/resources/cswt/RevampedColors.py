@@ -16,10 +16,11 @@ def replMapIcons(locale, arcDir, modpackDir):
 
 
 def replColorDartTextures(locale, brresDir, modpackDir):
-	gameColorDartTextures = os.path.join(modpackDir, 'game/mg_darts.brres')
+	gameColorDartTextures = os.path.join(modpackDir, 'game/mg_darts.brres/textures')
 	for dirEntry in os.scandir(gameColorDartTextures):
 		texPath = os.path.join(brresDir, 'Textures(NW4R)', os.path.splitext(dirEntry.name)[0])
 		pycsmm.convertPngToTex(dirEntry.path, texPath)
+
 
 class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycsmm.BrresFileInterface):
 	def __init__(self):
@@ -31,7 +32,8 @@ class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycs
 
 	def modId(self):
 		return MODID
-	
+
+
 	def priority(self):
 		return -250
 
@@ -486,106 +488,41 @@ class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycs
 			mainDol.write(ColorTable.WHITE.value)
 
 			# modify colors of the UI
-			mainDol.seek(mapper.boomToFileAddress(0x80417904)) 
+			mainDol.seek(mapper.boomToFileAddress(0x80417904))
 			mainDol.write(b'\xBA\x8A\xEA')                       # Navy UI to Lavender
-			mainDol.seek(mapper.boomToFileAddress(0x80417948)) 
+			mainDol.seek(mapper.boomToFileAddress(0x80417948))
 			mainDol.write(b'\xBA\x8A\xEA')
 
-			mainDol.seek(mapper.boomToFileAddress(0x80417910)) 
+			mainDol.seek(mapper.boomToFileAddress(0x80417910))
 			mainDol.write(b'\x3E\xB7\xB3')                       # Tangerine UI to Teal
-			mainDol.seek(mapper.boomToFileAddress(0x80417954)) 
+			mainDol.seek(mapper.boomToFileAddress(0x80417954))
 			mainDol.write(b'\x3E\xB7\xB3')
 
-			mainDol.seek(mapper.boomToFileAddress(0x8041791c)) 
+			mainDol.seek(mapper.boomToFileAddress(0x8041791c))
 			mainDol.write(b'\xEE\xB8\xA7')                       # Brown UI to Apricot
-			mainDol.seek(mapper.boomToFileAddress(0x80417960)) 
+			mainDol.seek(mapper.boomToFileAddress(0x80417960))
 			mainDol.write(b'\xEE\xB8\xA7')
 
-			mainDol.seek(mapper.boomToFileAddress(0x80417920)) 
+			mainDol.seek(mapper.boomToFileAddress(0x80417920))
 			mainDol.write(b'\xEF\x2D\x84')                       # Magenta UI to Fuchsia
-			mainDol.seek(mapper.boomToFileAddress(0x80417964)) 
+			mainDol.seek(mapper.boomToFileAddress(0x80417964))
 			mainDol.write(b'\xEF\x2D\x84')
-			
-			mainDol.seek(mapper.boomToFileAddress(0x8041792c)) 
+
+			mainDol.seek(mapper.boomToFileAddress(0x8041792c))
 			mainDol.write(b'\x8A\x00\x25')                       # Burgundy UI to Wine
-			mainDol.seek(mapper.boomToFileAddress(0x80417970)) 
+			mainDol.seek(mapper.boomToFileAddress(0x80417970))
 			mainDol.write(b'\x8A\x00\x25')
-			
-			mainDol.seek(mapper.boomToFileAddress(0x80417968)) 
+
+			mainDol.seek(mapper.boomToFileAddress(0x80417968))
 			mainDol.write(b'\x78\x28\x8C')                       # Purple UI mismatch fix
 
-
+		# copy files specified in .json
 		modpack_dir = self.modpackDir()
 		with open(os.path.join(modpack_dir, f'{MODID}.json'), 'rb') as config_file:
 			config = json.load(config_file)
 			for command in config:
 				copy_from = os.path.join(modpack_dir, command["from"])
 				copy_to = os.path.join(root, command["to"])
-				if os.path.isdir(copy_from):
-					shutil.copytree(copy_from, copy_to, dirs_exist_ok=True)
-				else:
-					shutil.copy(copy_from, copy_to)
-
-		modpack_dir = self.modpackDir()
-		with open(os.path.join(modpack_dir, f'{MODID}.json'), 'rb') as config_file:
-			config = json.load(config_file)
-			for command in config:
-				copy_from = os.path.join(modpack_dir, command["fromEN"])
-				copy_to = os.path.join(root, command["toEN"])
-				if os.path.isdir(copy_from):
-					shutil.copytree(copy_from, copy_to, dirs_exist_ok=True)
-				else:
-					shutil.copy(copy_from, copy_to)
-
-		modpack_dir = self.modpackDir()
-		with open(os.path.join(modpack_dir, f'{MODID}.json'), 'rb') as config_file:
-			config = json.load(config_file)
-			for command in config:
-				copy_from = os.path.join(modpack_dir, command["fromUK"])
-				copy_to = os.path.join(root, command["toUK"])
-				if os.path.isdir(copy_from):
-					shutil.copytree(copy_from, copy_to, dirs_exist_ok=True)
-				else:
-					shutil.copy(copy_from, copy_to)
-
-		modpack_dir = self.modpackDir()
-		with open(os.path.join(modpack_dir, f'{MODID}.json'), 'rb') as config_file:
-			config = json.load(config_file)
-			for command in config:
-				copy_from = os.path.join(modpack_dir, command["fromDE"])
-				copy_to = os.path.join(root, command["toDE"])
-				if os.path.isdir(copy_from):
-					shutil.copytree(copy_from, copy_to, dirs_exist_ok=True)
-				else:
-					shutil.copy(copy_from, copy_to)
-
-		modpack_dir = self.modpackDir()
-		with open(os.path.join(modpack_dir, f'{MODID}.json'), 'rb') as config_file:
-			config = json.load(config_file)
-			for command in config:
-				copy_from = os.path.join(modpack_dir, command["fromES"])
-				copy_to = os.path.join(root, command["toES"])
-				if os.path.isdir(copy_from):
-					shutil.copytree(copy_from, copy_to, dirs_exist_ok=True)
-				else:
-					shutil.copy(copy_from, copy_to)
-		modpack_dir = self.modpackDir()
-		with open(os.path.join(modpack_dir, f'{MODID}.json'), 'rb') as config_file:
-			config = json.load(config_file)
-			for command in config:
-				copy_from = os.path.join(modpack_dir, command["fromFR"])
-				copy_to = os.path.join(root, command["toFR"])
-				if os.path.isdir(copy_from):
-					shutil.copytree(copy_from, copy_to, dirs_exist_ok=True)
-				else:
-					shutil.copy(copy_from, copy_to)
-
-		modpack_dir = self.modpackDir()
-		with open(os.path.join(modpack_dir, f'{MODID}.json'), 'rb') as config_file:
-			config = json.load(config_file)
-			for command in config:
-				copy_from = os.path.join(modpack_dir, command["fromIT"])
-				copy_to = os.path.join(root, command["toIT"])
 				if os.path.isdir(copy_from):
 					shutil.copytree(copy_from, copy_to, dirs_exist_ok=True)
 				else:
@@ -608,7 +545,7 @@ class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycs
 			for locale, arcFile in localeToTitleArcFile.items()
 		}
 
-	
+
 	def modifyBrresFile(self):
 		localeToTitleBrresFile = {
 			'ja': 'files/game/mg_darts.brres',
@@ -624,7 +561,6 @@ class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycs
 			lambda root, gameInstance, modList, brresDir, locale=locale, modpackDir=self.modpackDir(): replColorDartTextures(locale, brresDir, modpackDir)
 			for locale, brresFile in localeToTitleBrresFile.items()
 		}
-	
-	
+
 
 mod = Mod()
