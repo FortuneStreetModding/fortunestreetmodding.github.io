@@ -1,4 +1,6 @@
-+better_battery_indicator
++BetterBatteryIndicator
 +cstp
 +ChangeCurtain
 +NewTitleScreen
++SlurpodromeSquareFrame
++RevampedColors
