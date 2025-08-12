@@ -8,7 +8,7 @@ theme: DragonQuest
 initialCash: 2000
 targetAmount: 20000
 baseSalary: 300
-salaryIncrement: 200
+salaryIncrement: 250
 maxDiceRoll: 7
 frbFile1: mandala0
 frbFile2: mandala1
@@ -30,7 +30,11 @@ tourMode:
   opponent3: BowserJr
   clearRank: 1
 authors:
-  name: Stephie
+  - name: Stephie
+changelog:
+  - version: 1
+    added:
+      - Initial release
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
