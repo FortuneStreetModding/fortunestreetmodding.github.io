@@ -44,6 +44,7 @@ changelog:
     - Disabled venture card 83 to prevent AI caused softlock. Enabled venture card 5.
     - Moved the bank to prevent looping, and added another one to make the promotion event square more powerful, and the warp at the bottom right less damaging.
     - Various changes to improve the balance of the board. Particularly making the lower left loop less powerful.
+    - Change author name to Stephie
   - version: 4
     changed:
       - Adjusted pathing to prevent rare softlock
@@ -59,7 +60,7 @@ changelog:
     added:
       - Initial release
 authors:
-  - name: princess peachy
+  - name: Stephie
     url: https://youtube.com/@princesspeachy1714
 ventureCards:
   - 0  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
