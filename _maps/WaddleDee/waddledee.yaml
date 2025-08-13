@@ -187,6 +187,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 5
+    changed:
+      - Fixed an issue where you couldn't enter the blue door on the right side.
   - version: 4
     changed:
       - Rebranded to Waddle Dee. No other changes.
