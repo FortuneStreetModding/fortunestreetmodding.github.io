@@ -48,7 +48,9 @@ backgrounds: backgrounds.yml
     Amida.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Amida.zip
-    placeholder.zip:
+    mandala.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/mandala.zip
     placeholder.zip:
     placeholder.zip:
       practiceBoard: true
@@ -98,7 +100,9 @@ backgrounds: backgrounds.yml
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
-    placeholder.zip:
+    BowsersPinball.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/BowsersPinball.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
