@@ -103,7 +103,9 @@ backgrounds: backgrounds.yml
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
-    placeholder.zip:
+    WaddleDee.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/WaddleDee.zip
     placeholder.zip:
     placeholder.zip:
       practiceBoard: true
