@@ -1,11 +1,12 @@
+---
 name: 
   en: Hibiscus Mandala
 desc: 
   en: The design of the layout of this board represents a Hibiscus Mandala.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2000
-targetAmount: 20000
+initialCash: 2200
+targetAmount: 22000
 baseSalary: 300
 salaryIncrement: 250
 maxDiceRoll: 7
@@ -17,8 +18,7 @@ background: bg108fixed
 mapIcon: mandala
 music:
   download:
-    - https://nikkums.io/cswt/BGM/mandala.music.zip
-    - https://drive.google.com/u/0/uc?id=1X7eiLrydrZy-TsrMW2sooxiXHBNyAw3s&export=download&confirm=1
+    - https://drive.usercontent.google.com/u/0/uc?id=1X7eiLrydrZy-TsrMW2sooxiXHBNyAw3s&export=download&confirm=1
   map: aritestdrive.80
 switchRotationOriginPoints:
   - x: 0
@@ -32,6 +32,9 @@ tourMode:
 authors:
   - name: Stephie
 changelog:
+  - version: 2
+    changed:
+      - Added 4 new switches around the corners of the board. Made the main switches move when stepped on, to let players choose direction. Added freebie suit events, and changed the events around the bank.
   - version: 1
     added:
       - Initial release
@@ -164,3 +167,4 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+...
