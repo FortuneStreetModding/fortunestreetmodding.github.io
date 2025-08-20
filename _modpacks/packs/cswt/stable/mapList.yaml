@@ -43,8 +43,8 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/birdosbigtop.zip
     bowsersgalaxyreactor.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/bowsersgalaxyreactor.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/bowsersgalaxyreactor.zip
     CastawayBayCSide.zip:
       urls:
       - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
@@ -131,9 +131,12 @@ backgrounds: backgrounds.yml
     Ennesan48.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan48.zip
+    Ennesan49.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan49.zip
     Ennesan51.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan51.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan51.zip
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
@@ -190,8 +193,8 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/MidgarTransit.zip
     pacparty_mirageoasis.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/pacparty_mirageoasis.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/pacparty_mirageoasis.zip
     NLA.zip:
       urls:
       - https://nikkums.io/cswt/Maps/NLA.zip
@@ -225,9 +228,6 @@ backgrounds: backgrounds.yml
     Shibuya.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Shibuya.zip
-    SkyTower.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/SkyTower.zip
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
@@ -261,6 +261,9 @@ backgrounds: backgrounds.yml
     litbus.zip:
       urls:
       - https://nikkums.io/cswt/Maps/litbus.zip
+    WaddleDee.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/WaddleDee.zip
     WiiU.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WiiU.zip

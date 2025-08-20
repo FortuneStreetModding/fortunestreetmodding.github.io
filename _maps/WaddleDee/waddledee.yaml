@@ -4,12 +4,15 @@ desc:
   en: It's shaped like a friend!
 ruleSet: Standard
 theme: Mario
-initialCash: 2000
-targetAmount: 15000
+initialCash: 2500
+targetAmount: 25000
 baseSalary: 300
 salaryIncrement: 175
 maxDiceRoll: 6
 frbFile1: waddle
+frbFile2: waddle
+frbFile3: waddle
+frbFile4: waddle
 background: bg109
 mapIcon: waddledee
 tourMode:
@@ -187,6 +190,13 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 6
+    changed:
+      - Increase target amount from 15,000 to 25,000
+      - Increase initial cash from 2000 to 2500
+  - version: 5
+    changed:
+      - Fixed an issue where you couldn't enter the blue door on the right side.
   - version: 4
     changed:
       - Rebranded to Waddle Dee. No other changes.
