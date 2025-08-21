@@ -7,44 +7,36 @@ backgrounds: backgrounds.yml
     Ennesan50.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan50.zip
-    Ennesan52B.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan52B.zip
-    NarrowingandBrawl.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/NarrowingandBrawl.zip
     Ennesan52C.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan52C.zip
-    NarrowingandWidening.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/NarrowingandWidening.zip
-  1:
     arrowhead.zip:
         urls:
         - https://nikkums.io/cswt/Maps/arrowhead.zip
-    Tutorial1.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Tutorial1.zip
     OnionOcean.zip:
         urls:
         - https://nikkums.io/cswt/Maps/OnionOcean.zip
     YHtWtG.zip:
         urls:
         - https://nikkums.io/cswt/Maps/YHtWtG.zip
+  1:
     BalatroBoard.zip:
         urls:
         - https://nikkums.io/cswt/Maps/BalatroBoard.zip
     Blackmarket.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Blackmarket.zip
-  2:
     Amida.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Amida.zip
     mandala.zip:
         urls:
         - https://nikkums.io/cswt/Maps/mandala.zip
+    placeholder.zip:
+    placeholder.zip:
+  2:
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
@@ -71,9 +63,6 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
   1:
-    Agency.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Agency.zip
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
@@ -89,16 +78,17 @@ backgrounds: backgrounds.yml
     RoamerEncampment.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
-  2:
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
+  2:
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
     WaddleDee.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WaddleDee.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
