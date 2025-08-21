@@ -21,17 +21,20 @@ frbFiles:
 - E52C_9
 - E52C_10
 - E52C_11
-- E52C_9
-- E52C_10
+- E52C_12
+- E52C_13
 - E52C_11
-- E52C_9
-- E52C_10
-- E52C_9
+- E52C_12
+- E52C_16
 - E52C_11
-- E52C_9
-- E52C_10
-- E52C_9
-- E52C_22
+- E52C_16
+- E52C_12
+- E52C_16
+- E52C_11
+- E52C_16
+- E52C_12
+- E52C_16
+- E52C_25
 background: grid_gray
 mapIcon: E52Ci
 music:
@@ -44,6 +47,7 @@ music:
   - Ennesan52_Map_1.55
   - Ennesan52_Map_4.55
   - Ennesan52_Map_4.55
+  - Ennesan52_Map_6.55
   - Ennesan52_Map_6.55
   - Ennesan52_Map_6.55
   - Ennesan50_Map_28.60
@@ -61,6 +65,8 @@ music:
   - Ennesan52_Map_10.55
   - Ennesan52_Map_9.50
   - Ennesan52_Map_10.55
+  - Ennesan52_Map_9.50
+  - Ennesan52_Map_9.50
   stock: Stock_Ennesan45.50
   ventureCards:
   - Venture_Ennesan45.50
@@ -86,6 +92,11 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Added Board State 7, a modified version of Board State 6's Event Square.
+      - Board state 7 and later are shifted by one.
+      - Add an event square that advances a specific number of spaces only during the first two turns after moving to the island on the right.
   - version: 2
     changed:
       - Add a switch next to the blue door at Board State 8.
