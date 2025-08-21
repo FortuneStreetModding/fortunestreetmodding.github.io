@@ -4,7 +4,7 @@ desc:
   en: Face off against the deadly mutant wild life deep in the mountains and don't forget to grab the loot.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2000
+initialCash: 2500
 targetAmount: 22000
 baseSalary: 400
 salaryIncrement: 100
@@ -175,6 +175,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 4
+    changed:
+      - Initial cash increased from 2,000 to 2,500
   - version: 3
     changed:
       - Add second state music
