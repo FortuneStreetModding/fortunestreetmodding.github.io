@@ -4,8 +4,8 @@ desc:
   en: The design of the layout of this board represents a Hibiscus Mandala.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2000
-targetAmount: 20000
+initialCash: 2200
+targetAmount: 22000
 baseSalary: 300
 salaryIncrement: 250
 maxDiceRoll: 7
@@ -32,6 +32,11 @@ tourMode:
 authors:
   - name: Stephie
 changelog:
+  - version: 2
+    changed:
+      - Added 4 new switches around the corners of the board. Made the main switches move when stepped on, to let players choose direction. Added freebie suit events, and changed the events around the bank.
+      - Increased Target amount from 20,000 to 22,000
+      - Increased Initial cash from 2,000 to 2,200
   - version: 1
     added:
       - Initial release
