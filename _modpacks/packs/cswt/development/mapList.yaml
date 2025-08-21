@@ -13,16 +13,13 @@ backgrounds: backgrounds.yml
     arrowhead.zip:
         urls:
         - https://nikkums.io/cswt/Maps/arrowhead.zip
-    Tutorial1.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Tutorial1.zip
     OnionOcean.zip:
         urls:
         - https://nikkums.io/cswt/Maps/OnionOcean.zip
-  1:
     YHtWtG.zip:
         urls:
         - https://nikkums.io/cswt/Maps/YHtWtG.zip
+  1:
     BalatroBoard.zip:
         urls:
         - https://nikkums.io/cswt/Maps/BalatroBoard.zip
@@ -35,6 +32,7 @@ backgrounds: backgrounds.yml
     mandala.zip:
         urls:
         - https://nikkums.io/cswt/Maps/mandala.zip
+    placeholder.zip:
     placeholder.zip:
   2:
     placeholder.zip:
