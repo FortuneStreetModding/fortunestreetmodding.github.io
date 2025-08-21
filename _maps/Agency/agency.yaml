@@ -20,6 +20,9 @@ tourMode:
   opponent3: Jessica
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Fixed an issue where the board would crash under certain conditions.
   - version: 2
     added: 
       - Remade Board
