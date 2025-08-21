@@ -7,19 +7,9 @@ backgrounds: backgrounds.yml
     Ennesan50.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan50.zip
-    Ennesan52B.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan52B.zip
-    NarrowingandBrawl.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/NarrowingandBrawl.zip
     Ennesan52C.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan52C.zip
-    NarrowingandWidening.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/NarrowingandWidening.zip
-  1:
     arrowhead.zip:
         urls:
         - https://nikkums.io/cswt/Maps/arrowhead.zip
@@ -29,6 +19,7 @@ backgrounds: backgrounds.yml
     OnionOcean.zip:
         urls:
         - https://nikkums.io/cswt/Maps/OnionOcean.zip
+  1:
     YHtWtG.zip:
         urls:
         - https://nikkums.io/cswt/Maps/YHtWtG.zip
@@ -38,13 +29,16 @@ backgrounds: backgrounds.yml
     Blackmarket.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Blackmarket.zip
-  2:
     Amida.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Amida.zip
     mandala.zip:
         urls:
         - https://nikkums.io/cswt/Maps/mandala.zip
+    placeholder.zip:
+  2:
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
