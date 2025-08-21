@@ -65,9 +65,6 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
   1:
-    Agency.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Agency.zip
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
@@ -83,16 +80,17 @@ backgrounds: backgrounds.yml
     RoamerEncampment.zip:
       urls:
       - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
-  2:
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
+  2:
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
     WaddleDee.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WaddleDee.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
