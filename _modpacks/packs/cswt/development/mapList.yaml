@@ -16,13 +16,10 @@ backgrounds: backgrounds.yml
     OnionOcean.zip:
         urls:
         - https://nikkums.io/cswt/Maps/OnionOcean.zip
-    YHtWtG.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/YHtWtG.zip
-  1:
     BalatroBoard.zip:
         urls:
         - https://nikkums.io/cswt/Maps/BalatroBoard.zip
+  1:
     Blackmarket.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Blackmarket.zip
@@ -32,6 +29,7 @@ backgrounds: backgrounds.yml
     mandala.zip:
         urls:
         - https://nikkums.io/cswt/Maps/mandala.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
   2:
