@@ -29,7 +29,9 @@ backgrounds: backgrounds.yml
     mandala.zip:
         urls:
         - https://nikkums.io/cswt/Maps/mandala.zip
-    placeholder.zip:
+    Ennesan54.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan54.zip
     placeholder.zip:
     placeholder.zip:
   2:
@@ -86,7 +88,9 @@ backgrounds: backgrounds.yml
     WaddleDee.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WaddleDee.zip
-    placeholder.zip:
+    fortunapolis.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/fortunapolis.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
