@@ -158,6 +158,9 @@ backgrounds: backgrounds.yml
     giantbeanstalk.zip:
       urls:
       - https://nikkums.io/cswt/Maps/giantbeanstalk.zip
+    Gladius.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Gladius.zip
     GoodybagLair.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GoodybagLair.zip
