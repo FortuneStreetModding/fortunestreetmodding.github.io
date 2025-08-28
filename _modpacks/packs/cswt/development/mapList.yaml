@@ -68,9 +68,6 @@ backgrounds: backgrounds.yml
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
-    Gladius.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Gladius.zip
     Heliodor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Heliodor.zip
