@@ -80,16 +80,18 @@ backgrounds: backgrounds.yml
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
-  2:
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
+  2:
+
     WaddleDee.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WaddleDee.zip
     fortunapolis.zip:
       urls:
       - https://nikkums.io/cswt/Maps/fortunapolis.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
