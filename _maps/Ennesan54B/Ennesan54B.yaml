@@ -1,28 +1,28 @@
 name:
-  en: Enne-san Board 54
+  en: Enne-san Board 54-B
 desc:
   en: No vacant plots should be. A board designed to make it easy to practice custom board medleys.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3000
 targetAmount: 20000
-baseSalary: 150
-salaryIncrement: 75
+baseSalary: 300
+salaryIncrement: 150
 maxDiceRoll: 6
 frbFiles:
-- E54_1
-- E54_2
-- E54_3
-- E54_4
-- E54_5
-- E54_6
-- E54_7
-- E54_8
-- E54_9
-- E54_10
-- E54_11
+- E54B_1
+- E54B_2
+- E54B_3
+- E54B_4
+- E54B_5
+- E54B_6
+- E54B_7
+- E54B_8
+- E54B_9
+- E54B_10
+- E54B_11
 background: grid_rainbow
-mapIcon: E54i
+mapIcon: E54Bi
 districtNames:
   en:
   - Ennesan 01
@@ -38,8 +38,8 @@ districtNames:
   - Reactor
 music:
   download: 
-    - https://nikkums.io/cswt/BGM/Ennesan54.music.zip
-    - https://drive.google.com/uc?export=download&id=1kKIKJKv9PmopVELNh1P1kNYX_f507HWK&confirm=1
+    - https://nikkums.io/cswt/BGM/Ennesan54B.music.zip
+    - https://drive.google.com/uc?export=download&id=1643qVbJ_PlNO-LkTD3_wztKsV9gmSl5L&confirm=1
   map:
   - Ennesan54_Map_1.50
   - Ennesan54_Map_2.50
