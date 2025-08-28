@@ -1,5 +1,5 @@
 name:
-  en: Enne-san Board 54
+  en: Enne-san Board 54-A
 desc:
   en: No vacant plots should be. A board designed to make it easy to practice custom board medleys.
 ruleSet: Standard
@@ -22,7 +22,7 @@ frbFiles:
 - E54_10
 - E54_11
 background: grid_rainbow
-mapIcon: E54i
+mapIcon: E54Ai
 districtNames:
   en:
   - Ennesan 01
@@ -38,7 +38,7 @@ districtNames:
   - Reactor
 music:
   download: 
-    - https://nikkums.io/cswt/BGM/Ennesan54.music.zip
+    - https://nikkums.io/cswt/BGM/Ennesan54A.music.zip
     - https://drive.google.com/uc?export=download&id=1kKIKJKv9PmopVELNh1P1kNYX_f507HWK&confirm=1
   map:
   - Ennesan54_Map_1.50
