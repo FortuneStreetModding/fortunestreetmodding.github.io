@@ -84,7 +84,6 @@ backgrounds: backgrounds.yml
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
   2:
-
     WaddleDee.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WaddleDee.zip
