@@ -1,7 +1,7 @@
 name:
   en: Enne-san Board 52-B
 desc:
-  en: -Narrowing and Brawl- As the switch is pressed, the size of the passable board changes. It gradually narrows and eventually the circle on the right becomes the battlefield. It is not possible to pass through squares that are 0.5 squares apart from the junction.
+  en: As the switch is pressed, the size of the passable board changes. It gradually narrows and eventually the circle on the right becomes the battlefield. It is not possible to pass through squares that are 0.5 squares apart from the junction.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2200
