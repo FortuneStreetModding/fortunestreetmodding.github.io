@@ -29,12 +29,10 @@ backgrounds: backgrounds.yml
     mandala.zip:
         urls:
         - https://nikkums.io/cswt/Maps/mandala.zip
-    Ennesan54A.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan54A.zip
     Ennesan54B.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan54B.zip
+    placeholder.zip:
     placeholder.zip:
   2:
     placeholder.zip:
@@ -74,22 +72,20 @@ backgrounds: backgrounds.yml
     PalmBrinks.zip:
       urls:
       - https://nikkums.io/cswt/Maps/PalmBrinks.zip
-    RoamerEncampment.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/RoamerEncampment.zip
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
-  2:
     WaddleDee.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WaddleDee.zip
+  2:
     fortunapolis.zip:
       urls:
       - https://nikkums.io/cswt/Maps/fortunapolis.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
