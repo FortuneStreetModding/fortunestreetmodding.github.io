@@ -207,6 +207,12 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Change the effect of the Event Square adjacent to the switch's right side and the Event Square adjacent to the door to Venture Card 39.
+      - Change the position of the Diamond Suit in the board state on Planet Mira
+      - Fixed path errors present in some board states
+      - Change map icon
   - version: 1
     added:
       - Initial Release
