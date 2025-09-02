@@ -4,8 +4,8 @@ desc:
   en: Underwater adventures with aquatic life native to Planet Popstar! Hold your breath in case there's danger!
 ruleSet: Standard
 theme: Mario
-initialCash: 2000
-targetAmount: 20000
+initialCash: 2500
+targetAmount: 25000
 baseSalary: 400
 salaryIncrement: 150
 maxDiceRoll: 7
@@ -37,6 +37,13 @@ tourMode:
   opponent3: Slime
   clearRank: 3
 changelog:
+  - version: 5
+    changed:
+      - Remove the vacant plot next to the bank
+      - Add 2 vacant plots below the club suit
+      - Initial cash increased from 2000 to 2500
+      - Target amount increased from 20,000 to 25,000
+      - Adjusting the initial shop price for some shops
   - version: 4
     changed:
       - Fixed problem with music not being set
