@@ -59,6 +59,12 @@ class Mod(pycsmm.CSMMMod, pycsmm.GeneralInterface, pycsmm.ArcFileInterface, pycs
 			mainDol.write(b'\x38\x60\x00\x01')
 			mainDol.seek(mapper.boomToFileAddress(0x8020f91c))
 			mainDol.write(b'\x38\x60\x00\x01')
+			# increase AI memory lookahead
+			memoryLookaheadPatch = b'\x3c\x80\x00\x02'
+			mainDol.seek(mapper.boomToFileAddress(0x8009e6c4))
+			mainDol.write(memoryLookaheadPatch)
+			mainDol.seek(mapper.boomToFileAddress(0x8009d368))
+			mainDol.write(memoryLookaheadPatch)
 
 	def modifyArcFile(self):
 		localeToTitleArcFile = {
