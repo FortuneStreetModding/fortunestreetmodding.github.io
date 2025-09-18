@@ -32,7 +32,9 @@ backgrounds: backgrounds.yml
     Ennesan54B.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan54B.zip
-    placeholder.zip:
+    GoddessCrest.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/GoddessCrest.zip
     placeholder.zip:
   2:
     placeholder.zip:
