@@ -26,15 +26,13 @@ backgrounds: backgrounds.yml
     Amida.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Amida.zip
-    mandala.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/mandala.zip
     Ennesan54B.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan54B.zip
     GoddessCrest.zip:
         urls:
         - https://nikkums.io/cswt/Maps/GoddessCrest.zip
+    placeholder.zip:
     placeholder.zip:
   2:
     placeholder.zip:

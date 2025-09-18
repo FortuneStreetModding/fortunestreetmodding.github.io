@@ -164,6 +164,9 @@ backgrounds: backgrounds.yml
     GoodybagLair.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GoodybagLair.zip
+    mandala.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/mandala.zip
     HighRise.zip:
       urls:
       - https://nikkums.io/cswt/Maps/HighRise.zip
