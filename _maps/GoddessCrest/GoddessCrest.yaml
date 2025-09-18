@@ -14,8 +14,6 @@ frbFile1: GoddessCrest
 background: Skyloft
 mapIcon: GoddessCrest
 music:
-  download: https://drive.google.com/uc?export=download&id=17bC678QVHO07HT3p3594Zj2C9x3LhHMK
-    - 
   map: SkyloftMain.80
   auction: SkyloftAuction.80
   badVentureCard: SkyloftBadVenture.80
