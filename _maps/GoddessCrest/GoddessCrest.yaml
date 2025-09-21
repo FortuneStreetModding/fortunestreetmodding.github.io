@@ -47,6 +47,10 @@ tourMode:
 authors:
   - name: Stephie
 changelog:
+  - version: 2
+    changed:
+      - A slight unintended pathing limitation at Backstreets 9 and 10
+      - Square 55 was placed a little bit too far right, fixed
   - version: 1
     added:
       - Initial release
