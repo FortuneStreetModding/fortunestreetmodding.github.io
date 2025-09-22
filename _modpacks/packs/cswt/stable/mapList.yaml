@@ -161,6 +161,9 @@ backgrounds: backgrounds.yml
     Gladius.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Gladius.zip
+    GoddessCrest.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/GoddessCrest.zip
     GoodybagLair.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GoodybagLair.zip
