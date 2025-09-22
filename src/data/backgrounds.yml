@@ -1261,20 +1261,20 @@
       auction: SkyloftAuction.80
       badVentureCard: SkyloftBadVenture.80
       bankruptcy: SkyloftBankrupt.80
-      dartOfGold: SkyloftDoG.90
+      dartOfGold: A_SkyloftDoG.90
       domination: SkyloftDomination.80
       forcedBuyout: SkyloftBuyout.80
       guestAppear: SkyloftAppear.80
       guestLeave: SkyloftLeave.80
-      memoryBlock: SkyloftMemory.80
+      memoryBlock: A_SkyloftMemory.80
       promotionMario: SkyloftPromotion.80
       promotionDragonQuest: SkyloftPromotion.80
       promotionMii: SkyloftPromotion.80
-      roundTheBlocks: SkyloftBlocks.90
+      roundTheBlocks: A_SkyloftBlocks.90
       roundTheBlocks777: Skyloft777.80
       roundTheBlocksWin: SkyloftBlocksWin.80
       slurpodromeRace: SkyloftRace.80
-      slurpodromeSelect: SkyloftSelect.80
+      slurpodromeSelect: A_SkyloftSelect.80
       slurpodromeStart: SkyloftRaceStart.80
       slurpodromeWin: SkyloftRaceEnd.80
       stock: SkyloftStock.80
