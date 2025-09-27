@@ -23,7 +23,9 @@ backgrounds: backgrounds.yml
     Amida.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Amida.zip
-    placeholder.zip:
+    Ennesan55.zip:
+        urls:
+        - https://nikkums.io/cswt/Maps/Ennesan55.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
