@@ -39,6 +39,9 @@ backgrounds: backgrounds.yml
     thebackstreets.zip:
       urls:
       - https://nikkums.io/cswt/Maps/thebackstreets.zip
+    BalatroBoard.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/BalatroBoard.zip
     birdosbigtop.zip:
       urls:
       - https://nikkums.io/cswt/Maps/birdosbigtop.zip
