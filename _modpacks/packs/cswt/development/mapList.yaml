@@ -69,12 +69,10 @@ backgrounds: backgrounds.yml
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
-    WaddleDee.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/WaddleDee.zip
     fortunapolis.zip:
       urls:
       - https://nikkums.io/cswt/Maps/fortunapolis.zip
+    placeholder.zip:
   2:
     placeholder.zip:
     placeholder.zip:
