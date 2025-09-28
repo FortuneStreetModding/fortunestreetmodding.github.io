@@ -767,6 +767,12 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    added:
+      - List of boards included in the Custom Board Medley
+    changed:
+      - Fixed board state 24 path error
+      - Balance Adjustment for Board State 32
   - version: 1
     added:
       - Initial Release
@@ -1001,3 +1007,59 @@ shopNames:
     96: Initial Value 960
     97: Initial Value 970
     98: Vacant plot
+notes: |
+  The boards included in the Custom Board Medley are as follows.
+  Easy, Normal, Hard, and Lunatic represent difficulty levels for the same board existing in multiple states. Easy is the simplest, and Lunatic is the most difficult.
+  Board states marked with * combine features from multiple boards into a single board.
+  Board states marked with , use doors to divide the board, with two boards constituting one board state.
+  - Enne-san Board 01
+  - Aegis Rim
+  - Enne-san Board 10 -Easy-
+  - Funky Stadium
+  - Enne-san Board 17 * Enne-san Board 42
+  - Hibiscus Mandala
+  - The Kanto Region
+  - Facing Worlds
+  - Enne-san Board 39 * Tetris FS
+  - Birdo's Big Top
+  - Bowser's Galaxy Reactor
+  - Enne-san Board 22
+  - Gal Da Val Island (Board State 1 and 2), King of the Hill (Board State 1)
+  - High-Rise
+  - Planet Mira -Normal-
+  - Enne-san Board 15
+  - Fillmore
+  - The Clock Tower
+  - Yoshi -Normal-
+  - Goddess Crest
+  - Gal Da Val Island (Board State 3 and 2), King of the Hill (Board State 2)
+  - Enne-san Board 18, Toads House
+  - King Boo's Haunted Hideaway (Board State 10)
+  - Yoshi Cloud * Venn Diagram
+  - Enne-san Board 48 * Enne-san Board 49
+  - Cogito Ergo Sum
+  - Castle Town
+  - Enne-san Board 52 -Normal-, Inside Out
+  - Star Carnival -Hard-
+  - Luigi's Mansion (Board State 4)
+  - Enne-san Board 29
+  - Quadrants (Board State 1)
+  - Yevon * Enne-san Board 33
+  - Squid
+  - Enne-san Board 20 (Board State 10)
+  - The Palamecia
+  - Super Bowser's Trackway
+  - Enne-san Board 12 (Board State 1)
+  - Mirage Oasis * Enne-san Board 06
+  - Shibuya Underground
+  - Return to Lighthouse Island
+  - Planet Mira -Lunatic-
+  - Enne-san Board 52 -Lunatic-
+  - Colony 9
+  - Disboard (Board State 1)
+  - Playground, Enne-san Board 30
+  - Star Carnival -Lunatic-
+  - New Los Angeles
+  - Yoshi -Lunatic-
+  - Rainbow Road MKWii
+  - Enne-san Board 10 -Lunatic-

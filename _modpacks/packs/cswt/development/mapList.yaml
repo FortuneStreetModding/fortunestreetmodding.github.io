@@ -2,30 +2,26 @@ backgrounds: backgrounds.yml
 0:
   0:
     Ennesan43.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan43.zip
-    Ennesan50.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan50.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan43.zip
     Ennesan52C.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan52C.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan52C.zip
     arrowhead.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/arrowhead.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/arrowhead.zip
     OnionOcean.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/OnionOcean.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/OnionOcean.zip
     Blackmarket.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Blackmarket.zip
-  1:
-    Amida.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Amida.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/Blackmarket.zip
     Ennesan55.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan55.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan55.zip
+  1:
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
@@ -65,22 +61,16 @@ backgrounds: backgrounds.yml
     Heliodor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Heliodor.zip
-    PalmBrinks.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PalmBrinks.zip
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
-    WaddleDee.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/WaddleDee.zip
+    placeholder.zip:
+    placeholder.zip:
   2:
-    fortunapolis.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/fortunapolis.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
