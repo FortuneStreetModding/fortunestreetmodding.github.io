@@ -20,12 +20,10 @@ backgrounds: backgrounds.yml
         urls:
         - https://nikkums.io/cswt/Maps/Blackmarket.zip
   1:
-    Amida.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Amida.zip
     Ennesan55.zip:
         urls:
         - https://nikkums.io/cswt/Maps/Ennesan55.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
