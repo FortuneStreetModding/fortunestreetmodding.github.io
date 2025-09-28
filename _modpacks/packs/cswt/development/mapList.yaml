@@ -63,9 +63,6 @@ backgrounds: backgrounds.yml
     Heliodor.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Heliodor.zip
-    PalmBrinks.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PalmBrinks.zip
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
@@ -75,10 +72,11 @@ backgrounds: backgrounds.yml
     WaddleDee.zip:
       urls:
       - https://nikkums.io/cswt/Maps/WaddleDee.zip
-  2:
     fortunapolis.zip:
       urls:
       - https://nikkums.io/cswt/Maps/fortunapolis.zip
+  2:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
