@@ -4,21 +4,15 @@ backgrounds: backgrounds.yml
     Ennesan43.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan43.zip
-    Ennesan52C.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan52C.zip
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
     OnionOcean.zip:
       urls:
       - https://nikkums.io/cswt/Maps/OnionOcean.zip
-    Blackmarket.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Blackmarket.zip
-    Ennesan55.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan55.zip
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
   1:
     placeholder.zip:
     placeholder.zip:

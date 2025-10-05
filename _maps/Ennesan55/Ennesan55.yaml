@@ -4,9 +4,9 @@ desc:
   en: No vacant plots should be. This will be an extremely long match. We'll be playing a medley of various boards, primarily those included in CSWT.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2500
-targetAmount: 40000
-baseSalary: 300
+initialCash: 3000
+targetAmount: 45000
+baseSalary: 400
 salaryIncrement: 100
 maxDiceRoll: 6
 frbFiles:
@@ -767,6 +767,14 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Change Board State 28 from Enne-san Board 52 and Inside Out to Suit Map (Board state 1)
+      - Fixed board state 9 path error
+      - Changing the effects of some event squares
+      - Increase target amount from 40,000 to 45,000
+      - Base salary increased from 300 to 400
+      - Initial cash increased from 2,500 to 3,000
   - version: 2
     added:
       - List of boards included in the Custom Board Medley
@@ -1039,7 +1047,7 @@ notes: |
   - Enne-san Board 48 * Enne-san Board 49
   - Cogito Ergo Sum
   - Castle Town
-  - Enne-san Board 52 -Normal-, Inside Out
+  - Suits Map (Board State 1)
   - Star Carnival -Hard-
   - Luigi's Mansion (Board State 4)
   - Enne-san Board 29
