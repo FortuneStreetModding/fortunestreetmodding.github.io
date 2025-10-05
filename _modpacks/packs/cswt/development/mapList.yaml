@@ -10,9 +10,7 @@ backgrounds: backgrounds.yml
     OnionOcean.zip:
       urls:
       - https://nikkums.io/cswt/Maps/OnionOcean.zip
-    Blackmarket.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Blackmarket.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
   1:
