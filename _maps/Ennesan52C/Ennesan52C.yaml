@@ -92,6 +92,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Increase the number of switches for board states 4 and 5
   - version: 3
     changed:
       - Added Board State 7, a modified version of Board State 6's Event Square.
