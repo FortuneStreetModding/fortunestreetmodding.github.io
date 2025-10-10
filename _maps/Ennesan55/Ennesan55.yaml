@@ -4,10 +4,10 @@ desc:
   en: No vacant plots should be. This will be an extremely long match. We'll be playing a medley of various boards, primarily those included in CSWT.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 3000
+initialCash: 3600
 targetAmount: 45000
 baseSalary: 400
-salaryIncrement: 100
+salaryIncrement: 125
 maxDiceRoll: 6
 frbFiles:
 - E55_1
@@ -101,7 +101,6 @@ music:
   - slimeguyspaydayexpressMAP.50
   - Ennesan55_Map_19.50
   - SkyloftMain.80
-  - psoJungle_map_forestCage.50
   - Ennesan55_Map_22.50
   - KBHH_MAP
   - yoshicloud_MAP.50
@@ -122,6 +121,7 @@ music:
   - Ennesan55_Map_39.55
   - ShibuyaMedley.40
   - lighthouse_MAP3
+  - psoJungle_map_forestCage.50
   - MiraMedley.40
   - Ennesan55_Map_43.55
   - CNMap.60
@@ -153,7 +153,6 @@ music:
   - clocktower_SMO_STOCK
   - Stock_Ennesan45.50
   - SkyloftStock.80
-  - psoJungle_stocks_junglePremiumArrange.50
   - Stock_Ennesan45.50
   - starcarnival_STOCK
   - BeanstalkStock.50
@@ -174,6 +173,7 @@ music:
   - pmcs_hg_STOCK
   - ntwewymenu
   - lighthouse_STOCK
+  - psoJungle_stocks_junglePremiumArrange.50
   - bladehome.50
   - Stock_Ennesan45.50
   - CNStock.70
@@ -205,7 +205,6 @@ music:
   - clocktower_AHIT_VENT
   - Venture_Ennesan50.55
   - SkyloftVenture.90
-  - psoJungle_ventureCards_roboticPhotosynthesis.50
   - Venture_Ennesan50.55
   - starcarnival_VEN
   - yoshicloud_VENT.50
@@ -226,6 +225,7 @@ music:
   - slimeguyspaydayexpressVENTURE.50
   - ntwewyshop
   - lighthouse_VENTURE.95
+  - psoJungle_ventureCards_roboticPhotosynthesis.50
   - briefing.50
   - Venture_Ennesan53.65
   - CNCard.60
@@ -257,7 +257,6 @@ music:
   - clocktower_GSTD_AUCT
   - Auction_grid.55
   - SkyloftAuction.80
-  - psoJungle_auction_junglePremiumArrange.50
   - Auction_grid.55
   - starcarnival_AUCTION
   - yoshicloud_AUC.50
@@ -278,6 +277,7 @@ music:
   - PACPARTY_mirageoasis_AUC
   - lastcall
   - lighthouse_STOCK
+  - psoJungle_auction_junglePremiumArrange.50
   - wirfliegen.60
   - Auction_grid.55
   - CNAuction.70
@@ -309,7 +309,6 @@ music:
   - clocktower_MH2_TARGET
   - Targetmet_Ennesan55.55
   - SkyloftTarget.80
-  - psoJungle_targetMet_IDOLAimmortalFeather.50
   - Targetmet_Ennesan55.55
   - starcarnival_FINAL
   - yoshicloud_TARGET.50
@@ -330,6 +329,7 @@ music:
   - Targetmet_Ennesan55.55
   - Twister.40
   - lighthouse_TARGET
+  - psoJungle_targetMet_IDOLAimmortalFeather.50
   - raTEoREkiSImeAra1.50
   - Targetmet_Ennesan55.55
   - CNTarget.60
@@ -365,7 +365,6 @@ music:
   - clocktower_DENSHA_BREAK
   - takeAbreak_grid.45
   - SkyloftBreak.80
-  - psoJungle_takeABreak_healing.50
   - takeAbreak_grid.45
   - starcarnival_BREAK
   - takeAbreak_grid.45
@@ -386,6 +385,7 @@ music:
   - PACPARTY_TAB
   - takeAbreak_grid.45
   - takeAbreak_grid.45
+  - psoJungle_takeABreak_healing.50
   - X-Encounter.50
   - takeAbreak_grid.45
   - takeAbreak_grid.45
@@ -417,7 +417,6 @@ music:
   - Promotion_grid.40
   - Promotion_grid.40
   - SkyloftPromotion.80
-  - psoJungle_promotion_questClear.50
   - Promotion_grid.40
   - starcarnival_PROMO
   - Promotion_grid.40
@@ -438,6 +437,7 @@ music:
   - PACPARTY_PROMO
   - twewyjingle
   - Promotion_grid.40
+  - psoJungle_promotion_questClear.50
   - A_X-Levelup.80
   - Promotion_grid.40
   - CNPromotion.60
@@ -469,7 +469,6 @@ music:
   - Promotion_grid.40
   - Promotion_grid.40
   - SkyloftPromotion.80
-  - psoJungle_promotion_questClear.50
   - Promotion_grid.40
   - starcarnival_PROMO
   - Promotion_grid.40
@@ -490,6 +489,7 @@ music:
   - PACPARTY_PROMO
   - twewyjingle
   - Promotion_grid.40
+  - psoJungle_promotion_questClear.50
   - A_X-Levelup.80
   - Promotion_grid.40
   - CNPromotion.60
@@ -521,7 +521,6 @@ music:
   - Promotion_grid.40
   - Promotion_grid.40
   - SkyloftPromotion.80
-  - psoJungle_promotion_questClear.50
   - Promotion_grid.40
   - starcarnival_PROMO
   - Promotion_grid.40
@@ -542,6 +541,7 @@ music:
   - PACPARTY_PROMO
   - twewyjingle
   - Promotion_grid.40
+  - psoJungle_promotion_questClear.50
   - A_X-Levelup.80
   - Promotion_grid.40
   - CNPromotion.60
@@ -573,7 +573,6 @@ music:
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - SkyloftBuyout.80
-  - psoJungle_forcedBuyout_idolaImmortalFeather.50
   - ME_5BUY_ISDS.60
   - starcarnival_BUYOUT
   - ME_5BUY_ISDS.60
@@ -594,6 +593,7 @@ music:
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
+  - psoJungle_forcedBuyout_idolaImmortalFeather.50
   - X-buyout.50
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
@@ -625,7 +625,6 @@ music:
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - SkyloftDomination.80
-  - psoJungle_domination_psoEp2Orchestra.70
   - ME_MONOPOLY_ISDS.60
   - starcarnival_DOMINATION
   - yoshicloud_DOM
@@ -646,6 +645,7 @@ music:
   - PACPARTY_DOM
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
+  - psoJungle_domination_psoEp2Orchestra.70
   - A_X-Levelup.80
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
@@ -677,7 +677,6 @@ music:
   - Bankrupt_grid.40
   - Bankrupt_grid.40
   - SkyloftBankrupt.80
-  - psoJungle_bankruptcy_death.50
   - Bankrupt_grid.40
   - starcarnival_LOSE
   - Bankrupt_grid.40
@@ -698,6 +697,7 @@ music:
   - Bankrupt_grid.40
   - forsaken
   - Bankrupt_grid.40
+  - psoJungle_bankruptcy_death.50
   - X-bankruptcy.80
   - Bankrupt_grid.40
   - Bankrupt_grid.40
@@ -730,7 +730,6 @@ music:
   - Arcade_grid.60
   - A_SkyloftMemory.80
   - Arcade_grid.60
-  - Arcade_grid.60
   - A_starcarnival_MEM
   - A_yoshicloud_MB.50
   - Arcade_grid.60
@@ -750,6 +749,7 @@ music:
   - A_PACPARTY_MEM
   - ooparts
   - A_lighthouse_MINI
+  - Arcade_grid.60
   - A_comical
   - Arcade_grid.60
   - Arcade_grid.60
@@ -767,6 +767,12 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - You can no longer buy yourself cards at the event square just before the bank in the bottom-right corner of board states 1 through 25.
+      - The board state for Gal Da Val Island has been changed from board states 13 and 21 to 13 and 41.
+      - Initial cash increased from 3000 to 3600
+      - Salary increment increased from 100 to 125
   - version: 3
     changed:
       - Change Board State 28 from Enne-san Board 52 and Inside Out to Suit Map (Board state 1)
@@ -1032,7 +1038,7 @@ notes: |
   - Birdo's Big Top
   - Bowser's Galaxy Reactor
   - Enne-san Board 22
-  - Gal Da Val Island (Board State 1 and 2), King of the Hill (Board State 1)
+  - Gal Da Val Island (Board State 1 and 2), King of the Hill (Board State 1) -Normal-
   - High-Rise
   - Planet Mira -Normal-
   - Enne-san Board 15
@@ -1040,7 +1046,6 @@ notes: |
   - The Clock Tower
   - Yoshi -Normal-
   - Goddess Crest
-  - Gal Da Val Island (Board State 3 and 2), King of the Hill (Board State 2)
   - Enne-san Board 18, Toads House
   - King Boo's Haunted Hideaway (Board State 10)
   - Yoshi Cloud * Venn Diagram
@@ -1061,6 +1066,7 @@ notes: |
   - Mirage Oasis * Enne-san Board 06
   - Shibuya Underground
   - Return to Lighthouse Island
+  - Gal Da Val Island (Board State 3 and 2), King of the Hill (Board State 2) -Lunatic-
   - Planet Mira -Lunatic-
   - Enne-san Board 52 -Lunatic-
   - Colony 9
