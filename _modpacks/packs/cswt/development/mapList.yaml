@@ -52,9 +52,6 @@ backgrounds: backgrounds.yml
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
-    Heliodor.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Heliodor.zip
     slimeguyspaydayexpress.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
