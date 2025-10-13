@@ -42,6 +42,11 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 6
+    changed:
+      - Fixed a crash being caused by going through too many doors in a single Roll
+      - Swapped out some event squares
+      - Added a door at the train station that leads back to the start
   - version: 5
     changed:
       - Remade the entire map
