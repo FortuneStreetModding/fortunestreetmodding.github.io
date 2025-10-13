@@ -10,7 +10,9 @@ backgrounds: backgrounds.yml
     OnionOcean.zip:
       urls:
       - https://nikkums.io/cswt/Maps/OnionOcean.zip
-    placeholder.zip:
+    slimeguyspaydayexpressplatformB.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpressplatformB.zip
     placeholder.zip:
     placeholder.zip:
   1:
