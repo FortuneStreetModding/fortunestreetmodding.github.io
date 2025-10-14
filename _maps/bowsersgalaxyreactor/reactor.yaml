@@ -21,9 +21,9 @@ tourMode:
   clearRank: 1
 looping:
   mode: Vertical
-  radius: 26.5
+  radius: 25.50
   horizontalPadding: 1
-  verticalSquareCount: 16.5
+  verticalSquareCount: 15.50
 music:
   download:
     - https://nikkums.io/cswt/BGM/bowsersgalaxyreactor.music.zip
