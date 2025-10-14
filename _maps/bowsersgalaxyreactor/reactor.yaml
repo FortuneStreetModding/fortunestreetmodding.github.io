@@ -8,7 +8,7 @@ initialCash: 2000
 targetAmount: 20000
 baseSalary: 350
 salaryIncrement: 200
-maxDiceRoll: 7
+maxDiceRoll: 6
 frbFile1: reactor
 background: galaxyColosseum
 mapIcon: reactor
@@ -162,6 +162,10 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 5
+    changed:
+      - Two venture squares and two 51 event squares deleted to keep paths reduced, but for the most part restore the original layout
+      - max dice roll reduced to 6
   - version: 4
     changed:
       - Two event 51 squares added, reduced total paths to 88
