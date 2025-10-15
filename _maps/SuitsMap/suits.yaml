@@ -34,10 +34,12 @@ tourMode:
   opponent3: Daisy
   clearRank: 1
 changelog:
+  - version: 8
+    changed:
+      - Added a waypoint limit so that the bank area cannot be looped in the club board state
   - version: 7
     changed:
       - Changed the music link, and the tracks for the map music
-      - Added a waypoint limit so that the bank area cannot be looped in the club board state
   - version: 6
     changed:
       - Added 12 new squares to create more routs, new districts, event squares, rotating suit, and a backstreet
