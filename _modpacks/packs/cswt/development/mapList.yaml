@@ -63,7 +63,9 @@ backgrounds: backgrounds.yml
     Ennesan55.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan55.zip
-    placeholder.zip:
+    bowsersgalaxyreactor.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/bowsersgalaxyreactor.zip
     placeholder.zip:
   2:
     placeholder.zip:
