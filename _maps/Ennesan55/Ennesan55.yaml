@@ -767,6 +767,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Partially modified the structure of Board State 5(Enne-san Board 17 * Enne-san Board 42) and the effects of Event Square
+      - Partially modified the structure of Board State 11(Bowser's Galaxy Reactor)
   - version: 4
     changed:
       - You can no longer buy yourself cards at the event square just before the bank in the bottom-right corner of board states 1 through 25.
