@@ -4,7 +4,7 @@ desc:
   en: The centre of the universe, where the fate of the Koopa King's galactic ambitions hang in the balance...
 ruleSet: Standard
 theme: Mario
-initialCash: 2000
+initialCash: 2500
 targetAmount: 20000
 baseSalary: 350
 salaryIncrement: 200
@@ -162,6 +162,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 6
+    changed:
+      - Increase initial cash from 2000 to 2500
   - version: 5
     changed:
       - Two venture squares and two 51 event squares deleted to keep paths reduced, but for the most part restore the original layout

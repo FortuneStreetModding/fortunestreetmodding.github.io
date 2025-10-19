@@ -10,9 +10,7 @@ backgrounds: backgrounds.yml
     OnionOcean.zip:
       urls:
       - https://nikkums.io/cswt/Maps/OnionOcean.zip
-    slimeguyspaydayexpressplatformB.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpressplatformB.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
   1:
@@ -54,18 +52,14 @@ backgrounds: backgrounds.yml
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
-    slimeguyspaydayexpress.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
     Ennesan55.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan55.zip
-    bowsersgalaxyreactor.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/bowsersgalaxyreactor.zip
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
   2:
     placeholder.zip:
