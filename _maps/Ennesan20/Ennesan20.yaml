@@ -128,6 +128,11 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 10
+    changed:
+      - Increase Switch Squares from 2 to 3
+      - Changed the effect of some event squares
+      - Change some paths
   - version: 9
     changed:
       - 2 event squares added
