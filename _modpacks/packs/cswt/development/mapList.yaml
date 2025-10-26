@@ -10,7 +10,9 @@ backgrounds: backgrounds.yml
     OnionOcean.zip:
       urls:
       - https://nikkums.io/cswt/Maps/OnionOcean.zip
-    placeholder.zip:
+    Ennesan56.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan56.zip
     placeholder.zip:
     placeholder.zip:
   1:
