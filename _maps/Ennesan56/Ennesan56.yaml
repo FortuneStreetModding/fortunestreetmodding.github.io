@@ -1,13 +1,13 @@
 name:
   en: Enne-san Board 56
 desc:
-  en: Starting initial cash at 0. First salary is 100G. Securing funds early on is key.
+  en: Starting initial cash at 0. First salary is 250. The timing of when to start looking to buy a store and the strategy for making a profit are key factors.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 0
 targetAmount: 25000
-baseSalary: 100
-salaryIncrement: 0
+baseSalary: 0
+salaryIncrement: 250
 maxDiceRoll: 7
 frbFiles:
 - E56_1
@@ -20,7 +20,7 @@ music:
     - https://nikkums.io/cswt/BGM/Ennesan56.music.zip
     - https://drive.google.com/uc?export=download&id=1Amc1zLEEUQPLhjbfXZGooREj0xoOPPnH&confirm=1
   map:
-  - Ennesan56_Map.55
+  - Ennesan56_Map.48
   stock: Stock_Ennesan45.50
   ventureCards:
   - Venture_Ennesan51.65
@@ -46,6 +46,13 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Reducing the base salary from 100 to 0
+      - Increase the salary increment from 0 to 250
+      - Adjust Map BGM volume
+      - Change Venture Cards 49, 86 and 70 to Venture Cards 72, 79 and 92
+      - Change the description
   - version: 1
     added:
       - Initial Release
@@ -100,7 +107,7 @@ ventureCards:
   - 1  #  46 Misadventure! You drop your wallet and lose 10% of your ready cash!
   - 1  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
   - 1  #  48 Misadventure! All shops in a district picked at random fall in value by 10%!
-  - 1  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
+  - 0  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
   - 1  #  50 Venture on! Move forward the same number of squares again.
   - 1  #  51 Venture on! Move forward 1 square more.
   - 1  #  52 Venture on! Move forward another 2 squares.
@@ -121,29 +128,29 @@ ventureCards:
   - 0  #  67 Stock venture! You can buy stocks in a district of your choice.
   - 1  #  68 Special arcade adventure! You're invited to play Memory Block!
   - 1  #  69 Stock venture! You can sell stocks you own at 20% above the market value.
-  - 1  #  70 Special bonus! You get a sudden promotion and receive a salary! (You lose any suits you have.)
+  - 0  #  70 Special bonus! You get a sudden promotion and receive a salary! (You lose any suits you have.)
   - 1  #  71 Capital venture! You can invest up to 200G of the bank's money in your shops.
-  - 0  #  72 Dicey adventure! Roll 1/3/5 to take 20 times the number of your shops in gold coins. Roll 2/4/6 to pay the same.
+  - 1  #  72 Dicey adventure! Roll 1/3/5 to take 20 times the number of your shops in gold coins. Roll 2/4/6 to pay the same.
   - 0  #  73 Property venture! You can buy any unowned shop or vacant plot.
   - 0  #  74 Misadventure! You are forced to auction one of your shops (with a starting price of twice the shop's value).
   - 1  #  75 Property venture! You can buy any unowned shop or vacant plot for twice its value.
   - 0  #  76 Special arcade adventure! You're invited to play Round the Blocks!
   - 0  #  77 Freebie! Take five of each district's stocks.
   - 1  #  78 Property venture! You can buy any unowned shop or vacant plot for 200G more than its value.
-  - 0  #  79 Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not.
+  - 1  #  79 Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not.
   - 1  #  80 Freebie! Take a Spade!
   - 1  #  81 Misadventure! All other players can only move forward 1 on their next turn.
   - 1  #  82 Freebie! Take a Club!
   - 0  #  83 Dicey adventure! Roll 1/3/5 and warp to a random location. Roll 2/4/6 and everyone else warps.
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 0  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
-  - 1  #  86 Moneymaking venture! Take 100G from all other players!
+  - 0  #  86 Moneymaking venture! Take 100G from all other players!
   - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 0  #  88 Misadventure! All other players swap places!
   - 1  #  89 Freebie! All players take a Suit Yourself card!
   - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
   - 0  #  91 Cameo adventure! A healslime appears!
-  - 0  #  92 Cameo adventure! Lakitu appears!
+  - 1  #  92 Cameo adventure! Lakitu appears!
   - 1  #  93 Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 1  #  94 Freebie! Take a Diamond!
   - 0  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
