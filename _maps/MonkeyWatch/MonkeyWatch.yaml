@@ -18,6 +18,7 @@ background: bgwatch
 mapIcon: MonkeyWatch
 music:
   download:
+    - https://nikkums.io/cswt/BGM/MonkeyWatch.music.zip
     - https://drive.usercontent.google.com/download?id=1S4TSUMEiBBbcmrQKVh6jHo_sWqhPtQgx&export=download&confirm=1
   map:
   - MonkeyWatch.50
@@ -25,8 +26,8 @@ music:
   - MonkeyWatch.50
   - MonkeyWatch.50
   stock: Wrestler.50
-  ventureCards: Practice.7
-  auction: Greetings.7
+  ventureCards: Practice.75
+  auction: Greetings.75
   targetMet: RemixTen.50
   win: NightWalk.75
   guestAppear: MonkeyWatchIntro.50
@@ -189,4 +190,3 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
-
