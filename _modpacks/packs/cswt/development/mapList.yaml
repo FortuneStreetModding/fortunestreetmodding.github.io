@@ -13,7 +13,9 @@ backgrounds: backgrounds.yml
     Ennesan56.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan56.zip
-    placeholder.zip:
+    MonkeyWatch.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MonkeyWatch.zip
     placeholder.zip:
   1:
     placeholder.zip:
