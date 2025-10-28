@@ -1282,3 +1282,38 @@
       targetMet: SkyloftTarget.80
       ventureCards: SkyloftVenture.90
       win: SkyloftWin.80
+- background: MonkeyWatch
+  name: Monkey Watch
+  download:
+  - https://drive.usercontent.google.com/download?id=1oj7ZEDlj5V368jb3OF3CCdS_iieEBazi&export=download&confirm=1
+  mapIcon: MonkeyWatch
+  music:
+    map:
+    - MonkeyWatch.50
+    - MonkeyWatch.50
+    - MonkeyWatch.50
+    - MonkeyWatch.50
+    stock: Wrestler.50
+    ventureCards: Practice.75
+    auction: Greetings.75
+    targetMet: RemixTen.50
+    win: NightWalk.75
+    guestAppear: MonkeyWatchIntro.50
+    guestLeave: DoubleDateIntro.50
+    badVentureCard: TryAgain.50
+    takeAbreak: TapTrialIntro.50
+    promotionMii: Superb.50
+    promotionMario: Superb.50
+    promotionDragonQuest: Superb.50
+    forcedBuyout: RemixIntro.50
+    domination: SeeSawIntro.50
+    bankruptcy: TryAgain.50
+    roundTheBlocks: A_GameSelect.50
+    roundTheBlocksWin: Ok.50
+    roundTheBlocks777: Superb.50
+    memoryBlock: A_GameSelect.50
+    dartOfGold: A_GameSelect.50
+    slurpodromeSelect: A_ExtraGamesMenu.50
+    slurpodromeStart: ExhibitionMatchIntro.60
+    slurpodromeRace: MuscleDollTwo.60
+    slurpodromeWin: BigRockFinishG.75
