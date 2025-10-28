@@ -2,56 +2,20 @@ name:
   en: Monkey Watch
 desc:
   en: Monkey Watch from Rhythm Heaven Fever, sort of. Vacant plots already included.
-ruleSet: Standard # OR Easy
-theme: Mario # OR DragonQuest
+ruleSet: Standard
+theme: Mario
 initialCash: 2400
 targetAmount: 24000
 baseSalary: 350
 salaryIncrement: 250
-maxDiceRoll: 7 # should be between 4 and 9. A 9 is only working fine in boards without doors. With 7 or 8 make sure that players cannot go through multiple doors in a single dice roll.
+maxDiceRoll: 7
 frbFiles:
   - MonkeyWatch1
   - MonkeyWatch2
   - MonkeyWatch3
   - MonkeyWatch4
-background: bgwatch # take a look at https://fortunestreetmodding.github.io/backgrounds for available backgrounds
-mapIcon: MonkeyWatch # you can add your own map icon. It needs to be in the same directory and be a png file. Dimensions need to be 79x78.
-music:
-  download: # GOOGLE DRIVE DIRECT LINK TO ZIP CONTAINING MUSIC, CAN DELETE THIS TEXT WHILE TESTING
-    - https://drive.usercontent.google.com/download?id=1IwrOFT6Evrq4PiToNUxfrvAKTH28-vyy&export=download&confirm=1
-# As an example, extract 1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy from 
-# https://drive.google.com/file/d/1DjLBDXG4OPvTrfpvxJnyKgfP1Kdo2mGy/view?usp=sharing
-# Paste in the XXX part of the google link
-# The 5 lines that contain this "#" should be crossed out after the "#".
-  map:
-  - MonkeyWatch.50 # looping. the part after the dot is the volume 0-100. If unspecified, it will default to 50 volume
-  - MonkeyWatch.50
-  - MonkeyWatch.50
-  - MonkeyWatch.50
-  stock: Wrestler.50 # looping
-  ventureCards: Practice.75 # looping
-  auction: Greetings.75 # looping
-  targetMet: RemixTen.50 # looping
-  win: NightWalk.75 # looping
-  guestAppear: MonkeyWatchIntro.50 # non-looping: 5-6 seconds
-  guestLeave: DoubleDateIntro.50 # non-looping: 5 seconds
-  badVentureCard: TryAgain.50 #non-looping: 4 seconds
-  takeAbreak: TapTrialIntro.50 # non-looping: 4 seconds
-  promotionMii: Superb.50 # non-looping: 4 seconds
-  promotionMario: Superb.50 # non-looping: 4 seconds
-  promotionDragonQuest: Superb.50 # non-looping: 4 seconds
-  forcedBuyout: RemixIntro.50 # non-looping: 3-6 seconds
-  domination: SeeSawIntro.50 # non-looping: 1-5 seconds
-  bankruptcy: TryAgain.50 # non-looping: 3-7 seconds
-  roundTheBlocks: A_GameSelect.50 # looping
-  roundTheBlocksWin: Ok.50 # non-looping: 4-5 seconds
-  roundTheBlocks777: Superb.50 # non-looping: 7-9 seconds
-  memoryBlock: A_GameSelect.50 # looping
-  dartOfGold: A_GameSelect.50 # looping
-  slurpodromeSelect: A_ExtraGamesMenu.50 # looping
-  slurpodromeStart: ExhibitionMatchIntro.60 # non-looping: 2-4 seconds
-  slurpodromeRace: MuscleDollTwo.60 # looping
-  slurpodromeWin: BigRockFinishG.75 # non-looping: 7-9 seconds
+background: MonkeyWatch
+mapIcon: MonkeyWatch
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -64,7 +28,6 @@ changelog:
       - Initial Release
 authors:
   - name: Giraffe
-    url: 
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go.
   - 1  #   2 Venture on! Roll the die again and move forward.
