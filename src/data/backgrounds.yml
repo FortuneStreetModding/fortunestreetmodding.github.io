@@ -1282,3 +1282,8 @@
       targetMet: SkyloftTarget.80
       ventureCards: SkyloftVenture.90
       win: SkyloftWin.80
+- background: bgwatch
+  name: Monkey Watch
+  download:
+  - https://nikkums.io/cswt/Backgrounds/bgwatch.background.zip
+  mapIcon: MonkeyWatch
