@@ -1282,7 +1282,7 @@
       targetMet: SkyloftTarget.80
       ventureCards: SkyloftVenture.90
       win: SkyloftWin.80
-- background: MonkeyWatch
+- background: bgwatch
   name: Monkey Watch
   download:
   - https://drive.google.com/uc?export=download&id=1aaRk3S-CQZ9Pl5273tmfzZhJHw-KEPgf&confirm=1
