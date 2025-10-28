@@ -16,6 +16,38 @@ frbFiles:
   - MonkeyWatch4
 background: MonkeyWatch
 mapIcon: MonkeyWatch
+music:
+  download:
+    - https://drive.usercontent.google.com/download?id=1S4TSUMEiBBbcmrQKVh6jHo_sWqhPtQgx&export=download&confirm=1
+  map:
+  - MonkeyWatch.50
+  - MonkeyWatch.50
+  - MonkeyWatch.50
+  - MonkeyWatch.50
+  stock: Wrestler.50
+  ventureCards: Practice.7
+  auction: Greetings.7
+  targetMet: RemixTen.50
+  win: NightWalk.75
+  guestAppear: MonkeyWatchIntro.50
+  guestLeave: DoubleDateIntro.50
+  badVentureCard: TryAgain.50
+  takeAbreak: TapTrialIntro.50
+  promotionMii: Superb.50
+  promotionMario: Superb.50
+  promotionDragonQuest: Superb.50
+  forcedBuyout: RemixIntro.50
+  domination: SeeSawIntro.50
+  bankruptcy: TryAgain.50
+  roundTheBlocks: A_GameSelect.50
+  roundTheBlocksWin: Ok.50
+  roundTheBlocks777: Superb.50
+  memoryBlock: A_GameSelect.50
+  dartOfGold: A_GameSelect.50
+  slurpodromeSelect: A_ExtraGamesMenu.50
+  slurpodromeStart: ExhibitionMatchIntro.60
+  slurpodromeRace: MuscleDollTwo.60
+  slurpodromeWin: BigRockFinishG.75
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
