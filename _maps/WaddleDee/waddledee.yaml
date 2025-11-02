@@ -73,7 +73,7 @@ ventureCards:
   - 1  #  10 Venture on! Everyone's shop prices cut in half! Now roll the die and move again.
   - 1  #  11 Moneymaking venture! Roll the die and get 11 times the number shown in gold coins from all other players!
   - 1  #  12 Capital venture! You can invest capital in any of your shops.
-  - 0  #  13 Misadventure! The values of all your shops drop by 13%!
+  - 1  #  13 Misadventure! The values of all your shops drop by 13%!
   - 0  #  14 Misadventure! You give everyone 30G each!
   - 1  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
   - 0  #  16 Random venture! Shops expand in three districts picked at random!
@@ -163,7 +163,7 @@ ventureCards:
   - 1  # 100 Freebie! Take a Suit Yourself card!
   - 1  # 101 Special bonus! Your shops all grow by 21%!
   - 0  # 102 Moneymaking venture! Roll the die and get 33 times the number shown in gold coins from all other players!
-  - 1  # 103 Misadventure! The values of all your shops drop by 25%!
+  - 0  # 103 Misadventure! The values of all your shops drop by 25%!
   - 0  # 104 Misadventure! You give everyone 80G each!
   - 0  # 105 Moneymaking venture! Roll the die and get the number shown x your level x 40G from the bank!
   - 1  # 106 Freebie! Roll the die and get half the number shown of Suit Yourself cards! (Decimals will be rounded down.)
@@ -190,6 +190,9 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 7
+    changed:
+      - Change Venture Card 103 to 13
   - version: 6
     changed:
       - Increase target amount from 15,000 to 25,000

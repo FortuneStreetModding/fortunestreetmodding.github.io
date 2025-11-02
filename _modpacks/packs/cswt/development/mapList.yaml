@@ -2,36 +2,26 @@ backgrounds: backgrounds.yml
 0:
   0:
     Ennesan43.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan43.zip
-    Ennesan50.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan50.zip
-    Ennesan52C.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan52C.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan43.zip
     arrowhead.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/arrowhead.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/arrowhead.zip
     OnionOcean.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/OnionOcean.zip
-    BalatroBoard.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/BalatroBoard.zip
+      urls:
+      - https://nikkums.io/cswt/Maps/OnionOcean.zip
+    MonkeyWatch.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MonkeyWatch.zip
+    spookyhallow.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/spookyhallow.zip
+    placeholder.zip:
   1:
-    Blackmarket.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Blackmarket.zip
-    Amida.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Amida.zip
-    Ennesan54B.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/Ennesan54B.zip
-    GoddessCrest.zip:
-        urls:
-        - https://nikkums.io/cswt/Maps/GoddessCrest.zip
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
   2:
@@ -66,25 +56,17 @@ backgrounds: backgrounds.yml
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
-    Heliodor.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Heliodor.zip
-    PalmBrinks.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/PalmBrinks.zip
-    slimeguyspaydayexpress.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpress.zip
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
-    WaddleDee.zip:
+    Ennesan55.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/WaddleDee.zip
+      - https://nikkums.io/cswt/Maps/Ennesan55.zip
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
   2:
-    fortunapolis.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/fortunapolis.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:

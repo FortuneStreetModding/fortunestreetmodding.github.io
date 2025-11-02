@@ -39,6 +39,9 @@ backgrounds: backgrounds.yml
     thebackstreets.zip:
       urls:
       - https://nikkums.io/cswt/Maps/thebackstreets.zip
+    BalatroBoard.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/BalatroBoard.zip
     birdosbigtop.zip:
       urls:
       - https://nikkums.io/cswt/Maps/birdosbigtop.zip
@@ -60,6 +63,9 @@ backgrounds: backgrounds.yml
     Colony9.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Colony9.zip
+    Ennesan55.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan55.zip
     DeathStarfish.zip:
       practiceBoard: true
       urls:
@@ -137,6 +143,12 @@ backgrounds: backgrounds.yml
     Ennesan51.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan51.zip
+    Ennesan52C.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan52C.zip
+    Ennesan56.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan56.zip
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
@@ -161,6 +173,9 @@ backgrounds: backgrounds.yml
     Gladius.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Gladius.zip
+    GoddessCrest.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/GoddessCrest.zip
     GoodybagLair.zip:
       urls:
       - https://nikkums.io/cswt/Maps/GoodybagLair.zip
@@ -234,6 +249,9 @@ backgrounds: backgrounds.yml
     Shibuya.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Shibuya.zip
+    slimeguyspaydayexpressplatformB.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/slimeguyspaydayexpressplatformB.zip
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
