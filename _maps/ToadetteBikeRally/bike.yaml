@@ -26,19 +26,20 @@ switchRotationOriginPoints:
   - x: -368
     y: 176
 music:
-  download: 
-    - https://drive.google.com/uc?export=download&id=17uK8Vf4b3OYr13FT0xI_HRHY5peO0WED
+  download:
+    - https://nikkums.io/cswt/BGM/ToadetteBikeRally.music.zip
+    - https://drive.google.com/uc?export=download&id=1kiE-vY_PtfVYehZjEclFms7Ni-_eefil
   map:
-  - bike1_bgm.80
-  - bike2_bgm.80
-  - bike3_bgm.80
-  - bike4_bgm.80
-  - bike5_bgm.80
-  - bike6_bgm.80
-  stock: bike_stock.80
-  ventureCards: bike_venture.80
-  auction: bike_auction.80
-  targetMet: bike_target.80
+  - bike1_bgm.60
+  - starcarnival_MAP
+  - mpss_ppbc_MAP11
+  - mpss_ppbc_MAP04
+  - bike5_bgm.60
+  - bike6_bgm.55
+  stock: bike_stock.60
+  ventureCards: bike_venture.60
+  auction: bike_auction.60
+  targetMet: bike_target.60
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -51,7 +52,6 @@ changelog:
       - Initial Release
 authors:
   - name: Stephie
-ventureCards:
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go.
   - 1  #   2 Venture on! Roll the die again and move forward.
