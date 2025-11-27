@@ -16,7 +16,9 @@ backgrounds: backgrounds.yml
     Ennesan57.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan57.zip
-    placeholder.zip:
+    ToadetteBikeRally.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/ToadetteBikeRally.zip
   1:
     placeholder.zip:
     placeholder.zip:
