@@ -6,8 +6,8 @@ ruleSet: Standard
 theme: DragonQuest
 initialCash: 2000
 targetAmount: 25000
-baseSalary: 200
-salaryIncrement: 150
+baseSalary: 300
+salaryIncrement: 300
 maxDiceRoll: 6
 frbFiles:
   - bike1
@@ -50,6 +50,10 @@ changelog:
   - version: 1
     added:
       - Initial Release
+  - version: 2
+    added:
+      - Increased starting cash and salary
+      
 authors:
   - name: Stephie
 ventureCards:
