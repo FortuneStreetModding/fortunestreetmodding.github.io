@@ -4,10 +4,10 @@ desc:
   en: Toadette wants to show you her new bike in action!
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2000
+initialCash: 2500
 targetAmount: 25000
-baseSalary: 200
-salaryIncrement: 150
+baseSalary: 300
+salaryIncrement: 300
 maxDiceRoll: 6
 frbFiles:
   - bike1
@@ -47,6 +47,11 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Increased initial cash from 2000 to 2500
+      - Increased base salary from 200 to 300
+      - Increased salary increment from 150 to 300
   - version: 1
     added:
       - Initial Release
