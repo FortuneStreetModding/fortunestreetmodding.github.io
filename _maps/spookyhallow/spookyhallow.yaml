@@ -27,7 +27,7 @@ mapIcon: spookyhallow
 music:
   download:
   - https://nikkums.io/cswt/BGM/spookyhallow.music.zip
-  - https://drive.google.com/uc?export=download&id=1w_xaT4s8lpJRwmU9fAEqO9wudciC5z0k
+  - https://drive.google.com/uc?export=download&id=1fvNDqYEZw8FvHkIEI0YrEFvO_gzDjsfA
   map: 
   - spookyhallowMAP02
   - spookyhallowMAP01
@@ -38,32 +38,32 @@ music:
   - spookyhallowMAP10
   - spookyhallowMAP07
   - spookyhallowMAP06
-  - spookyhallowMAP09
+  - spookyhallowMAP05
   - spookyhallowMAP11
   - spookyhallowMAP12
   stock: spookyhallowSTOCK
   ventureCards: spookyhallowVEN
   auction: spookyhallowAUCTION
   targetMet: spookyhallowFINAL
-  win: spookyhallowWIN
+  win: PACPARTY_WIN
   guestAppear:
   guestLeave:
   badVentureCard: spookyhallowVENBAD
-  takeAbreak: spookyhallowBREAK
-  promotionMii: spookyhallowPROMO
-  promotionMario: spookyhallowPROMO
-  promotionDragonQuest: spookyhallowPROMO
+  takeAbreak: PACPARTY_TAB
+  promotionMii: PACPARTY_PROMO
+  promotionMario: PACPARTY_PROMO
+  promotionDragonQuest: PACPARTY_PROMO
   forcedBuyout:
   domination: spookyhallowDOMINATION
   bankruptcy:
-  roundTheBlocks: A_spookyhallowROB
+  roundTheBlocks: A_PACPARTY_RTB
   roundTheBlocksWin: 
   roundTheBlocks777: spookyhallowROB777
-  memoryBlock: A_spookyhallowMEM
-  dartOfGold: A_spookyhallowDOG
+  memoryBlock: A_PACPARTY_MEM
+  dartOfGold: A_PACPARTY_DOG
   slurpodromeSelect: A_spookyhallowSRP
-  slurpodromeStart: spookyhallowSRPSTART
-  slurpodromeRace: spookyhallowSRPRACE
+  slurpodromeStart: PACPARTY_SRP_START
+  slurpodromeRace: PACPARTY_SRP_RACE
   slurpodromeWin:
 tourMode:
   bankruptcyLimit: 1
