@@ -74,9 +74,9 @@ tourMode:
 changelog:
   - version: 3
     changed:
-      - Raised the target amount to 20000
-      - Raised the starting cash to 2200
-      - Added two more vacant plots
+      - Raised the target amount from 18000 to 20000
+      - Raised the starting cash from 2000 to 2200
+      - Added 2 more vacant plots
   - version: 2
     changed:
       - New switch mechanic that turns the outer edge of the map and the inner area every 4th press
