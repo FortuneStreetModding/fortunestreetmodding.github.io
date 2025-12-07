@@ -1,11 +1,11 @@
 name:
   en: Spooky Hallow
 desc:
-  en: The home turf of the Ghost Gang. Pac-Man once chased the ghosts here to rescue Mr. Cookie's recipe. But not without awakening a slumbering beast that lies within the pumpkin patch...2 vacant plots included.
+  en: The home turf of the Ghost Gang. Pac-Man once chased the ghosts here to rescue Mr. Cookie's recipe. But not without awakening a slumbering beast that lies within the pumpkin patch...4 vacant plots included.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2000
-targetAmount: 18000
+initialCash: 2200
+targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 150
 maxDiceRoll: 7
@@ -72,6 +72,11 @@ tourMode:
   opponent3: Platypunk
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Raised the target amount from 18000 to 20000
+      - Raised the starting cash from 2000 to 2200
+      - Added 2 more vacant plots
   - version: 2
     changed:
       - New switch mechanic that turns the outer edge of the map and the inner area every 4th press
