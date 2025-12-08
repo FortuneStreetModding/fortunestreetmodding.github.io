@@ -10,15 +10,13 @@ backgrounds: backgrounds.yml
     OnionOcean.zip:
       urls:
       - https://nikkums.io/cswt/Maps/OnionOcean.zip
-    spookyhallow.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/spookyhallow.zip
     Ennesan57.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan57.zip
     ToadetteBikeRally.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadetteBikeRally.zip
+    placeholder.zip:
   1:
     placeholder.zip:
     placeholder.zip:
