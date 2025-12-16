@@ -16,7 +16,9 @@ backgrounds: backgrounds.yml
     ToadetteBikeRally.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadetteBikeRally.zip
-    placeholder.zip:
+    SeeSaw.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/SeeSaw.zip
   1:
     placeholder.zip:
     placeholder.zip:
