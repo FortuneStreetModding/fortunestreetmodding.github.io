@@ -16,6 +16,7 @@ background: bg901fixed
 mapIcon: SeeSaw
 music:
   download:
+    - https://nikkums.io/cswt/BGM/SeeSaw.music.zip
     - https://drive.google.com/uc?export=download&id=1yeOxzNH3T3hneu08SVxD6XirOh11m6lp&confirm=1
   map:
   - KarateMan.50
