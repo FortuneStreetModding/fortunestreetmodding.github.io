@@ -17,7 +17,7 @@ mapIcon: SeeSaw
 music:
   download:
     - https://nikkums.io/cswt/BGM/SeeSaw.music.zip
-    - https://drive.google.com/uc?export=download&id=1yeOxzNH3T3hneu08SVxD6XirOh11m6lp&confirm=1
+    - https://drive.google.com/uc?export=download&id=1TFF_-0LpXsC1_ozDa8xdLuu_zFgmRdja&confirm=1
   map:
   - KarateMan.50
   - KarateMan.50
@@ -52,6 +52,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Changed board music to an instrumental version
   - version: 1
     added:
       - Initial Release
