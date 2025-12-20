@@ -16,7 +16,9 @@ backgrounds: backgrounds.yml
     SeeSaw.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SeeSaw.zip
-    placeholder.zip:
+    Ennesan58.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan58.zip
   1:
     placeholder.zip:
     placeholder.zip:
