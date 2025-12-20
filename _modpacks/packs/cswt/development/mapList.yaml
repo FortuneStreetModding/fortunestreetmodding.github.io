@@ -16,7 +16,9 @@ backgrounds: backgrounds.yml
     SeeSaw.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SeeSaw.zip
-    placeholder.zip:
+    Ennesan58.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan58.zip
   1:
     placeholder.zip:
     placeholder.zip:
@@ -34,25 +36,15 @@ backgrounds: backgrounds.yml
       practiceBoard: true
 1:
   0:
-    CastawayBayCSide.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
-    Ennesan09.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan09.zip
     Ennesan20.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan20.zip
-    WiiU.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/WiiU.zip
     POWBlock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/POWBlock.zip
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
-  1:
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
@@ -62,6 +54,10 @@ backgrounds: backgrounds.yml
     Ennesan55.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan55.zip
+  1:
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
