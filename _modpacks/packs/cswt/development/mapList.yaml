@@ -39,9 +39,6 @@ backgrounds: backgrounds.yml
     Ennesan20.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan20.zip
-    WiiU.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/WiiU.zip
     POWBlock.zip:
       urls:
       - https://nikkums.io/cswt/Maps/POWBlock.zip
@@ -54,10 +51,11 @@ backgrounds: backgrounds.yml
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
-  1:
     Ennesan55.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan55.zip
+  1:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
