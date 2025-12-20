@@ -36,12 +36,6 @@ backgrounds: backgrounds.yml
       practiceBoard: true
 1:
   0:
-    CastawayBayCSide.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/CastawayBayCSide.zip
-    Ennesan09.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan09.zip
     Ennesan20.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan20.zip
@@ -54,16 +48,18 @@ backgrounds: backgrounds.yml
     EternaCity.zip:
       urls:
       - https://nikkums.io/cswt/Maps/EternaCity.zip
-  1:
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
     BowsersPinball.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BowsersPinball.zip
+  1:
     Ennesan55.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan55.zip
+    placeholder.zip:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
