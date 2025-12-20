@@ -67,7 +67,7 @@ ventureCards:
   - 1  #  15 Moneymaking venture! Roll the die and get 50 times the number shown in gold coins from the bank!
   - 0  #  16 Random venture! Shops expand in three districts picked at random!
   - 1  #  17 Special bonus! You receive half of your salary!
-  - 0  #  18 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value.
+  - 1  #  18 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value.
   - 1  #  19 Price hike venture! Your shop prices go up by 30% until your next turn.
   - 1  #  20 Revaluation venture! You can expand any one of your shops by 20%.
   - 0  #  21 Random venture! You receive 20 stocks in a district picked at random!
@@ -114,7 +114,7 @@ ventureCards:
   - 1  #  62 Special bonus! You receive a 20% dividend on your stocks!
   - 0  #  63 Random venture! Stock prices increase by 20% in a district picked at random!
   - 0  #  64 Random venture! Stock prices increase by 30% in a district picked at random!
-  - 1  #  65 Forced buyout! You can buy a vacant plot or shop for five times its value, whether someone else owns it or not.
+  - 0  #  65 Forced buyout! You can buy a vacant plot or shop for five times its value, whether someone else owns it or not.
   - 0  #  66 Special bonus! You receive 10 of the most valuable stocks!
   - 0  #  67 Stock venture! You can buy stocks in a district of your choice.
   - 0  #  68 Special arcade adventure! You're invited to play Memory Block!
