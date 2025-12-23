@@ -219,6 +219,9 @@ backgrounds: backgrounds.yml
     NLA.zip:
       urls:
       - https://nikkums.io/cswt/Maps/NLA.zip
+    OnionOcean.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/OnionOcean.zip
     pacman.zip:
       urls:
       - https://nikkums.io/cswt/Maps/pacman.zip  
