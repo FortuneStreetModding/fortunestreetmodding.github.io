@@ -13,15 +13,16 @@ frbFile1: Ritual
 background: bg102alt
 mapIcon: Ritual
 music:
-  download: 
-    - https://1drv.ms/u/c/3500554a4e43e0a7/IQAoRol1Sw54R4NjyhoD0jezAZogQboXIKRjAMZ4DDBrVPg?e=TJn8IQ
-  map: GearsOfFortune.50 
-  stock: VestigesOfCorruption.50 
-  ventureCards: ForgottenJade.50 
-  auction: RitualoftheNight.50 
-  targetMet: SilentHowling.50  
-  forcedBuyout: GameOver.50  
-  bankruptcy: GameOver.50 
+  download:
+    - https://nikkums.io/cswt/BGM/Ritual.music.zip
+    - https://drive.google.com/uc?export=download&id=1RgSnSfp4N6SSQGveesVFyjr8aDEXBlxs&confirm=1
+  map: GearsOfFortune.60
+  stock: VestigesOfCorruption.50
+  ventureCards: ForgottenJade.50
+  auction: RitualoftheNight.50
+  targetMet: SilentHowling.50
+  forcedBuyout: GameOver.55
+  bankruptcy: GameOver.55
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -34,20 +35,6 @@ changelog:
       - Initial Release
 authors:
   - name: Duskieangel
-districtNames:
-  en:
-    - District A
-    - District B
-    - District C
-    - District D
-    - District E
-    - District F
-    - District G
-    - District H
-    - District I
-    - District J
-    - District K
-    - District L 
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go.
   - 1  #   2 Venture on! Roll the die again and move forward.
