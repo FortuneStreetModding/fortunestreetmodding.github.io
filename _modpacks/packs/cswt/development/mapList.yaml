@@ -4,9 +4,6 @@ backgrounds: backgrounds.yml
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
-    OnionOcean.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/OnionOcean.zip
     Ennesan57.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan57.zip
@@ -19,10 +16,11 @@ backgrounds: backgrounds.yml
     Ennesan58.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan58.zip
-  1:
     Ritual.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ritual.zip
+  1:
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
