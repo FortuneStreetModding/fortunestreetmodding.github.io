@@ -16,7 +16,9 @@ backgrounds: backgrounds.yml
     Ritual.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ritual.zip
-    placeholder.zip:
+    Ennesan59.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan59.zip
   1:
     placeholder.zip:
     placeholder.zip:
