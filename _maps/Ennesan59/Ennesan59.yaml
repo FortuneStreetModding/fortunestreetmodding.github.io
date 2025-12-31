@@ -1,13 +1,13 @@
 name:
   en: Enne-san Board 59
 desc:
-  en: The farther you go, the stronger the Event Square effect becomes, but purchasing salary and stocks will be delayed. The key strategy lies in deciding how far to advance before entering the door.
+  en: The Event Square effect grows stronger the further you advance. The key strategy lies in deciding how far to advance before entering the door.
 ruleSet: Standard
 theme: Mario
-initialCash: 1500
+initialCash: 1800
 targetAmount: 30000
-baseSalary: 200
-salaryIncrement: 50
+baseSalary: 250
+salaryIncrement: 100
 maxDiceRoll: 8
 frbFiles:
 - E59
@@ -44,6 +44,21 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Change from 1 bank to 2 banks
+      - Change the starting point
+      - Changing values at some shops
+      - Changing the effects of some event squares
+      - Adjust the position of the suit
+      - Change Districts I and J from 4-shop districts to 3-shop districts
+      - Increase initial cash from 1500 to 1800
+      - Increase base salary from 200 to 250
+      - Increase the salary increment from 50 to 100
+      - The bottom door has been modified to allow entry even when it cannot be rotated.
+      - Increase the Event Square passageway by one tile when entering the door at the very back.
+      - Change the description
+      - Change the map icon
   - version: 1
     added:
       - Initial Release
