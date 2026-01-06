@@ -16,7 +16,9 @@ backgrounds: backgrounds.yml
     Ennesan59.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan59.zip
-    placeholder.zip:
+    TheWap.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/TheWap.zip
   1:
     placeholder.zip:
     placeholder.zip:
