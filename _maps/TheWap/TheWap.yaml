@@ -14,7 +14,9 @@ frbFiles:
 background: grid_violet
 mapIcon: grid_violet
 music:
-  download: https://drive.google.com/uc?export=download&id=1k76Lt7f65A88jke6QjXvz5q7uxYr5tgB&confirm=1
+  download:
+  - https://nikkums.io/cswt/BGM/TheWap.music.zip
+  - https://drive.google.com/uc?export=download&id=1k76Lt7f65A88jke6QjXvz5q7uxYr5tgB&confirm=1
   map:
   - mapBarok.80
   ventureCards:
