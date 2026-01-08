@@ -249,6 +249,9 @@ backgrounds: backgrounds.yml
     returntolighthouseisland.zip:
       urls:
       - https://nikkums.io/cswt/Maps/returntolighthouseisland.zip
+    Ritual.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ritual.zip
     SeeSaw.zip:
       urls:
       - https://nikkums.io/cswt/Maps/SeeSaw.zip
