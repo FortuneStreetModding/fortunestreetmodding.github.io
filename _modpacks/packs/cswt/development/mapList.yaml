@@ -4,21 +4,15 @@ backgrounds: backgrounds.yml
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
-    Ennesan57.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan57.zip
     ToadetteBikeRally.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadetteBikeRally.zip
-    Ritual.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ritual.zip
-    Ennesan59.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/Ennesan59.zip
     TheWap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheWap.zip
+    placeholder.zip:
+    placeholder.zip:
+    placeholder.zip:
   1:
     placeholder.zip:
     placeholder.zip:
