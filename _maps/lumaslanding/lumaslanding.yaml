@@ -26,10 +26,6 @@ frbFiles:
 - lumas14
 - lumas15
 - lumas16
-- lumas01
-- lumas17
-- lumas18
-- lumas19
 background: lumaslanding
 mapIcon: lumas
 tourMode:
@@ -65,10 +61,6 @@ music:
   - galaxy28.70
   - galaxy28.70
   - galaxy28.70
-  - ssg_MAP03
-  - ssg_MAP03
-  - ssg_MAP03
-  - ssg_MAP03
   stock: galaxyinter.50
   ventureCards: fileselect.80
   targetMet: boss10.65
@@ -220,6 +212,11 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 2
+    changed:
+      - fix for balloon stutter
+      - swapped out a few squares
+      - Remove board states 17 through 20
   - version: 1
     added:
       - Initial Release.
