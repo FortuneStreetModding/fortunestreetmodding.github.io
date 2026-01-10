@@ -1287,3 +1287,8 @@
   download:
   - https://nikkums.io/cswt/Backgrounds/bgwatch.background.zip
   mapIcon: MonkeyWatch
+- background: lumaslanding
+  name: lumaslanding
+  download:
+  - https://nikkums.io/cswt/Backgrounds/lumaslanding.background.zip
+  mapIcon: lumas
