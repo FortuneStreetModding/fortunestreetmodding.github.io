@@ -10,7 +10,9 @@ backgrounds: backgrounds.yml
     TheWap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheWap.zip
-    placeholder.zip:
+    lumaslanding.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/lumaslanding.zip
     placeholder.zip:
     placeholder.zip:
   1:
