@@ -213,8 +213,10 @@ ventureCards:
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
   - version: 2
+    changed:
       - fix for balloon stutter
       - swapped out a few squares
+      - Remove board states 17 through 20
   - version: 1
     added:
       - Initial Release.
