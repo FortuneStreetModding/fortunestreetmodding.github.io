@@ -13,7 +13,9 @@ backgrounds: backgrounds.yml
     lumaslanding.zip:
       urls:
       - https://nikkums.io/cswt/Maps/lumaslanding.zip
-    placeholder.zip:
+    Mindgames.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Mindgames.zip
     placeholder.zip:
   1:
     placeholder.zip:
