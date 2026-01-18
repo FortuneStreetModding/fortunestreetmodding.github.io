@@ -14,17 +14,19 @@ frbFiles:
 background: bg007
 mapIcon: TheWap_Icon
 music:
-  download: https://drive.google.com/uc?export=download&id=1hHWkfBTiewE0NXdqDGkKuCw4q5r7dFUB&confirm=1
+  download: 
+    - https://nikkums.io/cswt/BGM/Mindgames.music.zip
+    - https://drive.google.com/uc?export=download&id=1eSZF4Z1_gzPJczpXE1QELe5t4BvMCwxf&confirm=1
   map:
-  - mapV3ClosingArgument.70
+  - mapV3ClosingArgument.65
   stock:
-  - stockV3LazyParallelWorld.70
+  - stockV3LazyParallelWorld.45
   ventureCards:
   - ventureCardsV3LetsStart.70
   auction:
-  - auctionV3BladeLock.70
+  - auctionV3BladeLock.60
   targetMet:
-  - targetMetV3HopeSearching.70
+  - targetMetV3HopeSearching.55
   win:
   - winV3HopeOfAutumn.70
   badVentureCard:
