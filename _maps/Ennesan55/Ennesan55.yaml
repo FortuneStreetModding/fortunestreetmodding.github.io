@@ -107,7 +107,7 @@ music:
   - Ennesan55_Map_16.45
   - BirthofthePeople_Orchestra
   - slimeguyspaydayexpressMAP.50
-  - Ennesan55_Map_19.50
+  - Ennesan55_Map_19.60
   - SkyloftMain.80
   - Ennesan55_Map_22.50
   - KBHH_MAP
@@ -870,6 +870,7 @@ changelog:
       - Spooky Hallow, Ritual of the Night, See-Saw and ??? have been added.
     changed:
       - Clearly state in the description that it is Enne-san Board 55.
+      - Changed the map music for Board State 20 (Yoshi -Normal-)
   - version: 5
     changed:
       - Partially modified the structure of Board State 5(Enne-san Board 17 * Enne-san Board 42) and the effects of Event Square
