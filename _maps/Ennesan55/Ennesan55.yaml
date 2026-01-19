@@ -1,7 +1,7 @@
 name:
   en: Custom Board Medley
 desc:
-  en: No vacant plots should be. This will be an extremely long match. We'll be playing a medley of various boards, primarily those included in CSWT.
+  en: No vacant plots should be. Enne-san Board 55. This will be an extremely long match. We'll be playing a medley of various boards, primarily those included in CSWT.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3600
@@ -24,6 +24,7 @@ frbFiles:
 - E55_12
 - E55_13
 - E55_14
+- E55_V6_1
 - E55_15
 - E55_16
 - E55_17
@@ -37,13 +38,19 @@ frbFiles:
 - E55_25
 - E55_26
 - E55_27
+- E55_V6_4
+- E55_V6_4
+- E55_V6_4
+- E55_V6_4
 - E55_28
 - E55_29
 - E55_30
+- E55_V6_2
 - E55_31
 - E55_32
 - E55_33
 - E55_34
+- E55_V6_3
 - E55_35
 - E55_36
 - E55_37
@@ -95,6 +102,7 @@ music:
   - Ennesan55_Map_12.50
   - psoJungle_map_lushLoad.50
   - n64Skyscraper_map_background.65
+  - spookyhallowMAP02
   - MiraMedley.40
   - Ennesan55_Map_16.45
   - BirthofthePeople_Orchestra
@@ -108,13 +116,19 @@ music:
   - CaptainSquare_remake.130
   - castletown.70
   - Ennesan55_Map_28.55
+  - Ennesan55_Map_V6_4.50
+  - Ennesan55_Map_V6_4.50
+  - Ennesan55_Map_V6_4.50
+  - Ennesan55_Map_V6_4.50
   - starcarnival_MAP
   - maintheme
   - Ennesan55_Map_31.55
+  - GearsOfFortune.60
   - demol1sh.70
   - Ennesan55_Map_33.55
   - splattack.50
   - Ennesan55_Map_35.55
+  - KarateMan.50
   - fangs-theme.69
   - superbowserstrackway_MAP
   - Ennesan55_Map_38.50
@@ -147,6 +161,7 @@ music:
   - Stock_Ennesan45.50
   - psoJungle_stocks_junglePremiumArrange.50
   - n64Skyscraper_map_stock.65
+  - spookyhallowSTOCK
   - bladehome.50
   - Stock_Ennesan45.50
   - NorthWall
@@ -160,13 +175,19 @@ music:
   - hoshikuzunocaptain_remake.130
   - overpricedshop.50
   - Stock_Ennesan45.50
+  - Stock_Ennesan45.50
+  - Stock_Ennesan45.50
+  - Stock_Ennesan45.50
+  - Stock_Ennesan45.50
   - starcarnival_STOCK
   - professorstock
   - Stock_Ennesan45.50
+  - VestigesOfCorruption.50
   - rout1nes.70
   - Stock_Ennesan45.50
   - SplatoonLobby.50
   - Stock_Ennesan45.50
+  - Wrestler.50
   - sazhtheme.50
   - superbowserstrackway_STOCKS
   - Stock_Ennesan45.50
@@ -199,6 +220,7 @@ music:
   - Venture_Ennesan53.65
   - psoJungle_ventureCards_roboticPhotosynthesis.50
   - n64Skyscraper_map_chance.65
+  - spookyhallowVEN
   - briefing.50
   - Venture_Ennesan50.55
   - Offering_Orchestra
@@ -212,13 +234,19 @@ music:
   - hoshikuzunocaptain_remake.130
   - fyerscannon.60
   - Venture_Ennesan45.50
+  - Venture_Ennesan45.50
+  - Venture_Ennesan45.50
+  - Venture_Ennesan45.50
+  - Venture_Ennesan45.50
   - starcarnival_VEN
   - shyguyventure.100
   - Venture_Ennesan45.50
+  - ForgottenJade.50
   - j1tters.60
   - Venture_Ennesan45.50
   - HighColorEvolution.50
   - Venture_Ennesan45.50
+  - Practice.75
   - pulse-de-chocobo.50
   - superbowserstrackway_VENTURE
   - Venture_Ennesan45.50
@@ -251,6 +279,7 @@ music:
   - Auction_grid.55
   - psoJungle_auction_junglePremiumArrange.50
   - n64Skyscraper_map_auction.65
+  - spookyhallowAUCTION
   - wirfliegen.60
   - Auction_grid.55
   - Bloodpool_SymphonicSuite
@@ -264,13 +293,19 @@ music:
   - megalomania_remake.130
   - fishinghit.60
   - Auction_grid.55
+  - Auction_grid.55
+  - Auction_grid.55
+  - Auction_grid.55
+  - Auction_grid.55
   - starcarnival_AUCTION
   - trainingauction
   - Auction_grid.55
+  - RitualoftheNight.50
   - Auction_grid.55
   - Auction_grid.55
   - TentacularCircus.50
   - Auction_grid.55
+  - Greetings.75
   - eidolons.43
   - superbowserstrackway_AUC
   - Auction_grid.55
@@ -303,6 +338,7 @@ music:
   - Targetmet_Ennesan55.55
   - psoJungle_targetMet_IDOLAimmortalFeather.50
   - Targetmet_Ennesan55.55
+  - spookyhallowFINAL
   - raTEoREkiSImeAra1.50
   - Targetmet_Ennesan55.55
   - Filmoa
@@ -316,13 +352,19 @@ music:
   - megalomania_remake.130
   - malomart.60
   - Targetmet_Ennesan55.55
+  - Targetmet_Ennesan55.55
+  - Targetmet_Ennesan55.55
+  - Targetmet_Ennesan55.55
+  - Targetmet_Ennesan55.55
   - starcarnival_FINAL
   - doubledashluigitargetmet
   - Targetmet_Ennesan55.55
+  - SilentHowling.50
   - Ech0_Onslaught.60
   - Targetmet_Ennesan55.55
   - CalamariInkantation.50
   - Targetmet_Ennesan55.55
+  - SeeSaw.50
   - defiers-of-fate.43
   - superbowserstrackway_TARGET
   - Targetmet_Ennesan55.55
@@ -359,6 +401,7 @@ music:
   - takeAbreak_grid.45
   - psoJungle_takeABreak_healing.50
   - takeAbreak_grid.45
+  - PACPARTY_TAB
   - X-Encounter.50
   - takeAbreak_grid.45
   - takeAbreak_grid.45
@@ -372,6 +415,10 @@ music:
   - takeAbreak_grid.45
   - sledgamefailure.60
   - takeAbreak_grid.45
+  - takeAbreak_grid.45
+  - takeAbreak_grid.45
+  - takeAbreak_grid.45
+  - takeAbreak_grid.45
   - starcarnival_BREAK
   - chaunceytakeabreak
   - takeAbreak_grid.45
@@ -379,6 +426,8 @@ music:
   - takeAbreak_grid.45
   - takeAbreak_grid.45
   - takeAbreak_grid.45
+  - takeAbreak_grid.45
+  - TapTrialIntro.50
   - takeAbreak_grid.45
   - takeAbreak_grid.45
   - takeAbreak_grid.45
@@ -411,6 +460,7 @@ music:
   - Promotion_grid.40
   - psoJungle_promotion_questClear.50
   - Promotion_grid.40
+  - PACPARTY_PROMO
   - A_X-Levelup.80
   - Promotion_grid.40
   - LevelUp_Orchestra
@@ -424,13 +474,19 @@ music:
   - lalversus_remake.130
   - heartcontainer.60
   - Promotion_grid.40
+  - Promotion_grid.40
+  - Promotion_grid.40
+  - Promotion_grid.40
+  - Promotion_grid.40
   - starcarnival_PROMO
   - gotkeypromotion
   - Promotion_grid.40
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - SplatoonPromotion.50
   - Promotion_grid.40
+  - Superb.50
   - glorys-fanfare.50
   - Promotion_grid.40
   - Promotion_grid.40
@@ -463,6 +519,7 @@ music:
   - Promotion_grid.40
   - psoJungle_promotion_questClear.50
   - Promotion_grid.40
+  - PACPARTY_PROMO
   - A_X-Levelup.80
   - Promotion_grid.40
   - LevelUp_Orchestra
@@ -476,13 +533,19 @@ music:
   - lalversus_remake.130
   - heartcontainer.60
   - Promotion_grid.40
+  - Promotion_grid.40
+  - Promotion_grid.40
+  - Promotion_grid.40
+  - Promotion_grid.40
   - starcarnival_PROMO
   - gotkeypromotion
   - Promotion_grid.40
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - SplatoonPromotion.50
   - Promotion_grid.40
+  - Superb.50
   - glorys-fanfare.50
   - Promotion_grid.40
   - Promotion_grid.40
@@ -515,6 +578,7 @@ music:
   - Promotion_grid.40
   - psoJungle_promotion_questClear.50
   - Promotion_grid.40
+  - PACPARTY_PROMO
   - A_X-Levelup.80
   - Promotion_grid.40
   - LevelUp_Orchestra
@@ -528,13 +592,19 @@ music:
   - lalversus_remake.130
   - heartcontainer.60
   - Promotion_grid.40
+  - Promotion_grid.40
+  - Promotion_grid.40
+  - Promotion_grid.40
+  - Promotion_grid.40
   - starcarnival_PROMO
   - gotkeypromotion
   - Promotion_grid.40
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - SplatoonPromotion.50
   - Promotion_grid.40
+  - Superb.50
   - glorys-fanfare.50
   - Promotion_grid.40
   - Promotion_grid.40
@@ -567,6 +637,7 @@ music:
   - ME_5BUY_ISDS.60
   - psoJungle_forcedBuyout_idolaImmortalFeather.50
   - ME_5BUY_ISDS.60
+  - ME_5BUY_ISDS.60
   - X-buyout.50
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
@@ -580,13 +651,19 @@ music:
   - ME_5BUY_ISDS.60
   - discchannelpreview.60
   - ME_5BUY_ISDS.60
+  - ME_5BUY_ISDS.60
+  - ME_5BUY_ISDS.60
+  - ME_5BUY_ISDS.60
+  - ME_5BUY_ISDS.60
   - starcarnival_BUYOUT
   - warpboobyout
   - ME_5BUY_ISDS.60
+  - GameOver.55
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
+  - RemixIntro.50
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
@@ -619,6 +696,7 @@ music:
   - ME_MONOPOLY_ISDS.60
   - psoJungle_domination_psoEp2Orchestra.70
   - ME_MONOPOLY_ISDS.60
+  - spookyhallowDOMINATION
   - A_X-Levelup.80
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
@@ -632,6 +710,10 @@ music:
   - ME_MONOPOLY_ISDS.60
   - itemget.60
   - ME_MONOPOLY_ISDS.60
+  - ME_MONOPOLY_ISDS.60
+  - ME_MONOPOLY_ISDS.60
+  - ME_MONOPOLY_ISDS.60
+  - ME_MONOPOLY_ISDS.60
   - starcarnival_DOMINATION
   - roomcleareddomination
   - ME_MONOPOLY_ISDS.60
@@ -639,6 +721,8 @@ music:
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
+  - ME_MONOPOLY_ISDS.60
+  - SeeSawIntro.50
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
@@ -671,6 +755,7 @@ music:
   - Bankrupt_grid.40
   - psoJungle_bankruptcy_death.50
   - Bankrupt_grid.40
+  - Bankrupt_grid.40
   - X-bankruptcy.80
   - Bankrupt_grid.40
   - Bankrupt_grid.40
@@ -684,13 +769,19 @@ music:
   - Bankrupt_grid.40
   - GameOver.70
   - Bankrupt_grid.40
+  - Bankrupt_grid.40
+  - Bankrupt_grid.40
+  - Bankrupt_grid.40
+  - Bankrupt_grid.40
   - starcarnival_LOSE
   - goodnightbadcartbankrupcy
   - Bankrupt_grid.40
+  - GameOver.55
   - Bankrupt_grid.40
   - Bankrupt_grid.40
   - SplatoonBankrupt.50
   - Bankrupt_grid.40
+  - TryAgain.50
   - Bankrupt_grid.40
   - Bankrupt_grid.40
   - Bankrupt_grid.40
@@ -723,6 +814,7 @@ music:
   - Arcade_grid.60
   - Arcade_grid.60
   - Arcade_grid.60
+  - A_PACPARTY_MEM
   - A_comical
   - Arcade_grid.60
   - Arcade_grid.60
@@ -736,6 +828,10 @@ music:
   - Arcade_grid.60
   - Arcade_grid.60
   - Arcade_grid.60
+  - Arcade_grid.60
+  - Arcade_grid.60
+  - Arcade_grid.60
+  - Arcade_grid.60
   - A_starcarnival_MEM
   - Arcade_grid.60
   - Arcade_grid.60
@@ -743,6 +839,8 @@ music:
   - Arcade_grid.60
   - Arcade_grid.60
   - Arcade_grid.60
+  - Arcade_grid.60
+  - A_GameSelect.50
   - XanaduFFXIII2
   - A_superbowserstrackway_ARCADE
   - Arcade_grid.60
@@ -767,6 +865,11 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 6
+    added:
+      - Spooky Hallow, Ritual of the Night, See-Saw and ??? have been added.
+    changed:
+      - Clearly state in the description that it is Enne-san Board 55.
   - version: 5
     changed:
       - Partially modified the structure of Board State 5(Enne-san Board 17 * Enne-san Board 42) and the effects of Event Square
@@ -1044,6 +1147,7 @@ notes: |
   - Enne-san Board 22
   - Gal Da Val Island (Board State 1 and 2), King of the Hill (Board State 1) -Normal-
   - High-Rise
+  - Spooly Hallow (Board State 1)
   - Planet Mira -Normal-
   - Enne-san Board 15
   - Fillmore
@@ -1057,13 +1161,16 @@ notes: |
   - Cogito Ergo Sum
   - Castle Town
   - Suits Map (Board State 1)
+  - ???
   - Star Carnival -Hard-
   - Luigi's Mansion (Board State 4)
   - Enne-san Board 29
+  - Ritual of the Night
   - Quadrants (Board State 1)
   - Yevon * Enne-san Board 33
   - Squid
   - Enne-san Board 20 (Board State 10)
+  - See-Saw (Board State 2 and 1)
   - The Palamecia
   - Super Bowser's Trackway
   - Enne-san Board 12 (Board State 1)
