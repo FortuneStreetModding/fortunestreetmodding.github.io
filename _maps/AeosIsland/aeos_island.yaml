@@ -2,17 +2,17 @@ name:
   en: Aeos Island
 desc:
   en: Prepare to UNITE! Fierce battles are a daily event in this arena.
-ruleSet: Standard # OR Easy
-theme: Mario # OR DragonQuest
+ruleSet: Standard
+theme: Mario
 initialCash: 2250
 targetAmount: 25000
 baseSalary: 400
 salaryIncrement: 200
-maxDiceRoll: 6 # should be between 4 and 9. A 9 is only working fine in boards without doors. With 7 or 8 make sure that players cannot go through multiple doors in a single dice roll.
+maxDiceRoll: 6
 frbFiles:
   - aeos_island
-background: bg107 # take a look at https://fortunestreetmodding.github.io/backgrounds for available backgrounds
-mapIcon: p_aeos_island # you can add your own map icon. It needs to be in the same directory and be a png file. Dimensions need to be 79x78.
+background: bg107
+mapIcon: p_aeos_island
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
@@ -39,7 +39,7 @@ districtNames:
     - Top Jungle R
     - Bot Jungle R
     - Goal Zone B
-ventureCards: #VENTURE CARD IN WHICH 1 APPEARS NEXT TO -, 0 DOES NOT APPEAR. WHEN CHANGING THE VENTURE CARD THAT APPEARS, THE NUMBER OF 1S SHOULD BE 64
+ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
   - 1  #   3 Venture through space! Zoom over to any non-venture, non-suit square you like!
