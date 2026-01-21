@@ -16,7 +16,9 @@ backgrounds: backgrounds.yml
     Mindgames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Mindgames.zip
-    placeholder.zip:
+    AeosIsland.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/AeosIsland.zip
   1:
     placeholder.zip:
     placeholder.zip:
