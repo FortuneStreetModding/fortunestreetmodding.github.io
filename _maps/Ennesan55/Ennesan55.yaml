@@ -865,7 +865,8 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
-  - changed:
+  - version: 7
+    changed:
       - Changed Enne-san Board 52 -Lunatic- door position and event square effect
   - version: 6
     added:
