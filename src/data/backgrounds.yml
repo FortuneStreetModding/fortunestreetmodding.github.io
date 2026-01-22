@@ -1292,3 +1292,8 @@
   download:
   - https://nikkums.io/cswt/Backgrounds/lumaslanding.background.zip
   mapIcon: lumas
+- background: spacestorm
+  name: spacestorm
+  download:
+  - https://nikkums.io/cswt/Backgrounds/spacestorm.background.zip
+  mapIcon: SSGicon
