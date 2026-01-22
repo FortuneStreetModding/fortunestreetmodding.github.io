@@ -865,6 +865,8 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - changed:
+      - Changed Enne-san Board 52 -Lunatic- door position and event square effect
   - version: 6
     added:
       - Spooky Hallow, Ritual of the Night, See-Saw and ??? have been added.
