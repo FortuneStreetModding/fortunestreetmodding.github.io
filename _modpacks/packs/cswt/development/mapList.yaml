@@ -1,9 +1,6 @@
 backgrounds: backgrounds.yml
 0:
   0:
-    arrowhead.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/arrowhead.zip
     ToadetteBikeRally.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadetteBikeRally.zip
@@ -19,8 +16,13 @@ backgrounds: backgrounds.yml
     AeosIsland.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AeosIsland.zip
+    spacestormgalaxy.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/spacestormgalaxy.zip
   1:
-    placeholder.zip:
+    arrowhead.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/arrowhead.zip
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
