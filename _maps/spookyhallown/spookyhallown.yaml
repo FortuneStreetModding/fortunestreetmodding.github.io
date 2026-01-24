@@ -25,9 +25,6 @@ frbFiles:
 background: bg102fixed
 mapIcon: spookyhallow
 music:
-  download:
-  - https://nikkums.io/cswt/BGM/spookyhallow.music.zip
-  - https://drive.google.com/uc?export=download&id=1fvNDqYEZw8FvHkIEI0YrEFvO_gzDjsfA
   map: 
   - spookyhallowMAP
   - spookyhallowMAP01
