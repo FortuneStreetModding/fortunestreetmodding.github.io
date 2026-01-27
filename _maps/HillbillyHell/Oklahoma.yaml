@@ -14,7 +14,9 @@ frbFiles:
 background: bg002
 mapIcon: HBHIcon
 music:
-  download: https://drive.google.com/file/d/1L4cuDl-S1KA_8_U7UMKWvs9DS0wTqa5l/view?usp=sharing&confirm=1
+  download: 
+    - https://nikkums.io/cswt/BGM/HillbillyHell.music.zip
+    - https://drive.google.com/uc?export=download&id=1ZaI1UOZjzZOziR3ewArgvwSuLAiMAud8&confirm=1
   roundTheBlocks777: HBH777.100
   auction: HBHAuction.150
   badVentureCard: HBHBadVenture.150
@@ -23,7 +25,7 @@ music:
   guestLeave: HBHGuestLeave.150
   map: HBHMap.80
   memoryBlock: HBHMemoryBlock.150
-  roundTheBlocks: HBHroundTheBlocks.80
+  roundTheBlocks: A_HBHroundTheBlocks.80
   roundTheBlocksWin: HBHrtbWin.150
   stock: HBHStock.200
   targetMet: HBHTarget.150
@@ -44,119 +46,18 @@ authors:
     url: https://www.youtube.com/@SDS4800
 districtNames:
   en:
-    - Ottawa County
-    - Grant County
-    - Texas County
-    - Cimarron County
-    - Ellis County
-    - Commanche County
-    - Choctaw County
-    - Sequoyah County
-    - Cleveland County
-    - Oklahoma County
-    - Caddo County
-    - McCurtain County
-shopNames:
-    1: <未設定>10G
-    2: <未設定>20G
-    3: <未設定>30G
-    4: <未設定>40G
-    5: scrap-paper shop
-    6: wool shop
-    7: bottle store
-    8: secondhand book shop
-    9: scrap-metal supplier
-    10: stationery shop
-    11: general store
-    12: florist's
-    13: ice-cream shop
-    14: comic-book shop
-    15: dairy
-    16: doughnut shop
-    17: pizza shack
-    18: bakery
-    19: grocery store
-    20: pharmacy
-    21: fish market
-    22: toy shop
-    23: bookshop
-    24: cosmetics boutique
-    25: T-shirt shop
-    26: fruit stall
-    27: photography studio
-    28: coffee shop
-    29: butcher shop
-    30: restaurant
-    31: barbershop
-    32: hat boutique
-    33: hardware store
-    34: gift shop
-    35: launderette
-    36: shoe shop
-    37: clothing store
-    38: optician's
-    39: clockmaker's
-    40: furniture shop
-    41: sports shop
-    42: locksmith's
-    43: glassmaker's
-    44: sushi restaurant
-    45: art gallery
-    46: leatherware boutique
-    47: pet shop
-    48: nail salon
-    49: spice shop
-    50: music shop
-    51: surf shop
-    52: boating shop
-    53: cartographer's
-    54: alloy rims shop
-    55: fashion boutique
-    56: waxworks
-    57: lens shop
-    58: kaleidoscope shop
-    59: crystal ball shop
-    60: <未設定>600G
-    61: gemstone supplier
-    62: taxidermy studio
-    63: <未設定>630G
-    64: <未設定>640G
-    65: antiques dealer's
-    66: <未設定>660G
-    67: <未設定>670G
-    68: goldsmith's
-    69: <未設定>690G
-    70: fossil shop
-    71: <未設定>710G
-    72: music-box shop
-    73: <未設定>730G
-    74: <未設定>740G
-    75: marionette workshop
-    76: health shop
-    77: <未設定>770G
-    78: <未設定>780G
-    79: <未設定>790G
-    80: organic food shop
-    81: bridal boutique
-    82: <未設定>820G
-    83: <未設定>830G
-    84: <未設定>840G
-    85: autograph shop
-    86: <未設定>860G
-    87: <未設定>870G
-    88: <未設定>880G
-    89: <未設定>890G
-    90: meteorite shop
-    91: <未設定>910G
-    92: <未設定>920G
-    93: <未設定>930G
-    94: <未設定>940G
-    95: <未設定>950G
-    96: <未設定>960G
-    97: <未設定>970G
-    98: department store
-    99: SYSTEM_MSG_NAME_shop_name_990g
-    100: SYSTEM_MSG_NAME_shop_name_1000g
+    - Ottawa
+    - Grant
+    - Texas
+    - Cimarron
+    - Ellis
+    - Commanche
+    - Choctaw
+    - Sequoyah
+    - Cleveland
+    - Oklahoma
+    - Caddo
+    - McCurtain
 ventureCards: 
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go.
   - 1  #   2 Venture on! Roll the die again and move forward.
