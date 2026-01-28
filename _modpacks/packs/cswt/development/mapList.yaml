@@ -16,13 +16,10 @@ backgrounds: backgrounds.yml
     spacestormgalaxy.zip:
       urls:
       - https://nikkums.io/cswt/Maps/spacestormgalaxy.zip
-    HillbillyHell.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/HillbillyHell.zip
-  1:
     ToadetteBikeRally.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadetteBikeRally.zip
+  1:
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
