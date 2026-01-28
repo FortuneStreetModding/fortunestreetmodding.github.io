@@ -185,6 +185,9 @@ backgrounds: backgrounds.yml
     HighRise.zip:
       urls:
       - https://nikkums.io/cswt/Maps/HighRise.zip
+    HillbillyHell.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/HillbillyHell.zip
     InsideOut.zip:
       urls:
       - https://nikkums.io/cswt/Maps/InsideOut.zip
