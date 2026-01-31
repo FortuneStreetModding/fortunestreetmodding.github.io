@@ -5,11 +5,12 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3600
-targetAmount: 45000
+targetAmount: 55000
 baseSalary: 400
-salaryIncrement: 125
+salaryIncrement: 175
 maxDiceRoll: 6
 frbFiles:
+- E55_V8_1
 - E55_1
 - E55_2
 - E55_3
@@ -22,25 +23,29 @@ frbFiles:
 - E55_10
 - E55_11
 - E55_12
+- E55_V8_2
 - E55_13
 - E55_14
+- E55_V8_3
 - E55_V6_1
 - E55_15
 - E55_16
 - E55_17
 - E55_18
+- E55_V8_4
 - E55_19
 - E55_20
 - E55_21
 - E55_22
+- E55_V8_5
 - E55_23
 - E55_24
+- E55_V8_6
+- E55_V8_7
 - E55_25
+- E55_V8_8
 - E55_26
 - E55_27
-- E55_V6_4
-- E55_V6_4
-- E55_V6_4
 - E55_V6_4
 - E55_28
 - E55_29
@@ -63,7 +68,9 @@ frbFiles:
 - E55_44
 - E55_45
 - E55_46
+- E55_V8_9
 - E55_47
+- E55_V8_10
 - E55_48
 - E55_49
 - E55_50
@@ -88,6 +95,7 @@ music:
     - https://nikkums.io/cswt/BGM/Ennesan55.music.zip
     - https://drive.google.com/uc?export=download&id=1ctu70CIWtVlLIlCLzpcZFlzlsisZOdxB&confirm=1
   map:
+  - Ennesan50_Map_3.50
   - Ennesan55_Map_1.55
   - AegisMedley
   - Ennesan54_Map_3.55
@@ -100,25 +108,29 @@ music:
   - starcarnival_MAPALT
   - galaxy28.70
   - Ennesan55_Map_12.50
+  - mabinogi-dungeon
   - psoJungle_map_lushLoad.50
   - n64Skyscraper_map_background.65
+  - Ennesan55_Map_V8_3.55
   - spookyhallowMAP
   - MiraMedley.40
   - Ennesan55_Map_16.45
   - BirthofthePeople_Orchestra
   - slimeguyspaydayexpressMAP.50
+  - Ennesan56_Map.48
   - Ennesan55_Map_19.60
   - SkyloftMain.80
   - Ennesan55_Map_22.50
   - KBHH_MAP
+  - mh3o3_js_MAP01
   - yoshicloud_MAP.50
   - Ennesan55_Map_25.50
-  - CaptainSquare_remake.130
+  - ShibuyaMedley.40
+  - koopa_tycoon.50
   - castletown.70
   - Ennesan55_Map_28.55
-  - Ennesan55_Map_V6_4.50
-  - Ennesan55_Map_V6_4.50
-  - Ennesan55_Map_V6_4.50
+  - mpss_ppbc_MAP16
+  - CaptainSquare_remake.130
   - Ennesan55_Map_V6_4.50
   - starcarnival_MAP
   - maintheme
@@ -141,71 +153,81 @@ music:
   - CNMap.60
   - NoGameNoLifeMedley.40
   - Ennesan55_Map_46.55
+  - WiiUeShopApr2014.70
   - starcarnival_MAPALT
+  - Ennesan55_Map_12.50
   - NLAMedley.43
   - Ennesan55_Map_49.50
   - mk7moon.40
   - Ennesan55_Map_51.55
   stock:
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_1.50
+  - Ennesan55_Stock_1.50
   - voyagetotomorrow.55
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_1.50
   - mkwii_STOCK
-  - Stock_Ennesan45.50
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_1.50
+  - Ennesan55_Stock_1.50
   - PXYPokecenter
   - facingWorlds_stock_killWillyforegone.80
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_1.50
   - starcarnival_STOCK
   - galaxyinter.50
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_1.50
+  - Ennesan55_Stock_1.50
   - psoJungle_stocks_junglePremiumArrange.50
   - n64Skyscraper_map_stock.65
+  - Ennesan55_Stock_15.55
   - spookyhallowSTOCK
   - bladehome.50
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_15.55
   - NorthWall
   - clocktower_SMO_STOCK
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_15.55
+  - Ennesan55_Stock_15.55
   - SkyloftStock.80
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_15.55
   - starcarnival_STOCK
+  - mp9_js_STOCK
   - BeanstalkStock.50
-  - Stock_Ennesan45.50
-  - hoshikuzunocaptain_remake.130
+  - Ennesan55_Stock_15.55
+  - ntwewymenu
+  - starcarnival_STOCK
   - overpricedshop.50
-  - Stock_Ennesan45.50
-  - Stock_Ennesan45.50
-  - Stock_Ennesan45.50
-  - Stock_Ennesan45.50
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_34.55
+  - Ennesan55_Stock_34.55
+  - hoshikuzunocaptain_remake.130
+  - Ennesan55_Stock_34.55
   - starcarnival_STOCK
   - professorstock
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_34.55
   - VestigesOfCorruption.50
   - rout1nes.70
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_34.55
   - SplatoonLobby.50
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_34.55
   - Wrestler.50
   - sazhtheme.50
   - superbowserstrackway_STOCKS
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_34.55
   - pmcs_hg_STOCK
   - ntwewymenu
   - lighthouse_STOCK
   - psoJungle_stocks_junglePremiumArrange.50
   - bladehome.50
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_52.55
   - CNStock.70
   - CriminalConnection.40
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_52.55
+  - WiiUeShopJan2014.75
   - starcarnival_STOCK
+  - Ennesan55_Stock_52.55
   - bladehome.50
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_52.55
   - wifimedley
-  - Stock_Ennesan45.50
+  - Ennesan55_Stock_52.55
   ventureCards:
+  - Venture_Ennesan51.65
   - Venture_Ennesan53.65
   - doldrums.85
   - Venture_Ennesan53.65
@@ -218,25 +240,29 @@ music:
   - starcarnival_VEN
   - fileselect.80
   - Venture_Ennesan53.65
+  - Venture_Ennesan53.65
   - psoJungle_ventureCards_roboticPhotosynthesis.50
   - n64Skyscraper_map_chance.65
+  - Venture_Ennesan50.55
   - spookyhallowVEN
   - briefing.50
   - Venture_Ennesan50.55
   - Offering_Orchestra
   - clocktower_AHIT_VENT
   - Venture_Ennesan50.55
+  - Venture_Ennesan50.55
   - SkyloftVenture.90
   - Venture_Ennesan50.55
   - starcarnival_VEN
+  - nsmbwii_js_VENT
   - yoshicloud_VENT.50
   - Venture_Ennesan50.55
-  - hoshikuzunocaptain_remake.130
+  - ntwewyshop
+  - starcarnival_VEN
   - fyerscannon.60
   - Venture_Ennesan45.50
   - Venture_Ennesan45.50
-  - Venture_Ennesan45.50
-  - Venture_Ennesan45.50
+  - hoshikuzunocaptain_remake.130
   - Venture_Ennesan45.50
   - starcarnival_VEN
   - shyguyventure.100
@@ -255,16 +281,19 @@ music:
   - lighthouse_VENTURE.95
   - psoJungle_ventureCards_roboticPhotosynthesis.50
   - briefing.50
-  - Venture_Ennesan53.65
+  - Venture_Ennesan55_52.55
   - CNCard.60
   - Choisies.40
-  - Venture_Ennesan53.65
+  - Venture_Ennesan55_52.55
+  - WiiUeShopJan2015.75
   - starcarnival_VEN
+  - Venture_Ennesan55_52.55
   - briefing.50
-  - Venture_Ennesan53.65
+  - Venture_Ennesan55_52.55
   - chainchomp
-  - Venture_Ennesan53.65
+  - Venture_Ennesan55_52.55
   auction: 
+  - Auction_grid.55
   - Auction_grid.55
   - ARHighAlert
   - Auction_grid.55
@@ -277,25 +306,29 @@ music:
   - starcarnival_AUCTION
   - Auction_grid.55
   - Auction_grid.55
+  - Auction_grid.55
   - psoJungle_auction_junglePremiumArrange.50
   - n64Skyscraper_map_auction.65
+  - Auction_grid.55
   - spookyhallowAUCTION
   - wirfliegen.60
   - Auction_grid.55
   - Bloodpool_SymphonicSuite
   - clocktower_GSTD_AUCT
   - Auction_grid.55
+  - Auction_grid.55
   - SkyloftAuction.80
   - Auction_grid.55
   - starcarnival_AUCTION
+  - starcarnival_AUCTION
   - yoshicloud_AUC.50
   - Auction_grid.55
-  - megalomania_remake.130
+  - lastcall
+  - starcarnival_AUCTION
   - fishinghit.60
   - Auction_grid.55
   - Auction_grid.55
-  - Auction_grid.55
-  - Auction_grid.55
+  - megalomania_remake.130
   - Auction_grid.55
   - starcarnival_AUCTION
   - trainingauction
@@ -318,12 +351,15 @@ music:
   - CNAuction.70
   - IGetYouBack.40
   - Auction_grid.55
+  - WiiUeShopMay2019.85
   - starcarnival_AUCTION
+  - Auction_grid.55
   - wirfliegen.60
   - Auction_grid.55
   - mk7coconutmall
   - Auction_grid.55
   targetMet:
+  - Targetmet_Ennesan55.55
   - Targetmet_Ennesan55.55
   - deoxyribose
   - Targetmet_Ennesan55.55
@@ -336,7 +372,9 @@ music:
   - starcarnival_FINAL
   - boss10.65
   - Targetmet_Ennesan55.55
+  - claimh-solas
   - psoJungle_targetMet_IDOLAimmortalFeather.50
+  - Targetmet_Ennesan55.55
   - Targetmet_Ennesan55.55
   - spookyhallowFINAL
   - raTEoREkiSImeAra1.50
@@ -344,17 +382,19 @@ music:
   - Filmoa
   - clocktower_MH2_TARGET
   - Targetmet_Ennesan55.55
+  - Targetmet_Ennesan55.55
   - SkyloftTarget.80
   - Targetmet_Ennesan55.55
   - starcarnival_FINAL
+  - msm_js_TARGET
   - yoshicloud_TARGET.50
   - Targetmet_Ennesan55.55
-  - megalomania_remake.130
+  - Twister.40
+  - starcarnival_FINAL
   - malomart.60
   - Targetmet_Ennesan55.55
   - Targetmet_Ennesan55.55
-  - Targetmet_Ennesan55.55
-  - Targetmet_Ennesan55.55
+  - megalomania_remake.130
   - Targetmet_Ennesan55.55
   - starcarnival_FINAL
   - doubledashluigitargetmet
@@ -377,7 +417,9 @@ music:
   - CNTarget.60
   - NoGameNoLife.40
   - Targetmet_Ennesan55.55
+  - WiiUeShopSept2015.75
   - starcarnival_FINAL
+  - Targetmet_Ennesan55.55
   - thekeywevelost.50
   - Targetmet_Ennesan55.55
   - mkdbrainbow
@@ -393,13 +435,16 @@ music:
   - takeAbreak_grid.45
   - takeAbreak_grid.45
   - takeAbreak_grid.45
+  - takeAbreak_grid.45
   - PXYPokeFlute
   - facingWorlds_takeABreak.80
   - takeAbreak_grid.45
   - starcarnival_BREAK
   - takeAbreak_grid.45
   - takeAbreak_grid.45
+  - takeAbreak_grid.45
   - psoJungle_takeABreak_healing.50
+  - takeAbreak_grid.45
   - takeAbreak_grid.45
   - PACPARTY_TAB
   - X-Encounter.50
@@ -407,14 +452,16 @@ music:
   - takeAbreak_grid.45
   - clocktower_DENSHA_BREAK
   - takeAbreak_grid.45
+  - takeAbreak_grid.45
   - SkyloftBreak.80
   - takeAbreak_grid.45
+  - starcarnival_BREAK
   - starcarnival_BREAK
   - takeAbreak_grid.45
   - takeAbreak_grid.45
   - takeAbreak_grid.45
+  - starcarnival_BREAK
   - sledgamefailure.60
-  - takeAbreak_grid.45
   - takeAbreak_grid.45
   - takeAbreak_grid.45
   - takeAbreak_grid.45
@@ -440,13 +487,16 @@ music:
   - takeAbreak_grid.45
   - takeAbreak_grid.45
   - takeAbreak_grid.45
+  - WiiUChatDisconnecting.75
   - starcarnival_BREAK
+  - takeAbreak_grid.45
   - X-Encounter.50
   - takeAbreak_grid.45
   - mkdsfail
   - takeAbreak_grid.45
   promotionMii: 
   - Promotion_grid.40
+  - Promotion_grid.40
   - ARPromotion
   - Promotion_grid.40
   - mk8_PROMO
@@ -458,7 +508,9 @@ music:
   - starcarnival_PROMO
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - psoJungle_promotion_questClear.50
+  - Promotion_grid.40
   - Promotion_grid.40
   - PACPARTY_PROMO
   - A_X-Levelup.80
@@ -466,17 +518,19 @@ music:
   - LevelUp_Orchestra
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - SkyloftPromotion.80
   - Promotion_grid.40
   - starcarnival_PROMO
+  - starcarnival_PROMO
   - Promotion_grid.40
   - Promotion_grid.40
-  - lalversus_remake.130
+  - twewyjingle
+  - starcarnival_PROMO
   - heartcontainer.60
   - Promotion_grid.40
   - Promotion_grid.40
-  - Promotion_grid.40
-  - Promotion_grid.40
+  - lalversus_remake.130
   - Promotion_grid.40
   - starcarnival_PROMO
   - gotkeypromotion
@@ -499,13 +553,16 @@ music:
   - CNPromotion.60
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - starcarnival_PROMO
+  - Promotion_grid.40
   - A_X-Levelup.80
   - Promotion_grid.40
   - mkdstop5
   - Promotion_grid.40
   promotionMario:
   - Promotion_grid.40
+  - Promotion_grid.40
   - ARPromotion
   - Promotion_grid.40
   - mk8_PROMO
@@ -517,7 +574,9 @@ music:
   - starcarnival_PROMO
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - psoJungle_promotion_questClear.50
+  - Promotion_grid.40
   - Promotion_grid.40
   - PACPARTY_PROMO
   - A_X-Levelup.80
@@ -525,17 +584,19 @@ music:
   - LevelUp_Orchestra
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - SkyloftPromotion.80
   - Promotion_grid.40
   - starcarnival_PROMO
+  - starcarnival_PROMO
   - Promotion_grid.40
   - Promotion_grid.40
-  - lalversus_remake.130
+  - twewyjingle
+  - starcarnival_PROMO
   - heartcontainer.60
   - Promotion_grid.40
   - Promotion_grid.40
-  - Promotion_grid.40
-  - Promotion_grid.40
+  - lalversus_remake.130
   - Promotion_grid.40
   - starcarnival_PROMO
   - gotkeypromotion
@@ -558,13 +619,16 @@ music:
   - CNPromotion.60
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - starcarnival_PROMO
+  - Promotion_grid.40
   - A_X-Levelup.80
   - Promotion_grid.40
   - mkdstop5
   - Promotion_grid.40
   promotionDragonQuest:
   - Promotion_grid.40
+  - Promotion_grid.40
   - ARPromotion
   - Promotion_grid.40
   - mk8_PROMO
@@ -576,7 +640,9 @@ music:
   - starcarnival_PROMO
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - psoJungle_promotion_questClear.50
+  - Promotion_grid.40
   - Promotion_grid.40
   - PACPARTY_PROMO
   - A_X-Levelup.80
@@ -584,17 +650,19 @@ music:
   - LevelUp_Orchestra
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - SkyloftPromotion.80
   - Promotion_grid.40
   - starcarnival_PROMO
+  - starcarnival_PROMO
   - Promotion_grid.40
   - Promotion_grid.40
-  - lalversus_remake.130
+  - twewyjingle
+  - starcarnival_PROMO
   - heartcontainer.60
   - Promotion_grid.40
   - Promotion_grid.40
-  - Promotion_grid.40
-  - Promotion_grid.40
+  - lalversus_remake.130
   - Promotion_grid.40
   - starcarnival_PROMO
   - gotkeypromotion
@@ -617,12 +685,15 @@ music:
   - CNPromotion.60
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - starcarnival_PROMO
+  - Promotion_grid.40
   - A_X-Levelup.80
   - Promotion_grid.40
   - mkdstop5
   - Promotion_grid.40
   forcedBuyout:
+  - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
@@ -635,7 +706,9 @@ music:
   - starcarnival_BUYOUT
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
+  - ME_5BUY_ISDS.60
   - psoJungle_forcedBuyout_idolaImmortalFeather.50
+  - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - X-buyout.50
@@ -643,14 +716,16 @@ music:
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
+  - ME_5BUY_ISDS.60
   - SkyloftBuyout.80
   - ME_5BUY_ISDS.60
   - starcarnival_BUYOUT
+  - smbw_js_BUYOUT
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
+  - starcarnival_BUYOUT
   - discchannelpreview.60
-  - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
@@ -676,12 +751,15 @@ music:
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
+  - ME_5BUY_ISDS.60
   - starcarnival_BUYOUT
+  - ME_5BUY_ISDS.60
   - X-buyout.50
   - ME_5BUY_ISDS.60
   - mkwiibossintro
   - ME_5BUY_ISDS.60
   domination: 
+  - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
@@ -694,7 +772,9 @@ music:
   - starcarnival_DOMINATION
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
+  - ME_MONOPOLY_ISDS.60
   - psoJungle_domination_psoEp2Orchestra.70
+  - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - spookyhallowDOMINATION
   - A_X-Levelup.80
@@ -702,14 +782,16 @@ music:
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
+  - ME_MONOPOLY_ISDS.60
   - SkyloftDomination.80
   - ME_MONOPOLY_ISDS.60
   - starcarnival_DOMINATION
+  - ssb_js_DOM
   - yoshicloud_DOM
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
+  - starcarnival_DOMINATION
   - itemget.60
-  - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
@@ -735,7 +817,9 @@ music:
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
+  - WiiUMiiverseJingle.75
   - starcarnival_DOMINATION
+  - ME_MONOPOLY_ISDS.60
   - A_X-Levelup.80
   - ME_MONOPOLY_ISDS.60
   - mkdsbosssucces
@@ -750,10 +834,13 @@ music:
   - Bankrupt_grid.40
   - Bankrupt_grid.40
   - Bankrupt_grid.40
+  - Bankrupt_grid.40
   - starcarnival_LOSE
   - Bankrupt_grid.40
   - Bankrupt_grid.40
+  - Bankrupt_grid.40
   - psoJungle_bankruptcy_death.50
+  - Bankrupt_grid.40
   - Bankrupt_grid.40
   - Bankrupt_grid.40
   - X-bankruptcy.80
@@ -761,14 +848,16 @@ music:
   - Bankrupt_grid.40
   - Bankrupt_grid.40
   - Bankrupt_grid.40
+  - Bankrupt_grid.40
   - SkyloftBankrupt.80
   - Bankrupt_grid.40
   - starcarnival_LOSE
+  - starcarnival_LOSE
   - Bankrupt_grid.40
   - Bankrupt_grid.40
-  - Bankrupt_grid.40
+  - forsaken
+  - starcarnival_LOSE
   - GameOver.70
-  - Bankrupt_grid.40
   - Bankrupt_grid.40
   - Bankrupt_grid.40
   - Bankrupt_grid.40
@@ -794,12 +883,15 @@ music:
   - Bankrupt_grid.40
   - Bankrupt_grid.40
   - Bankrupt_grid.40
+  - Bankrupt_grid.40
   - starcarnival_LOSE
+  - Bankrupt_grid.40
   - X-bankruptcy.80
   - Bankrupt_grid.40
   - mk64lost
   - Bankrupt_grid.40
   memoryBlock:
+  - Arcade_grid.60
   - Arcade_grid.60
   - ARGoodTimes
   - Arcade_grid.60
@@ -814,8 +906,11 @@ music:
   - Arcade_grid.60
   - Arcade_grid.60
   - Arcade_grid.60
+  - Arcade_grid.60
+  - Arcade_grid.60
   - A_PACPARTY_MEM
   - A_comical
+  - Arcade_grid.60
   - Arcade_grid.60
   - Arcade_grid.60
   - Arcade_grid.60
@@ -823,10 +918,11 @@ music:
   - A_SkyloftMemory.80
   - Arcade_grid.60
   - A_starcarnival_MEM
+  - A_starcarnival_MEM
   - A_yoshicloud_MB.50
   - Arcade_grid.60
-  - Arcade_grid.60
-  - Arcade_grid.60
+  - ooparts
+  - A_starcarnival_MEM
   - Arcade_grid.60
   - Arcade_grid.60
   - Arcade_grid.60
@@ -853,7 +949,9 @@ music:
   - Arcade_grid.60
   - A_PerfectNGNL.40
   - Arcade_grid.60
+  - A_Mario3DWorldAthletic.75
   - A_starcarnival_MEM
+  - Arcade_grid.60
   - A_comical
   - Arcade_grid.60
   - Arcade_grid.60
@@ -865,15 +963,31 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 8
+    added:
+      - A preparatory board for strategic readiness (Board State 1)
+      - Dungeon Lobby, Enne-san Board 41
+      - Enne-san Board 52 (Board State 1) -Normal-
+      - Enne-san Board 56
+      - Goodybag Lair * Junior Street (Board State 1)
+      - Shibuya Underground -Normal-
+      - Koopa's Tycoon Town
+      - Enne-san Board 23 (Board State 2)
+      - Wii U
+      - Enne-san Board 22 -Lunatic-
+    changed:
+      - In most board states except for certain exceptions, the rule has been changed so that if you roll a 1, 2, or 4 on the dice after gathering, you can choose whether or not to press the switch.
+      - Quadrants has changed the layout of its event square and some shops.
+      - Modify the path for some boards
+      - Changed the effects of some event squares
+      - Increase target amount from 45,000 to 55,000
+      - Increase salary increment from 125 to 175
   - version: 7
     changed:
       - Changed Enne-san Board 52 -Lunatic- door position and event square effect
   - version: 6
     added:
       - Spooky Hallow, Ritual of the Night, See-Saw and ??? have been added.
-    changed:
-      - Clearly state in the description that it is Enne-san Board 55.
-      - Changed the map music for Board State 20 (Yoshi -Normal-)
   - version: 5
     changed:
       - Partially modified the structure of Board State 5(Enne-san Board 17 * Enne-san Board 42) and the effects of Event Square
@@ -1137,8 +1251,10 @@ notes: |
   Easy, Normal, Hard, and Lunatic represent difficulty levels for the same board existing in multiple states. Easy is the simplest, and Lunatic is the most difficult.
   Board states marked with * combine features from multiple boards into a single board.
   Board states marked with , use doors to divide the board, with two boards constituting one board state.
+  Easy
+  - Enne-san Board 01 (Preparation Phase)
   - Enne-san Board 01
-  - Aegis Rim
+  - Aegis Rim (Board State 2)
   - Enne-san Board 10 -Easy-
   - Funky Stadium
   - Enne-san Board 17 * Enne-san Board 42
@@ -1148,46 +1264,58 @@ notes: |
   - Enne-san Board 39 * Tetris FS
   - Birdo's Big Top
   - Bowser's Galaxy Reactor
-  - Enne-san Board 22
+  - Enne-san Board 22 -Easy-
+  - Dungeon Lobby, Enne-san Board 41
+  Normal (Board State 15~)
   - Gal Da Val Island (Board State 1 and 2), King of the Hill (Board State 1) -Normal-
   - High-Rise
-  - Spooly Hallow (Board State 1)
+  - Enne-san Board 52 (Board State 1) -Normal-
+  - Spooky Hallow (Board State 1)
   - Planet Mira -Normal-
   - Enne-san Board 15
-  - Fillmore
-  - The Clock Tower
+  - Fillmore (Board State 2)
+  - The Clock Tower (Board State 3)
+  - Enne-san Board 56
   - Yoshi -Normal-
   - Goddess Crest
   - Enne-san Board 18, Toads House
   - King Boo's Haunted Hideaway (Board State 10)
+  - Goodybag Lair * Junior Street (Board State 1)
   - Yoshi Cloud * Venn Diagram
   - Enne-san Board 48 * Enne-san Board 49
-  - Cogito Ergo Sum
+  - Shibuya Underground -Normal-
+  - Koopa's Tycoon Town
   - Castle Town
+  Hard (Board State 34~)
+  - Enne-san Board 23 (Board State 2)
   - Suits Map (Board State 1)
+  - Cogito Ergo Sum (Board State 1)
   - ???
   - Star Carnival -Hard-
   - Luigi's Mansion (Board State 4)
   - Enne-san Board 29
   - Ritual of the Night
   - Quadrants (Board State 1)
-  - Yevon * Enne-san Board 33
+  - Yevon (Board State 1) * Enne-san Board 33
   - Squid
   - Enne-san Board 20 (Board State 10)
-  - See-Saw (Board State 2 and 1)
+  - See Saw
   - The Palamecia
   - Super Bowser's Trackway
   - Enne-san Board 12 (Board State 1)
-  - Mirage Oasis * Enne-san Board 06
-  - Shibuya Underground
-  - Return to Lighthouse Island
+  - Mirage Oasis (Board State 3) * Enne-san Board 06
+  - Shibuya Underground -Hard-
+  Lunatic (Board State 52~)
+  - Return to Lighthouse Island (Board State 1 and 3)
   - Gal Da Val Island (Board State 3 and 2), King of the Hill (Board State 2) -Lunatic-
   - Planet Mira -Lunatic-
-  - Enne-san Board 52 -Lunatic-
+  - Enne-san Board 52 (Board State 11) -Lunatic-
   - Colony 9
   - Disboard (Board State 1)
   - Playground, Enne-san Board 30
+  - Wii U
   - Star Carnival -Lunatic-
+  - Enne-san Board 22 -Lunatic-
   - New Los Angeles
   - Yoshi -Lunatic-
   - Rainbow Road MKWii
