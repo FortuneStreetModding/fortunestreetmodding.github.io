@@ -1,6 +1,9 @@
 backgrounds: backgrounds.yml
 0:
   0:
+    BloonCircles.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/BloonCircles.zip
     TheWap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheWap.zip
@@ -16,14 +19,13 @@ backgrounds: backgrounds.yml
     spacestormgalaxy.zip:
       urls:
       - https://nikkums.io/cswt/Maps/spacestormgalaxy.zip
+  1:
     ToadetteBikeRally.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadetteBikeRally.zip
-  1:
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
-    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
