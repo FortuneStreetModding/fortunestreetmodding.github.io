@@ -20,6 +20,9 @@ tourMode:
   opponent3: Waluigi
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - The 4 cannons near the bank have been changed to 2 Venture Squares and 2 Event Square with the effect of 56 Venture Cards.
   - version: 1
     added:
       - Initial Release
