@@ -1,22 +1,22 @@
 name:
   en: Mindgames
 desc:
-  en: A simple design with a high skill ceiling and no warps. Music is from the Danganronpa series
+  en: A map a high skill ceiling and no warps. Music is from the Danganronpa series
 ruleSet: Standard
 theme: Mario
-initialCash: 2222
-targetAmount: 22222
-baseSalary: 444
-salaryIncrement: 222
+initialCash: 2000
+targetAmount: 20000
+baseSalary: 400
+salaryIncrement: 200
 maxDiceRoll: 6
 frbFiles:
 - Mindgames
 background: bg007
 mapIcon: TheWap_Icon
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/Mindgames.music.zip
-    - https://drive.google.com/uc?export=download&id=1eSZF4Z1_gzPJczpXE1QELe5t4BvMCwxf&confirm=1
+    - https://drive.google.com/uc?export=download&id=1hHWkfBTiewE0NXdqDGkKuCw4q5r7dFUB&confirm=1
   map:
   - mapV3ClosingArgument.65
   stock:
@@ -52,6 +52,14 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Significantly change the board layout
+      - Changed the initial funds from 2222 to 2000
+      - Changed the target amount from 22,222 to 20,000
+      - Changed base salary from 444 to 400
+      - Change the salary increment from 222 to 200
+      - Changed Venture Cards 50, 51, 52, 116, 119, 120, and 126 to Venture Cards 29, 39, 80, 82, 94, and 100.
   - version: 1
     added:
       - Initial Release
@@ -86,7 +94,7 @@ ventureCards:
   - 1  #  26 Lucky venture! You get a big commission until your next turn!
   - 1  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
   - 0  #  28 Cameo adventure! A goodybag appears!
-  - 0  #  29 Freebie! Take a Heart!
+  - 1  #  29 Freebie! Take a Heart!
   - 1  #  30 Venture on! All shops charge a 100G flat rate! Now roll the die and move again.
   - 1  #  31 Random venture! Shops expand by 10% in a district picked at random!
   - 0  #  32 Random venture! Shops expand by 20% in a district picked at random!
@@ -96,7 +104,7 @@ ventureCards:
   - 1  #  36 Capital venture! You can pay 100G for the chance to invest in your shops.
   - 0  #  37 Random venture! Shops expand by 30% in a district picked at random!
   - 1  #  38 Stock venture! You can buy stocks in a district of your choice at 10% above the market value.
-  - 0  #  39 Suit venture! Buy a Suit Yourself card for 100G.
+  - 1  #  39 Suit venture! Buy a Suit Yourself card for 100G.
   - 1  #  40 Misadventure! You give away 10% of your ready cash to the player in last place!
   - 1  #  41 Misadventure! Stock prices fall by 10% in a district picked at random!
   - 0  #  42 Misadventure! Stock prices fall by 20% in a district picked at random!
@@ -107,9 +115,9 @@ ventureCards:
   - 0  #  47 Dicey adventure! Roll 2-6 to get all the suits. Roll 1 and lose all your suits.
   - 1  #  48 Misadventure! All shops in a district picked at random fall in value by 10%!
   - 0  #  49 Misadventure! All shops in a district picked at random fall in value by 20%!
-  - 1  #  50 Venture on! Move forward the same number of squares again.
-  - 1  #  51 Venture on! Move forward 1 square more.
-  - 1  #  52 Venture on! Move forward another 2 squares.
+  - 0  #  50 Venture on! Move forward the same number of squares again.
+  - 0  #  51 Venture on! Move forward 1 square more.
+  - 0  #  52 Venture on! Move forward another 2 squares.
   - 0  #  53 Venture through space! Zoom over to the bank!
   - 0  #  54 Venture through space! Pay 100G to zoom straight to the bank!
   - 1  #  55 Venture on! Roll the die again and move forward (with an invitation to browse thrown in!).
@@ -137,27 +145,27 @@ ventureCards:
   - 1  #  77 Freebie! Take five of each district's stocks.
   - 1  #  78 Property venture! You can buy any unowned shop or vacant plot for 200G more than its value.
   - 0  #  79 Forced buyout! You can buy a vacant plot or shop for three times its value, whether someone else owns it or not.
-  - 0  #  80 Freebie! Take a Spade!
+  - 1  #  80 Freebie! Take a Spade!
   - 0  #  81 Misadventure! All other players can only move forward 1 on their next turn.
-  - 0  #  82 Freebie! Take a Club!
+  - 1  #  82 Freebie! Take a Club!
   - 0  #  83 Dicey adventure! Roll 1/3/5 and warp to a random location. Roll 2/4/6 and everyone else warps.
   - 1  #  84 Moneymaking venture! The winning player must pay you 10% of their ready cash!
   - 1  #  85 Moneymaking venture! Roll the die and get 85 times the number shown in gold coins from the bank!
   - 1  #  86 Moneymaking venture! Take 100G from all other players!
   - 0  #  87 Venture on! Roll the special all-7s-and-8s die and move forward again.
   - 0  #  88 Misadventure! All other players swap places!
-  - 0  #  89 Freebie! All players take a Suit Yourself card!
+  - 1  #  89 Freebie! All players take a Suit Yourself card!
   - 1  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
   - 0  #  91 Cameo adventure! A healslime appears!
   - 0  #  92 Cameo adventure! Lakitu appears!
   - 1  #  93 Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%.
-  - 0  #  94 Freebie! Take a Diamond!
+  - 1  #  94 Freebie! Take a Diamond!
   - 0  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
   - 0  #  96 Misadventure! All players scramble to another player's location!
   - 0  #  97 Stock rise venture! Increase stock value by 20% in a district of your choice.
   - 1  #  98 Forced buyout! You can buy a vacant plot or shop for four times its value, whether someone else owns it or not.
   - 0  #  99 Freebie! What's inside...?
-  - 0  # 100 Freebie! Take a Suit Yourself card!
+  - 1  # 100 Freebie! Take a Suit Yourself card!
   - 0  # 101 Special bonus! Your shops all grow by 21%!
   - 0  # 102 Moneymaking venture! Roll the die and get 33 times the number shown in gold coins from all other players!
   - 0  # 103 Misadventure! The values of all your shops drop by 25%!
@@ -173,16 +181,16 @@ ventureCards:
   - 1  # 113 Moneymaking venture! Roll the die and get the number shown x your level x 20G from the bank!
   - 0  # 114 Moneymaking venture! Take your level times 40G from all other players!
   - 0  # 115 Misadventure! All other players can only move forward 7 on their next turn.
-  - 1  # 116 Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
+  - 0  # 116 Moneymaking venture! Roll the die and get 60 times the number shown in gold coins from the player in 1st place!
   - 0  # 117 Adventurous turning point! Everyone gets to choose which way to move on their next go.
   - 1  # 118 Lucky venture! You get a really big commission until your next turn!
-  - 1  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
-  - 1  # 120 Misadventure! You drop your wallet and lose 20% of your ready cash!
+  - 0  # 119 Misadventure! You give 20% of your ready cash to the player in last place!
+  - 0  # 120 Misadventure! You drop your wallet and lose 20% of your ready cash!
   - 0  # 121 Capital venture! You can invest up to 400G of the bank's money in your shops.
   - 0  # 122 Moneymaking venture! The winning player must pay you 20% of their ready cash!
   - 0  # 123 Dicey adventure! Roll 1/3/5 and your shops expand by 20%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 0  # 124 Suit venture! Buy a Suit Yourself card for 50G.
   - 0  # 125 Dicey adventure! Roll 1/3/5 to warp to a boon square. Roll 2/4/6 to warp to the arcade.
-  - 1  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
+  - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 1  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
