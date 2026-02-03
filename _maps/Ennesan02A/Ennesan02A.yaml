@@ -19,19 +19,20 @@ music:
   map: Map_Ennesan2A.45
   stock: Stock_Ennesan.35
   ventureCards: Venture_Ennesan.45
-  auction: Auction_grid.50
+  auction: Auction_grid.55
   targetMet: Targetmet_Ennesan1A.50
   win: Win_Ennesan1.45
   guestAppear:
   guestLeave:
   badVentureCard: ME_CURSE_ISDS.60
-  takeAbreak:  ME_HOLIDAY_ISDS.60
-  promotionMii: mp6star
-  promotionMario: mp6star
-  promotionDragonQuest: classchange.75
+  takeAbreak: takeAbreak_grid.45
+  promotionMii: Promotion_grid.40
+  promotionMario: Promotion_grid.40
+  promotionDragonQuest: Promotion_grid.40
   forcedBuyout: ME_5BUY_ISDS.60
   domination: ME_MONOPOLY_ISDS.60
-  bankruptcy: Bankrupt_Ennesan.40
+  bankruptcy: Bankrupt_grid.40
+  memoryBlock: Arcade_grid.60
 tourMode:
   bankruptcyLimit: 1
   initialCash: 1800
@@ -40,6 +41,11 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    added:
+      - Memory Block BGM
+    changed:
+      - Changed some music
   - version: 4
     changed:
       - Changed board description
