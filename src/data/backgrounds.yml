@@ -1297,3 +1297,9 @@
   download:
   - https://nikkums.io/cswt/Backgrounds/spacestorm.background.zip
   mapIcon: SSGicon
+- background: MLRPG6_fortzokket
+  name: Fortress Zokket
+  download:
+  - https://nikkums.io/cswt/Backgrounds/MLRPG6_fortzokket.background.zip
+  - https://drive.google.com/uc?export=download&id=1I0EuPMwlru6YYWSIPW9RqhvH4NyPbJlo
+  mapIcon: iMLRPG6_fortz
