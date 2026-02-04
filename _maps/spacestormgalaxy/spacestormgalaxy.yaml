@@ -132,6 +132,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Opened up more paths, no more path restrictions on the edges of the map
   - version: 1
     added: 
       - Initial Release
