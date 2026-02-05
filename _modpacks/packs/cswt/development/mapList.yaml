@@ -1,6 +1,9 @@
 backgrounds: backgrounds.yml
 0:
   0:
+    Balance.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Balance.zip
     BloonCircles.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BloonCircles.zip
@@ -13,9 +16,6 @@ backgrounds: backgrounds.yml
     Mindgames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Mindgames.zip
-    AeosIsland.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/AeosIsland.zip
     spacestormgalaxy.zip:
       urls:
       - https://nikkums.io/cswt/Maps/spacestormgalaxy.zip
