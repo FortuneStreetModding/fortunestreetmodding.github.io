@@ -14,7 +14,9 @@ frbFiles:
 background: bg105
 mapIcon: TheWap_Icon
 music:
-  download: https://drive.google.com/uc?export=download&id=1qd6TdMghiHfU1qZd3gf10Q8CXuf3pRkX&confirm=1
+  download: 
+    - https://nikkums.io/cswt/BGM/Balance.music.zip
+    - https://drive.google.com/uc?export=download&id=1gOwr5nQPuscYJrlVIQY3o1dAm4vXRJpY&confirm=1
   map:
   - mapRogue.80
   stock:
