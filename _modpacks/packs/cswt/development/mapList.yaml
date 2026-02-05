@@ -1,6 +1,9 @@
 backgrounds: backgrounds.yml
 0:
   0:
+    Balance.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Balance.zip
     BloonCircles.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BloonCircles.zip
