@@ -16,9 +16,6 @@ backgrounds: backgrounds.yml
     Mindgames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Mindgames.zip
-    AeosIsland.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/AeosIsland.zip
     spacestormgalaxy.zip:
       urls:
       - https://nikkums.io/cswt/Maps/spacestormgalaxy.zip
