@@ -1189,6 +1189,12 @@
   - https://nikkums.io/cswt/Backgrounds/pacparty_mirageoasis.background.zip
   mapIcon: pacparty_p804
   name: Mirage Oasis
+- background: pacparty_spookyhallow
+  download:
+  - https://nikkums.io/cswt/Backgrounds/pacparty_spookyhallow.background.zip
+  - https://drive.google.com/uc?export=download&id=1s0ADP5NcAUcF4VSZdOQKcvxAKOOzewYn
+  mapIcon: pacparty_p803
+  name: Spooky Hallow
 - background: bg109altSE
   download:
   - https://nikkums.io/cswt/Backgrounds/bg109altSE.background.zip
@@ -1303,3 +1309,4 @@
   - https://nikkums.io/cswt/Backgrounds/MLRPG6_fortzokket.background.zip
   - https://drive.google.com/uc?export=download&id=1I0EuPMwlru6YYWSIPW9RqhvH4NyPbJlo
   mapIcon: iMLRPG6_fortz
+  
