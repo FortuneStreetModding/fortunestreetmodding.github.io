@@ -27,6 +27,9 @@ backgrounds: backgrounds.yml
     AegisRim.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AegisRim.zip
+    AeosIsland.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/AeosIsland.zip
     AlefgardB.zip:
       urls:
       - https://nikkums.io/cswt/Maps/AlefgardB.zip
