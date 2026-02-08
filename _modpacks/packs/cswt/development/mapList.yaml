@@ -16,9 +16,9 @@ backgrounds: backgrounds.yml
     Mindgames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Mindgames.zip
-    spacestormgalaxy.zip:
+    smg2_spacestorm.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/spacestormgalaxy.zip
+      - https://nikkums.io/cswt/Maps/smg2_spacestorm.zip
   1:
     ToadetteBikeRally.zip:
       urls:
