@@ -31,16 +31,16 @@ frbFiles:
 background: MLRPG6_fortzokket
 mapIcon: iMLRPG6_fortz
 music:
-  # download: 
-  #   - https://nikkums.io/cswt/BGM/MLRPG6_fortzokket.music.zip
-  #   - https://drive.google.com/uc?export=download&id=1DI_egsWGD8oQXENWFcnTL315ufAJ9dpf&export=download
+  download: 
+    - https://nikkums.io/cswt/BGM/MLRPG6_fortzokket.music.zip
+    - https://drive.google.com/uc?export=download&id=1DI_egsWGD8oQXENWFcnTL315ufAJ9dpf&export=download
   map:
   - MLRPG6_fortzokket_MAP
   stock: MLRPG6_STOCK
-  ventureCards: MLRPG6_VEN
-  auction: MLRPG6_AUC
+  ventureCards: MLRPG6_VEN.40
+  auction: MLRPG6_AUC.40
   targetMet: MLRPG6_fortzokket_FINAL
-  win: MLRPG6_WIN
+  win: MLRPG6_WIN.40
   guestAppear: MLRPG6_GUESTA
   guestLeave: MLRPG6_GUESTL
   badVentureCard: MLRPG6_VENBAD

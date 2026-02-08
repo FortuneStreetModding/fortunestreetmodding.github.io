@@ -102,7 +102,7 @@ music:
   - smg2_spacestorm_MAPALT
   - smg2_spacestorm_MAPALT
   - smg2_spacestorm_MAPALT
-  stock: smg2_STOCK
+  stock: smg2_STOCK.40
   ventureCards:
   - smg2_spacestorm_MAP
   - smg2_spacestorm_MAP
@@ -153,7 +153,7 @@ music:
   domination: smg2_DOM
   bankruptcy: smg2_LOSE
   forcedBuyout: 
-  takeAbreak: smg2_TAB
+  takeAbreak: smg2_TAB.45
   promotionMii: smg2_PROMO
   promotionMario: smg2_PROMO
   promotionDragonQuest: smg2_PROMO
