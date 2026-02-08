@@ -161,6 +161,9 @@ backgrounds: backgrounds.yml
     fortunapolis.zip:
       urls:
       - https://nikkums.io/cswt/Maps/fortunapolis.zip
+    MLRPG6_fortzokket.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/MLRPG6_fortzokket.zip
     FortuneGateFG1.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FortuneGateFG1.zip
@@ -267,9 +270,9 @@ backgrounds: backgrounds.yml
     slimeguyspaydayexpressplatformB.zip:
       urls:
       - https://nikkums.io/cswt/Maps/slimeguyspaydayexpressplatformB.zip
-    spookyhallown.zip:
+    pacparty_spookyhallow.zip:
       urls:
-      - https://nikkums.io/cswt/Maps/spookyhallown.zip
+      - https://nikkums.io/cswt/Maps/pacparty_spookyhallow.zip
     Squid.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Squid.zip
@@ -294,9 +297,6 @@ backgrounds: backgrounds.yml
     ToadsTreasureHunt.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadsTreasureHunt.zip
-    TurtleFortress.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/TurtleFortress.zip
     VennDiagram.zip:
       urls:
       - https://nikkums.io/cswt/Maps/VennDiagram.zip
