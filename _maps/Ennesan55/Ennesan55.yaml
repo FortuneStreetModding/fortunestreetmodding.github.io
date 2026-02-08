@@ -66,6 +66,7 @@ frbFiles:
 - E55_42
 - E55_43
 - E55_44
+- E55_V9_1
 - E55_45
 - E55_46
 - E55_V8_9
@@ -151,6 +152,7 @@ music:
   - MiraMedley.40
   - Ennesan55_Map_43.55
   - CNMap.60
+  - galaxy28.70
   - NoGameNoLifeMedley.40
   - Ennesan55_Map_46.55
   - WiiUeShopApr2014.70
@@ -159,7 +161,7 @@ music:
   - NLAMedley.43
   - Ennesan55_Map_49.50
   - mk7moon.40
-  - Ennesan55_Map_51.55
+  - Ennesan55_Map_V9_1.50
   stock:
   - Ennesan55_Stock_1.50
   - Ennesan55_Stock_1.50
@@ -217,6 +219,7 @@ music:
   - bladehome.50
   - Ennesan55_Stock_52.55
   - CNStock.70
+  - galaxyinter.50
   - CriminalConnection.40
   - Ennesan55_Stock_52.55
   - WiiUeShopJan2014.75
@@ -283,6 +286,7 @@ music:
   - briefing.50
   - Venture_Ennesan55_52.55
   - CNCard.60
+  - fileselect.80
   - Choisies.40
   - Venture_Ennesan55_52.55
   - WiiUeShopJan2015.75
@@ -349,6 +353,7 @@ music:
   - wirfliegen.60
   - Auction_grid.55
   - CNAuction.70
+  - Auction_grid.55
   - IGetYouBack.40
   - Auction_grid.55
   - WiiUeShopMay2019.85
@@ -415,6 +420,7 @@ music:
   - raTEoREkiSImeAra1.50
   - Targetmet_Ennesan55.55
   - CNTarget.60
+  - boss10.65
   - NoGameNoLife.40
   - Targetmet_Ennesan55.55
   - WiiUeShopSept2015.75
@@ -487,6 +493,7 @@ music:
   - takeAbreak_grid.45
   - takeAbreak_grid.45
   - takeAbreak_grid.45
+  - takeAbreak_grid.45
   - WiiUChatDisconnecting.75
   - starcarnival_BREAK
   - takeAbreak_grid.45
@@ -551,6 +558,7 @@ music:
   - A_X-Levelup.80
   - Promotion_grid.40
   - CNPromotion.60
+  - Promotion_grid.40
   - Promotion_grid.40
   - Promotion_grid.40
   - Promotion_grid.40
@@ -620,6 +628,7 @@ music:
   - Promotion_grid.40
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - starcarnival_PROMO
   - Promotion_grid.40
   - A_X-Levelup.80
@@ -683,6 +692,7 @@ music:
   - A_X-Levelup.80
   - Promotion_grid.40
   - CNPromotion.60
+  - Promotion_grid.40
   - Promotion_grid.40
   - Promotion_grid.40
   - Promotion_grid.40
@@ -752,6 +762,7 @@ music:
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
+  - ME_5BUY_ISDS.60
   - starcarnival_BUYOUT
   - ME_5BUY_ISDS.60
   - X-buyout.50
@@ -813,6 +824,7 @@ music:
   - ME_MONOPOLY_ISDS.60
   - psoJungle_domination_psoEp2Orchestra.70
   - A_X-Levelup.80
+  - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
@@ -884,6 +896,7 @@ music:
   - Bankrupt_grid.40
   - Bankrupt_grid.40
   - Bankrupt_grid.40
+  - Bankrupt_grid.40
   - starcarnival_LOSE
   - Bankrupt_grid.40
   - X-bankruptcy.80
@@ -947,6 +960,7 @@ music:
   - A_comical
   - Arcade_grid.60
   - Arcade_grid.60
+  - Arcade_grid.60
   - A_PerfectNGNL.40
   - Arcade_grid.60
   - A_Mario3DWorldAthletic.75
@@ -963,6 +977,14 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 9
+    added:
+      - Bowser's Galaxy Reactor -Lunatic-
+    changed:
+      - Enne-san Board 39 * Modified Tetris FS path and suit placement, partially altered Event Square effects
+      - Bowser's Galaxy Reactor -Easy- Added 1 more door, making it 2 doors total.
+      - Enne-san Board 15 -Normal- Added 1 more door, making it 2 doors total.
+      - Changed Enne-san Board 10 -Lunatic- to Enne-san Board 15 -Lunatic-
   - version: 8
     added:
       - A preparatory board for strategic readiness (Board State 1)
@@ -1255,7 +1277,7 @@ notes: |
     - Enne-san Board 01 (Preparation Phase)
     - Enne-san Board 01
     - Aegis Rim (Board State 2)
-    - Enne-san Board 10 -Easy-
+    - Enne-san Board 10
     - Funky Stadium
     - Enne-san Board 17 * Enne-san Board 42
     - Hibiscus Mandala
@@ -1263,7 +1285,7 @@ notes: |
     - Facing Worlds
     - Enne-san Board 39 * Tetris FS
     - Birdo's Big Top
-    - Bowser's Galaxy Reactor
+    - Bowser's Galaxy Reactor -Easy-
     - Enne-san Board 22 -Easy-
     - Dungeon Lobby, Enne-san Board 41
   - Normal (Board State 15~)
@@ -1272,7 +1294,7 @@ notes: |
     - Enne-san Board 52 (Board State 1) -Normal-
     - Spooky Hallow (Board State 1)
     - Planet Mira -Normal-
-    - Enne-san Board 15
+    - Enne-san Board 15 -Normal-
     - Fillmore (Board State 2)
     - The Clock Tower (Board State 3)
     - Enne-san Board 56
@@ -1311,6 +1333,7 @@ notes: |
     - Planet Mira -Lunatic-
     - Enne-san Board 52 (Board State 11) -Lunatic-
     - Colony 9
+    - Bowser's Galaxy Reactor -Lunatic-
     - Disboard (Board State 1)
     - Playground, Enne-san Board 30
     - Wii U
@@ -1319,4 +1342,4 @@ notes: |
     - New Los Angeles
     - Yoshi -Lunatic-
     - Rainbow Road MKWii
-    - Enne-san Board 10 -Lunatic-
+    - Enne-san Board 15 -Lunatic-
