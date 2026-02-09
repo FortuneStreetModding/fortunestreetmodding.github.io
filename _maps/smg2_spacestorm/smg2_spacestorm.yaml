@@ -1,7 +1,7 @@
 name:
   en: Space Storm Galaxy
 desc:
-  en: Our Satellite's deep space sensors have detected an anomaly indicating the presence of a power star located in this region. An extraction mission is necessary to boldly go and acquire this power source before Bowser can get his claws on it.
+  en: WARNING - Extreme weather event. A vertically looping cyclone with horizontal winds is currently in effect. Seek to purchase shelter immediately. Paths with switches move & mirror each other when pressed. Use the HUD to help you to navigate the station. Good luck!   
 ruleSet: Standard
 theme: Mario
 initialCash: 2200
