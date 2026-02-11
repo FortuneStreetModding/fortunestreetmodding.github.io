@@ -589,7 +589,6 @@
     slurpodromeWin: RTB777_SlurWin_grid.80
 - background: grid_blackwhite
   name: grid_blackwhite
-  bgm:  General-purpose Background, Supported of 93 Board States, Horizon, Fixed-Point Camera Switch Animation
   download:
   - https://nikkums.io/cswt/Backgrounds/grid_blackwhite.background.zip
   mapIcon: grid_bw
