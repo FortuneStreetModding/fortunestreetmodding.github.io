@@ -1,31 +1,31 @@
 name:
   en: Luma's Landing
 desc:
-  en: The centre of the universe, where the fate of the Koopa King's galactic ambitions once hung in the balance, now completely renovated! After Bowser's defeat, this local quickly became one of the most popular hang outs for Lumas. Bside for BGR
+  en: The centre of the universe, where Koopa King's galactic ambitions once hung in the balance, now completely renovated! After Bowser's defeat to Mario, this location was revamped into an intergalactic transportation center for Lumas.
 ruleSet: Standard
-theme: Mario
+theme: dragonQuest
 initialCash: 2200
 targetAmount: 20000
 baseSalary: 350
 salaryIncrement: 200
 maxDiceRoll: 7
 frbFiles:
-- lumas01
-- lumas02
-- lumas03
-- lumas04
-- lumas05
-- lumas06
-- lumas07
-- lumas08
-- lumas09
-- lumas10
-- lumas11
-- lumas12
-- lumas13
-- lumas14
-- lumas15
-- lumas16
+- lumas01_alt
+- lumas04_alt
+- lumas03_alt
+- lumas02_alt
+- lumas13_alt
+- lumas16_alt
+- lumas15_alt
+- lumas14_alt
+- lumas09_alt
+- lumas12_alt
+- lumas11_alt
+- lumas10_alt
+- lumas05_alt
+- lumas08_alt
+- lumas07_alt
+- lumas06_alt
 background: lumaslanding
 mapIcon: lumas
 tourMode:
@@ -212,6 +212,15 @@ ventureCards:
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
 changelog:
+  - version: 3
+    changed:
+      - changed the shape of the board
+      - new switch locations and mechanic that rotates the central districts
+      - took away district 10 as it was considerably weaker than the others
+      - adjusted the background added switch sound effects
+      - reduced stutter even more
+      - changed property prices and locations for vacant plots
+      - added doors at the top and bottom of the board
   - version: 2
     changed:
       - fix for balloon stutter
