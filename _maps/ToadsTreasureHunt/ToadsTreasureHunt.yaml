@@ -42,6 +42,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Fixed an issue where a soft lock could occur when the CPU passed through the Backstreet under the bank.
   - version: 3
     changed:
       - Replaced one of the backstreets by the bank with a roll on
