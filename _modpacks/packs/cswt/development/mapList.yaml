@@ -1,6 +1,9 @@
 backgrounds: backgrounds.yml
 0:
   0:
+    Ennesan60.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan60.zip
     BloonCircles.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BloonCircles.zip
