@@ -30,6 +30,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 1.1 
+    changed:
+      - 1.1 Made it easdier going through the middle
   - version: 1
     added:
       - Initial Release
