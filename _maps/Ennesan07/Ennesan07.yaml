@@ -46,6 +46,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 10
+    changed:
+      - Improved operability when moving between adjacent squares from Square ID 44 to 49
   - version: 9
     changed:
       - Add board states with many event squares in the dicy adventure lineage
