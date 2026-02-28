@@ -7,8 +7,8 @@ theme: DragonQuest
 initialCash: 0
 targetAmount: 60000
 baseSalary: 0
-salaryIncrement: 300
-maxDiceRoll: 7
+salaryIncrement: 400
+maxDiceRoll: 8
 frbFiles:
 - E60_1
 - E60_2
@@ -118,16 +118,15 @@ music:
   - Ennesan60_Map_6.50
   - Ennesan60_Map_6.50
   - Ennesan60_Map_6.50
-  - Ennesan60_Map_6.50
-  - Ennesan60_Map_6.50
-  - Ennesan60_Map_6.50
-  - Ennesan60_Map_12.50
-  - Ennesan60_Map_12.50
-  - Ennesan60_Map_12.50
-  - Ennesan60_Map_12.50
-  - Ennesan60_Map_12.50
-  - Ennesan60_Map_12.50
-  - Ennesan60_Map_18.50
+  - Ennesan60_Map_9.50
+  - Ennesan60_Map_9.50
+  - Ennesan60_Map_9.50
+  - Ennesan60_Map_12.40
+  - Ennesan60_Map_12.40
+  - Ennesan60_Map_12.40
+  - Ennesan60_Map_15.50
+  - Ennesan60_Map_15.50
+  - Ennesan60_Map_15.50
   - Ennesan60_Map_18.50
   - Ennesan60_Map_18.50
   - Ennesan60_Map_18.50
@@ -135,12 +134,13 @@ music:
   - Ennesan55_Map_V6_4.50
   - Ennesan55_Map_V6_4.50
   - Ennesan55_Map_V6_4.50
-  - Ennesan60_Map_26.50
-  - Ennesan60_Map_26.50
-  - Ennesan60_Map_26.50
-  - Ennesan60_Map_26.50
-  - Ennesan60_Map_26.50
-  - Ennesan60_Map_26.50
+  - Ennesan60_Map_25.50
+  - Ennesan60_Map_25.50
+  - Ennesan60_Map_25.50
+  - Ennesan60_Map_25.50
+  - Ennesan36_Map_4.50
+  - Ennesan36_Map_4.50
+  - Ennesan36_Map_4.50
   - Ennesan60_Map_32.50
   - Ennesan60_Map_32.50
   - Ennesan60_Map_32.50
@@ -150,18 +150,18 @@ music:
   - Ennesan39_Map_52.70
   - Ennesan39_Map_52.70
   - Ennesan39_Map_52.70
-  - Ennesan39_Map_52.70
-  - Ennesan60_Map_42.45
-  - Ennesan60_Map_42.45
-  - Ennesan60_Map_42.45
-  - Ennesan60_Map_42.45
-  - Ennesan60_Map_42.45
+  - Ennesan25_8_Map.60
+  - Ennesan25_8_Map.60
+  - Ennesan25_8_Map.60
+  - Ennesan60_Map_44.45
+  - Ennesan60_Map_44.45
+  - Ennesan60_Map_44.45
   - Ennesan60_Map_47.50
   - Ennesan60_Map_47.50
   - Ennesan60_Map_47.50
-  - Ennesan60_Map_50.45
-  - Ennesan60_Map_50.45
-  - Ennesan60_Map_50.45
+  - Ennesan60_Map_50.50
+  - Ennesan60_Map_50.50
+  - Ennesan60_Map_50.50
   - Ennesan39_Map_36.45
   - Ennesan39_Map_36.45
   - Ennesan39_Map_36.45
@@ -183,9 +183,9 @@ music:
   - Ennesan60_Map_71.50
   - Ennesan60_Map_71.50
   - Ennesan60_Map_71.50
-  - Ennesan60_Map_71.50
-  - Map_Ennesan20_7.40
-  - Map_Ennesan20_7.40
+  - Ennesan60_Map_74.50
+  - Ennesan60_Map_74.50
+  - Ennesan60_Map_74.50
   - Map_Ennesan20_7.40
   - Map_Ennesan20_7.40
   - Map_Ennesan20_7.40
@@ -413,6 +413,15 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Increased the salary increment from 300 to 400
+      - Changed shop prices at some shops
+      - Changed the effects of some event squares
+      - Adjusted some paths
+      - Increased the max dice roll from 7 to 8
+      - Change Venture Card 68 to 67
+      - Add or partially modify music
   - version: 1
     added:
       - Initial Release
@@ -485,8 +494,8 @@ ventureCards:
   - 0  #  64 Random venture! Stock prices increase by 30% in a district picked at random!
   - 1  #  65 Forced buyout! You can buy a vacant plot or shop for five times its value, whether someone else owns it or not.
   - 1  #  66 Special bonus! You receive 10 of the most valuable stocks!
-  - 0  #  67 Stock venture! You can buy stocks in a district of your choice.
-  - 1  #  68 Special arcade adventure! You're invited to play Memory Block!
+  - 1  #  67 Stock venture! You can buy stocks in a district of your choice.
+  - 0  #  68 Special arcade adventure! You're invited to play Memory Block!
   - 1  #  69 Stock venture! You can sell stocks you own at 20% above the market value.
   - 0  #  70 Special bonus! You get a sudden promotion and receive a salary! (You lose any suits you have.)
   - 1  #  71 Capital venture! You can invest up to 200G of the bank's money in your shops.
@@ -647,5 +656,3 @@ shopNames:
     96: Initial Value 960
     97: Initial Value 970
     98: Vacant plot
-tags:
-  - Dead-Ends exist
