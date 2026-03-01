@@ -8,7 +8,7 @@ initialCash: 2000
 targetAmount: 25000
 baseSalary: 300
 salaryIncrement: 300
-maxDiceRoll: 6
+maxDiceRoll: 7
 frbFile1: TickTockTrader
 frbFile2: TickTockTrader2
 frbFile3: TickTockTrader3
@@ -22,7 +22,14 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
-  - version: 1.1
+  - version: 2
+    changed:
+      - Updated map to be more smooth to get to bank
+      - Made travel easier around map
+      - light district changes
+      - added more freedom
+      - Increased maxDiceRoll from 6 to 7
+  - version: 1
     added: 
       - Initial Release
       - update to map making changes
