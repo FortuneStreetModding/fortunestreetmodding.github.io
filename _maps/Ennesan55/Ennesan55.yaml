@@ -27,6 +27,7 @@ frbFiles:
 - E55_13
 - E55_14
 - E55_V8_3
+- E55_V6_4
 - E55_V6_1
 - E55_15
 - E55_16
@@ -46,9 +47,10 @@ frbFiles:
 - E55_V8_8
 - E55_26
 - E55_27
-- E55_V6_4
+- E55_V10_1
 - E55_28
 - E55_29
+- E55_V10_2
 - E55_30
 - E55_V6_2
 - E55_31
@@ -113,6 +115,7 @@ music:
   - psoJungle_map_lushLoad.50
   - n64Skyscraper_map_background.65
   - Ennesan55_Map_V8_3.55
+  - Ennesan60_Map_6.50
   - spookyhallowMAP
   - MiraMedley.40
   - Ennesan55_Map_16.45
@@ -132,9 +135,10 @@ music:
   - Ennesan55_Map_28.55
   - mpss_ppbc_MAP16
   - CaptainSquare_remake.130
-  - Ennesan55_Map_V6_4.50
+  - Ennesan60_Map_47.60
   - starcarnival_MAP
   - maintheme
+  - MLRPG6_fortzokket_MAP
   - Ennesan55_Map_31.55
   - GearsOfFortune.60
   - demol1sh.70
@@ -154,14 +158,14 @@ music:
   - CNMap.60
   - galaxy28.70
   - NoGameNoLifeMedley.40
-  - Ennesan55_Map_46.55
+  - Ennesan55_Map_V9_1.50
   - WiiUeShopApr2014.70
   - starcarnival_MAPALT
   - Ennesan55_Map_12.50
   - NLAMedley.43
   - Ennesan55_Map_49.50
   - mk7moon.40
-  - Ennesan55_Map_V9_1.50
+  - Ennesan55_Map_46.55
   stock:
   - Ennesan55_Stock_1.50
   - Ennesan55_Stock_1.50
@@ -179,6 +183,7 @@ music:
   - Ennesan55_Stock_1.50
   - psoJungle_stocks_junglePremiumArrange.50
   - n64Skyscraper_map_stock.65
+  - Ennesan55_Stock_15.55
   - Ennesan55_Stock_15.55
   - spookyhallowSTOCK
   - bladehome.50
@@ -202,6 +207,7 @@ music:
   - Ennesan55_Stock_34.55
   - starcarnival_STOCK
   - professorstock
+  - MLRPG6_STOCK
   - Ennesan55_Stock_34.55
   - VestigesOfCorruption.50
   - rout1nes.70
@@ -247,6 +253,7 @@ music:
   - psoJungle_ventureCards_roboticPhotosynthesis.50
   - n64Skyscraper_map_chance.65
   - Venture_Ennesan50.55
+  - Venture_Ennesan50.55
   - spookyhallowVEN
   - briefing.50
   - Venture_Ennesan50.55
@@ -269,6 +276,7 @@ music:
   - Venture_Ennesan45.50
   - starcarnival_VEN
   - shyguyventure.100
+  - MLRPG6_VEN.40
   - Venture_Ennesan45.50
   - ForgottenJade.50
   - j1tters.60
@@ -314,6 +322,7 @@ music:
   - psoJungle_auction_junglePremiumArrange.50
   - n64Skyscraper_map_auction.65
   - Auction_grid.55
+  - Auction_grid.55
   - spookyhallowAUCTION
   - wirfliegen.60
   - Auction_grid.55
@@ -336,6 +345,7 @@ music:
   - Auction_grid.55
   - starcarnival_AUCTION
   - trainingauction
+  - MLRPG6_AUC.40
   - Auction_grid.55
   - RitualoftheNight.50
   - Auction_grid.55
@@ -381,6 +391,7 @@ music:
   - psoJungle_targetMet_IDOLAimmortalFeather.50
   - Targetmet_Ennesan55.55
   - Targetmet_Ennesan55.55
+  - Targetmet_Ennesan55.55
   - spookyhallowFINAL
   - raTEoREkiSImeAra1.50
   - Targetmet_Ennesan55.55
@@ -403,6 +414,7 @@ music:
   - Targetmet_Ennesan55.55
   - starcarnival_FINAL
   - doubledashluigitargetmet
+  - MLRPG6_fortzokket_FINAL
   - Targetmet_Ennesan55.55
   - SilentHowling.50
   - Ech0_Onslaught.60
@@ -452,6 +464,7 @@ music:
   - psoJungle_takeABreak_healing.50
   - takeAbreak_grid.45
   - takeAbreak_grid.45
+  - takeAbreak_grid.45
   - PACPARTY_TAB
   - X-Encounter.50
   - takeAbreak_grid.45
@@ -474,6 +487,7 @@ music:
   - takeAbreak_grid.45
   - starcarnival_BREAK
   - chaunceytakeabreak
+  - MLRPG6_TAB
   - takeAbreak_grid.45
   - takeAbreak_grid.45
   - takeAbreak_grid.45
@@ -519,6 +533,7 @@ music:
   - psoJungle_promotion_questClear.50
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - PACPARTY_PROMO
   - A_X-Levelup.80
   - Promotion_grid.40
@@ -541,6 +556,7 @@ music:
   - Promotion_grid.40
   - starcarnival_PROMO
   - gotkeypromotion
+  - MLRPG6_PROMO
   - Promotion_grid.40
   - Promotion_grid.40
   - Promotion_grid.40
@@ -586,6 +602,7 @@ music:
   - psoJungle_promotion_questClear.50
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - PACPARTY_PROMO
   - A_X-Levelup.80
   - Promotion_grid.40
@@ -608,6 +625,7 @@ music:
   - Promotion_grid.40
   - starcarnival_PROMO
   - gotkeypromotion
+  - MLRPG6_PROMO
   - Promotion_grid.40
   - Promotion_grid.40
   - Promotion_grid.40
@@ -653,6 +671,7 @@ music:
   - psoJungle_promotion_questClear.50
   - Promotion_grid.40
   - Promotion_grid.40
+  - Promotion_grid.40
   - PACPARTY_PROMO
   - A_X-Levelup.80
   - Promotion_grid.40
@@ -675,6 +694,7 @@ music:
   - Promotion_grid.40
   - starcarnival_PROMO
   - gotkeypromotion
+  - MLRPG6_PROMO
   - Promotion_grid.40
   - Promotion_grid.40
   - Promotion_grid.40
@@ -721,6 +741,7 @@ music:
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
+  - ME_5BUY_ISDS.60
   - X-buyout.50
   - ME_5BUY_ISDS.60
   - ME_5BUY_ISDS.60
@@ -742,6 +763,7 @@ music:
   - ME_5BUY_ISDS.60
   - starcarnival_BUYOUT
   - warpboobyout
+  - MLRPG6_BYO
   - ME_5BUY_ISDS.60
   - GameOver.55
   - ME_5BUY_ISDS.60
@@ -787,6 +809,7 @@ music:
   - psoJungle_domination_psoEp2Orchestra.70
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
+  - ME_MONOPOLY_ISDS.60
   - spookyhallowDOMINATION
   - A_X-Levelup.80
   - ME_MONOPOLY_ISDS.60
@@ -809,6 +832,7 @@ music:
   - ME_MONOPOLY_ISDS.60
   - starcarnival_DOMINATION
   - roomcleareddomination
+  - MLRPG6_DOM
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
   - ME_MONOPOLY_ISDS.60
@@ -855,6 +879,7 @@ music:
   - Bankrupt_grid.40
   - Bankrupt_grid.40
   - Bankrupt_grid.40
+  - Bankrupt_grid.40
   - X-bankruptcy.80
   - Bankrupt_grid.40
   - Bankrupt_grid.40
@@ -876,6 +901,7 @@ music:
   - Bankrupt_grid.40
   - starcarnival_LOSE
   - goodnightbadcartbankrupcy
+  - MLRPG6_LOSE
   - Bankrupt_grid.40
   - GameOver.55
   - Bankrupt_grid.40
@@ -921,6 +947,7 @@ music:
   - Arcade_grid.60
   - Arcade_grid.60
   - Arcade_grid.60
+  - Arcade_grid.60
   - A_PACPARTY_MEM
   - A_comical
   - Arcade_grid.60
@@ -943,6 +970,7 @@ music:
   - Arcade_grid.60
   - A_starcarnival_MEM
   - Arcade_grid.60
+  - A_MLRPG6_MINI1
   - Arcade_grid.60
   - Arcade_grid.60
   - Arcade_grid.60
@@ -977,6 +1005,13 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 10
+    added:
+      - Enne-san Board FINAL (Board State 6) -Normal-
+      - Fortress Zokket (Board State 4)
+    changed:
+      - Playground, Enne-san Board 30 has been changed to - Enne-san Board FINAL (Board State 84) -Lunatic-
+      - Changed so that you cannot choose whether to press the switch in certain board states
   - version: 9
     added:
       - Bowser's Galaxy Reactor -Lunatic-
@@ -1009,7 +1044,7 @@ changelog:
       - Changed Enne-san Board 52 -Lunatic- door position and event square effect
   - version: 6
     added:
-      - Spooky Hallow, Ritual of the Night, See-Saw and ??? have been added.
+      - Spooky Hallow, Ritual of the Night, See-Saw and Enne-san Board FINAL (Board State 52) -Hard- have been added.
   - version: 5
     changed:
       - Partially modified the structure of Board State 5(Enne-san Board 17 * Enne-san Board 42) and the effects of Event Square
@@ -1292,6 +1327,7 @@ notes: |
     - Gal Da Val Island (Board State 1 and 2), King of the Hill (Board State 1) -Normal-
     - High-Rise
     - Enne-san Board 52 (Board State 1) -Normal-
+    - Enne-san Board FINAL (Board State 6) -Normal-
     - Spooky Hallow (Board State 1)
     - Planet Mira -Normal-
     - Enne-san Board 15 -Normal-
@@ -1308,13 +1344,14 @@ notes: |
     - Shibuya Underground -Normal-
     - Koopa's Tycoon Town
     - Castle Town
-  - Hard (Board State 34~)
+  - Hard (Board State 35~)
     - Enne-san Board 23 (Board State 2)
     - Suits Map (Board State 1)
     - Cogito Ergo Sum (Board State 1)
-    - ???
+    - Enne-san Board FINAL (Board State 52) -Hard-
     - Star Carnival -Hard-
     - Luigi's Mansion (Board State 4)
+    - Fortress Zokket (Board State 4)
     - Enne-san Board 29
     - Ritual of the Night
     - Quadrants (Board State 1)
@@ -1327,7 +1364,7 @@ notes: |
     - Enne-san Board 12 (Board State 1)
     - Mirage Oasis (Board State 3) * Enne-san Board 06
     - Shibuya Underground -Hard-
-  - Lunatic (Board State 52~)
+  - Lunatic (Board State 54~)
     - Return to Lighthouse Island (Board State 1 and 3)
     - Gal Da Val Island (Board State 3 and 2), King of the Hill (Board State 2) -Lunatic-
     - Planet Mira -Lunatic-
@@ -1335,11 +1372,11 @@ notes: |
     - Colony 9
     - Bowser's Galaxy Reactor -Lunatic-
     - Disboard (Board State 1)
-    - Playground, Enne-san Board 30
+    - Enne-san Board 15 -Lunatic-
     - Wii U
     - Star Carnival -Lunatic-
     - Enne-san Board 22 -Lunatic-
     - New Los Angeles
     - Yoshi -Lunatic-
     - Rainbow Road MKWii
-    - Enne-san Board 15 -Lunatic-
+    - Enne-san Board FINAL (Board State 84) -Lunatic-
