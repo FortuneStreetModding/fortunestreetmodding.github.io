@@ -29,13 +29,13 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 3
+    added:
+      - You can now U-turn after passing the backstreet squares
     changed:
       - Adjusted shop prices in the diamond/heart districts
       - Top-left spade is now a rotating suit
       - Changed boon/arcade warp square into "move forward same number" square
       - Swapped boon and boom square
-    added:
-      - You can now U-turn after passing the backstreet squares
   - version: 2
     changed:
       - Adjusted the top-left spade path to avoid looping
@@ -185,3 +185,5 @@ ventureCards:
   - 0  # 126 Revaluation venture! Roll the die and expand your shops by 2% for each number.
   - 0  # 127 Special arcade adventure! You're invited to play Round the Blocks and Memory Block!
   - 0  # 128 Special bonus! You receive 55 times the number of shops you own in gold coins from the bank!
+tags:
+  - Dead-Ends exist
