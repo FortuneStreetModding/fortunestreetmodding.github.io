@@ -1,7 +1,7 @@
 name:
   en: Enne-san Board FINAL
 desc:
-  en: Each time a switch is pressed, the effect of the Event Square gradually intensifies. Pressing the switch at the dead end will rewind the board state by about half. Length and target amount guidelines. Short; 25,000 Medium; 60,000 Long; 120,000 Very long; 360,000 Longest; 999,999
+  en: Each time a switch is pressed, the effect of the Event Square gradually intensifies. Pressing the switch at the dead end will rewind the board state by about half. Length and target amount guidelines. Short; 25,000 Medium; 60,000 Long; 120,000 Very long; 360,000 Longest; 999,000
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 0
@@ -186,9 +186,9 @@ music:
   - Ennesan60_Map_74.55
   - Ennesan60_Map_74.55
   - Ennesan60_Map_74.55
-  - Map_Ennesan20_7.40
-  - Map_Ennesan20_7.40
-  - Map_Ennesan20_7.40
+  - Ennesan60_Map_77.50
+  - Ennesan60_Map_77.50
+  - Ennesan60_Map_77.50
   - Ennesan60_Map_80.40
   - Ennesan60_Map_80.40
   - Ennesan60_Map_80.40
@@ -413,6 +413,11 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Slightly adjusted the early board state (up to board state 23)
+      - Changing the effects of some event squares
+      - Changed the map music for some board states
   - version: 2
     changed:
       - Increased the salary increment from 300 to 400

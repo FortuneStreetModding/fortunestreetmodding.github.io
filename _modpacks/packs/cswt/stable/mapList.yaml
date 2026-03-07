@@ -155,6 +155,9 @@ backgrounds: backgrounds.yml
     Ennesan56.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan56.zip
+    Ennesan60.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Ennesan60.zip
     FacingWorlds.zip:
       urls:
       - https://nikkums.io/cswt/Maps/FacingWorlds.zip
