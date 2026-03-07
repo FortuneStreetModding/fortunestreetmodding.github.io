@@ -110,7 +110,7 @@ music:
   - Ennesan55_Map_9.50
   - starcarnival_MAPALT
   - galaxy28.70
-  - Ennesan55_Map_12.50
+  - Ennesan55_Map_12.45
   - mabinogi-dungeon
   - psoJungle_map_lushLoad.50
   - n64Skyscraper_map_background.65
@@ -128,7 +128,7 @@ music:
   - KBHH_MAP
   - mh3o3_js_MAP01
   - yoshicloud_MAP.50
-  - Ennesan55_Map_25.50
+  - Ennesan60_Map_35.60
   - ShibuyaMedley.40
   - koopa_tycoon.50
   - castletown.70
@@ -139,7 +139,7 @@ music:
   - starcarnival_MAP
   - maintheme
   - MLRPG6_fortzokket_MAP
-  - Ennesan55_Map_31.55
+  - Ennesan60_Map_18.50
   - GearsOfFortune.60
   - demol1sh.70
   - Ennesan55_Map_33.55
@@ -161,11 +161,11 @@ music:
   - Ennesan55_Map_V9_1.50
   - WiiUeShopApr2014.70
   - starcarnival_MAPALT
-  - Ennesan55_Map_12.50
+  - Ennesan55_Map_12.45
   - NLAMedley.43
-  - Ennesan55_Map_49.50
+  - Ennesan60_Map_71.50
   - mk7moon.40
-  - Ennesan55_Map_46.55
+  - Ennesan55_Map_46.50
   stock:
   - Ennesan55_Stock_1.50
   - Ennesan55_Stock_1.50
@@ -1005,6 +1005,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 11
+    changed:
+      - Changed the map music for some board states
   - version: 10
     added:
       - Enne-san Board FINAL (Board State 6) -Normal-
