@@ -413,6 +413,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Slightly adjusted the early board state (up to board state 23)
   - version: 2
     changed:
       - Increased the salary increment from 300 to 400
