@@ -186,9 +186,9 @@ music:
   - Ennesan60_Map_74.55
   - Ennesan60_Map_74.55
   - Ennesan60_Map_74.55
-  - Map_Ennesan20_7.40
-  - Map_Ennesan20_7.40
-  - Map_Ennesan20_7.40
+  - Ennesan60_Map_77.50
+  - Ennesan60_Map_77.50
+  - Ennesan60_Map_77.50
   - Ennesan60_Map_80.40
   - Ennesan60_Map_80.40
   - Ennesan60_Map_80.40
@@ -416,6 +416,8 @@ changelog:
   - version: 3
     changed:
       - Slightly adjusted the early board state (up to board state 23)
+      - Changing the effects of some event squares
+      - Changed the map music for some board states
   - version: 2
     changed:
       - Increased the salary increment from 300 to 400
