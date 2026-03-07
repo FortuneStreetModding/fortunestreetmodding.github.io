@@ -1,7 +1,7 @@
 name:
   en: Enne-san Board FINAL
 desc:
-  en: Each time a switch is pressed, the effect of the Event Square gradually intensifies. Pressing the switch at the dead end will rewind the board state by about half. Length and target amount guidelines. Short; 25,000 Medium; 60,000 Long; 120,000 Very long; 360,000 Longest; 999,999
+  en: Each time a switch is pressed, the effect of the Event Square gradually intensifies. Pressing the switch at the dead end will rewind the board state by about half. Length and target amount guidelines. Short; 25,000 Medium; 60,000 Long; 120,000 Very long; 360,000 Longest; 999,000
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 0
