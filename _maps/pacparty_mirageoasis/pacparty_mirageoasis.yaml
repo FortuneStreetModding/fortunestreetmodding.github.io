@@ -87,6 +87,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Fixed an issue where pressing the switch during the turn when stopping at the vacant plot after passing through Square ID 53's door could cause a soft lock.
   - version: 4
     changed:
       - Included a little island with 2 vacant plots and a door
