@@ -1,6 +1,9 @@
 backgrounds: backgrounds.yml
 0:
   0:
+    Minecraft.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/Minecraft.zip
     BloonCircles.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BloonCircles.zip
