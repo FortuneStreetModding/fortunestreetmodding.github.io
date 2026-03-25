@@ -2,13 +2,13 @@ name:
   en: 3-Player Minecraft World.
 desc:
   en: WARNING, THIS IS A THREE PLAYER BOARD ONLY, SET ORDER TO AS PICKED!!! Build your dream home during the day, mine for stocks at night. Vacant Plots Included.
-ruleSet: Standard # OR Easy
-theme: Mario # OR DragonQuest
+ruleSet: Standard
+theme: Mario
 initialCash: 2000
 targetAmount: 18000
 baseSalary: 250
 salaryIncrement: 500
-maxDiceRoll: 6 # should be between 4 and 9. A 9 is only working fine in boards without doors. With 7 or 8 make sure that players cannot go through multiple doors in a single dice roll.
+maxDiceRoll: 6
 frbFiles:
   - mine_1
   - mine_2
@@ -16,21 +16,24 @@ frbFiles:
   - mine_4
   - mine_5
   - mine_6
-background: bg001 # take a look at https://fortunestreetmodding.github.io/backgrounds for available backgrounds
-mapIcon: minecraft # you can add your own map icon. It needs to be in the same directory and be a png file. Dimensions need to be 79x78.
+background: bg001_clean
+mapIcon: minecraft
 music:
+  download: 
+    - https://nikkums.io/cswt/BGM/Minecraft.music.zip
+    - https://drive.google.com/uc?export=download&id=10S8ZhAGbdF7_c2biQYrU-h-_-b3g7gld&confirm=1
   map:
-  - subwoofer_lullaby # looping. the part after the dot is the volume 0-100. If unspecified, it will default to 50 volume
-  - subwoofer_lullaby # CAN REMOVE UNUSED STATES
-  - subwoofer_lullaby # CAN REMOVE UNUSED STATES
-  - aria_math # CAN REMOVE UNUSED STATES
-  - aria_math # CAN REMOVE UNUSED STATES
-  - aria_math # CAN REMOVE UNUSED STATES
-  stock: cat # looping
-  ventureCards: one_more_day # looping
-  auction: pigstep # looping
-  targetMet: precipice # looping
-  win: otherside # looping
+  - subwoofer_lullaby
+  - subwoofer_lullaby
+  - subwoofer_lullaby
+  - aria_math
+  - aria_math
+  - aria_math
+  stock: cat
+  ventureCards: one_more_day
+  auction: pigstep
+  targetMet: precipice
+  win: otherside
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
