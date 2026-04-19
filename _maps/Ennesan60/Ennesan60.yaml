@@ -5,7 +5,7 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 0
-targetAmount: 60000
+targetAmount: 25000
 baseSalary: 0
 salaryIncrement: 400
 maxDiceRoll: 8
@@ -413,6 +413,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - If you don't use the balloon port, you won't be able to press the dead-end switch, and you won't be able to rewind the board state.
+      - Change the default target amount from 60,000 to 25,000
   - version: 3
     changed:
       - Slightly adjusted the early board state (up to board state 23)

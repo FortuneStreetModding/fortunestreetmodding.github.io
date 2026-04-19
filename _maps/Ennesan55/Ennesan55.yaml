@@ -5,7 +5,7 @@ desc:
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 3600
-targetAmount: 55000
+targetAmount: 20000
 baseSalary: 400
 salaryIncrement: 175
 maxDiceRoll: 6
@@ -1005,6 +1005,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 12
+    changed:
+      - Change the default target amount from 55,000 to 20,000
   - version: 11
     changed:
       - Changed the map music for some board states
