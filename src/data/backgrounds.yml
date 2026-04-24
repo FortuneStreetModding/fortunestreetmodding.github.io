@@ -1310,4 +1310,28 @@
   - https://nikkums.io/cswt/Backgrounds/MLRPG6_fortzokket.background.zip
   - https://drive.google.com/uc?export=download&id=1I0EuPMwlru6YYWSIPW9RqhvH4NyPbJlo
   mapIcon: iMLRPG6_fortz
+- background: flowercup
+  name: Flower Cup Tournament
+  download:
+  - https://nikkums.io/cswt/Backgrounds/flowercup.background.zip
+  mapIcon: msm
+  music:
+      map: msm_BGM.80
+      stock: msm_stock.80
+      ventureCards: msm_ventureCards.80
+      auction: msm_auction.80
+      targetMet: msm_targetMet.80
+      badVentureCard: msm_badVentureBankrupt.80
+      dartOfGold: A_msm_DoG.65
+      bankruptcy: msm_badVentureBankrupt.80
+      memoryBlock: A_msm_memoryBlock.80
+      promotionMario: msm_promotion.80
+      promotionDragonQuest: msm_promotion.80
+      promotionMii: msm_promotion.80
+      roundTheBlocks: A_msm_roundTheBlocks.80
+      slurpodromeRace: msm_slimeRace.80
+      slurpodromeSelect: A_msm_slimeSelect.80
+      slurpodromeStart: msm_slimeStart.80
+      slurpodromeWin: msm_slimeWin.80
+      win: msm_win.80
   
