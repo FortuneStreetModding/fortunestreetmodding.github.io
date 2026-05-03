@@ -164,6 +164,9 @@ backgrounds: backgrounds.yml
     Fillmore.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Fillmore.zip
+    FlowerCupTournament.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/FlowerCupTournament.zip
     fortunapolis.zip:
       urls:
       - https://nikkums.io/cswt/Maps/fortunapolis.zip

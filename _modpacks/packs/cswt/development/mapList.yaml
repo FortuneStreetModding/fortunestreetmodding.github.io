@@ -1,9 +1,6 @@
 backgrounds: backgrounds.yml
 0:
   0:
-    FlowerCupTournament.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/FlowerCupTournament.zip
     Minecraft.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Minecraft.zip
@@ -19,16 +16,17 @@ backgrounds: backgrounds.yml
     Mindgames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Mindgames.zip
-  1:
     smg2_spacestorm.zip:
       urls:
       - https://nikkums.io/cswt/Maps/smg2_spacestorm.zip
+  1:
     ToadetteBikeRally.zip:
       urls:
       - https://nikkums.io/cswt/Maps/ToadetteBikeRally.zip
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
     placeholder.zip:
