@@ -79,6 +79,9 @@ music:
   slurpodromeRace: mpss_SRP_RACE
   slurpodromeWin: mpss_SRP_WIN
 changelog:
+  - version: 4
+    changed:
+      - Fixed a soft lock that occurred under certain conditions in Board State 15
   - version: 3
     changed:
       - Max dice roll now 9
