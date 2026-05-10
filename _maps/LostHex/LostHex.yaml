@@ -8,29 +8,29 @@ initialCash: 2000
 targetAmount: 20000
 baseSalary: 300
 salaryIncrement: 200
-maxDiceRoll: 7
+maxDiceRoll: 8
 frbFiles: 
   - LostHex
 background: bg107fixed
 mapIcon: LostHexIcon
 music:
-  download: 
+  download:
     - https://nikkums.io/cswt/BGM/LostHex.music.zip
-    - https://drive.google.com/uc?export=download&id=1elBySpZrZtIacc0QwnmVbgj9hMm4rK_c&confirm=1
-  map: 
+    - https://drive.usercontent.google.com/download?id=1QYfClZqUpGIJ0rAIwYNv-CGvXR8S50tV&export=download&confirm=1
+  map:
   - TheLostMedley.50 
   stock: 
   - OwlLights.50
   ventureCards:
   - MagentaRhythm.50
   auction:
-  - Tails_Lab.50
+  - Tails'Lab.50
   targetMet: 
   - BossRushes.50
   win:
   - StageClear.50
   badVentureCard: 
-  - ItemGet_Sad.50
+  - ItemGet(Sad).50
   takeAbreak:
   - 3DSMenuJingle.50
   promotionMii: 
@@ -50,7 +50,7 @@ music:
   roundTheBlocksWin:
   - ItemGetLevel1.50
   roundTheBlocks777:
-  - StageClear_Synth.50
+  - StageClear(Synth).50
   memoryBlock:
   - A_TilttheMachine.50
   dartOfGold:
@@ -58,9 +58,9 @@ music:
   slurpodromeSelect: 
   - A_ChaoTransporter.50
   slurpodromeStart:
-  - Hurryup_Ready.50
+  - Hurryup(Ready).50
   slurpodromeRace:
-  - Hurryup_Race.50
+  - Hurryup(Race).50
   slurpodromeWin:
   - ChaoRaceGoal.50
 tourMode:
@@ -70,6 +70,15 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    Changed:
+      - Max dice roll is now 8
+      - Heavily nerfed light blue and dark blue's corner Stores 
+      - Increased light blue's bottom middle shop from 100 to 130
+      - Lowered dark blue's bottom middle shop from 210 to 190
+      - Swapped around corner stores and other spaces for Red, Yellow, Green and Pink districts
+      - Changed "give 10% of ready cash to last place" event to "pay 100g to invest" event in the purple district
+      - Backstreet space in dark blue now takes you to the change suit space next to the bank
   - version: 1
     added:
       - Initial Release
