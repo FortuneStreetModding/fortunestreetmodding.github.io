@@ -16,7 +16,7 @@ mapIcon: LostHexIcon
 music:
   download:
     - https://nikkums.io/cswt/BGM/LostHex.music.zip
-    - https://drive.usercontent.google.com/download?id=1QYfClZqUpGIJ0rAIwYNv-CGvXR8S50tV&export=download&confirm=1
+    - https://drive.google.com/uc?export=download&id=1elBySpZrZtIacc0QwnmVbgj9hMm4rK_c&confirm=1
   map:
   - TheLostMedley.50 
   stock: 
@@ -30,7 +30,7 @@ music:
   win:
   - StageClear.50
   badVentureCard: 
-  - ItemGet(Sad).50
+  - ItemGet_Sad.50
   takeAbreak:
   - 3DSMenuJingle.50
   promotionMii: 
@@ -50,7 +50,7 @@ music:
   roundTheBlocksWin:
   - ItemGetLevel1.50
   roundTheBlocks777:
-  - StageClear(Synth).50
+  - StageClear_Synth.50
   memoryBlock:
   - A_TilttheMachine.50
   dartOfGold:
@@ -58,9 +58,9 @@ music:
   slurpodromeSelect: 
   - A_ChaoTransporter.50
   slurpodromeStart:
-  - Hurryup(Ready).50
+  - Hurryup_Ready.50
   slurpodromeRace:
-  - Hurryup(Race).50
+  - Hurryup_Race.50
   slurpodromeWin:
   - ChaoRaceGoal.50
 tourMode:
