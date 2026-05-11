@@ -24,7 +24,7 @@ music:
   ventureCards:
   - MagentaRhythm.50
   auction:
-  - Tails'Lab.50
+  - Tails_Lab.50
   targetMet: 
   - BossRushes.50
   win:
@@ -71,7 +71,7 @@ tourMode:
   clearRank: 2
 changelog:
   - version: 2
-    Changed:
+    changed:
       - Max dice roll is now 8
       - Heavily nerfed light blue and dark blue's corner Stores 
       - Increased light blue's bottom middle shop from 100 to 130
