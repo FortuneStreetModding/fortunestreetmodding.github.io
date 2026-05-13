@@ -53,9 +53,7 @@ backgrounds: backgrounds.yml
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
-    BowsersPinball.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/BowsersPinball.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
   1:
