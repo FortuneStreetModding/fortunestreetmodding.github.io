@@ -52,6 +52,12 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 2
+    removed:
+      - Removed a cloud
+      - Removed a Magmalice
+    changed:
+      - Reworked and reduced pathing
   - version: 1
     added:
       - Initial Release
