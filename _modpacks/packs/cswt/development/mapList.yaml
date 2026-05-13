@@ -1,7 +1,10 @@
 backgrounds: backgrounds.yml
 0:
   0:
-    MonkeyTarget:
+    CloudyAirship.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/CloudyAirship.zip
+    MonkeyTarget.zip:
       urls:
       - https://nikkums.io/cswt/Maps/MonkeyTarget.zip
     Minecraft.zip:
@@ -16,10 +19,10 @@ backgrounds: backgrounds.yml
     lumaslanding.zip:
       urls:
       - https://nikkums.io/cswt/Maps/lumaslanding.zip
+  1:
     Mindgames.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Mindgames.zip
-  1:
     smg2_spacestorm.zip:
       urls:
       - https://nikkums.io/cswt/Maps/smg2_spacestorm.zip
@@ -29,7 +32,6 @@ backgrounds: backgrounds.yml
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
-    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
   2:
@@ -51,9 +53,7 @@ backgrounds: backgrounds.yml
     Sandsea.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Sandsea.zip
-    BowsersPinball.zip:
-      urls:
-      - https://nikkums.io/cswt/Maps/BowsersPinball.zip
+    placeholder.zip:
     placeholder.zip:
     placeholder.zip:
   1:
