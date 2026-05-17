@@ -52,6 +52,12 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 3
+    added:
+      - Added a switch to the cloud
+    changed:
+      - Moved switch to middle of ship
+      - Cloud now visually flips upon switching (waypoints unchanged)
   - version: 2
     removed:
       - Removed a cloud
