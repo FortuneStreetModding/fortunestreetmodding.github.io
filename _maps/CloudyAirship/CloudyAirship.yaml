@@ -52,6 +52,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Moved green door on 2nd state to avoid going through two doors in one roll
   - version: 3
     added:
       - Added a switch to the cloud
