@@ -44,6 +44,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      - Added a way to go from the square next to the bank to the bank.
   - version: 2
     changed:
       - Changed venture card 74 to 89.
