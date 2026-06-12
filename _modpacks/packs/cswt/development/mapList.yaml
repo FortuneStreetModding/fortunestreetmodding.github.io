@@ -1,6 +1,9 @@
 backgrounds: backgrounds.yml
 0:
   0:
+    olympusavenue.zip:
+      urls:
+      - https://nikkums.io/cswt/Maps/olympusavenue.zip
     Ennesan29B.zip:
       urls:
       - https://nikkums.io/cswt/Maps/Ennesan29B.zip
@@ -16,10 +19,10 @@ backgrounds: backgrounds.yml
     BloonCircles.zip:
       urls:
       - https://nikkums.io/cswt/Maps/BloonCircles.zip
+  1:
     TheWap.zip:
       urls:
       - https://nikkums.io/cswt/Maps/TheWap.zip
-  1:
     lumaslanding.zip:
       urls:
       - https://nikkums.io/cswt/Maps/lumaslanding.zip
@@ -35,7 +38,6 @@ backgrounds: backgrounds.yml
     arrowhead.zip:
       urls:
       - https://nikkums.io/cswt/Maps/arrowhead.zip
-    placeholder.zip:
   2:
     placeholder.zip:
     placeholder.zip:
