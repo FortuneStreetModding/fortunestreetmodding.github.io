@@ -1,7 +1,7 @@
 name:
   en: Olympus Avenue
 desc:
-  en: Mount Olympus is on the market. This rare chance to own a piece of the pantheon has attracted Titans of real estate, Mario & friends. They are on a quest to find mythical deals even if that means embarking on an epic journey into the heart of ancient Greek myths and legends.
+  en: Mount Olympus is on the market. This rare chance to own a piece of the pantheon has attracted the Titans of real estate, Mario & friends. They are on a quest to find mythical deals even if that means embarking on an epic journey into the heart of ancient Greek myths and legends.
 ruleSet: Standard
 theme: DragonQuest
 initialCash: 2200
@@ -69,13 +69,18 @@ music:
 tourMode:
   bankruptcyLimit: 1
   opponent1: Yoshi
-  opponent2: Birdo
-  opponent3: Toad
+  opponent2: Mario
+  opponent3: Peach
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      -  Adjusted the order of a few squares in state 12 to make them more consistent with the previous and following states
+      -  Reconfigured how the doors are connected in state 10, and adjusted the location of the bank
+      -  Color coordinated the doors in state 1 to be adjacent to their matching suits      
   - version: 1
     added: 
-      - Initial Release     
+      - Initial Release       
 authors:
   - name: phellen007
 ventureCards:
