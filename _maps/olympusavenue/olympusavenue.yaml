@@ -13,6 +13,7 @@ frbFiles:
 - minotaur
 - apollo
 - aegis
+- ares
 - artemis
 - asclepius
 - scylla
@@ -28,11 +29,12 @@ mapIcon: athens
 music:
   download:
   - https://nikkums.io/cswt/BGM/olympusavenue.music.zip
-  - https://drive.google.com/uc?export=download&id=1LL88anJR-o45bavDqlt3KBALPZ3aKAlw
+  - https://drive.google.com/uc?export=download&id=1gKZRmP4W_B_mPD8BgIpegcr834m4B7RR
   map: 
   - olympus_MAPD
   - smbw_mo_MAP00
   - smg2_mo_MAP01
+  - olympus_MAPC
   - olympus_MAPF
   - smbw_mo_MAP03
   - PACPARTY_mirageoasis_MAP_2
@@ -73,6 +75,12 @@ tourMode:
   opponent3: Peach
   clearRank: 2
 changelog:
+  - version: 3
+    changed:
+      -  Additial board state Ares added into the map
+      -  Update the music to add a track for the new board state
+      -  Swapped the order of a district in state 5 to make it more consistent with its form in the previous and following states
+      -  Minor adjustments to look of state 1
   - version: 2
     changed:
       -  Adjusted the order of a few squares in state 12 to make them more consistent with the previous and following states
@@ -80,7 +88,7 @@ changelog:
       -  Color coordinated the doors in state 1 to be adjacent to their matching suits      
   - version: 1
     added: 
-      - Initial Release       
+      - Initial Release
 authors:
   - name: phellen007
 ventureCards:
