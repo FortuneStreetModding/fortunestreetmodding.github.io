@@ -4,7 +4,7 @@ desc:
   en: Mount Olympus is on the market. This rare chance to own a piece of the pantheon has attracted the Titans of real estate, Mario & friends. They are on a quest to find mythical deals even if that means embarking on an epic journey into the heart of ancient Greek myths and legends.
 ruleSet: Standard
 theme: DragonQuest
-initialCash: 2200
+initialCash: 2500
 targetAmount: 25000
 baseSalary: 222
 salaryIncrement: 222
@@ -19,9 +19,11 @@ frbFiles:
 - scylla
 - hestia
 - demeter
+- dionysus
 - pan
 - hades
 - triton
+- aphrodite
 - athena
 - zeus
 background: pacparty_mirageoasis
@@ -33,17 +35,19 @@ music:
   map: 
   - olympus_MAPD
   - smbw_mo_MAP00
-  - smg2_mo_MAP01
+  - olympus_MAPB
   - olympus_MAPC
   - olympus_MAPF
-  - smbw_mo_MAP03
+  - smg2_mo_MAP01
   - PACPARTY_mirageoasis_MAP_2
   - sm3dl_mo_MAP02
   - olympus_MAPE
-  - olympus_MAPB
+  - olympus_MAPD
+  - olympus_MAPG
   - olympus_MAPA
   - olympus_MAPH
-  - olympus_MAPG
+  - smbw_mo_MAP03
+  - olympus_MAPB
   - PACPARTY_mirageoasis_MAP_3
   stock: pmcs_hg_STOCK
   ventureCards: slimeguyspaydayexpressVENTURE.50
@@ -75,6 +79,15 @@ tourMode:
   opponent3: Peach
   clearRank: 2
 changelog:
+  - version: 4
+    changed:
+      - Added two more board states, Aphrodite & Dionysus
+      - Edited board states so that 2 switches are always present
+      - Swapped out some event squares
+      - Adjusted some property prices making them more expensive, higher starting cash, and salary
+      - Edited the locations of some squares to make transitions between states more consistent
+      - exchanged a few venture cards
+      - Other small qol adjustments to square placements to make traversing some of the board states easier with a keyboard
   - version: 3
     changed:
       -  Additial board state Ares added into the map
@@ -110,7 +123,7 @@ ventureCards:
   - 0  #  16 Random venture! Shops expand in three districts picked at random!
   - 0  #  17 Special bonus! You receive half of your salary!
   - 0  #  18 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for only twice its value.
-  - 1  #  19 Price hike venture! Your shop prices go up by 30% until your next turn.
+  - 0  #  19 Price hike venture! Your shop prices go up by 30% until your next turn.
   - 1  #  20 Revaluation venture! You can expand any one of your shops by 20%.
   - 1  #  21 Random venture! You receive 20 stocks in a district picked at random!
   - 1  #  22 Cashback venture! You can sell a shop back to the bank for twice its shop value.
@@ -118,7 +131,7 @@ ventureCards:
   - 0  #  24 Misadventure! The bank is forcibly buying you out! You're compelled to sell a shop for 200G more than its value.
   - 1  #  25 Misadventure! Your shop prices halve until your next turn!
   - 1  #  26 Lucky venture! You get a big commission until your next turn!
-  - 1  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
+  - 0  #  27 Special bonus! You receive 27 times the number of shops you own in gold coins from the bank!
   - 0  #  28 Cameo adventure! A goodybag appears!
   - 1  #  29 Freebie! Take a Heart!
   - 0  #  30 Venture on! All shops charge a 100G flat rate! Now roll the die and move again.
@@ -159,7 +172,7 @@ ventureCards:
   - 1  #  65 Forced buyout! You can buy a vacant plot or shop for five times its value, whether someone else owns it or not.
   - 1  #  66 Special bonus! You receive 10 of the most valuable stocks!
   - 1  #  67 Stock venture! You can buy stocks in a district of your choice.
-  - 0  #  68 Special arcade adventure! You're invited to play Memory Block!
+  - 1  #  68 Special arcade adventure! You're invited to play Memory Block!
   - 0  #  69 Stock ventureall You can sell stocks you own at 20% above the market value.
   - 0  #  70 Special bonus! You get a sudden promotion and receive a salary! (You lose any suits you have.)
   - 1  #  71 Capital venture! You can invest up to 200G of the bank's money in your shops.
@@ -183,7 +196,7 @@ ventureCards:
   - 1  #  89 Freebie! All players take a Suit Yourself card!
   - 0  #  90 Price hike venture! All shop prices go up by 30% until your next turn.
   - 1  #  91 Cameo adventure! A healslime appears!
-  - 0  #  92 Cameo adventure! Lakitu appears!
+  - 1  #  92 Cameo adventure! Lakitu appears!
   - 0  #  93 Dicey adventure! Roll 1/3/5 and your shops expand by 10%. Roll 2/4/6 and everyone else's shops expand by 5%.
   - 1  #  94 Freebie! Take a Diamond!
   - 0  #  95 Misadventure! You throw an impromptu party. All other players come to your location!
