@@ -413,6 +413,10 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 5
+    changed:
+      - Add a Stock Broker Event Square for certain board states.
+      - Fixed a soft-lock occurring in Board State 32.
   - version: 4
     changed:
       - If you don't use the balloon port, you won't be able to press the dead-end switch, and you won't be able to rewind the board state.
