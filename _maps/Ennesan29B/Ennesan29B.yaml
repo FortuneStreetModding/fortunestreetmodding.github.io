@@ -47,6 +47,9 @@ tourMode:
   opponent3: Bianca
   clearRank: 2
 changelog:
+  - version: 2
+    changed:
+      - Fixed an issue where the yellow Backstreet in the bottom right did not warp to its corresponding Backstreet.
   - version: 1
     added:
       - Initial Release
