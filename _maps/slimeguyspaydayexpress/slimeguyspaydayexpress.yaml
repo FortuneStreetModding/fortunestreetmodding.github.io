@@ -46,6 +46,9 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
+  - version: 8
+    changed:
+      - Reverse travel is now possible on this map. 
   - version: 7
     changed:
       - Removed the purple backstreet in the engine car, and changed the destination for the one in the train to lead to event square 58 right by the door
