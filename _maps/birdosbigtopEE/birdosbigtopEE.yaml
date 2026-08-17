@@ -50,9 +50,6 @@ tourMode:
   opponent3: Toad
   clearRank: 2
 changelog:
-  - version: 3
-    changed:
-      - Fixed the warp destination for the blue backstreet
   - version: 2
     changed:
       - Changed the effect of the Event Square located below Purple Backstreet from Venture Card 107 to 7.
