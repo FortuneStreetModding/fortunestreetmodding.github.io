@@ -36,6 +36,9 @@ changelog:
   - version: 1
     added:
       - Initial release
+  - version: 2
+    added:
+      - Changed the dead end event squares to bank squares.
 ventureCards:
   - 1  #   1 Adventurous turning point! You can choose which way to move on your next go, (player's name).
   - 1  #   2 Venture on! Roll the die again and move forward.
